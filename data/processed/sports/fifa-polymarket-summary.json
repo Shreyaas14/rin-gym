@@ -1,0 +1,84 @@
+[
+  {
+    "fifa_match_id": "400021504",
+    "fdh_match_id": "151667",
+    "match": "Uzbekistan vs Colombia",
+    "scheduled_utc": "2026-06-18T02:00:00Z",
+    "events": 89,
+    "events_with_coordinates": 63,
+    "timestamp_reversals": 0,
+    "markets": [
+      {
+        "id": "1897103",
+        "question": "Will Uzbekistan win on 2026-06-17?",
+        "price_samples": 139,
+        "distinct_prices": 38,
+        "max_gap_seconds": 75,
+        "events_with_preceding_price": 89,
+        "events_with_price_within_90s": 89,
+        "max_price_age_seconds": 61.883
+      },
+      {
+        "id": "1897104",
+        "question": "Will Uzbekistan vs. Colombia end in a draw?",
+        "price_samples": 139,
+        "distinct_prices": 20,
+        "max_gap_seconds": 76,
+        "events_with_preceding_price": 89,
+        "events_with_price_within_90s": 89,
+        "max_price_age_seconds": 61.883
+      },
+      {
+        "id": "1897105",
+        "question": "Will Colombia win on 2026-06-17?",
+        "price_samples": 139,
+        "distinct_prices": 24,
+        "max_gap_seconds": 76,
+        "events_with_preceding_price": 89,
+        "events_with_price_within_90s": 89,
+        "max_price_age_seconds": 61.883
+      }
+    ]
+  },
+  {
+    "fifa_match_id": "400021440",
+    "fdh_match_id": "151610",
+    "match": "Czechia vs South Africa",
+    "scheduled_utc": "2026-06-18T16:00:00Z",
+    "events": 94,
+    "events_with_coordinates": 63,
+    "timestamp_reversals": 0,
+    "markets": [
+      {
+        "id": "1897106",
+        "question": "Will Czechia win on 2026-06-18?",
+        "price_samples": 131,
+        "distinct_prices": 30,
+        "max_gap_seconds": 76,
+        "events_with_preceding_price": 94,
+        "events_with_price_within_90s": 94,
+        "max_price_age_seconds": 63.2
+      },
+      {
+        "id": "1897107",
+        "question": "Will Czechia vs. South Africa end in a draw?",
+        "price_samples": 131,
+        "distinct_prices": 26,
+        "max_gap_seconds": 75,
+        "events_with_preceding_price": 94,
+        "events_with_price_within_90s": 94,
+        "max_price_age_seconds": 63.2
+      },
+      {
+        "id": "1897108",
+        "question": "Will South Africa win on 2026-06-18?",
+        "price_samples": 131,
+        "distinct_prices": 40,
+        "max_gap_seconds": 75,
+        "events_with_preceding_price": 94,
+        "events_with_price_within_90s": 94,
+        "max_price_age_seconds": 63.2
+      }
+    ]
+  }
+]

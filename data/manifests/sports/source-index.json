@@ -1,0 +1,2205 @@
+[
+  {
+    "file": "espn_nba.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20250622",
+    "status": 200,
+    "bytes": 20335,
+    "sha256": "68a5dcfbba8229df6809e9586126f56722158f73bd472e05634cc092b4bf0278"
+  },
+  {
+    "file": "espn_soccer.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240714",
+    "status": 200,
+    "bytes": 12180,
+    "sha256": "92ec3e1c15e7365eb894ba2702a9265e092dffaf144fe2fa9e87d6aa60fb2b27"
+  },
+  {
+    "file": "euro_3930182_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3930182.json",
+    "status": 200,
+    "bytes": 3193092,
+    "sha256": "48cd23ecd5e033fb3a5d3084757a833fe024d26ff02ee05ff206e2577027e768"
+  },
+  {
+    "file": "euro_3930182_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=52150927402774221489295972188600808188375930933270031464073679043312492612961&startTs=1719342000&endTs=1719356400&fidelity=1",
+    "status": 200,
+    "bytes": 6531,
+    "sha256": "9730cb63e511d9b8a971a7258a81b00d66e13398b90aade02651f2ec0a8dc126"
+  },
+  {
+    "file": "euro_3930183_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3930183.json",
+    "status": 200,
+    "bytes": 2473108,
+    "sha256": "d9127adb5f8ca29137912a8d30744496e011599fdfcdae41434a937ceb39ca80"
+  },
+  {
+    "file": "euro_3930183_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=66299614581556954788606384812240048182653241815455779437864406985868557271066&startTs=1719417600&endTs=1719432000&fidelity=1",
+    "status": 200,
+    "bytes": 6484,
+    "sha256": "bc728354ffe1b97e5e3b46b54a0e66567dec73c513e367d76175c4d0ca273e0f"
+  },
+  {
+    "file": "euro_3930184_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3930184.json",
+    "status": 200,
+    "bytes": 2553626,
+    "sha256": "b32ec79b13e1a1606634f677bd7713ad272bbe38e9c7ef955d6237ac1b689765",
+    "fetched_at": "2026-10-12T21:23:45.407451+00:00"
+  },
+  {
+    "file": "euro_3930184_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=49164351757276220092022855178037687251514778443947934730757706693472276094623&startTs=1719439200&endTs=1719453600&fidelity=1",
+    "status": 200,
+    "bytes": 3766,
+    "sha256": "71f8a41835206dd0e1aeb0d7b8a03815f57e15d5addeaee5fa2589ceb579fabb",
+    "fetched_at": "2026-10-12T21:23:44.788262+00:00"
+  },
+  {
+    "file": "euro_3930184_prices_corrected.json",
+    "url": "https://clob.polymarket.com/prices-history?market=49164351757276220092022855178037687251514778443947934730757706693472276094623&startTs=1719428400&endTs=1719442800&fidelity=1",
+    "status": 200,
+    "bytes": 6521,
+    "sha256": "cd8534b9f9e5dbed9fd709d7a09f3aee2189e89907032a5c4f34e3bf0b31e9e9",
+    "fetched_at": "2026-10-12T21:30:41.925448+00:00"
+  },
+  {
+    "file": "euro_3938644_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3938644.json",
+    "status": 200,
+    "bytes": 3162145,
+    "sha256": "e3505f31e5ecb6ea6b94514dccdff7c63d82ec2e4244dff40b91dabe8f1b1494"
+  },
+  {
+    "file": "euro_3938644_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=66078240803977871520731330960806034816288759265445531482500416581565992332215&startTs=1719428400&endTs=1719442800&fidelity=1",
+    "status": 200,
+    "bytes": 6511,
+    "sha256": "0e256fecac19b17e1b69d21293c84c1a7231b4e210ea5ccb42fdc8af980f709a"
+  },
+  {
+    "file": "euro_3938645_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3938645.json",
+    "status": 200,
+    "bytes": 2991774,
+    "sha256": "f93b68287bf0c334574d8331c8bf298db1ebb363b6e8d764f3872d64a0e9a1bf"
+  },
+  {
+    "file": "euro_3938645_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=100460879446511310601984291448339942999576716004630671085697510867648839568829&startTs=1719417600&endTs=1719432000&fidelity=1",
+    "status": 200,
+    "bytes": 6513,
+    "sha256": "07d2cd8689f07d67f7817bf0bc6c14113575c34e92dfac1017b0314221ec0785"
+  },
+  {
+    "file": "euro_3940878_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3940878.json",
+    "status": 200,
+    "bytes": 3275962,
+    "sha256": "3fcb21720b9df15390e996f76f2e8713e6756aeedd502b62a5ea5bd955351a60"
+  },
+  {
+    "file": "euro_3940878_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=108821384665537751890449149358772885185509287463671749987887658402565074865191&startTs=1719676800&endTs=1719691200&fidelity=1",
+    "status": 200,
+    "bytes": 6554,
+    "sha256": "206db7b924c1ba98f82f538a91c8d96479aa5d847988b658c2f5bf0c0b674d3a"
+  },
+  {
+    "file": "euro_3940983_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3940983.json",
+    "status": 200,
+    "bytes": 3092103,
+    "sha256": "e46855568db36550730428cbdf0251716d8e6768639482ad9c56ce0c1d5c377f"
+  },
+  {
+    "file": "euro_3940983_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=98395590110334745213691416999165744281193612277067974457980199754187007912742&startTs=1719687600&endTs=1719702000&fidelity=1",
+    "status": 200,
+    "bytes": 6529,
+    "sha256": "0843c33cc4f1fa1932c5c1c1820218d071b7294e3d787f89295478e7620d8905"
+  },
+  {
+    "file": "euro_3941017_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3941017.json",
+    "status": 200,
+    "bytes": 4019615,
+    "sha256": "45b618a2b04258310bb696370b83251ec79846783eac7c0e9ac9e2be7f90c07e"
+  },
+  {
+    "file": "euro_3941017_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=25794203232020600587089353787493612302835300516933910208180694815820278251509&startTs=1719763200&endTs=1719777600&fidelity=1",
+    "status": 200,
+    "bytes": 6436,
+    "sha256": "1108700b2439edf084ba587817581eaa57eb3a15fa333470e8acecb66c9e5b5f"
+  },
+  {
+    "file": "euro_3941018_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3941018.json",
+    "status": 200,
+    "bytes": 3434681,
+    "sha256": "62f65d56f69ce4ed8e9d7950d0c8897acbcac9db318e7abbe469c1f77f698aad"
+  },
+  {
+    "file": "euro_3941018_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=58963219779774221079372036285319688593494010042242743803023294594990612573219&startTs=1719774000&endTs=1719788400&fidelity=1",
+    "status": 200,
+    "bytes": 6570,
+    "sha256": "e54e613817626998da0a1606ea7bbbe88c1e39cace1abcd1b34abbed43888284"
+  },
+  {
+    "file": "euro_3941019_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3941019.json",
+    "status": 200,
+    "bytes": 3329327,
+    "sha256": "3d2e6e72f95bf7c4aca447f8e8c082ada20f5fc78a64a4ea50456a8159f29428"
+  },
+  {
+    "file": "euro_3941019_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=72742367396526759560970863828871992619226062758773261222451842415494449036167&startTs=1719849600&endTs=1719864000&fidelity=1",
+    "status": 200,
+    "bytes": 6554,
+    "sha256": "d246c9039d6d67df91bc7331bc77814bd2e126322002c08b25d6799b631b3ffd"
+  },
+  {
+    "file": "euro_3941020_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3941020.json",
+    "status": 200,
+    "bytes": 3653473,
+    "sha256": "fed12f03582eb53308e6f831130e81924d17023f29b199e28e3672812f5cb696"
+  },
+  {
+    "file": "euro_3941020_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=51105199144248069762648169528977529230548277846847182457597247432599013325447&startTs=1719860400&endTs=1719874800&fidelity=1",
+    "status": 200,
+    "bytes": 6540,
+    "sha256": "7d7c60e08790ac0131bb52c29df53de20fa7449dfdb7699013f35791d3e1f9d5"
+  },
+  {
+    "file": "euro_3941021_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3941021.json",
+    "status": 200,
+    "bytes": 2604985,
+    "sha256": "63913270d365347be4367a699cf6c8e77225cb4fd8e5cb4d8a33063244f6fe9e"
+  },
+  {
+    "file": "euro_3941021_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=37987922860555862580940612115533406966105764249533601294453709168748210113646&startTs=1719936000&endTs=1719950400&fidelity=1",
+    "status": 200,
+    "bytes": 6632,
+    "sha256": "2ea703b43b796c95ef502afb5d66a717b62dd79f051c829640436c79c34787fa"
+  },
+  {
+    "file": "euro_3941022_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3941022.json",
+    "status": 200,
+    "bytes": 3172402,
+    "sha256": "6d8a1604a6db456e98279f1cb31cd4f556bb55bd6534bed18e293ca7e70246a5"
+  },
+  {
+    "file": "euro_3941022_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=63934964624178982515769958328206748144146332577304940737412859726131306096157&startTs=1719946800&endTs=1719961200&fidelity=1",
+    "status": 200,
+    "bytes": 6577,
+    "sha256": "67336d88bbe09e578aa316f5cc107e1ef495de9ac296b68857767d1e29e943a5"
+  },
+  {
+    "file": "euro_3942226_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3942226.json",
+    "status": 200,
+    "bytes": 3816941,
+    "sha256": "e4e0aba5eecdc7d136a54173fc5a3a51b3f179efc5e815be3aa8291e0ae5437c"
+  },
+  {
+    "file": "euro_3942226_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=87284421087641691342950326120514864748633322141318422817061254333571256724609&startTs=1720195200&endTs=1720209600&fidelity=1",
+    "status": 200,
+    "bytes": 6547,
+    "sha256": "3f3ec802e554146dd2994e78f910ef3cc4fcd4ea786210b2299151d95df39fc2"
+  },
+  {
+    "file": "euro_3942227_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3942227.json",
+    "status": 200,
+    "bytes": 4124983,
+    "sha256": "b0bc13e5fa3b548afe8a8435ca932f304fd9d8bb994df51882d54ddaa766a6be"
+  },
+  {
+    "file": "euro_3942227_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=98554489436266383086205410668307723557495673710828937000088174883520956043187&startTs=1720281600&endTs=1720296000&fidelity=1",
+    "status": 200,
+    "bytes": 6482,
+    "sha256": "73afd989d866c33bea18fc20dc0a36bd9be1000cf9eb241c62b5fb72a591b99e"
+  },
+  {
+    "file": "euro_3942349_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3942349.json",
+    "status": 200,
+    "bytes": 4470716,
+    "sha256": "331477f8fb6adc208588a20bc7329ba00396ae3f711bd91b441feaacf96e626a"
+  },
+  {
+    "file": "euro_3942349_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=17248339249839435624364963922737823261167640038706372147263037957930976099864&startTs=1720206000&endTs=1720220400&fidelity=1",
+    "status": 200,
+    "bytes": 6408,
+    "sha256": "cfad7cbc5b97b09aefa55470cfb91a661720c4d8c548a60f22f3456416a447d0"
+  },
+  {
+    "file": "euro_3942382_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3942382.json",
+    "status": 200,
+    "bytes": 2912361,
+    "sha256": "31a3da99f63c52f83d69e5cdf2b26c14851da6d51765320d95f80b85b50a0a5f"
+  },
+  {
+    "file": "euro_3942382_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=104734067177699078842369920978782213582188710471263331594197232663609683874381&startTs=1720292400&endTs=1720306800&fidelity=1",
+    "status": 200,
+    "bytes": 6482,
+    "sha256": "e0b85c18cb0f38457171eb1fbb3ce3955593bae7a799ad0e078dd37ea79b556d"
+  },
+  {
+    "file": "euro_3942752_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3942752.json",
+    "status": 200,
+    "bytes": 2801270,
+    "sha256": "2422cf9024265c773c1002e51a707db15d2b890c3851a9321ffbeb0c23c5b72d"
+  },
+  {
+    "file": "euro_3942752_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=68537541902509656302603979733699975527360890748988533193024016195965788621526&startTs=1720551600&endTs=1720566000&fidelity=1",
+    "status": 200,
+    "bytes": 6553,
+    "sha256": "cee230eb1d79a6afe53b8aadb8d892ee4018601b5b17d4adb519dcc042e0755a"
+  },
+  {
+    "file": "euro_3942819_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3942819.json",
+    "status": 200,
+    "bytes": 2926411,
+    "sha256": "5bf91f83b4ea6e5fa6fd3207c347b65ccce5124ae2040689509895ef5c0ab1b5"
+  },
+  {
+    "file": "euro_3942819_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=5767263367734609925293752325067323749723987898375906618812167082108210621612&startTs=1720638000&endTs=1720652400&fidelity=1",
+    "status": 200,
+    "bytes": 6522,
+    "sha256": "fdaef3b2435a29b96912bb23cc19888b42f90a5f0b9c0aa675abbe6487708ee9"
+  },
+  {
+    "file": "euro_3943043_events.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3943043.json",
+    "status": 200,
+    "bytes": 2806118,
+    "sha256": "cd6ab2cf6c129cdc35d43242006582f69f6419d9041dd417405171f91ab26989"
+  },
+  {
+    "file": "euro_3943043_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=101748794882259170213666453320828734430860365605644992081886328090851400157638&startTs=1720983600&endTs=1720998000&fidelity=1",
+    "status": 200,
+    "bytes": 6520,
+    "sha256": "a20ee37779ece7d2dd1809883974b32b926b03e3785e1759fa4d128818e8c500"
+  },
+  {
+    "file": "euro_schedule_20240625.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240625",
+    "status": 200,
+    "bytes": 42129,
+    "sha256": "439a35e6a57f146ff610227a87c16367d57cc10e5973a29e895d380bc6fcfeac",
+    "fetched_at": "2026-10-12T21:30:15.616559+00:00"
+  },
+  {
+    "file": "euro_schedule_20240626.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240626",
+    "status": 200,
+    "bytes": 49224,
+    "sha256": "5012cf5bb68aa2c2bfd7fbba17001a7daf4142ec789b23bb825c8ad7781bf63b",
+    "fetched_at": "2026-10-12T21:30:15.769026+00:00"
+  },
+  {
+    "file": "euro_schedule_20240629.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240629",
+    "status": 200,
+    "bytes": 20347,
+    "sha256": "d376bb1f66a38145a24145000f1db1166f8c02f711b09f762db1165f7e94df3f",
+    "fetched_at": "2026-10-12T21:30:15.714985+00:00"
+  },
+  {
+    "file": "euro_schedule_20240630.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240630",
+    "status": 200,
+    "bytes": 25290,
+    "sha256": "f647a4af7475fc5a50a5093fb7373090e631a1c97c4bfd02d095eb2bfbcbe269",
+    "fetched_at": "2026-10-12T21:30:15.588838+00:00"
+  },
+  {
+    "file": "euro_schedule_20240701.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240701",
+    "status": 200,
+    "bytes": 24291,
+    "sha256": "4c395457cabcb40cde98275e9b1c5c4499d011a728b9b7d8bbcdd0101a6f3a1e",
+    "fetched_at": "2026-10-12T21:30:16.178124+00:00"
+  },
+  {
+    "file": "euro_schedule_20240702.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240702",
+    "status": 200,
+    "bytes": 23054,
+    "sha256": "4c719b349f66e18c9dd4d192d4cae3b2779faf384d8c9eaaf18a865e60f11ead",
+    "fetched_at": "2026-10-12T21:30:16.207062+00:00"
+  },
+  {
+    "file": "euro_schedule_20240705.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240705",
+    "status": 200,
+    "bytes": 30684,
+    "sha256": "06b4a0a385af5a5f4385907216ddfd0ca8b893f93d927e66554d972e93ff29ca",
+    "fetched_at": "2026-10-12T21:30:16.178742+00:00"
+  },
+  {
+    "file": "euro_schedule_20240706.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240706",
+    "status": 200,
+    "bytes": 27652,
+    "sha256": "a2f1f9da510f6022a1898db3af77fa837b700d2243f6af73e8cf76e9b9f76910",
+    "fetched_at": "2026-10-12T21:30:16.178524+00:00"
+  },
+  {
+    "file": "euro_schedule_20240709.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240709",
+    "status": 200,
+    "bytes": 12237,
+    "sha256": "d94c7326f10f42fc6dba9529c61e5e7868ea7227a942cd7d4d4eebc6bb0d9173",
+    "fetched_at": "2026-10-12T21:30:16.540981+00:00"
+  },
+  {
+    "file": "euro_schedule_20240710.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240710",
+    "status": 200,
+    "bytes": 13553,
+    "sha256": "92597e78cb93a7c498c3ebe2c2e42e84f2225a132fb908bf3f7e6be7eed8ece2",
+    "fetched_at": "2026-10-12T21:30:16.541578+00:00"
+  },
+  {
+    "file": "euro_schedule_20240714.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20240714",
+    "status": 200,
+    "bytes": 12180,
+    "sha256": "92ec3e1c15e7365eb894ba2702a9265e092dffaf144fe2fa9e87d6aa60fb2b27",
+    "fetched_at": "2026-10-12T21:30:16.541095+00:00"
+  },
+  {
+    "file": "fifa_151610_teams.json",
+    "url": "https://fdh-api.fifa.com/v1/stats/match/151610/teams.json",
+    "status": 200,
+    "bytes": 11194,
+    "sha256": "5107984c84e9b97b7e314a8558f46825a8a132935d7c796c46684a45b248f259",
+    "fetched_at": "2026-10-12T21:31:44.607907+00:00"
+  },
+  {
+    "file": "fifa_151667_players.json",
+    "url": "https://fdh-api.fifa.com/v1/stats/match/151667/players.json",
+    "status": 200,
+    "bytes": 216393,
+    "sha256": "d0856d10fb568cd4ba2242798c628685b1e4e9e7f857ad25723246aa9441ef97",
+    "fetched_at": "2026-10-12T21:32:11.186632+00:00"
+  },
+  {
+    "file": "fifa_151667_teams.json",
+    "url": "https://fdh-api.fifa.com/v1/stats/match/151667/teams.json",
+    "status": 200,
+    "bytes": 11162,
+    "sha256": "d09f5ab75092a442d925d5cf51513e50309684d5f8aea579d5394344c4bed4ee",
+    "fetched_at": "2026-10-12T21:31:44.373467+00:00"
+  },
+  {
+    "file": "fifa_400021440_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021440?language=en",
+    "status": 200,
+    "bytes": 42122,
+    "sha256": "fdd344a2ac44d5545154d5992d5b803e0d830e748d3678605a8df15f066606c8",
+    "fetched_at": "2026-10-12T21:31:44.291222+00:00"
+  },
+  {
+    "file": "fifa_400021441_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021441?language=en",
+    "status": 200,
+    "bytes": 41286,
+    "sha256": "ab159d72a010d6defc90719e35e5ad976721bb3ade2d95416e37bd285541ec06",
+    "fetched_at": "2026-10-12T21:33:32.914679+00:00"
+  },
+  {
+    "file": "fifa_400021442_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021442?language=en",
+    "status": 200,
+    "bytes": 31249,
+    "sha256": "32a9a52582e1ae513350d637a4b2a0a80150126c0379ba1d28744bb56b5944a7",
+    "fetched_at": "2026-10-12T21:33:36.537749+00:00"
+  },
+  {
+    "file": "fifa_400021443_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021443?language=en",
+    "status": 200,
+    "bytes": 35608,
+    "sha256": "90fdefeda68f726e2b638371da8f7dab80cfd5773f6153225984bafb5e87d9f0",
+    "fetched_at": "2026-10-12T21:33:32.990195+00:00"
+  },
+  {
+    "file": "fifa_400021444_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021444?language=en",
+    "status": 200,
+    "bytes": 36594,
+    "sha256": "f7e2b31dd1404e015877885fffff43cf1c7c4111db15a7e8024c1bceb2355f71",
+    "fetched_at": "2026-10-12T21:33:40.140091+00:00"
+  },
+  {
+    "file": "fifa_400021445_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021445?language=en",
+    "status": 200,
+    "bytes": 33743,
+    "sha256": "22e9ff8e77af405108c7615669b8967ec6566228e015a68e9e98ad8fc74f2ef0",
+    "fetched_at": "2026-10-12T21:33:39.995389+00:00"
+  },
+  {
+    "file": "fifa_400021446_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021446?language=en",
+    "status": 200,
+    "bytes": 40290,
+    "sha256": "4a0644fb51ff49abf90c0949af9795803cbef2c9a17c51d39e755450484c057e",
+    "fetched_at": "2026-10-12T21:33:36.137336+00:00"
+  },
+  {
+    "file": "fifa_400021447_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021447?language=en",
+    "status": 200,
+    "bytes": 42850,
+    "sha256": "9ea038f8889a3e5399787f8ec0a6d3f07e4e8b1b74beba709d34b4d9329ff937",
+    "fetched_at": "2026-10-12T21:33:33.404445+00:00"
+  },
+  {
+    "file": "fifa_400021448_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021448?language=en",
+    "status": 200,
+    "bytes": 42094,
+    "sha256": "891677123a1d7cc7de676bfa96b8d510b92d3fd8061b2ea515e6178c49ee9ff3",
+    "fetched_at": "2026-10-12T21:33:39.472492+00:00"
+  },
+  {
+    "file": "fifa_400021449_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021449?language=en",
+    "status": 200,
+    "bytes": 41161,
+    "sha256": "2046c8c1988a5524c1a1e0cde324385ebfeaeb0d919642f9d5c6ebb5090ef90b",
+    "fetched_at": "2026-10-12T21:33:33.011724+00:00"
+  },
+  {
+    "file": "fifa_400021450_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021450?language=en",
+    "status": 200,
+    "bytes": 49773,
+    "sha256": "066874520f531b9d33cf73f003ad26638034256b7d0f03e56896eaa5293ae5c3",
+    "fetched_at": "2026-10-12T21:33:36.228229+00:00"
+  },
+  {
+    "file": "fifa_400021451_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021451?language=en",
+    "status": 200,
+    "bytes": 43612,
+    "sha256": "c3783b5e2ac30765ef76b16b440f3fd14534365afd2580477a432226ffedcd39",
+    "fetched_at": "2026-10-12T21:33:39.606564+00:00"
+  },
+  {
+    "file": "fifa_400021452_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021452?language=en",
+    "status": 200,
+    "bytes": 52669,
+    "sha256": "43d5b423c8d9403e6002013d37371528c593591ffcdfa27d12c5b32457cb9ea4",
+    "fetched_at": "2026-10-12T21:33:40.071083+00:00"
+  },
+  {
+    "file": "fifa_400021453_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021453?language=en",
+    "status": 200,
+    "bytes": 44345,
+    "sha256": "deb5d42ff07bbc5c37cdf116b0ee6fd06f26aabd496fa75319c901a4400ef1bd",
+    "fetched_at": "2026-10-12T21:33:33.551994+00:00"
+  },
+  {
+    "file": "fifa_400021454_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021454?language=en",
+    "status": 200,
+    "bytes": 31315,
+    "sha256": "eee9228d84ff0a997a659df8bf3d3a79b1b9cb5685f4ddf9f2e11222781d2285",
+    "fetched_at": "2026-10-12T21:33:36.717786+00:00"
+  },
+  {
+    "file": "fifa_400021455_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021455?language=en",
+    "status": 200,
+    "bytes": 47948,
+    "sha256": "6b5e2bb55a4d5647416812976722242039976db42a726cd4164e9614e326b297",
+    "fetched_at": "2026-10-12T21:33:39.801548+00:00"
+  },
+  {
+    "file": "fifa_400021456_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021456?language=en",
+    "status": 200,
+    "bytes": 41026,
+    "sha256": "9c16df95fb2ef6e349d69b23a3ed7f2b83057f91ec040bf4d07b2217add439ea",
+    "fetched_at": "2026-10-12T21:33:33.412904+00:00"
+  },
+  {
+    "file": "fifa_400021457_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021457?language=en",
+    "status": 200,
+    "bytes": 39760,
+    "sha256": "eea3984a5a383886c1ad20f578caf092f1cddc714b873e0c1e01e57092117f7f",
+    "fetched_at": "2026-10-12T21:33:36.774844+00:00"
+  },
+  {
+    "file": "fifa_400021458_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021458?language=en",
+    "status": 200,
+    "bytes": 42131,
+    "sha256": "e121c6995ab923f0affb76891cf0577fd6d43121a5bb23536c13117a67dac326",
+    "fetched_at": "2026-10-12T21:33:32.938853+00:00"
+  },
+  {
+    "file": "fifa_400021459_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021459?language=en",
+    "status": 200,
+    "bytes": 45996,
+    "sha256": "1942fb8b31d7c914e61e00991b0ac84349fa922b971ce9ae80114d653b44f54e",
+    "fetched_at": "2026-10-12T21:33:41.520590+00:00"
+  },
+  {
+    "file": "fifa_400021460_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021460?language=en",
+    "status": 200,
+    "bytes": 53174,
+    "sha256": "ee164bbb4187dc1430c94ae46cbf314e69b0f1de20177f81d7745b2ea037a29d",
+    "fetched_at": "2026-10-12T21:33:36.966230+00:00"
+  },
+  {
+    "file": "fifa_400021461_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021461?language=en",
+    "status": 200,
+    "bytes": 27810,
+    "sha256": "d04b5e8fd4c784d8af808278ea5e9a096ee4b472ac93c129c9a22e1a355dbf8c",
+    "fetched_at": "2026-10-12T21:33:41.211351+00:00"
+  },
+  {
+    "file": "fifa_400021462_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021462?language=en",
+    "status": 200,
+    "bytes": 37103,
+    "sha256": "bae3fa830ade4be82d72874a9ed5ed1be8fb2754b286957f4797d4846f68c718",
+    "fetched_at": "2026-10-12T21:33:36.486292+00:00"
+  },
+  {
+    "file": "fifa_400021463_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021463?language=en",
+    "status": 200,
+    "bytes": 44212,
+    "sha256": "53c9758281d9218c7c178be8965bd9629430f42aa376caa243a9115d428edaff",
+    "fetched_at": "2026-10-12T21:33:33.476985+00:00"
+  },
+  {
+    "file": "fifa_400021464_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021464?language=en",
+    "status": 200,
+    "bytes": 50170,
+    "sha256": "7f19d496911e6cdda0ad12637d2556195e7959a632dd7bc6e77c5ed451512f1a",
+    "fetched_at": "2026-10-12T21:33:33.855487+00:00"
+  },
+  {
+    "file": "fifa_400021465_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021465?language=en",
+    "status": 200,
+    "bytes": 46389,
+    "sha256": "8de4a4ed565921d80bd8349b927d8891559a0e1d2b821ed53629329f7f8daf59",
+    "fetched_at": "2026-10-12T21:33:37.230398+00:00"
+  },
+  {
+    "file": "fifa_400021466_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021466?language=en",
+    "status": 200,
+    "bytes": 35642,
+    "sha256": "1e7415d19e676e2835d0477897ea53a884f260bedc907ab2efd5733fa0676725",
+    "fetched_at": "2026-10-12T21:33:40.432453+00:00"
+  },
+  {
+    "file": "fifa_400021467_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021467?language=en",
+    "status": 200,
+    "bytes": 37196,
+    "sha256": "eaa8af87f3c7b998fc363176fcf8e588a39e0a246202d3274e3977d4c6dbcdfd",
+    "fetched_at": "2026-10-12T21:33:35.765438+00:00"
+  },
+  {
+    "file": "fifa_400021468_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021468?language=en",
+    "status": 200,
+    "bytes": 34232,
+    "sha256": "cd417d987506f41daac7131a54e16ef19e7de2b9d8d5edd95c838eebe98abb03",
+    "fetched_at": "2026-10-12T21:33:40.332224+00:00"
+  },
+  {
+    "file": "fifa_400021469_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021469?language=en",
+    "status": 200,
+    "bytes": 36757,
+    "sha256": "387b08014b2f2a39d1cd28b53b53674b9dd4e610205c80a94b49d9e209bd30d1",
+    "fetched_at": "2026-10-12T21:33:37.272897+00:00"
+  },
+  {
+    "file": "fifa_400021470_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021470?language=en",
+    "status": 200,
+    "bytes": 33056,
+    "sha256": "15f726bc291a693fe8d176f14ffae526c3cfea87b74bedf07c319a74955a4f78",
+    "fetched_at": "2026-10-12T21:33:33.906051+00:00"
+  },
+  {
+    "file": "fifa_400021471_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021471?language=en",
+    "status": 200,
+    "bytes": 41405,
+    "sha256": "5130ffdaaa7e6aa67b2b6b243c3838981ab007dc902cd664fe31eaa0807cb0a9",
+    "fetched_at": "2026-10-12T21:33:40.657394+00:00"
+  },
+  {
+    "file": "fifa_400021472_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021472?language=en",
+    "status": 200,
+    "bytes": 45763,
+    "sha256": "1e3cf45ae01726dbb0319312a6696594d23382b5dcb7bb11272b642f68e3f798",
+    "fetched_at": "2026-10-12T21:33:37.306434+00:00"
+  },
+  {
+    "file": "fifa_400021473_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021473?language=en",
+    "status": 200,
+    "bytes": 43424,
+    "sha256": "c6a64e703758031d3f1eb9bf6ff351dec6a9d3ab37f8550f8b6368b2414063f1",
+    "fetched_at": "2026-10-12T21:33:40.733104+00:00"
+  },
+  {
+    "file": "fifa_400021474_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021474?language=en",
+    "status": 200,
+    "bytes": 37610,
+    "sha256": "ae8b70f114fcd0944e365f5bbb879d8edbc792af39a7c09f664f6f2d1cc2136a",
+    "fetched_at": "2026-10-12T21:33:34.108316+00:00"
+  },
+  {
+    "file": "fifa_400021475_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021475?language=en",
+    "status": 200,
+    "bytes": 33485,
+    "sha256": "55001c94d6ac721aa9e8b6b1849b4152e5edc70ac2af8af293581ddf53ca7d29",
+    "fetched_at": "2026-10-12T21:33:37.505905+00:00"
+  },
+  {
+    "file": "fifa_400021476_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021476?language=en",
+    "status": 200,
+    "bytes": 36856,
+    "sha256": "9d5f7e37d4520650b87fce425fd702f93c318e3d6310fc5542b8851179da2f37",
+    "fetched_at": "2026-10-12T21:33:34.833021+00:00"
+  },
+  {
+    "file": "fifa_400021477_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021477?language=en",
+    "status": 200,
+    "bytes": 40491,
+    "sha256": "15e1a57594f805f714e4b6dbe248abf82668f2bd873a608e910dba21ede4481a",
+    "fetched_at": "2026-10-12T21:33:37.885999+00:00"
+  },
+  {
+    "file": "fifa_400021478_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021478?language=en",
+    "status": 200,
+    "bytes": 42627,
+    "sha256": "620b6a87b8d219c5416f7fa143a02cd3bd2fa93c9de3a3fd558e5752c5dc4b3e",
+    "fetched_at": "2026-10-12T21:33:34.553725+00:00"
+  },
+  {
+    "file": "fifa_400021479_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021479?language=en",
+    "status": 200,
+    "bytes": 44386,
+    "sha256": "f6a12c92651f6127541ce17ad76852b3f244286fcf373b3d55e92a186401b7ce",
+    "fetched_at": "2026-10-12T21:33:42.180423+00:00"
+  },
+  {
+    "file": "fifa_400021480_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021480?language=en",
+    "status": 200,
+    "bytes": 45801,
+    "sha256": "d7458cf9f2afcaf8aa5a7240a723dc8c9c1d21ef86ac90c8985099248189fff2",
+    "fetched_at": "2026-10-12T21:33:38.075535+00:00"
+  },
+  {
+    "file": "fifa_400021481_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021481?language=en",
+    "status": 200,
+    "bytes": 50226,
+    "sha256": "c4e0a9f20ab9ed1d18e133cd10163b048dddf49d7daae15e24914f7c2fafbadf",
+    "fetched_at": "2026-10-12T21:33:42.096093+00:00"
+  },
+  {
+    "file": "fifa_400021482_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021482?language=en",
+    "status": 200,
+    "bytes": 36112,
+    "sha256": "35c781becadd429f2f48d6021659a0f63a05e5436b0cb65134b68295f88c01a4",
+    "fetched_at": "2026-10-12T21:33:34.389939+00:00"
+  },
+  {
+    "file": "fifa_400021483_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021483?language=en",
+    "status": 200,
+    "bytes": 37055,
+    "sha256": "f71510deaaf69d497a0a2af1ff8bf9e7bfb4a4799aabcdcea9ea637927792acb",
+    "fetched_at": "2026-10-12T21:33:37.866078+00:00"
+  },
+  {
+    "file": "fifa_400021484_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021484?language=en",
+    "status": 200,
+    "bytes": 33693,
+    "sha256": "e6408d78e8469a67d40288115041829b6c6d14f86e2d43b443f2b8868f73ff91",
+    "fetched_at": "2026-10-12T21:33:41.622586+00:00"
+  },
+  {
+    "file": "fifa_400021485_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021485?language=en",
+    "status": 200,
+    "bytes": 36494,
+    "sha256": "8e0cfcf58fdd355fe2e2c7b99e5ac3f1a54addd9ca3ed7a3d83d55367f4eca60",
+    "fetched_at": "2026-10-12T21:33:41.801177+00:00"
+  },
+  {
+    "file": "fifa_400021486_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021486?language=en",
+    "status": 200,
+    "bytes": 45387,
+    "sha256": "30e9b7c819f07b202e7768fd210441f6ba9f30b1ee8fd46589e642cb41c95637",
+    "fetched_at": "2026-10-12T21:33:34.594161+00:00"
+  },
+  {
+    "file": "fifa_400021487_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021487?language=en",
+    "status": 200,
+    "bytes": 39392,
+    "sha256": "13d16b512f4977e414a7d2b5e056927ec5559be65aed55e4b260f0274864ae84",
+    "fetched_at": "2026-10-12T21:33:37.865722+00:00"
+  },
+  {
+    "file": "fifa_400021488_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021488?language=en",
+    "status": 200,
+    "bytes": 38157,
+    "sha256": "4b1334379e8dd2b37ef6f97b08e2b41cb0511ba347dd736196ec24a9120f8166",
+    "fetched_at": "2026-10-12T21:33:35.121426+00:00"
+  },
+  {
+    "file": "fifa_400021489_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021489?language=en",
+    "status": 200,
+    "bytes": 44721,
+    "sha256": "3dd32154f7960ae752c7150f0daedda3d12e94ccd772bc63e3e16cab7fc77b5f",
+    "fetched_at": "2026-10-12T21:33:41.936325+00:00"
+  },
+  {
+    "file": "fifa_400021490_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021490?language=en",
+    "status": 200,
+    "bytes": 33923,
+    "sha256": "b89db4083ac594ec2563915a65184541fe643955201e2a3c9fad352ca3f39648",
+    "fetched_at": "2026-10-12T21:33:35.002306+00:00"
+  },
+  {
+    "file": "fifa_400021491_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021491?language=en",
+    "status": 200,
+    "bytes": 44768,
+    "sha256": "ad0442daf08c682b91bef0cf900c7333fbfbc45b0182d42b0b4dfb716194319a",
+    "fetched_at": "2026-10-12T21:33:38.397902+00:00"
+  },
+  {
+    "file": "fifa_400021492_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021492?language=en",
+    "status": 200,
+    "bytes": 31746,
+    "sha256": "4bb487db95eb6fa3155c179a09ef7d8f1319674c76936713571ddea264864b1c",
+    "fetched_at": "2026-10-12T21:33:38.376045+00:00"
+  },
+  {
+    "file": "fifa_400021493_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021493?language=en",
+    "status": 200,
+    "bytes": 50476,
+    "sha256": "45f9dd1058cf45635bec8014cb1f28afd93a534497cfe7513f0775b6bc04f806",
+    "fetched_at": "2026-10-12T21:33:41.382704+00:00"
+  },
+  {
+    "file": "fifa_400021494_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021494?language=en",
+    "status": 200,
+    "bytes": 35729,
+    "sha256": "58e48528c1c5d5c9048930baf44c165d0aa220734af97c1bba2538fa6dd3ad4f",
+    "fetched_at": "2026-10-12T21:33:38.518724+00:00"
+  },
+  {
+    "file": "fifa_400021495_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021495?language=en",
+    "status": 200,
+    "bytes": 35664,
+    "sha256": "d30f179976a75fa2e67614f39cc1287794c54e3255de20500e89166341b64617",
+    "fetched_at": "2026-10-12T21:33:42.952812+00:00"
+  },
+  {
+    "file": "fifa_400021496_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021496?language=en",
+    "status": 200,
+    "bytes": 33771,
+    "sha256": "5b4746cc4769c39c6e047f3583f9c0905fdf52caedcb3b22e4171ce9bb0b724e",
+    "fetched_at": "2026-10-12T21:33:35.448203+00:00"
+  },
+  {
+    "file": "fifa_400021497_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021497?language=en",
+    "status": 200,
+    "bytes": 33178,
+    "sha256": "c60e877bb08f4ba7bd6322f361b20da12916e6da9df4013a5e6c6ef16a40b92a",
+    "fetched_at": "2026-10-12T21:33:42.720834+00:00"
+  },
+  {
+    "file": "fifa_400021498_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021498?language=en",
+    "status": 200,
+    "bytes": 37557,
+    "sha256": "aeed8b4b6b151fae5b254d22e47ba2504548efbf9a8ccb69dbd86f472df6eddf",
+    "fetched_at": "2026-10-12T21:33:35.511604+00:00"
+  },
+  {
+    "file": "fifa_400021499_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021499?language=en",
+    "status": 200,
+    "bytes": 41649,
+    "sha256": "50e34cc8deddcd2f96efe6b6572955271a00fc4897b79da00baaf1ccc6e9abad",
+    "fetched_at": "2026-10-12T21:33:38.535262+00:00"
+  },
+  {
+    "file": "fifa_400021500_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021500?language=en",
+    "status": 200,
+    "bytes": 37434,
+    "sha256": "d758140dbd82c046a8913de31a7cb52693eef411135150b55c6259e9d1589558",
+    "fetched_at": "2026-10-12T21:33:42.630977+00:00"
+  },
+  {
+    "file": "fifa_400021501_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021501?language=en",
+    "status": 200,
+    "bytes": 44089,
+    "sha256": "e10f83b2178c3cbe621faac4d89079562d44dc7818a9b48ec2a651d2a0def8b4",
+    "fetched_at": "2026-10-12T21:33:39.073496+00:00"
+  },
+  {
+    "file": "fifa_400021502_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021502?language=en",
+    "status": 200,
+    "bytes": 31511,
+    "sha256": "805ab38f7673a6f6b6ca3323a7b3fed7756944752f37d68b08528cbc424941cf",
+    "fetched_at": "2026-10-12T21:33:35.661590+00:00"
+  },
+  {
+    "file": "fifa_400021503_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021503?language=en",
+    "status": 200,
+    "bytes": 42217,
+    "sha256": "1584d1b8ba25ab5913a3af2c071769dc59378028c6e333de16fa040a8db7975d",
+    "fetched_at": "2026-10-12T21:33:39.150506+00:00"
+  },
+  {
+    "file": "fifa_400021504_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021504?language=en",
+    "status": 200,
+    "bytes": 39974,
+    "sha256": "1fd4ca42cf3638e791bf4393d53b2f657260b307ee5f79cdfd55e0539a6dcabc",
+    "fetched_at": "2026-10-12T21:31:44.263146+00:00"
+  },
+  {
+    "file": "fifa_400021505_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021505?language=en",
+    "status": 200,
+    "bytes": 43264,
+    "sha256": "6aa308643ebccc6bb90e74afb880276dedad7d0922d0fcd8dcbb65c881676a5e",
+    "fetched_at": "2026-10-12T21:33:42.630593+00:00"
+  },
+  {
+    "file": "fifa_400021506_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021506?language=en",
+    "status": 200,
+    "bytes": 41304,
+    "sha256": "251bc25ef116e7a7f98652c4d7d34267d07836b4cff721e3b97f11a6eca8a815",
+    "fetched_at": "2026-10-12T21:33:38.939988+00:00"
+  },
+  {
+    "file": "fifa_400021507_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021507?language=en",
+    "status": 200,
+    "bytes": 49597,
+    "sha256": "834f9ff28414e4515ac9d179dd0e3c5b5fe537235dcbd0575a3e4ef997a88f56",
+    "fetched_at": "2026-10-12T21:33:35.995717+00:00"
+  },
+  {
+    "file": "fifa_400021508_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021508?language=en",
+    "status": 200,
+    "bytes": 48432,
+    "sha256": "bd4769e450d7b4d173409318245816c7d1eaf73022dab28753f2c1994258f739",
+    "fetched_at": "2026-10-12T21:33:42.290568+00:00"
+  },
+  {
+    "file": "fifa_400021509_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021509?language=en",
+    "status": 200,
+    "bytes": 31427,
+    "sha256": "2211c4a2b789d4d029204631fa7191a5f6fa05aee125b3c647248808e407edf5",
+    "fetched_at": "2026-10-12T21:33:42.411185+00:00"
+  },
+  {
+    "file": "fifa_400021510_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021510?language=en",
+    "status": 200,
+    "bytes": 32214,
+    "sha256": "726d69560b37095abab4e4b87873c5713616ff7bf40f8033409b0506b418ee0f",
+    "fetched_at": "2026-10-12T21:33:35.938717+00:00"
+  },
+  {
+    "file": "fifa_400021511_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021511?language=en",
+    "status": 200,
+    "bytes": 35772,
+    "sha256": "7e894585fbdce115911e34bcb2d6bbe4ef884cc9b4b939d2da48d75610b87ac4",
+    "fetched_at": "2026-10-12T21:33:39.091295+00:00"
+  },
+  {
+    "file": "fifa_400021512_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021512?language=en",
+    "status": 200,
+    "bytes": 40907,
+    "sha256": "8b3e15ca28581ad78ddc49998e61dac4358fc054295654dea7a7710390968e7d",
+    "fetched_at": "2026-10-12T21:33:43.939582+00:00"
+  },
+  {
+    "file": "fifa_400021513_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021513?language=en",
+    "status": 200,
+    "bytes": 63794,
+    "sha256": "e453e6685e44e61150dab1ca0b2bb30cfe2f17fde28aafea5033a17432607622",
+    "fetched_at": "2026-10-12T21:33:43.279235+00:00"
+  },
+  {
+    "file": "fifa_400021514_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021514?language=en",
+    "status": 200,
+    "bytes": 38938,
+    "sha256": "f741b539427d45e199cded89cd1e4912093416b0c6ffd79430edf2efeb2885bf",
+    "fetched_at": "2026-10-12T21:33:43.736088+00:00"
+  },
+  {
+    "file": "fifa_400021515_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021515?language=en",
+    "status": 200,
+    "bytes": 51862,
+    "sha256": "1adf8bde5037a292868a962236a472e18d697fdb112b10440479006303718f7c",
+    "fetched_at": "2026-10-12T21:33:44.770683+00:00"
+  },
+  {
+    "file": "fifa_400021516_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021516?language=en",
+    "status": 200,
+    "bytes": 36568,
+    "sha256": "1c67b701ed6659906b67fccdef4670ea4ca2f8a2f2d24ba410d9882bfea41cd2",
+    "fetched_at": "2026-10-12T21:33:43.209972+00:00"
+  },
+  {
+    "file": "fifa_400021517_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021517?language=en",
+    "status": 200,
+    "bytes": 39052,
+    "sha256": "0d523c3130b8f628285f1c7f70112e9cbbf6d8870f03819ab36c7785d77c7eaa",
+    "fetched_at": "2026-10-12T21:33:44.940573+00:00"
+  },
+  {
+    "file": "fifa_400021518_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021518?language=en",
+    "status": 200,
+    "bytes": 34050,
+    "sha256": "39d221a950358c2098d2953159c00d69efcacecad88468eaf2fd5c4401912dc6",
+    "fetched_at": "2026-10-12T21:33:43.238113+00:00"
+  },
+  {
+    "file": "fifa_400021519_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021519?language=en",
+    "status": 200,
+    "bytes": 43651,
+    "sha256": "99f900b6ec7045de523f81f971067053eba3f966619e40190993982ac847ccab",
+    "fetched_at": "2026-10-12T21:33:44.359020+00:00"
+  },
+  {
+    "file": "fifa_400021520_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021520?language=en",
+    "status": 200,
+    "bytes": 38395,
+    "sha256": "a67971a8d36fc2495e8982dfed480ca5a5bf252c1fae0a6b79d7487a21b9302c",
+    "fetched_at": "2026-10-12T21:33:43.856819+00:00"
+  },
+  {
+    "file": "fifa_400021521_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021521?language=en",
+    "status": 200,
+    "bytes": 58492,
+    "sha256": "4ebe8d888d6c9037f35b80d5df15371d0a767e0f3f0465ae0398fe53f4529f8f",
+    "fetched_at": "2026-10-12T21:33:44.865852+00:00"
+  },
+  {
+    "file": "fifa_400021522_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021522?language=en",
+    "status": 200,
+    "bytes": 50995,
+    "sha256": "2909ef227031e70f8c9c1a4ede1ae4bae76aa1efafd297214b57cc3a97280073",
+    "fetched_at": "2026-10-12T21:33:43.468512+00:00"
+  },
+  {
+    "file": "fifa_400021523_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021523?language=en",
+    "status": 200,
+    "bytes": 49035,
+    "sha256": "b143f7983b7d61a88bf5d1787944b94b05baa597e5e443ca462371ac4f878ae2",
+    "fetched_at": "2026-10-12T21:33:43.711322+00:00"
+  },
+  {
+    "file": "fifa_400021524_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021524?language=en",
+    "status": 200,
+    "bytes": 33668,
+    "sha256": "0def792aa5b3450af0eefa0e6aa2534a1fdf6f3fb941ff5d9c7fd3222ab682f1",
+    "fetched_at": "2026-10-12T21:33:44.225893+00:00"
+  },
+  {
+    "file": "fifa_400021525_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021525?language=en",
+    "status": 200,
+    "bytes": 56058,
+    "sha256": "c308f21f19193e949f9fb12543536e9f85f36138ef2c7cbce72a89e859a5ee37",
+    "fetched_at": "2026-10-12T21:33:44.161888+00:00"
+  },
+  {
+    "file": "fifa_400021526_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021526?language=en",
+    "status": 200,
+    "bytes": 43351,
+    "sha256": "38d198e8066b2a6b24bdb714fb8d38f7def25c473653ae8dc58c99a92df602e8",
+    "fetched_at": "2026-10-12T21:33:44.513436+00:00"
+  },
+  {
+    "file": "fifa_400021527_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021527?language=en",
+    "status": 200,
+    "bytes": 35085,
+    "sha256": "dfb462a60cb14794313f1af19a4fe44a0413961394ec2ec9a13411f3a4a30568",
+    "fetched_at": "2026-10-12T21:33:44.637854+00:00"
+  },
+  {
+    "file": "fifa_400021528_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021528?language=en",
+    "status": 200,
+    "bytes": 45982,
+    "sha256": "6f3a2b64810a48d12b2bf0606de79f1c91c12a0a4ed83b4573f1d65abbf3a566",
+    "fetched_at": "2026-10-12T21:33:45.860137+00:00"
+  },
+  {
+    "file": "fifa_400021529_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021529?language=en",
+    "status": 200,
+    "bytes": 39155,
+    "sha256": "3da56544e5220519b5fac812c0798767ef0d4f86ff7a4f8cd17d21306c29aaac",
+    "fetched_at": "2026-10-12T21:33:45.621362+00:00"
+  },
+  {
+    "file": "fifa_400021530_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021530?language=en",
+    "status": 200,
+    "bytes": 44726,
+    "sha256": "376645e3ba2152303e6eb66cdc5f161c37ffdb19f653b46d84078adf0c7ad1fa",
+    "fetched_at": "2026-10-12T21:33:45.092260+00:00"
+  },
+  {
+    "file": "fifa_400021531_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021531?language=en",
+    "status": 200,
+    "bytes": 45456,
+    "sha256": "25cc75163f6e61dedfc6db061b71e2054a7f00f2c690e390fc5ac22622ef7972",
+    "fetched_at": "2026-10-12T21:33:45.493036+00:00"
+  },
+  {
+    "file": "fifa_400021532_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021532?language=en",
+    "status": 200,
+    "bytes": 35918,
+    "sha256": "f2c172c03046f698375f46acf6dddec1e5b3af03abdff266608c3be595208be8",
+    "fetched_at": "2026-10-12T21:33:45.411924+00:00"
+  },
+  {
+    "file": "fifa_400021533_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021533?language=en",
+    "status": 200,
+    "bytes": 36552,
+    "sha256": "02a26babfedd14ea23f6f7da52abac1dd1fd5da7848c7b527616d2d154d643a9",
+    "fetched_at": "2026-10-12T21:33:45.185829+00:00"
+  },
+  {
+    "file": "fifa_400021534_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021534?language=en",
+    "status": 200,
+    "bytes": 38395,
+    "sha256": "aa94fccd4ea10ae5f56a958839991fc43347fb1bd463704420e0d2dfcaaf6a0f",
+    "fetched_at": "2026-10-12T21:33:45.760776+00:00"
+  },
+  {
+    "file": "fifa_400021535_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021535?language=en",
+    "status": 200,
+    "bytes": 56415,
+    "sha256": "b42d243a1b0596600a19244040f5e38278d189eee43f756ca8772cdce0c3d8af",
+    "fetched_at": "2026-10-12T21:33:46.065638+00:00"
+  },
+  {
+    "file": "fifa_400021536_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021536?language=en",
+    "status": 200,
+    "bytes": 41179,
+    "sha256": "0dc36faa55ff7a12b4bd63a8440dcbddd4bf91525754bd073f96e150b578c25d",
+    "fetched_at": "2026-10-12T21:33:46.145296+00:00"
+  },
+  {
+    "file": "fifa_400021537_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021537?language=en",
+    "status": 200,
+    "bytes": 56704,
+    "sha256": "0dd0e738192bb1fbea8e72788b39629f6ad22c21fe721e9908ab635461a0fbc2",
+    "fetched_at": "2026-10-12T21:33:46.570247+00:00"
+  },
+  {
+    "file": "fifa_400021538_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021538?language=en",
+    "status": 200,
+    "bytes": 41137,
+    "sha256": "37ab86eb8006eea047552dcb0fd5669a1bbd4252b9e1f00528190c43f3cf3185",
+    "fetched_at": "2026-10-12T21:33:46.202866+00:00"
+  },
+  {
+    "file": "fifa_400021539_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021539?language=en",
+    "status": 200,
+    "bytes": 48370,
+    "sha256": "64a471d00a5be0eb4b368402821595c6d0f9476ea7d9167a4838324a4216e9f5",
+    "fetched_at": "2026-10-12T21:33:46.331203+00:00"
+  },
+  {
+    "file": "fifa_400021540_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021540?language=en",
+    "status": 200,
+    "bytes": 40607,
+    "sha256": "a40fe080467ff43e1ffa2891e10f33e5ca3f4344d53f6b641502b07eeb54d3c9",
+    "fetched_at": "2026-10-12T21:33:46.703742+00:00"
+  },
+  {
+    "file": "fifa_400021541_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021541?language=en",
+    "status": 200,
+    "bytes": 38358,
+    "sha256": "de575402149092fad6fe33ac8dc567ad02c34957c09ccc708979a96850270588",
+    "fetched_at": "2026-10-12T21:33:46.594203+00:00"
+  },
+  {
+    "file": "fifa_400021542_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021542?language=en",
+    "status": 200,
+    "bytes": 55936,
+    "sha256": "8c7cdcdfaaad98ed02627a913e7016b7f7fa8fbe0dd9473466c344c5afa58feb",
+    "fetched_at": "2026-10-12T21:33:46.940029+00:00"
+  },
+  {
+    "file": "fifa_400021543_timeline.json",
+    "url": "https://api.fifa.com/api/v3/timelines/400021543?language=en",
+    "status": 200,
+    "bytes": 55902,
+    "sha256": "1e7c021ce96c054337b4f196791d90ae90515d6c6ce1d5d84171cf789967574b",
+    "fetched_at": "2026-10-12T21:33:47.226880+00:00"
+  },
+  {
+    "file": "fifa_calendar_2026.json",
+    "url": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+    "status": 200,
+    "bytes": 459453,
+    "sha256": "a79a299b6bd6931ab2da94f16659d32ac2c35de000f24025f6905c1c1aba4c9b",
+    "fetched_at": "2026-10-12T21:31:44.454781+00:00"
+  },
+  {
+    "file": "fifa_poly_400021440.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-cze-rsa-2026-06-18",
+    "status": 200,
+    "bytes": 15920,
+    "sha256": "398bfcda49719a810c45f517db188eeab620e0d14b4039340a3b161139250891",
+    "fetched_at": "2026-10-12T21:32:11.126952+00:00"
+  },
+  {
+    "file": "fifa_poly_400021504.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-uzb-col-2026-06-17",
+    "status": 200,
+    "bytes": 16152,
+    "sha256": "63d3bab9f9e60d792261b9783f157e2bd567f05793f6d48001ad7e245c8e05eb",
+    "fetched_at": "2026-10-12T21:32:10.876263+00:00"
+  },
+  {
+    "file": "fifa_prices_1897103.json",
+    "url": "https://clob.polymarket.com/prices-history?market=42349324891891531052261785579549036042703894030589864369388972549681820562082&startTs=1781747603&endTs=1781755926&fidelity=1",
+    "status": 200,
+    "bytes": 3841,
+    "sha256": "fcd7e6b43099c7df8b775833c5ec5017b33f030aef0ce771fed72f7acc84c73b",
+    "fetched_at": "2026-10-12T21:32:55.670477+00:00"
+  },
+  {
+    "file": "fifa_prices_1897104.json",
+    "url": "https://clob.polymarket.com/prices-history?market=29696609003438481519695227807182574735991421576025755342707611041941932867266&startTs=1781747603&endTs=1781755926&fidelity=1",
+    "status": 200,
+    "bytes": 3778,
+    "sha256": "672c5c7be58ce9ea00ebd3c4319d6087f463e84bee7ef421eef6f7eebeaf6d95",
+    "fetched_at": "2026-10-12T21:32:55.667374+00:00"
+  },
+  {
+    "file": "fifa_prices_1897105.json",
+    "url": "https://clob.polymarket.com/prices-history?market=107303881689780116979934419713652545873528717512161697004408881489729317049047&startTs=1781747603&endTs=1781755926&fidelity=1",
+    "status": 200,
+    "bytes": 3779,
+    "sha256": "4670dcec9708eeb140757c949d4b0334fc339f05e21c5e097a54400780c392b2",
+    "fetched_at": "2026-10-12T21:32:55.654060+00:00"
+  },
+  {
+    "file": "fifa_prices_1897106.json",
+    "url": "https://clob.polymarket.com/prices-history?market=37088846718363125743947103938325144949409419304219830474975395227343762118615&startTs=1781797986&endTs=1781805899&fidelity=1",
+    "status": 200,
+    "bytes": 3556,
+    "sha256": "2f1f5c873b331cd27fd6f46c369b50088a32bad51d7f11fe4bacb51030b1ec1b",
+    "fetched_at": "2026-10-12T21:32:55.646243+00:00"
+  },
+  {
+    "file": "fifa_prices_1897107.json",
+    "url": "https://clob.polymarket.com/prices-history?market=25547941541163379167027433013111695108245471419110558598651133766324877924515&startTs=1781797986&endTs=1781805899&fidelity=1",
+    "status": 200,
+    "bytes": 3552,
+    "sha256": "def524b4f3f0bcfdd0430c6dca4babfe91809928eafd0f81842a639d793c5bd4",
+    "fetched_at": "2026-10-12T21:32:56.078523+00:00"
+  },
+  {
+    "file": "fifa_prices_1897108.json",
+    "url": "https://clob.polymarket.com/prices-history?market=29904085738634800807850286108673899231278214025131538572228243310371586316124&startTs=1781797986&endTs=1781805899&fidelity=1",
+    "status": 200,
+    "bytes": 3571,
+    "sha256": "e1d4072a83c27c2a88974706e4aace9a3800b2c6f898af83c63b2965ee856e69",
+    "fetched_at": "2026-10-12T21:32:56.035700+00:00"
+  },
+  {
+    "file": "kalshi_candle_probe.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26JUN13NYKSAS-SAS/candlesticks?start_ts=1781389907&end_ts=1781407907&period_interval=1",
+    "status": 200,
+    "bytes": 102297,
+    "sha256": "43844ea62ba6d59bfcdaac1d6bac6ba890d15a65d8f1b021753b9b9feaf6b7c5"
+  },
+  {
+    "file": "kalshi_epl_all.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets?limit=1000&series_ticker=KXEPLGAME",
+    "status": 200,
+    "bytes": 2125660,
+    "sha256": "23636136c8bd21f8be783b9cc30fb92a250708081d4601525fe4f420e37b745a"
+  },
+  {
+    "file": "kalshi_nba.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets?limit=10&series_ticker=KXNBAGAME",
+    "status": 200,
+    "bytes": 17092,
+    "sha256": "74877034c089d656ec4aabbf12c6685d2a01b7d6dfffb8882115d10a614c5c05"
+  },
+  {
+    "file": "kalshi_nba_all.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets?limit=1000&series_ticker=KXNBAGAME",
+    "status": 200,
+    "bytes": 1649427,
+    "sha256": "5238a80b1fac6373faea032345ce056975427682d1961210326ea4692377a744"
+  },
+  {
+    "file": "kalshi_series.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/series?category=Sports",
+    "status": 200,
+    "bytes": 6127959,
+    "sha256": "8de0c42c6c194f934c1ea3bd216fadd789173d149ddef2bd783a80cd01b6563a"
+  },
+  {
+    "file": "kalshi_uefa.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets?limit=100&series_ticker=KXUEFAGAME",
+    "status": 200,
+    "bytes": 27,
+    "sha256": "50699ea1db13415ea46ec367dcfa58decd9660083271c5dc061561f38337fbac"
+  },
+  {
+    "file": "nba_401859963_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26JUN03NYKSAS-SAS/candlesticks?start_ts=1780532400&end_ts=1780542960&period_interval=1",
+    "status": 200,
+    "bytes": 60454,
+    "sha256": "ee24b82b0db31932bd05038f3b6ed2e4565060b5bfb1d4da7651fe53376b3e7c"
+  },
+  {
+    "file": "nba_401859963_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401859963",
+    "status": 200,
+    "bytes": 418352,
+    "sha256": "6b0e36da418bccbeb69ea90670abe6c4e2c966656909a0882f8189635af11cfa"
+  },
+  {
+    "file": "nba_401859964_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26JUN05NYKSAS-SAS/candlesticks?start_ts=1780705200&end_ts=1780716577&period_interval=1",
+    "status": 200,
+    "bytes": 64848,
+    "sha256": "9b5ddaf2bbea8f877c8c83b4f86cd38783cc8b8145a50313f0d01271e81c2fb2",
+    "fetched_at": "2026-10-12T21:23:41.310023+00:00"
+  },
+  {
+    "file": "nba_401859964_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401859964",
+    "status": 200,
+    "bytes": 411507,
+    "sha256": "04248ad1fb15fb8fe2ce6d0a655ef1128cfcad49864337d4bfd4bd2e64d35edf",
+    "fetched_at": "2026-10-12T21:23:41.616109+00:00"
+  },
+  {
+    "file": "nba_401859965_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26JUN08SASNYK-SAS/candlesticks?start_ts=1780964400&end_ts=1780975898&period_interval=1",
+    "status": 200,
+    "bytes": 65675,
+    "sha256": "215959d8b4abe84cf33f7e20c0f6740561d6b1b30fce5fa310149e503b3b75ab"
+  },
+  {
+    "file": "nba_401859965_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401859965",
+    "status": 200,
+    "bytes": 409427,
+    "sha256": "5c63ca8ac2c3d72486bd65bfb6e9c307201d998effca9076b6e5fa467d5a852c"
+  },
+  {
+    "file": "nba_401859966_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26JUN10SASNYK-SAS/candlesticks?start_ts=1781137200&end_ts=1781148968&period_interval=1",
+    "status": 200,
+    "bytes": 60003,
+    "sha256": "ec93293b7ad7d43bba9e4e990503a66fe4ce70deb82405a35e3a2788d5928157",
+    "fetched_at": "2026-10-12T21:23:41.310708+00:00"
+  },
+  {
+    "file": "nba_401859966_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401859966",
+    "status": 200,
+    "bytes": 417302,
+    "sha256": "297f7bc459e70417b7a583b16edc748240174e44b43bdcb5d470951c7e356585",
+    "fetched_at": "2026-10-12T21:23:41.677817+00:00"
+  },
+  {
+    "file": "nba_401859967_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26JUN13NYKSAS-SAS/candlesticks?start_ts=1781396400&end_ts=1781407907&period_interval=1",
+    "status": 200,
+    "bytes": 65602,
+    "sha256": "7e3ad4c5c0621e755f62781ac93adf3637b2e3c4e625767513f915b197b4761d"
+  },
+  {
+    "file": "nba_401859967_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401859967",
+    "status": 200,
+    "bytes": 443823,
+    "sha256": "3fce393e2f9580e1f6d73b568533d2b2b2ae6bb47e804b0032a3cce22b76f1c3"
+  },
+  {
+    "file": "nba_401871156_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY12MINSAS-SAS/candlesticks?start_ts=1778629800&end_ts=1778640172&period_interval=1",
+    "status": 200,
+    "bytes": 58839,
+    "sha256": "d84c3d1d4222359569bfbbe3448e4d716924cd71ca3ab304404644fd2827357f"
+  },
+  {
+    "file": "nba_401871156_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401871156",
+    "status": 200,
+    "bytes": 429638,
+    "sha256": "6f3843bb024c2bf7de448b2f233e0bf958fced71b63aecb2620ddfe3f150185a"
+  },
+  {
+    "file": "nba_401871157_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY15SASMIN-SAS/candlesticks?start_ts=1778894400&end_ts=1778905514&period_interval=1",
+    "status": 200,
+    "bytes": 62418,
+    "sha256": "83618c30e8d0c85ab245e3a3598a6e2463bc88ee074f51dd86e884c4a365b00b"
+  },
+  {
+    "file": "nba_401871157_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401871157",
+    "status": 200,
+    "bytes": 435956,
+    "sha256": "d089a6c39e03de0147f5b9d1c3b5184f688aa352a7481498d0df9895bfb65a05"
+  },
+  {
+    "file": "nba_401871337_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY13CLEDET-DET/candlesticks?start_ts=1778716200&end_ts=1778728057&period_interval=1",
+    "status": 200,
+    "bytes": 67416,
+    "sha256": "00e8b10768f38fbf871c7b3c98ed5a1ecd4ebfe72d8ad808e2b6b6e7b23750f6"
+  },
+  {
+    "file": "nba_401871337_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401871337",
+    "status": 200,
+    "bytes": 437186,
+    "sha256": "30529f792d0f3db71f348f69a2b3ada5c01191e817fdac560edd151cfc4b45db"
+  },
+  {
+    "file": "nba_401871338_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY15DETCLE-DET/candlesticks?start_ts=1778885400&end_ts=1778896171&period_interval=1",
+    "status": 200,
+    "bytes": 60872,
+    "sha256": "e2b792b155eddce0a89703611b02b68de53c7b89df5153e7100662d1b2963c82",
+    "fetched_at": "2026-10-12T21:23:44.112181+00:00"
+  },
+  {
+    "file": "nba_401871338_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401871338",
+    "status": 200,
+    "bytes": 408923,
+    "sha256": "6bc0a08d2bd5014c4103e2b50d37fbe6e9457c3b8bb1a0c34c2d9495b54e4988",
+    "fetched_at": "2026-10-12T21:23:44.051803+00:00"
+  },
+  {
+    "file": "nba_401873197_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY18SASOKC-SAS/candlesticks?start_ts=1779150000&end_ts=1779162308&period_interval=1",
+    "status": 200,
+    "bytes": 70397,
+    "sha256": "c5d23aa1c281db42a8cc0872bdead0e0b89c7a7f7f3ae57ea3b6f5c94525e26a"
+  },
+  {
+    "file": "nba_401873197_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873197",
+    "status": 200,
+    "bytes": 481795,
+    "sha256": "b9eb80609846fd09f0e12834beb162e2bd2d68c1689ab0e28a929c4e14e7913b"
+  },
+  {
+    "file": "nba_401873198_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY20SASOKC-SAS/candlesticks?start_ts=1779322800&end_ts=1779332833&period_interval=1",
+    "status": 200,
+    "bytes": 57459,
+    "sha256": "848da63b540deb3ac13731ffbfe775136e910e6723358657a89f4a6bff48e378",
+    "fetched_at": "2026-10-12T21:23:43.634301+00:00"
+  },
+  {
+    "file": "nba_401873198_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873198",
+    "status": 200,
+    "bytes": 439064,
+    "sha256": "c1376e9f912490a4c6c7abc996bb014a3ed04aa677eee53f2d92fcb08d9fd85e",
+    "fetched_at": "2026-10-12T21:23:44.051847+00:00"
+  },
+  {
+    "file": "nba_401873199_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY22OKCSAS-SAS/candlesticks?start_ts=1779495600&end_ts=1779506721&period_interval=1",
+    "status": 200,
+    "bytes": 63510,
+    "sha256": "83d687ba46d59a4c0ae9d2fd3085616d15076b9cb2ebf987a8561b563d63edd1",
+    "fetched_at": "2026-10-12T21:23:43.460691+00:00"
+  },
+  {
+    "file": "nba_401873199_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873199",
+    "status": 200,
+    "bytes": 454519,
+    "sha256": "9b53388c48aa2ab7974858b080790d145b7d4eca551ee47336e37a9f16a1b1d1",
+    "fetched_at": "2026-10-12T21:23:43.618144+00:00"
+  },
+  {
+    "file": "nba_401873200_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY24OKCSAS-SAS/candlesticks?start_ts=1779666600&end_ts=1779677549&period_interval=1",
+    "status": 200,
+    "bytes": 62318,
+    "sha256": "dbe775441e123f77f2c7e04a26e71d52687adf9be3af79e457c0411a30d8c3ea",
+    "fetched_at": "2026-10-12T21:23:43.189155+00:00"
+  },
+  {
+    "file": "nba_401873200_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873200",
+    "status": 200,
+    "bytes": 461553,
+    "sha256": "6ea233de467f3c3b4a40059d89b5018eb19ca877b944d666a36f07a11b756ffb",
+    "fetched_at": "2026-10-12T21:23:43.260046+00:00"
+  },
+  {
+    "file": "nba_401873201_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY26SASOKC-SAS/candlesticks?start_ts=1779841200&end_ts=1779851848&period_interval=1",
+    "status": 200,
+    "bytes": 60843,
+    "sha256": "be2c90d076a3d2b7f8d9601410b74392b41a15c9bdf5628dec535bb9ffc5ac3f",
+    "fetched_at": "2026-10-12T21:23:42.074175+00:00"
+  },
+  {
+    "file": "nba_401873201_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873201",
+    "status": 200,
+    "bytes": 468279,
+    "sha256": "31d51ee5145bcc610525198604d7f310ccfb6c48d2b3c90727ef9ea1adfbd651",
+    "fetched_at": "2026-10-12T21:23:42.461018+00:00"
+  },
+  {
+    "file": "nba_401873202_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY28OKCSAS-SAS/candlesticks?start_ts=1780014000&end_ts=1780023558&period_interval=1",
+    "status": 200,
+    "bytes": 54506,
+    "sha256": "a1b918469c512e909b9d3ab158633222b60f112a96086cad8cff1d82c5f91523",
+    "fetched_at": "2026-10-12T21:23:41.997665+00:00"
+  },
+  {
+    "file": "nba_401873202_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873202",
+    "status": 200,
+    "bytes": 428387,
+    "sha256": "ad8f065e164e40edd75abe0c46b4371b9c34f60dcd7f05e5bebf570191e257b2",
+    "fetched_at": "2026-10-12T21:23:42.404228+00:00"
+  },
+  {
+    "file": "nba_401873203_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY30SASOKC-SAS/candlesticks?start_ts=1780185000&end_ts=1780195836&period_interval=1",
+    "status": 200,
+    "bytes": 56103,
+    "sha256": "52991f84f660b0e63403f7b93bf0e0c76b13cc8275a0d89146076a7065cbf934",
+    "fetched_at": "2026-10-12T21:23:41.769312+00:00"
+  },
+  {
+    "file": "nba_401873203_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873203",
+    "status": 200,
+    "bytes": 424117,
+    "sha256": "d2ae1199a27b8f6c7a1f596a8682bf4ee4f65f1f6f68f9eb570a42793cc4bff6",
+    "fetched_at": "2026-10-12T21:23:41.677707+00:00"
+  },
+  {
+    "file": "nba_401873341_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY19CLENYK-NYK/candlesticks?start_ts=1779234600&end_ts=1779246096&period_interval=1",
+    "status": 200,
+    "bytes": 65472,
+    "sha256": "c7993151ed4b55638abcb3824dacc754c5d84e8d77318d7720b311382da4cd48"
+  },
+  {
+    "file": "nba_401873341_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873341",
+    "status": 200,
+    "bytes": 428267,
+    "sha256": "d35ea68aad7a0e31b007dcfb75568c62d620978ff87e99273fd18ada407d668f"
+  },
+  {
+    "file": "nba_401873342_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY21CLENYK-NYK/candlesticks?start_ts=1779407400&end_ts=1779417864&period_interval=1",
+    "status": 200,
+    "bytes": 59522,
+    "sha256": "0dc3f6435ef541a0c01e2fe7bc375823c1bf0a9c2f16893b73e510a89aff65fe",
+    "fetched_at": "2026-10-12T21:23:43.006202+00:00"
+  },
+  {
+    "file": "nba_401873342_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873342",
+    "status": 200,
+    "bytes": 389110,
+    "sha256": "8733a17c20fe847e26b767b15a72e31a2cb6695b7e19d417a8479d441089118c",
+    "fetched_at": "2026-10-12T21:23:43.219120+00:00"
+  },
+  {
+    "file": "nba_401873343_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY23NYKCLE-NYK/candlesticks?start_ts=1779580200&end_ts=1779590829&period_interval=1",
+    "status": 200,
+    "bytes": 60777,
+    "sha256": "65d898ce3f7147334909127dbe5ce12cab71b1873841fc6f7afceb3d57b470ec",
+    "fetched_at": "2026-10-12T21:23:42.823928+00:00"
+  },
+  {
+    "file": "nba_401873343_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873343",
+    "status": 200,
+    "bytes": 385771,
+    "sha256": "477819c95844cb870243c02254c46afce6140a9132941f6c0e1b36ff0a9ed478",
+    "fetched_at": "2026-10-12T21:23:42.777008+00:00"
+  },
+  {
+    "file": "nba_401873344_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXNBAGAME-26MAY25NYKCLE-NYK/candlesticks?start_ts=1779753000&end_ts=1779762696&period_interval=1",
+    "status": 200,
+    "bytes": 55276,
+    "sha256": "cd9749c973f37b1daeb9b4b6bf309500e8407430b9ba2df804fc11ec4038405c",
+    "fetched_at": "2026-10-12T21:23:42.475720+00:00"
+  },
+  {
+    "file": "nba_401873344_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401873344",
+    "status": 200,
+    "bytes": 396837,
+    "sha256": "01beeaa4735ae68b25025881b3708c302c95005a16e86dfbee74ff3e6836cb11",
+    "fetched_at": "2026-10-12T21:23:42.500181+00:00"
+  },
+  {
+    "file": "nba_schedule_20260512.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260512",
+    "status": 200,
+    "bytes": 19592,
+    "sha256": "a826fd0eba7c8eea772e4bdfcf7b0d8a1a36472d81bac6105af0dea9605ec0a0"
+  },
+  {
+    "file": "nba_schedule_20260513.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260513",
+    "status": 200,
+    "bytes": 19827,
+    "sha256": "d928156d629c17a7e49448fe32813e9f01bbef5ea52292c3100d462a3cf8f850"
+  },
+  {
+    "file": "nba_schedule_20260515.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260515",
+    "status": 200,
+    "bytes": 33343,
+    "sha256": "e10e0f6d1f5ba4c09d6478fca9aa65bfa38130e176f5dd0729c2c15e2207f315"
+  },
+  {
+    "file": "nba_schedule_20260518.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260518",
+    "status": 200,
+    "bytes": 19947,
+    "sha256": "998016b6f9f07c8e96915e74db180b2de35e135b5527f492ea3892943a8eb45c"
+  },
+  {
+    "file": "nba_schedule_20260519.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260519",
+    "status": 200,
+    "bytes": 19740,
+    "sha256": "a2176711335fdfe5277eb950785562b1a9ffe91223256dfd2a30d164b41b6aa8"
+  },
+  {
+    "file": "nba_schedule_20260520.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260520",
+    "status": 200,
+    "bytes": 19683,
+    "sha256": "9c5e971dab2b32952656ddc91d3a4d9c8b1203dc0e744156f02264c386b84d14"
+  },
+  {
+    "file": "nba_schedule_20260521.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260521",
+    "status": 200,
+    "bytes": 19521,
+    "sha256": "7003d9ef4f42af1139b44a2b827891df827138bd8a35b51a7a452d91a5056cd7"
+  },
+  {
+    "file": "nba_schedule_20260522.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260522",
+    "status": 200,
+    "bytes": 19825,
+    "sha256": "ff81244728cc802d38629a481fcc237b3c840ff2c56bcf226b2ab0833b297007"
+  },
+  {
+    "file": "nba_schedule_20260523.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260523",
+    "status": 200,
+    "bytes": 19549,
+    "sha256": "97ee4b9335c67dacf43d39bf6ffc8a4e3084702a680de75273cae90f2fd0dc61"
+  },
+  {
+    "file": "nba_schedule_20260524.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260524",
+    "status": 200,
+    "bytes": 19806,
+    "sha256": "2793aaa5f53c24fa377ea6f0d68d1d6cc29d52148f761984ae737f30190f6e39"
+  },
+  {
+    "file": "nba_schedule_20260525.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260525",
+    "status": 200,
+    "bytes": 19593,
+    "sha256": "8d74635f0432ea8aed9b942655e200d85627c798d8e2992dbf3c03501453b8bf"
+  },
+  {
+    "file": "nba_schedule_20260526.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260526",
+    "status": 200,
+    "bytes": 19805,
+    "sha256": "da520d10ed679724fa2dcde6e777fe195f669e1a0f6f1a57c5ccab5e6b154d92"
+  },
+  {
+    "file": "nba_schedule_20260528.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260528",
+    "status": 200,
+    "bytes": 19423,
+    "sha256": "d886a4bc5daa39bf3f0fef1a82122c193b7661c21ce62cf06ddb6e49a71dcef8"
+  },
+  {
+    "file": "nba_schedule_20260530.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260530",
+    "status": 200,
+    "bytes": 19584,
+    "sha256": "2d34eac44d5875f5e76c2d96b3e346c23228c1096ea4cdef3398afc0ec910e6a"
+  },
+  {
+    "file": "nba_schedule_20260603.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260603",
+    "status": 200,
+    "bytes": 19486,
+    "sha256": "53cc1e905441cc7cf074bdfe457ad7a36ceb271428c695112688f8ad432d2ed4"
+  },
+  {
+    "file": "nba_schedule_20260605.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260605",
+    "status": 200,
+    "bytes": 19512,
+    "sha256": "32d4b8f0c9e4589baf7d36163d3a439d0a927f952d79db7904af4dabb69ddc59"
+  },
+  {
+    "file": "nba_schedule_20260608.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260608",
+    "status": 200,
+    "bytes": 19539,
+    "sha256": "16162a2a5e0c2d06d1dc85af688e573a0b53cd97a361a29668db3d17f6d85af6"
+  },
+  {
+    "file": "nba_schedule_20260610.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260610",
+    "status": 200,
+    "bytes": 19554,
+    "sha256": "c567a1f75f003004dd7b488a5b5cb83a4e8aca0589248c1ad0d2a142d2f78d36"
+  },
+  {
+    "file": "nba_schedule_20260613.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20260613",
+    "status": 200,
+    "bytes": 19669,
+    "sha256": "b1196ef5b42b2d922e9f0ed8cac96a4f0f9f553cd463a44263028a18ad3c34ad"
+  },
+  {
+    "file": "nba_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401766128",
+    "status": 200,
+    "bytes": 438149,
+    "sha256": "ca8213b2ac24533e0de8d98951e98bd8445fcf14560a59751d90b8a102352bc9"
+  },
+  {
+    "file": "poly_euro_events.json",
+    "url": "https://gamma-api.polymarket.com/events?tag_id=100268&closed=true&limit=100",
+    "status": 200,
+    "bytes": 896446,
+    "sha256": "77cc66e07020db5d4722b3d4a5b356a11187db7dc267b42c655521ab371c4418"
+  },
+  {
+    "file": "poly_events_euro.json",
+    "url": "https://gamma-api.polymarket.com/events?tag_id=100254&closed=true&limit=100",
+    "status": 200,
+    "bytes": 1149447,
+    "sha256": "12daeb25f52bd439fda6d122395fd4a3015a82553676b5985562f08abf4fee22"
+  },
+  {
+    "file": "poly_final.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/euro-finals-how-will-the-game-end",
+    "status": 200,
+    "bytes": 19872,
+    "sha256": "20e1205d6f750c9690e0321616c28327d03b4e0d2ad8a948eaab35e224b823d1"
+  },
+  {
+    "file": "poly_final_ingame.json",
+    "url": "https://clob.polymarket.com/prices-history?market=34155736750871257809895030163420196638552431615258977210702840388999035454884&startTs=1720983600&endTs=1720994400&fidelity=1",
+    "status": 200,
+    "bytes": 4740,
+    "sha256": "13da42d77f746762ab504342d857b6c1698199db313066d78dc7b29fafedb106"
+  },
+  {
+    "file": "poly_final_prices.json",
+    "url": "https://clob.polymarket.com/prices-history?market=34155736750871257809895030163420196638552431615258977210702840388999035454884&startTs=1720969200&endTs=1720980000&fidelity=1",
+    "status": 200,
+    "bytes": 4745,
+    "sha256": "ddf0acca84502384ee09a8c087fb37648d1f330a86532d3ab2cf6530782954fc"
+  },
+  {
+    "file": "soccer_740956_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY18ARSBUR-TIE/candlesticks?start_ts=1779130200&end_ts=1779138269&period_interval=1",
+    "status": 200,
+    "bytes": 45377,
+    "sha256": "25ff1b8e7a64c08015c2f684b08d6ff72cf312226c6a278755d59a9a4eb46648"
+  },
+  {
+    "file": "soccer_740956_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740956",
+    "status": 200,
+    "bytes": 410730,
+    "sha256": "da29d906741e5503b82354716890e4f39a64bad6db4dc9ac7c16ca92e0c96fd0"
+  },
+  {
+    "file": "soccer_740957_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY17AVLLFC-TIE/candlesticks?start_ts=1778871000&end_ts=1778878807&period_interval=1",
+    "status": 200,
+    "bytes": 43909,
+    "sha256": "6febf31cfb0064c4bab3ed982e46f894bc66501452df1baa17d474a91163c3ce",
+    "fetched_at": "2026-10-12T21:26:37.125962+00:00"
+  },
+  {
+    "file": "soccer_740957_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740957",
+    "status": 200,
+    "bytes": 422599,
+    "sha256": "d2b5fda79d1f249a68f9807f78b7c2972e4bc883267575f185a7982768ea8da1",
+    "fetched_at": "2026-10-12T21:26:37.382722+00:00"
+  },
+  {
+    "file": "soccer_740958_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY19BOUMCI-TIE/candlesticks?start_ts=1779214800&end_ts=1779222394&period_interval=1",
+    "status": 200,
+    "bytes": 42953,
+    "sha256": "15b4a0c26848bd3a7a79f3aa314048f58fcd258feb8c0a7f04fe336fe7206650"
+  },
+  {
+    "file": "soccer_740958_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740958",
+    "status": 200,
+    "bytes": 432684,
+    "sha256": "2b62fb2d99bc80eb1646b984057bde784a3f602104d91b451aed22fa054f84d6"
+  },
+  {
+    "file": "soccer_740959_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY17BRECRY-TIE/candlesticks?start_ts=1779025800&end_ts=1779034191&period_interval=1",
+    "status": 200,
+    "bytes": 46733,
+    "sha256": "fc74e025cbfab9e297a806139b2c6d2c6db53d75356aef3575f94ed95bdee126"
+  },
+  {
+    "file": "soccer_740959_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740959",
+    "status": 200,
+    "bytes": 399690,
+    "sha256": "0d2c0a5d61d8fb9eb360d480cce8514fc81f55a3a1cff90079a787eaa008f701"
+  },
+  {
+    "file": "soccer_740960_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY19CFCTOT-TOT/candlesticks?start_ts=1779217500&end_ts=1779225060&period_interval=1",
+    "status": 200,
+    "bytes": 42968,
+    "sha256": "1f5ee36cea0197f2b845eddd2a0756d937a463661e027bcd4b72c9a860df5ddd"
+  },
+  {
+    "file": "soccer_740960_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740960",
+    "status": 200,
+    "bytes": 425349,
+    "sha256": "3dafa8ca3f6b17013660b0db1f2a5609a15b06c174abe3b3a00fca324f3e3f86"
+  },
+  {
+    "file": "soccer_740961_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY17EVESUN-TIE/candlesticks?start_ts=1779025800&end_ts=1779033623&period_interval=1",
+    "status": 200,
+    "bytes": 43212,
+    "sha256": "6497168d74dbb6f0f67f40b6a63afbc926d531cafda95c9478732515da961c66"
+  },
+  {
+    "file": "soccer_740961_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740961",
+    "status": 200,
+    "bytes": 396525,
+    "sha256": "98838dc282b3eda404e4725e15ba9e7c928f630546ee4e8af1e54b5b446c35f2"
+  },
+  {
+    "file": "soccer_740962_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY17LEEBRI-TIE/candlesticks?start_ts=1779025800&end_ts=1779033622&period_interval=1",
+    "status": 200,
+    "bytes": 43827,
+    "sha256": "ea21a7ff488a45931de3a0b1a2a7cebabbe72ea78c7090a597176348d3b6c819"
+  },
+  {
+    "file": "soccer_740962_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740962",
+    "status": 200,
+    "bytes": 405010,
+    "sha256": "d5500a75cb938978d72d8efceeee9cf40065b3f9e6bfa894d53c62d0600ae4a0"
+  },
+  {
+    "file": "soccer_740963_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY17MUNNFO-TIE/candlesticks?start_ts=1779016800&end_ts=1779024608&period_interval=1",
+    "status": 200,
+    "bytes": 42960,
+    "sha256": "0db61fe5800deb8053ede19548d78758e37c4ee8ffb23b6c6d3af2b9158e6284"
+  },
+  {
+    "file": "soccer_740963_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740963",
+    "status": 200,
+    "bytes": 447087,
+    "sha256": "df257b0e704e51612ec1338c61942d93b50b8bd14cbb7c47b6f51e963e95a585"
+  },
+  {
+    "file": "soccer_740964_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY17NEWWHU-WHU/candlesticks?start_ts=1779034800&end_ts=1779042601&period_interval=1",
+    "status": 200,
+    "bytes": 43574,
+    "sha256": "2545e70fbb63ab0b5b19c19bde429ee297afc2b8dab7bc987fd66fa6963128b4"
+  },
+  {
+    "file": "soccer_740964_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740964",
+    "status": 200,
+    "bytes": 413791,
+    "sha256": "8deb08daa95b1036494cdcb2bfeb313c4c4401d504ac173521c5aca12454e937"
+  },
+  {
+    "file": "soccer_740965_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY17WOLFUL-WOL/candlesticks?start_ts=1779025800&end_ts=1779033621&period_interval=1",
+    "status": 200,
+    "bytes": 43470,
+    "sha256": "d137bd4b5b0d79b3906fd9f40841521b48b7bc7da954faa16c8c5c6a53bc1d9d"
+  },
+  {
+    "file": "soccer_740965_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740965",
+    "status": 200,
+    "bytes": 404537,
+    "sha256": "3ccaff2bc1f4187e66fdef511a807e646ac3bc6a279b68ed77e01f4ab7ed10ef"
+  },
+  {
+    "file": "soccer_740966_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24BRIMUN-TIE/candlesticks?start_ts=1779634200&end_ts=1779642024&period_interval=1",
+    "status": 200,
+    "bytes": 42967,
+    "sha256": "f95052a52428b32a84ae26533ff493e0c6e939b954a35539ffb2ce1a95ae6e53"
+  },
+  {
+    "file": "soccer_740966_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740966",
+    "status": 200,
+    "bytes": 415918,
+    "sha256": "25d00e08f5c4504a7920211d29e8cefcbbdcfea012ddd59767b0036d3c2934ef"
+  },
+  {
+    "file": "soccer_740967_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24BURWOL-WOL/candlesticks?start_ts=1779634200&end_ts=1779642363&period_interval=1",
+    "status": 200,
+    "bytes": 45168,
+    "sha256": "e22a3e239fe6692750bbd4e531d3650e0a68b21540fc20a18aa4a36bd69829fb"
+  },
+  {
+    "file": "soccer_740967_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740967",
+    "status": 200,
+    "bytes": 413614,
+    "sha256": "0dce9fed3430b5118453e62b7f12841eebed657a3ad2a26a55049bde3c0d5d5e"
+  },
+  {
+    "file": "soccer_740968_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24CRYARS-TIE/candlesticks?start_ts=1779634200&end_ts=1779642022&period_interval=1",
+    "status": 200,
+    "bytes": 43807,
+    "sha256": "8038fe073522f236f56100304d46a0690e8311ea7f87f87af3bbbf431ee294fd"
+  },
+  {
+    "file": "soccer_740968_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740968",
+    "status": 200,
+    "bytes": 412781,
+    "sha256": "b08cb52ab94b50910465b0b05c4f5507fce59bc34dab501da062e8ca0a4d04b8"
+  },
+  {
+    "file": "soccer_740969_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24FULNEW-TIE/candlesticks?start_ts=1779634200&end_ts=1779642021&period_interval=1",
+    "status": 200,
+    "bytes": 42521,
+    "sha256": "62c811b99c6214b2bd1cc490b64aff19103383854d25ff3d0be32c037b03066f"
+  },
+  {
+    "file": "soccer_740969_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740969",
+    "status": 200,
+    "bytes": 399968,
+    "sha256": "e2d1dab024af9e300a724a3dee6c5f1ca26f8658af0b208794de8c1bd0e8715f"
+  },
+  {
+    "file": "soccer_740970_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24MCIAVL-TIE/candlesticks?start_ts=1779634200&end_ts=1779642360&period_interval=1",
+    "status": 200,
+    "bytes": 45842,
+    "sha256": "04ba78eafe4d057deeec235ac397cbd8c1f186e7e96308c50ac7226498b622af"
+  },
+  {
+    "file": "soccer_740970_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740970",
+    "status": 200,
+    "bytes": 418007,
+    "sha256": "4e574f5374dc34529830786f2405b7bc88c977ba63c3a92bd1b0cab9bce59869"
+  },
+  {
+    "file": "soccer_740971_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24WHULEE-WHU/candlesticks?start_ts=1779634200&end_ts=1779642018&period_interval=1",
+    "status": 200,
+    "bytes": 44237,
+    "sha256": "399858eb8d31efa406786e72092a1ebde2e3a93bc5a8b282afd47745e535c615"
+  },
+  {
+    "file": "soccer_740971_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740971",
+    "status": 200,
+    "bytes": 421148,
+    "sha256": "2c0d5aed6698b0d1ff80953d29d3ba7daa71df9c80780842d72dc51a38252f9c"
+  },
+  {
+    "file": "soccer_740972_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24NFOBOU-TIE/candlesticks?start_ts=1779634200&end_ts=1779642359&period_interval=1",
+    "status": 200,
+    "bytes": 45005,
+    "sha256": "74ced1841e1e4335a0dc53ebe4d833fc97f7c112fe39379b784b6e51f809ede6"
+  },
+  {
+    "file": "soccer_740972_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740972",
+    "status": 200,
+    "bytes": 417099,
+    "sha256": "243579a466ff41f22a2486957950c7d2b3e168ae3e9dc8eedb47551c7d29c682"
+  },
+  {
+    "file": "soccer_740973_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24SUNCFC-TIE/candlesticks?start_ts=1779634200&end_ts=1779642358&period_interval=1",
+    "status": 200,
+    "bytes": 44936,
+    "sha256": "1b5a5914efcf62897c316da80e99e7cb83a66b05274de6e3a10b987a82f2b705"
+  },
+  {
+    "file": "soccer_740973_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740973",
+    "status": 200,
+    "bytes": 435135,
+    "sha256": "9089481d11782523549eafe31fa3ed9f58fcbf075a9c4d045063c30da9c81a36"
+  },
+  {
+    "file": "soccer_740974_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24TOTEVE-TOT/candlesticks?start_ts=1779634200&end_ts=1779642889&period_interval=1",
+    "status": 200,
+    "bytes": 49028,
+    "sha256": "01b2b49cfe84844a6c271e26f419ad9ec6ead3e10bdc2a23c7631a30b371bf3d"
+  },
+  {
+    "file": "soccer_740974_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740974",
+    "status": 200,
+    "bytes": 436871,
+    "sha256": "8a57948890c31771744281626aed5cab555391eebfb6040233c58ac6e2024a1a"
+  },
+  {
+    "file": "soccer_740975_candles.json",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXEPLGAME-26MAY24LFCBRE-TIE/candlesticks?start_ts=1779634200&end_ts=1779642361&period_interval=1",
+    "status": 200,
+    "bytes": 45789,
+    "sha256": "2efa0d68abe7760ade496caf7191200a8ab81df28f556ba7145db784ae6e5751"
+  },
+  {
+    "file": "soccer_740975_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740975",
+    "status": 200,
+    "bytes": 428572,
+    "sha256": "0b549b9c20316a85a8e91f65158db87a6fa81c2228ce09510288a580e1608e83"
+  },
+  {
+    "file": "soccer_schedule_20260515.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260515",
+    "status": 200,
+    "bytes": 15732,
+    "sha256": "d35bc237d7ebb19249024783d9e2df01bfadccfa2703ebf075a896e3edad8534",
+    "fetched_at": "2026-10-12T21:26:07.518662+00:00"
+  },
+  {
+    "file": "soccer_schedule_20260516.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260516",
+    "status": 200,
+    "bytes": 3243,
+    "sha256": "e810b938581de6007bf0b69d3677bb15191a4bc44de34988e31332ab5e69acac",
+    "fetched_at": "2026-10-12T21:26:07.432043+00:00"
+  },
+  {
+    "file": "soccer_schedule_20260517.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260517",
+    "status": 200,
+    "bytes": 65442,
+    "sha256": "a102577c6336d9ca2bd9704f33a4cd8f77e27237c4e1030b61d0b169559ea7da"
+  },
+  {
+    "file": "soccer_schedule_20260518.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260518",
+    "status": 200,
+    "bytes": 13155,
+    "sha256": "1bf3bad706dcfc4f5077f08ecf9a8f124b7cbb204f58b53d5dc71917a6a5b6e9"
+  },
+  {
+    "file": "soccer_schedule_20260519.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260519",
+    "status": 200,
+    "bytes": 27384,
+    "sha256": "4437b781d6e234b23f8a6c091bc158591343e98bb0f3aac08b3e62a2589ce0ec"
+  },
+  {
+    "file": "soccer_schedule_20260520.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260520",
+    "status": 200,
+    "bytes": 3243,
+    "sha256": "e810b938581de6007bf0b69d3677bb15191a4bc44de34988e31332ab5e69acac",
+    "fetched_at": "2026-10-12T21:26:07.543814+00:00"
+  },
+  {
+    "file": "soccer_schedule_20260524.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260524",
+    "status": 200,
+    "bytes": 107228,
+    "sha256": "6fd4f55cfd6f64cb30cc22cb891856a5487962d5920ce5af65310cb2d7176597"
+  },
+  {
+    "file": "soccer_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/summary?event=703945",
+    "status": 200,
+    "bytes": 383627,
+    "sha256": "aaa8d88835886442663340182680f8f88b5f2cf14cd58c74eaacae430fc3cbfc"
+  },
+  {
+    "file": "sportsdataverse.json",
+    "url": "https://api.github.com/repos/sportsdataverse/sportsdataverse-data/releases/tags/espn_nba_pbp",
+    "status": 200,
+    "bytes": 131933,
+    "sha256": "a56b4ab33906699572d1dc131daf97f297a28c485b04fc0cc48a9bd673d98d8e"
+  },
+  {
+    "file": "statsbomb_final.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3943043.json",
+    "status": 200,
+    "bytes": 2806118,
+    "sha256": "cd6ab2cf6c129cdc35d43242006582f69f6419d9041dd417405171f91ab26989"
+  },
+  {
+    "file": "statsbomb_matches.json",
+    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/55/282.json",
+    "status": 200,
+    "bytes": 93280,
+    "sha256": "70aa07d8a73e899d501c3edcd39b4bea0d4ae1d48bce7b59c4619869a13adc1b"
+  }
+]

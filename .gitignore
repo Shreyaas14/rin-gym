@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Re-downloadable provider payloads and local environments
+/data/raw/
+.venv/
+.DS_Store
