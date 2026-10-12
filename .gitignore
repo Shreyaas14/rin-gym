@@ -223,3 +223,6 @@ __marimo__/
 /data/raw/
 .venv/
 .DS_Store
+
+# Regenerated per-snapshot forecast export
+/data/processed/forecast/predictions.csv

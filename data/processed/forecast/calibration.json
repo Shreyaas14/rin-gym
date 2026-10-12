@@ -1,0 +1,1319 @@
+{
+  "climatology": {
+    "home": [
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 2008,
+        "games": 20,
+        "weight": 1.0,
+        "predicted": 0.5061728395061729,
+        "observed": 0.3
+      }
+    ],
+    "draw": [
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 2008,
+        "games": 20,
+        "weight": 1.0,
+        "predicted": 0.33333333333333326,
+        "observed": 0.30000000000000004
+      }
+    ],
+    "away": [
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 2008,
+        "games": 20,
+        "weight": 1.0,
+        "predicted": 0.16049382716049385,
+        "observed": 0.39999999999999997
+      }
+    ]
+  },
+  "pregame_market": {
+    "home": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 494,
+        "games": 5,
+        "weight": 0.25,
+        "predicted": 0.050116369948880905,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 400,
+        "games": 4,
+        "weight": 0.19999999999999996,
+        "predicted": 0.160962907321414,
+        "observed": 0.25
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 402,
+        "games": 4,
+        "weight": 0.20000000000000004,
+        "predicted": 0.25731230460564464,
+        "observed": 0.49999999999999994
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 304,
+        "games": 3,
+        "weight": 0.15000000000000002,
+        "predicted": 0.3709928955120429,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 101,
+        "games": 1,
+        "weight": 0.05000000000000002,
+        "predicted": 0.4038941587618571,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 203,
+        "games": 2,
+        "weight": 0.09999999999999998,
+        "predicted": 0.5621890547263683,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 104,
+        "games": 1,
+        "weight": 0.05,
+        "predicted": 0.8009950248756217,
+        "observed": 1.0
+      }
+    ],
+    "draw": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 196,
+        "games": 2,
+        "weight": 0.1,
+        "predicted": 0.09533606801094374,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 501,
+        "games": 5,
+        "weight": 0.25,
+        "predicted": 0.12109390004765036,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 1007,
+        "games": 10,
+        "weight": 0.5,
+        "predicted": 0.2569876333402103,
+        "observed": 0.30000000000000004
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 204,
+        "games": 2,
+        "weight": 0.10000000000000003,
+        "predicted": 0.3829244745896969,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 100,
+        "games": 1,
+        "weight": 0.05000000000000002,
+        "predicted": 0.44827586206896525,
+        "observed": 1.0
+      }
+    ],
+    "away": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 104,
+        "games": 1,
+        "weight": 0.05,
+        "predicted": 0.0746268656716418,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 203,
+        "games": 2,
+        "weight": 0.09999999999999998,
+        "predicted": 0.16915422885572146,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 304,
+        "games": 3,
+        "weight": 0.15000000000000002,
+        "predicted": 0.2596149879116436,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 201,
+        "games": 2,
+        "weight": 0.10000000000000003,
+        "predicted": 0.3283843079601702,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 104,
+        "games": 1,
+        "weight": 0.05,
+        "predicted": 0.4673366834170854,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 499,
+        "games": 5,
+        "weight": 0.24999999999999997,
+        "predicted": 0.5549632385606597,
+        "observed": 0.39999999999999997
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 99,
+        "games": 1,
+        "weight": 0.049999999999999996,
+        "predicted": 0.7313432835820897,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 494,
+        "games": 5,
+        "weight": 0.25,
+        "predicted": 0.8463766958339172,
+        "observed": 1.0
+      }
+    ]
+  },
+  "poisson_training": {
+    "home": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 389,
+        "games": 16,
+        "weight": 0.19582546695519454,
+        "predicted": 0.029756687636093102,
+        "observed": 0.017185633042073253
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 184,
+        "games": 16,
+        "weight": 0.09181994085596239,
+        "predicted": 0.1447463353846063,
+        "observed": 0.14660800623532888
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 195,
+        "games": 15,
+        "weight": 0.09664999404407681,
+        "predicted": 0.251229573177011,
+        "observed": 0.24589885391285515
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 194,
+        "games": 15,
+        "weight": 0.09628207870862374,
+        "predicted": 0.3450256278208588,
+        "observed": 0.3395572611411712
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 205,
+        "games": 11,
+        "weight": 0.1021840194696033,
+        "predicted": 0.4559749199796231,
+        "observed": 0.2674760640034298
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 454,
+        "games": 16,
+        "weight": 0.22636375774414252,
+        "predicted": 0.5601005715283655,
+        "observed": 0.2600897929139734
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 108,
+        "games": 19,
+        "weight": 0.05390691952526514,
+        "predicted": 0.6081413513653509,
+        "observed": 0.2203501792164585
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 176,
+        "games": 8,
+        "weight": 0.08643674266605152,
+        "predicted": 0.8349931066411831,
+        "observed": 0.915091327574744
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 103,
+        "games": 7,
+        "weight": 0.05053108003108002,
+        "predicted": 0.9667778502925525,
+        "observed": 0.980210199358792
+      }
+    ],
+    "draw": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 334,
+        "games": 15,
+        "weight": 0.16721830342724148,
+        "predicted": 0.03636508060426387,
+        "observed": 0.005980206589257204
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 305,
+        "games": 13,
+        "weight": 0.15191590032597185,
+        "predicted": 0.13814427245153876,
+        "observed": 0.04831113170372458
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 827,
+        "games": 20,
+        "weight": 0.4115680941548632,
+        "predicted": 0.25579291107571056,
+        "observed": 0.27720610271179585
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 212,
+        "games": 12,
+        "weight": 0.1057808789315017,
+        "predicted": 0.3457498185981843,
+        "observed": 0.5735050806322417
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 107,
+        "games": 11,
+        "weight": 0.05314531067500679,
+        "predicted": 0.4465142905106693,
+        "observed": 0.637007008777396
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 85,
+        "games": 10,
+        "weight": 0.04205075854173642,
+        "predicted": 0.5484858119449987,
+        "observed": 0.6390291351336017
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 50,
+        "games": 8,
+        "weight": 0.024809744711496953,
+        "predicted": 0.6464515239246252,
+        "observed": 0.7819458453612805
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 39,
+        "games": 7,
+        "weight": 0.01931361839983666,
+        "predicted": 0.7485843630053197,
+        "observed": 0.8506434514290817
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 29,
+        "games": 7,
+        "weight": 0.014351473755230916,
+        "predicted": 0.8497501595485099,
+        "observed": 0.8660014326141252
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 20,
+        "games": 7,
+        "weight": 0.009845917077114123,
+        "predicted": 0.9318410795792981,
+        "observed": 0.8046828032355738
+      }
+    ],
+    "away": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 377,
+        "games": 12,
+        "weight": 0.18543077803802388,
+        "predicted": 0.03298575170753533,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 949,
+        "games": 20,
+        "weight": 0.47262920123469687,
+        "predicted": 0.16807153719457468,
+        "observed": 0.226764160166406
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 21,
+        "games": 5,
+        "weight": 0.010466673074920498,
+        "predicted": 0.3933623252260152,
+        "observed": 0.3900052730304772
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 147,
+        "games": 8,
+        "weight": 0.07308879496986292,
+        "predicted": 0.4480688587936371,
+        "observed": 0.6403215903436198
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 105,
+        "games": 8,
+        "weight": 0.05200865676155937,
+        "predicted": 0.5492585591098065,
+        "observed": 0.7393185451827883
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 58,
+        "games": 7,
+        "weight": 0.02906009250594377,
+        "predicted": 0.6487521277211521,
+        "observed": 0.9007361940081443
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 76,
+        "games": 4,
+        "weight": 0.038457237776625235,
+        "predicted": 0.7544705103732959,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 76,
+        "games": 7,
+        "weight": 0.03829605887723194,
+        "predicted": 0.8535102293020371,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 199,
+        "games": 8,
+        "weight": 0.10056250676113553,
+        "predicted": 0.9653317965932037,
+        "observed": 1.0
+      }
+    ]
+  },
+  "poisson_pregame": {
+    "home": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 817,
+        "games": 17,
+        "weight": 0.41071279417992246,
+        "predicted": 0.021295388681397194,
+        "observed": 0.02842150789674026
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 372,
+        "games": 14,
+        "weight": 0.18484735207757413,
+        "predicted": 0.16271590203376235,
+        "observed": 0.3803953533809074
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 335,
+        "games": 10,
+        "weight": 0.16586539218880508,
+        "predicted": 0.2439902351148019,
+        "observed": 0.4100073008515862
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 166,
+        "games": 5,
+        "weight": 0.08215248190240981,
+        "predicted": 0.34403028783777356,
+        "observed": 0.023408628425387996
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 12,
+        "games": 1,
+        "weight": 0.00606060606060606,
+        "predicted": 0.4836000177907375,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 39,
+        "games": 3,
+        "weight": 0.019162781662781653,
+        "predicted": 0.5549188225039319,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 15,
+        "games": 2,
+        "weight": 0.007332944832944833,
+        "predicted": 0.6366362520393605,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 37,
+        "games": 5,
+        "weight": 0.018366424095732956,
+        "predicted": 0.7524200236246589,
+        "observed": 0.6003996733232878
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 85,
+        "games": 5,
+        "weight": 0.04235470085470086,
+        "predicted": 0.8685159009596721,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 130,
+        "games": 7,
+        "weight": 0.06314452214452215,
+        "predicted": 0.9553312007225253,
+        "observed": 0.9841633135220937
+      }
+    ],
+    "draw": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 702,
+        "games": 15,
+        "weight": 0.35156174138698404,
+        "predicted": 0.03255492649172739,
+        "observed": 0.0028444505822925797
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 239,
+        "games": 14,
+        "weight": 0.11942833710182071,
+        "predicted": 0.1385880243442097,
+        "observed": 0.11697640081677058
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 293,
+        "games": 12,
+        "weight": 0.1446289709220423,
+        "predicted": 0.26483582893736785,
+        "observed": 0.1911446112749088
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 245,
+        "games": 11,
+        "weight": 0.12236662069828327,
+        "predicted": 0.34415909124030947,
+        "observed": 0.4125680254559503
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 179,
+        "games": 11,
+        "weight": 0.08879536903332924,
+        "predicted": 0.4466120142284741,
+        "observed": 0.7149315960521884
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 110,
+        "games": 10,
+        "weight": 0.05437943565812588,
+        "predicted": 0.5457304348567699,
+        "observed": 0.7570311358952954
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 81,
+        "games": 9,
+        "weight": 0.04008624013473576,
+        "predicted": 0.6460156094498692,
+        "observed": 0.8296698741277614
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 70,
+        "games": 8,
+        "weight": 0.03473150193576307,
+        "predicted": 0.7460840909873294,
+        "observed": 0.829695864409831
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 52,
+        "games": 7,
+        "weight": 0.02576382144928306,
+        "predicted": 0.8483761947991636,
+        "observed": 0.9253574658222747
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 37,
+        "games": 7,
+        "weight": 0.018257961679632628,
+        "predicted": 0.9393078329604153,
+        "observed": 0.8946718720950005
+      }
+    ],
+    "away": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 362,
+        "games": 12,
+        "weight": 0.17840784333840254,
+        "predicted": 0.03016056345899993,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 234,
+        "games": 9,
+        "weight": 0.11546943663060583,
+        "predicted": 0.1559137539713413,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 215,
+        "games": 8,
+        "weight": 0.10629717668387834,
+        "predicted": 0.2509543208980439,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 123,
+        "games": 6,
+        "weight": 0.06133999714728146,
+        "predicted": 0.3394024639276496,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 187,
+        "games": 7,
+        "weight": 0.09297962855452453,
+        "predicted": 0.4573894437491409,
+        "observed": 0.22998306885297387
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 144,
+        "games": 7,
+        "weight": 0.07159180829187764,
+        "predicted": 0.532958734797668,
+        "observed": 0.3958101686701131
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 26,
+        "games": 2,
+        "weight": 0.01283993783993784,
+        "predicted": 0.6435403114181468,
+        "observed": 0.5506807866868382
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 76,
+        "games": 6,
+        "weight": 0.03802195027195027,
+        "predicted": 0.761749936215981,
+        "observed": 0.5958812079473988
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 128,
+        "games": 9,
+        "weight": 0.0638257022229097,
+        "predicted": 0.8499898563198016,
+        "observed": 0.9608308265646838
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 513,
+        "games": 8,
+        "weight": 0.2592265190186319,
+        "predicted": 0.9708852445215845,
+        "observed": 1.0
+      }
+    ]
+  },
+  "poisson_calibrated": {
+    "home": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 869,
+        "games": 17,
+        "weight": 0.4363296194703069,
+        "predicted": 0.018063377608704394,
+        "observed": 0.045484314977852235
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 378,
+        "games": 13,
+        "weight": 0.18805349910514974,
+        "predicted": 0.1539849790063503,
+        "observed": 0.40129453093901063
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 288,
+        "games": 10,
+        "weight": 0.14243551653674763,
+        "predicted": 0.23814306770394839,
+        "observed": 0.3906660202995111
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 147,
+        "games": 5,
+        "weight": 0.07279898919690327,
+        "predicted": 0.34520167221038395,
+        "observed": 0.013208129290610585
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 12,
+        "games": 2,
+        "weight": 0.00598059805980598,
+        "predicted": 0.4351887947555416,
+        "observed": 0.3377926421404683
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 25,
+        "games": 1,
+        "weight": 0.012626262626262626,
+        "predicted": 0.5403487961624057,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 32,
+        "games": 2,
+        "weight": 0.015384615384615385,
+        "predicted": 0.6351270895769042,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 23,
+        "games": 3,
+        "weight": 0.011429538099441009,
+        "predicted": 0.7642900152541432,
+        "observed": 0.6177507786558214
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 53,
+        "games": 5,
+        "weight": 0.026608603168009105,
+        "predicted": 0.8627908115903872,
+        "observed": 0.8883708020692311
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 181,
+        "games": 7,
+        "weight": 0.08835275835275834,
+        "predicted": 0.9580418350688834,
+        "observed": 0.988681734236215
+      }
+    ],
+    "draw": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 832,
+        "games": 15,
+        "weight": 0.4164413043806247,
+        "predicted": 0.031139235314881764,
+        "observed": 0.002401298789243073
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 134,
+        "games": 11,
+        "weight": 0.06698336271267157,
+        "predicted": 0.13983509994097623,
+        "observed": 0.2737878232122348
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 298,
+        "games": 11,
+        "weight": 0.1472276482258733,
+        "predicted": 0.25912448665536925,
+        "observed": 0.18876805737099528
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 198,
+        "games": 11,
+        "weight": 0.09891441106738892,
+        "predicted": 0.34466769849684625,
+        "observed": 0.4145697934529746
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 156,
+        "games": 11,
+        "weight": 0.0773581743997661,
+        "predicted": 0.4472617975501072,
+        "observed": 0.6857168427988942
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 112,
+        "games": 10,
+        "weight": 0.05553005660147488,
+        "predicted": 0.5446773897140448,
+        "observed": 0.7690653340073407
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 83,
+        "games": 9,
+        "weight": 0.04094542017148477,
+        "predicted": 0.6490620379930148,
+        "observed": 0.7994516010057422
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 72,
+        "games": 8,
+        "weight": 0.03571713884896896,
+        "predicted": 0.7498852214192921,
+        "observed": 0.8061149451443439
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 63,
+        "games": 8,
+        "weight": 0.031235481179841325,
+        "predicted": 0.8482381967211082,
+        "observed": 0.8907029110807985
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 60,
+        "games": 7,
+        "weight": 0.029647002411905394,
+        "predicted": 0.9473992585735497,
+        "observed": 0.9027012800640848
+      }
+    ],
+    "away": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 404,
+        "games": 12,
+        "weight": 0.19908915922798937,
+        "predicted": 0.026574416629871752,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 230,
+        "games": 9,
+        "weight": 0.11353998950366759,
+        "predicted": 0.14911849798829005,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 192,
+        "games": 8,
+        "weight": 0.09499260108068695,
+        "predicted": 0.2505273455071276,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 103,
+        "games": 6,
+        "weight": 0.05136724531950841,
+        "predicted": 0.34106833931369457,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 138,
+        "games": 7,
+        "weight": 0.06854741398222675,
+        "predicted": 0.4613140323973509,
+        "observed": 0.20343988507814043
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 182,
+        "games": 6,
+        "weight": 0.09066292364593334,
+        "predicted": 0.5475928877208354,
+        "observed": 0.35003089125790765
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 33,
+        "games": 3,
+        "weight": 0.016253885003885006,
+        "predicted": 0.6444082923467879,
+        "observed": 0.4971616372871227
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 32,
+        "games": 4,
+        "weight": 0.01591880341880342,
+        "predicted": 0.7572965723741684,
+        "observed": 0.6979865771812078
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 130,
+        "games": 8,
+        "weight": 0.06510419731293518,
+        "predicted": 0.8586476893057028,
+        "observed": 0.7772801048401977
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 564,
+        "games": 8,
+        "weight": 0.284523781504364,
+        "predicted": 0.9769712333820434,
+        "observed": 1.0
+      }
+    ]
+  },
+  "polymarket_live": {
+    "home": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 767,
+        "games": 16,
+        "weight": 0.3858587000013957,
+        "predicted": 0.021209168921319303,
+        "observed": 0.016396994746782155
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 241,
+        "games": 13,
+        "weight": 0.11893294502096567,
+        "predicted": 0.15653632532037012,
+        "observed": 0.3075407644221795
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 450,
+        "games": 13,
+        "weight": 0.2243576762779843,
+        "predicted": 0.24051428898014302,
+        "observed": 0.4341159315920362
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 222,
+        "games": 6,
+        "weight": 0.10949462655376817,
+        "predicted": 0.3503677243823436,
+        "observed": 0.08386875431433581
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 11,
+        "games": 5,
+        "weight": 0.005360639686074657,
+        "predicted": 0.44661305545645896,
+        "observed": 0.7265394846129477
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 65,
+        "games": 6,
+        "weight": 0.03205110229019884,
+        "predicted": 0.5265176498380694,
+        "observed": 0.9534901961782799
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 24,
+        "games": 3,
+        "weight": 0.01196391483808575,
+        "predicted": 0.6350137573712483,
+        "observed": 0.633217276977016
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 39,
+        "games": 6,
+        "weight": 0.019631716232847773,
+        "predicted": 0.7689099379242169,
+        "observed": 0.8728917753859483
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 50,
+        "games": 5,
+        "weight": 0.024969308469308463,
+        "predicted": 0.8346319878446948,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 139,
+        "games": 7,
+        "weight": 0.06737937062937063,
+        "predicted": 0.964023748340327,
+        "observed": 0.9851586622038867
+      }
+    ],
+    "draw": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 658,
+        "games": 16,
+        "weight": 0.3299586222588674,
+        "predicted": 0.028929532970350266,
+        "observed": 0.005973093756166576
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 240,
+        "games": 15,
+        "weight": 0.11969630641547868,
+        "predicted": 0.14627217731046802,
+        "observed": 0.004055571201327467
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 365,
+        "games": 13,
+        "weight": 0.18070481486238274,
+        "predicted": 0.2664800851754233,
+        "observed": 0.2754468362078064
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 308,
+        "games": 13,
+        "weight": 0.1529129235982994,
+        "predicted": 0.3406070061259306,
+        "observed": 0.4412360299918476
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 177,
+        "games": 11,
+        "weight": 0.08793203902891703,
+        "predicted": 0.4457504038579111,
+        "observed": 0.7411758471624761
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 89,
+        "games": 9,
+        "weight": 0.044195032343306885,
+        "predicted": 0.5456109269664557,
+        "observed": 0.9110040716199727
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 66,
+        "games": 8,
+        "weight": 0.03268071041378878,
+        "predicted": 0.6508821540212684,
+        "observed": 0.8638851667541295
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 45,
+        "games": 7,
+        "weight": 0.022292376451908045,
+        "predicted": 0.7421794080697188,
+        "observed": 0.9353004066022651
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 38,
+        "games": 7,
+        "weight": 0.018767568745641693,
+        "predicted": 0.8496152892248859,
+        "observed": 0.8719148875154974
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 22,
+        "games": 7,
+        "weight": 0.010859605881409346,
+        "predicted": 0.9451945342380287,
+        "observed": 0.8671860002970465
+      }
+    ],
+    "away": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "snapshots": 309,
+        "games": 12,
+        "weight": 0.15226724113404466,
+        "predicted": 0.027743746703757354,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "snapshots": 188,
+        "games": 10,
+        "weight": 0.09302675106409608,
+        "predicted": 0.15134050332168653,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "snapshots": 290,
+        "games": 9,
+        "weight": 0.14320493412946483,
+        "predicted": 0.24948454525416328,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "snapshots": 118,
+        "games": 8,
+        "weight": 0.059004882238616344,
+        "predicted": 0.34419863959067726,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "snapshots": 234,
+        "games": 7,
+        "weight": 0.11593502636983913,
+        "predicted": 0.45301662750029215,
+        "observed": 0.168204848777062
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "snapshots": 146,
+        "games": 8,
+        "weight": 0.07243977377992636,
+        "predicted": 0.5376782700538199,
+        "observed": 0.3892815916039544
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "snapshots": 25,
+        "games": 4,
+        "weight": 0.012518065268065268,
+        "predicted": 0.6591447936048164,
+        "observed": 0.6051859783064103
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "snapshots": 85,
+        "games": 6,
+        "weight": 0.0419730425992562,
+        "predicted": 0.7565144227472269,
+        "observed": 0.8707961923357678
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "snapshots": 143,
+        "games": 9,
+        "weight": 0.07178335501951758,
+        "predicted": 0.85638141665095,
+        "observed": 0.9932374727668846
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "snapshots": 470,
+        "games": 9,
+        "weight": 0.2378469283971736,
+        "predicted": 0.9720648836884427,
+        "observed": 0.9959180730524863
+      }
+    ]
+  }
+}

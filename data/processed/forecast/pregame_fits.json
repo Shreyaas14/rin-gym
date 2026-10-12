@@ -1,0 +1,506 @@
+{
+  "400021443": {
+    "full_match_goal_rates": [
+      1.792929292929293,
+      0.5308080808080808
+    ],
+    "probability_fit_squared_error": 5.229155837901115e-06
+  },
+  "400021441": {
+    "full_match_goal_rates": [
+      1.0116161616161616,
+      0.8914141414141414
+    ],
+    "probability_fit_squared_error": 9.774196870221198e-05
+  },
+  "400021449": {
+    "full_match_goal_rates": [
+      1.3722222222222222,
+      0.7111111111111111
+    ],
+    "probability_fit_squared_error": 1.2417379217472809e-05
+  },
+  "400021458": {
+    "full_match_goal_rates": [
+      1.1919191919191918,
+      0.7111111111111111
+    ],
+    "probability_fit_squared_error": 1.7120854057974487e-05
+  },
+  "400021447": {
+    "full_match_goal_rates": [
+      0.5909090909090909,
+      2.814646464646464
+    ],
+    "probability_fit_squared_error": 7.491748731694711e-06
+  },
+  "400021456": {
+    "full_match_goal_rates": [
+      1.4924242424242424,
+      0.651010101010101
+    ],
+    "probability_fit_squared_error": 2.3353979879229635e-05
+  },
+  "400021453": {
+    "full_match_goal_rates": [
+      0.8914141414141414,
+      1.853030303030303
+    ],
+    "probability_fit_squared_error": 1.3592603733110307e-05
+  },
+  "400021463": {
+    "full_match_goal_rates": [
+      0.7111111111111111,
+      1.4924242424242424
+    ],
+    "probability_fit_squared_error": 1.9870000273450433e-05
+  },
+  "400021464": {
+    "full_match_goal_rates": [
+      4.737878787878787,
+      0.8313131313131313
+    ],
+    "probability_fit_squared_error": 3.669523443746642e-08
+  },
+  "400021470": {
+    "full_match_goal_rates": [
+      1.3722222222222222,
+      0.8914141414141414
+    ],
+    "probability_fit_squared_error": 9.164315661299638e-06
+  },
+  "400021467": {
+    "full_match_goal_rates": [
+      0.7712121212121212,
+      0.9515151515151515
+    ],
+    "probability_fit_squared_error": 8.805479660796898e-05
+  },
+  "400021474": {
+    "full_match_goal_rates": [
+      1.3121212121212122,
+      0.7111111111111111
+    ],
+    "probability_fit_squared_error": 2.1906379392081096e-05
+  },
+  "400021482": {
+    "full_match_goal_rates": [
+      3.5959595959595956,
+      0.5909090909090909
+    ],
+    "probability_fit_squared_error": 3.7220388173682922e-06
+  },
+  "400021478": {
+    "full_match_goal_rates": [
+      1.853030303030303,
+      0.651010101010101
+    ],
+    "probability_fit_squared_error": 5.55739331497725e-07
+  },
+  "400021486": {
+    "full_match_goal_rates": [
+      0.5308080808080808,
+      1.5525252525252526
+    ],
+    "probability_fit_squared_error": 8.752921555366245e-05
+  },
+  "400021476": {
+    "full_match_goal_rates": [
+      1.3121212121212122,
+      0.7712121212121212
+    ],
+    "probability_fit_squared_error": 2.2631106947509978e-05
+  },
+  "400021490": {
+    "full_match_goal_rates": [
+      1.853030303030303,
+      0.7111111111111111
+    ],
+    "probability_fit_squared_error": 4.904425685167651e-05
+  },
+  "400021488": {
+    "full_match_goal_rates": [
+      0.5909090909090909,
+      2.574242424242424
+    ],
+    "probability_fit_squared_error": 6.551144287436305e-06
+  },
+  "400021496": {
+    "full_match_goal_rates": [
+      1.6727272727272726,
+      0.5909090909090909
+    ],
+    "probability_fit_squared_error": 4.946803536187061e-06
+  },
+  "400021498": {
+    "full_match_goal_rates": [
+      1.913131313131313,
+      0.5909090909090909
+    ],
+    "probability_fit_squared_error": 4.3797152125107925e-06
+  },
+  "400021502": {
+    "full_match_goal_rates": [
+      2.2136363636363634,
+      0.5308080808080808
+    ],
+    "probability_fit_squared_error": 1.3541605855805803e-06
+  },
+  "400021507": {
+    "full_match_goal_rates": [
+      1.5525252525252526,
+      0.651010101010101
+    ],
+    "probability_fit_squared_error": 9.61497332563253e-05
+  },
+  "400021510": {
+    "full_match_goal_rates": [
+      1.0717171717171718,
+      0.8914141414141414
+    ],
+    "probability_fit_squared_error": 2.5611801556969923e-05
+  },
+  "400021504": {
+    "full_match_goal_rates": [
+      0.5308080808080808,
+      2.153535353535353
+    ],
+    "probability_fit_squared_error": 1.595368074725611e-05
+  },
+  "400021440": {
+    "full_match_goal_rates": [
+      1.3121212121212122,
+      0.7712121212121212
+    ],
+    "probability_fit_squared_error": 2.2631106947509978e-05
+  },
+  "400021446": {
+    "full_match_goal_rates": [
+      1.792929292929293,
+      0.7111111111111111
+    ],
+    "probability_fit_squared_error": 3.271113018668242e-05
+  },
+  "400021450": {
+    "full_match_goal_rates": [
+      2.514141414141414,
+      0.651010101010101
+    ],
+    "probability_fit_squared_error": 4.244061794290939e-06
+  },
+  "400021442": {
+    "full_match_goal_rates": [
+      1.1919191919191918,
+      0.651010101010101
+    ],
+    "probability_fit_squared_error": 0.00011305235455402137
+  },
+  "400021462": {
+    "full_match_goal_rates": [
+      1.792929292929293,
+      0.7712121212121212
+    ],
+    "probability_fit_squared_error": 1.4400026630932117e-06
+  },
+  "400021454": {
+    "full_match_goal_rates": [
+      0.5909090909090909,
+      1.4323232323232322
+    ],
+    "probability_fit_squared_error": 7.146647286799575e-05
+  },
+  "400021457": {
+    "full_match_goal_rates": [
+      3.4757575757575756,
+      0.7111111111111111
+    ],
+    "probability_fit_squared_error": 4.036097797251488e-06
+  },
+  "400021460": {
+    "full_match_goal_rates": [
+      1.252020202020202,
+      0.8313131313131313
+    ],
+    "probability_fit_squared_error": 3.731158912253579e-05
+  },
+  "400021472": {
+    "full_match_goal_rates": [
+      1.7328282828282828,
+      0.8914141414141414
+    ],
+    "probability_fit_squared_error": 1.0961911648096705e-05
+  },
+  "400021469": {
+    "full_match_goal_rates": [
+      2.0934343434343434,
+      0.8313131313131313
+    ],
+    "probability_fit_squared_error": 3.285446169233881e-06
+  },
+  "400021465": {
+    "full_match_goal_rates": [
+      3.175252525252525,
+      0.7712121212121212
+    ],
+    "probability_fit_squared_error": 6.372624093832273e-06
+  },
+  "400021475": {
+    "full_match_goal_rates": [
+      0.5909090909090909,
+      1.792929292929293
+    ],
+    "probability_fit_squared_error": 3.646898766546936e-05
+  },
+  "400021483": {
+    "full_match_goal_rates": [
+      3.716161616161616,
+      0.7712121212121212
+    ],
+    "probability_fit_squared_error": 2.8220736900215626e-06
+  },
+  "400021477": {
+    "full_match_goal_rates": [
+      1.913131313131313,
+      0.5909090909090909
+    ],
+    "probability_fit_squared_error": 8.05233235557489e-06
+  },
+  "400021487": {
+    "full_match_goal_rates": [
+      1.913131313131313,
+      0.5308080808080808
+    ],
+    "probability_fit_squared_error": 3.655589334633868e-05
+  },
+  "400021480": {
+    "full_match_goal_rates": [
+      0.7111111111111111,
+      1.6126262626262626
+    ],
+    "probability_fit_squared_error": 1.357876248487733e-05
+  },
+  "400021494": {
+    "full_match_goal_rates": [
+      1.7328282828282828,
+      0.5308080808080808
+    ],
+    "probability_fit_squared_error": 1.1829455656460342e-05
+  },
+  "400021492": {
+    "full_match_goal_rates": [
+      3.535858585858586,
+      0.4707070707070707
+    ],
+    "probability_fit_squared_error": 4.629615812294233e-06
+  },
+  "400021491": {
+    "full_match_goal_rates": [
+      1.1318181818181818,
+      1.0116161616161616
+    ],
+    "probability_fit_squared_error": 5.1132146036592256e-06
+  },
+  "400021499": {
+    "full_match_goal_rates": [
+      0.7712121212121212,
+      1.9732323232323232
+    ],
+    "probability_fit_squared_error": 4.700158660774226e-05
+  },
+  "400021503": {
+    "full_match_goal_rates": [
+      2.994949494949495,
+      0.5909090909090909
+    ],
+    "probability_fit_squared_error": 2.8622928249873786e-06
+  },
+  "400021506": {
+    "full_match_goal_rates": [
+      2.694444444444444,
+      0.4707070707070707
+    ],
+    "probability_fit_squared_error": 6.73377726036318e-06
+  },
+  "400021511": {
+    "full_match_goal_rates": [
+      0.651010101010101,
+      1.9732323232323232
+    ],
+    "probability_fit_squared_error": 4.189310318901839e-05
+  },
+  "400021501": {
+    "full_match_goal_rates": [
+      1.6727272727272726,
+      0.5909090909090909
+    ],
+    "probability_fit_squared_error": 4.946803536187061e-06
+  },
+  "400021448": {
+    "full_match_goal_rates": [
+      2.2136363636363634,
+      0.8313131313131313
+    ],
+    "probability_fit_squared_error": 2.940191421395507e-06
+  },
+  "400021451": {
+    "full_match_goal_rates": [
+      0.9515151515151515,
+      0.8313131313131313
+    ],
+    "probability_fit_squared_error": 0.0001212384812264002
+  },
+  "400021452": {
+    "full_match_goal_rates": [
+      2.454040404040404,
+      0.7111111111111111
+    ],
+    "probability_fit_squared_error": 1.0424609529544265e-05
+  },
+  "400021455": {
+    "full_match_goal_rates": [
+      0.5909090909090909,
+      2.153535353535353
+    ],
+    "probability_fit_squared_error": 1.6151045701288845e-05
+  },
+  "400021444": {
+    "full_match_goal_rates": [
+      0.8914141414141414,
+      1.7328282828282828
+    ],
+    "probability_fit_squared_error": 4.297640464272305e-05
+  },
+  "400021445": {
+    "full_match_goal_rates": [
+      0.7111111111111111,
+      1.4924242424242424
+    ],
+    "probability_fit_squared_error": 8.264669015763827e-05
+  },
+  "400021466": {
+    "full_match_goal_rates": [
+      1.1919191919191918,
+      1.9732323232323232
+    ],
+    "probability_fit_squared_error": 4.125562833210408e-06
+  },
+  "400021468": {
+    "full_match_goal_rates": [
+      0.651010101010101,
+      2.8747474747474744
+    ],
+    "probability_fit_squared_error": 5.160175880789435e-07
+  },
+  "400021471": {
+    "full_match_goal_rates": [
+      1.1919191919191918,
+      1.0116161616161616
+    ],
+    "probability_fit_squared_error": 2.2815793880233007e-05
+  },
+  "400021473": {
+    "full_match_goal_rates": [
+      0.5909090909090909,
+      3.115151515151515
+    ],
+    "probability_fit_squared_error": 1.2776324005506359e-06
+  },
+  "400021459": {
+    "full_match_goal_rates": [
+      1.3121212121212122,
+      1.7328282828282828
+    ],
+    "probability_fit_squared_error": 6.965653364869736e-05
+  },
+  "400021461": {
+    "full_match_goal_rates": [
+      0.7712121212121212,
+      0.5308080808080808
+    ],
+    "probability_fit_squared_error": 6.848993264596683e-05
+  },
+  "400021489": {
+    "full_match_goal_rates": [
+      0.9515151515151515,
+      2.634343434343434
+    ],
+    "probability_fit_squared_error": 5.9135088043440914e-06
+  },
+  "400021493": {
+    "full_match_goal_rates": [
+      2.9348484848484846,
+      0.8313131313131313
+    ],
+    "probability_fit_squared_error": 6.620412526877676e-06
+  },
+  "400021484": {
+    "full_match_goal_rates": [
+      0.5909090909090909,
+      1.3722222222222222
+    ],
+    "probability_fit_squared_error": 8.627663983742009e-05
+  },
+  "400021485": {
+    "full_match_goal_rates": [
+      1.252020202020202,
+      1.1919191919191918
+    ],
+    "probability_fit_squared_error": 1.3023573548082485e-05
+  },
+  "400021479": {
+    "full_match_goal_rates": [
+      0.8313131313131313,
+      0.7111111111111111
+    ],
+    "probability_fit_squared_error": 0.00012231898121970675
+  },
+  "400021481": {
+    "full_match_goal_rates": [
+      0.8914141414141414,
+      3.295454545454545
+    ],
+    "probability_fit_squared_error": 2.8830272952699733e-07
+  },
+  "400021508": {
+    "full_match_goal_rates": [
+      0.5909090909090909,
+      2.994949494949495
+    ],
+    "probability_fit_squared_error": 2.8622928249873155e-06
+  },
+  "400021509": {
+    "full_match_goal_rates": [
+      1.3121212121212122,
+      0.5909090909090909
+    ],
+    "probability_fit_squared_error": 3.177168170728114e-05
+  },
+  "400021500": {
+    "full_match_goal_rates": [
+      1.6727272727272726,
+      0.7712121212121212
+    ],
+    "probability_fit_squared_error": 7.344994065223917e-05
+  },
+  "400021505": {
+    "full_match_goal_rates": [
+      1.0717171717171718,
+      1.7328282828282828
+    ],
+    "probability_fit_squared_error": 2.62607694123013e-05
+  },
+  "400021495": {
+    "full_match_goal_rates": [
+      0.5909090909090909,
+      3.115151515151515
+    ],
+    "probability_fit_squared_error": 3.7523243280685694e-07
+  },
+  "400021497": {
+    "full_match_goal_rates": [
+      0.5308080808080808,
+      0.5308080808080808
+    ],
+    "probability_fit_squared_error": 5.5550511297201384e-05
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "games": 72,
+  "verified_market_source_hashes": 266,
+  "verified_fifa_hashes": 72,
+  "prediction_rows": 29060,
+  "identical_snapshots_across_delays": true,
+  "chronological_labels_available_before_next_split": true,
+  "future_price_or_event_violations": 0,
+  "independently_recomputed_metrics_agree": true
+}
