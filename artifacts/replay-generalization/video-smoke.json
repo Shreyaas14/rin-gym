@@ -1,0 +1,30 @@
+{
+  "match_id": "zhs8gg1hvcuqvhkk2itb54pg",
+  "home": "Liverpool",
+  "away": "Bournemouth",
+  "competition": "Premier League",
+  "database": "/Users/alexkan/Desktop/frontiers/rin-gym-replay/data/replay.duckdb",
+  "events": 82,
+  "located_events": 63,
+  "suppressed_location_events": 18,
+  "duration_seconds": 125.43283635963085,
+  "odds_status": "Mapped regulation outcomes",
+  "market_ids": {
+    "home": "571013",
+    "draw": "571014",
+    "away": "571015"
+  },
+  "price_policy": "Strictly preceding samples, max age 90s; regulation odds end at regulation end.",
+  "position_policy": "Observed event coordinates only; suppress missing, ambiguous, placeholder and invalid locations. No inferred movement.",
+  "time_policy": "Recorded UTC events with nonlinear gap compression and holds.",
+  "original_dataset_version": "20261013T012355-c487c002",
+  "fps": 12,
+  "resolution": [
+    1600,
+    900
+  ],
+  "preview": false,
+  "video": "replay.mp4",
+  "video_duration_seconds": 8.0,
+  "video_truncated": true
+}

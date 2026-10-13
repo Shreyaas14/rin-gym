@@ -1,0 +1,7 @@
+duckdb>=1.4,<2
+pyarrow>=20,<26
+Pillow>=10.1,<13
+
+pytz>=2025.2
+
+pytz>=2024.1
