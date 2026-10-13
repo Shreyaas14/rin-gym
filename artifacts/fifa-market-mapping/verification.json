@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "source_matches": 484,
+  "source_events": 40848,
+  "retained_matches": 484,
+  "retained_events": 40848,
+  "usable_replay_events": 39718,
+  "final_markets": 42746,
+  "certified_contracts": 42902,
+  "contract_policy_version": "polymarket-contract-policy-v1",
+  "price_tokens": 85492,
+  "price_points": 16035880,
+  "raw_response_hashes_verified": 7692
+}

@@ -45,6 +45,8 @@ def write_json(path, value):
 
 
 class Client:
+    response_types = (dict,)
+
     def __init__(
         self, root, refresh=False, offline=False, opener=urlopen, sleep=time.sleep
     ):
@@ -62,9 +64,10 @@ class Client:
         )
 
     def store(self, url, body, fetched_at=None, **extra):
+        cache_key = extra.pop("cache_key", url)
         data = json.loads(body)
-        if not isinstance(data, dict):
-            raise ValueError("Expected a JSON object: " + url)
+        if not isinstance(data, self.response_types):
+            raise ValueError("Unexpected JSON response type: " + url)
         digest = hashlib.sha256(body).hexdigest()
         payload = self.root / (digest + ".json.gz")
         if payload.exists():
@@ -84,16 +87,22 @@ class Client:
             "raw_file": payload.name,
             **extra,
         }
-        write_json(self._index(url), metadata)
+        write_json(self._index(cache_key), metadata)
         return data, metadata
 
-    def get(self, url):
-        index = self._index(url)
+    def get(self, url, *, json_body=None):
+        # Some public read endpoints use POST; key the cache on method and body.
+        request_body = dumps(json_body).encode() if json_body is not None else None
+        cache_key = (
+            url if request_body is None else url + "#POST:" + request_body.decode()
+        )
+        index = self._index(cache_key)
         if index.exists() and not self.refresh:
             metadata = json.loads(index.read_text())
             body = gzip.decompress((self.root / metadata["raw_file"]).read_bytes())
             if (
                 metadata["url"] != url
+                or metadata.get("request_body") != json_body
                 or hashlib.sha256(body).hexdigest() != metadata["sha256"]
             ):
                 raise ValueError("Cache integrity mismatch: " + url)
@@ -105,15 +114,31 @@ class Client:
                 with self.opener(
                     Request(
                         url,
+                        data=request_body,
                         headers={
                             "User-Agent": "rin-gym-fifa/1.0",
                             "Accept": "application/json",
+                            **(
+                                {"Content-Type": "application/json"}
+                                if request_body is not None
+                                else {}
+                            ),
                         },
                     ),
                     timeout=45,
                 ) as response:
                     body = response.read()
-                return self.store(url, body, datetime.now(timezone.utc).isoformat())
+                return self.store(
+                    url,
+                    body,
+                    datetime.now(timezone.utc).isoformat(),
+                    cache_key=cache_key,
+                    **(
+                        {"request_method": "POST", "request_body": json_body}
+                        if request_body is not None
+                        else {}
+                    ),
+                )
             except (HTTPError, URLError, TimeoutError) as error:
                 status = getattr(error, "code", None)
                 if attempt == 3 or (
