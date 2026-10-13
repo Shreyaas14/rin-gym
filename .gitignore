@@ -249,3 +249,4 @@ __marimo__/
 # Regenerable granular replay artifacts
 /artifacts/play-by-play/
 /data/processed/play-by-play/
+/data/processed/trade_env/
