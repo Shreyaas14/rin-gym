@@ -4,7 +4,12 @@ import subprocess
 import sys
 
 root = Path(__file__).resolve().parents[1]
-for relative in ['app/forecast/tests', 'tests/fifa', 'tests/replay', 'tests']:
-    directory = root / relative
+suites = [root / 'app/forecast/tests']
+tests = root / 'tests'
+if tests.is_dir():
+    suites += sorted(path for path in tests.iterdir() if path.is_dir())
+suites.append(tests)
+for directory in suites:
     if directory.is_dir() and list(directory.glob('test*.py')):
-        subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', str(directory), '-v'], cwd=Path.cwd() if '--installed' in sys.argv else root, check=True)
+        subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', str(directory), '-v'],
+                       cwd=Path.cwd() if '--installed' in sys.argv else root, check=True)
