@@ -1,6 +1,19 @@
 import copy
 import json
 import unittest
+import contextlib
+import gzip
+import io
+from pathlib import Path
+import tempfile
+from types import SimpleNamespace
+from unittest.mock import patch
+from urllib.parse import urlencode
+import pyarrow as pa
+import pyarrow.parquet as pq
+
+from pipelines.fifa.client import CacheIntegrityError
+from pipelines.fifa.markets import MarketClient, run, epoch
 
 from pipelines.fifa.markets import (
     hda_outcome,
@@ -172,6 +185,77 @@ class HistoryTests(unittest.TestCase):
         ]:
             with self.subTest(history=history), self.assertRaises(ValueError):
                 validated_history({"history": history})
+
+
+class PublicationIntegrityTests(unittest.TestCase):
+    def test_corrupt_history_keeps_existing_hda_pointer(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "fifa"
+            source.mkdir()
+            match, entry = fixture()
+            match.update(
+                timeline_status="ok", regulation_home_score=1, regulation_away_score=0
+            )
+            start = epoch(match["scheduled_kickoff_utc"])
+            terminal = start + 7200
+            events = [
+                dict(
+                    match_id=match["match_id"],
+                    event_time_utc=match["scheduled_kickoff_utc"],
+                    period_code=3,
+                    event_kind="period_start",
+                ),
+                dict(
+                    match_id=match["match_id"],
+                    event_time_utc="2026-02-01T17:00:00Z",
+                    period_code=5,
+                    event_kind="period_end",
+                ),
+            ]
+            pq.write_table(pa.Table.from_pylist([match]), source / "matches.parquet")
+            pq.write_table(pa.Table.from_pylist(events), source / "events.parquet")
+            (source / "manifest.json").write_text("{}")
+            client = MarketClient(root / "raw", offline=True)
+            for market in entry["event"]["markets"]:
+                params = dict(
+                    market=json.loads(market["clobTokenIds"])[0],
+                    startTs=int(start - 3600),
+                    endTs=int(terminal + 120),
+                    fidelity=1,
+                )
+                _, meta = client.store(
+                    "https://clob.polymarket.com/prices-history?" + urlencode(params),
+                    json.dumps({"history": [{"t": start - 10, "p": 0.3}]}).encode(),
+                )
+
+            def certify(client, linked, audit, workers):
+                for items in linked.values():
+                    for item in items:
+                        item["token_registry_sha256"] = ["registry-proof"]
+                return []
+
+            args = SimpleNamespace(
+                dataset=source,
+                output=root / "mapping",
+                cache=root / "raw",
+                offline=True,
+                refresh=False,
+                workers=1,
+                max_age=90,
+            )
+            with patch("pipelines.fifa.markets.verify"), patch(
+                "pipelines.fifa.markets.catalog", return_value=([entry], [])
+            ), patch(
+                "pipelines.fifa.markets.certify", side_effect=certify
+            ), contextlib.redirect_stdout(io.StringIO()):
+                out = run(args)
+                self.assertEqual(pq.read_metadata(out / "matches.parquet").num_rows, 1)
+                pointer = (args.output / "current.json").read_bytes()
+                (args.cache / meta["raw_file"]).write_bytes(gzip.compress(b"{}"))
+                with self.assertRaises(CacheIntegrityError):
+                    run(args)
+                self.assertEqual((args.output / "current.json").read_bytes(), pointer)
 
 
 if __name__ == "__main__":
