@@ -5,6 +5,7 @@ import math
 from .config import OUTCOMES
 from .costs import buy_cost, sell_proceeds
 from .parse import parse
+from .forecast import components, predictions
 
 PROB_FLOOR = 1e-4
 
@@ -106,6 +107,20 @@ def score(task, completion, config):
     """Score one completion. An invalid answer holds still and pays the penalty."""
     parsed = parse(completion, task["legal_actions"], config["prob_sum_tol"])
     action = parsed["action"] if parsed["ok"] else noop(task["position"])
-    return score_action(
+    forecast = (
+        predictions(completion, config["prob_sum_tol"])
+        if config["forecast_rewards"]
+        else None
+    )
+    if config["forecast_rewards"] and forecast is None:
+        parsed.update(ok=False, error="bad_forecast")
+        action = noop(task["position"])
+    out = score_action(
         task, action, config, parsed["ok"], parsed["probs"], parsed["error"]
     )
+    if config["forecast_rewards"]:
+        out["forecast"] = components(task, parsed["probs"], forecast, config)
+        out["reward"] += sum(
+            out["forecast"][k] for k in ("result_reward", "goal_reward", "price_reward")
+        )
+    return out

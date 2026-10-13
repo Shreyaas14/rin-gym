@@ -10,6 +10,7 @@ from pathlib import Path
 from .clock import decision_points
 from .config import OUTCOMES, POSITIONS, config_hash
 from .prompt import render
+from .forecast import targets
 from .reward import action_table, legal_actions, next_position
 from .splits import is_demo, split_for
 from .state import build_state, fill_prices, shown_prices
@@ -121,6 +122,9 @@ def match_tasks(record, config):
                 "chunk_end": "settlement" if final else points[usable[n + 1]]["name"],
                 "observed_score": state["score"],
             }
+            if config["forecast_rewards"]:
+                scoring["forecast"] = targets(record, points[i]["t"], shown, config)
+                scoring["forecast_points"] = len(usable)
             if config["fee_rate"] == "market":
                 scoring["fee_rates"] = record["fee_rates"]
             messages = render(state, pricing)

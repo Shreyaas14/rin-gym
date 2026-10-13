@@ -542,6 +542,7 @@ class ReplayEvaluatorTests(unittest.TestCase):
                 "replay/val/trades_per_match": mean(
                     [float(r["trades"]) for r in expected]
                 ),
+                "replay/val/flat_baseline_pnl_c": 0.0,
                 "replay/val/valid_rate": 1 - invalid / steps,
             },
         )

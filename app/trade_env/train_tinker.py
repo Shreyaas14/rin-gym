@@ -28,6 +28,7 @@ import random
 import chz
 import tinker
 from tinker_cookbook import checkpoint_utils, completers, renderers
+from tinker_cookbook.utils import logtree
 from tinker_cookbook.eval.evaluators import SamplingClientEvaluator
 from tinker_cookbook.exceptions import RendererError
 from tinker_cookbook.rl import train, types as rl
@@ -87,6 +88,7 @@ class TradeEnv(rl.Env):
             "log_score_edge": out["log_score_edge"] or 0.0,
             "truncated": float(truncated),
         }
+        metrics.update({"forecast/" + k: v for k, v in out.get("forecast", {}).items()})
         logs = {"task_id": self.task["id"], "action": out["action"], "completion": text}
         return rl.StepResult(
             reward=out["reward"] * self.reward_scale,
@@ -169,6 +171,13 @@ class MatchGroupBuilder(rl.EnvGroupBuilder):
             (
                 0.0,
                 {
+                    **{
+                        key + "_per_match": math.fsum(
+                            t.metrics.get("forecast/" + key, 0.0)
+                            for t in traj.transitions
+                        )
+                        for key in ("result_reward", "goal_reward", "price_reward")
+                    },
                     "pnl_per_match": math.fsum(
                         t.metrics["pnl"] for t in traj.transitions
                     ),
@@ -232,8 +241,12 @@ class TradeDatasetBuilder(rl.RLDatasetBuilder):
     w_log: float = DEFAULTS["w_log"]
     w_missed: float = DEFAULTS["w_missed"]
 
+    w_result: float = DEFAULTS["w_result"]
+    w_goal: float = DEFAULTS["w_goal"]
+    w_price: float = DEFAULTS["w_price"]
+
     def env_config(self):
-        keys = ("invalid_penalty", "w_log", "w_missed")
+        keys = ("invalid_penalty", "w_log", "w_missed", "w_result", "w_goal", "w_price")
         built = (
             json.loads(Path(self.config_path).read_text())["config"]
             if self.config_path
@@ -299,16 +312,22 @@ class MatchReplayEvaluator(SamplingClientEvaluator):
     async def play(self, policy, match):
         replay = Replay(match, self.config)
         while (task := replay.next_task()) is not None:
-            replay.step(await self.answer(policy, task))
+            answer = await self.answer(policy, task)
+            replay.step(answer)
+            replay.steps[-1]["completion"] = answer
         return replay.result()
 
     async def eval_token_completer(self, policy):
         played = await asyncio.gather(*[self.play(policy, m) for m in self.matches])
+        # Persist per-match outcomes in the cookbook evaluation log for paired
+        # confidence intervals and trade audits; P&L remains unshaped.
+        logtree.log_text(json.dumps({"match_replays": played}))
         steps = sum(len(result["steps"]) for result in played)
         invalid = sum(result["invalid"] for result in played)
         metrics = {
             "pnl_per_match_c": mean([cents(result["pnl"]) for result in played]),
             "cost_per_match_c": mean([cents(result["cost"]) for result in played]),
+            "flat_baseline_pnl_c": 0.0,
             "trades_per_match": mean([float(result["trades"]) for result in played]),
             "valid_rate": 1 - invalid / steps if steps else 0.0,
         }
@@ -353,6 +372,9 @@ def check(cli):
         if value is not None and (type(value) is not int or value < least.get(key, 0)):
             raise SystemExit(f"{key} must be at least {least.get(key, 0)}, not {value}")
     for key in (
+        "w_result",
+        "w_goal",
+        "w_price",
         "learning_rate",
         "reward_scale",
         "invalid_penalty",
@@ -390,6 +412,10 @@ def check(cli):
         raise SystemExit(f"No tasks file at {cli.tasks_path}: build-tasks writes it")
     tasks = read_tasks(cli.tasks_path)
     validate_tasks(tasks)
+    if config["forecast_rewards"]:
+        from .forecast import validate_targets
+
+        validate_targets(tasks)
     if {task["scoring"]["config_hash"] for task in tasks} != {config_hash(config)}:
         raise SystemExit(
             "Tasks were built under another config; pass config_path=tasks.meta.json or rebuild"
@@ -578,7 +604,13 @@ def estimate(cli, start=0):
         "usd_per_million_tokens": rates,
     }
     for suffix, answer in (
-        ("", min(ANSWER_TOKENS, cli.max_tokens)),
+        (
+            "",
+            min(
+                180 if cli.env_config()["forecast_rewards"] else ANSWER_TOKENS,
+                cli.max_tokens,
+            ),
+        ),
         ("_max", cli.max_tokens),
     ):
         learned = round(rollouts * (each + answer))
@@ -610,7 +642,7 @@ def main(argv=None):
     for key, value in figures.items():
         print(f"  {key:<24}{value if isinstance(value, str) else format(value, ',')}")
     print(
-        f"  Assumes {ANSWER_TOKENS} tokens per answer (_max rows: max_tokens), every "
+        f"  Assumes {180 if cli.env_config()['forecast_rewards'] else ANSWER_TOKENS} tokens per answer (_max rows: max_tokens), every "
         "prompt at the full prefill rate and no group dropped. Prices read 2026-10-12."
     )
     if start:

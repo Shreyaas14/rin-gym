@@ -29,8 +29,15 @@ DEFAULTS = {
     "w_log": 0.0,
     "w_missed": 0.0,
     "prob_sum_tol": 0.05,
+    # Optional forecast shaping; old task files remain usable in P&L-only mode.
+    "forecast_rewards": False,
+    "forecast_horizon_s": 300,
+    "w_result": 0.1,
+    "w_goal": 0.1,
+    "w_price": 0.1,
     # prompt
     "show_kickoff_price": True,
+    "football_rules": False,
     # feeds whose shot rows are only the misses: a save, a block and a goal are
     # rows of their own there, where other feeds log a shot row for every attempt
     "split_shot_competitions": ["2000000000"],
@@ -51,6 +58,9 @@ DEFAULTS = {
 CHOICES = {"mark": ("mid", "liquidation"), "start_mark": ("decision", "fill")}
 # applied when an answer is scored or a table is drawn, so not baked into tasks
 SCORE_TIME = (
+    "w_result",
+    "w_goal",
+    "w_price",
     "invalid_penalty",
     "w_log",
     "w_missed",
@@ -92,6 +102,11 @@ def make_config(overrides=None):
     for key, allowed in CHOICES.items():
         if config[key] not in allowed:
             raise ValueError(key + " must be one of " + ", ".join(allowed))
+    if (
+        type(config["forecast_horizon_s"]) is not int
+        or config["forecast_horizon_s"] <= 0
+    ):
+        raise ValueError("forecast_horizon_s must be a positive integer")
     decisions = config["decisions"]
     order = []
     for name in decisions:
@@ -128,5 +143,10 @@ def parse_overrides(pairs):
 def config_hash(config):
     """Identifies the rules a task file was built with."""
     built = {k: v for k, v in config.items() if k not in SCORE_TIME}
+    if not config["football_rules"]:
+        built.pop("football_rules")
+    if not config["forecast_rewards"]:
+        built.pop("forecast_rewards")
+        built.pop("forecast_horizon_s")
     text = json.dumps(built, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(text.encode()).hexdigest()[:12]
