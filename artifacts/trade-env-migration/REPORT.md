@@ -4,7 +4,7 @@ Compared all 484 earlier match records against AK's frozen `data-2026-10-13-v1` 
 
 ## Every difference
 
-[Match-by-match CSV](matches.csv) has one row for each match, including zero-change fields and each outcome's fee rate. [Full comparison](comparison.json) enumerates every added timestamp and price, plus the explanation for each match. The earlier compressed records have SHA-256 `e6db1d090536b0ccbb7d21c0b20644b07fbea7f4b6c748f88a2497ba80f8acbb`.
+[Match-by-match CSV](matches.csv) has one row for each match, including zero-change fields and each outcome's fee rate. The full `comparison.json` enumerates every added timestamp and price, plus the explanation for each match. It is retained locally and excluded from Git for separate distribution as a release asset. The earlier compressed records have SHA-256 `e6db1d090536b0ccbb7d21c0b20644b07fbea7f4b6c748f88a2497ba80f8acbb`.
 
 - All 484 matches have identical projected match metadata, team identities, event rows/order, period boundaries, regulation results, and three market/token mappings.
 - No old price sample is removed or changed. The release adds 6,575 samples across the 484 matches: 6,568 are beyond the old request's `int(h2_end + 120)` endpoint; seven land exactly on that endpoint, which the earlier response excluded. All additions occur after regulation and cannot change a decision, fill, or settlement label. The differences are request-window tails, not revised prices.
