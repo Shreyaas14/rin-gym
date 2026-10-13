@@ -231,3 +231,5 @@ __marimo__/
 /data/evals/
 /artifacts/eval-quality/
 /artifacts/mlflow/
+
+/artifacts/tinker/

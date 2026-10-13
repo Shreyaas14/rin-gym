@@ -21,7 +21,7 @@ class CLITests(unittest.TestCase):
     def test_all_command_help_works_without_data_or_writes(self):
         commands = [[], ['forecast'], ['eval']]
         commands += [['forecast', command] for command in ['prepare', 'run', 'verify', 'simulate']]
-        commands += [['eval', command] for command in ['init', 'status', 'register', 'enroll', 'record', 'resolve', 'score', 'export-mlflow', 'quality']]
+        commands += [['eval', command] for command in ['init', 'status', 'register', 'enroll', 'record', 'resolve', 'score', 'export-mlflow', 'quality', 'tinker-check-data', 'tinker-predict']]
         with tempfile.TemporaryDirectory() as tmp:
             for command in commands:
                 result = self.invoke(*command, '--help', cwd=tmp)

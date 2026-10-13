@@ -27,6 +27,14 @@ def add_commands(groups):
     resolve.add_argument('--source', type=Path, required=True, help='Adjudication evidence file; SHA-256 is recorded')
     commands.add_parser('score', help='Release the frozen report only after every match resolves; subsequent calls read it')
     commands.add_parser('export-mlflow', help='Export the already-released holdout report to local MLflow')
+    check = commands.add_parser('tinker-check-data', help='Audit chronological Tinker train/validation JSON datasets')
+    check.add_argument('--train', type=Path, required=True)
+    check.add_argument('--validation', type=Path, required=True)
+    predict = commands.add_parser('tinker-predict', help='Sample the frozen checkpoint and log one prospective attempt')
+    predict.add_argument('--candidate', required=True)
+    predict.add_argument('--case', required=True)
+    predict.add_argument('--input', type=Path, required=True)
+    predict.add_argument('--manifest', type=Path, required=True)
     quality = commands.add_parser('quality', help='Run offline harness quality/leakage tests and save a receipt')
     quality.add_argument('--mlflow', action='store_true', help='Also export test results to free local MLflow')
 
@@ -47,6 +55,15 @@ def dispatch(args):
         result = ledger.record(args.candidate, args.case, json.loads(args.input.read_text()), args.probabilities, args.error)
     elif args.command == 'resolve':
         result = ledger.resolve(args.match, args.target, args.ended_utc, hashlib.sha256(args.source.read_bytes()).hexdigest())
+    elif args.command == 'tinker-check-data':
+        from .tinker_bridge import load_datasets
+        train, validation = load_datasets(args.train, args.validation, ledger.workspace)
+        result = {'train_rows': len(train), 'validation_rows': len(validation), 'audited': True}
+    elif args.command == 'tinker-predict':
+        import asyncio
+        from .tinker_bridge import predict
+        result = asyncio.run(predict(ledger.workspace, args.candidate, args.case,
+                                    json.loads(args.input.read_text()), args.manifest))
     elif args.command == 'score':
         result = ledger.score()
     elif args.command == 'export-mlflow':
@@ -65,6 +82,6 @@ def dispatch(args):
         print(json.dumps(result, indent=2))
         return 0 if report['passed'] else 1
     print(json.dumps(result, indent=2, allow_nan=False))
-    if args.command == 'record' and result['payload']['status'] == 'failed':
+    if args.command in ['record', 'tinker-predict'] and result['payload']['status'] == 'failed':
         return 1
     return 0

@@ -12,6 +12,7 @@ dependencies = ["numpy>=2.0,<3", "tzdata>=2024.1"]
 
 [project.optional-dependencies]
 tracking = ["mlflow>=3.0,<4"]
+tinker = ["tinker==0.33.1", "tinker-cookbook==0.5.7"]
 
 [project.scripts]
 rin-gym = "rin_gym.cli:main"

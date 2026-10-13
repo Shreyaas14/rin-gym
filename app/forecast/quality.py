@@ -15,6 +15,7 @@ def run_quality(workspace=None):
         'app.forecast.tests.test_harness',
         'app.forecast.tests.test_quality',
         'app.forecast.tests.test_governance',
+        'app.forecast.tests.test_tinker_bridge',
     ])
     stream = io.StringIO()
     result = unittest.TextTestRunner(stream=stream, verbosity=2).run(suite)

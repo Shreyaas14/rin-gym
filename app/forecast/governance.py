@@ -218,6 +218,7 @@ class Ledger:
             now_t = timestamp(now)
             mids, cids = set(), set()
             known = self._known_ids()
+            known.update(mid for e in events if e["kind"] == "dataset" for mid in e["payload"]["match_ids"])
             for match in cohort['matches']:
                 exact_keys(match, ['match_id', 'kickoff_utc', 'resolution_not_before_utc', 'cases'])
                 mid = identifier(match['match_id'])
@@ -248,7 +249,7 @@ class Ledger:
                     return match, case
         raise ValueError('Case is not enrolled')
 
-    def record(self, candidate, case_id, payload, probabilities=None, error=None):
+    def record(self, candidate, case_id, payload, probabilities=None, error=None, attempt_sha256=None):
         """Receipt time is generated here; callers cannot supply an earlier issue time.
 
         Invalid/late outputs consume the slot as failures, so retrying cannot erase them.
@@ -268,6 +269,12 @@ class Ledger:
                 raise ValueError('Match has already resolved')
             if timestamp(utc_now()) < timestamp(case['observation_cutoff_utc']):
                 raise ValueError('Prediction window is not open')
+            started = next((e for e in events if e['kind'] == 'prediction_started' and
+                            e['payload']['candidate'] == candidate and e['payload']['case_id'] == case_id), None)
+            if started and (attempt_sha256 != digest(started) or started['payload']['observation_sha256'] != digest(payload)):
+                raise ValueError('Completion must match the original Tinker attempt and observation')
+            if attempt_sha256 and not started:
+                raise ValueError('Unknown prediction attempt')
             failure = str(error)[:2000] if error else None
             config = next(e['payload'] for e in events if e['kind'] == 'candidate' and e['payload']['name'] == candidate)
             try:
@@ -295,7 +302,57 @@ class Ledger:
                       'probabilities': list(probabilities) if not failure else None,
                       'observation': payload if not failure else None,
                       'candidate_sha256': digest(config)}
+            if started:
+                record['attempt_sha256'] = digest(started)
             return self._append(db, events, 'prediction', record, now)
+
+    def audit_dataset(self, match_ids, dataset_sha256):
+        """Reserve development games before tokenization or any remote use."""
+        ids = sorted({identifier(mid) for mid in match_ids})
+        source_hash(dataset_sha256)
+        with self._connection() as db:
+            events = self._events(db)
+            cohort = self._one(events, 'cohort')
+            protected = {m['match_id'] for m in cohort['matches']} if cohort else set()
+            if protected.intersection(ids):
+                raise ValueError('Protected holdout games cannot enter a Tinker dataset')
+            payload = {'match_ids': ids, 'dataset_sha256': dataset_sha256}
+            if any(e['kind'] == 'dataset' and e['payload'] == payload for e in events):
+                return payload
+            self._append(db, events, 'dataset', payload)
+            return payload
+
+    def begin_tinker_prediction(self, candidate, case_id, payload, manifest_path, expected_manifest=None):
+        """Claim a slot before networking; even interrupted requests cannot be retried."""
+        path = str(Path(manifest_path).resolve())
+        with self._connection() as db:
+            events = self._events(db)
+            cohort = self._one(events, 'cohort')
+            if not cohort or self._one(events, 'report'):
+                raise ValueError('Predictions require an enrolled, unscored cohort')
+            if candidate not in [cohort['baseline'], cohort['candidate']]:
+                raise ValueError('Candidate is outside the frozen comparison')
+            match, case = self._case(cohort, case_id)
+            if any(e['kind'] in ['prediction', 'prediction_started'] and
+                   e['payload']['candidate'] == candidate and e['payload']['case_id'] == case_id for e in events):
+                raise ValueError('Prediction slot already attempted; retries are forbidden')
+            if any(e['kind'] == 'resolution' and e['payload']['match_id'] == match['match_id'] for e in events):
+                raise ValueError('Match has already resolved')
+            config = next(e['payload'] for e in events if e['kind'] == 'candidate' and e['payload']['name'] == candidate)
+            raw = Path(path).read_bytes()
+            manifest = json.loads(raw)
+            if expected_manifest is not None and manifest != expected_manifest:
+                raise ValueError('Tinker manifest changed before prediction')
+            checksum = hashlib.sha256(raw).hexdigest()
+            if config['artifacts'].get(path) != checksum or config['forecast_code'] != code_fingerprint():
+                raise ValueError('Tinker manifest or forecast code differs from the frozen candidate')
+            now = utc_now()
+            if not timestamp(case['observation_cutoff_utc']) <= timestamp(now) <= timestamp(case['deadline_utc']):
+                raise ValueError('Prediction window is not open')
+            safe_observation(payload, timestamp(case['observation_cutoff_utc']), timestamp(now))
+            return self._append(db, events, 'prediction_started', {
+                'candidate': candidate, 'case_id': case_id, 'match_id': match['match_id'],
+                'manifest_sha256': checksum, 'manifest': manifest, 'observation_sha256': digest(payload)}, now)
 
     def resolve(self, match_id, target, ended_utc, source_sha256):
         if type(target) is not int or target not in [0, 1, 2]:

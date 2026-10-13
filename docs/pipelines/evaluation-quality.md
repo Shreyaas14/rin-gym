@@ -181,3 +181,7 @@ uv build
 ```
 
 The quality suite uses temporary ledgers, controlled clocks and synthetic fixtures. It includes future data, contaminated split membership, invalid output, duplicate submission, late prediction, changed model/scorer, early result release, incomplete coverage, and ledger corruption cases. These fixtures never enroll synthetic games in the real workspace holdout.
+
+## Tinker integration
+
+See [Tinker evaluation](tinker-evaluation.md) for dataset exclusion checks, the cookbook training/evaluator adapters, and `eval tinker-predict`. MLflow remains optional. A durable Tinker attempt claim prevents resampling after interruption; incomplete attempts remain missing predictions and block promotion.

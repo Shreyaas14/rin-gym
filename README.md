@@ -46,3 +46,5 @@ Install with `uv sync --locked` or add optional free local MLflow with `uv sync 
 The [evaluation workflow](docs/pipelines/evaluation-quality.md) covers frozen future fixtures, one-time holdout scoring, and append-only prospective prediction logging. Enrollment remains pending until fixtures are selected. Existing historical test results are regression/development evidence for subsequent changes.
 
 `rin-gym forecast prepare`, `run`, `verify`, and `simulate` also expose the existing forecast workflow. Commands write below the current directory; use `rin-gym --workspace /path/to/workspace ...` or `RIN_GYM_WORKSPACE` to select another data workspace. The original pipeline module commands above remain available from the checkout.
+
+For Tinker fine-tuning, install the optional `tinker` extra and follow the [Tinker integration guide](docs/pipelines/tinker-evaluation.md). It adds chronological dataset exclusions, cookbook evaluators, and prospective checkpoint prediction logging; MLflow remains optional.
