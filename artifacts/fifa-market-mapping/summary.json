@@ -1,0 +1,78 @@
+{
+  "dataset_version": "20261013T030305-50201b7d",
+  "coverage": {
+    "raw_fixture_contracts": 42902,
+    "final_markets": 42746,
+    "excluded_markets": 156,
+    "attempted_tokens": 85804,
+    "tokens_with_history": 85492,
+    "tokens_with_in_game_history": 85484,
+    "price_points": 16035880,
+    "complete_outcome_markets": 42746,
+    "excluded_contract_reasons": {
+      "no_usable_outcome_history": 156
+    },
+    "token_exclusion_reasons": {
+      "empty_history": 312
+    }
+  },
+  "family_counts": {
+    "moneyline": 1452,
+    "soccer_halftime_result": 609,
+    "soccer_exact_score": 3482,
+    "spreads": 1577,
+    "totals": 1951,
+    "both_teams_to_score": 400,
+    "both_teams_to_score_first_half": 104,
+    "first_half_totals": 312,
+    "soccer_team_totals": 627,
+    "soccer_first_half_team_totals": 416,
+    "both_teams_to_score_second_half": 104,
+    "second_half_totals": 312,
+    "soccer_second_half_team_totals": 417,
+    "soccer_first_to_score": 312,
+    "soccer_second_half_result": 312,
+    "total_corners": 1144,
+    "soccer_first_half_total_corners": 308,
+    "soccer_second_half_total_corners": 309,
+    "soccer_first_corner": 103,
+    "soccer_game_corners_odd_even": 103,
+    "soccer_team_total_corners": 660,
+    "soccer_player_goals": 4779,
+    "soccer_player_goalkeeper_saves": 852,
+    "soccer_player_shots": 7324,
+    "soccer_player_shots_on_target": 5164,
+    "soccer_player_goals_plus_assists": 5553,
+    "soccer_player_assists": 2863,
+    "soccer_team_to_advance": 32,
+    "soccer_extra_time": 30,
+    "soccer_penalty_shootout": 30,
+    "soccer_anytime_goalscorer": 1105
+  },
+  "files": {
+    "markets": {
+      "rows": 42746,
+      "sha256": "19658c8ab3468f7ceb5abfb0ae2c611ac21e56c7c9c0cc87fe3669618a2c5035",
+      "bytes": 19469851
+    },
+    "prices": {
+      "rows": 16035880,
+      "sha256": "a62a6c722d0fd61aaa3f3a784a5a35bc32bb580b2e74f7f3a55a642fb35bd83a",
+      "bytes": 40417172
+    }
+  },
+  "by_competition": {
+    "17": 36089,
+    "2000000000": 6657
+  },
+  "source_mapping_snapshot": "/Users/alexkan/Desktop/frontiers/rin-gym-fifa-pipeline/data/processed/fifa-markets/snapshots/20261013T030206-a098517b",
+  "snapshot": "/Users/alexkan/Desktop/frontiers/rin-gym-fifa-pipeline/data/processed/fifa-market-history/snapshots/20261013T030305-50201b7d",
+  "contract_policy_version": "polymarket-contract-policy-v1",
+  "contract_exclusions": {
+    "archived_or_unknown_contract_state": 5,
+    "invalid_conditionId": 298,
+    "ambiguous_duplicate_contract_identity": 22,
+    "registry_mismatch_clob_index": 8
+  },
+  "candidate_fixture_contracts": 43235
+}

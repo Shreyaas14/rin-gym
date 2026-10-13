@@ -8,7 +8,7 @@ import unittest
 from unittest.mock import patch
 from urllib.error import HTTPError
 
-from pipelines.fifa.client import Client, BASE
+from pipelines.fifa.client import Client, BASE, AcquisitionError, CacheIntegrityError
 from pipelines.fifa.dataset import ingest, resolve_snapshot, verify
 from pipelines.fifa.normalize import normalize
 from pipelines.fifa.replay import load_timeline, export_replay
@@ -201,8 +201,23 @@ class ClientTests(unittest.TestCase):
         _, meta = c.store(BASE + "test", body, "2026-01-01T00:00:00Z")
         self.assertEqual(c.get(BASE + "test")[0], {"ok": True})
         (self.root / meta["raw_file"]).write_bytes(gzip.compress(b"{}"))
-        with self.assertRaisesRegex(ValueError, "integrity"):
+        with self.assertRaisesRegex(CacheIntegrityError, "integrity"):
             c.get(BASE + "test")
+
+    def test_invalid_live_json_and_corrupt_cache_are_fatal(self):
+        for body in (b"not json", b"[]"):
+            with self.subTest(body=body), self.assertRaises(AcquisitionError):
+                Client(self.root).store(BASE + "invalid", body)
+        client = Client(self.root, offline=True)
+        _, meta = client.store(BASE + "broken", b'{"ok":true}')
+        payload = self.root / meta["raw_file"]
+        for body in (b"not gzip", gzip.compress(b"{}")):
+            payload.write_bytes(body)
+            with self.subTest(body=body), self.assertRaises(CacheIntegrityError):
+                client.get(BASE + "broken")
+        client._index(BASE + "broken").write_text("not json")
+        with self.assertRaises(CacheIntegrityError):
+            client.get(BASE + "broken")
 
     def test_offline_miss_never_calls_network(self):
         def fail(*a, **kw):
