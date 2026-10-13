@@ -1,0 +1,89 @@
+{
+  "config": {
+    "decisions": [
+      "h1+15",
+      "h1+30",
+      "ht",
+      "h2+15",
+      "h2+30"
+    ],
+    "pre_lead_s": 60,
+    "event_delay_s": 60,
+    "price_max_age_s": 90,
+    "max_sum_dev": 0.05,
+    "fill_delay_s": 60,
+    "fill_max_wait_s": 120,
+    "fee_rate": 0.05,
+    "half_spread": 0.01,
+    "mark": "mid",
+    "start_mark": "decision",
+    "invalid_penalty": 0.04,
+    "w_log": 0.0,
+    "w_missed": 0.0,
+    "prob_sum_tol": 0.05,
+    "show_kickoff_price": true,
+    "split_shot_competitions": [
+      "2000000000"
+    ],
+    "competitions": {
+      "17": "FIFA World Cup 2026",
+      "2000000000": "Premier League 2025/26"
+    },
+    "train_competitions": [
+      "2000000000"
+    ],
+    "world_cup_competition": "17",
+    "group_stage_name": "First Stage",
+    "knockout_from_utc": "2026-06-28T12:00:00Z",
+    "demo_match_ids": [
+      "400021540",
+      "400021528",
+      "400021538"
+    ],
+    "seed": 20261012,
+    "bootstrap_reps": 2000
+  },
+  "config_hash": "411efa26fd8f",
+  "records": 479,
+  "matches_with_tasks": 468,
+  "matches_by_split": {
+    "test": 32,
+    "train": 364,
+    "val": 72
+  },
+  "tasks": 7732,
+  "tasks_by_split": {
+    "test": 640,
+    "train": 5660,
+    "val": 1432
+  },
+  "tasks_by_decision": {
+    "h1+15": 1528,
+    "h1+30": 1580,
+    "ht": 1616,
+    "h2+30": 1452,
+    "h2+15": 1556
+  },
+  "decision_points_dropped": {
+    "fill_sum": 72,
+    "no_fill": 70,
+    "price_sum": 83,
+    "stale_price": 237
+  },
+  "tasks_dropped": {
+    "fill_sum": 288,
+    "no_fill": 280,
+    "price_sum": 332,
+    "stale_price": 948
+  },
+  "demo_matches": [
+    "400021528",
+    "400021538",
+    "400021540"
+  ],
+  "market_venue": "kalshi",
+  "input_sha256": {
+    "data/processed/trade_env-kalshi/records.jsonl.gz": "4d50eb1cce8fd4b4433970dcc46a27b398336251a9cce3fd453fbb44c052930e",
+    "data/processed/trade_env-kalshi/tasks.jsonl.gz": "0e253f99c25b0e8a6cf133619484d240081c5ab67a95440cf5c9432c6bfbd0d9"
+  }
+}

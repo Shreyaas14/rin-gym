@@ -58,14 +58,27 @@ def import_database(dataset, database, market_dataset=None, replace=False):
         raise ValueError("Database exists; pass --replace to rebuild it explicitly")
     source, source_manifest = checked_snapshot(dataset, ["matches", "events"])
     market_root = market_manifest = None
+    market_venue = None
     if market_dataset:
         market_root, market_manifest = checked_snapshot(
             market_dataset, ["markets", "prices"]
         )
         # Resolve against the downloaded odds snapshot, independent of cwd or
         # producer paths. Keep the source hash check before building a database.
+        market_venue = market_manifest.get("venue", "polymarket")
+        if market_venue not in ("polymarket", "kalshi"):
+            raise ValueError("Unsupported market venue: " + str(market_venue))
+        source_hashes = market_manifest.get("source_fifa_files")
         linked_source = market_manifest.get("source_fifa_snapshot")
-        if linked_source:
+        if source_hashes is not None:
+            if any(
+                source_hashes.get(name) != source_manifest["files"][name]["sha256"]
+                for name in ("matches", "events")
+            ):
+                raise ValueError(
+                    "Market histories were mapped against a different FIFA snapshot"
+                )
+        elif linked_source:
             linked_root = linked_fifa_snapshot(market_root, linked_source)
             linked_manifest = json.loads((linked_root / "manifest.json").read_text())
             if (
@@ -119,6 +132,18 @@ def import_database(dataset, database, market_dataset=None, replace=False):
                     "CREATE TABLE prices AS SELECT * FROM read_parquet(?) ORDER BY match_id, token_id, timestamp",
                     [str(market_root / "prices.parquet")],
                 )
+                for table in ("markets", "prices"):
+                    columns = {
+                        row[0] for row in con.execute(f"DESCRIBE {table}").fetchall()
+                    }
+                    if "venue" in columns:
+                        if con.execute(
+                            f"SELECT count(*) FROM {table} WHERE venue IS DISTINCT FROM ?",
+                            [market_venue],
+                        ).fetchone()[0]:
+                            raise ValueError("Mixed or mismatched market venues")
+                    elif market_venue == "kalshi":
+                        raise ValueError("Kalshi tables must declare their venue")
                 if con.execute(
                     "SELECT count(*) != count(DISTINCT market_id) FROM markets"
                 ).fetchone()[0]:
@@ -148,6 +173,10 @@ def import_database(dataset, database, market_dataset=None, replace=False):
                     (source / "manifest.json").read_bytes()
                 ).hexdigest(),
                 market_snapshot=str(market_root) if market_root else None,
+                market_venue=market_venue,
+                price_history_type=market_manifest.get("history_type", "sampled")
+                if market_manifest
+                else None,
                 market_manifest_sha256=hashlib.sha256(
                     (market_root / "manifest.json").read_bytes()
                 ).hexdigest()

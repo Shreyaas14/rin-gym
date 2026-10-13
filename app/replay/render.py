@@ -220,7 +220,9 @@ class Renderer:
         label(
             d,
             (48, 881),
-            "SOURCE  FIFA + mapped Polymarket histories · local DuckDB",
+            "SOURCE  FIFA + "
+            + (self.replay.source_metadata.get("market_venue") or "Polymarket").title()
+            + " histories · local DuckDB",
             11,
             MUTED,
         )

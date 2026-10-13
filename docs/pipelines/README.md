@@ -51,3 +51,7 @@ python3 -m pipelines.fifa.verify_markets
 
 The [full mapping audit](../../artifacts/fifa-market-mapping/REPORT.md) records
 coverage, exclusions, local Parquet outputs, and validation evidence.
+
+The [Kalshi pipeline](kalshi.md) adds the same Parquet-to-DuckDB workflow for
+official Kalshi histories or an existing Jon Becker trade archive. Both venues
+can export regulation-outcome records for the trading simulator.

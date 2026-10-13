@@ -1,0 +1,10 @@
+{
+  "status": "interrupted",
+  "reason": "User stopped broad prop backfill; finalize regulation dataset",
+  "stopped_at_utc": "2026-10-13T17:16:13.846152+00:00",
+  "last_reported_contracts_processed": 24600,
+  "last_reported_priced_contracts": 13211,
+  "published": false,
+  "raw_cache_preserved": true,
+  "resume_command": "python3 -m pipelines.kalshi.ingest --dataset data/processed/fifa --all-market-types --output data/processed/fifa-kalshi/all-markets"
+}

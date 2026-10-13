@@ -424,6 +424,103 @@ class DatabaseTests(unittest.TestCase):
             import_database(self.source, self.database, market_source)
         self.assertFalse(self.database.exists())
 
+    def test_kalshi_import_and_simulation_export_preserve_venue(self):
+        from app.replay.export import export_records
+        from app.trade_env.config import make_config
+        from app.trade_env.records import load_records
+        from app.trade_env.tasks import build_tasks
+        from app.trade_env.baselines import run_baselines
+
+        self.data["match"].update(
+            competition_id="2000000000",
+            regulation_home_score=1,
+            regulation_away_score=0,
+            went_to_extra_time=False,
+        )
+        for e in self.data["events"]:
+            e.update(
+                player_id=None,
+                source_event_json=json.dumps(
+                    {"Timestamp": e["event_time_utc"].isoformat()}
+                ),
+            )
+        self.write_snapshot(
+            self.source,
+            {"matches": [self.data["match"]], "events": self.data["events"]},
+        )
+        for side, market in self.data["markets"].items():
+            market["prices"] = [
+                dict(
+                    t=START.timestamp() + minute * 60, p=0.5 if side == "home" else 0.25
+                )
+                for minute in range(-1, 111)
+            ]
+        market_source = self.root / "markets"
+        self.write_market_snapshot(market_source, "../producer-that-does-not-exist")
+        tables = {
+            name: pq.read_table(market_source / (name + ".parquet")).to_pylist()
+            for name in ("markets", "prices")
+        }
+        for name, rows in tables.items():
+            for row in rows:
+                row["venue"] = "kalshi"
+                row["market_id"] = "kalshi:" + row["market_id"]
+                if name == "markets":
+                    for token in row["tokens"]:
+                        token["token_id"] = "kalshi:" + token["token_id"]
+                else:
+                    row["token_id"] = "kalshi:" + row["token_id"]
+        source_manifest = json.loads((self.source / "manifest.json").read_text())
+        hashes = {k: v["sha256"] for k, v in source_manifest["files"].items()}
+        self.write_snapshot(
+            market_source,
+            tables,
+            venue="kalshi",
+            source_fifa_files=hashes,
+            source_fifa_snapshot="/missing/producer",
+            history_type="candles",
+        )
+        import_database(self.source, self.database, market_source)
+        data = load_match(self.database, "game")
+        self.assertEqual(data["source_metadata"]["market_venue"], "kalshi")
+        self.assertEqual(len(data["markets"]), 3)
+        output = self.root / "records.jsonl.gz"
+        self.assertEqual(export_records(self.database, output)["records"], 1)
+        records = load_records(output)
+        config = make_config({"bootstrap_reps": 10})
+        tasks, _ = build_tasks(records, config)
+        self.assertTrue(tasks)
+        self.assertTrue(
+            all(
+                t["id"].startswith("kalshi:") and t["market_venue"] == "kalshi"
+                for t in tasks
+            )
+        )
+        self.assertTrue(run_baselines(tasks, config))
+        with self.assertRaisesRegex(ValueError, "mixed venue"):
+            build_tasks(records + [records[0] | {"market_venue": "polymarket"}], config)
+        tables["prices"][0]["venue"] = "polymarket"
+        self.write_snapshot(
+            market_source, tables, venue="kalshi", source_fifa_files=hashes
+        )
+        with self.assertRaisesRegex(ValueError, "Mixed"):
+            import_database(self.source, self.root / "mixed.duckdb", market_source)
+
+    def test_content_lineage_rejects_modified_events(self):
+        market_source = self.root / "markets"
+        self.write_market_snapshot(market_source, "../source")
+        manifest_path = market_source / "manifest.json"
+        manifest = json.loads(manifest_path.read_text())
+        source_manifest = json.loads((self.source / "manifest.json").read_text())
+        manifest["source_fifa_files"] = {
+            k: v["sha256"] for k, v in source_manifest["files"].items()
+        }
+        manifest["source_fifa_files"]["events"] = "wrong"
+        manifest_path.write_text(json.dumps(manifest))
+        with self.assertRaisesRegex(ValueError, "different FIFA snapshot"):
+            import_database(self.source, self.database, market_source)
+        self.assertFalse(self.database.exists())
+
     def test_unknown_match_is_clear(self):
         import_database(self.source, self.database)
         with self.assertRaisesRegex(ValueError, "Unknown FIFA match"):

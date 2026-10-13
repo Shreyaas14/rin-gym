@@ -1,0 +1,246 @@
+{
+  "polymarket": {
+    "settlement": {
+      "checked": 1452,
+      "unknown": [],
+      "disagreements": []
+    },
+    "history_by_family": [
+      {
+        "market_family": "both_teams_to_score",
+        "tokens": 800,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "both_teams_to_score_first_half",
+        "tokens": 208,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "both_teams_to_score_second_half",
+        "tokens": 208,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "first_half_totals",
+        "tokens": 624,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "moneyline",
+        "tokens": 2904,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "second_half_totals",
+        "tokens": 624,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_anytime_goalscorer",
+        "tokens": 2210,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 211
+      },
+      {
+        "market_family": "soccer_exact_score",
+        "tokens": 6964,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 18
+      },
+      {
+        "market_family": "soccer_extra_time",
+        "tokens": 60,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_first_corner",
+        "tokens": 206,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_first_half_team_totals",
+        "tokens": 832,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_first_half_total_corners",
+        "tokens": 616,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_first_to_score",
+        "tokens": 624,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_game_corners_odd_even",
+        "tokens": 206,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_halftime_result",
+        "tokens": 1218,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_penalty_shootout",
+        "tokens": 60,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_player_assists",
+        "tokens": 5726,
+        "no_in_game": 2,
+        "fewer_than_five": 4,
+        "constant_history": 162
+      },
+      {
+        "market_family": "soccer_player_goalkeeper_saves",
+        "tokens": 1704,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 94
+      },
+      {
+        "market_family": "soccer_player_goals",
+        "tokens": 9558,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 52
+      },
+      {
+        "market_family": "soccer_player_goals_plus_assists",
+        "tokens": 11106,
+        "no_in_game": 2,
+        "fewer_than_five": 0,
+        "constant_history": 1091
+      },
+      {
+        "market_family": "soccer_player_shots",
+        "tokens": 14648,
+        "no_in_game": 0,
+        "fewer_than_five": 8,
+        "constant_history": 1287
+      },
+      {
+        "market_family": "soccer_player_shots_on_target",
+        "tokens": 10328,
+        "no_in_game": 4,
+        "fewer_than_five": 0,
+        "constant_history": 985
+      },
+      {
+        "market_family": "soccer_second_half_result",
+        "tokens": 624,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_second_half_team_totals",
+        "tokens": 834,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_second_half_total_corners",
+        "tokens": 618,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_team_to_advance",
+        "tokens": 64,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_team_total_corners",
+        "tokens": 1320,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "soccer_team_totals",
+        "tokens": 1254,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      },
+      {
+        "market_family": "spreads",
+        "tokens": 3154,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 30
+      },
+      {
+        "market_family": "total_corners",
+        "tokens": 2288,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 18
+      },
+      {
+        "market_family": "totals",
+        "tokens": 3902,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      }
+    ],
+    "missing_quote_fields": 16035880
+  },
+  "kalshi": {
+    "settlement": {
+      "checked": 1437,
+      "unknown": [],
+      "disagreements": []
+    },
+    "history_by_family": [
+      {
+        "market_family": "moneyline",
+        "tokens": 2874,
+        "no_in_game": 0,
+        "fewer_than_five": 0,
+        "constant_history": 0
+      }
+    ],
+    "missing_quote_fields": 0
+  }
+}

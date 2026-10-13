@@ -58,8 +58,9 @@ def quotes(record, points, config):
 
 
 def make_task(record, point, position, messages, split, scoring, config):
-    return {
-        "id": f"{record['match_id']}:{point['name']}:{position}",
+    task = {
+        "id": ("kalshi:" if record.get("market_venue") == "kalshi" else "")
+        + f"{record['match_id']}:{point['name']}:{position}",
         "match_id": record["match_id"],
         "competition": record.get("competition_id"),
         "split": split,
@@ -72,6 +73,9 @@ def make_task(record, point, position, messages, split, scoring, config):
         "legal_actions": legal_actions(position),
         "scoring": scoring,
     }
+    if "market_venue" in record:
+        task["market_venue"] = record["market_venue"]
+    return task
 
 
 def match_tasks(record, config):
@@ -123,6 +127,11 @@ def match_tasks(record, config):
 
 def build_tasks(records, config):
     """All tasks plus a summary of what was kept and what was dropped, and why."""
+    records = list(records)
+    if len({record.get("market_venue", "polymarket") for record in records}) > 1:
+        raise ValueError(
+            "Build each market venue separately; mixed venue records are ambiguous"
+        )
     tasks, dropped = [], Counter()
     matches = Counter()
     for record in records:
@@ -144,6 +153,8 @@ def build_tasks(records, config):
         "tasks_dropped": {k: v * per_point for k, v in sorted(dropped.items())},
         "demo_matches": sorted({t["match_id"] for t in tasks if t["demo"]}),
     }
+    if records and "market_venue" in records[0]:
+        summary["market_venue"] = records[0]["market_venue"]
     return tasks, summary
 
 

@@ -6,6 +6,9 @@ from .reward import score, score_action
 
 
 def by_match(tasks):
+    tasks = list(tasks)
+    if len({task.get("market_venue", "polymarket") for task in tasks}) > 1:
+        raise ValueError("Replay each market venue separately")
     out = {}
     for task in tasks:
         out.setdefault(task["match_id"], []).append(task)
