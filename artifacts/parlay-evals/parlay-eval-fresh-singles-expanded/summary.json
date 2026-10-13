@@ -1,0 +1,292 @@
+{
+  "observations": 132,
+  "unique_games": 54,
+  "aggregates": {
+    "additional_primary": {
+      "pair_points": 2146,
+      "phase_results": {
+        "h1+15": {
+          "pair_points": 1094,
+          "single_product": {
+            "brier": 0.8250605361318468,
+            "log_loss": 1.9099863643610246,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.8278027312746914,
+            "log_loss": 1.9127161319969044,
+            "valid": 1.0
+          }
+        },
+        "h1+30": {
+          "pair_points": 490,
+          "single_product": {
+            "brier": 0.8333955485513777,
+            "log_loss": 1.9308750522793987,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.8283308176119757,
+            "log_loss": 1.9133981231259984,
+            "valid": 1.0
+          }
+        },
+        "h2+15": {
+          "pair_points": 239,
+          "single_product": {
+            "brier": 0.8405380088798501,
+            "log_loss": 1.9255865273737078,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.8450931950438804,
+            "log_loss": 1.9329116389287646,
+            "valid": 1.0
+          }
+        },
+        "h2+30": {
+          "pair_points": 323,
+          "single_product": {
+            "brier": 0.8927155068997658,
+            "log_loss": 2.685666359735098,
+            "valid": 0.9256965944272446
+          },
+          "market": {
+            "brier": 0.8093620197454618,
+            "log_loss": 1.7982143244008906,
+            "valid": 1.0
+          }
+        }
+      },
+      "equal_phase_metrics": {
+        "single_product": {
+          "brier": 0.8479274001157101,
+          "log_loss": 2.1130285759373075,
+          "valid": 0.9814241486068112
+        },
+        "market": {
+          "brier": 0.8276471909190023,
+          "log_loss": 1.8893100546131396,
+          "valid": 1.0
+        }
+      },
+      "pair_count_weighted_metrics": {
+        "single_product": {
+          "brier": 0.8388703346548574,
+          "log_loss": 2.0332429042239606,
+          "valid": 0.9888164026095061
+        },
+        "market": {
+          "brier": 0.827073389859111,
+          "log_loss": 1.8978870630110973,
+          "valid": 1.0
+        }
+      }
+    },
+    "all_pairs": {
+      "pair_points": 2170,
+      "phase_results": {
+        "h1+15": {
+          "pair_points": 1108,
+          "single_product": {
+            "brier": 0.8253457472553414,
+            "log_loss": 1.9102004401266195,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.8280536491949152,
+            "log_loss": 1.9128779502955036,
+            "valid": 1.0
+          }
+        },
+        "h1+30": {
+          "pair_points": 496,
+          "single_product": {
+            "brier": 0.8342545983271987,
+            "log_loss": 1.9333893350564102,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.8292327553541259,
+            "log_loss": 1.9160347857925555,
+            "valid": 1.0
+          }
+        },
+        "h2+15": {
+          "pair_points": 240,
+          "single_product": {
+            "brier": 0.8395853529767974,
+            "log_loss": 1.9227119856026837,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.8441215591984773,
+            "log_loss": 1.9300065758595946,
+            "valid": 1.0
+          }
+        },
+        "h2+30": {
+          "pair_points": 326,
+          "single_product": {
+            "brier": 0.8910067840087562,
+            "log_loss": 2.67456207888197,
+            "valid": 0.9263803680981595
+          },
+          "market": {
+            "brier": 0.8084455876033813,
+            "log_loss": 1.7952774117529435,
+            "valid": 1.0
+          }
+        }
+      },
+      "equal_phase_metrics": {
+        "single_product": {
+          "brier": 0.8475481206420233,
+          "log_loss": 2.110215959916921,
+          "valid": 0.9815950920245399
+        },
+        "market": {
+          "brier": 0.8274633878377249,
+          "log_loss": 1.8885491809251491,
+          "valid": 1.0
+        }
+      },
+      "pair_count_weighted_metrics": {
+        "single_product": {
+          "brier": 0.838821228124652,
+          "log_loss": 2.0317148903725535,
+          "valid": 0.9889400921658986
+        },
+        "market": {
+          "brier": 0.8271545279861517,
+          "log_loss": 1.8978267452158006,
+          "valid": 1.0
+        }
+      }
+    },
+    "original_24_new_outputs": {
+      "pair_points": 24,
+      "phase_results": {
+        "h1+15": {
+          "pair_points": 14,
+          "single_product": {
+            "brier": 0.8476329593341347,
+            "log_loss": 1.9269289320952485,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.8476610923895348,
+            "log_loss": 1.9255228944860392,
+            "valid": 1.0
+          }
+        },
+        "h1+30": {
+          "pair_points": 6,
+          "single_product": {
+            "brier": 0.9044103300192607,
+            "log_loss": 2.1387224285123447,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.9028910042963877,
+            "log_loss": 2.1313622368947023,
+            "valid": 1.0
+          }
+        },
+        "h2+15": {
+          "pair_points": 1,
+          "single_product": {
+            "brier": 0.6119005921471695,
+            "log_loss": 1.235696502328011,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.6119005921471695,
+            "log_loss": 1.235696502328011,
+            "valid": 1.0
+          }
+        },
+        "h2+30": {
+          "pair_points": 3,
+          "single_product": {
+            "brier": 0.7070342860767213,
+            "log_loss": 1.4790011736952502,
+            "valid": 1.0
+          },
+          "market": {
+            "brier": 0.7097763936393574,
+            "log_loss": 1.4790698166573177,
+            "valid": 1.0
+          }
+        }
+      },
+      "equal_phase_metrics": {
+        "single_product": {
+          "brier": 0.7677445418943215,
+          "log_loss": 1.6950872591577137,
+          "valid": 1.0
+        },
+        "market": {
+          "brier": 0.7680572706181124,
+          "log_loss": 1.6929128625915175,
+          "valid": 1.0
+        }
+      },
+      "pair_count_weighted_metrics": {
+        "single_product": {
+          "brier": 0.8344302858821161,
+          "log_loss": 1.8950849851592209,
+          "valid": 1.0
+        },
+        "market": {
+          "brier": 0.8344096288457107,
+          "log_loss": 1.8924333290196966,
+          "valid": 1.0
+        }
+      }
+    }
+  },
+  "primary_paired_uncertainty": {
+    "brier": {
+      "mean_single_product_minus_market": 0.02028020919670781,
+      "game_bootstrap_95": [
+        -0.008651611362152074,
+        0.0710711220529063
+      ],
+      "valid_bootstrap_draws": 4000,
+      "method": "Resample 54 underlying game IDs, pair weight = game multiplicities product; recompute within-phase means and equal-phase average; no self-fixture pairs."
+    },
+    "log_loss": {
+      "mean_single_product_minus_market": 0.22371852132416792,
+      "game_bootstrap_95": [
+        -0.022341309642253383,
+        0.714214279694033
+      ],
+      "valid_bootstrap_draws": 4000,
+      "method": "Resample 54 underlying game IDs, pair weight = game multiplicities product; recompute within-phase means and equal-phase average; no self-fixture pairs."
+    }
+  },
+  "valid_single_responses": 393,
+  "single_response_count": 396,
+  "single_game_weighted_brier": {
+    "model_brier": 0.5370783844233626,
+    "market_brier": 0.523345587821174
+  },
+  "errors": {
+    "invalid_schema_or_probabilities": 3
+  },
+  "usage": {
+    "requests": 396,
+    "input_tokens": 262167,
+    "observed_or_max_charged_output_tokens": 13953,
+    "full_rate_token_cost_estimate_usd": 0.05949436500000001,
+    "reserved_max_token_cost_usd": 0.14236096499999998,
+    "note": "Token-rate estimate, not provider invoice; unknown output charged at cap."
+  },
+  "holdout_before_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "limitation": "Additional combinations mostly reuse historical games, observations and teams. Resampling recognizes shared fixture IDs but not all shared-team/tournament dependence or model memorization."
+}

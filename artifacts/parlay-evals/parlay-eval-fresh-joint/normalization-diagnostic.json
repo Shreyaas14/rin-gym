@@ -1,0 +1,15 @@
+{
+  "scope": "Post-hoc debugging only. Unconditionally normalizes positive-mass, full-schema numeric joint outputs; violates frozen primary tolerance and must not be reported as primary performance.",
+  "repairable_repeat_cases": 72,
+  "unrepairable_repeat_cases": 0,
+  "raw_probability_mass": {
+    "min": 0.45,
+    "max": 1.501,
+    "mean": 1.0298083333333332
+  },
+  "conditional_brier_same_repairable_cases": {
+    "repaired_joint_brier": 0.8911762875488753,
+    "market_brier": 0.8344096288457106,
+    "single_product_brier": 0.830712516345881
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "independent_source_based_checks": 877,
+  "aggregate_metric_rows_checked": 18,
+  "case_model_rows_checked": 317472,
+  "source_hashes_verified": 5,
+  "holdout_unchanged": true
+}

@@ -1,0 +1,2666 @@
+[
+  {
+    "case_id": "tied-000",
+    "repeat": 0,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021444",
+      "400021479"
+    ],
+    "actual": "away_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7868676865194623,
+        "log_loss": 1.7777921663483425,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7868676865194623,
+        "log_loss": 1.7777921663483425,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-000",
+    "repeat": 1,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021444",
+      "400021479"
+    ],
+    "actual": "away_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7868676865194623,
+        "log_loss": 1.7777921663483425,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7868676865194623,
+        "log_loss": 1.7777921663483425,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-000",
+    "repeat": 2,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021444",
+      "400021479"
+    ],
+    "actual": "away_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7868676865194623,
+        "log_loss": 1.7777921663483425,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7868676865194623,
+        "log_loss": 1.7777921663483425,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-001",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021463",
+      "400021508"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.9991967072310944,
+        "log_loss": 1.891104433951168,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.9991967072310944,
+        "log_loss": 1.891104433951168,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-001",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021463",
+      "400021508"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.9991967072310944,
+        "log_loss": 1.891104433951168,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.9991967072310944,
+        "log_loss": 1.891104433951168,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-001",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021463",
+      "400021508"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.9991967072310944,
+        "log_loss": 1.891104433951168,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.9991967072310944,
+        "log_loss": 1.891104433951168,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-002",
+    "repeat": 0,
+    "phase": "h2+30",
+    "match_ids": [
+      "400021485",
+      "400021502"
+    ],
+    "actual": "draw_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.558990069313819,
+        "log_loss": 1.1544577397985556,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.6556005326492603,
+        "log_loss": 1.3373970832511188,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-002",
+    "repeat": 1,
+    "phase": "h2+30",
+    "match_ids": [
+      "400021485",
+      "400021502"
+    ],
+    "actual": "draw_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.5853926924167077,
+        "log_loss": 1.2314187809346837,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.6556005326492603,
+        "log_loss": 1.3373970832511188,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-002",
+    "repeat": 2,
+    "phase": "h2+30",
+    "match_ids": [
+      "400021485",
+      "400021502"
+    ],
+    "actual": "draw_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.6556005326492603,
+        "log_loss": 1.3373970832511188,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.6556005326492603,
+        "log_loss": 1.3373970832511188,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-003",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021451",
+      "400021497"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7779364895620781,
+        "log_loss": 1.7711548326446744,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7779364895620781,
+        "log_loss": 1.7711548326446744,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-003",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021451",
+      "400021497"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7779364895620781,
+        "log_loss": 1.7711548326446744,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7779364895620781,
+        "log_loss": 1.7711548326446744,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-003",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021451",
+      "400021497"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7779364895620781,
+        "log_loss": 1.7711548326446744,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7779364895620781,
+        "log_loss": 1.7711548326446744,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-004",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021467",
+      "400021471"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.948550952578691,
+        "log_loss": 2.4924538554233835,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.948550952578691,
+        "log_loss": 2.4924538554233835,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-004",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021467",
+      "400021471"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": true,
+        "brier": 0.8559216786826019,
+        "log_loss": 2.020945334998227,
+        "hit": 0.0
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.948550952578691,
+        "log_loss": 2.4924538554233835,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.948550952578691,
+        "log_loss": 2.4924538554233835,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": true,
+        "brier": 0.8972233177448949,
+        "log_loss": 2.2014430722094844,
+        "hit": 0.0
+      }
+    },
+    "joint_dependence_l1": 0.14048160513540103
+  },
+  {
+    "case_id": "tied-004",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021467",
+      "400021471"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.948550952578691,
+        "log_loss": 2.4924538554233835,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.948550952578691,
+        "log_loss": 2.4924538554233835,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-005",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021494",
+      "400021509"
+    ],
+    "actual": "home_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.5367629053097885,
+        "log_loss": 1.117693658095341,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.5367629053097885,
+        "log_loss": 1.117693658095341,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-005",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021494",
+      "400021509"
+    ],
+    "actual": "home_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.5701854904581569,
+        "log_loss": 1.1930869966806847,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.5367629053097885,
+        "log_loss": 1.117693658095341,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-005",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021494",
+      "400021509"
+    ],
+    "actual": "home_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.5367629053097885,
+        "log_loss": 1.117693658095341,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.5367629053097885,
+        "log_loss": 1.117693658095341,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-006",
+    "repeat": 0,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021441",
+      "400021499"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7058046497589113,
+        "log_loss": 1.4797426859490779,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7058046497589113,
+        "log_loss": 1.4797426859490779,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-006",
+    "repeat": 1,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021441",
+      "400021499"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7058046497589113,
+        "log_loss": 1.4797426859490779,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7058046497589113,
+        "log_loss": 1.4797426859490779,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-006",
+    "repeat": 2,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021441",
+      "400021499"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7058046497589113,
+        "log_loss": 1.4797426859490779,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7058046497589113,
+        "log_loss": 1.4797426859490779,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-007",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021482",
+      "400021501"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.1934178416327872,
+        "log_loss": 2.402072326260685,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.2709522958570032,
+        "log_loss": 2.6979982434368868,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-007",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021482",
+      "400021501"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": true,
+        "brier": 0.8654084492815839,
+        "log_loss": 2.0429303327969204,
+        "hit": 0.0
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.2709522958570032,
+        "log_loss": 2.6979982434368868,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.2709522958570032,
+        "log_loss": 2.6979982434368868,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": true,
+        "brier": 0.8410899682000742,
+        "log_loss": 1.9586983200984855,
+        "hit": 0.0
+      }
+    },
+    "joint_dependence_l1": 0.08187672028484125
+  },
+  {
+    "case_id": "tied-007",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021482",
+      "400021501"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.2709522958570032,
+        "log_loss": 2.6979982434368868,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.2709522958570032,
+        "log_loss": 2.6979982434368868,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-008",
+    "repeat": 0,
+    "phase": "h2+30",
+    "match_ids": [
+      "400021476",
+      "400021500"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7589546875175082,
+        "log_loss": 1.6175826147675376,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7589546875175082,
+        "log_loss": 1.6175826147675376,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-008",
+    "repeat": 1,
+    "phase": "h2+30",
+    "match_ids": [
+      "400021476",
+      "400021500"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7568459331835053,
+        "log_loss": 1.622843956134574,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7589546875175082,
+        "log_loss": 1.6175826147675376,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-008",
+    "repeat": 2,
+    "phase": "h2+30",
+    "match_ids": [
+      "400021476",
+      "400021500"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7589546875175082,
+        "log_loss": 1.6175826147675376,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7589546875175082,
+        "log_loss": 1.6175826147675376,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-009",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021496",
+      "400021506"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.0559795472336557,
+        "log_loss": 2.109848945087552,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.1385776116688209,
+        "log_loss": 2.3751267330039196,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-009",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021496",
+      "400021506"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.1385776116688209,
+        "log_loss": 2.3751267330039196,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.1385776116688209,
+        "log_loss": 2.3751267330039196,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-009",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021496",
+      "400021506"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.0640745637736422,
+        "log_loss": 2.163916166357828,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.1385776116688209,
+        "log_loss": 2.3751267330039196,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-010",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021470",
+      "400021488"
+    ],
+    "actual": "draw_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.786632250423759,
+        "log_loss": 1.5430216978738773,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.786632250423759,
+        "log_loss": 1.5430216978738773,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-010",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021470",
+      "400021488"
+    ],
+    "actual": "draw_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.786632250423759,
+        "log_loss": 1.5430216978738773,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.786632250423759,
+        "log_loss": 1.5430216978738773,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-010",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021470",
+      "400021488"
+    ],
+    "actual": "draw_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.786632250423759,
+        "log_loss": 1.5430216978738773,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.786632250423759,
+        "log_loss": 1.5430216978738773,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-011",
+    "repeat": 0,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021465",
+      "400021486"
+    ],
+    "actual": "draw_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.1549879716199476,
+        "log_loss": 2.999229871903877,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.1549879716199476,
+        "log_loss": 2.999229871903877,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-011",
+    "repeat": 1,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021465",
+      "400021486"
+    ],
+    "actual": "draw_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.1549879716199476,
+        "log_loss": 2.999229871903877,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.1549879716199476,
+        "log_loss": 2.999229871903877,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-011",
+    "repeat": 2,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021465",
+      "400021486"
+    ],
+    "actual": "draw_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.1549879716199476,
+        "log_loss": 2.999229871903877,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.1549879716199476,
+        "log_loss": 2.999229871903877,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-012",
+    "repeat": 0,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021490",
+      "400021510"
+    ],
+    "actual": "home_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.8384642546905382,
+        "log_loss": 1.939373768863427,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.8140500069915683,
+        "log_loss": 1.8277244066487048,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-012",
+    "repeat": 1,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021490",
+      "400021510"
+    ],
+    "actual": "home_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.8140500069915683,
+        "log_loss": 1.8277244066487048,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.8140500069915683,
+        "log_loss": 1.8277244066487048,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-012",
+    "repeat": 2,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021490",
+      "400021510"
+    ],
+    "actual": "home_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.8140500069915683,
+        "log_loss": 1.8277244066487048,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.8140500069915683,
+        "log_loss": 1.8277244066487048,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-013",
+    "repeat": 0,
+    "phase": "h2+30",
+    "match_ids": [
+      "400021456",
+      "400021469"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7147739607513038,
+        "log_loss": 1.4822297519532965,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7147739607513038,
+        "log_loss": 1.4822297519532965,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-013",
+    "repeat": 1,
+    "phase": "h2+30",
+    "match_ids": [
+      "400021456",
+      "400021469"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": true,
+        "brier": 0.8791283457497149,
+        "log_loss": 1.7022880663975628,
+        "hit": 0.0
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7147739607513038,
+        "log_loss": 1.4822297519532965,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7147739607513038,
+        "log_loss": 1.4822297519532965,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": true,
+        "brier": 1.0044899618723424,
+        "log_loss": 2.2584150730294636,
+        "hit": 0.0
+      }
+    },
+    "joint_dependence_l1": 0.3185711859059914
+  },
+  {
+    "case_id": "tied-013",
+    "repeat": 2,
+    "phase": "h2+30",
+    "match_ids": [
+      "400021456",
+      "400021469"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": true,
+        "brier": 0.7623577373874638,
+        "log_loss": 1.5520058633482248,
+        "hit": 0.0
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7147739607513038,
+        "log_loss": 1.4822297519532965,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7147739607513038,
+        "log_loss": 1.4822297519532965,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": true,
+        "brier": 0.8653155197944924,
+        "log_loss": 1.8891198455393525,
+        "hit": 0.0
+      }
+    },
+    "joint_dependence_l1": 0.27790045863767626
+  },
+  {
+    "case_id": "tied-014",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021459",
+      "400021478"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.0801875891222696,
+        "log_loss": 2.918028099219917,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.0801875891222696,
+        "log_loss": 2.918028099219917,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-014",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021459",
+      "400021478"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.0801875891222696,
+        "log_loss": 2.918028099219917,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.0801875891222696,
+        "log_loss": 2.918028099219917,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-014",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021459",
+      "400021478"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.0742465238176127,
+        "log_loss": 2.8928378503913583,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.0801875891222696,
+        "log_loss": 2.918028099219917,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-015",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021453",
+      "400021511"
+    ],
+    "actual": "away_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.5689583747885155,
+        "log_loss": 1.188515004640853,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.48598551516504285,
+        "log_loss": 1.0354493628581691,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-015",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021453",
+      "400021511"
+    ],
+    "actual": "away_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.5244758819221736,
+        "log_loss": 1.1068369736265857,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.48598551516504285,
+        "log_loss": 1.0354493628581691,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-015",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021453",
+      "400021511"
+    ],
+    "actual": "away_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.5036663177697531,
+        "log_loss": 1.0683706927987897,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.48598551516504285,
+        "log_loss": 1.0354493628581691,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-016",
+    "repeat": 0,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021466",
+      "400021477"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.0567560224658161,
+        "log_loss": 2.8170345638063763,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.0567560224658161,
+        "log_loss": 2.8170345638063763,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-016",
+    "repeat": 1,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021466",
+      "400021477"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": true,
+        "brier": 0.9639089977432052,
+        "log_loss": 2.5818316866247253,
+        "hit": 0.0
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.0567560224658161,
+        "log_loss": 2.8170345638063763,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.0567560224658161,
+        "log_loss": 2.8170345638063763,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": true,
+        "brier": 0.9264721916081197,
+        "log_loss": 2.3683080111558628,
+        "hit": 0.0
+      }
+    },
+    "joint_dependence_l1": 0.10173191801857671
+  },
+  {
+    "case_id": "tied-016",
+    "repeat": 2,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021466",
+      "400021477"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": true,
+        "brier": 0.8888888888888888,
+        "log_loss": 2.197224577336219,
+        "hit": 0.0
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.0567560224658161,
+        "log_loss": 2.8170345638063763,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.0567560224658161,
+        "log_loss": 2.8170345638063763,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": true,
+        "brier": 0.8888888888888888,
+        "log_loss": 2.197224577336219,
+        "hit": 0.0
+      }
+    },
+    "joint_dependence_l1": 1.249000902703301e-16
+  },
+  {
+    "case_id": "tied-017",
+    "repeat": 0,
+    "phase": "h2+15",
+    "match_ids": [
+      "400021446",
+      "400021452"
+    ],
+    "actual": "home_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.6119005921471695,
+        "log_loss": 1.235696502328011,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.6119005921471695,
+        "log_loss": 1.235696502328011,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-017",
+    "repeat": 1,
+    "phase": "h2+15",
+    "match_ids": [
+      "400021446",
+      "400021452"
+    ],
+    "actual": "home_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.6119005921471695,
+        "log_loss": 1.235696502328011,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.6119005921471695,
+        "log_loss": 1.235696502328011,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-017",
+    "repeat": 2,
+    "phase": "h2+15",
+    "match_ids": [
+      "400021446",
+      "400021452"
+    ],
+    "actual": "home_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.6119005921471695,
+        "log_loss": 1.235696502328011,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.6119005921471695,
+        "log_loss": 1.235696502328011,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-018",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021449",
+      "400021484"
+    ],
+    "actual": "draw_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.8574785381804703,
+        "log_loss": 1.926447796423774,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.8574785381804703,
+        "log_loss": 1.926447796423774,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-018",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021449",
+      "400021484"
+    ],
+    "actual": "draw_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.8040654191727926,
+        "log_loss": 1.8016590551001146,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.8574785381804703,
+        "log_loss": 1.926447796423774,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-018",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021449",
+      "400021484"
+    ],
+    "actual": "draw_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.8574785381804703,
+        "log_loss": 1.926447796423774,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.8574785381804703,
+        "log_loss": 1.926447796423774,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-019",
+    "repeat": 0,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021445",
+      "400021504"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.8988796884226214,
+        "log_loss": 1.8866497267118376,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.8988796884226214,
+        "log_loss": 1.8866497267118376,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-019",
+    "repeat": 1,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021445",
+      "400021504"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.8988796884226214,
+        "log_loss": 1.8866497267118376,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.8988796884226214,
+        "log_loss": 1.8866497267118376,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-019",
+    "repeat": 2,
+    "phase": "h1+30",
+    "match_ids": [
+      "400021445",
+      "400021504"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.8988796884226214,
+        "log_loss": 1.8866497267118376,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.8988796884226214,
+        "log_loss": 1.8866497267118376,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-020",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021480",
+      "400021505"
+    ],
+    "actual": "away_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.9588927305139371,
+        "log_loss": 2.460581834089178,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.9588927305139371,
+        "log_loss": 2.460581834089178,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-020",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021480",
+      "400021505"
+    ],
+    "actual": "away_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.9588927305139371,
+        "log_loss": 2.460581834089178,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.9588927305139371,
+        "log_loss": 2.460581834089178,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-020",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021480",
+      "400021505"
+    ],
+    "actual": "away_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.9588927305139371,
+        "log_loss": 2.460581834089178,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.9588927305139371,
+        "log_loss": 2.460581834089178,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-021",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021442",
+      "400021461"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7364473244059407,
+        "log_loss": 1.6238922333864294,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7364473244059407,
+        "log_loss": 1.6238922333864294,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-021",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021442",
+      "400021461"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7364473244059407,
+        "log_loss": 1.6238922333864294,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7364473244059407,
+        "log_loss": 1.6238922333864294,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-021",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021442",
+      "400021461"
+    ],
+    "actual": "home_draw",
+    "metrics": {
+      "joint": {
+        "valid": true,
+        "brier": 0.8888888888888888,
+        "log_loss": 2.197224577336219,
+        "hit": 0.0
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.7364473244059407,
+        "log_loss": 1.6238922333864294,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.7364473244059407,
+        "log_loss": 1.6238922333864294,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": true,
+        "brier": 0.8888888888888888,
+        "log_loss": 2.197224577336219,
+        "hit": 0.0
+      }
+    },
+    "joint_dependence_l1": 1.249000902703301e-16
+  },
+  {
+    "case_id": "tied-022",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021487",
+      "400021491"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.011514910113309,
+        "log_loss": 2.472459129476938,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.011514910113309,
+        "log_loss": 2.472459129476938,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-022",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021487",
+      "400021491"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.011514910113309,
+        "log_loss": 2.472459129476938,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.011514910113309,
+        "log_loss": 2.472459129476938,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-022",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021487",
+      "400021491"
+    ],
+    "actual": "draw_home",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 1.011514910113309,
+        "log_loss": 2.472459129476938,
+        "hit": 0.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 1.011514910113309,
+        "log_loss": 2.472459129476938,
+        "hit": 0.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-023",
+    "repeat": 0,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021448",
+      "400021495"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.2780113967955354,
+        "log_loss": 0.6316361648311382,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.27813947332128225,
+        "log_loss": 0.6319086129208872,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-023",
+    "repeat": 1,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021448",
+      "400021495"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.27813947332128225,
+        "log_loss": 0.6319086129208872,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.27813947332128225,
+        "log_loss": 0.6319086129208872,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  },
+  {
+    "case_id": "tied-023",
+    "repeat": 2,
+    "phase": "h1+15",
+    "match_ids": [
+      "400021448",
+      "400021495"
+    ],
+    "actual": "home_away",
+    "metrics": {
+      "joint": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      },
+      "single_product": {
+        "valid": true,
+        "brier": 0.2780113967955354,
+        "log_loss": 0.6316361648311382,
+        "hit": 1.0
+      },
+      "market": {
+        "valid": true,
+        "brier": 0.27813947332128225,
+        "log_loss": 0.6319086129208872,
+        "hit": 1.0
+      },
+      "joint_marginal_product": {
+        "valid": false,
+        "brier": 2.0,
+        "log_loss": 13.815510557964274,
+        "hit": null
+      }
+    },
+    "joint_dependence_l1": null
+  }
+]

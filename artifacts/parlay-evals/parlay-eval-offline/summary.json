@@ -1,0 +1,1468 @@
+{
+  "cost_usd": 0,
+  "holdout_before_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "results": [
+    {
+      "cases": 216,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.521075925925926,
+      "joint_log_loss_including_invalid": 0.8863294683771211,
+      "joint_brier_valid_only": 0.521075925925926,
+      "most_likely_ticket_hit_rate_valid_only": 0.6203703703703703,
+      "most_likely_ticket_probability_valid_only": 0.4989814814814815,
+      "common_market_favorite_binary_brier_including_invalid": 0.23190231481481483,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 26,
+          "predicted": 0.34346153846153854,
+          "observed": 0.2692307692307692
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 141,
+          "predicted": 0.45815602836879427,
+          "observed": 0.6312056737588653
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 41,
+          "predicted": 0.6585365853658536,
+          "observed": 0.8292682926829268
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 8,
+          "predicted": 0.8374999999999999,
+          "observed": 1.0
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 213,
+          "return_per_dollar_staked": -0.3777425162393943
+        },
+        "0.95": {
+          "selected_tickets": 195,
+          "return_per_dollar_staked": -0.6002753161386986
+        },
+        "0.9": {
+          "selected_tickets": 189,
+          "return_per_dollar_staked": -0.6668650715016887
+        }
+      },
+      "cohort": "run3",
+      "model": "model",
+      "legs": 1,
+      "unique_fixture_combinations": 72,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.521075925925926,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 216,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.47497358297216286,
+      "joint_log_loss_including_invalid": 0.7954448250271713,
+      "joint_brier_valid_only": 0.47497358297216286,
+      "most_likely_ticket_hit_rate_valid_only": 0.6388888888888888,
+      "most_likely_ticket_probability_valid_only": 0.6575536778556019,
+      "common_market_favorite_binary_brier_including_invalid": 0.20158460965568514,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 27,
+          "predicted": 0.37531903356169444,
+          "observed": 0.3333333333333333
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 63,
+          "predicted": 0.5019042563551587,
+          "observed": 0.47619047619047616
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 63,
+          "predicted": 0.7009464176318226,
+          "observed": 0.8095238095238095
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 63,
+          "predicted": 0.8907680642772136,
+          "observed": 0.7619047619047619
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.95": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.9": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        }
+      },
+      "cohort": "run3",
+      "model": "market",
+      "legs": 1,
+      "unique_fixture_combinations": 72,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.47497358297216286,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 7236,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.774459431315644,
+      "joint_log_loss_including_invalid": 1.7726589367542422,
+      "joint_brier_valid_only": 0.774459431315644,
+      "most_likely_ticket_hit_rate_valid_only": 0.3807352128247651,
+      "most_likely_ticket_probability_valid_only": 0.24882118573797682,
+      "common_market_favorite_binary_brier_including_invalid": 0.25084433835268105,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 2300,
+          "predicted": 0.1643518695652174,
+          "observed": 0.2617391304347826
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 4468,
+          "predicted": 0.26560816920322294,
+          "observed": 0.4456132497761862
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 449,
+          "predicted": 0.45607795100222714,
+          "observed": 0.6904231625835189
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 19,
+          "predicted": 0.6542105263157894,
+          "observed": 0.8421052631578947
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 7152,
+          "return_per_dollar_staked": -0.19735315618529323
+        },
+        "0.95": {
+          "selected_tickets": 7117,
+          "return_per_dollar_staked": -0.25650443461968986
+        },
+        "0.9": {
+          "selected_tickets": 7038,
+          "return_per_dollar_staked": -0.33068530068805474
+        }
+      },
+      "cohort": "run3",
+      "model": "model",
+      "legs": 2,
+      "unique_fixture_combinations": 2412,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.774459431315644,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 7236,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.7265367335392862,
+      "joint_log_loss_including_invalid": 1.5908896500543428,
+      "joint_brier_valid_only": 0.7265367335392862,
+      "most_likely_ticket_hit_rate_valid_only": 0.4033996683250415,
+      "most_likely_ticket_probability_valid_only": 0.43193187027918084,
+      "common_market_favorite_binary_brier_including_invalid": 0.21662566653989107,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 513,
+          "predicted": 0.16994477150524795,
+          "observed": 0.10526315789473684
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 3114,
+          "predicted": 0.3061580391397096,
+          "observed": 0.2947976878612717
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 2211,
+          "predicted": 0.48903859803104116,
+          "observed": 0.47489823609226595
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 1137,
+          "predicted": 0.685173212107709,
+          "observed": 0.6121372031662269
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 261,
+          "predicted": 0.8605169703594165,
+          "observed": 0.7701149425287356
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.95": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.9": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        }
+      },
+      "cohort": "run3",
+      "model": "market",
+      "legs": 2,
+      "unique_fixture_combinations": 2412,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.7265367335392862,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 149688,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.8951984098514266,
+      "joint_log_loss_including_invalid": 2.658988405131363,
+      "joint_brier_valid_only": 0.8951984098514266,
+      "most_likely_ticket_hit_rate_valid_only": 0.23102052268718937,
+      "most_likely_ticket_probability_valid_only": 0.12399272641761533,
+      "common_market_favorite_binary_brier_including_invalid": 0.19735333378117745,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 137732,
+          "predicted": 0.11113081743530917,
+          "observed": 0.23168181686173148
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 11806,
+          "predicted": 0.24556611680501442,
+          "observed": 0.47840081314585803
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 149,
+          "predicted": 0.44129446308724835,
+          "observed": 0.6711409395973155
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 1,
+          "predicted": 0.6141249999999999,
+          "observed": 1.0
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 129722,
+          "return_per_dollar_staked": -0.11551156827969242
+        },
+        "0.95": {
+          "selected_tickets": 126700,
+          "return_per_dollar_staked": -0.16906213252266147
+        },
+        "0.9": {
+          "selected_tickets": 123196,
+          "return_per_dollar_staked": -0.21812734468110992
+        }
+      },
+      "cohort": "run3",
+      "model": "model",
+      "legs": 3,
+      "unique_fixture_combinations": 49896,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.8951984098514266,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 149688,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.8587623965412626,
+      "joint_log_loss_including_invalid": 2.386334475081514,
+      "joint_brier_valid_only": 0.8587623965412626,
+      "most_likely_ticket_hit_rate_valid_only": 0.2515832932499599,
+      "most_likely_ticket_probability_valid_only": 0.2834144675576758,
+      "common_market_favorite_binary_brier_including_invalid": 0.17395951822471006,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 50508,
+          "predicted": 0.1434593067416581,
+          "observed": 0.11778332145402709
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 69942,
+          "predicted": 0.2853577304807562,
+          "observed": 0.2675216608046667
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 23319,
+          "predicted": 0.47978171894356264,
+          "observed": 0.42030104206869934
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 5484,
+          "predicted": 0.668619335502206,
+          "observed": 0.5235229759299781
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 435,
+          "predicted": 0.8383297233141015,
+          "observed": 0.7517241379310344
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.95": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.9": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        }
+      },
+      "cohort": "run3",
+      "model": "market",
+      "legs": 3,
+      "unique_fixture_combinations": 49896,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.8587623965412626,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 16,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.6399999999999999,
+      "joint_log_loss_including_invalid": 1.0601317681000455,
+      "joint_brier_valid_only": 0.6399999999999999,
+      "most_likely_ticket_hit_rate_valid_only": 0.5,
+      "most_likely_ticket_probability_valid_only": 0.4,
+      "common_market_favorite_binary_brier_including_invalid": 0.329375,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 7,
+          "predicted": 0.3,
+          "observed": 0.7142857142857143
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 9,
+          "predicted": 0.4,
+          "observed": 0.6666666666666666
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 16,
+          "return_per_dollar_staked": -0.41623376623376623
+        },
+        "0.95": {
+          "selected_tickets": 15,
+          "return_per_dollar_staked": -0.4084502164502165
+        },
+        "0.9": {
+          "selected_tickets": 15,
+          "return_per_dollar_staked": -0.4395844155844156
+        }
+      },
+      "cohort": "pilot",
+      "model": "base",
+      "legs": 1,
+      "unique_fixture_combinations": 16,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.6399999999999999,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 16,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.6399999999999999,
+      "joint_log_loss_including_invalid": 1.0601317681000455,
+      "joint_brier_valid_only": 0.6399999999999999,
+      "most_likely_ticket_hit_rate_valid_only": 0.5,
+      "most_likely_ticket_probability_valid_only": 0.4,
+      "common_market_favorite_binary_brier_including_invalid": 0.329375,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 7,
+          "predicted": 0.3,
+          "observed": 0.7142857142857143
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 9,
+          "predicted": 0.4,
+          "observed": 0.6666666666666666
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 16,
+          "return_per_dollar_staked": -0.41623376623376623
+        },
+        "0.95": {
+          "selected_tickets": 15,
+          "return_per_dollar_staked": -0.4084502164502165
+        },
+        "0.9": {
+          "selected_tickets": 15,
+          "return_per_dollar_staked": -0.4395844155844156
+        }
+      },
+      "cohort": "pilot",
+      "model": "final",
+      "legs": 1,
+      "unique_fixture_combinations": 16,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.6399999999999999,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 16,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.4911629217884513,
+      "joint_log_loss_including_invalid": 0.8374595251959993,
+      "joint_brier_valid_only": 0.4911629217884513,
+      "most_likely_ticket_hit_rate_valid_only": 0.6875,
+      "most_likely_ticket_probability_valid_only": 0.6266069393302129,
+      "common_market_favorite_binary_brier_including_invalid": 0.22110951842634977,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 2,
+          "predicted": 0.37998449961249037,
+          "observed": 0.0
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 6,
+          "predicted": 0.49718393490149665,
+          "observed": 0.8333333333333334
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 5,
+          "predicted": 0.6878184023566107,
+          "observed": 0.8
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 3,
+          "predicted": 0.9478488029554643,
+          "observed": 0.6666666666666666
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.95": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.9": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        }
+      },
+      "cohort": "pilot",
+      "model": "market",
+      "legs": 1,
+      "unique_fixture_combinations": 16,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.4911629217884513,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 114,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.8696350877192984,
+      "joint_log_loss_including_invalid": 2.1152164822974284,
+      "joint_brier_valid_only": 0.8696350877192984,
+      "most_likely_ticket_hit_rate_valid_only": 0.24561403508771928,
+      "most_likely_ticket_probability_valid_only": 0.1600000000000001,
+      "common_market_favorite_binary_brier_including_invalid": 0.36428947368421055,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 114,
+          "predicted": 0.12719298245614039,
+          "observed": 0.4649122807017544
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 114,
+          "return_per_dollar_staked": 0.05263157894736842
+        },
+        "0.95": {
+          "selected_tickets": 114,
+          "return_per_dollar_staked": 0.0503488266119845
+        },
+        "0.9": {
+          "selected_tickets": 114,
+          "return_per_dollar_staked": 0.041235361130098
+        }
+      },
+      "cohort": "pilot",
+      "model": "base",
+      "legs": 2,
+      "unique_fixture_combinations": 114,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.8696350877192984,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 114,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.8696350877192984,
+      "joint_log_loss_including_invalid": 2.1152164822974284,
+      "joint_brier_valid_only": 0.8696350877192984,
+      "most_likely_ticket_hit_rate_valid_only": 0.24561403508771928,
+      "most_likely_ticket_probability_valid_only": 0.1600000000000001,
+      "common_market_favorite_binary_brier_including_invalid": 0.36428947368421055,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 114,
+          "predicted": 0.12719298245614039,
+          "observed": 0.4649122807017544
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 114,
+          "return_per_dollar_staked": 0.05263157894736842
+        },
+        "0.95": {
+          "selected_tickets": 114,
+          "return_per_dollar_staked": 0.0503488266119845
+        },
+        "0.9": {
+          "selected_tickets": 114,
+          "return_per_dollar_staked": 0.041235361130098
+        }
+      },
+      "cohort": "pilot",
+      "model": "final",
+      "legs": 2,
+      "unique_fixture_combinations": 114,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.8696350877192984,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 114,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.7371612473672978,
+      "joint_log_loss_including_invalid": 1.6433947827865558,
+      "joint_brier_valid_only": 0.7371612473672978,
+      "most_likely_ticket_hit_rate_valid_only": 0.4649122807017544,
+      "most_likely_ticket_probability_valid_only": 0.39472379623849174,
+      "common_market_favorite_binary_brier_including_invalid": 0.25056975334896076,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 8,
+          "predicted": 0.16943474318690288,
+          "observed": 0.125
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 60,
+          "predicted": 0.3007394373090488,
+          "observed": 0.43333333333333335
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 32,
+          "predicted": 0.48495155886174485,
+          "observed": 0.53125
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 11,
+          "predicted": 0.6714783663941726,
+          "observed": 0.7272727272727273
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 3,
+          "predicted": 0.8979855577460607,
+          "observed": 0.3333333333333333
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.95": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.9": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        }
+      },
+      "cohort": "pilot",
+      "model": "market",
+      "legs": 2,
+      "unique_fixture_combinations": 114,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.7371612473672978,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 478,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.952559230125523,
+      "joint_log_loss_including_invalid": 3.1653491708037054,
+      "joint_brier_valid_only": 0.952559230125523,
+      "most_likely_ticket_hit_rate_valid_only": 0.11715481171548117,
+      "most_likely_ticket_probability_valid_only": 0.06400000000000003,
+      "common_market_favorite_binary_brier_including_invalid": 0.28195994560669446,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 478,
+          "predicted": 0.045460251046025114,
+          "observed": 0.3075313807531381
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 213,
+          "return_per_dollar_staked": -0.261502177361776
+        },
+        "0.95": {
+          "selected_tickets": 206,
+          "return_per_dollar_staked": -0.24060662907356975
+        },
+        "0.9": {
+          "selected_tickets": 201,
+          "return_per_dollar_staked": -0.31522791829255087
+        }
+      },
+      "cohort": "pilot",
+      "model": "base",
+      "legs": 3,
+      "unique_fixture_combinations": 478,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.952559230125523,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 478,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.952559230125523,
+      "joint_log_loss_including_invalid": 3.1653491708037054,
+      "joint_brier_valid_only": 0.952559230125523,
+      "most_likely_ticket_hit_rate_valid_only": 0.11715481171548117,
+      "most_likely_ticket_probability_valid_only": 0.06400000000000003,
+      "common_market_favorite_binary_brier_including_invalid": 0.28195994560669446,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 478,
+          "predicted": 0.045460251046025114,
+          "observed": 0.3075313807531381
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 213,
+          "return_per_dollar_staked": -0.261502177361776
+        },
+        "0.95": {
+          "selected_tickets": 206,
+          "return_per_dollar_staked": -0.24060662907356975
+        },
+        "0.9": {
+          "selected_tickets": 201,
+          "return_per_dollar_staked": -0.31522791829255087
+        }
+      },
+      "cohort": "pilot",
+      "model": "final",
+      "legs": 3,
+      "unique_fixture_combinations": 478,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.952559230125523,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 478,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.8624191010738909,
+      "joint_log_loss_including_invalid": 2.41849870389301,
+      "joint_brier_valid_only": 0.8624191010738909,
+      "most_likely_ticket_hit_rate_valid_only": 0.3075313807531381,
+      "most_likely_ticket_probability_valid_only": 0.2496304438633953,
+      "common_market_favorite_binary_brier_including_invalid": 0.2114575542102462,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 199,
+          "predicted": 0.14542567406124166,
+          "observed": 0.21105527638190955
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 222,
+          "predicted": 0.2784268011481016,
+          "observed": 0.36486486486486486
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 49,
+          "predicted": 0.4712926741760038,
+          "observed": 0.40816326530612246
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 7,
+          "predicted": 0.661319102144871,
+          "observed": 0.5714285714285714
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 1,
+          "predicted": 0.8503184239990671,
+          "observed": 0.0
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.95": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.9": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        }
+      },
+      "cohort": "pilot",
+      "model": "market",
+      "legs": 3,
+      "unique_fixture_combinations": 478,
+      "phases": [
+        "h1+15"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.8624191010738909,
+      "all_models_common_valid_fraction": 1.0
+    },
+    {
+      "cases": 456,
+      "valid_fraction": 0.4451754385964912,
+      "joint_brier_including_invalid": 1.486804403508772,
+      "joint_log_loss_including_invalid": 8.56520364743958,
+      "joint_brier_valid_only": 0.8472059507389162,
+      "most_likely_ticket_hit_rate_valid_only": 0.35467980295566504,
+      "most_likely_ticket_probability_valid_only": 0.16953694581280793,
+      "common_market_favorite_binary_brier_including_invalid": 0.7338316156798247,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 194,
+          "predicted": 0.13711082474226807,
+          "observed": 0.5360824742268041
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 9,
+          "predicted": 0.3377777777777778,
+          "observed": 0.6666666666666666
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 203,
+          "return_per_dollar_staked": -0.5702086269572617
+        },
+        "0.95": {
+          "selected_tickets": 203,
+          "return_per_dollar_staked": -0.5769198704862459
+        },
+        "0.9": {
+          "selected_tickets": 202,
+          "return_per_dollar_staked": -0.5815698819063946
+        }
+      },
+      "cohort": "pilot_phase_diagnostic",
+      "model": "base",
+      "legs": 2,
+      "unique_fixture_combinations": 114,
+      "phases": [
+        "h1+30",
+        "ht",
+        "h2+15",
+        "h2+30"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.8472059507389162,
+      "all_models_common_valid_fraction": 0.4451754385964912
+    },
+    {
+      "cases": 456,
+      "valid_fraction": 0.49122807017543857,
+      "joint_brier_including_invalid": 1.438491789473684,
+      "joint_log_loss_including_invalid": 8.042710131492326,
+      "joint_brier_valid_only": 0.8569297142857144,
+      "most_likely_ticket_hit_rate_valid_only": 0.3482142857142857,
+      "most_likely_ticket_probability_valid_only": 0.15971428571428575,
+      "common_market_favorite_binary_brier_including_invalid": 0.7029691156798246,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 224,
+          "predicted": 0.1380334821428572,
+          "observed": 0.5223214285714286
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 0,
+          "predicted": null,
+          "observed": null
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 224,
+          "return_per_dollar_staked": -0.5771404282317033
+        },
+        "0.95": {
+          "selected_tickets": 223,
+          "return_per_dollar_staked": -0.5830290723215537
+        },
+        "0.9": {
+          "selected_tickets": 222,
+          "return_per_dollar_staked": -0.5889707672590603
+        }
+      },
+      "cohort": "pilot_phase_diagnostic",
+      "model": "final",
+      "legs": 2,
+      "unique_fixture_combinations": 114,
+      "phases": [
+        "h1+30",
+        "ht",
+        "h2+15",
+        "h2+30"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.8560411625615765,
+      "all_models_common_valid_fraction": 0.4451754385964912
+    },
+    {
+      "cases": 456,
+      "valid_fraction": 1.0,
+      "joint_brier_including_invalid": 0.6148647451047864,
+      "joint_log_loss_including_invalid": 1.283143677126867,
+      "joint_brier_valid_only": 0.6148647451047864,
+      "most_likely_ticket_hit_rate_valid_only": 0.5,
+      "most_likely_ticket_probability_valid_only": 0.4249258669146237,
+      "common_market_favorite_binary_brier_including_invalid": 0.209081007411604,
+      "common_market_favorite_calibration_valid_only": [
+        {
+          "range": [
+            0,
+            0.2
+          ],
+          "count": 39,
+          "predicted": 0.17637421349912852,
+          "observed": 0.07692307692307693
+        },
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "count": 195,
+          "predicted": 0.30015897148968296,
+          "observed": 0.37435897435897436
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "count": 142,
+          "predicted": 0.47680226642098344,
+          "observed": 0.5774647887323944
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "count": 50,
+          "predicted": 0.6735385545981889,
+          "observed": 0.86
+        },
+        {
+          "range": [
+            0.8,
+            1
+          ],
+          "count": 30,
+          "predicted": 0.8991250661475049,
+          "observed": 0.9
+        }
+      ],
+      "hypothetical_payout_sensitivity": {
+        "1.0": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.95": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        },
+        "0.9": {
+          "selected_tickets": 0,
+          "return_per_dollar_staked": null
+        }
+      },
+      "cohort": "pilot_phase_diagnostic",
+      "model": "market",
+      "legs": 2,
+      "unique_fixture_combinations": 114,
+      "phases": [
+        "h1+30",
+        "ht",
+        "h2+15",
+        "h2+30"
+      ],
+      "joint_brier_on_all_models_common_valid": 0.572577231025895,
+      "all_models_common_valid_fraction": 0.4451754385964912
+    }
+  ],
+  "disjoint_pairs_uncertainty": {
+    "pairs": 36,
+    "mean_model_minus_market_brier": 0.0847505221614056,
+    "bootstrap_95": [
+      0.007693852323622759,
+      0.1620311072453209
+    ],
+    "limitation": "One seeded disjoint development pairing; shared teams across pairs may remain dependent."
+  }
+}

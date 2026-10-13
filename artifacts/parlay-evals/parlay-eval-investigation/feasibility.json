@@ -1,0 +1,97 @@
+{
+  "scope": "Read-only development feasibility audit; no model experiment or inference.",
+  "sources_sha256": {
+    "rin-gym-forecast-only/artifacts/earlier-run-risk/tasks.jsonl.gz": "afedb22fc96debd7ad0fb7b85165b7b0a868a7e7e09dff372e030a68ccf5a306",
+    "training-results/run-3-results/forecast-rules-run-3/repeated-validation/matches.jsonl": "1c750f9f503885d08f9f58afe217fecf2671f43614b9edb28fc5465ffc399574",
+    "rin-gym-forecast-only/artifacts/forecast-only/predictions.jsonl": "e268b2c63b09dda29d935327c89a7eebd143814222a60487d101cd67a368f6c9"
+  },
+  "holdout_before_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "matches": 72,
+  "unique_flat_decisions": 359,
+  "distinct_match_pairs": 2556,
+  "distinct_pairs_without_shared_team": 2412,
+  "scheduled_kickoff_group_sizes": {
+    "1": 48,
+    "2": 12
+  },
+  "decision_timing": {
+    "h1+15": {
+      "matches": 72,
+      "phase_matched_pairs": 2556,
+      "phase_matched_triples": 59640,
+      "pairs_with_decision_gap_at_most_s": {
+        "0": 0,
+        "30": 9,
+        "60": 12,
+        "90": 12
+      }
+    },
+    "h1+30": {
+      "matches": 72,
+      "phase_matched_pairs": 2556,
+      "phase_matched_triples": 59640,
+      "pairs_with_decision_gap_at_most_s": {
+        "0": 0,
+        "30": 9,
+        "60": 12,
+        "90": 12
+      }
+    },
+    "h2+15": {
+      "matches": 72,
+      "phase_matched_pairs": 2556,
+      "phase_matched_triples": 59640,
+      "pairs_with_decision_gap_at_most_s": {
+        "0": 0,
+        "30": 4,
+        "60": 5,
+        "90": 5
+      }
+    },
+    "h2+30": {
+      "matches": 71,
+      "phase_matched_pairs": 2485,
+      "phase_matched_triples": 57155,
+      "pairs_with_decision_gap_at_most_s": {
+        "0": 0,
+        "30": 4,
+        "60": 5,
+        "90": 5
+      }
+    },
+    "ht": {
+      "matches": 72,
+      "phase_matched_pairs": 2556,
+      "phase_matched_triples": 59640,
+      "pairs_with_decision_gap_at_most_s": {
+        "0": 0,
+        "30": 3,
+        "60": 3,
+        "90": 7
+      }
+    }
+  },
+  "saved_earlier_run": {
+    "repeats": 3,
+    "game_replays": 216,
+    "responses": 1077,
+    "valid_responses": 1077,
+    "responses_with_probs": 1077,
+    "next_goal_labeled_flat_decisions": 359
+  },
+  "forecast_only_pilot": {
+    "base": {
+      "responses": 80,
+      "invalid_probs": 21
+    },
+    "tinker://f650882f-d0c5-5c81-a9ee-3243f51662f2:train:0/sampler_weights/final": {
+      "responses": 80,
+      "invalid_probs": 19
+    }
+  },
+  "timing_note": "Decision proximity is a candidate count, not proof of a common live information set. Tasks omit original quote timestamps; rebuild common-cutoff observations from the frozen release before execution claims."
+}

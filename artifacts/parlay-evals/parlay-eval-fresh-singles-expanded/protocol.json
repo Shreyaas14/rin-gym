@@ -1,0 +1,55 @@
+{
+  "scope": "Retrospective development expansion; additional combinations reuse many of the original games. No independent holdout claim.",
+  "checkpoint": "tinker://d2426bc1-ec71-559d-bb81-e17da9372e58:train:0/sampler_weights/final",
+  "prompt": "Exact existing fresh single-match prompt, no numeric probability example, position or action fields.",
+  "repeats": 3,
+  "temperature": 1.0,
+  "max_tokens": 384,
+  "seed": 20261013,
+  "selection": "Every existing active-play flat observation whose delayed visible score is tied and that has an eligible same-phase distinct-match partner; no shared-team pair.",
+  "observations": 132,
+  "unique_matches": 54,
+  "phase_counts": {
+    "h1+15": 49,
+    "h1+30": 33,
+    "h2+15": 23,
+    "h2+30": 27
+  },
+  "pair_points": 2170,
+  "additional_pair_points": 2146,
+  "original_pair_points": 24,
+  "primary": "Additional combinations excluding the original 24 exact pair/checkpoint cases; average repeats within pair, pairs within phase, then four phases equally.",
+  "secondary": "All combinations; original 24 under new outputs; each phase; pair-count-weighted aggregate; per-game single forecast Brier.",
+  "uncertainty": "4000 underlying-game multinomial bootstrap draws, recomposing distinct-fixture pair weights within phase; no independent pair-row bootstrap. Shared-team/tournament dependence remains.",
+  "invalid": "Exact schema, finite [0,1], probability sum within 0.02; invalid single invalidates a product, Brier 2 and log loss -log(1e-6).",
+  "baseline": "Product of normalized contemporaneous market probabilities on identical pairs.",
+  "budget_usd": 5,
+  "request_reservation_ceiling_usd": 2.5,
+  "maximum_requests": 396,
+  "max_token_cost_estimate_usd": 0.142360965,
+  "rates_per_million": {
+    "prefill": 0.195,
+    "sample": 0.6
+  },
+  "pricing_source": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+  "inference_policy": "Freshly issue every selected observation, once per repeat; share those outputs across tickets; no application retries or paid reruns.",
+  "token_limit_note": "Token-cost reservation with >2x margin; not a provider-enforced dollar cap.",
+  "source_hashes": {
+    "rin-gym-forecast-only/artifacts/earlier-run-risk/tasks.jsonl.gz": "afedb22fc96debd7ad0fb7b85165b7b0a868a7e7e09dff372e030a68ccf5a306",
+    "training-results/run-3-results/forecast-rules-run-3/repeated-validation/matches.jsonl": "1c750f9f503885d08f9f58afe217fecf2671f43614b9edb28fc5465ffc399574",
+    "rin-gym-forecast-only/artifacts/earlier-run-risk/comparison.json": "8967e39a92364352854ebadbf907428ed6962e3f31c09c747b17db3ab05dd5d6",
+    "rin-gym-forecast-only/data/raw/release-data-2026-10-13-v1/data/processed/fifa-markets/snapshots/20261013T030206-a098517b/events.parquet": "36fad3646428ea1e745d9c3293fa0d7624cb4b14184e2dc2044628fc4c81365b",
+    "rin-gym-forecast-only/data/raw/release-data-2026-10-13-v1/data/processed/fifa-markets/snapshots/20261013T030206-a098517b/matches.parquet": "935f549a4cbc60ac4918364afb12c78b821ee3d94e01989bfaf0dce9c1955d05",
+    "outputs/parlay-eval-fresh-joint/experiment.py": "f6c2db7a912fd151fc0fd94d6675993fe2471ab68859345960911409892e6785",
+    "outputs/parlay-eval-fresh-joint/cases.json": "74f89691ae1d99a601afa867aaa973568170a71d51d36734e66064eb49cea72b",
+    "outputs/parlay-eval-fresh-singles-expanded/expanded.py": "136e815cfc10b077762982aea7aafe31361a9816ee915b7f6d1199afaae2279b"
+  },
+  "points_sha256": "6e138a4fc722a0a15a9eb0457221ac231907d64a3a14562ed6bdb842916bc8ed",
+  "pairs_sha256": "c6dde8a700e90190875e48532003b40a0721156d8052044a0e37bd7901b5fbf2",
+  "holdout_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "sha256": "80df4ca2f5a4ade2788d61bbe3b1423e10bd865b07131279af19492920914c4b"
+}

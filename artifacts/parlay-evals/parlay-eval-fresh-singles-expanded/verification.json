@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "independent_joint_scores": 13020,
+  "receipt_pairs": 396,
+  "safe_source_observations_verified": 132,
+  "same_phase_tied_no_shared_team_pairs_verified": 2170,
+  "original_case_exclusion_verified": 24,
+  "phase_weighted_primary_aggregates_verified": true,
+  "underlying_game_bootstrap_recomputed": true,
+  "posthoc_validity_and_fallback_scores_verified": true,
+  "budget_and_source_hashes_verified": true,
+  "holdout_unchanged": true
+}

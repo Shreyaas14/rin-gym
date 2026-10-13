@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "visible_prefix_mutation_checks": 287,
+  "independent_scalar_recipe_pair_scores": 78038,
+  "evaluation_label_mutation_refits_checked": 2,
+  "aggregate_rows_checked": 102,
+  "source_hashes_verified": true,
+  "whole_game_fit_evaluation_isolation": true,
+  "holdout_unchanged": true
+}

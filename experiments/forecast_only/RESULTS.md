@@ -1,5 +1,11 @@
 # Experiment results: no profitable policy established
 
+## Parlay and Combo forecasting results
+
+The [parlay experiment package](../../artifacts/parlay-evals/README.md) now publishes offline composition, calibration/score corrections, active-play contexts, fresh joint forecasting, and expanded fresh single forecasts. None establishes a reliable advantage over contemporaneous market probabilities. Direct joint output fails normalization on 65 of 72 responses; the expanded single pipeline's frozen failure-inclusive Brier is 0.8479 versus market 0.8276. A post-hoc invalid-leg market fallback yields a small, uncertain favorable point estimate, not validated superiority.
+
+The two fresh parlay runs cost an estimated $0.1006 combined; each stayed below its authorized $5 budget and preserved the protected-cohort guard. No live Combo quotes or trading P&L were tested. Full protocols, original completions/receipts, scores, source snapshots and an offline standard-library verifier are included. The [combined history](../../artifacts/parlay-evals/parlay-eval-investigation/APPROACHES.md) distinguishes all approaches and follow-ups.
+
 These development experiments do **not** establish positive P&L or generalization. The most recent fresh combined-exit replay preserved approximately the original win rate but worsened net P&L. The protected holdout remained sealed and pending enrollment throughout.
 
 ## Fresh closed-loop evaluations

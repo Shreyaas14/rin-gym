@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "source_based_joint_score_checks": 10071,
+  "residual_fits_unchanged_by_evaluation_label_mutation": 36,
+  "source_and_code_hashes_verified": true,
+  "fit_evaluation_match_membership_disjoint": true,
+  "holdout_unchanged": true
+}

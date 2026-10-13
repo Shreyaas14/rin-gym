@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "receipt_pairs": 216,
+  "independently_recomputed_forecast_scores": 288,
+  "source_hashes_verified": true,
+  "cohort_disjoint_games": 48,
+  "safe_messages_match_frozen_source_tasks": true,
+  "token_budget_verified": true,
+  "holdout_unchanged": true
+}
