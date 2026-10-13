@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rin-gym"
+version = "0.1.0"
+description = "Sports forecasting and protected prospective evaluation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "tzdata>=2024.1"]
+
+[project.optional-dependencies]
+tracking = ["mlflow>=3.0,<4"]
+
+[project.scripts]
+rin-gym = "rin_gym.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["rin_gym", "app", "pipelines"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/rin_gym", "/app", "/pipelines", "/tests", "/docs", "/README.md", "/pyproject.toml", "/uv.lock"]

@@ -38,3 +38,11 @@ python3 -m pipelines.sports_data.verify
 ```
 
 The first run needs public internet access. Downloads are cached under `data/raw/sports/`; generated tables live under `data/processed/sports/`. Raw caches are excluded from Git.
+
+## Free local evaluation and protected holdout
+
+Install with `uv sync --locked` or add optional free local MLflow with `uv sync --locked --extra tracking`. Run `uv run rin-gym eval init` to initialize the pending future-cohort policy, and `uv run rin-gym eval quality` for scorer, leakage and governance checks. Add `--mlflow` to log the quality receipt locally.
+
+The [evaluation workflow](docs/pipelines/evaluation-quality.md) covers frozen future fixtures, one-time holdout scoring, and append-only prospective prediction logging. Enrollment remains pending until fixtures are selected. Existing historical test results are regression/development evidence for subsequent changes.
+
+`rin-gym forecast prepare`, `run`, `verify`, and `simulate` also expose the existing forecast workflow. Commands write below the current directory; use `rin-gym --workspace /path/to/workspace ...` or `RIN_GYM_WORKSPACE` to select another data workspace. The original pipeline module commands above remain available from the checkout.

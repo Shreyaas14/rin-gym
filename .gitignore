@@ -226,3 +226,8 @@ __marimo__/
 
 # Regenerated per-snapshot forecast export
 /data/processed/forecast/predictions.csv
+
+# Local evaluation evidence and optional MLflow storage
+/data/evals/
+/artifacts/eval-quality/
+/artifacts/mlflow/

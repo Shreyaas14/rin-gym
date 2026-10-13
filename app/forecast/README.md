@@ -82,3 +82,7 @@ The replay handles conflicting score fields on simultaneous FIFA events by using
 - `artifacts/forecast-eval/`: interactive report and review screenshots.
 
 The 20 MB `predictions.csv` is reproducible and excluded from Git. Run the benchmark before using the dashboard’s CSV download link. Committed metrics and the standalone HTML can be reviewed without downloading provider caches.
+
+## Protected future evaluation
+
+See the [free local evaluation workflow](../../docs/pipelines/evaluation-quality.md) for quality tests, protected holdout enrollment and prospective logging. Installed forecast commands use the current directory or `RIN_GYM_WORKSPACE` as their data root. Enrolled games are blocked from retrospective preparation, fitting, selection and evaluation.
