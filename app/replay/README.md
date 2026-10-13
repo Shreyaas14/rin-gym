@@ -8,8 +8,8 @@ replay reads only the database; no APIs or original Parquet files are needed.
 python3 -m venv .venv
 .venv/bin/python -m pip install -r app/replay/requirements.txt
 .venv/bin/python -m app.replay import \
-  --dataset /path/to/data/processed/fifa \
-  --markets /path/to/data/processed/fifa-market-history \
+  --dataset data/processed/fifa \
+  --markets data/processed/fifa-market-history \
   --database data/replay.duckdb
 .venv/bin/python -m app.replay list-matches \
   --database data/replay.duckdb --search Liverpool
@@ -28,6 +28,40 @@ parent, containing `matches.parquet`, `events.parquet`, and `manifest.json`.
 `--markets` takes the all-family odds snapshot with `markets.parquet`,
 `prices.parquet`, and its manifest from the separate odds-ingestion pipeline.
 Omit `--markets` for event-only replay with explicit missing-odds labels.
+
+## Download the shared datasets
+
+From the repository root on this PR's branch, download the
+[versioned dataset release](https://github.com/Shreyaas14/rin-gym/releases/tag/data-2026-10-13-v1).
+Repository read access and an authenticated GitHub CLI are required.
+
+```sh
+gh release download data-2026-10-13-v1 --repo Shreyaas14/rin-gym \
+  --dir data/downloads/data-2026-10-13-v1
+(cd data/downloads/data-2026-10-13-v1 && shasum -a 256 -c SHA256SUMS)
+for archive in data/downloads/data-2026-10-13-v1/*.tar.gz; do
+  tar -xzf "$archive"
+done
+for dataset in fifa fifa-markets fifa-market-history; do
+  shasum -a 256 -c "data/processed/$dataset/SHA256SUMS"
+done
+```
+
+Stop if any checksum fails. Extract into a fresh checkout/data directory to avoid
+replacing existing `current.json` pointers. Then run the import commands above.
+The `fifa-markets` archive contains optional enriched events and mapping reports;
+the replay's `--markets` argument uses `fifa-market-history` instead.
+
+The dataset tree can be moved to any directory. Manifest-relative FIFA links are
+resolved from the odds snapshot directory. Legacy producer absolute links and
+release-v1 `data/processed/...` links resolve to the sibling
+`fifa/snapshots/<version>` within the downloaded tree. Import never opens the
+producer's path or resolves these links against the working directory. Keep the
+`fifa` and `fifa-market-history` directories together in that layout, or use a
+manifest-relative link for a custom layout. The source match-table checksum
+comparison remains required when a link is present; missing or mismatched linked
+snapshots fail import. The original release tag pins the earlier PR commit;
+use this updated branch to get this portability fix.
 
 ## Database
 

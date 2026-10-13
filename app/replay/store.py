@@ -30,6 +30,27 @@ def checked_snapshot(path, names):
     return root, manifest
 
 
+def linked_fifa_snapshot(market_root, reference):
+    """Resolve lineage inside a relocated bundle, never on the producer's host."""
+    path = Path(reference)
+    # Original pipeline manifests contain absolute paths; release v1 rewrites
+    # them to data/processed/... paths. Both identify this same sibling snapshot.
+    if path.is_absolute() or path.parts[:2] == ("data", "processed"):
+        if (
+            len(path.parts) < 3
+            or path.parts[-3:-1] != ("fifa", "snapshots")
+            or path.name in ("", ".", "..")
+            or market_root.parent.name != "snapshots"
+            or market_root.parent.parent.name != "fifa-market-history"
+        ):
+            raise ValueError(
+                "Unsupported FIFA snapshot link; use a path relative to the "
+                "market snapshot or the standard data/processed bundle layout"
+            )
+        return market_root.parents[2].joinpath(*path.parts[-3:])
+    return market_root / path
+
+
 def import_database(dataset, database, market_dataset=None, replace=False):
     """Materialize into a temporary database; publish only after FK validation."""
     database = Path(database).expanduser().resolve()
@@ -41,6 +62,19 @@ def import_database(dataset, database, market_dataset=None, replace=False):
         market_root, market_manifest = checked_snapshot(
             market_dataset, ["markets", "prices"]
         )
+        # Resolve against the downloaded odds snapshot, independent of cwd or
+        # producer paths. Keep the source hash check before building a database.
+        linked_source = market_manifest.get("source_fifa_snapshot")
+        if linked_source:
+            linked_root = linked_fifa_snapshot(market_root, linked_source)
+            linked_manifest = json.loads((linked_root / "manifest.json").read_text())
+            if (
+                linked_manifest["files"]["matches"]["sha256"]
+                != source_manifest["files"]["matches"]["sha256"]
+            ):
+                raise ValueError(
+                    "Market histories were mapped against a different FIFA snapshot"
+                )
     database.parent.mkdir(parents=True, exist_ok=True)
     fd, name = tempfile.mkstemp(
         prefix="." + database.name, suffix=".duckdb", dir=database.parent
@@ -99,20 +133,6 @@ def import_database(dataset, database, market_dataset=None, replace=False):
                     "SELECT count(*) FROM prices p ANTI JOIN markets m ON p.market_id=m.market_id AND p.match_id=m.match_id"
                 ).fetchone()[0]:
                     raise ValueError("Orphan market prices")
-                # Prevent independently refreshed FIFA records from being paired
-                # silently with histories mapped to a different fixture snapshot.
-                linked_source = market_manifest.get("source_fifa_snapshot")
-                if linked_source:
-                    linked_manifest = json.loads(
-                        (Path(linked_source) / "manifest.json").read_text()
-                    )
-                    if (
-                        linked_manifest["files"]["matches"]["sha256"]
-                        != source_manifest["files"]["matches"]["sha256"]
-                    ):
-                        raise ValueError(
-                            "Market histories were mapped against a different FIFA snapshot"
-                        )
             else:
                 con.execute(
                     "CREATE TABLE markets(match_id VARCHAR, market_id VARCHAR, market_family VARCHAR, hda_outcome VARCHAR, source_market_json VARCHAR, tokens JSON)"

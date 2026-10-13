@@ -1,9 +1,11 @@
 from copy import deepcopy
+from contextlib import chdir
 from datetime import datetime, timedelta, timezone
 import hashlib
 import json
 from pathlib import Path
 import tempfile
+import shutil
 import unittest
 
 import duckdb
@@ -235,7 +237,7 @@ class DatabaseTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "not unique"):
             import_database(self.source, self.database)
 
-    def test_history_tokens_and_ambiguous_contracts(self):
+    def write_market_snapshot(self, market_source, reference):
         contracts = []
         prices = []
         for side, market in self.data["markets"].items():
@@ -265,12 +267,15 @@ class DatabaseTests(unittest.TestCase):
                 )
                 for p in market["prices"]
             ]
-        market_source = self.root / "markets"
         self.write_snapshot(
             market_source,
             {"markets": contracts, "prices": prices},
-            source_fifa_snapshot=str(self.source),
+            source_fifa_snapshot=reference,
         )
+
+    def test_history_tokens_and_ambiguous_contracts(self):
+        market_source = self.root / "markets"
+        self.write_market_snapshot(market_source, "../source")
         import_database(self.source, self.database, market_source)
         self.assertEqual(
             set(load_match(self.database, "game")["markets"]), {"home", "draw", "away"}
@@ -282,6 +287,70 @@ class DatabaseTests(unittest.TestCase):
         data = load_match(self.database, "game")
         self.assertFalse(data["markets"])
         self.assertIn("Ambiguous", data["odds_status"])
+
+    def test_relocated_bundles_import_from_unrelated_working_directory(self):
+        producer = self.root / "producer"
+        fifa = producer / "data/processed/fifa/snapshots/test-v1"
+        fifa.parent.mkdir(parents=True)
+        shutil.copytree(self.source, fifa)
+        markets = producer / "data/processed/fifa-market-history/snapshots/odds-v1"
+        markets.parent.mkdir(parents=True)
+        references = [
+            str(fifa),
+            "data/processed/fifa/snapshots/test-v1",
+            "../../../fifa/snapshots/test-v1",
+        ]
+        relocated = self.root / "teammate"
+        unrelated = self.root / "elsewhere"
+        unrelated.mkdir()
+        for index, reference in enumerate(references):
+            with self.subTest(reference=reference):
+                self.write_market_snapshot(markets, reference)
+                for family, version in (
+                    ("fifa", "test-v1"),
+                    ("fifa-market-history", "odds-v1"),
+                ):
+                    (producer / "data/processed" / family / "current.json").write_text(
+                        json.dumps({"dataset_version": version})
+                    )
+                shutil.copytree(producer, relocated)
+                # The producer is unavailable, even for the legacy absolute link.
+                hidden = self.root / "hidden-producer"
+                producer.rename(hidden)
+                try:
+                    with chdir(unrelated):
+                        database = self.root / f"relocated-{index}.duckdb"
+                        result = import_database(
+                            relocated / "data/processed/fifa",
+                            database,
+                            relocated / "data/processed/fifa-market-history",
+                        )
+                    self.assertEqual(result["matches"], 1)
+                    self.assertEqual(len(load_match(database, "game")["markets"]), 3)
+                finally:
+                    hidden.rename(producer)
+                    shutil.rmtree(relocated)
+
+    def test_wrong_linked_snapshot_preserves_existing_database(self):
+        import_database(self.source, self.database)
+        before = hashlib.sha256(self.database.read_bytes()).hexdigest()
+        wrong_source = self.root / "wrong-source"
+        wrong_match = self.data["match"] | {"home_team_name": "Different fixture"}
+        self.write_snapshot(
+            wrong_source, {"matches": [wrong_match], "events": self.data["events"]}
+        )
+        market_source = self.root / "markets"
+        self.write_market_snapshot(market_source, "../wrong-source")
+        with self.assertRaisesRegex(ValueError, "different FIFA snapshot"):
+            import_database(self.source, self.database, market_source, replace=True)
+        self.assertEqual(hashlib.sha256(self.database.read_bytes()).hexdigest(), before)
+
+    def test_missing_linked_snapshot_does_not_skip_validation(self):
+        market_source = self.root / "markets"
+        self.write_market_snapshot(market_source, "../missing-source")
+        with self.assertRaises(FileNotFoundError):
+            import_database(self.source, self.database, market_source)
+        self.assertFalse(self.database.exists())
 
     def test_unknown_match_is_clear(self):
         import_database(self.source, self.database)

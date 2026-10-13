@@ -18,6 +18,15 @@ All **484 matches** loaded and reconstructed to their recorded final score with
 **zero mismatches**; all had mapped H/D/A odds. This covered **9 extra-time** and
 **4 shootout** games. See [coverage.json](coverage.json).
 
+The portable import was also checked using the published `data-2026-10-13-v1`
+archives extracted into a separate directory, with the process running outside
+the repository. It imported the same counts above and passed the 484-match audit.
+All **14 replay tests** and **57 FIFA pipeline tests** pass. The portability tests
+move the dataset tree, hide the producer directory, and import from an unrelated
+working directory for legacy absolute, release-relative, and manifest-relative
+links. Missing links fail validation; mismatched source hashes preserve an
+existing database during a failed replacement.
+
 Previews were rendered and visually checked for Liverpool–Bournemouth,
 Czechia–South Africa, and Germany–Paraguay. The latter displays penalties
 separately and disables regulation odds after the second-half end.
