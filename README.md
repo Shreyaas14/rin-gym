@@ -62,6 +62,8 @@ rin-gym --workspace ./workspace play-by-play --match 3943043 --competition 55 --
 
 [The detailed viewer](app/play_by_play/README.md) displays StatsBomb passes, carries, possession sequences and observed 360 snapshots. The standalone HTML is generated under `artifacts/play-by-play/<match>/`. Player positions between observations are unknown. Its market chart remains on a separate UTC clock until period alignment is verified.
 
+The newly merged trade environment is also available through `rin-gym trade-env --help`; its record builder uses `rin-gym pipeline trade-records`. Training dependencies remain optional.
+
 ## Protected prospective evaluation
 
 ```sh
@@ -69,7 +71,7 @@ rin-gym --workspace ./workspace eval init
 rin-gym --workspace ./workspace eval quality
 ```
 
-[Protected evaluation](docs/pipelines/evaluation-quality.md) supports candidate freezing, prediction receipts, coverage gates and one-time readout. Retrospective preparation, loading, fitting, simulation, selection and scoring reject enrolled games. Optional [Tinker integration](docs/pipelines/tinker-evaluation.md) uses development-only training/evaluation data; no prospective performance claim exists until an independent cohort is enrolled and completed.
+[Protected evaluation](docs/pipelines/evaluation-quality.md) supports candidate freezing, prediction receipts, coverage gates and one-time readout. The forecast harness rejects enrolled games during retrospective preparation, loading, fitting, simulation, selection and scoring. Optional [Tinker integration](docs/pipelines/tinker-evaluation.md) uses development-only training/evaluation data; no prospective performance claim exists until an independent cohort is enrolled and completed.
 
 ## Development and CI
 

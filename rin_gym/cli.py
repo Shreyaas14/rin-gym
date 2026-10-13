@@ -20,6 +20,7 @@ DELEGATES = {
     'markets': 'pipelines.fifa.markets',
     'market-history': 'pipelines.fifa.market_history',
     'verify-markets': 'pipelines.fifa.verify_markets',
+    'trade-records': 'app.trade_env.build_records',
 }
 
 
@@ -51,8 +52,9 @@ def main(argv=None):
     for name in DELEGATES:
         delegated = commands.add_parser(name, add_help=False)
         delegated.add_argument('arguments', nargs=argparse.REMAINDER)
-    replay = groups.add_parser('replay', add_help=False, help='Import, inspect, verify and render arbitrary FIFA games')
-    replay.add_argument('arguments', nargs=argparse.REMAINDER)
+    for name, description in [('replay', 'Import, verify and render FIFA games'), ('trade-env', 'Build tasks and inspect the merged trade environment')]:
+        delegated_group = groups.add_parser(name, add_help=False, help=description)
+        delegated_group.add_argument('arguments', nargs=argparse.REMAINDER)
     forecast = groups.add_parser('forecast', help='Prepare, evaluate and simulate forecasts')
     commands = forecast.add_subparsers(dest='command', required=True)
     for name in ['prepare', 'run', 'verify']:
@@ -69,7 +71,7 @@ def main(argv=None):
     detailed.add_argument('--market-slug')
     tokens = list(sys.argv[1:] if argv is None else argv)
     args, remaining = parser.parse_known_args(tokens)
-    delegated = args.group == 'replay' or (args.group == 'pipeline' and args.command in DELEGATES)
+    delegated = args.group in ['replay', 'trade-env'] or (args.group == 'pipeline' and args.command in DELEGATES)
     if remaining and not delegated:
         parser.error('unrecognized arguments: ' + ' '.join(remaining))
     if args.workspace is not None:
@@ -87,7 +89,7 @@ def main(argv=None):
                 else:
                     break
             options = tokens[index + (2 if args.group == 'pipeline' else 1):]
-            module = 'app.replay.__main__' if args.group == 'replay' else DELEGATES[args.command]
+            module = {'replay': 'app.replay.__main__', 'trade-env': 'app.trade_env.__main__'}[args.group] if args.group != 'pipeline' else DELEGATES[args.command]
             function = importlib.import_module(module).main
             # Help must remain usable without a workspace or input data.
             if '--help' in options or '-h' in options:

@@ -19,8 +19,8 @@ class CLITests(unittest.TestCase):
                               env=env, capture_output=True, text=True)
 
     def test_all_command_help_works_without_data_or_writes(self):
-        commands = [[], ['pipeline'], ['forecast'], ['eval'], ['replay'], ['play-by-play']]
-        commands += [['pipeline', c] for c in ['audit', 'collect', 'analyze', 'verify', 'fifa-census', 'fifa-join', 'fifa', 'markets', 'market-history', 'verify-markets']]
+        commands = [[], ['pipeline'], ['forecast'], ['eval'], ['replay'], ['play-by-play'], ['trade-env']]
+        commands += [['pipeline', c] for c in ['audit', 'collect', 'analyze', 'verify', 'fifa-census', 'fifa-join', 'fifa', 'markets', 'market-history', 'verify-markets', 'trade-records']]
         commands += [['pipeline', 'fifa', c] for c in ['ingest', 'verify', 'export-replay']]
         commands += [['replay', c] for c in ['import', 'verify', 'list-matches', 'render']]
         commands += [['forecast', command] for command in ['prepare', 'run', 'verify', 'simulate']]
