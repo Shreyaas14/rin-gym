@@ -1,6 +1,6 @@
 # Arbitrary FIFA match replay with DuckDB
 
-Import FIFA Parquet and optional mapped Polymarket histories into a local DuckDB
+Import FIFA Parquet and optional mapped Polymarket or Kalshi histories into a local DuckDB
 database. Select any match by its FIFA ID and render stills or video. Runtime
 replay reads only the database; no APIs or original Parquet files are needed.
 

@@ -27,6 +27,12 @@ def main(argv=None):
     )
     ingest.add_argument("--database", type=Path, required=True)
     ingest.add_argument("--replace", action="store_true")
+    export = commands.add_parser(
+        "export-records",
+        help="Export mapped H/D/A histories to trade_env match records",
+    )
+    export.add_argument("--database", type=Path, required=True)
+    export.add_argument("--output", type=Path, required=True)
     audit = commands.add_parser(
         "verify", help="Check replay states for every imported match"
     )
@@ -50,6 +56,10 @@ def main(argv=None):
             result = import_database(
                 args.dataset, args.database, args.markets, args.replace
             )
+        elif args.command == "export-records":
+            from .export import export_records
+
+            result = export_records(args.database, args.output)
         elif args.command == "verify":
             from .audit import verify_database
 

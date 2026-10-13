@@ -5,6 +5,41 @@ contracts' outcome tokens. It does not assume that the two providers share IDs.
 It preserves the complete FIFA snapshot and all downloaded market responses.
 Only validated mappings and available prices enter the derived datasets.
 
+## Overview and example
+
+Resolution uses deterministic rules and explicit aliases, not an LLM, fuzzy-name
+score, or popularity ranking. The identity chain is:
+
+```text
+FIFA match → Polymarket event → contract → outcome token → price samples
+```
+
+One FIFA match can have several Polymarket events (the primary fixture and
+auxiliary groups), each containing multiple contracts. Each retained contract
+belongs to exactly one FIFA match; each outcome token identifies one side of that
+contract. Home/draw/away is one derived view of this broader catalog.
+
+For example, a hypothetical `Wolves vs. Arsenal` listing first resolves `Wolves`
+to FIFA's `Wolverhampton Wanderers` identity. The competition, both teams, and
+UTC kickoff must identify exactly one fixture. Reversed display order is allowed;
+FIFA determines home and away. Every candidate contract then passes its own
+time, provenance, and token-registry checks before its prices are used.
+
+| Candidate or ambiguity | Behavior |
+| --- | --- |
+| Same teams meeting on another date | Reject unless the kickoff check identifies this fixture uniquely. |
+| Home win, over 2.5 goals, and a scorer proposition for one game | Retain separately when each contract passes validation; one game does not imply one contract. |
+| Same normalized question under different market IDs for one fixture | Quarantine all conflicting contracts; never choose by volume or price. |
+| A token or condition reused by multiple contracts | Quarantine all conflicting owners. |
+| A World Cup team advances after a regulation draw | Keep advancement distinct; it cannot fill a regulation-win slot. |
+| Valid contract with no available history on either outcome | Exclude from the final priced table, retaining raw responses and the reason. |
+
+Failure to enter a derived view never deletes the original FIFA match/events or
+downloaded provider records. H/D/A eligibility and all-family price eligibility
+are separate: a game lacking a valid H/D/A triplet can still have other valid
+priced contracts. Historical settlement prices are checked against results only
+after resolution; they are never evidence used to choose the matching contract.
+
 ## Run
 
 From the repository root, after FIFA ingestion:
@@ -25,8 +60,8 @@ retain the candidate snapshot and cache but do not replace the current pointer.
 
 Fixture matching alone is insufficient. Before a contract enters either final
 view, require the expected Polymarket sports series (`10188` for EPL, `11433`
-for World Cup), `approved=true`, `cyom=false` on the market/event, an unarchived
-market, a deployed condition/question ID, two distinct decimal outcome tokens,
+for World Cup), `approved=true` on the market, `cyom=false` on both market and
+event, an unarchived market, nonzero 32-byte condition/question IDs, two distinct decimal outcome tokens,
 and an enabled order book. Any supplied resolution-source URL must use HTTPS on
 the configured FIFA or Premier League hostname; a lookalike hostname fails.
 Missing policy fields fail closed rather than implicitly granting approval.
@@ -47,6 +82,12 @@ separate IDs; duplicate H/D/A outcomes cannot become an arbitrary triplet.
 Conflicting copies of the same market ID stop publication. Failed registry
 requests also leave the current snapshot untouched.
 
+The proposition collision key is the FIFA match ID plus the question after
+case-folding and removal of non-word characters. This detects normalized textual
+duplicates, not every semantically equivalent question. Differently worded props
+may therefore remain separate. These checks do not perform independent on-chain
+deployment verification or establish a trusted creator identity.
+
 For H/D/A, require the primary fixture event, the question's date, the exact
 regulation clause, and the rule text's named winner/draw resolving to Yes.
 Explicit extra-time inclusion or an inconsistent subject is rejected.
@@ -56,6 +97,37 @@ is fraud-free or immune to oracle disputes. Both APIs belong to Polymarket. No
 creator allowlist is inferred from popularity, and no market is labeled a scam
 solely for failing these checks. Provider-specific stat definitions and player
 identity still need separate validation before creating prop training labels.
+
+## Secondary audit: volume and open interest
+
+Volume and open interest are secondary audit evidence, not fixture/contract
+identity features or automatic tie-breakers. The policy below describes the
+additional diagnostic layer; dedicated metric extraction and flags are not yet
+implemented. The current resolver's inclusion and quarantine rules remain
+unchanged.
+
+For each candidate, the audit should retain available volume and open interest
+along with the provider, units, measurement window, provider timestamp (when
+available), retrieval time, and source-response hash. Missing values mean
+unavailable, not zero. Volume and open interest are separate metrics and must not
+be substituted for one another.
+
+Comparisons should be confined to independently validated, equivalent
+propositions for the same fixture, period, participant, line, and settlement
+rules. A regulation win cannot be compared as an alternative to advancement;
+different goal lines and player props are also distinct. Cross-provider metrics
+need compatible units and definitions before comparison.
+
+Flag an unexpectedly inactive mapped contract or a materially more active
+equivalent candidate for review, recording the compared IDs, evidence, reason,
+and versioned thresholds. These flags must not select a replacement, rescue a
+failed identity check, drop a valid mapping, or release a quarantined duplicate.
+Higher volume or open interest alone does not establish authenticity.
+
+For retrospective audits, label metrics observed after the game as hindsight
+evidence. They must not affect historical market selection, training features,
+or backtest eligibility. Any future decision-time use requires measurements
+known at that time; a current or lifetime aggregate is not a historical snapshot.
 
 ## How identity is established
 
@@ -198,3 +270,18 @@ slug dates, exact schedule overrides, ambiguous/duplicate mappings, legacy EPL
 rules, advancement separation, backward price joins, stale samples, missing
 histories, batch outcome ordering, cache request-body identity, raw preservation,
 filtered final publication, and retaining the current pointer on HTTP failure.
+
+## Implementation reference
+
+| Responsibility | Code |
+| --- | --- |
+| Name normalization, aliases, fixture/time matching, exact schedule exceptions | [`markets.py`](../../pipelines/fifa/markets.py): `norm`, `time_match`, `resolve` |
+| Regulation home/draw/away semantics and strictly preceding prices | [`markets.py`](../../pipelines/fifa/markets.py): `hda_outcome`, `select_hda`, `prior_price` |
+| Provider policy, conflicting identities, and token-registry certification | [`contracts.py`](../../pipelines/fifa/contracts.py): `event_provenance`, `contract_provenance`, `remove_collisions`, `validate_registry`, `certify` |
+| All-family history requests, outcome identity, and final priced publication | [`market_history.py`](../../pipelines/fifa/market_history.py) |
+| Rechecking published identities, source hashes, and price joins | [`verify_markets.py`](../../pipelines/fifa/verify_markets.py) |
+
+The [mapping audit](../../artifacts/fifa-market-mapping/REPORT.md) records the
+2026-10-13 UTC snapshot: 484 complete H/D/A mappings, 42,746 final priced
+contracts, and 489 excluded candidate contracts. These are measured snapshot
+results, not a promise of coverage on future refreshes.

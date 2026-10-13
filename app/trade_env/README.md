@@ -1,6 +1,13 @@
 # trade_env
 
-An RL environment in which a language model trades one in-play soccer market: the 1X2 result at the end of regulation time, priced by Polymarket YES contracts.
+An RL environment in which a language model trades one in-play soccer market: the 1X2 result at the end of regulation time, priced by Polymarket or Kalshi YES contracts.
+
+The [Kalshi pipeline guide](../../docs/pipelines/kalshi.md) documents exporting
+either venue's imported DuckDB histories through `app.replay export-records`.
+Use separate task files for each venue; mixed inputs are rejected. Historical
+prices use the generic cost assumptions below, not a venue-calibrated fee or
+execution model. Historical measurements elsewhere in this document refer to
+the original Polymarket dataset.
 
 The core is plain Python (standard library only, 3.11 or newer) and knows nothing about any trainer. A trainer reads `tasks.jsonl.gz`, sends `messages` to the model and calls `score`.
 

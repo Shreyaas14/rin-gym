@@ -236,3 +236,8 @@ __marimo__/
 *.duckdb
 *.duckdb.wal
 /data/processed/trade_env/
+
+# Local Kalshi market snapshots and simulation exports
+/data/processed/fifa-kalshi/
+/data/processed/trade_env-kalshi/
+/data/kalshi-replay.duckdb
