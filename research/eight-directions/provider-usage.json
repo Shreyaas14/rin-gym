@@ -1,0 +1,11 @@
+{
+  "queried_utc": "2026-10-13T21:38:32.156787+00:00",
+  "starting_on": "2026-10-13T00:00:00+00:00",
+  "ending_before": "2026-10-13T22:00:00+00:00",
+  "verified_invoice_usd": null,
+  "note": "Usage endpoint may lag hours; gross provider estimates are distinct from invoices. No absent data interpreted as zero.",
+  "study_events": [],
+  "status": "retrieved",
+  "study_sessions": {},
+  "cost_data_through": null
+}

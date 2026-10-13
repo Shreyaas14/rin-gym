@@ -1,0 +1,4 @@
+# Preserve hash-pinned raw console output, including its original trailing spaces.
+inputs/forecast-only/adapter-tests.log -whitespace
+inputs/forecast-only/live.log -whitespace
+inputs/forecast-only/training/logs.log -whitespace

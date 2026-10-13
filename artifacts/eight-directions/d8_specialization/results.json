@@ -1,0 +1,533 @@
+{
+  "classification": "negative",
+  "selected_candidate": null,
+  "fit": {
+    "tied_late": {
+      "matches": 13,
+      "observations_with_repeats": 39,
+      "valid_observations": 39,
+      "match_coverage": 0.3333333333333333,
+      "observation_coverage": 0.06701030927835051,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.6628358974358974,
+        "market_brier": 0.6377902252939127,
+        "model_log_loss": 1.0640675804648219,
+        "market_log_loss": 0.982942580736956
+      },
+      "valid_only": {
+        "matches": 13,
+        "model_brier": 0.6628358974358974,
+        "market_brier": 0.6377902252939127,
+        "model_log_loss": 1.0640675804648219,
+        "market_log_loss": 0.982942580736956
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.02504567214198466,
+          "match_bootstrap_95": [
+            -0.12845925802913005,
+            0.08719865076446487
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.08112499972786608,
+          "match_bootstrap_95": [
+            -0.22311272259587542,
+            0.0860818607223825
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    },
+    "observed_red_card": {
+      "matches": 4,
+      "observations_with_repeats": 27,
+      "valid_observations": 27,
+      "match_coverage": 0.10256410256410256,
+      "observation_coverage": 0.04639175257731959,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.26647638888888886,
+        "market_brier": 0.21402889075092296,
+        "model_log_loss": 0.4812354700167325,
+        "market_log_loss": 0.38947649769112314
+      },
+      "valid_only": {
+        "matches": 4,
+        "model_brier": 0.26647638888888886,
+        "market_brier": 0.21402889075092296,
+        "model_log_loss": 0.4812354700167325,
+        "market_log_loss": 0.38947649769112314
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.05244749813796591,
+          "match_bootstrap_95": [
+            -0.1280073111796854,
+            -0.0012813685100531392
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.09175897232560933,
+          "match_bootstrap_95": [
+            -0.17343272644557367,
+            -0.021528366083963003
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    },
+    "halftime": {
+      "matches": 39,
+      "observations_with_repeats": 117,
+      "valid_observations": 117,
+      "match_coverage": 1.0,
+      "observation_coverage": 0.20103092783505155,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.48426982991444273,
+        "market_brier": 0.49663854036303934,
+        "model_log_loss": 0.8140666601692857,
+        "market_log_loss": 0.7940232062770726
+      },
+      "valid_only": {
+        "matches": 39,
+        "model_brier": 0.48426982991444273,
+        "market_brier": 0.49663854036303934,
+        "model_log_loss": 0.8140666601692857,
+        "market_log_loss": 0.7940232062770726
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": 0.012368710448596732,
+          "match_bootstrap_95": [
+            -0.058373179385182335,
+            0.09068681777030137
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.02004345389221309,
+          "match_bootstrap_95": [
+            -0.12458935339752508,
+            0.09478366291511572
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    },
+    "large_observed_price_move": {
+      "matches": 25,
+      "observations_with_repeats": 114,
+      "valid_observations": 114,
+      "match_coverage": 0.6410256410256411,
+      "observation_coverage": 0.1958762886597938,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.47308888888888895,
+        "market_brier": 0.421353721403374,
+        "model_log_loss": 0.8109353608454275,
+        "market_log_loss": 0.6977368863526878
+      },
+      "valid_only": {
+        "matches": 25,
+        "model_brier": 0.47308888888888895,
+        "market_brier": 0.421353721403374,
+        "model_log_loss": 0.8109353608454275,
+        "market_log_loss": 0.6977368863526878
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.05173516748551481,
+          "match_bootstrap_95": [
+            -0.1053360508381885,
+            0.004045151437662142
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.11319847449273965,
+          "match_bootstrap_95": [
+            -0.19047446110680086,
+            -0.028686148219802945
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    }
+  },
+  "assessment": {
+    "tied_late": {
+      "matches": 14,
+      "observations_with_repeats": 42,
+      "valid_observations": 42,
+      "match_coverage": 0.42424242424242425,
+      "observation_coverage": 0.08484848484848485,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.6009142857142856,
+        "market_brier": 0.48788005908512,
+        "model_log_loss": 0.9998621276819151,
+        "market_log_loss": 0.818130217294162
+      },
+      "valid_only": {
+        "matches": 14,
+        "model_brier": 0.6009142857142856,
+        "market_brier": 0.48788005908512,
+        "model_log_loss": 0.9998621276819151,
+        "market_log_loss": 0.818130217294162
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.11303422662916565,
+          "match_bootstrap_95": [
+            -0.22301860158367107,
+            0.004636762025172784
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.18173191038775285,
+          "match_bootstrap_95": [
+            -0.34071128063563766,
+            0.006576426856596601
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    },
+    "observed_red_card": {
+      "matches": 1,
+      "observations_with_repeats": 15,
+      "valid_observations": 15,
+      "match_coverage": 0.030303030303030304,
+      "observation_coverage": 0.030303030303030304,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.11859666666666668,
+        "market_brier": 0.0016100595763276764,
+        "model_log_loss": 0.2859201306568947,
+        "market_log_loss": 0.02489087804955521
+      },
+      "valid_only": {
+        "matches": 1,
+        "model_brier": 0.11859666666666668,
+        "market_brier": 0.0016100595763276764,
+        "model_log_loss": 0.2859201306568947,
+        "market_log_loss": 0.02489087804955521
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.116986607090339,
+          "match_bootstrap_95": null,
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.2610292526073395,
+          "match_bootstrap_95": null,
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": false,
+      "uncertainty_note": "A singleton cohort cannot estimate between-match uncertainty."
+    },
+    "halftime": {
+      "matches": 33,
+      "observations_with_repeats": 99,
+      "valid_observations": 99,
+      "match_coverage": 1.0,
+      "observation_coverage": 0.2,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.462336412762768,
+        "market_brier": 0.34223502899190916,
+        "model_log_loss": 0.8056534689155592,
+        "market_log_loss": 0.5993952132427883
+      },
+      "valid_only": {
+        "matches": 33,
+        "model_brier": 0.462336412762768,
+        "market_brier": 0.34223502899190916,
+        "model_log_loss": 0.8056534689155592,
+        "market_log_loss": 0.5993952132427883
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.12010138377085884,
+          "match_bootstrap_95": [
+            -0.1740931204391534,
+            -0.06178548640768494
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.2062582556727708,
+          "match_bootstrap_95": [
+            -0.2912974786511093,
+            -0.11485307881225795
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    },
+    "large_observed_price_move": {
+      "matches": 17,
+      "observations_with_repeats": 78,
+      "valid_observations": 78,
+      "match_coverage": 0.5151515151515151,
+      "observation_coverage": 0.15757575757575756,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.4033722540098956,
+        "market_brier": 0.26591752372476635,
+        "model_log_loss": 0.7226278391639159,
+        "market_log_loss": 0.4816691780526996
+      },
+      "valid_only": {
+        "matches": 17,
+        "model_brier": 0.4033722540098956,
+        "market_brier": 0.26591752372476635,
+        "model_log_loss": 0.7226278391639159,
+        "market_log_loss": 0.4816691780526996
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.1374547302851293,
+          "match_bootstrap_95": [
+            -0.19002386985787625,
+            -0.07890534172261614
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.24095866111121633,
+          "match_bootstrap_95": [
+            -0.3179110880294562,
+            -0.1478606506145613
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    }
+  },
+  "overall_fit": {
+    "matches": 39,
+    "observations_with_repeats": 582,
+    "valid_observations": 582,
+    "match_coverage": 1.0,
+    "observation_coverage": 1.0,
+    "valid_rate_observation": 1.0,
+    "invalid_inclusive": {
+      "model_brier": 0.484235492785055,
+      "market_brier": 0.4763359892954796,
+      "model_log_loss": 0.8152441945757221,
+      "market_log_loss": 0.7723653980774516
+    },
+    "valid_only": {
+      "matches": 39,
+      "model_brier": 0.484235492785055,
+      "market_brier": 0.4763359892954796,
+      "model_log_loss": 0.8152441945757221,
+      "market_log_loss": 0.7723653980774516
+    },
+    "paired_improvement": {
+      "brier": {
+        "mean": -0.007899503489575363,
+        "match_bootstrap_95": [
+          -0.07145642313864158,
+          0.060712764177191944
+        ],
+        "orientation": "market minus model; positive is better"
+      },
+      "log_loss": {
+        "mean": -0.0428787964982703,
+        "match_bootstrap_95": [
+          -0.14057593603496973,
+          0.06440931804623852
+        ],
+        "orientation": "market minus model; positive is better"
+      }
+    },
+    "bootstrap_estimable": true,
+    "uncertainty_note": null
+  },
+  "overall_assessment": {
+    "matches": 33,
+    "observations_with_repeats": 495,
+    "valid_observations": 495,
+    "match_coverage": 1.0,
+    "observation_coverage": 1.0,
+    "valid_rate_observation": 1.0,
+    "invalid_inclusive": {
+      "model_brier": 0.4493653876030586,
+      "market_brier": 0.3393417498502117,
+      "model_log_loss": 0.7806775560237161,
+      "market_log_loss": 0.589718627671161
+    },
+    "valid_only": {
+      "matches": 33,
+      "model_brier": 0.4493653876030586,
+      "market_brier": 0.3393417498502117,
+      "model_log_loss": 0.7806775560237161,
+      "market_log_loss": 0.589718627671161
+    },
+    "paired_improvement": {
+      "brier": {
+        "mean": -0.11002363775284689,
+        "match_bootstrap_95": [
+          -0.15797589997760614,
+          -0.05688416876726538
+        ],
+        "orientation": "market minus model; positive is better"
+      },
+      "log_loss": {
+        "mean": -0.19095892835255512,
+        "match_bootstrap_95": [
+          -0.2659886887971548,
+          -0.10577326160350341
+        ],
+        "orientation": "market minus model; positive is better"
+      }
+    },
+    "bootstrap_estimable": true,
+    "uncertainty_note": null
+  },
+  "overall_original_trading": {
+    "fit": {
+      "scope": "unchanged original recorded policy; diagnostic only, no specialization trade replay",
+      "matches": 39,
+      "game_replays": 117,
+      "traded_game_replays": 115,
+      "trading_coverage": 0.9829059829059829,
+      "net_pnl_total_repeats_usd": -17.0518226,
+      "mean_net_pnl_per_game_replay": -0.14574207350427357,
+      "mean_net_pnl_match_bootstrap_95": [
+        -0.2771749213141026,
+        -0.016508739634081216
+      ],
+      "combined_simulated_fee_spread_costs_usd": 3.112822600000003,
+      "gross_pnl_before_combined_costs_usd": -13.939,
+      "gross_wins_net_of_costs_usd": 13.963644624999999,
+      "gross_losses_net_of_costs_usd": -31.015467225000002,
+      "average_win_usd": 0.22522007459677418,
+      "average_loss_usd": -0.5851974948113208,
+      "worst_game_replay_usd": -0.9928362500000001,
+      "profitable_match_rate_all_eligible_game_replays": 0.5299145299145299,
+      "profitable_match_rate_traded_game_replays": 0.5391304347826087,
+      "recorded_turnover_contract_transactions": 167,
+      "exposure_fraction_recorded_chunks": 0.8041237113402062,
+      "exposure_definition": "fraction of observed decision chunks ending with a position; not time- or capital-weighted",
+      "position_win_rate": null,
+      "unavailable": "individual position attribution, executable spread/slippage, adverse movement; not reconstructed in this forecast screen"
+    },
+    "assessment": {
+      "scope": "unchanged original recorded policy; diagnostic only, no specialization trade replay",
+      "matches": 33,
+      "game_replays": 99,
+      "traded_game_replays": 96,
+      "trading_coverage": 0.9696969696969697,
+      "net_pnl_total_repeats_usd": 1.200851687499998,
+      "mean_net_pnl_per_game_replay": 0.012129815025252505,
+      "mean_net_pnl_match_bootstrap_95": [
+        -0.09610899678977274,
+        0.11836561973169192
+      ],
+      "combined_simulated_fee_spread_costs_usd": 2.4146483125000016,
+      "gross_pnl_before_combined_costs_usd": 3.615499999999999,
+      "gross_wins_net_of_costs_usd": 15.390404599999998,
+      "gross_losses_net_of_costs_usd": -14.189552912500002,
+      "average_win_usd": 0.23318794848484847,
+      "average_loss_usd": -0.4729850970833333,
+      "worst_game_replay_usd": -0.83253875,
+      "profitable_match_rate_all_eligible_game_replays": 0.6666666666666666,
+      "profitable_match_rate_traded_game_replays": 0.6875,
+      "recorded_turnover_contract_transactions": 131,
+      "exposure_fraction_recorded_chunks": 0.7535353535353535,
+      "exposure_definition": "fraction of observed decision chunks ending with a position; not time- or capital-weighted",
+      "position_win_rate": null,
+      "unavailable": "individual position attribution, executable spread/slippage, adverse movement; not reconstructed in this forecast screen"
+    },
+    "all": {
+      "scope": "unchanged original recorded policy; diagnostic only, no specialization trade replay",
+      "matches": 72,
+      "game_replays": 216,
+      "traded_game_replays": 211,
+      "trading_coverage": 0.9768518518518519,
+      "net_pnl_total_repeats_usd": -15.850970912500005,
+      "mean_net_pnl_per_game_replay": -0.07338412459490744,
+      "mean_net_pnl_match_bootstrap_95": [
+        -0.15899197676504634,
+        0.009140911218171274
+      ],
+      "combined_simulated_fee_spread_costs_usd": 5.5274709125000046,
+      "gross_pnl_before_combined_costs_usd": -10.323500000000001,
+      "gross_wins_net_of_costs_usd": 29.354049224999997,
+      "gross_losses_net_of_costs_usd": -45.2050201375,
+      "average_win_usd": 0.22932850957031248,
+      "average_loss_usd": -0.5446387968373493,
+      "worst_game_replay_usd": -0.9928362500000001,
+      "profitable_match_rate_all_eligible_game_replays": 0.5925925925925926,
+      "profitable_match_rate_traded_game_replays": 0.6066350710900474,
+      "recorded_turnover_contract_transactions": 298,
+      "exposure_fraction_recorded_chunks": 0.7808727948003714,
+      "exposure_definition": "fraction of observed decision chunks ending with a position; not time- or capital-weighted",
+      "position_win_rate": null,
+      "unavailable": "individual position attribution, executable spread/slippage, adverse movement; not reconstructed in this forecast screen"
+    }
+  },
+  "observations": 1077,
+  "red_prefix_parse_supported_observations": 1077,
+  "protocol_sha256": "3019079d6aee6bcc9703ce32cd9d5956a9c9d46683c3bd08933dbafdddab55cb",
+  "analysis_receipts_sha256": "f8993b56c151c71fbe198cb14ad71423a8c8ef0e47c62488faf80500cf93d204",
+  "guard_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "guard_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "incremental_spend_usd": 0,
+  "assessment_role": "selected candidate confirmatory within reused development only; all other later slice results descriptive, cannot reselect",
+  "limitations": [
+    "No execution-policy evaluation, no maker returns, no untouched holdout.",
+    "Proper-score skill is not trading profitability.",
+    "Original forecasts condition on recorded original position; specialization is an observational screen."
+  ],
+  "checkpoint_provenance": {
+    "checkpoint": "tinker://d2426bc1-ec71-559d-bb81-e17da9372e58:train:0/sampler_weights/final",
+    "checked_utc": "2026-10-13T21:13:25.188741+00:00",
+    "local_provenance": {
+      "source": "/Users/alexkan/Desktop/frontiers/training-results/run-3-results/forecast-rules-run-3/checkpoints.jsonl",
+      "sha256": "5c5462815024f335e320d5b7b7e3ac6fd9956606821206b62eebfa1e08a68209",
+      "batch": 48
+    },
+    "paid_requests": 0,
+    "purpose": "Metadata availability only; no prediction, training, enrollment or scoring.",
+    "availability": "verified",
+    "weights_info": {
+      "base_model": "Qwen/Qwen3-8B",
+      "is_lora": true,
+      "lora_rank": 32
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "verified_on": "2026-10-13",
+  "source": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+  "model": "Qwen/Qwen3-8B",
+  "usd_per_million_tokens": {"prefill": 0.195, "cached_prefill": 0.039, "sample": 0.60, "train": 0.44},
+  "checkpoint_storage_usd_per_gb_month": 0.10,
+  "cost_type": "Published rates; not verified invoice billing",
+  "reservation_rule": "Use at least 2x uncached input/output maxima, retain per-request reservation, $0.50 unallocated headroom per direction; no retries or automatic restarts. Include storage and training maxima where relevant."
+}

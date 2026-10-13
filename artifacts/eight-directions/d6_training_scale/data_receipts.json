@@ -1,0 +1,58 @@
+[
+  {
+    "path": "inputs/MANIFEST.json",
+    "sha256": "ba77802adee2968f30d76ae286198c2956795d7c15a96b1250a8e3aecc042b6a"
+  },
+  {
+    "path": "research/eight-directions/pricing.json",
+    "sha256": "f06062fc230d4f2eb69726a0e3cd51d174fc89e8b2e3e3dd701e7711e363ab74"
+  },
+  {
+    "path": "inputs/forecast-only/protocol.json",
+    "sha256": "539e8a3e211655e721330ea3b174d99783d301cd9a394ca27adc5b8ba7283df0"
+  },
+  {
+    "path": "inputs/forecast-only/tasks.jsonl.gz",
+    "sha256": "be5410a87a58b7884f5b811e718de3ca56d80936d925d639b9e91522f3d1afea"
+  },
+  {
+    "path": "inputs/forecast-only/predictions.jsonl",
+    "sha256": "e268b2c63b09dda29d935327c89a7eebd143814222a60487d101cd67a368f6c9"
+  },
+  {
+    "path": "inputs/forecast-only/training/config.json",
+    "sha256": "def72b7819bfc315861e4a001e92dc18663542e76c0903f831164cc4d7f6ee77"
+  },
+  {
+    "path": "inputs/forecast-only/training/metrics.jsonl",
+    "sha256": "1c5ae51028b831e543d2692a69f41ae5813dd676fbb7e9b2bbde270e0479258c"
+  },
+  {
+    "path": "inputs/forecast-only/summary.json",
+    "sha256": "f5730b63e79ae255124f0bb63da7bc9757335034a3f7c890d07736ea819b448a"
+  },
+  {
+    "path": "inputs/forecast-only/usage.json",
+    "sha256": "ac51ecc288b1910f2f86cc66e9604fff2a6bb1f6a6f8068dfa2c11bd67fcf59a"
+  },
+  {
+    "path": "artifacts/eight-directions/d3_calibration/results.json",
+    "sha256": "c46cce595699fadf2f82b24d5928639308103aa8f656739b0c2376620595a99d"
+  },
+  {
+    "path": "inputs/forecast-only/training/iteration_000000/train_rollout_summaries.jsonl",
+    "sha256": "40124bcf71c202ada76aa44dc854e9715d8a17ca54192376179a52c278ae8403"
+  },
+  {
+    "path": "inputs/forecast-only/training/iteration_000001/train_rollout_summaries.jsonl",
+    "sha256": "0b5e2e16d7795ef6ad5190f0fb034f0b79fcb1f982dfe7f13be082077573cc98"
+  },
+  {
+    "path": "inputs/forecast-only/training/iteration_000002/train_rollout_summaries.jsonl",
+    "sha256": "b4a10948722c6aebd8e7ecd5e2eb4ea44ccc19a871748517c23f668692048227"
+  },
+  {
+    "path": "inputs/forecast-only/training/iteration_000003/train_rollout_summaries.jsonl",
+    "sha256": "99f1b422e2978192d50d41f3cfdf088a3069d6d5495516d9df5eb90f6d4e4fd0"
+  }
+]

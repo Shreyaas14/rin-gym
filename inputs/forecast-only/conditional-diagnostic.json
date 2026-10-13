@@ -1,0 +1,7 @@
+{
+  "common_valid_decisions": 59,
+  "common_valid_matches": 16,
+  "base_common_valid_decision_brier": 0.6157669491525424,
+  "final_common_valid_decision_brier": 0.6248483050847458,
+  "note": "Post-hoc conditional diagnostic only; selected subset with unequal points per match; not the primary metric or a promotion criterion."
+}

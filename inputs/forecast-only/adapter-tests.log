@@ -1,0 +1,481 @@
+test_real_cookbook_loop_with_fake_service (experiments.forecast_only.test_adapter.AdapterTests.test_real_cookbook_loop_with_fake_service) ... root:680 [[92mINFO[0m] Command line invocation: 'python -m unittest' experiments.forecast_only.test_adapter -v
+tinker_cookbook.utils.ml_log:618 [[92mINFO[0m] Logging to: /var/folders/f7/tc0vfnsj5_l8ml9rq4fc99xm0000gn/T/tmpjbpev70i
+tinker_cookbook.checkpoint_utils:396 [[92mINFO[0m] No checkpoints found at /var/folders/f7/tc0vfnsj5_l8ml9rq4fc99xm0000gn/T/tmpjbpev70i/checkpoints.jsonl
+tinker_cookbook.checkpoint_utils:427 [[92mINFO[0m] No checkpoints found with key state_path in /var/folders/f7/tc0vfnsj5_l8ml9rq4fc99xm0000gn/T/tmpjbpev70i
+tinker_cookbook.rl.train:1991 [[92mINFO[0m] Will train on 1 batches
+Sampling batch 0:   0%|          | 0/1 [00:00<?, ?it/s]Sampling batch 0: 100%|██████████| 1/1 [00:00<00:00, 78.70it/s]
+tinker_cookbook.rl.train:267 [[92mINFO[0m] 
+====== Trajectory Group ======
+****** trajectory idx=0, reward=-0.817 ******
+Per-step metrics:
+  Step 0:
+    brier: 1.2164190623700082
+    valid: 1.0
+  Step 1:
+    brier: 1.2641355959900218
+    valid: 1.0
+  Step 2:
+    brier: 0.529667583581738
+    valid: 1.0
+  Step 3:
+    brier: 0.5425626182416587
+    valid: 1.0
+  Step 4:
+    brier: 0.5320109227064048
+    valid: 1.0
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: first half, 15:00 played
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the start)
+Bournemouth: goals 0 (0), shots 0 (0), corners 0 (0), fouls 2 (2), offsides 0 (0), yellow 0 (0), red 0 (0), subs 0 (0)
+Everton: goals 0 (0), shots 3 (3), corners 0 (0), fouls 0 (0), offsides 0 (0), yellow 0 (0), red 0 (0), subs 0 (0)
+
+Events since the start
+0' period_start The referee signals the start of the first period.
+6' goal_prevention [Bournemouth] A. Scott (Bournemouth) blocks the shot.
+7' shot_attempt [Everton] T. Barry (Everton) attempts an effort on goal.
+7' pause [Everton] The referee has paused the match
+9' resume [Bournemouth] The referee has resumed the match
+12' foul [Bournemouth] Amine ADLI (Bournemouth) commits a foul.
+13' goal_prevention [Bournemouth] A. Scott (Bournemouth) blocks the shot.
+13' foul [Bournemouth] Amine ADLI (Bournemouth) commits a foul.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+now               0.4150 0.2900 0.3000<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.6910952960675337, "draw": 0.15445235196623314, "away": 0.15445235196623314}}<|im_end|>
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: first half, 30:00 played
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the previous decision point)
+Bournemouth: goals 0 (0), shots 1 (1), corners 0 (0), fouls 5 (3), offsides 0 (0), yellow 0 (0), red 0 (0), subs 0 (0)
+Everton: goals 0 (0), shots 4 (1), corners 1 (1), fouls 3 (3), offsides 0 (0), yellow 1 (1), red 0 (0), subs 0 (0)
+
+Events since the previous decision point
+17' foul [Bournemouth] Justin KLUIVERT (Bournemouth) commits a foul.
+19' corner [Everton] K. Dewsbury-Hall (Everton) takes a corner kick.
+19' shot_attempt [Everton] T. Iroegbunam (Everton) attempts an effort on goal.
+19' foul [Everton] T. Iroegbunam (Everton) commits a foul.
+20' foul [Bournemouth] Adrien TRUFFERT (Bournemouth) commits a foul.
+22' foul [Everton] T. Iroegbunam (Everton) commits a foul.
+22' yellow_card [Everton] T. Iroegbunam (Everton) is booked by the referee.
+22' foul [Everton] Carlos ALCARAZ (Everton) commits a foul.
+23' goal_prevention [Everton] The goalkeeper of Everton pulls off a save.
+25' foul [Bournemouth] Amine ADLI (Bournemouth) commits a foul.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+first half 15:00  0.4150 0.2900 0.3000
+now               0.3650 0.3250 0.3100<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.7137392595759424, "draw": 0.1431303702120288, "away": 0.1431303702120288}}<|im_end|>
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: halftime
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the previous decision point)
+Bournemouth: goals 0 (0), shots 1 (0), corners 0 (0), fouls 8 (3), offsides 1 (1), yellow 1 (1), red 0 (0), subs 0 (0)
+Everton: goals 0 (0), shots 6 (2), corners 4 (3), fouls 6 (3), offsides 1 (1), yellow 1 (0), red 0 (0), subs 0 (0)
+
+Events since the previous decision point
+30' foul [Everton] J. Garner (Everton) commits a foul.
+32' foul [Bournemouth] A. Scott (Bournemouth) commits a foul.
+35' foul [Bournemouth] Tyler ADAMS (Bournemouth) commits a foul.
+40' foul [Everton] Iliman NDIAYE (Everton) commits a foul.
+41' corner [Everton] J. Garner (Everton) takes a corner kick.
+42' corner [Everton] J. Garner (Everton) takes a corner kick.
+43' corner [Everton] J. Garner (Everton) takes a corner kick.
+43' shot_attempt [Everton] T. Barry (Everton) is denied by the post.
+43' offside [Everton] T. Barry (Everton) is ruled offside.
+43' foul [Everton] Vitaliy MYKOLENKO (Everton) commits a foul.
+44' foul [Bournemouth] Justin KLUIVERT (Bournemouth) commits a foul.
+45' yellow_card [Bournemouth] Justin KLUIVERT (Bournemouth) is booked by the referee.
+45' shot_attempt [Everton] J. Garner (Everton) attempts an effort on goal.
+45'+2' offside [Bournemouth] Eli Junior KROUPI (Bournemouth) is ruled offside.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+first half 15:00  0.4150 0.2900 0.3000
+first half 30:00  0.3650 0.3250 0.3100
+now               0.6350 0.2300 0.1200<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.14063566067854907, "draw": 0.4296821696607255, "away": 0.4296821696607255}}<|im_end|>
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: second half, 15:00 played
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the previous decision point)
+Bournemouth: goals 0 (0), shots 1 (0), corners 0 (0), fouls 12 (4), offsides 1 (0), yellow 2 (1), red 0 (0), subs 0 (0)
+Everton: goals 0 (0), shots 8 (2), corners 6 (2), fouls 9 (3), offsides 1 (0), yellow 2 (1), red 0 (0), subs 0 (0)
+
+Events since the previous decision point
+45'+4' period_end The referee brings the first period to an end.
+45' period_start The referee signals the start of the second period.
+47' goal_prevention [Bournemouth] V. Milosavljević (Bournemouth) blocks the shot.
+48' corner [Everton] K. Dewsbury-Hall (Everton) takes a corner kick.
+48' foul [Everton] Iliman NDIAYE (Everton) commits a foul.
+49' foul [Everton] Vitaliy MYKOLENKO (Everton) commits a foul.
+49' yellow_card [Everton] Vitaliy MYKOLENKO (Everton) is booked by the referee.
+51' foul [Bournemouth] Tyler ADAMS (Bournemouth) commits a foul.
+51' foul [Bournemouth] A. Scott (Bournemouth) commits a foul.
+53' foul [Bournemouth] Tyler ADAMS (Bournemouth) commits a foul.
+53' yellow_card [Bournemouth] Tyler ADAMS (Bournemouth) is booked by the referee.
+54' foul [Bournemouth] Álex Jiménez (Bournemouth) commits a foul.
+56' goal_prevention [Bournemouth] The goalkeeper of Bournemouth pulls off a save.
+57' corner [Everton] J. Garner (Everton) takes a corner kick.
+57' foul [Everton] J. Garner (Everton) commits a foul.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+first half 15:00  0.4150 0.2900 0.3000
+first half 30:00  0.3650 0.3250 0.3100
+halftime          0.6350 0.2300 0.1200
+now               0.2650 0.4750 0.2600<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.16844903926046154, "draw": 0.41577548036976925, "away": 0.41577548036976925}}<|im_end|>
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: second half, 30:00 played
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the previous decision point)
+Bournemouth: goals 0 (0), shots 3 (2), corners 1 (1), fouls 12 (0), offsides 1 (0), yellow 2 (0), red 0 (0), subs 3 (3)
+Everton: goals 0 (0), shots 10 (2), corners 6 (0), fouls 10 (1), offsides 1 (0), yellow 2 (0), red 0 (0), subs 0 (0)
+
+Events since the previous decision point
+60' pause [Everton] The referee has paused the match
+60' resume [Everton] The referee has resumed the match
+60' substitution [Bournemouth] M. Tavernier (in) comes off the bench to replace Amine ADLI (out) (Bournemouth)
+61' substitution [Bournemouth] Evanilson (in) comes off the bench to replace Eli Junior KROUPI (out) (Bournemouth)
+62' goal_prevention [Bournemouth] V. Milosavljević (Bournemouth) blocks the shot.
+62' goal_prevention [Everton] The goalkeeper of Everton pulls off a save.
+65' corner [Bournemouth] M. Tavernier (Bournemouth) takes a corner kick.
+65' shot_attempt [Bournemouth] V. Milosavljević (Bournemouth) attempts an effort on goal.
+66' shot_attempt [Everton] T. Barry (Everton) attempts an effort on goal.
+70' substitution [Bournemouth] Julio SOLER (in) comes off the bench to replace Justin KLUIVERT (out) (Bournemouth)
+72' foul [Everton] T. Barry (Everton) commits a foul.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+first half 15:00  0.4150 0.2900 0.3000
+first half 30:00  0.3650 0.3250 0.3100
+halftime          0.6350 0.2300 0.1200
+second half 15:00 0.2650 0.4750 0.2600
+now               0.2100 0.5900 0.1950<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.14608427409411068, "draw": 0.4269578629529447, "away": 0.4269578629529447}}<|im_end|>
+****** trajectory idx=1, reward=-0.972 ******
+Per-step metrics:
+  Step 0:
+    brier: 1.3010225750809579
+    valid: 1.0
+  Step 1:
+    brier: 0.5810071295870907
+    valid: 1.0
+  Step 2:
+    brier: 1.3709085630182538
+    valid: 1.0
+  Step 3:
+    brier: 0.9006031133349137
+    valid: 1.0
+  Step 4:
+    brier: 0.707813319365787
+    valid: 1.0
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: first half, 15:00 played
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the start)
+Bournemouth: goals 0 (0), shots 0 (0), corners 0 (0), fouls 2 (2), offsides 0 (0), yellow 0 (0), red 0 (0), subs 0 (0)
+Everton: goals 0 (0), shots 3 (3), corners 0 (0), fouls 0 (0), offsides 0 (0), yellow 0 (0), red 0 (0), subs 0 (0)
+
+Events since the start
+0' period_start The referee signals the start of the first period.
+6' goal_prevention [Bournemouth] A. Scott (Bournemouth) blocks the shot.
+7' shot_attempt [Everton] T. Barry (Everton) attempts an effort on goal.
+7' pause [Everton] The referee has paused the match
+9' resume [Bournemouth] The referee has resumed the match
+12' foul [Bournemouth] Amine ADLI (Bournemouth) commits a foul.
+13' goal_prevention [Bournemouth] A. Scott (Bournemouth) blocks the shot.
+13' foul [Bournemouth] Amine ADLI (Bournemouth) commits a foul.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+now               0.4150 0.2900 0.3000<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.7307633338188034, "draw": 0.13461833309059829, "away": 0.13461833309059829}}<|im_end|>
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: first half, 30:00 played
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the previous decision point)
+Bournemouth: goals 0 (0), shots 1 (1), corners 0 (0), fouls 5 (3), offsides 0 (0), yellow 0 (0), red 0 (0), subs 0 (0)
+Everton: goals 0 (0), shots 4 (1), corners 1 (1), fouls 3 (3), offsides 0 (0), yellow 1 (1), red 0 (0), subs 0 (0)
+
+Events since the previous decision point
+17' foul [Bournemouth] Justin KLUIVERT (Bournemouth) commits a foul.
+19' corner [Everton] K. Dewsbury-Hall (Everton) takes a corner kick.
+19' shot_attempt [Everton] T. Iroegbunam (Everton) attempts an effort on goal.
+19' foul [Everton] T. Iroegbunam (Everton) commits a foul.
+20' foul [Bournemouth] Adrien TRUFFERT (Bournemouth) commits a foul.
+22' foul [Everton] T. Iroegbunam (Everton) commits a foul.
+22' yellow_card [Everton] T. Iroegbunam (Everton) is booked by the referee.
+22' foul [Everton] Carlos ALCARAZ (Everton) commits a foul.
+23' goal_prevention [Everton] The goalkeeper of Everton pulls off a save.
+25' foul [Bournemouth] Amine ADLI (Bournemouth) commits a foul.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+first half 15:00  0.4150 0.2900 0.3000
+now               0.3650 0.3250 0.3100<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.23238922750002955, "draw": 0.3838053862499852, "away": 0.3838053862499852}}<|im_end|>
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: halftime
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the previous decision point)
+Bournemouth: goals 0 (0), shots 1 (0), corners 0 (0), fouls 8 (3), offsides 1 (1), yellow 1 (1), red 0 (0), subs 0 (0)
+Everton: goals 0 (0), shots 6 (2), corners 4 (3), fouls 6 (3), offsides 1 (1), yellow 1 (0), red 0 (0), subs 0 (0)
+
+Events since the previous decision point
+30' foul [Everton] J. Garner (Everton) commits a foul.
+32' foul [Bournemouth] A. Scott (Bournemouth) commits a foul.
+35' foul [Bournemouth] Tyler ADAMS (Bournemouth) commits a foul.
+40' foul [Everton] Iliman NDIAYE (Everton) commits a foul.
+41' corner [Everton] J. Garner (Everton) takes a corner kick.
+42' corner [Everton] J. Garner (Everton) takes a corner kick.
+43' corner [Everton] J. Garner (Everton) takes a corner kick.
+43' shot_attempt [Everton] T. Barry (Everton) is denied by the post.
+43' offside [Everton] T. Barry (Everton) is ruled offside.
+43' foul [Everton] Vitaliy MYKOLENKO (Everton) commits a foul.
+44' foul [Bournemouth] Justin KLUIVERT (Bournemouth) commits a foul.
+45' yellow_card [Bournemouth] Justin KLUIVERT (Bournemouth) is booked by the referee.
+45' shot_attempt [Everton] J. Garner (Everton) attempts an effort on goal.
+45'+2' offside [Bournemouth] Eli Junior KROUPI (Bournemouth) is ruled offside.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+first half 15:00  0.4150 0.2900 0.3000
+first half 30:00  0.3650 0.3250 0.3100
+now               0.6350 0.2300 0.1200<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.7619748740469307, "draw": 0.11901256297653467, "away": 0.11901256297653467}}<|im_end|>
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: second half, 15:00 played
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the previous decision point)
+Bournemouth: goals 0 (0), shots 1 (0), corners 0 (0), fouls 12 (4), offsides 1 (0), yellow 2 (1), red 0 (0), subs 0 (0)
+Everton: goals 0 (0), shots 8 (2), corners 6 (2), fouls 9 (3), offsides 1 (0), yellow 2 (1), red 0 (0), subs 0 (0)
+
+Events since the previous decision point
+45'+4' period_end The referee brings the first period to an end.
+45' period_start The referee signals the start of the second period.
+47' goal_prevention [Bournemouth] V. Milosavljević (Bournemouth) blocks the shot.
+48' corner [Everton] K. Dewsbury-Hall (Everton) takes a corner kick.
+48' foul [Everton] Iliman NDIAYE (Everton) commits a foul.
+49' foul [Everton] Vitaliy MYKOLENKO (Everton) commits a foul.
+49' yellow_card [Everton] Vitaliy MYKOLENKO (Everton) is booked by the referee.
+51' foul [Bournemouth] Tyler ADAMS (Bournemouth) commits a foul.
+51' foul [Bournemouth] A. Scott (Bournemouth) commits a foul.
+53' foul [Bournemouth] Tyler ADAMS (Bournemouth) commits a foul.
+53' yellow_card [Bournemouth] Tyler ADAMS (Bournemouth) is booked by the referee.
+54' foul [Bournemouth] Álex Jiménez (Bournemouth) commits a foul.
+56' goal_prevention [Bournemouth] The goalkeeper of Bournemouth pulls off a save.
+57' corner [Everton] J. Garner (Everton) takes a corner kick.
+57' foul [Everton] J. Garner (Everton) commits a foul.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+first half 15:00  0.4150 0.2900 0.3000
+first half 30:00  0.3650 0.3250 0.3100
+halftime          0.6350 0.2300 0.1200
+now               0.2650 0.4750 0.2600<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.5167869408404936, "draw": 0.2416065295797532, "away": 0.2416065295797532}}<|im_end|>
+---- datum ----
+<|im_start|>system
+Forecast the regulation-time result of this soccer match using only the supplied observations. Regulation includes stoppage time, excludes extra time and penalties, and may end in a draw. Prices are noisy evidence, not certain outcomes. Return only JSON with this exact schema: {"probs":{"home":0.40,"draw":0.30,"away":0.30}}. Use finite probabilities between 0 and 1 summing to 1. Do not select a trade or include explanations.<|im_end|>
+<|im_start|>user
+Premier League 2025/26, Regular Season: Bournemouth (home) v Everton (away)
+Clock: second half, 30:00 played
+Score: Bournemouth 0-0 Everton
+Red cards: Bournemouth 0, Everton 0
+
+Match totals (in brackets: since the previous decision point)
+Bournemouth: goals 0 (0), shots 3 (2), corners 1 (1), fouls 12 (0), offsides 1 (0), yellow 2 (0), red 0 (0), subs 3 (3)
+Everton: goals 0 (0), shots 10 (2), corners 6 (0), fouls 10 (1), offsides 1 (0), yellow 2 (0), red 0 (0), subs 0 (0)
+
+Events since the previous decision point
+60' pause [Everton] The referee has paused the match
+60' resume [Everton] The referee has resumed the match
+60' substitution [Bournemouth] M. Tavernier (in) comes off the bench to replace Amine ADLI (out) (Bournemouth)
+61' substitution [Bournemouth] Evanilson (in) comes off the bench to replace Eli Junior KROUPI (out) (Bournemouth)
+62' goal_prevention [Bournemouth] V. Milosavljević (Bournemouth) blocks the shot.
+62' goal_prevention [Everton] The goalkeeper of Everton pulls off a save.
+65' corner [Bournemouth] M. Tavernier (Bournemouth) takes a corner kick.
+65' shot_attempt [Bournemouth] V. Milosavljević (Bournemouth) attempts an effort on goal.
+66' shot_attempt [Everton] T. Barry (Everton) attempts an effort on goal.
+70' substitution [Bournemouth] Julio SOLER (in) comes off the bench to replace Justin KLUIVERT (out) (Bournemouth)
+72' foul [Everton] T. Barry (Everton) commits a foul.
+
+Prices ($ per share)
+                    home   draw   away
+kickoff           0.4450 0.2800 0.2750
+first half 15:00  0.4150 0.2900 0.3000
+first half 30:00  0.3650 0.3250 0.3100
+halftime          0.6350 0.2300 0.1200
+second half 15:00 0.2650 0.4750 0.2600
+now               0.2100 0.5900 0.1950<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{"probs": {"home": 0.3722125910155709, "draw": 0.31389370449221454, "away": 0.31389370449221454}}<|im_end|>
+====== End Trajectory Group ======
+tinker_cookbook.utils.ml_log:206 [[92mINFO[0m] Wrote metrics to /var/folders/f7/tc0vfnsj5_l8ml9rq4fc99xm0000gn/T/tmpjbpev70i/metrics.jsonl
+tinker_cookbook.utils.ml_log:279 [[92mINFO[0m] 
+                                 Step 0                                 
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Metric                                                  ┃ Value      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━┩
+│ env/all/ac_tokens_per_turn                              │ 75.400000  │
+│ env/all/brier                                           │ 0.894615   │
+│ env/all/by_group/frac_all_bad                           │ 0.000000   │
+│ env/all/by_group/frac_all_good                          │ 0.000000   │
+│ env/all/by_group/frac_mixed                             │ 1.000000   │
+│ env/all/ob_tokens_per_turn                              │ 668.400000 │
+│ env/all/reward/total                                    │ -0.894615  │
+│ env/all/total_ac_tokens                                 │ 754        │
+│ env/all/total_episodes                                  │ 2          │
+│ env/all/total_ob_tokens                                 │ 6684       │
+│ env/all/total_turns                                     │ 10         │
+│ env/all/turns_per_episode                               │ 5.000000   │
+│ env/all/valid                                           │ 1.000000   │
+│ optim/entropy                                           │ 0.522490   │
+│ optim/kl_sample_train_v1                                │ 0.010000   │
+│ optim/kl_sample_train_v2                                │ 0.000050   │
+│ optim/lr                                                │ 0.000010   │
+│ progress/batch                                          │ 0          │
+│ progress/done_frac                                      │ 1.000000   │
+│ time/assemble_training_data                             │ 0.002691   │
+│ time/compute_full_batch_metrics_and_get_sampling_client │ 0.000616   │
+│ time/compute_group_rewards                              │ 0.000028   │
+│ time/compute_kl_sample_train                            │ 0.000603   │
+│ time/do_group_rollout_and_filter_constant_reward        │ 0.012377   │
+│ time/do_train_step_and_get_sampling_client              │ 0.009585   │
+│ time/env_initial_observation:max                        │ 0.002367   │
+│ time/env_initial_observation:mean                       │ 0.001435   │
+│ time/env_step:max                                       │ 0.000841   │
+│ time/env_step:mean                                      │ 0.000582   │
+│ time/policy_sample:max                                  │ 0.000524   │
+│ time/policy_sample:mean                                 │ 0.000239   │
+│ time/prepare_minibatch                                  │ 0.008781   │
+│ time/sampling                                           │ 0.024518   │
+│ time/save_checkpoint                                    │ 0.000002   │
+│ time/save_checkpoint_and_get_sampling_client            │ 0.000008   │
+│ time/total                                              │ 0.034425   │
+│ time/train_step                                         │ 0.000156   │
+└─────────────────────────────────────────────────────────┴────────────┘
+tinker_cookbook.checkpoint_utils:467 [[92mINFO[0m] Saved checkpoints: {'state_path': 'tinker://dry-run/weights/final', 'sampler_path': 'tinker://dry-run/sampler_weights/final'}
+tinker_cookbook.rl.train:2052 [[92mINFO[0m] Training completed successfully
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.501s
+
+OK

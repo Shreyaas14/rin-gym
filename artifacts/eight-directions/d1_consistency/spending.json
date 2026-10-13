@@ -1,0 +1,9 @@
+{
+  "direction": 1,
+  "hard_cap_usd": 5,
+  "reserved_usd": 0,
+  "completed_token_estimate_usd": 0,
+  "external_requests": [],
+  "billing_verified": false,
+  "billing_evidence": "No paid requests; billed charge not queried. Offline work only."
+}

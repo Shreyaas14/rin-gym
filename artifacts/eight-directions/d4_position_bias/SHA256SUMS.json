@@ -1,0 +1,15 @@
+{
+  "REPORT.md": "640a9b50aed76e759500ed02f720223f32d56b5a18fdd491b3316bb917dcc195",
+  "STARTED.json": "0069f9361b6fcacd5abde19a97b5d344e6a5c6554ebb517eeca149c67d62db94",
+  "analysis_receipt.json": "ef9d629509e81aa8179a38e718b4052b9a96e4bcf784bc4a7143cc0a3f78b0b3",
+  "budget_update.json": "dcf796b8a95b15314d3cc3b6813471c68f2ed80d50ac8774d1b556c22aa0448e",
+  "guards.json": "73d0fbf38085800e23964e0a212eb92310625d4ac15143fd1e18e2544c115ebb",
+  "predictions.jsonl": "c021b0c331446080eddca704c9c76117ab89c777e73b731b6b9e1e8d4f589a7e",
+  "prepared_requests.jsonl": "3ee3b35e35d7948b9e994aa6acaf66f4fc8b159171f94400dbee3346bcf3856a",
+  "prompt_validation.json": "aa8e8fc0ec53274fc8dcceafc3ff32587cbd3b3a9d2b82b72c02a346733d65d7",
+  "protocol.json": "4f9ac24b57a808e4e4af20c2ef053e0a466f0bf983bab4919ae94819ac74bdd2",
+  "requests.jsonl": "5984d119ed4c17e54aee92a74922564c0fb5bf4d95e608c316ce90a42562afec",
+  "results.json": "1ff00d57419e43b510c88354e27b15bc79319922152e36ec71e4af42df21b6dc",
+  "spending.json": "308ec3698e832739734f9ddb93357efe7464d1859f398c8340c1bd1dc70b6746",
+  "verification.json": "c6f7f38e44c8433e7a46192541db7abd3fd455c3570050afeac93e0c2eb07433"
+}

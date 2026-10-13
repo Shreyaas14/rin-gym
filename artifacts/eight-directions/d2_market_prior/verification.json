@@ -1,0 +1,11 @@
+{
+  "source_original_prompt_hashes": 1077,
+  "all_observed_timestamps_matched": true,
+  "three_repeat_complete_cases": 216,
+  "chronological_partition": {
+    "fit": 39,
+    "assessment": 33
+  },
+  "analytical_weight_and_endpoint_loss_check": true,
+  "holdout_guard_unchanged": true
+}

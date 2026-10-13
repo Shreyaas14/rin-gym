@@ -1,0 +1,26 @@
+{
+  "offline_analysis": "passed; reproduced original strict metrics and paired bootstrap",
+  "unit_tests": {
+    "count": 5,
+    "result": "passed"
+  },
+  "guard_unchanged": true,
+  "paid_calls": 0,
+  "commands": [
+    "PYTHONPATH=. HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 /Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python -m experiments.eight_directions.d6_training_scale.analyze",
+    "PYTHONPATH=. HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 /Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python -m unittest experiments.eight_directions.d6_training_scale.test_integration -v",
+    "PYTHONPATH=. HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 /Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python -m experiments.eight_directions.d6_training_scale.report"
+  ],
+  "outputs_sha256": {
+    "artifacts/eight-directions/d6_training_scale/REPORT.md": "d48fc02718d9151ccda34213814140550887b3995ccbda15e7a6d6b9edb899cd",
+    "artifacts/eight-directions/d6_training_scale/data_receipts.json": "c3cb2ed67e3a60a37f7dc4b1b8d80c71b6a97c8e13bfea8d6db1716b8d1f3483",
+    "artifacts/eight-directions/d6_training_scale/guard_after.json": "09376a8260b31f3ec84ef474b402dc96405e75de389506f43484815ee36470be",
+    "artifacts/eight-directions/d6_training_scale/guard_before.json": "09376a8260b31f3ec84ef474b402dc96405e75de389506f43484815ee36470be",
+    "artifacts/eight-directions/d6_training_scale/posthoc_prompt_diagnostic_protocol.json": "9d15f45a9fa848541c22cf7e0cfdc102d4371958ce218eaeabb4c5bfaa1c7c81",
+    "artifacts/eight-directions/d6_training_scale/protocol.json": "fe48cd6e6ccb9887620f90aeddea75ed45ede6258318c8a17127cb90d155eb6d",
+    "artifacts/eight-directions/d6_training_scale/results.json": "c067c9b4b0b6e73c420a4b4b9d93a7659aad4a7c51d9c5d36c52fee122398e65",
+    "artifacts/eight-directions/d6_training_scale/scaling_proposal.json": "8d62daa4469f35a46745504fb5cdb295182ab3ee396e15190f6e22fb32f9c970",
+    "artifacts/eight-directions/d6_training_scale/spending.json": "6cc00478249c7844358244f5c500a270fb6215e1faa58256a7f89886c11ed426",
+    "artifacts/eight-directions/d6_training_scale/train_only_integration.jsonl": "950941ee1e8a5aa455490a02248ac9347a862f75c7f2a2841f2555345882ed6c"
+  }
+}

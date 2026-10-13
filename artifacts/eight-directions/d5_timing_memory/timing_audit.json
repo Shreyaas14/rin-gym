@@ -1,0 +1,98 @@
+[
+  {
+    "match_id": "400021480",
+    "home": "New Zealand",
+    "away": "Egypt",
+    "halftime_gap_s": 966.6929998397827,
+    "periods": {
+      "h1_start": 1782090005.037,
+      "h1_end": 1782092952.93,
+      "h2_start": 1782093919.623,
+      "h2_end": 1782097234.758
+    }
+  },
+  {
+    "match_id": "400021494",
+    "home": "Argentina",
+    "away": "Austria",
+    "halftime_gap_s": 985.5940001010895,
+    "periods": {
+      "h1_start": 1782147658.036,
+      "h1_end": 1782150779.125,
+      "h2_start": 1782151764.719,
+      "h2_end": 1782154917.288
+    }
+  },
+  {
+    "match_id": "400021492",
+    "home": "France",
+    "away": "Iraq",
+    "halftime_gap_s": 7912.041000127792,
+    "periods": {
+      "h1_start": 1782162041.167,
+      "h1_end": 1782164927.136,
+      "h2_start": 1782172839.177,
+      "h2_end": 1782175679.498
+    }
+  },
+  {
+    "match_id": "400021491",
+    "home": "Norway",
+    "away": "Senegal",
+    "halftime_gap_s": 900.199000120163,
+    "periods": {
+      "h1_start": 1782172805.031,
+      "h1_end": 1782175758.017,
+      "h2_start": 1782176658.216,
+      "h2_end": 1782179965.913
+    }
+  },
+  {
+    "match_id": "400021499",
+    "home": "Jordan",
+    "away": "Algeria",
+    "halftime_gap_s": 1028.0889999866486,
+    "periods": {
+      "h1_start": 1782183618.363,
+      "h1_end": 1782186622.309,
+      "h2_start": 1782187650.398,
+      "h2_end": 1782190800.197
+    }
+  },
+  {
+    "match_id": "400021503",
+    "home": "Portugal",
+    "away": "Uzbekistan",
+    "halftime_gap_s": 1065.1370000839233,
+    "periods": {
+      "h1_start": 1782234008.459,
+      "h1_end": 1782237080.164,
+      "h2_start": 1782238145.301,
+      "h2_end": 1782241156.148
+    }
+  },
+  {
+    "match_id": "400021506",
+    "home": "England",
+    "away": "Ghana",
+    "halftime_gap_s": 1038.6960000991821,
+    "periods": {
+      "h1_start": 1782244808.715,
+      "h1_end": 1782247890.12,
+      "h2_start": 1782248928.816,
+      "h2_end": 1782251999.594
+    }
+  },
+  {
+    "match_id": "400021511",
+    "home": "Panama",
+    "away": "Croatia",
+    "halftime_gap_s": 949.172000169754,
+    "periods": {
+      "h1_start": 1782255603.723,
+      "h1_end": 1782258489.702,
+      "h2_start": 1782259438.874,
+      "h2_end": 1782262445.205
+    }
+  }
+]

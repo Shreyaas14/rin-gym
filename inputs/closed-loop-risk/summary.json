@@ -1,0 +1,85 @@
+{
+  "summaries": {
+    "original": {
+      "replay_cases": 216,
+      "unique_matches": 72,
+      "traded_cases": 208,
+      "winning_cases": 120,
+      "losing_cases": 88,
+      "win_rate_traded": 0.5769230769230769,
+      "win_rate_all_cases": 0.5555555555555556,
+      "total_pnl": -20.619153437500007,
+      "gross_wins": 25.057777499999997,
+      "gross_losses": -45.6769309375,
+      "average_win": 0.20881481249999997,
+      "average_loss": -0.5190560333806818,
+      "worst_case_pnl": -1.19303625,
+      "mean_pnl_per_case": -0.09545904369212965
+    },
+    "conservative": {
+      "replay_cases": 216,
+      "unique_matches": 72,
+      "traded_cases": 212,
+      "winning_cases": 26,
+      "losing_cases": 186,
+      "win_rate_traded": 0.12264150943396226,
+      "win_rate_all_cases": 0.12037037037037036,
+      "total_pnl": -1.1196185875000004,
+      "gross_wins": 4.898948646875,
+      "gross_losses": -6.018567234375,
+      "average_win": 0.1884211018028846,
+      "average_loss": -0.03235788835685484,
+      "worst_case_pnl": -0.1143221875,
+      "mean_pnl_per_case": -0.0051834193865740764
+    },
+    "original_quarter_size_arithmetic": {
+      "replay_cases": 216,
+      "unique_matches": 72,
+      "traded_cases": 208,
+      "winning_cases": 120,
+      "losing_cases": 88,
+      "win_rate_traded": 0.5769230769230769,
+      "win_rate_all_cases": 0.5555555555555556,
+      "total_pnl": -5.154788359375002,
+      "gross_wins": 6.264444374999999,
+      "gross_losses": -11.419232734375,
+      "average_win": 0.052203703124999994,
+      "average_loss": -0.12976400834517046,
+      "worst_case_pnl": -0.2982590625,
+      "mean_pnl_per_case": -0.023864760923032413
+    }
+  },
+  "paired": {
+    "original": {
+      "mean_pnl_delta_per_game_repeat": 0.09027562430555558,
+      "match_cluster_bootstrap_95": [
+        0.00047612349139179456,
+        0.17905884519567422
+      ]
+    },
+    "original_quarter_size_arithmetic": {
+      "mean_pnl_delta_per_game_repeat": 0.018681341536458337,
+      "match_cluster_bootstrap_95": [
+        -0.010387224390190967,
+        0.04768851502025463
+      ]
+    }
+  },
+  "usage": {
+    "input_tokens": 3710586,
+    "output_tokens": 215026,
+    "requests": 2154,
+    "full_rate_cost_estimate_usd": 0.85257987,
+    "note": "Logged-token estimate, not provider invoice; excludes cache discounts."
+  },
+  "validity": {
+    "original": 1,
+    "conservative": 1
+  },
+  "seal_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "scope": "Fresh position-conditioned replay of historical development games; original sparse schedule, not minute-by-minute. No training or holdout evaluation. Quarter-size original is arithmetic, not a third inference arm."
+}

@@ -1,0 +1,10 @@
+{
+  "training_input_tokens": 225264,
+  "training_output_tokens": 11746,
+  "evaluation_input_tokens": 114950,
+  "evaluation_output_tokens": 6500,
+  "full_rate_token_cost_estimate_usd": 0.18157373,
+  "preflight_upper_estimate_usd": 0.22034428999999997,
+  "budget_usd": 5,
+  "note": "Derived from logged tokens and published full rates, not a provider invoice; cache discounts excluded."
+}

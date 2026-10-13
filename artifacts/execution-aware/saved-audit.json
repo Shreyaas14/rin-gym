@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "saved_rows": 6696,
+  "order_intents": 8730,
+  "verified_fill_events": 555,
+  "policy_stage_cost_estimates": 1280,
+  "independent_net_cash_reconstruction": true,
+  "fee_and_spread_identities": true,
+  "metric_denominators_recomputed": true,
+  "actual_price_stream_cutoff": "All saved quote/fill references verified <=their stage/fill timestamps and age<=90, plus prefix invariance integration test",
+  "ledger_unchanged": true,
+  "seal": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "incremental_paid_requests": 0
+}

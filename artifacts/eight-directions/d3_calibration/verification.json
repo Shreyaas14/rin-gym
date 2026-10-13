@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "source/protocol hashes",
+    "disjoint whole-match chronology",
+    "unchanged holdout guard",
+    "uniform strict/tolerance invalid handling",
+    "duplicate rejection",
+    "temperature preserves invalidity and argmax",
+    "39-fit/33-assessment match counts",
+    "reported direction of Brier effect"
+  ],
+  "paid_requests": 0
+}

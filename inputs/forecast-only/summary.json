@@ -1,0 +1,66 @@
+{
+  "matches": 16,
+  "metrics": {
+    "base": {
+      "brier": 0.979128125,
+      "log_loss": 4.38148284740518,
+      "valid_rate": 0.7375,
+      "pnl": -0.02242691718750002,
+      "cost": 0.014676917187500013,
+      "trades": 0.9375
+    },
+    "final": {
+      "brier": 0.951825625,
+      "log_loss": 4.073410845627157,
+      "valid_rate": 0.7625000000000001,
+      "pnl": -0.02242691718750002,
+      "cost": 0.014676917187500013,
+      "trades": 0.9375
+    },
+    "market": {
+      "brier": 0.4010095641922862,
+      "log_loss": 0.6846442967740285,
+      "valid_rate": 1.0,
+      "pnl": 0.0,
+      "cost": 0.0,
+      "trades": 0
+    }
+  },
+  "paired_deltas": {
+    "final_minus_base/brier": {
+      "mean": -0.0273025,
+      "match_bootstrap_95": [
+        -0.0795525,
+        0.013395000000000004
+      ]
+    },
+    "final_minus_base/pnl": {
+      "mean": 0.0,
+      "match_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "final_minus_market/brier": {
+      "mean": 0.5508160608077137,
+      "match_bootstrap_95": [
+        0.3401854857848016,
+        0.7588724902752159
+      ]
+    },
+    "final_minus_market/pnl": {
+      "mean": -0.02242691718750002,
+      "match_bootstrap_95": [
+        -0.1505771817578125,
+        0.13892489914062495
+      ]
+    }
+  },
+  "flat_policy_pnl": 0,
+  "interpretation": "Small historical development pilot. No holdout evaluation. Match bootstrap ignores shared-team dependence. Invalid forecasts receive worst Brier=2 and log loss=-log(1e-6).",
+  "seal_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  }
+}

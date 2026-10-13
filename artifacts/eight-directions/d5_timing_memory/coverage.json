@@ -1,0 +1,71 @@
+[
+  {
+    "match_id": "400021480",
+    "minute_requested": 75,
+    "minute_supported": 75,
+    "original_supported": 5,
+    "drops": []
+  },
+  {
+    "match_id": "400021494",
+    "minute_requested": 75,
+    "minute_supported": 75,
+    "original_supported": 5,
+    "drops": []
+  },
+  {
+    "match_id": "400021492",
+    "minute_requested": 75,
+    "minute_supported": 75,
+    "original_supported": 5,
+    "drops": []
+  },
+  {
+    "match_id": "400021491",
+    "minute_requested": 75,
+    "minute_supported": 75,
+    "original_supported": 5,
+    "drops": []
+  },
+  {
+    "match_id": "400021499",
+    "minute_requested": 75,
+    "minute_supported": 72,
+    "original_supported": 5,
+    "drops": [
+      {
+        "decision": "h1+36",
+        "reason": "price_sum"
+      },
+      {
+        "decision": "h2+38",
+        "reason": "price_sum"
+      },
+      {
+        "decision": "h2+39",
+        "reason": "price_sum"
+      }
+    ]
+  },
+  {
+    "match_id": "400021503",
+    "minute_requested": 75,
+    "minute_supported": 75,
+    "original_supported": 5,
+    "drops": []
+  },
+  {
+    "match_id": "400021506",
+    "minute_requested": 75,
+    "minute_supported": 75,
+    "original_supported": 5,
+    "drops": []
+  },
+  {
+    "match_id": "400021511",
+    "minute_requested": 75,
+    "minute_supported": 75,
+    "original_supported": 5,
+    "drops": []
+  }
+]

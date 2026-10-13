@@ -1,0 +1,7 @@
+{
+  "constraint": "Root reports latest user spending cap is $5 combined across the task; frozen D5 pilot must finish unchanged and no additional paid work is authorized.",
+  "direction5_frozen_maximum_token_cost_usd": 0.24391608,
+  "direction5_durable_2x_maximum_reservation_usd": 0.48783216,
+  "action": "Continue already approved frozen1354 requests; no further paid requests after this pilot.",
+  "reporting": "Original protocol captures initial per-direction authorization. Combined cap is governed by root aggregate ledger; no sharing or edits to other worker artifacts."
+}

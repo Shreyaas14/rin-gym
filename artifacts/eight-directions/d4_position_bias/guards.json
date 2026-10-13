@@ -1,0 +1,27 @@
+{
+  "before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "identical": true,
+  "actual_match_ids": [
+    "400021480",
+    "400021494",
+    "400021492",
+    "400021491",
+    "400021499",
+    "400021503",
+    "400021506",
+    "400021511",
+    "400021501",
+    "400021451",
+    "400021448",
+    "400021452"
+  ]
+}

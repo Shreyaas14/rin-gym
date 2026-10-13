@@ -1,0 +1,10 @@
+{
+  "direction": 8,
+  "paid_requests": 0,
+  "reserved_max_usd": 0,
+  "token_cost_estimate_usd": 0,
+  "incremental_service_spend_usd": 0,
+  "verified_billing_usd": null,
+  "entries": [],
+  "note": "Offline only. No D8 paid authorization. No billing lookup; no incurred requests. Latest user cap is $5 total for execution work, not per policy or direction."
+}

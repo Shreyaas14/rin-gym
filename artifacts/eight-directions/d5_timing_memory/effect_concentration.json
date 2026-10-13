@@ -1,0 +1,50 @@
+[
+  {
+    "match_id": "400021480",
+    "cadence_brier_delta": 0.0,
+    "memory_brier_delta": 0.0,
+    "cadence_pnl_delta": 0.0
+  },
+  {
+    "match_id": "400021494",
+    "cadence_brier_delta": 0.0,
+    "memory_brier_delta": 0.0,
+    "cadence_pnl_delta": 0.0
+  },
+  {
+    "match_id": "400021492",
+    "cadence_brier_delta": 0.0,
+    "memory_brier_delta": 0.0,
+    "cadence_pnl_delta": 0.0
+  },
+  {
+    "match_id": "400021491",
+    "cadence_brier_delta": 0.0,
+    "memory_brier_delta": 0.0,
+    "cadence_pnl_delta": 0.19343249999999998
+  },
+  {
+    "match_id": "400021499",
+    "cadence_brier_delta": 0.0,
+    "memory_brier_delta": 0.0,
+    "cadence_pnl_delta": 0.0
+  },
+  {
+    "match_id": "400021503",
+    "cadence_brier_delta": -0.06704300000000007,
+    "memory_brier_delta": 0.035499999999999976,
+    "cadence_pnl_delta": 0.0
+  },
+  {
+    "match_id": "400021506",
+    "cadence_brier_delta": 0.0,
+    "memory_brier_delta": 0.0,
+    "cadence_pnl_delta": 0.0
+  },
+  {
+    "match_id": "400021511",
+    "cadence_brier_delta": 0.0,
+    "memory_brier_delta": 0.0,
+    "cadence_pnl_delta": 0.0
+  }
+]

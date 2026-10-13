@@ -8,6 +8,8 @@ The two fresh parlay runs cost an estimated $0.1006 combined; each stayed below 
 
 These development experiments do **not** establish positive P&L or generalization. The most recent fresh combined-exit replay preserved approximately the original win rate but worsened net P&L. The protected holdout remained sealed and pending enrollment throughout.
 
+The completed [eight-direction research and maker/taker publication](../../research/eight-directions/README.md) adds further negative/inconclusive findings, calibration and position-context diagnostics, and the execution engine with explicitly synthetic fill sensitivities. The bookmaker idea was cancelled, and the free-feed basket protocol is an unrun proposal. No daily follow-up or live basket experiment remains active.
+
 ## Fresh closed-loop evaluations
 
 All three policy experiments below use the earlier run-3 Qwen3-8B checkpoint on the same 72 historical development games, with three repeats per game. P&L is aggregate simulated dollars after fees/spread, not account returns. Win rate is positive-P&L cases divided by traded cases. Repeats are clustered by game for uncertainty estimates.

@@ -1,0 +1,10 @@
+{
+  "user_authorization_source": "/Users/alexkan/.codex/attachments/7ce28464-2602-4994-8b7f-5b290d4e13cb/Pasted text.txt",
+  "user_authorization_sha256": "8d8f158141aee03117a038afd1afc2d6a9409f3edfaa247c65d0a6520b2401ec",
+  "authorized_scope": "User explicitly requested eight research directions including minute-by-minute direction5 with budget up to $5 per direction including paid inference/evaluation; use existing authenticated SDKs and earlier named tinker:// checkpoint.",
+  "destination": "Tinker SDK, checkpoint tinker://d2426bc1-ec71-559d-bb81-e17da9372e58:train:0/sampler_weights/final verified metadata 2026-10-13",
+  "data_sources": "docs/data-sources/README.md: public FIFA API events, public Polymarket price histories; prompts contain only past soccer team/match observations and prices, no credentials or personal/private human data.",
+  "maximum_token_estimate_usd": 0.24391608,
+  "durable_2x_reservation_usd": 0.48783216,
+  "first_auto_review_rejection": "Authorization/destination questioned; no request executed, no bypass. Source read to establish direct human authorization and public provenance before requesting re-review."
+}

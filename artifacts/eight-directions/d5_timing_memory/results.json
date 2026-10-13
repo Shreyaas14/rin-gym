@@ -1,0 +1,346 @@
+{
+  "classification": {
+    "cadence": "inconclusive",
+    "memory": "inconclusive",
+    "overall": "inconclusive"
+  },
+  "completion": {
+    "planned": 1354,
+    "completed": 1354,
+    "complete": true
+  },
+  "cohort": [
+    "400021480",
+    "400021494",
+    "400021492",
+    "400021491",
+    "400021499",
+    "400021503",
+    "400021506",
+    "400021511"
+  ],
+  "forecast_summaries": {
+    "shared_minute_grid": {
+      "sparse_no_memory": {
+        "brier": 0.6355625,
+        "log_loss": 1.0540629204027743,
+        "valid": 1.0,
+        "forecast_age_s": 767.189020984537,
+        "market_brier": 0.32242121851784833,
+        "market_log_loss": 0.5382467430887407
+      },
+      "sparse_memory": {
+        "brier": 0.64,
+        "log_loss": 1.0601317681000455,
+        "valid": 1.0,
+        "forecast_age_s": 767.189020984537,
+        "market_brier": 0.32242121851784833,
+        "market_log_loss": 0.5382467430887407
+      },
+      "minute_no_memory": {
+        "brier": 0.627182125,
+        "log_loss": 1.039817254393922,
+        "valid": 1.0,
+        "forecast_age_s": 0.0,
+        "market_brier": 0.32242121851784833,
+        "market_log_loss": 0.5382467430887407
+      }
+    },
+    "original_sparse_checkpoints": {
+      "sparse_no_memory": {
+        "brier": 0.6355625,
+        "log_loss": 1.0540629204027743,
+        "valid": 1.0,
+        "forecast_age_s": 0.0,
+        "market_brier": 0.34305589447838325,
+        "market_log_loss": 0.5725057926043328
+      },
+      "sparse_memory": {
+        "brier": 0.64,
+        "log_loss": 1.0601317681000455,
+        "valid": 1.0,
+        "forecast_age_s": 0.0,
+        "market_brier": 0.34305589447838325,
+        "market_log_loss": 0.5725057926043328
+      },
+      "minute_no_memory": {
+        "brier": 0.6355625,
+        "log_loss": 1.0540629204027743,
+        "valid": 1.0,
+        "forecast_age_s": 0.0,
+        "market_brier": 0.34305589447838325,
+        "market_log_loss": 0.5725057926043328
+      }
+    }
+  },
+  "paired": {
+    "shared_minute_grid": {
+      "cadence_information_age": {
+        "brier": {
+          "mean_delta": -0.00838037500000001,
+          "match_cluster_bootstrap_95": [
+            -0.025141125000000028,
+            0.0
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": -0.014245666008852284,
+          "match_cluster_bootstrap_95": [
+            -0.04273699802655685,
+            0.0
+          ],
+          "matches": 8
+        }
+      },
+      "memory_fixed_sparse": {
+        "brier": {
+          "mean_delta": 0.004437499999999997,
+          "match_cluster_bootstrap_95": [
+            0.0,
+            0.013312499999999991
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": 0.006068847697271257,
+          "match_cluster_bootstrap_95": [
+            0.0,
+            0.01820654309181377
+          ],
+          "matches": 8
+        }
+      }
+    },
+    "original_sparse_checkpoints": {
+      "cadence_information_age": {
+        "brier": {
+          "mean_delta": 0.0,
+          "match_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": 0.0,
+          "match_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "matches": 8
+        }
+      },
+      "memory_fixed_sparse": {
+        "brier": {
+          "mean_delta": 0.004437499999999997,
+          "match_cluster_bootstrap_95": [
+            0.0,
+            0.013312499999999991
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": 0.006068847697271257,
+          "match_cluster_bootstrap_95": [
+            0.0,
+            0.01820654309181377
+          ],
+          "matches": 8
+        }
+      }
+    }
+  },
+  "trading": {
+    "sparse_no_memory": {
+      "trajectories": 16,
+      "net_pnl": 0.07074678124999997,
+      "gross_losses": -0.31253384375,
+      "average_win": 0.1916403125,
+      "average_loss": -0.02232384598214286,
+      "worst_loss": -0.037709687500000005,
+      "max_match_exposure": 0.0583596875,
+      "sum_entry_debits": 0.42925321875,
+      "entry_turnover_shares": 4.0,
+      "entry_settlement_turnover_shares": 8.0,
+      "trading_coverage": 1
+    },
+    "sparse_memory": {
+      "trajectories": 16,
+      "net_pnl": 0.07074678124999997,
+      "gross_losses": -0.31253384375,
+      "average_win": 0.1916403125,
+      "average_loss": -0.02232384598214286,
+      "worst_loss": -0.037709687500000005,
+      "max_match_exposure": 0.0583596875,
+      "sum_entry_debits": 0.42925321875,
+      "entry_turnover_shares": 4.0,
+      "entry_settlement_turnover_shares": 8.0,
+      "trading_coverage": 1
+    },
+    "minute_no_memory": {
+      "trajectories": 16,
+      "net_pnl": 0.45761178124999996,
+      "gross_losses": -0.25268446875,
+      "average_win": 0.1775740625,
+      "average_loss": -0.0210570390625,
+      "worst_loss": -0.037709687500000005,
+      "max_match_exposure": 0.08649218750000001,
+      "sum_entry_debits": 0.54238821875,
+      "entry_turnover_shares": 4.0,
+      "entry_settlement_turnover_shares": 8.0,
+      "trading_coverage": 1
+    },
+    "no_trade": {
+      "net_pnl": 0.0,
+      "gross_losses": 0.0,
+      "entry_turnover_shares": 0.0,
+      "trading_coverage": 0.0
+    }
+  },
+  "trading_paired": {
+    "minute_no_memory_minus_sparse_no_memory": {
+      "mean_delta": 0.024179062499999997,
+      "match_cluster_bootstrap_95": [
+        0.0,
+        0.07253718749999999
+      ],
+      "matches": 8
+    },
+    "sparse_memory_minus_sparse_no_memory": {
+      "mean_delta": 0.0,
+      "match_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "matches": 8
+    }
+  },
+  "spending": {
+    "direction": 5,
+    "hard_limit_usd": 5,
+    "reserved_max_usd": 0.48783216000000074,
+    "token_cost_estimate_usd": 0.16746768,
+    "verified_billing_usd": null,
+    "paid_requests": 1354,
+    "note": "Full-rate logged-token estimate; verified invoice billing unavailable. Reservations retained; pending requests remain encumbered."
+  },
+  "guard_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "guard_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "guard_identical": true,
+  "scope": "Retrospective development pilot; compact template, supported subset minute cadence, forecast-only fixed tape, no holdout or training.",
+  "output_audit": {
+    "minute_no_memory": {
+      "predictions": 1194,
+      "distinct_forecasts": 9,
+      "most_common": [
+        [
+          "{\"away\": 0.3, \"draw\": 0.3, \"home\": 0.4}",
+          1163
+        ],
+        [
+          "{\"away\": 0.0, \"draw\": 0.05, \"home\": 0.95}",
+          11
+        ],
+        [
+          "{\"away\": 0.02, \"draw\": 0.03, \"home\": 0.95}",
+          8
+        ],
+        [
+          "{\"away\": 0.1, \"draw\": 0.15, \"home\": 0.75}",
+          3
+        ],
+        [
+          "{\"away\": 0.0, \"draw\": 0.01, \"home\": 0.99}",
+          3
+        ]
+      ],
+      "exact_schema_example_rate": 0.974036850921273
+    },
+    "sparse_memory": {
+      "predictions": 80,
+      "distinct_forecasts": 1,
+      "most_common": [
+        [
+          "{\"away\": 0.3, \"draw\": 0.3, \"home\": 0.4}",
+          80
+        ]
+      ],
+      "exact_schema_example_rate": 1.0
+    },
+    "sparse_no_memory": {
+      "predictions": 80,
+      "distinct_forecasts": 2,
+      "most_common": [
+        [
+          "{\"away\": 0.3, \"draw\": 0.3, \"home\": 0.4}",
+          79
+        ],
+        [
+          "{\"away\": 0.15, \"draw\": 0.2, \"home\": 0.65}",
+          1
+        ]
+      ],
+      "exact_schema_example_rate": 0.9875
+    }
+  },
+  "interpretation": "Inconclusive cadence/memory efficacy:97.4% of minute predictions,98.75% sparse controls and100% memory repeat numeric schema example(.4,.3,.3). Validity100% does not imply useful forecasting. All model arms worse than market. Consistent with example anchoring or output collapse under compact prompt; causal mechanism untested, no paid follow-up.",
+  "effect_concentration": [
+    {
+      "match_id": "400021480",
+      "cadence_brier_delta": 0.0,
+      "memory_brier_delta": 0.0,
+      "cadence_pnl_delta": 0.0
+    },
+    {
+      "match_id": "400021494",
+      "cadence_brier_delta": 0.0,
+      "memory_brier_delta": 0.0,
+      "cadence_pnl_delta": 0.0
+    },
+    {
+      "match_id": "400021492",
+      "cadence_brier_delta": 0.0,
+      "memory_brier_delta": 0.0,
+      "cadence_pnl_delta": 0.0
+    },
+    {
+      "match_id": "400021491",
+      "cadence_brier_delta": 0.0,
+      "memory_brier_delta": 0.0,
+      "cadence_pnl_delta": 0.19343249999999998
+    },
+    {
+      "match_id": "400021499",
+      "cadence_brier_delta": 0.0,
+      "memory_brier_delta": 0.0,
+      "cadence_pnl_delta": 0.0
+    },
+    {
+      "match_id": "400021503",
+      "cadence_brier_delta": -0.06704300000000007,
+      "memory_brier_delta": 0.035499999999999976,
+      "cadence_pnl_delta": 0.0
+    },
+    {
+      "match_id": "400021506",
+      "cadence_brier_delta": 0.0,
+      "memory_brier_delta": 0.0,
+      "cadence_pnl_delta": 0.0
+    },
+    {
+      "match_id": "400021511",
+      "cadence_brier_delta": 0.0,
+      "memory_brier_delta": 0.0,
+      "cadence_pnl_delta": 0.0
+    }
+  ]
+}

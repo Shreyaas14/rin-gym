@@ -1,0 +1,177 @@
+{
+  "selected_candidate": null,
+  "fit_results": {
+    "tied_late": {
+      "matches": 13,
+      "observations_with_repeats": 39,
+      "valid_observations": 39,
+      "match_coverage": 0.3333333333333333,
+      "observation_coverage": 0.06701030927835051,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.6628358974358974,
+        "market_brier": 0.6377902252939127,
+        "model_log_loss": 1.0640675804648219,
+        "market_log_loss": 0.982942580736956
+      },
+      "valid_only": {
+        "matches": 13,
+        "model_brier": 0.6628358974358974,
+        "market_brier": 0.6377902252939127,
+        "model_log_loss": 1.0640675804648219,
+        "market_log_loss": 0.982942580736956
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.02504567214198466,
+          "match_bootstrap_95": [
+            -0.12845925802913005,
+            0.08719865076446487
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.08112499972786608,
+          "match_bootstrap_95": [
+            -0.22311272259587542,
+            0.0860818607223825
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    },
+    "observed_red_card": {
+      "matches": 4,
+      "observations_with_repeats": 27,
+      "valid_observations": 27,
+      "match_coverage": 0.10256410256410256,
+      "observation_coverage": 0.04639175257731959,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.26647638888888886,
+        "market_brier": 0.21402889075092296,
+        "model_log_loss": 0.4812354700167325,
+        "market_log_loss": 0.38947649769112314
+      },
+      "valid_only": {
+        "matches": 4,
+        "model_brier": 0.26647638888888886,
+        "market_brier": 0.21402889075092296,
+        "model_log_loss": 0.4812354700167325,
+        "market_log_loss": 0.38947649769112314
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.05244749813796591,
+          "match_bootstrap_95": [
+            -0.1280073111796854,
+            -0.0012813685100531392
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.09175897232560933,
+          "match_bootstrap_95": [
+            -0.17343272644557367,
+            -0.021528366083963003
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    },
+    "halftime": {
+      "matches": 39,
+      "observations_with_repeats": 117,
+      "valid_observations": 117,
+      "match_coverage": 1.0,
+      "observation_coverage": 0.20103092783505155,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.48426982991444273,
+        "market_brier": 0.49663854036303934,
+        "model_log_loss": 0.8140666601692857,
+        "market_log_loss": 0.7940232062770726
+      },
+      "valid_only": {
+        "matches": 39,
+        "model_brier": 0.48426982991444273,
+        "market_brier": 0.49663854036303934,
+        "model_log_loss": 0.8140666601692857,
+        "market_log_loss": 0.7940232062770726
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": 0.012368710448596732,
+          "match_bootstrap_95": [
+            -0.058373179385182335,
+            0.09068681777030137
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.02004345389221309,
+          "match_bootstrap_95": [
+            -0.12458935339752508,
+            0.09478366291511572
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    },
+    "large_observed_price_move": {
+      "matches": 25,
+      "observations_with_repeats": 114,
+      "valid_observations": 114,
+      "match_coverage": 0.6410256410256411,
+      "observation_coverage": 0.1958762886597938,
+      "valid_rate_observation": 1.0,
+      "invalid_inclusive": {
+        "model_brier": 0.47308888888888895,
+        "market_brier": 0.421353721403374,
+        "model_log_loss": 0.8109353608454275,
+        "market_log_loss": 0.6977368863526878
+      },
+      "valid_only": {
+        "matches": 25,
+        "model_brier": 0.47308888888888895,
+        "market_brier": 0.421353721403374,
+        "model_log_loss": 0.8109353608454275,
+        "market_log_loss": 0.6977368863526878
+      },
+      "paired_improvement": {
+        "brier": {
+          "mean": -0.05173516748551481,
+          "match_bootstrap_95": [
+            -0.1053360508381885,
+            0.004045151437662142
+          ],
+          "orientation": "market minus model; positive is better"
+        },
+        "log_loss": {
+          "mean": -0.11319847449273965,
+          "match_bootstrap_95": [
+            -0.19047446110680086,
+            -0.028686148219802945
+          ],
+          "orientation": "market minus model; positive is better"
+        }
+      },
+      "bootstrap_estimable": true,
+      "uncertainty_note": null
+    }
+  },
+  "rule": {
+    "minimum_fit_matches": 5,
+    "primary": "greatest positive market-minus-model multiclass Brier improvement, equal match weighting, invalid-inclusive",
+    "secondary_requirement": "positive market-minus-model clipped log loss improvement",
+    "tie_break": "lexicographic slice name",
+    "no_qualifier": "Freeze no candidate; later slice scores descriptive only; negative screen cannot promote later-positive slice"
+  },
+  "assessment_not_consulted": true
+}

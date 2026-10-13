@@ -1,0 +1,8 @@
+{
+  "hard_cap_usd": 5,
+  "reserved_usd": 0,
+  "estimated_usage_usd": 0,
+  "actual_billing_usd": 0,
+  "paid_requests": 0,
+  "note": "Offline analysis only; no provider requests or new billing."
+}

@@ -1,0 +1,117 @@
+{
+  "label": "Supplementary uncertainty for predeclared contemporaneous market baseline; computed after primary analysis, no model/intervention selection.",
+  "paired_vs_market": {
+    "original_sparse_checkpoints": {
+      "sparse_no_memory": {
+        "brier": {
+          "mean_delta": 0.2925066055216168,
+          "match_cluster_bootstrap_95": [
+            0.10245471259548247,
+            0.45087189550491913
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": 0.4815571277984415,
+          "match_cluster_bootstrap_95": [
+            0.2348935114599842,
+            0.7079788763722482
+          ],
+          "matches": 8
+        }
+      },
+      "sparse_memory": {
+        "brier": {
+          "mean_delta": 0.29694410552161676,
+          "match_cluster_bootstrap_95": [
+            0.10488206016265685,
+            0.45856364395749727
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": 0.48762597549571285,
+          "match_cluster_bootstrap_95": [
+            0.23694074445927032,
+            0.7171654369381508
+          ],
+          "matches": 8
+        }
+      },
+      "minute_no_memory": {
+        "brier": {
+          "mean_delta": 0.2925066055216168,
+          "match_cluster_bootstrap_95": [
+            0.10245471259548247,
+            0.45087189550491913
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": 0.4815571277984415,
+          "match_cluster_bootstrap_95": [
+            0.2348935114599842,
+            0.7079788763722482
+          ],
+          "matches": 8
+        }
+      }
+    },
+    "shared_minute_grid": {
+      "sparse_no_memory": {
+        "brier": {
+          "mean_delta": 0.3131412814821517,
+          "match_cluster_bootstrap_95": [
+            0.1478499179617761,
+            0.45716694284470605
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": 0.5158161773140336,
+          "match_cluster_bootstrap_95": [
+            0.29568573125976966,
+            0.7255811360319455
+          ],
+          "matches": 8
+        }
+      },
+      "sparse_memory": {
+        "brier": {
+          "mean_delta": 0.3175787814821517,
+          "match_cluster_bootstrap_95": [
+            0.14932437504390036,
+            0.46487056634565904
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": 0.521885025011305,
+          "match_cluster_bootstrap_95": [
+            0.3000815676924052,
+            0.7346578607424086
+          ],
+          "matches": 8
+        }
+      },
+      "minute_no_memory": {
+        "brier": {
+          "mean_delta": 0.3047609064821517,
+          "match_cluster_bootstrap_95": [
+            0.14449745504142553,
+            0.4448910383135949
+          ],
+          "matches": 8
+        },
+        "log_loss": {
+          "mean_delta": 0.5015705113051814,
+          "match_cluster_bootstrap_95": [
+            0.29061411267826276,
+            0.7021151007995726
+          ],
+          "matches": 8
+        }
+      }
+    }
+  }
+}

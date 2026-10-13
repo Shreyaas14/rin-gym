@@ -1,0 +1,27 @@
+{
+  "snapshot_files_verified": 59,
+  "holdout_guard": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "inputs_unchanged": true,
+  "paid_runs_started": {
+    "2": {
+      "reserved_max_usd": 0.6149391299999993,
+      "completed_token_estimate_usd": 0.24685294500000005,
+      "completed_requests": 616
+    },
+    "4": {
+      "reserved_max_usd": 0.18530681999999998,
+      "completed_token_estimate_usd": 0.07257264000000002,
+      "completed_requests": 192
+    },
+    "5": {
+      "reserved_max_usd": 0.06964014,
+      "completed_token_estimate_usd": 0.02322662999999998,
+      "completed_requests": 184
+    }
+  },
+  "note": "Interim verification; experiment conclusions not yet synthesized."
+}
