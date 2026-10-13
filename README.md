@@ -1,62 +1,84 @@
 # rin-gym
 
-Sports forecasting research using game events and prediction-market histories. The current research focus is live home-win/draw/away-win probability forecasts, with calibration and held-out match evaluation.
+Sports data pipelines, event replay, score simulation and prediction-market forecast evaluation.
 
-## Repository layout
+## Install as a uv tool
 
-| Directory | Purpose |
-| --- | --- |
-| `docs/` | Data-source references and instructions for running pipelines and applications |
-| `research/` | Research questions, audit findings and proposed evaluation methods |
-| `app/` | Visualization, dashboard and simulation application code |
-| `pipelines/` | Extraction, transformation, data joins and validation |
-| `data/` | Source manifests, generated tables, examples and ignored raw caches |
-| `artifacts/` | Generated images, videos and other presentation outputs |
-
-Start with the [research directions](research/forecasting/research-directions.md), [data-source guide](docs/data-sources/README.md) and [pipeline instructions](docs/pipelines/README.md).
-
-## Current evidence
-
-- A 60-game NBA/EPL/Euro audit establishes downloadable event/market overlap in the sampled cohorts.
-- FIFA World Cup 2026 timelines contain 9,675 events across 104 games, including 6,905 coordinate-bearing events.
-- Two FIFA matches have verified joins to all three Polymarket regulation-time outcome markets.
-- Spatial observations are event locations, not continuous player or ball tracking. Historical prices do not establish executable fills or publication timing.
-
-The [initial audit reports](research/initial-audit/) preserve scope and limitations. The [forecast replay harness](app/forecast/README.md) adds a Poisson score simulator and a chronological benchmark across 72 group-stage games (39 training, 13 validation, 20 test). The simulator produces home/draw/away probabilities from observed score and time, with optional frozen pregame market initialization.
-
-On the 20 test games, calibrated simulator Brier is 0.3231 versus 0.3300 for live Polymarket. The paired match-bootstrap interval for the difference includes zero, and a two-minute observation delay removes the advantage. This is an inconclusive retrospective result, not evidence of profitable betting. See the [methodology and results](artifacts/forecast-eval/REPORT.md).
-
-## Run the data pipelines
-
-Python 3.11 or newer; acquisition and audit code uses the standard library.
+Use a current uv release:
 
 ```sh
-python3 -m pipelines.sports_data.run_audit
-python3 -m pipelines.sports_data.fifa_census
-python3 -m pipelines.sports_data.fifa_join
-python3 -m pipelines.sports_data.verify
+uv tool install .
+rin-gym --help
 ```
 
-The first run needs public internet access. Downloads are cached under `data/raw/sports/`; generated tables live under `data/processed/sports/`. Raw caches are excluded from Git.
-
-## Free local evaluation and protected holdout
-
-Install with `uv sync --locked` or add optional free local MLflow with `uv sync --locked --extra tracking`. Run `uv run rin-gym eval init` to initialize the pending future-cohort policy, and `uv run rin-gym eval quality` for scorer, leakage and governance checks. Add `--mlflow` to log the quality receipt locally.
-
-The [evaluation workflow](docs/pipelines/evaluation-quality.md) covers frozen future fixtures, one-time holdout scoring, and append-only prospective prediction logging. Enrollment remains pending until fixtures are selected. Existing historical test results are regression/development evidence for subsequent changes.
-
-`rin-gym forecast prepare`, `run`, `verify`, and `simulate` also expose the existing forecast workflow. Commands write below the current directory; use `rin-gym --workspace /path/to/workspace ...` or `RIN_GYM_WORKSPACE` to select another data workspace. The original pipeline module commands above remain available from the checkout.
-
-For Tinker fine-tuning, install the optional `tinker` extra and follow the [Tinker integration guide](docs/pipelines/tinker-evaluation.md). It adds chronological dataset exclusions, cookbook evaluators, and prospective checkpoint prediction logging; MLflow remains optional.
-
-## FIFA Parquet ingestion
-
-Ingest Premier League 2025/26 and World Cup 2026 into shared local match/event tables:
+From this repository's evaluation/integration branch:
 
 ```sh
-python3 -m pip install -r pipelines/fifa/requirements.txt
-python3 -m pipelines.fifa ingest
-python3 -m pipelines.fifa verify --cache data/raw/fifa
+uv tool install 'git+https://github.com/Shreyaas14/rin-gym.git@feat/eval-quality'
 ```
 
-The [pipeline guide](docs/pipelines/fifa-parquet.md) documents the schemas, cache/refresh behavior, and replay adapter. The completed [ingestion report](artifacts/fifa-pipeline/REPORT.md) covers 484 matches and 40,848 events.
+The core tool includes NumPy, Arrow, DuckDB and Pillow. Optional evaluation integrations install with `uv tool install 'rin-gym[tracking,tinker] @ git+https://github.com/Shreyaas14/rin-gym.git@feat/eval-quality'`. Video encoding additionally requires FFmpeg with libx264; PNG previews work without it.
+
+Every command uses the current directory as its data/output root. Set `RIN_GYM_WORKSPACE` or pass `--workspace` before the command. Relative pipeline and replay paths resolve inside that workspace; no data is written into the installed package.
+
+## FIFA ingestion, market history and arbitrary-match replay
+
+```sh
+rin-gym --workspace ./workspace pipeline fifa ingest
+rin-gym --workspace ./workspace pipeline fifa verify --cache data/raw/fifa
+rin-gym --workspace ./workspace pipeline markets --workers 8
+rin-gym --workspace ./workspace pipeline market-history --workers 8
+rin-gym --workspace ./workspace pipeline verify-markets --report artifacts/market-verification.json
+rin-gym --workspace ./workspace replay import --dataset data/processed/fifa --markets data/processed/fifa-market-history --database data/replay.duckdb
+rin-gym --workspace ./workspace replay verify --database data/replay.duckdb
+rin-gym --workspace ./workspace replay list-matches --database data/replay.duckdb
+rin-gym --workspace ./workspace replay render --database data/replay.duckdb --match 400021513 --output artifacts/replay/example --preview
+```
+
+Use `--offline` for repeat ingestion/mapping/history runs from verified caches; remove `--preview` to encode video. The acquired cohort contains 484 FIFA matches and 40,848 sparse events. [Pipeline schemas and acquisition](docs/pipelines/fifa-parquet.md), [market identity and resolution](docs/pipelines/fifa-market-resolution.md), and [replay details](app/replay/README.md) explain the source contracts. Corrupt acquisition data prevents snapshot publication; the market verifier compares all normalized values against their raw histories.
+
+## Historical audit and forecast simulator
+
+```sh
+rin-gym --workspace ./workspace pipeline audit
+rin-gym --workspace ./workspace pipeline verify
+rin-gym --workspace ./workspace pipeline fifa-census
+rin-gym --workspace ./workspace pipeline fifa-join
+rin-gym --workspace ./workspace forecast prepare
+rin-gym --workspace ./workspace forecast run
+rin-gym --workspace ./workspace forecast verify
+rin-gym --workspace ./workspace forecast simulate --match 400021444 --utc 2026-06-25T02:30:00Z --runs 100000
+```
+
+The first requests public data; later runs reuse cached sources. Frozen NBA/EPL sample selections ship inside the wheel and are copied into a workspace only when missing. [The forecast harness](app/forecast/README.md) compares models against live Polymarket on whole-match chronological splits.
+
+The published 20-game World Cup test result is inconclusive: simulator Brier 0.3231 versus live-market 0.3300, with a paired interval including zero and sensitivity to a two-minute observation delay. Those games are now development/regression data, not a fresh test set.
+
+## Granular soccer play-by-play
+
+```sh
+rin-gym --workspace ./workspace play-by-play --match 3943043 --competition 55 --season 282
+```
+
+[The detailed viewer](app/play_by_play/README.md) displays StatsBomb passes, carries, possession sequences and observed 360 snapshots. The standalone HTML is generated under `artifacts/play-by-play/<match>/`. Player positions between observations are unknown. Its market chart remains on a separate UTC clock until period alignment is verified.
+
+## Protected prospective evaluation
+
+```sh
+rin-gym --workspace ./workspace eval init
+rin-gym --workspace ./workspace eval quality
+```
+
+[Protected evaluation](docs/pipelines/evaluation-quality.md) supports candidate freezing, prediction receipts, coverage gates and one-time readout. Retrospective preparation, loading, fitting, simulation, selection and scoring reject enrolled games. Optional [Tinker integration](docs/pipelines/tinker-evaluation.md) uses development-only training/evaluation data; no prospective performance claim exists until an independent cohort is enrolled and completed.
+
+## Development and CI
+
+```sh
+uv sync --frozen --all-extras
+uv run python scripts/check_tests.py
+uv build
+```
+
+GitHub Actions runs regression suites on Python 3.11 and 3.12, builds distributions, installs the wheel as a uv tool, and executes tests outside the checkout. A separate job exercises native Tinker interfaces and local MLflow with optional dependencies. Public APIs and paid inference are not called by CI.
+
+Repository layout: `pipelines/` acquires and validates data; `app/` contains replay and forecasting; `rin_gym/` provides the installed CLI; `docs/` and `research/` preserve methodology; `data/` and `artifacts/` contain reproducible results. Large raw caches, databases, generated videos and local evaluation ledgers remain Git-ignored.

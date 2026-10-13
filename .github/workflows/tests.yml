@@ -23,7 +23,7 @@ jobs:
             uv sync --frozen
           else
             uv venv
-            uv pip install 'numpy>=2,<3' 'pyarrow>=20,<26' 'Pillow>=10.1,<13' 'duckdb>=1.3,<2' tzdata
+            uv pip install 'numpy>=2,<3' 'pyarrow>=20,<26' 'Pillow>=10.1,<13' 'duckdb>=1.3,<2' tzdata pytz
           fi
       - name: Run regression suites
         run: .venv/bin/python scripts/check_tests.py
@@ -41,3 +41,19 @@ jobs:
           cd '${{ runner.temp }}'
           '${{ runner.temp }}/rin-gym-bin/rin-gym' --help
           '${{ runner.temp }}/rin-gym-tools/rin-gym/bin/python' '${{ github.workspace }}/scripts/check_tests.py' --installed
+  optional-evaluation-integrations:
+    runs-on: ubuntu-latest
+    env:
+      MLFLOW_DISABLE_TELEMETRY: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          enable-cache: true
+      - name: Install locked optional evaluation SDKs
+        if: ${{ hashFiles('pyproject.toml') != '' }}
+        run: uv sync --frozen --all-extras
+      - name: Run native SDK and local MLflow integration tests
+        if: ${{ hashFiles('pyproject.toml') != '' }}
+        run: .venv/bin/python scripts/check_tests.py

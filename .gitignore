@@ -245,3 +245,7 @@ __marimo__/
 # Local replay query databases
 *.duckdb
 *.duckdb.wal
+
+# Regenerable granular replay artifacts
+/artifacts/play-by-play/
+/data/processed/play-by-play/

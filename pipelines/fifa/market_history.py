@@ -382,7 +382,7 @@ def run(args):
     return out
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--dataset", type=Path, default=Path("data/processed/fifa-markets")
@@ -394,7 +394,7 @@ def main():
     parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--refresh", action="store_true")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     if args.workers < 1:
         parser.error("--workers must be positive")
     run(args)

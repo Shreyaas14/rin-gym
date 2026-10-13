@@ -6,19 +6,19 @@ replay reads only the database; no APIs or original Parquet files are needed.
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install -r app/replay/requirements.txt
-.venv/bin/python -m app.replay import \
+.venv/bin/uv tool install .
+.venv/bin/rin-gym replay import \
   --dataset data/processed/fifa \
   --markets data/processed/fifa-market-history \
   --database data/replay.duckdb
-.venv/bin/python -m app.replay list-matches \
+.venv/bin/rin-gym replay list-matches \
   --database data/replay.duckdb --search Liverpool
-.venv/bin/python -m app.replay render \
+.venv/bin/rin-gym replay render \
   --database data/replay.duckdb \
   --match zhs8gg1hvcuqvhkk2itb54pg \
   --output artifacts/fifa-replay/liverpool-bournemouth --preview
 # Omit --preview for the full H.264 video; requires FFmpeg/libx264.
-.venv/bin/python -m app.replay render \
+.venv/bin/rin-gym replay render \
   --database data/replay.duckdb --match 400021513 \
   --output artifacts/fifa-replay/germany-paraguay
 ```
@@ -114,7 +114,7 @@ Arial/DejaVu are unavailable.
 .venv/bin/python -m unittest discover -s tests/replay -v
 .venv/bin/python -m unittest discover -s tests/fifa -v
 ruff check app/replay tests/replay
-.venv/bin/python -m app.replay verify --database data/replay.duckdb
+.venv/bin/rin-gym replay verify --database data/replay.duckdb
 ```
 
 See the [verification report](../../artifacts/replay-generalization/REPORT.md)

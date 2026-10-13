@@ -1,13 +1,14 @@
 import concurrent.futures, hashlib, json, pathlib, urllib.request, urllib.error, datetime
 
-REPOSITORY = pathlib.Path(__file__).resolve().parents[2]
+from rin_gym.paths import workspace_root
+
+REPOSITORY = workspace_root()
 ROOT = REPOSITORY / 'data' / 'processed' / 'sports'
 RAW = REPOSITORY / 'data' / 'raw' / 'sports'
 MANIFESTS = REPOSITORY / 'data' / 'manifests' / 'sports'
-ROOT.mkdir(parents=True, exist_ok=True)
-RAW.mkdir(parents=True, exist_ok=True)
 
 def fetch(name, url):
+    RAW.mkdir(parents=True, exist_ok=True)
     path = RAW / (name + '.json')
     if path.exists():
         return name, json.loads(path.read_text())

@@ -9,6 +9,7 @@ def validtime(p):
  try:return epoch(p['wallclock'])
  except (KeyError,ValueError,TypeError):return None
 def run():
+ ROOT.mkdir(parents=True, exist_ok=True)
  rows=[]
  for m in load('audit_manifest'):
   sport=m['sport'];id=m.get('id','');r={'sport':sport,'game_id':id,'game':m.get('name',m.get('market',{}).get('title','')),'market':m.get('market',{}).get('ticker',m.get('market',{}).get('slug','')),'mapping_error':m.get('match_error','')}

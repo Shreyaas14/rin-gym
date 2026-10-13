@@ -6,17 +6,17 @@ Open [the interactive report](../../artifacts/forecast-eval/report.html) or [the
 
 ## Run
 
-From the workspace root, with Python 3.10+ and NumPy installed:
+Install the complete Python 3.11+ tool, then run from your data workspace:
 
 ```sh
-python3 -m pip install -r app/forecast/requirements.txt
-python3 -m app.forecast prepare
+uv tool install .
+rin-gym forecast prepare
 python3 -m unittest discover -s app/forecast/tests -v
-python3 -m app.forecast run
-python3 -m app.forecast.verify
+rin-gym forecast run
+rin-gym forecast verify
 ```
 
-The first preparation fetches public data; subsequent runs verify and reuse cached downloads. No API keys, paid services or trading actions. Existing FIFA files are a prerequisite; `python3 -m pipelines.sports_data.fifa_census` fetches them if needed.
+The first preparation fetches public data; subsequent runs verify and reuse cached downloads. No API keys, paid services or trading actions. Existing FIFA files are a prerequisite; `rin-gym pipeline fifa-census` fetches them if needed.
 
 To serve the interactive report locally:
 
@@ -31,7 +31,7 @@ Open `http://127.0.0.1:8765/artifacts/forecast-eval/report.html`. The HTML is st
 After fitting via `run`:
 
 ```sh
-python3 -m app.forecast simulate --match 400021444 --utc 2026-06-25T02:30:00Z --runs 100000
+rin-gym forecast simulate --match 400021444 --utc 2026-06-25T02:30:00Z --runs 100000
 ```
 
 This samples future home/away goals from the pregame-initialized Poisson model. It returns estimated outcome probabilities, exact probabilities for comparison, Monte Carlo sampling errors and three example goal timelines. These are coarse score continuations, not player- or ball-motion simulations. Sampling uncertainty is not uncertainty about the model's validity.

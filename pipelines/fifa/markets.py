@@ -695,7 +695,7 @@ def run(args):
     return out
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", type=Path, default=Path("data/processed/fifa"))
     parser.add_argument(
@@ -706,7 +706,7 @@ def main():
     parser.add_argument("--max-age", type=int, default=90)
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--refresh", action="store_true")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     if args.workers < 1 or args.max_age < 1:
         parser.error("--workers and --max-age must be positive")
     run(args)

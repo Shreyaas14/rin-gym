@@ -19,7 +19,10 @@ class CLITests(unittest.TestCase):
                               env=env, capture_output=True, text=True)
 
     def test_all_command_help_works_without_data_or_writes(self):
-        commands = [[], ['forecast'], ['eval']]
+        commands = [[], ['pipeline'], ['forecast'], ['eval'], ['replay'], ['play-by-play']]
+        commands += [['pipeline', c] for c in ['audit', 'collect', 'analyze', 'verify', 'fifa-census', 'fifa-join', 'fifa', 'markets', 'market-history', 'verify-markets']]
+        commands += [['pipeline', 'fifa', c] for c in ['ingest', 'verify', 'export-replay']]
+        commands += [['replay', c] for c in ['import', 'verify', 'list-matches', 'render']]
         commands += [['forecast', command] for command in ['prepare', 'run', 'verify', 'simulate']]
         commands += [['eval', command] for command in ['init', 'status', 'register', 'enroll', 'record', 'resolve', 'score', 'export-mlflow', 'quality', 'tinker-check-data', 'tinker-predict']]
         with tempfile.TemporaryDirectory() as tmp:
@@ -33,10 +36,21 @@ class CLITests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             env = {**os.environ, 'RIN_GYM_WORKSPACE': tmp}
             result = subprocess.run([sys.executable, '-c',
-                'import app.forecast.__main__; import app.forecast.governance; import app.forecast.tracking'],
+                'import app.forecast.__main__; import app.forecast.governance; import app.forecast.tracking; import pipelines.sports_data.verify; import app.replay.render; import app.play_by_play.build'],
                 cwd=tmp, env=env, capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertEqual(list(Path(tmp).iterdir()), [])
+
+    def test_frozen_sports_samples_are_packaged_and_not_overwritten(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            env = {**os.environ, 'RIN_GYM_WORKSPACE': tmp}
+            command = [sys.executable, '-c', 'from rin_gym.paths import seed_sports_manifests; seed_sports_manifests()']
+            subprocess.run(command, cwd=tmp, env=env, check=True)
+            target = Path(tmp) / 'data/manifests/sports/nba_sample_markets.json'
+            self.assertEqual(len(json.loads(target.read_text())), 20)
+            target.write_text('[]')
+            subprocess.run(command, cwd=tmp, env=env, check=True)
+            self.assertEqual(target.read_text(), '[]')
 
     def test_workspace_flag_overrides_environment(self):
         with tempfile.TemporaryDirectory() as tmp:

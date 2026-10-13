@@ -342,14 +342,14 @@ def run(history_root, cache):
     )
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--dataset", type=Path, default=Path("data/processed/fifa-market-history")
     )
     parser.add_argument("--cache", type=Path, default=Path("data/raw/polymarket"))
     parser.add_argument("--report", type=Path)
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     result = run(args.dataset, args.cache)
     if args.report:
         from .client import write_json
