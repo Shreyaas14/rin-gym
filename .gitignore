@@ -223,3 +223,7 @@ __marimo__/
 /data/raw/
 .venv/
 .DS_Store
+
+# Local FIFA Parquet snapshots and replay exports
+/data/processed/fifa/
+/artifacts/fifa-replay/
