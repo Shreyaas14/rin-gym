@@ -2,6 +2,9 @@ name: Tests and installed tool
 on:
   push:
   pull_request:
+concurrency:
+  group: rin-gym-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
@@ -42,7 +45,7 @@ jobs:
           '${{ runner.temp }}/rin-gym-bin/rin-gym' --help
           '${{ runner.temp }}/rin-gym-tools/rin-gym/bin/python' '${{ github.workspace }}/scripts/check_tests.py' --installed
   optional-evaluation-integrations:
-    runs-on: ubuntu-latest
+    runs-on: macos-14
     env:
       MLFLOW_DISABLE_TELEMETRY: 'true'
     steps:

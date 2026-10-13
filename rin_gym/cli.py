@@ -103,7 +103,8 @@ def main(argv=None):
             getattr(importlib.import_module('pipelines.sports_data.' + module), function)()
         elif args.group == 'play-by-play':
             from app.play_by_play.build import build
-            build(args.match, args.competition, args.season, args.output, args.market_slug)
+            with selected_directory():
+                build(args.match, args.competition, args.season, args.output, args.market_slug)
         elif args.command == 'simulate':
             if args.runs < 1:
                 parser.error('--runs must be positive')

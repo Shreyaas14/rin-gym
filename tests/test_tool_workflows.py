@@ -6,6 +6,7 @@ network acquisition; all provider responses are synthetic and pre-cached.
 """
 from datetime import datetime, timedelta, timezone
 import importlib.util
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -16,6 +17,7 @@ import unittest
 from urllib.parse import urlencode
 
 from PIL import Image
+from app.play_by_play.build import BASE as STATSBOMB
 from pipelines.fifa.client import BASE, Client, dumps
 from pipelines.fifa.contracts import REGISTRY
 from pipelines.fifa.markets import GAMMA, MarketClient
@@ -49,7 +51,13 @@ class ToolWorkflowTests(unittest.TestCase):
     def invoke(self, *arguments):
         env = os.environ.copy()
         env.pop("PYTHONPATH", None)
+        for key in ["http_proxy", "https_proxy", "all_proxy", "no_proxy"]:
+            env.pop(key, None)
         env["RIN_GYM_WORKSPACE"] = str(self.ignored)
+        # Fail accidental cache misses immediately rather than contacting a
+        # provider from this synthetic, offline integration test.
+        env.update(HTTP_PROXY="http://127.0.0.1:9", HTTPS_PROXY="http://127.0.0.1:9",
+                   ALL_PROXY="http://127.0.0.1:9", NO_PROXY="")
         result = subprocess.run(
             [sys.executable, "-m", "rin_gym", "--workspace", str(self.workspace),
              *arguments], cwd=self.cwd, env=env, capture_output=True, text=True,
@@ -180,6 +188,41 @@ class ToolWorkflowTests(unittest.TestCase):
                 image.verify()
         self.assertTrue((output / "render-manifest.json").exists())
         self.assertTrue((self.workspace / database).exists())
+
+    def test_relative_play_by_play_output_uses_selected_workspace(self):
+        match = dict(match_id=1, match_date="2024-07-14", home_score=0, away_score=0,
+                     home_team=dict(home_team_id=1, home_team_name="Home"),
+                     away_team=dict(away_team_id=2, away_team_name="Away"))
+        event = dict(id="1", index=1, type={"name": "Pass"}, team={"id": 1},
+                     player={"id": 10, "name": "Player"}, period=1,
+                     timestamp="00:00:01.000", minute=0, second=1, possession=1,
+                     possession_team={"id": 1}, play_pattern={"name": "Regular Play"},
+                     location=[40, 30], **{"pass": {"end_location": [60, 30]}})
+        frame = dict(event_uuid="1", visible_area=[], freeze_frame=[
+            dict(actor=True, teammate=True, keeper=False, location=[40, 30])])
+        cache = self.workspace / "data/raw/play-by-play"
+        cache.mkdir(parents=True)
+        for name, endpoint, payload in [
+            ("matches_1_1", "matches/1/1.json", [match]),
+            ("events_1", "events/1.json", [event]),
+            ("frames_1", "three-sixty/1.json", [frame]),
+            ("lineups_1", "lineups/1.json", []),
+        ]:
+            body = dumps(payload).encode()
+            (cache / (name + ".json")).write_bytes(body)
+            (cache / (name + ".meta.json")).write_text(json.dumps(dict(
+                url=STATSBOMB + endpoint, sha256=hashlib.sha256(body).hexdigest(),
+                retrieved_utc="2026-10-01T00:00:00+00:00")))
+        self.invoke("play-by-play", "--match", "1", "--competition", "1",
+                    "--season", "1", "--output", "artifacts/detailed")
+        output = self.workspace / "artifacts/detailed"
+        state = json.loads((output / "state.json").read_text())
+        self.assertEqual(state["summary"]["events"], 1)
+        self.assertEqual(state["events"][0]["source_event"], event)
+        self.assertEqual(state["summary"]["events_with_360"], 1)
+        self.assertFalse(state["forecast_ready"])
+        self.assertTrue((output / "index.html").is_file())
+        self.assertTrue((output / "manifest.json").is_file())
 
 
 if __name__ == "__main__":
