@@ -130,6 +130,8 @@ def demo(argv):
     parser.add_argument('--utc', required=True)
     parser.add_argument('--runs', type=int, default=10000)
     args = parser.parse_args(argv)
+    from .governance import assert_development_matches
+    assert_development_matches([args.match])
     config = read(ROOT / 'config.json')
     model = Simulator(read(OUTPUT / 'model.json'), config)
     row = next(r for r in read(MANIFESTS / 'manifest.json') if r['match_id'] == args.match and r['status'] == 'ok')

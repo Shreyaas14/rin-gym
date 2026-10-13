@@ -73,12 +73,19 @@ def market_vector(histories, cutoff, max_age):
 
 
 def load_game(row):
+    from .governance import assert_development_matches
+    assert_development_matches([row['match_id']])
     events = read(FIFA / f"fifa_{row['match_id']}_timeline.json")['Event']
     histories = [read(RAW / m['file'])['history'] for m in row['markets']]
     return Replay(events), histories
 
 
 def build_cases(manifest, config):
+    from .governance import assert_development_matches
+    # Check the complete input before reading even the first game's state or labels.
+    # Materialize iterators so validation cannot consume the evaluation input.
+    manifest = list(manifest)
+    assert_development_matches(row['match_id'] for row in manifest)
     cases, exclusions = [], []
     for row in manifest:
         if row['status'] != 'ok':

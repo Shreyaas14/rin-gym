@@ -1,6 +1,8 @@
 """Time-controlled tests of holdout governance; no real games or network calls."""
 from concurrent.futures import ThreadPoolExecutor
+from contextlib import redirect_stderr
 from datetime import datetime, timezone
+import io
 import json
 from pathlib import Path
 import sqlite3
@@ -11,6 +13,8 @@ from unittest.mock import patch
 from app.forecast.governance import Ledger, TARGET, assert_development_matches, timestamp
 from app.forecast.evaluate import select_temperature, run
 from app.forecast.model import Simulator
+from app.forecast.model import demo
+from app.forecast.replay import load_game, build_cases
 
 
 def iso(second):
@@ -125,6 +129,46 @@ class GovernanceTests(unittest.TestCase):
         with patch('app.forecast.data.read', return_value={}), patch('app.forecast.data.group_matches', return_value=[{'IdMatch': 'new-0'}]):
             with self.assertRaisesRegex(ValueError, 'Protected holdout'):
                 prepare()
+
+    def test_simulation_rejects_reserved_games_before_data_access_and_after_release(self):
+        self.enroll()
+        for released in [False, True]:
+            if released:
+                self.resolve_all()
+                self.ledger.score()
+            with self.subTest(released=released), patch('app.forecast.model.read') as read:
+                with self.assertRaisesRegex(ValueError, 'Protected holdout'):
+                    demo(['--match', 'new-0', '--utc', iso(151)])
+                read.assert_not_called()
+
+    def test_shared_game_loader_rejects_reserved_games_before_data_access(self):
+        self.enroll()
+        with patch('app.forecast.replay.read') as read:
+            with self.assertRaisesRegex(ValueError, 'Protected holdout'):
+                load_game({'match_id': 'new-0'})
+            read.assert_not_called()
+
+    def test_installed_simulation_command_reports_protection_without_loading_data(self):
+        from rin_gym.cli import main
+        self.enroll()
+        stderr = io.StringIO()
+        with patch('app.forecast.model.read') as read, redirect_stderr(stderr):
+            with self.assertRaises(SystemExit) as exit:
+                main(['forecast', 'simulate', '--match', 'new-0', '--utc', iso(151)])
+            self.assertEqual(exit.exception.code, 1)
+            self.assertIn('Protected holdout', stderr.getvalue())
+            read.assert_not_called()
+
+    def test_case_builder_checks_all_games_before_loading_any_game(self):
+        self.enroll()
+        # A protected row at the end must block the complete operation, even if
+        # it is marked excluded or supplied through a one-shot iterator.
+        rows = [{'match_id': 'development', 'status': 'ok'},
+                {'match_id': 'new-0', 'status': 'excluded'}]
+        with patch('app.forecast.replay.load_game') as load:
+            with self.assertRaisesRegex(ValueError, 'Protected holdout'):
+                build_cases(iter(rows), {})
+            load.assert_not_called()
 
     def test_issue_time_is_server_generated_and_overwrite_fails(self):
         self.enroll()
