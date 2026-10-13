@@ -235,3 +235,4 @@ __marimo__/
 # Local replay query databases
 *.duckdb
 *.duckdb.wal
+/data/processed/trade_env/
