@@ -233,3 +233,7 @@ __marimo__/
 /artifacts/mlflow/
 
 /artifacts/tinker/
+
+# Local FIFA Parquet snapshots and replay exports
+/data/processed/fifa/
+/artifacts/fifa-replay/

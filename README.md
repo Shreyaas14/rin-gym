@@ -48,3 +48,15 @@ The [evaluation workflow](docs/pipelines/evaluation-quality.md) covers frozen fu
 `rin-gym forecast prepare`, `run`, `verify`, and `simulate` also expose the existing forecast workflow. Commands write below the current directory; use `rin-gym --workspace /path/to/workspace ...` or `RIN_GYM_WORKSPACE` to select another data workspace. The original pipeline module commands above remain available from the checkout.
 
 For Tinker fine-tuning, install the optional `tinker` extra and follow the [Tinker integration guide](docs/pipelines/tinker-evaluation.md). It adds chronological dataset exclusions, cookbook evaluators, and prospective checkpoint prediction logging; MLflow remains optional.
+
+## FIFA Parquet ingestion
+
+Ingest Premier League 2025/26 and World Cup 2026 into shared local match/event tables:
+
+```sh
+python3 -m pip install -r pipelines/fifa/requirements.txt
+python3 -m pipelines.fifa ingest
+python3 -m pipelines.fifa verify --cache data/raw/fifa
+```
+
+The [pipeline guide](docs/pipelines/fifa-parquet.md) documents the schemas, cache/refresh behavior, and replay adapter. The completed [ingestion report](artifacts/fifa-pipeline/REPORT.md) covers 484 matches and 40,848 events.
