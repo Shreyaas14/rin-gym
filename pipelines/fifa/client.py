@@ -10,6 +10,7 @@ import os
 from pathlib import Path
 import tempfile
 import time
+import zlib
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlsplit
 from urllib.request import Request, urlopen
@@ -19,6 +20,14 @@ COHORTS = {
     "premier-league-2025-26": ("2000000000", "51r6ph2woavlbbpk8f29nynf8", 380),
     "world-cup-2026": ("17", "285023", 104),
 }
+
+
+class AcquisitionError(RuntimeError):
+    """A response cannot be trusted; abort publication rather than exclude data."""
+
+
+class CacheIntegrityError(AcquisitionError):
+    """A cached response or its request identity failed integrity checks."""
 
 
 def dumps(value):
@@ -65,17 +74,23 @@ class Client:
 
     def store(self, url, body, fetched_at=None, **extra):
         cache_key = extra.pop("cache_key", url)
-        data = json.loads(body)
+        try:
+            data = json.loads(body)
+        except (ValueError, UnicodeError) as error:
+            raise AcquisitionError("Invalid JSON response: " + url) from error
         if not isinstance(data, self.response_types):
-            raise ValueError("Unexpected JSON response type: " + url)
+            raise AcquisitionError("Unexpected JSON response type: " + url)
         digest = hashlib.sha256(body).hexdigest()
         payload = self.root / (digest + ".json.gz")
         if payload.exists():
-            if (
-                hashlib.sha256(gzip.decompress(payload.read_bytes())).hexdigest()
-                != digest
-            ):
-                raise ValueError("Existing raw payload is corrupt: " + digest)
+            try:
+                existing = gzip.decompress(payload.read_bytes())
+            except (OSError, EOFError, zlib.error) as error:
+                raise CacheIntegrityError(
+                    "Existing raw payload is corrupt: " + digest
+                ) from error
+            if hashlib.sha256(existing).hexdigest() != digest:
+                raise CacheIntegrityError("Existing raw payload is corrupt: " + digest)
         else:
             atomic_bytes(payload, gzip.compress(body, mtime=0))
         metadata = {
@@ -98,15 +113,30 @@ class Client:
         )
         index = self._index(cache_key)
         if index.exists() and not self.refresh:
-            metadata = json.loads(index.read_text())
-            body = gzip.decompress((self.root / metadata["raw_file"]).read_bytes())
-            if (
-                metadata["url"] != url
-                or metadata.get("request_body") != json_body
-                or hashlib.sha256(body).hexdigest() != metadata["sha256"]
-            ):
-                raise ValueError("Cache integrity mismatch: " + url)
-            return json.loads(body), metadata
+            try:
+                metadata = json.loads(index.read_text())
+                body = gzip.decompress((self.root / metadata["raw_file"]).read_bytes())
+                if (
+                    metadata["url"] != url
+                    or metadata.get("request_body") != json_body
+                    or hashlib.sha256(body).hexdigest() != metadata["sha256"]
+                ):
+                    raise CacheIntegrityError("Cache integrity mismatch: " + url)
+                data = json.loads(body)
+                if not isinstance(data, self.response_types):
+                    raise CacheIntegrityError(
+                        "Unexpected cached JSON response type: " + url
+                    )
+            except (
+                OSError,
+                EOFError,
+                zlib.error,
+                ValueError,
+                KeyError,
+                TypeError,
+            ) as error:
+                raise CacheIntegrityError("Cache integrity mismatch: " + url) from error
+            return data, metadata
         if self.offline:
             raise FileNotFoundError("Uncached URL in offline mode: " + url)
         for attempt in range(4):

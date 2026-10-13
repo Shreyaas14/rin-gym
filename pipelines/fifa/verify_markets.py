@@ -2,17 +2,20 @@
 
 import argparse
 from bisect import bisect_left
-from collections import Counter
+from collections import Counter, defaultdict
+from functools import lru_cache
 import gzip
 import hashlib
 import json
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 
 import pyarrow as pa
 import pyarrow.compute as pc
 import pyarrow.parquet as pq
 
 from .dataset import resolve_snapshot, verify
+from .markets import epoch, validated_history
 from .contracts import (
     POLICY_VERSION,
     SERIES,
@@ -40,6 +43,117 @@ def manifest(root):
             "Row count mismatch: " + str(path),
         )
     return data
+
+
+def verify_prices(price_path, markets, cache, sources, windows):
+    """Stream Parquet against raw token histories with a bounded response cache."""
+    expected = {}
+    request_tokens = defaultdict(set)
+    for meta in sources:
+        body = meta.get("request_body")
+        tokens = (
+            body.get("markets", [])
+            if isinstance(body, dict)
+            else parse_qs(urlsplit(meta["url"]).query).get("market", [])
+        )
+        request_tokens[meta["sha256"]].update(tokens)
+
+    @lru_cache(maxsize=16)
+    def response(digest):
+        body = gzip.decompress((cache / (digest + ".json.gz")).read_bytes())
+        require(hashlib.sha256(body).hexdigest() == digest, "Raw history hash mismatch")
+        return json.loads(body)
+
+    @lru_cache(maxsize=32)
+    def raw_history(digest, token):
+        require(token in request_tokens[digest], "History request token mismatch")
+        history = response(digest).get("history")
+        if isinstance(history, dict):
+            history = history.get(token)
+        return validated_history({"history": history})
+
+    for market in markets:
+        for token in market["tokens"]:
+            if token["status"] == "included":
+                tid = token["token_id"]
+                require(tid not in expected, "Token reused by another contract")
+                expected[tid] = (
+                    market["match_id"],
+                    market["market_id"],
+                    token["outcome_index"],
+                    token["outcome"],
+                    token["points"],
+                    token["in_game_points"],
+                    token["history_sha256"],
+                )
+    counts, in_game, last = Counter(), Counter(), {}
+    rows = 0
+    for batch in pq.ParquetFile(price_path).iter_batches(batch_size=100000):
+        table = pa.Table.from_batches([batch])
+        require(
+            all(c.null_count == 0 for c in table.columns), "Null price identity/value"
+        )
+        require(
+            pc.all(pc.is_finite(table["price"])).as_py()
+            and pc.all(pc.is_finite(table["timestamp"])).as_py(),
+            "Nonfinite price/time",
+        )
+        require(
+            pc.all(
+                pc.and_(
+                    pc.greater_equal(table["price"], 0),
+                    pc.less_equal(table["price"], 1),
+                )
+            ).as_py(),
+            "Price outside [0,1]",
+        )
+        data = table.to_pydict()
+        for mid, kid, tid, oi, on, at, price, ig, sha in zip(
+            *(
+                data[k]
+                for k in [
+                    "match_id",
+                    "market_id",
+                    "token_id",
+                    "outcome_index",
+                    "outcome",
+                    "timestamp",
+                    "price",
+                    "in_game",
+                    "source_response_sha256",
+                ]
+            )
+        ):
+            require(tid in expected, "Orphan price token")
+            identity = expected[tid]
+            require(
+                (mid, kid, oi, on) == identity[:4] and sha == identity[6],
+                "Price token identity/provenance mismatch",
+            )
+            require(
+                at > last.get(tid, float("-inf")),
+                "Repeated or unordered token timestamp",
+            )
+            raw = raw_history(sha, tid)
+            require(len(raw) == identity[4], "Raw history sample count mismatch")
+            index = counts[tid]
+            require(
+                index < len(raw) and (at, price) == (raw[index]["t"], raw[index]["p"]),
+                "Price sample differs from raw history",
+            )
+            require(mid in windows, "Missing source game window")
+            kickoff, terminal = windows[mid]
+            require(ig == (kickoff <= at <= terminal), "Incorrect in-game flag")
+            last[tid] = at
+            counts[tid] += 1
+            in_game[tid] += int(ig)
+        rows += len(table)
+    require(set(counts) == set(expected), "Price token coverage mismatch")
+    require(
+        all(counts[t] == e[4] and in_game[t] == e[5] for t, e in expected.items()),
+        "Token sample count mismatch",
+    )
+    return rows, len(counts)
 
 
 def run(history_root, cache):
@@ -182,78 +296,25 @@ def run(history_root, cache):
         all(m["market_id"] in certified_ids for m in markets),
         "Uncertified market entered price dataset",
     )
-    expected = {}
-    for market in markets:
-        for token in market["tokens"]:
-            if token["status"] == "included":
-                tid = token["token_id"]
-                require(tid not in expected, "Token reused by another contract")
-                expected[tid] = (
-                    market["match_id"],
-                    market["market_id"],
-                    token["outcome_index"],
-                    token["outcome"],
-                    token["points"],
-                    token["in_game_points"],
-                    token["history_sha256"],
-                )
-    counts, in_game, last = Counter(), Counter(), {}
-    rows = 0
-    for batch in pq.ParquetFile(history_root / "prices.parquet").iter_batches(
-        batch_size=100000
-    ):
-        table = pa.Table.from_batches([batch])
-        require(
-            all(c.null_count == 0 for c in table.columns), "Null price identity/value"
-        )
-        require(
-            pc.all(pc.is_finite(table["price"])).as_py()
-            and pc.all(pc.is_finite(table["timestamp"])).as_py(),
-            "Nonfinite price/time",
-        )
-        require(
-            pc.all(
-                pc.and_(
-                    pc.greater_equal(table["price"], 0),
-                    pc.less_equal(table["price"], 1),
-                )
-            ).as_py(),
-            "Price outside [0,1]",
-        )
-        data = table.to_pydict()
-        for mid, kid, tid, oi, on, at, ig, sha in zip(
-            *(
-                data[k]
-                for k in [
-                    "match_id",
-                    "market_id",
-                    "token_id",
-                    "outcome_index",
-                    "outcome",
-                    "timestamp",
-                    "in_game",
-                    "source_response_sha256",
-                ]
-            )
-        ):
-            require(tid in expected, "Orphan price token")
-            identity = expected[tid]
-            require(
-                (mid, kid, oi, on) == identity[:4] and sha == identity[6],
-                "Price token identity/provenance mismatch",
-            )
-            require(
-                at > last.get(tid, float("-inf")),
-                "Repeated or unordered token timestamp",
-            )
-            last[tid] = at
-            counts[tid] += 1
-            in_game[tid] += int(ig)
-        rows += len(table)
-    require(set(counts) == set(expected), "Price token coverage mismatch")
-    require(
-        all(counts[t] == e[4] and in_game[t] == e[5] for t, e in expected.items()),
-        "Token sample count mismatch",
+    fifa_events = pq.read_table(
+        fifa / "events.parquet",
+        columns=["match_id", "event_time_utc", "event_kind", "period_code"],
+    ).to_pylist()
+    times, starts = defaultdict(list), defaultdict(list)
+    for event in fifa_events:
+        if event["event_time_utc"] is None:
+            continue
+        at = epoch(event["event_time_utc"])
+        times[event["match_id"]].append(at)
+        if event["period_code"] == 3 and event["event_kind"] == "period_start":
+            starts[event["match_id"]].append(at)
+    windows = {
+        mid: (anchors[0], max(times[mid]))
+        for mid, anchors in starts.items()
+        if len(anchors) == 1
+    }
+    rows, token_count = verify_prices(
+        history_root / "prices.parquet", markets, cache, broad["raw_sources"], windows
     )
     audit = json.loads((history_root / "market-resolution.json").read_text())
     require(
@@ -275,7 +336,7 @@ def run(history_root, cache):
         final_markets=len(markets),
         certified_contracts=len(certified),
         contract_policy_version=POLICY_VERSION,
-        price_tokens=len(counts),
+        price_tokens=token_count,
         price_points=rows,
         raw_response_hashes_verified=len(hashes),
     )

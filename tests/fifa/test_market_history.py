@@ -12,6 +12,7 @@ import unittest
 
 from pipelines.fifa.market_history import build_requests, download
 from pipelines.fifa.markets import MarketClient
+from pipelines.fifa.client import AcquisitionError, CacheIntegrityError
 
 
 def fixture():
@@ -155,6 +156,25 @@ class BatchTests(unittest.TestCase):
         self.assertEqual(len(sources), 2)
         self.assertTrue(all(r["status"] == "included" for r in results))
 
+    def test_acquisition_failure_in_batch_and_fallback_is_fatal(self):
+        jobs, _ = build_requests(*fixture())
+        t = jobs[0][2]["kickoff"]
+        for error_type in (AcquisitionError, CacheIntegrityError):
+            for fallback in (False, True):
+
+                class Fake:
+                    def get(self, url, **kwargs):
+                        if fallback and "json_body" in kwargs:
+                            return {"history": {"over-token": [{"t": t, "p": 0.2}]}}, {
+                                "sha256": "h"
+                            }
+                        raise error_type("Untrusted response")
+
+                with self.subTest(
+                    error=error_type, fallback=fallback
+                ), self.assertRaises(error_type):
+                    download(Fake(), jobs[0])
+
     def test_post_cache_distinguishes_bodies_and_replays_offline(self):
         with tempfile.TemporaryDirectory() as tmp:
             calls = []
@@ -274,6 +294,16 @@ class PublicationTests(unittest.TestCase):
                 self.assertEqual(sum(a["status"] == "excluded" for a in audit), 2)
                 self.assertEqual(hashlib.sha256(raw.read_bytes()).hexdigest(), before)
                 pointer = (args.output / "current.json").read_bytes()
+                for fatal in (
+                    AcquisitionError("Invalid response"),
+                    CacheIntegrityError("Corrupt cache"),
+                ):
+                    with patch.object(Fake, "get", side_effect=fatal):
+                        with self.assertRaises(type(fatal)):
+                            run(args)
+                    self.assertEqual(
+                        (args.output / "current.json").read_bytes(), pointer
+                    )
                 Fake.fail = True
                 with self.assertRaisesRegex(RuntimeError, "pointer unchanged"):
                     run(args)
