@@ -8,7 +8,14 @@ def verify_database(database):
     with connect(database) as con:
         total = con.execute("SELECT count(*) FROM matches").fetchone()[0]
     counts = dict(
-        matches=0, events=0, with_odds=0, extra_time=0, shootout=0, score_mismatches=[]
+        matches=0,
+        completed_matches=0,
+        unfinished_matches=0,
+        events=0,
+        with_odds=0,
+        extra_time=0,
+        shootout=0,
+        score_mismatches=[],
     )
     for match in list_matches(database, limit=max(1, total)):
         replay = Replay(load_match(database, match["match_id"]))
@@ -19,12 +26,22 @@ def verify_database(database):
         counts["extra_time"] += 7 in replay.period_starts
         counts["shootout"] += 11 in replay.period_starts
         expected = match["final_home_score"], match["final_away_score"]
-        if (
-            None not in expected
-            and state["phase"] == "FULL TIME"
-            and state["score"] != expected
-        ):
-            counts["score_mismatches"].append(match["match_id"])
+        if replay.match["match_status"] == "completed":
+            counts["completed_matches"] += 1
+            if state["phase"] != "FULL TIME" or not any(
+                event["event_kind"] == "match_end" for event in replay.events
+            ):
+                raise ValueError(
+                    "Completed match has no terminal match_end: " + match["match_id"]
+                )
+            if None in expected:
+                raise ValueError(
+                    "Completed match has no verified final score: " + match["match_id"]
+                )
+            if state["score"] != expected:
+                counts["score_mismatches"].append(match["match_id"])
+        else:
+            counts["unfinished_matches"] += 1
         for timestamp in (replay.start, replay.start + 1, replay.end, replay.finish):
             for side in replay.markets:
                 point, _ = replay.odds(side, timestamp)

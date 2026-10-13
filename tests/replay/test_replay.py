@@ -13,6 +13,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 
 from app.replay.model import Replay, has_location
+from app.replay.audit import verify_database
 from app.replay.render import Renderer, render
 from app.replay.store import import_database, list_matches, load_match
 
@@ -64,6 +65,7 @@ def fixture():
         final_home_score=5,
         final_away_score=2,
         event_count=len(events),
+        match_status="completed",
         timeline_status="ok",
         dataset_version="test-v1",
     )
@@ -100,6 +102,76 @@ class StateTests(unittest.TestCase):
         state = Replay(fixture()).state(START.timestamp() + 600)
         self.assertEqual(state["score"], (1, 0))
         self.assertEqual(state["current"]["event_kind"], "goal")
+
+    def test_missing_score_metadata_carries_state_and_explicit_corrections(self):
+        data = fixture()
+        event = deepcopy(data["events"][2])
+        event.update(
+            event_uid="null-assist",
+            source_index=len(data["events"]),
+            event_time_utc=START + timedelta(minutes=11),
+            home_score=None,
+            away_score=None,
+        )
+        data["events"].append(event)
+        replay = Replay(data)
+        self.assertEqual(replay.state(START.timestamp() + 660)["score"], (1, 0))
+        self.assertEqual(replay.state(START.timestamp() + 720)["score"], (1, 0))
+        for minute, home, away, expected in (
+            (12, 0, None, (0, 0)),
+            (13, None, 2, (0, 2)),
+            (14, None, None, (0, 2)),
+        ):
+            data["events"].append(
+                event
+                | dict(
+                    event_uid=f"correction-{minute}",
+                    source_index=len(data["events"]),
+                    event_time_utc=START + timedelta(minutes=minute),
+                    home_score=home,
+                    away_score=away,
+                )
+            )
+            replay = Replay(data)
+            self.assertEqual(
+                replay.state(START.timestamp() + minute * 60)["score"], expected
+            )
+            self.assertEqual(replay.state(START.timestamp() + 660)["score"], (1, 0))
+
+    def test_null_shootout_scores_carry_each_component_without_future_leakage(self):
+        data = fixture()
+        event = deepcopy(data["events"][-1])
+        for minute, kind, home, away in (
+            (160, "period_start", 0, 0),
+            (165, "goal", 4, 3),
+            (166, "substitution", None, None),
+            (167, "yellow_card", None, 4),
+            (168, "match_end", 0, None),
+        ):
+            data["events"].append(
+                event
+                | dict(
+                    event_uid=f"shootout-{minute}",
+                    source_index=len(data["events"]),
+                    event_time_utc=START + timedelta(minutes=minute),
+                    event_kind=kind,
+                    period_code=11,
+                    home_score=None,
+                    away_score=None,
+                    home_shootout_score=home,
+                    away_shootout_score=away,
+                )
+            )
+        replay = Replay(data)
+        for minute, expected in (
+            (165, (4, 3)),
+            (166, (4, 3)),
+            (167, (4, 4)),
+            (168, (0, 4)),
+        ):
+            state = replay.state(START.timestamp() + minute * 60)
+            self.assertEqual(state["penalties"], expected)
+            self.assertEqual(state["score"], (1, 0))
 
     def test_price_strict_precedence_staleness_and_regulation_cutoff(self):
         r = Replay(fixture())
@@ -356,6 +428,49 @@ class DatabaseTests(unittest.TestCase):
         import_database(self.source, self.database)
         with self.assertRaisesRegex(ValueError, "Unknown FIFA match"):
             load_match(self.database, "not-a-game")
+
+    def audit_fixture(self, completed=True, terminal=True, scores=(1, 0)):
+        data = deepcopy(self.data)
+        if not terminal:
+            data["events"] = data["events"][:-1]
+        data["match"].update(
+            match_status="completed" if completed else "scheduled",
+            event_count=len(data["events"]),
+            final_home_score=scores[0],
+            final_away_score=scores[1],
+        )
+        self.write_snapshot(
+            self.source, {"matches": [data["match"]], "events": data["events"]}
+        )
+        import_database(self.source, self.database, replace=True)
+        return verify_database(self.database)
+
+    def test_audit_counts_verified_completed_match(self):
+        report = self.audit_fixture()
+        self.assertEqual(report["completed_matches"], 1)
+        self.assertEqual(report["unfinished_matches"], 0)
+
+    def test_audit_rejects_completed_match_without_terminal_record(self):
+        with self.assertRaisesRegex(ValueError, "no terminal match_end"):
+            self.audit_fixture(terminal=False)
+
+    def test_audit_rejects_completed_match_without_verified_final_score(self):
+        for scores in ((None, 0), (1, None), (None, None)):
+            with self.subTest(scores=scores):
+                with self.assertRaisesRegex(ValueError, "no verified final score"):
+                    self.audit_fixture(scores=scores)
+
+    def test_audit_counts_unfinished_matches_without_final_comparison(self):
+        report = self.audit_fixture(
+            completed=False, terminal=False, scores=(None, None)
+        )
+        self.assertEqual(report["completed_matches"], 0)
+        self.assertEqual(report["unfinished_matches"], 1)
+        self.assertEqual(report["score_mismatches"], [])
+
+    def test_audit_rejects_completed_match_with_final_score_mismatch(self):
+        with self.assertRaisesRegex(ValueError, "Final score mismatches"):
+            self.audit_fixture(scores=(5, 2))
 
 
 if __name__ == "__main__":

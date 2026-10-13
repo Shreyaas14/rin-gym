@@ -79,7 +79,27 @@ class Replay:
 
         add(3, self.start, self.start)
         previous = self.start
+        self.score_states = {}
+        running_score = [0, 0, 0, 0]
         for at, events in sorted(grouped.items()):
+            # Missing scoreboard metadata is not a score correction. Collapse
+            # concurrent records, then carry each component until its next
+            # explicit value. A later zero is still an observed correction.
+            for index, key in enumerate(
+                (
+                    "home_score",
+                    "away_score",
+                    "home_shootout_score",
+                    "away_shootout_score",
+                )
+            ):
+                values = [e[key] for e in events if e[key] is not None]
+                if values:
+                    running_score[index] = max(values)
+            self.score_states[at] = (
+                tuple(running_score[:2]),
+                tuple(running_score[2:]),
+            )
             add(max(0.12, min(3.4, (at - previous) / 110)), previous, at)
             kind = max(events, key=lambda e: PRIORITY.get(e["event_kind"], 0))[
                 "event_kind"
@@ -136,15 +156,10 @@ class Replay:
             if batch
             else None
         )
-        # FIFA can put a pre-goal and post-goal score in the same UTC batch.
-        # Collapse that batch only; never read a future event or final match row.
-        score = tuple(
-            max((e[k] for e in batch if e[k] is not None), default=0)
-            for k in ("home_score", "away_score")
-        )
-        penalties = tuple(
-            max((e[k] for e in batch if e[k] is not None), default=0)
-            for k in ("home_shootout_score", "away_shootout_score")
+        # These states contain only values recorded at or before the latest
+        # visible timestamp, never a future event or the final match row.
+        score, penalties = (
+            self.score_states[past[-1]["t"]] if past else ((0, 0), (0, 0))
         )
         return dict(
             past=past,
