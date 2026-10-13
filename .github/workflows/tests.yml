@@ -1,6 +1,7 @@
 name: Tests and installed tool
 on:
   push:
+    branches: [main]
   pull_request:
 concurrency:
   group: rin-gym-${{ github.head_ref || github.ref_name }}
