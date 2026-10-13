@@ -1,0 +1,97 @@
+{
+  "summaries": {
+    "original_one_share_previous_fresh": {
+      "replay_cases": 216,
+      "unique_matches": 72,
+      "traded_cases": 208,
+      "winning_cases": 120,
+      "losing_cases": 88,
+      "win_rate_traded": 0.5769230769230769,
+      "win_rate_all_cases": 0.5555555555555556,
+      "total_pnl": -20.619153437500007,
+      "gross_wins": 25.057777499999997,
+      "gross_losses": -45.6769309375,
+      "average_win": 0.20881481249999997,
+      "average_loss": -0.5190560333806818,
+      "worst_case_pnl": -1.19303625,
+      "mean_pnl_per_case": -0.09545904369212965
+    },
+    "original_quarter_arithmetic": {
+      "replay_cases": 216,
+      "unique_matches": 72,
+      "traded_cases": 208,
+      "winning_cases": 120,
+      "losing_cases": 88,
+      "win_rate_traded": 0.5769230769230769,
+      "win_rate_all_cases": 0.5555555555555556,
+      "total_pnl": -5.154788359375002,
+      "gross_wins": 6.264444374999999,
+      "gross_losses": -11.419232734375,
+      "average_win": 0.052203703124999994,
+      "average_loss": -0.12976400834517046,
+      "worst_case_pnl": -0.2982590625,
+      "mean_pnl_per_case": -0.023864760923032413
+    },
+    "original_quarter_fresh": {
+      "replay_cases": 216,
+      "unique_matches": 72,
+      "traded_cases": 216,
+      "winning_cases": 103,
+      "losing_cases": 113,
+      "win_rate_traded": 0.47685185185185186,
+      "win_rate_all_cases": 0.47685185185185186,
+      "total_pnl": -7.343604665625003,
+      "gross_wins": 4.7858076999999986,
+      "gross_losses": -12.129412365625003,
+      "average_win": 0.046464152427184456,
+      "average_loss": -0.1073399324391593,
+      "worst_case_pnl": -0.3286434375,
+      "mean_pnl_per_case": -0.033998169748263904
+    }
+  },
+  "paired_pnl": {
+    "original_one_share_previous_fresh": {
+      "mean_pnl_delta_per_game_repeat": 0.061460873943865756,
+      "match_cluster_bootstrap_95": [
+        -0.012059131663411448,
+        0.1342834478208189
+      ]
+    },
+    "original_quarter_arithmetic": {
+      "mean_pnl_delta_per_game_repeat": -0.010133408825231489,
+      "match_cluster_bootstrap_95": [
+        -0.02673073711624711,
+        0.005472826139684601
+      ]
+    }
+  },
+  "fresh_quarter_mean_pnl_bootstrap_95": [
+    -0.05296953535409434,
+    -0.014901365806568296
+  ],
+  "win_rate_difference": {
+    "fresh_quarter_minus_original": -0.10007122507122501,
+    "match_cluster_bootstrap_95": [
+      -0.18632376368919687,
+      -0.014281299635666139
+    ]
+  },
+  "behavior": {
+    "decisions_with_different_executed_action": 519,
+    "decisions": 1077
+  },
+  "valid_rate": 1,
+  "usage": {
+    "requests": 1077,
+    "input_tokens": 1872068,
+    "output_tokens": 113397,
+    "full_rate_cost_estimate_usd": 0.43309146000000004,
+    "note": "Logged-token estimate, not billing invoice; cache discounts excluded."
+  },
+  "seal_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "scope": "Fresh quarter-share inference, original action rules. Baseline is the immediately preceding verified one-share fresh replay, with identical checkpoint/games/seeds. No protected holdout use, no training, no threshold tuning."
+}
