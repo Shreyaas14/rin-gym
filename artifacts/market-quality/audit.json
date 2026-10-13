@@ -1,0 +1,4525 @@
+{
+  "config": {
+    "decisions": [
+      "h1+15",
+      "h1+30",
+      "ht",
+      "h2+15",
+      "h2+30"
+    ],
+    "pre_lead_s": 60,
+    "event_delay_s": 60,
+    "price_max_age_s": 90,
+    "max_sum_dev": 0.05,
+    "fill_delay_s": 60,
+    "fill_max_wait_s": 120,
+    "fee_rate": 0.05,
+    "half_spread": 0.01,
+    "mark": "mid",
+    "start_mark": "decision",
+    "invalid_penalty": 0.04,
+    "w_log": 0.0,
+    "w_missed": 0.0,
+    "prob_sum_tol": 0.05,
+    "show_kickoff_price": true,
+    "split_shot_competitions": [
+      "2000000000"
+    ],
+    "competitions": {
+      "17": "FIFA World Cup 2026",
+      "2000000000": "Premier League 2025/26"
+    },
+    "train_competitions": [
+      "2000000000"
+    ],
+    "world_cup_competition": "17",
+    "group_stage_name": "First Stage",
+    "knockout_from_utc": "2026-06-28T12:00:00Z",
+    "demo_match_ids": [
+      "400021540",
+      "400021528",
+      "400021538"
+    ],
+    "seed": 20261012,
+    "bootstrap_reps": 2000
+  },
+  "input_sha256": {
+    "polymarket": "44990304b5cd240440e84de25ebdbc65e45f37bed79ec1888ffb2cf7f9a2c7b6",
+    "kalshi": "4d50eb1cce8fd4b4433970dcc46a27b398336251a9cce3fd453fbb44c052930e",
+    "kalshi_trades_sample": "6bfa375ae4f0b7b45239e9a30a84790bd349e3ab2517e5a31b09ec662b483566"
+  },
+  "venues": {
+    "polymarket": {
+      "records": 484,
+      "decisions": {
+        "usable": 2362,
+        "price_sum": 31,
+        "fill_sum": 25,
+        "stale_price": 2
+      },
+      "tasks": 9448,
+      "matches_with_tasks": 484,
+      "all_five_decisions": 433,
+      "in_regulation_yes_rows": 170294,
+      "yes_rows_per_match_side": {
+        "n": 1452,
+        "p50": 117,
+        "p95": 123,
+        "max": 227,
+        "mean": 117.28236914600551
+      },
+      "internal_sample_gap_s": {
+        "n": 168842,
+        "p50": 60,
+        "p95": 71,
+        "max": 1979,
+        "mean": 60.02569858210635
+      },
+      "asof_sample_age_s": {
+        "n": 171051,
+        "p50": 23,
+        "p95": 59,
+        "max": 1933,
+        "mean": 26.716990838989542
+      },
+      "unchanged_adjacent_price_fraction": 0.44647658757891995,
+      "minute_grid": {
+        "points": 57017,
+        "fresh_triplets": 56966,
+        "coherent_fresh_triplets": 56279
+      },
+      "goal_plus_60s": {
+        "points": 1342,
+        "coherent_fresh_triplets": 1132
+      },
+      "by_competition": {
+        "17": {
+          "records": 104,
+          "decisions": {
+            "usable": 519,
+            "fill_sum": 1
+          },
+          "tasks": 2076,
+          "matches_with_tasks": 104,
+          "all_five_decisions": 103,
+          "in_regulation_yes_rows": 37526,
+          "yes_rows_per_match_side": {
+            "n": 312,
+            "p50": 119,
+            "p95": 125,
+            "max": 227,
+            "mean": 120.27564102564102
+          },
+          "internal_sample_gap_s": {
+            "n": 37214,
+            "p50": 60,
+            "p95": 71,
+            "max": 93,
+            "mean": 59.991777288117376
+          },
+          "asof_sample_age_s": {
+            "n": 37656,
+            "p50": 27,
+            "p95": 59,
+            "max": 84,
+            "mean": 27.210192266836625
+          },
+          "unchanged_adjacent_price_fraction": 0.4911861127532649,
+          "minute_grid": {
+            "points": 12552,
+            "fresh_triplets": 12552,
+            "coherent_fresh_triplets": 12531
+          },
+          "goal_plus_60s": {
+            "points": 299,
+            "coherent_fresh_triplets": 291
+          }
+        },
+        "2000000000": {
+          "records": 380,
+          "decisions": {
+            "usable": 1843,
+            "price_sum": 31,
+            "fill_sum": 24,
+            "stale_price": 2
+          },
+          "tasks": 7372,
+          "matches_with_tasks": 380,
+          "all_five_decisions": 330,
+          "in_regulation_yes_rows": 132768,
+          "yes_rows_per_match_side": {
+            "n": 1140,
+            "p50": 116,
+            "p95": 123,
+            "max": 130,
+            "mean": 116.46315789473684
+          },
+          "internal_sample_gap_s": {
+            "n": 131628,
+            "p50": 60,
+            "p95": 71,
+            "max": 1979,
+            "mean": 60.035288844318835
+          },
+          "asof_sample_age_s": {
+            "n": 133395,
+            "p50": 22,
+            "p95": 59,
+            "max": 1933,
+            "mean": 26.577765283556356
+          },
+          "unchanged_adjacent_price_fraction": 0.4338362658400948,
+          "minute_grid": {
+            "points": 44465,
+            "fresh_triplets": 44414,
+            "coherent_fresh_triplets": 43748
+          },
+          "goal_plus_60s": {
+            "points": 1043,
+            "coherent_fresh_triplets": 841
+          }
+        }
+      },
+      "source_manifests": {
+        "fifa_manifest_sha256": "3222675202abc4673edc10edf4cab1c92f32fe08628c7693f57a7ac68a25c141",
+        "market_manifest_sha256": "e14ac9e95edeec037b4894e00af631388265ed3a3a3b411c1ae5d2c31aeeae3b"
+      },
+      "catalog": {
+        "markets": 42746,
+        "prices": 16035880,
+        "market_families": {
+          "both_teams_to_score_second_half": 104,
+          "soccer_first_half_total_corners": 308,
+          "first_half_totals": 312,
+          "soccer_exact_score": 3482,
+          "soccer_team_totals": 627,
+          "soccer_first_corner": 103,
+          "soccer_anytime_goalscorer": 1105,
+          "soccer_halftime_result": 609,
+          "soccer_player_shots_on_target": 5164,
+          "soccer_player_goals_plus_assists": 5553,
+          "soccer_player_shots": 7324,
+          "soccer_team_total_corners": 660,
+          "soccer_player_goalkeeper_saves": 852,
+          "soccer_team_to_advance": 32,
+          "moneyline": 1452,
+          "spreads": 1577,
+          "soccer_second_half_result": 312,
+          "soccer_player_goals": 4779,
+          "second_half_totals": 312,
+          "soccer_extra_time": 30,
+          "both_teams_to_score": 400,
+          "total_corners": 1144,
+          "totals": 1951,
+          "soccer_second_half_total_corners": 309,
+          "soccer_player_assists": 2863,
+          "soccer_penalty_shootout": 30,
+          "soccer_second_half_team_totals": 417,
+          "soccer_first_to_score": 312,
+          "soccer_game_corners_odd_even": 103,
+          "soccer_first_half_team_totals": 416,
+          "both_teams_to_score_first_half": 104
+        }
+      },
+      "identity_checks": {
+        "invalid_prices": 0,
+        "duplicate_samples": 0,
+        "duplicate_hda_roles": 0
+      },
+      "families_without_any_in_game_points": {
+        "soccer_player_assists": 1,
+        "soccer_player_shots_on_target": 2,
+        "soccer_player_goals_plus_assists": 1
+      }
+    },
+    "kalshi": {
+      "records": 479,
+      "decisions": {
+        "usable": 1933,
+        "stale_price": 237,
+        "fill_sum": 72,
+        "no_fill": 70,
+        "price_sum": 83
+      },
+      "tasks": 7732,
+      "matches_with_tasks": 468,
+      "all_five_decisions": 250,
+      "in_regulation_yes_rows": 156082,
+      "yes_rows_per_match_side": {
+        "n": 1437,
+        "p50": 114,
+        "p95": 122,
+        "max": 227,
+        "mean": 108.61656228253305
+      },
+      "internal_sample_gap_s": {
+        "n": 154645,
+        "p50": 60,
+        "p95": 60,
+        "max": 1860,
+        "mean": 64.14484787739661
+      },
+      "asof_sample_age_s": {
+        "n": 169296,
+        "p50": 22,
+        "p95": 88,
+        "max": 1825,
+        "mean": 35.15342358945279
+      },
+      "unchanged_adjacent_price_fraction": 0.4679556403375473,
+      "minute_grid": {
+        "points": 56432,
+        "fresh_triplets": 50416,
+        "coherent_fresh_triplets": 48418
+      },
+      "goal_plus_60s": {
+        "points": 1329,
+        "coherent_fresh_triplets": 896
+      },
+      "by_competition": {
+        "17": {
+          "records": 104,
+          "decisions": {
+            "usable": 518,
+            "price_sum": 1,
+            "no_fill": 1
+          },
+          "tasks": 2072,
+          "matches_with_tasks": 104,
+          "all_five_decisions": 102,
+          "in_regulation_yes_rows": 37332,
+          "yes_rows_per_match_side": {
+            "n": 312,
+            "p50": 119,
+            "p95": 125,
+            "max": 227,
+            "mean": 119.65384615384616
+          },
+          "internal_sample_gap_s": {
+            "n": 37020,
+            "p50": 60,
+            "p95": 60,
+            "max": 600,
+            "mean": 60.19773095623987
+          },
+          "asof_sample_age_s": {
+            "n": 37656,
+            "p50": 19,
+            "p95": 54,
+            "max": 544,
+            "mean": 23.200127469725942
+          },
+          "unchanged_adjacent_price_fraction": 0.5771474878444084,
+          "minute_grid": {
+            "points": 12552,
+            "fresh_triplets": 12483,
+            "coherent_fresh_triplets": 12447
+          },
+          "goal_plus_60s": {
+            "points": 299,
+            "coherent_fresh_triplets": 287
+          }
+        },
+        "2000000000": {
+          "records": 375,
+          "decisions": {
+            "usable": 1415,
+            "stale_price": 237,
+            "fill_sum": 72,
+            "no_fill": 69,
+            "price_sum": 82
+          },
+          "tasks": 5660,
+          "matches_with_tasks": 364,
+          "all_five_decisions": 148,
+          "in_regulation_yes_rows": 118750,
+          "yes_rows_per_match_side": {
+            "n": 1125,
+            "p50": 112,
+            "p95": 121,
+            "max": 129,
+            "mean": 105.55555555555556
+          },
+          "internal_sample_gap_s": {
+            "n": 117625,
+            "p50": 60,
+            "p95": 60,
+            "max": 1860,
+            "mean": 65.38712008501594
+          },
+          "asof_sample_age_s": {
+            "n": 131640,
+            "p50": 23,
+            "p95": 107,
+            "max": 1825,
+            "mean": 38.57269826800365
+          },
+          "unchanged_adjacent_price_fraction": 0.4335897980871413,
+          "minute_grid": {
+            "points": 43880,
+            "fresh_triplets": 37933,
+            "coherent_fresh_triplets": 35971
+          },
+          "goal_plus_60s": {
+            "points": 1030,
+            "coherent_fresh_triplets": 609
+          }
+        }
+      },
+      "source_manifests": {
+        "fifa_manifest_sha256": "3222675202abc4673edc10edf4cab1c92f32fe08628c7693f57a7ac68a25c141",
+        "market_manifest_sha256": "a16f0fc7d6007c6bfb339e5d05f6b2bc6cfc7dcdf0a3ccafb65c28a403336eed"
+      },
+      "catalog": {
+        "markets": 1437,
+        "prices": 455536,
+        "market_families": {
+          "moneyline": 1437
+        }
+      },
+      "identity_checks": {
+        "invalid_prices": 0,
+        "duplicate_samples": 0,
+        "duplicate_hda_roles": 0
+      },
+      "families_without_any_in_game_points": {}
+    },
+    "kalshi_trades_sample": {
+      "records": 1,
+      "decisions": {
+        "usable": 5
+      },
+      "tasks": 20,
+      "matches_with_tasks": 1,
+      "all_five_decisions": 1,
+      "in_regulation_yes_rows": 17578,
+      "yes_rows_per_match_side": {
+        "n": 3,
+        "p50": 5747,
+        "p95": 5747,
+        "max": 6117,
+        "mean": 5859.333333333333
+      },
+      "internal_sample_gap_s": {
+        "n": 17575,
+        "p50": 1,
+        "p95": 2,
+        "max": 14,
+        "mean": 1.2089900426742533
+      },
+      "asof_sample_age_s": {
+        "n": 357,
+        "p50": 0,
+        "p95": 2,
+        "max": 6,
+        "mean": 0.32212885154061627
+      },
+      "unchanged_adjacent_price_fraction": 0.7751351351351351,
+      "minute_grid": {
+        "points": 119,
+        "fresh_triplets": 119,
+        "coherent_fresh_triplets": 119
+      },
+      "goal_plus_60s": {
+        "points": 2,
+        "coherent_fresh_triplets": 2
+      },
+      "by_competition": {
+        "17": {
+          "records": 1,
+          "decisions": {
+            "usable": 5
+          },
+          "tasks": 20,
+          "matches_with_tasks": 1,
+          "all_five_decisions": 1,
+          "in_regulation_yes_rows": 17578,
+          "yes_rows_per_match_side": {
+            "n": 3,
+            "p50": 5747,
+            "p95": 5747,
+            "max": 6117,
+            "mean": 5859.333333333333
+          },
+          "internal_sample_gap_s": {
+            "n": 17575,
+            "p50": 1,
+            "p95": 2,
+            "max": 14,
+            "mean": 1.2089900426742533
+          },
+          "asof_sample_age_s": {
+            "n": 357,
+            "p50": 0,
+            "p95": 2,
+            "max": 6,
+            "mean": 0.32212885154061627
+          },
+          "unchanged_adjacent_price_fraction": 0.7751351351351351,
+          "minute_grid": {
+            "points": 119,
+            "fresh_triplets": 119,
+            "coherent_fresh_triplets": 119
+          },
+          "goal_plus_60s": {
+            "points": 2,
+            "coherent_fresh_triplets": 2
+          }
+        }
+      }
+    }
+  },
+  "paired": {
+    "polymarket": {
+      "records": 479,
+      "decisions": {
+        "usable": 2338,
+        "price_sum": 30,
+        "fill_sum": 25,
+        "stale_price": 2
+      },
+      "tasks": 9352,
+      "matches_with_tasks": 479,
+      "all_five_decisions": 429,
+      "in_regulation_yes_rows": 168546,
+      "yes_rows_per_match_side": {
+        "n": 1437,
+        "p50": 117,
+        "p95": 123,
+        "max": 227,
+        "mean": 117.2901878914405
+      },
+      "internal_sample_gap_s": {
+        "n": 167109,
+        "p50": 60,
+        "p95": 71,
+        "max": 1979,
+        "mean": 60.02634208809819
+      },
+      "asof_sample_age_s": {
+        "n": 169296,
+        "p50": 23,
+        "p95": 59,
+        "max": 1933,
+        "mean": 26.73699910216426
+      },
+      "unchanged_adjacent_price_fraction": 0.44591853221550004,
+      "minute_grid": {
+        "points": 56432,
+        "fresh_triplets": 56381,
+        "coherent_fresh_triplets": 55698
+      },
+      "goal_plus_60s": {
+        "points": 1329,
+        "coherent_fresh_triplets": 1119
+      }
+    },
+    "kalshi": {
+      "records": 479,
+      "decisions": {
+        "usable": 1933,
+        "stale_price": 237,
+        "fill_sum": 72,
+        "no_fill": 70,
+        "price_sum": 83
+      },
+      "tasks": 7732,
+      "matches_with_tasks": 468,
+      "all_five_decisions": 250,
+      "in_regulation_yes_rows": 156082,
+      "yes_rows_per_match_side": {
+        "n": 1437,
+        "p50": 114,
+        "p95": 122,
+        "max": 227,
+        "mean": 108.61656228253305
+      },
+      "internal_sample_gap_s": {
+        "n": 154645,
+        "p50": 60,
+        "p95": 60,
+        "max": 1860,
+        "mean": 64.14484787739661
+      },
+      "asof_sample_age_s": {
+        "n": 169296,
+        "p50": 22,
+        "p95": 88,
+        "max": 1825,
+        "mean": 35.15342358945279
+      },
+      "unchanged_adjacent_price_fraction": 0.4679556403375473,
+      "minute_grid": {
+        "points": 56432,
+        "fresh_triplets": 50416,
+        "coherent_fresh_triplets": 48418
+      },
+      "goal_plus_60s": {
+        "points": 1329,
+        "coherent_fresh_triplets": 896
+      }
+    }
+  },
+  "paired_decisions": {
+    "polymarket_only": 432,
+    "both": 1906,
+    "neither": 30,
+    "kalshi_only": 27
+  },
+  "kalshi_recovery_candidates": [
+    {
+      "match_id": "110stnyllsj1u0mhdabeuvyfo",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Brentford",
+      "usable_decisions": 0,
+      "failures": {
+        "stale_price": 5
+      },
+      "in_regulation_yes_rows": 119,
+      "max_internal_gap_s": 1200,
+      "grid_points": 116,
+      "fresh_triplet_points": 20,
+      "coherent_fresh_triplet_points": 16,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "11i3orjflpi9empra6uuduwpg",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "West Ham United",
+      "usable_decisions": 0,
+      "failures": {
+        "stale_price": 5
+      },
+      "in_regulation_yes_rows": 167,
+      "max_internal_gap_s": 540,
+      "grid_points": 114,
+      "fresh_triplet_points": 18,
+      "coherent_fresh_triplet_points": 14,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "13ylro8dy443m52qxwrxm9zis",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Everton",
+      "usable_decisions": 0,
+      "failures": {
+        "stale_price": 4,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 245,
+      "max_internal_gap_s": 360,
+      "grid_points": 116,
+      "fresh_triplet_points": 87,
+      "coherent_fresh_triplet_points": 79,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "15ipwqyqunn8fzwb3l9bsiot0",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Sunderland",
+      "usable_decisions": 0,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 4
+      },
+      "in_regulation_yes_rows": 177,
+      "max_internal_gap_s": 660,
+      "grid_points": 122,
+      "fresh_triplet_points": 19,
+      "coherent_fresh_triplet_points": 13,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "15wpdgoeb2hhp1jui3uzbf6l0",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Nottingham Forest",
+      "usable_decisions": 0,
+      "failures": {
+        "stale_price": 3,
+        "price_sum": 2
+      },
+      "in_regulation_yes_rows": 225,
+      "max_internal_gap_s": 540,
+      "grid_points": 114,
+      "fresh_triplet_points": 39,
+      "coherent_fresh_triplet_points": 27,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "16ogxo1bxdi6eza02h0s9i5n8",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Manchester United",
+      "usable_decisions": 0,
+      "failures": {
+        "price_sum": 3,
+        "stale_price": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 317,
+      "max_internal_gap_s": 300,
+      "grid_points": 114,
+      "fresh_triplet_points": 108,
+      "coherent_fresh_triplet_points": 78,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1b0aavyqhw9g2ebi1cua6uiac",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Brentford",
+      "usable_decisions": 0,
+      "failures": {
+        "stale_price": 3,
+        "no_fill": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 243,
+      "max_internal_gap_s": 600,
+      "grid_points": 117,
+      "fresh_triplet_points": 66,
+      "coherent_fresh_triplet_points": 52,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1ck3f5txde110a1im9lxy0ys4",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Nottingham Forest",
+      "usable_decisions": 0,
+      "failures": {
+        "stale_price": 5
+      },
+      "in_regulation_yes_rows": 184,
+      "max_internal_gap_s": 900,
+      "grid_points": 118,
+      "fresh_triplet_points": 40,
+      "coherent_fresh_triplet_points": 38,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1sgfyezfw8l28mky35q9ab0no",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Leeds United",
+      "usable_decisions": 0,
+      "failures": {
+        "stale_price": 4,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 231,
+      "max_internal_gap_s": 360,
+      "grid_points": 116,
+      "fresh_triplet_points": 38,
+      "coherent_fresh_triplet_points": 37,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1uzikt3sjo0nyoutu2qhf8vtg",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 0,
+      "failures": {
+        "fill_sum": 2,
+        "stale_price": 3
+      },
+      "in_regulation_yes_rows": 269,
+      "max_internal_gap_s": 360,
+      "grid_points": 118,
+      "fresh_triplet_points": 91,
+      "coherent_fresh_triplet_points": 80,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "21e9qf2g143huh7h7gqpcj310",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 0,
+      "failures": {
+        "stale_price": 1,
+        "no_fill": 4
+      },
+      "in_regulation_yes_rows": 200,
+      "max_internal_gap_s": 660,
+      "grid_points": 117,
+      "fresh_triplet_points": 61,
+      "coherent_fresh_triplet_points": 58,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "102dto55773ex3p58gp94ql90",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Newcastle United",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 3,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 195,
+      "max_internal_gap_s": 600,
+      "grid_points": 113,
+      "fresh_triplet_points": 58,
+      "coherent_fresh_triplet_points": 53,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "10jpwd1x2paywtbfatjev182c",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Fulham",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 3,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 197,
+      "max_internal_gap_s": 600,
+      "grid_points": 116,
+      "fresh_triplet_points": 53,
+      "coherent_fresh_triplet_points": 42,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "11zdrikme887aispxmcu1ug44",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Burnley",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 4
+      },
+      "in_regulation_yes_rows": 153,
+      "max_internal_gap_s": 960,
+      "grid_points": 110,
+      "fresh_triplet_points": 25,
+      "coherent_fresh_triplet_points": 22,
+      "polymarket_usable_decisions": 3
+    },
+    {
+      "match_id": "12znl0wq9dni0y2j3xb2dsmj8",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Crystal Palace",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 2,
+        "fill_sum": 2
+      },
+      "in_regulation_yes_rows": 311,
+      "max_internal_gap_s": 300,
+      "grid_points": 117,
+      "fresh_triplet_points": 78,
+      "coherent_fresh_triplet_points": 72,
+      "polymarket_usable_decisions": 3
+    },
+    {
+      "match_id": "14cmzlbe4pl6c3xuucuzj2590",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 4
+      },
+      "in_regulation_yes_rows": 144,
+      "max_internal_gap_s": 1200,
+      "grid_points": 118,
+      "fresh_triplet_points": 32,
+      "coherent_fresh_triplet_points": 26,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "154ru5ptp2kfs14iguma92kno",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Aston Villa",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 4
+      },
+      "in_regulation_yes_rows": 241,
+      "max_internal_gap_s": 480,
+      "grid_points": 119,
+      "fresh_triplet_points": 32,
+      "coherent_fresh_triplet_points": 29,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "16am82aqanxg9ylk4fufxw07o",
+      "competition_id": "2000000000",
+      "home": "Everton",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 2,
+        "price_sum": 1,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 175,
+      "max_internal_gap_s": 840,
+      "grid_points": 115,
+      "fresh_triplet_points": 35,
+      "coherent_fresh_triplet_points": 28,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1929jvcf42axkdr52hdrfuvis",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Fulham",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 4
+      },
+      "in_regulation_yes_rows": 248,
+      "max_internal_gap_s": 540,
+      "grid_points": 124,
+      "fresh_triplet_points": 66,
+      "coherent_fresh_triplet_points": 58,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1a8ama8onzq0bjz027h2kv1n8",
+      "competition_id": "2000000000",
+      "home": "Manchester United",
+      "away": "Burnley",
+      "usable_decisions": 1,
+      "failures": {
+        "fill_sum": 2,
+        "stale_price": 1,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 317,
+      "max_internal_gap_s": 360,
+      "grid_points": 126,
+      "fresh_triplet_points": 108,
+      "coherent_fresh_triplet_points": 90,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1c63e8qqe9heysoinrbib41zo",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 1,
+      "failures": {
+        "no_fill": 3,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 240,
+      "max_internal_gap_s": 480,
+      "grid_points": 117,
+      "fresh_triplet_points": 73,
+      "coherent_fresh_triplet_points": 69,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1ejplc4zz2mafz8ve5yaztgyc",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Leeds United",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 4
+      },
+      "in_regulation_yes_rows": 226,
+      "max_internal_gap_s": 600,
+      "grid_points": 114,
+      "fresh_triplet_points": 63,
+      "coherent_fresh_triplet_points": 60,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1owbvtdwx68memqujxxftykno",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Burnley",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 4
+      },
+      "in_regulation_yes_rows": 229,
+      "max_internal_gap_s": 780,
+      "grid_points": 121,
+      "fresh_triplet_points": 30,
+      "coherent_fresh_triplet_points": 27,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1r9l80ujrlwn2mfwfrrbz7evo",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Nottingham Forest",
+      "usable_decisions": 1,
+      "failures": {
+        "no_fill": 2,
+        "fill_sum": 1,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 245,
+      "max_internal_gap_s": 480,
+      "grid_points": 114,
+      "fresh_triplet_points": 77,
+      "coherent_fresh_triplet_points": 67,
+      "polymarket_usable_decisions": 3
+    },
+    {
+      "match_id": "1ul4lz9b1npclnmnufhedm7tg",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Chelsea FC",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 3,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 243,
+      "max_internal_gap_s": 480,
+      "grid_points": 113,
+      "fresh_triplet_points": 75,
+      "coherent_fresh_triplet_points": 68,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1w7mazdrj7yy9qlgmgyzehg5w",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "Nottingham Forest",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 3,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 207,
+      "max_internal_gap_s": 720,
+      "grid_points": 112,
+      "fresh_triplet_points": 24,
+      "coherent_fresh_triplet_points": 23,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "207fshyi62c88cf6836drk55g",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Leeds United",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 3,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 199,
+      "max_internal_gap_s": 720,
+      "grid_points": 114,
+      "fresh_triplet_points": 24,
+      "coherent_fresh_triplet_points": 24,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "20lqgnidk2bwum92qqbsimxp0",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Arsenal",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 4
+      },
+      "in_regulation_yes_rows": 180,
+      "max_internal_gap_s": 480,
+      "grid_points": 115,
+      "fresh_triplet_points": 25,
+      "coherent_fresh_triplet_points": 25,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "21035eerys56hl1oi5yw20wes",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Brentford",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 4
+      },
+      "in_regulation_yes_rows": 207,
+      "max_internal_gap_s": 540,
+      "grid_points": 112,
+      "fresh_triplet_points": 62,
+      "coherent_fresh_triplet_points": 55,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "24m5mde1dqsnrirt0mxg8gr9w",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Newcastle United",
+      "usable_decisions": 1,
+      "failures": {
+        "no_fill": 2,
+        "fill_sum": 1,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 302,
+      "max_internal_gap_s": 300,
+      "grid_points": 122,
+      "fresh_triplet_points": 104,
+      "coherent_fresh_triplet_points": 92,
+      "polymarket_usable_decisions": 3
+    },
+    {
+      "match_id": "2bs4mjzwplzl04w7940las4yc",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Crystal Palace",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 2,
+        "no_fill": 2
+      },
+      "in_regulation_yes_rows": 244,
+      "max_internal_gap_s": 660,
+      "grid_points": 112,
+      "fresh_triplet_points": 67,
+      "coherent_fresh_triplet_points": 62,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2lg6ykirik1f39oafrhu2wzkk",
+      "competition_id": "2000000000",
+      "home": "Everton",
+      "away": "Nottingham Forest",
+      "usable_decisions": 1,
+      "failures": {
+        "fill_sum": 1,
+        "stale_price": 3
+      },
+      "in_regulation_yes_rows": 240,
+      "max_internal_gap_s": 660,
+      "grid_points": 115,
+      "fresh_triplet_points": 53,
+      "coherent_fresh_triplet_points": 49,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2n182o0lrejh5jb4rvzo16sd0",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Burnley",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 3,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 182,
+      "max_internal_gap_s": 1200,
+      "grid_points": 122,
+      "fresh_triplet_points": 34,
+      "coherent_fresh_triplet_points": 29,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2nfh5mrn0tysgea5b9nvvrpqs",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Brentford",
+      "usable_decisions": 1,
+      "failures": {
+        "price_sum": 1,
+        "no_fill": 1,
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 251,
+      "max_internal_gap_s": 720,
+      "grid_points": 116,
+      "fresh_triplet_points": 74,
+      "coherent_fresh_triplet_points": 62,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3xb9emuqqhgacprgggpb0mpec",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 1,
+      "failures": {
+        "stale_price": 1,
+        "fill_sum": 1,
+        "no_fill": 2
+      },
+      "in_regulation_yes_rows": 316,
+      "max_internal_gap_s": 360,
+      "grid_points": 118,
+      "fresh_triplet_points": 89,
+      "coherent_fresh_triplet_points": 85,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "12gtk3hwf4px68mpjs890rehg",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Manchester City",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 2,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 241,
+      "max_internal_gap_s": 840,
+      "grid_points": 121,
+      "fresh_triplet_points": 76,
+      "coherent_fresh_triplet_points": 72,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "14qo3uypv7lmce0ewcvxe89w4",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Leeds United",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 3
+      },
+      "in_regulation_yes_rows": 195,
+      "max_internal_gap_s": 1860,
+      "grid_points": 116,
+      "fresh_triplet_points": 57,
+      "coherent_fresh_triplet_points": 44,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "17umsvptey1sqmfwpp2m7ci6s",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Chelsea FC",
+      "usable_decisions": 2,
+      "failures": {
+        "fill_sum": 1,
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 245,
+      "max_internal_gap_s": 1020,
+      "grid_points": 116,
+      "fresh_triplet_points": 53,
+      "coherent_fresh_triplet_points": 43,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "18o9ldivk2e84zcrejou19dlg",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Manchester City",
+      "usable_decisions": 2,
+      "failures": {
+        "fill_sum": 2,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 310,
+      "max_internal_gap_s": 360,
+      "grid_points": 119,
+      "fresh_triplet_points": 102,
+      "coherent_fresh_triplet_points": 88,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1bs4lduawnt57viznogqxu0b8",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Everton",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 2,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 222,
+      "max_internal_gap_s": 660,
+      "grid_points": 116,
+      "fresh_triplet_points": 58,
+      "coherent_fresh_triplet_points": 50,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1drtj6vzc17m0mb549yuwuz9w",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Sunderland",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 3
+      },
+      "in_regulation_yes_rows": 240,
+      "max_internal_gap_s": 780,
+      "grid_points": 115,
+      "fresh_triplet_points": 69,
+      "coherent_fresh_triplet_points": 57,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1fby3aaqw8svx24c078ktdb10",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 2,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 261,
+      "max_internal_gap_s": 360,
+      "grid_points": 119,
+      "fresh_triplet_points": 85,
+      "coherent_fresh_triplet_points": 81,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1fqalgzy8x2hswuyc4w36cr2s",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Tottenham Hotspur",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 3
+      },
+      "in_regulation_yes_rows": 239,
+      "max_internal_gap_s": 600,
+      "grid_points": 114,
+      "fresh_triplet_points": 73,
+      "coherent_fresh_triplet_points": 66,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1g4hj5evcd2ub6zp9akh1er6c",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "Newcastle United",
+      "usable_decisions": 2,
+      "failures": {
+        "price_sum": 3
+      },
+      "in_regulation_yes_rows": 315,
+      "max_internal_gap_s": 240,
+      "grid_points": 116,
+      "fresh_triplet_points": 111,
+      "coherent_fresh_triplet_points": 97,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1iirowal16yj6lndgm8gbx5p0",
+      "competition_id": "2000000000",
+      "home": "Manchester United",
+      "away": "Chelsea FC",
+      "usable_decisions": 2,
+      "failures": {
+        "price_sum": 2,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 365,
+      "max_internal_gap_s": 360,
+      "grid_points": 126,
+      "fresh_triplet_points": 121,
+      "coherent_fresh_triplet_points": 98,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1iwrufdts4nlr7bniv499abkk",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Aston Villa",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 2,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 313,
+      "max_internal_gap_s": 360,
+      "grid_points": 116,
+      "fresh_triplet_points": 105,
+      "coherent_fresh_triplet_points": 91,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1jp76d0gbs37k24r8pculfxuc",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Leeds United",
+      "usable_decisions": 2,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 247,
+      "max_internal_gap_s": 1080,
+      "grid_points": 115,
+      "fresh_triplet_points": 74,
+      "coherent_fresh_triplet_points": 59,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1k3eld3sysqfeherxz48tzoyc",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Fulham",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 3
+      },
+      "in_regulation_yes_rows": 286,
+      "max_internal_gap_s": 360,
+      "grid_points": 121,
+      "fresh_triplet_points": 95,
+      "coherent_fresh_triplet_points": 90,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1khr3704psti8rqgjsvafpa1g",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Manchester United",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 2,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 331,
+      "max_internal_gap_s": 180,
+      "grid_points": 118,
+      "fresh_triplet_points": 98,
+      "coherent_fresh_triplet_points": 93,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1kvzysbmri31wqmzg9n6uekno",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 3
+      },
+      "in_regulation_yes_rows": 313,
+      "max_internal_gap_s": 240,
+      "grid_points": 121,
+      "fresh_triplet_points": 109,
+      "coherent_fresh_triplet_points": 98,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1qvclot8fak9knempsk7tqeqc",
+      "competition_id": "2000000000",
+      "home": "Manchester United",
+      "away": "Sunderland",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 2,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 272,
+      "max_internal_gap_s": 480,
+      "grid_points": 118,
+      "fresh_triplet_points": 61,
+      "coherent_fresh_triplet_points": 55,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "23tjlpc5v8e21motsxcqu1r84",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Newcastle United",
+      "usable_decisions": 2,
+      "failures": {
+        "price_sum": 2,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 349,
+      "max_internal_gap_s": 180,
+      "grid_points": 121,
+      "fresh_triplet_points": 119,
+      "coherent_fresh_triplet_points": 105,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "247wrvjkrv38tdtc3o6nhuv4k",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Bournemouth",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 2,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 266,
+      "max_internal_gap_s": 1020,
+      "grid_points": 117,
+      "fresh_triplet_points": 62,
+      "coherent_fresh_triplet_points": 59,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "26l3xxay10p3mr94jigklk0t0",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Leeds United",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 3
+      },
+      "in_regulation_yes_rows": 264,
+      "max_internal_gap_s": 360,
+      "grid_points": 117,
+      "fresh_triplet_points": 49,
+      "coherent_fresh_triplet_points": 44,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "290hyavp000xtwoqfwwrpnj84",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Brentford",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 2,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 283,
+      "max_internal_gap_s": 360,
+      "grid_points": 117,
+      "fresh_triplet_points": 64,
+      "coherent_fresh_triplet_points": 58,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2ddgt0wgk8212ask4bgjokqac",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Manchester United",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 2,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 335,
+      "max_internal_gap_s": 180,
+      "grid_points": 116,
+      "fresh_triplet_points": 103,
+      "coherent_fresh_triplet_points": 96,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2f01ug9ijcjd3uj26q8fe3bbo",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Bournemouth",
+      "usable_decisions": 2,
+      "failures": {
+        "fill_sum": 1,
+        "price_sum": 2
+      },
+      "in_regulation_yes_rows": 367,
+      "max_internal_gap_s": 120,
+      "grid_points": 127,
+      "fresh_triplet_points": 127,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "2mn02i70sx3s7vcdf62kpucyc",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Sunderland",
+      "usable_decisions": 2,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 242,
+      "max_internal_gap_s": 840,
+      "grid_points": 116,
+      "fresh_triplet_points": 79,
+      "coherent_fresh_triplet_points": 78,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2r1kc0oaxedob4lcuth1o6n10",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Tottenham Hotspur",
+      "usable_decisions": 2,
+      "failures": {
+        "fill_sum": 1,
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 266,
+      "max_internal_gap_s": 840,
+      "grid_points": 113,
+      "fresh_triplet_points": 88,
+      "coherent_fresh_triplet_points": 81,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2rflgdqj3a1glfb3i6jg0874k",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Newcastle United",
+      "usable_decisions": 2,
+      "failures": {
+        "no_fill": 1,
+        "price_sum": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 323,
+      "max_internal_gap_s": 300,
+      "grid_points": 118,
+      "fresh_triplet_points": 89,
+      "coherent_fresh_triplet_points": 84,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "38dsv1tizwamlvrhj135h91qs",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "West Ham United",
+      "usable_decisions": 2,
+      "failures": {
+        "price_sum": 1,
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 293,
+      "max_internal_gap_s": 420,
+      "grid_points": 118,
+      "fresh_triplet_points": 97,
+      "coherent_fresh_triplet_points": 90,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "43ct7lmoz9mxu47u44jz0e9zo",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "West Ham United",
+      "usable_decisions": 2,
+      "failures": {
+        "fill_sum": 1,
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 288,
+      "max_internal_gap_s": 540,
+      "grid_points": 117,
+      "fresh_triplet_points": 95,
+      "coherent_fresh_triplet_points": 92,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "49ruzbiksyl5zqe38z2czh4wk",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Bournemouth",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 1,
+        "fill_sum": 2
+      },
+      "in_regulation_yes_rows": 336,
+      "max_internal_gap_s": 180,
+      "grid_points": 116,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 109,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4u45d36alhjxa1qxmvmzja80k",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Fulham",
+      "usable_decisions": 2,
+      "failures": {
+        "price_sum": 1,
+        "no_fill": 2
+      },
+      "in_regulation_yes_rows": 269,
+      "max_internal_gap_s": 780,
+      "grid_points": 115,
+      "fresh_triplet_points": 86,
+      "coherent_fresh_triplet_points": 84,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "4xrkmq9vj4w3duniuqsyy3bbo",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 2,
+      "failures": {
+        "stale_price": 3
+      },
+      "in_regulation_yes_rows": 218,
+      "max_internal_gap_s": 780,
+      "grid_points": 114,
+      "fresh_triplet_points": 65,
+      "coherent_fresh_triplet_points": 64,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "19g4i3bmkco9zrycot41ut638",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Newcastle United",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 305,
+      "max_internal_gap_s": 360,
+      "grid_points": 117,
+      "fresh_triplet_points": 102,
+      "coherent_fresh_triplet_points": 92,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "19ty1jsiu05lygxc15uw4exp0",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Arsenal",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 340,
+      "max_internal_gap_s": 120,
+      "grid_points": 116,
+      "fresh_triplet_points": 116,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1ambeuhg64rjh91vzt2cu9m38",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "West Ham United",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 275,
+      "max_internal_gap_s": 300,
+      "grid_points": 117,
+      "fresh_triplet_points": 63,
+      "coherent_fresh_triplet_points": 55,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1cy3zxa3qlhra05l8tmcnmgwk",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Chelsea FC",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 311,
+      "max_internal_gap_s": 300,
+      "grid_points": 114,
+      "fresh_triplet_points": 105,
+      "coherent_fresh_triplet_points": 96,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1ddyldms82g6afdwokq3ro844",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Liverpool",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 316,
+      "max_internal_gap_s": 240,
+      "grid_points": 116,
+      "fresh_triplet_points": 110,
+      "coherent_fresh_triplet_points": 99,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1haljpbt1dfeivzawp81rk8b8",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Nottingham Forest",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 295,
+      "max_internal_gap_s": 240,
+      "grid_points": 113,
+      "fresh_triplet_points": 103,
+      "coherent_fresh_triplet_points": 95,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1hotdoe44db3avxd1j91hxw5w",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Brentford",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 253,
+      "max_internal_gap_s": 1200,
+      "grid_points": 119,
+      "fresh_triplet_points": 55,
+      "coherent_fresh_triplet_points": 51,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1i2v1eqtjfnafc69e4u4kawb8",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Everton",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 1,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 240,
+      "max_internal_gap_s": 480,
+      "grid_points": 111,
+      "fresh_triplet_points": 74,
+      "coherent_fresh_triplet_points": 64,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1jauwu1mheu6kyp1pwpoa6dxw",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Crystal Palace",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 2
+      },
+      "in_regulation_yes_rows": 293,
+      "max_internal_gap_s": 480,
+      "grid_points": 115,
+      "fresh_triplet_points": 99,
+      "coherent_fresh_triplet_points": 95,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1m2q53bt7g2w2nzxpt8zwvklw",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Bournemouth",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 247,
+      "max_internal_gap_s": 540,
+      "grid_points": 115,
+      "fresh_triplet_points": 75,
+      "coherent_fresh_triplet_points": 73,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1oi3hkt91umhnxou8rk970ums",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "West Ham United",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 276,
+      "max_internal_gap_s": 420,
+      "grid_points": 118,
+      "fresh_triplet_points": 93,
+      "coherent_fresh_triplet_points": 82,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1paikangkucvx6etwyog8bxg4",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Manchester City",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 305,
+      "max_internal_gap_s": 360,
+      "grid_points": 114,
+      "fresh_triplet_points": 104,
+      "coherent_fresh_triplet_points": 100,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1qh7qazdiffxkrafk41ewncb8",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Tottenham Hotspur",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 313,
+      "max_internal_gap_s": 360,
+      "grid_points": 118,
+      "fresh_triplet_points": 105,
+      "coherent_fresh_triplet_points": 97,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1s2cqwm1pd76xs20c255sfnro",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Newcastle United",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 333,
+      "max_internal_gap_s": 180,
+      "grid_points": 119,
+      "fresh_triplet_points": 94,
+      "coherent_fresh_triplet_points": 83,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1swfjplq1923hcknqk1r00kyc",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Bournemouth",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 2
+      },
+      "in_regulation_yes_rows": 326,
+      "max_internal_gap_s": 240,
+      "grid_points": 119,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 91,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1wlvabjugecgxexpyqugbo7bo",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Crystal Palace",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 293,
+      "max_internal_gap_s": 360,
+      "grid_points": 116,
+      "fresh_triplet_points": 95,
+      "coherent_fresh_triplet_points": 87,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1xebw5ifrjl5exfgvwogidmok",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Liverpool",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 2
+      },
+      "in_regulation_yes_rows": 376,
+      "max_internal_gap_s": 120,
+      "grid_points": 130,
+      "fresh_triplet_points": 130,
+      "coherent_fresh_triplet_points": 123,
+      "polymarket_usable_decisions": 3
+    },
+    {
+      "match_id": "1zt5ofxwth7538kncejm3ieqc",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Burnley",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 2
+      },
+      "in_regulation_yes_rows": 319,
+      "max_internal_gap_s": 300,
+      "grid_points": 118,
+      "fresh_triplet_points": 102,
+      "coherent_fresh_triplet_points": 96,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "226u5j38rgjs64xqe4t2j2fis",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Bournemouth",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 1,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 306,
+      "max_internal_gap_s": 840,
+      "grid_points": 117,
+      "fresh_triplet_points": 88,
+      "coherent_fresh_triplet_points": 81,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "22zbg00zkak0gf8r3yyzqllhw",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Everton",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 2
+      },
+      "in_regulation_yes_rows": 335,
+      "max_internal_gap_s": 120,
+      "grid_points": 114,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 104,
+      "polymarket_usable_decisions": 3
+    },
+    {
+      "match_id": "25soeaibarxqqknu9tqwgiqdw",
+      "competition_id": "2000000000",
+      "home": "Everton",
+      "away": "Fulham",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 292,
+      "max_internal_gap_s": 360,
+      "grid_points": 121,
+      "fresh_triplet_points": 64,
+      "coherent_fresh_triplet_points": 59,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "266x8afjnwzm848lkn11qjmdw",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Liverpool",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 304,
+      "max_internal_gap_s": 360,
+      "grid_points": 117,
+      "fresh_triplet_points": 89,
+      "coherent_fresh_triplet_points": 86,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "27s0zmzii4o2aq7gtamk7q8t0",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Burnley",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 320,
+      "max_internal_gap_s": 240,
+      "grid_points": 119,
+      "fresh_triplet_points": 87,
+      "coherent_fresh_triplet_points": 82,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "29ekagqph40vn7u6wyju0xixg",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Chelsea FC",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 297,
+      "max_internal_gap_s": 300,
+      "grid_points": 119,
+      "fresh_triplet_points": 69,
+      "coherent_fresh_triplet_points": 67,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2dtb3yy77hupqm5w6d9jlvpxw",
+      "competition_id": "2000000000",
+      "home": "Everton",
+      "away": "Newcastle United",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 250,
+      "max_internal_gap_s": 780,
+      "grid_points": 115,
+      "fresh_triplet_points": 80,
+      "coherent_fresh_triplet_points": 78,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2fsbzlzf6ux1buhi1t67cquqc",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Liverpool",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 1,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 324,
+      "max_internal_gap_s": 180,
+      "grid_points": 113,
+      "fresh_triplet_points": 101,
+      "coherent_fresh_triplet_points": 98,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2huqn7q2qf5wv5w6t7zntjh1w",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Manchester City",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 324,
+      "max_internal_gap_s": 420,
+      "grid_points": 118,
+      "fresh_triplet_points": 106,
+      "coherent_fresh_triplet_points": 101,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2inc8vql65bi2clvs6z2buqs4",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Sunderland",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 336,
+      "max_internal_gap_s": 240,
+      "grid_points": 117,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 105,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2k9n6m479giqdf2noxajr3uvo",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "Chelsea FC",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 1,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 339,
+      "max_internal_gap_s": 120,
+      "grid_points": 115,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 107,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2oo4yru8uymi9bjbi0aq2ttsk",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Leeds United",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 2
+      },
+      "in_regulation_yes_rows": 347,
+      "max_internal_gap_s": 120,
+      "grid_points": 116,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 102,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2q92uqkqy5i0jfjhwel7jygb8",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 1,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 331,
+      "max_internal_gap_s": 420,
+      "grid_points": 119,
+      "fresh_triplet_points": 109,
+      "coherent_fresh_triplet_points": 106,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2qnbwtbl7eh08dh64ii9icqac",
+      "competition_id": "2000000000",
+      "home": "Manchester United",
+      "away": "Bournemouth",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 363,
+      "max_internal_gap_s": 60,
+      "grid_points": 121,
+      "fresh_triplet_points": 121,
+      "coherent_fresh_triplet_points": 111,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "2ueejizhur6zh8io313s28mj8",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Crystal Palace",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 283,
+      "max_internal_gap_s": 840,
+      "grid_points": 122,
+      "fresh_triplet_points": 94,
+      "coherent_fresh_triplet_points": 89,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2wsp462b52gxk2tjm26x7vehg",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Bournemouth",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 281,
+      "max_internal_gap_s": 660,
+      "grid_points": 116,
+      "fresh_triplet_points": 71,
+      "coherent_fresh_triplet_points": 67,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2y0iw6uupiyuw2f7smry1v5ec",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Tottenham Hotspur",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 2
+      },
+      "in_regulation_yes_rows": 349,
+      "max_internal_gap_s": 120,
+      "grid_points": 118,
+      "fresh_triplet_points": 118,
+      "coherent_fresh_triplet_points": 114,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "30fwl59qqa9t2ospcpwuytdzo",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Aston Villa",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 312,
+      "max_internal_gap_s": 480,
+      "grid_points": 118,
+      "fresh_triplet_points": 100,
+      "coherent_fresh_triplet_points": 97,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "34oxxtv9gbzl6xcda8ldgnz84",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "Arsenal",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 345,
+      "max_internal_gap_s": 60,
+      "grid_points": 115,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 107,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "357eizfkgyefy02ssrpa1yb6c",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Nottingham Forest",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 1,
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 320,
+      "max_internal_gap_s": 240,
+      "grid_points": 115,
+      "fresh_triplet_points": 105,
+      "coherent_fresh_triplet_points": 103,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "35zvgdgoufjbcg1zsgcev26tw",
+      "competition_id": "2000000000",
+      "home": "Everton",
+      "away": "Brentford",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 306,
+      "max_internal_gap_s": 180,
+      "grid_points": 117,
+      "fresh_triplet_points": 103,
+      "coherent_fresh_triplet_points": 98,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "36e9umplcfioh9jroyvcwq0pg",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Liverpool",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 1,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 353,
+      "max_internal_gap_s": 60,
+      "grid_points": 119,
+      "fresh_triplet_points": 118,
+      "coherent_fresh_triplet_points": 109,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3au1w5lkneqtronv94afy8nbo",
+      "competition_id": "2000000000",
+      "home": "Everton",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 327,
+      "max_internal_gap_s": 240,
+      "grid_points": 117,
+      "fresh_triplet_points": 92,
+      "coherent_fresh_triplet_points": 90,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3m29fhxvog8hxn10pfyhgs0lw",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Arsenal",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 292,
+      "max_internal_gap_s": 960,
+      "grid_points": 113,
+      "fresh_triplet_points": 95,
+      "coherent_fresh_triplet_points": 94,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3n8x316zpoxt8khcltmh5l89g",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Crystal Palace",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 338,
+      "max_internal_gap_s": 180,
+      "grid_points": 116,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 99,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3q3aty8h6jo21pnx4k7y0df6c",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "West Ham United",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 2
+      },
+      "in_regulation_yes_rows": 258,
+      "max_internal_gap_s": 300,
+      "grid_points": 117,
+      "fresh_triplet_points": 87,
+      "coherent_fresh_triplet_points": 86,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3qhpjpugj6pxygbjsx1afzzmc",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Everton",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 1,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 330,
+      "max_internal_gap_s": 180,
+      "grid_points": 116,
+      "fresh_triplet_points": 101,
+      "coherent_fresh_triplet_points": 92,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3qw16j6k296sa9iw7ghei67mc",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Nottingham Forest",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 299,
+      "max_internal_gap_s": 480,
+      "grid_points": 117,
+      "fresh_triplet_points": 91,
+      "coherent_fresh_triplet_points": 84,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3shm44q00ndakhwb37iun4il0",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Chelsea FC",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 273,
+      "max_internal_gap_s": 540,
+      "grid_points": 121,
+      "fresh_triplet_points": 59,
+      "coherent_fresh_triplet_points": 57,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3uwscuw3pka1nis987nbuotn8",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Fulham",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 287,
+      "max_internal_gap_s": 420,
+      "grid_points": 112,
+      "fresh_triplet_points": 73,
+      "coherent_fresh_triplet_points": 73,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "425ir4df7xnr0yefcph23r3mc",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Brentford",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 1,
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 353,
+      "max_internal_gap_s": 240,
+      "grid_points": 125,
+      "fresh_triplet_points": 108,
+      "coherent_fresh_triplet_points": 99,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4c7pkoxo59z918wbjnrc7o844",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 3,
+      "failures": {
+        "price_sum": 2
+      },
+      "in_regulation_yes_rows": 343,
+      "max_internal_gap_s": 180,
+      "grid_points": 117,
+      "fresh_triplet_points": 116,
+      "coherent_fresh_triplet_points": 109,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4fghd8ykrqusg7duvwfkhy6fo",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Crystal Palace",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 299,
+      "max_internal_gap_s": 480,
+      "grid_points": 114,
+      "fresh_triplet_points": 98,
+      "coherent_fresh_triplet_points": 98,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4ktdo1jk2i52t4dw2okuhzz84",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 3,
+      "failures": {
+        "fill_sum": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 286,
+      "max_internal_gap_s": 420,
+      "grid_points": 111,
+      "fresh_triplet_points": 91,
+      "coherent_fresh_triplet_points": 89,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4n7iu32c7wdgcmphskixm3r4k",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 1,
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 278,
+      "max_internal_gap_s": 480,
+      "grid_points": 122,
+      "fresh_triplet_points": 89,
+      "coherent_fresh_triplet_points": 89,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4sixhmqe1yxv3dibzwzxsku8k",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Nottingham Forest",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 251,
+      "max_internal_gap_s": 840,
+      "grid_points": 116,
+      "fresh_triplet_points": 79,
+      "coherent_fresh_triplet_points": 77,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4w69cq7gxy6jlk8hwflij7cic",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Burnley",
+      "usable_decisions": 3,
+      "failures": {
+        "no_fill": 2
+      },
+      "in_regulation_yes_rows": 302,
+      "max_internal_gap_s": 660,
+      "grid_points": 117,
+      "fresh_triplet_points": 85,
+      "coherent_fresh_triplet_points": 84,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "55xwipdr13y9h2ga7yv15n8yc",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Manchester United",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 2
+      },
+      "in_regulation_yes_rows": 305,
+      "max_internal_gap_s": 480,
+      "grid_points": 116,
+      "fresh_triplet_points": 88,
+      "coherent_fresh_triplet_points": 87,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "zhs8gg1hvcuqvhkk2itb54pg",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Bournemouth",
+      "usable_decisions": 3,
+      "failures": {
+        "stale_price": 1,
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 293,
+      "max_internal_gap_s": 600,
+      "grid_points": 116,
+      "fresh_triplet_points": 100,
+      "coherent_fresh_triplet_points": 87,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "172cmeucd0eh693911rgimuj8",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Tottenham Hotspur",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 288,
+      "max_internal_gap_s": 600,
+      "grid_points": 119,
+      "fresh_triplet_points": 78,
+      "coherent_fresh_triplet_points": 72,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1e5s21mdr4zeeniuin1uu189g",
+      "competition_id": "2000000000",
+      "home": "Everton",
+      "away": "Aston Villa",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 275,
+      "max_internal_gap_s": 300,
+      "grid_points": 115,
+      "fresh_triplet_points": 98,
+      "coherent_fresh_triplet_points": 92,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1exxqpardhibndjt24yvj2l1w",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Manchester United",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 289,
+      "max_internal_gap_s": 1380,
+      "grid_points": 113,
+      "fresh_triplet_points": 84,
+      "coherent_fresh_triplet_points": 83,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1gil6wudqtyaauvngcgucwbh0",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Manchester City",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 366,
+      "max_internal_gap_s": 60,
+      "grid_points": 123,
+      "fresh_triplet_points": 123,
+      "coherent_fresh_triplet_points": 111,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1gwmyqujn1kzgkz7yv1yp0n4k",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Tottenham Hotspur",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 337,
+      "max_internal_gap_s": 120,
+      "grid_points": 115,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 101,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1la9af0q274nmzgcyme30rcwk",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Liverpool",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 369,
+      "max_internal_gap_s": 120,
+      "grid_points": 126,
+      "fresh_triplet_points": 126,
+      "coherent_fresh_triplet_points": 119,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1mgz1t6rbrx41ljreydpdy39w",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Burnley",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 254,
+      "max_internal_gap_s": 600,
+      "grid_points": 113,
+      "fresh_triplet_points": 85,
+      "coherent_fresh_triplet_points": 83,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1mv5kukvh2gold9lzbfle86qc",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Arsenal",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 359,
+      "max_internal_gap_s": 180,
+      "grid_points": 122,
+      "fresh_triplet_points": 121,
+      "coherent_fresh_triplet_points": 115,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1pow6zy0g8vyp6ag9wvnubkes",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Liverpool",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 347,
+      "max_internal_gap_s": 120,
+      "grid_points": 116,
+      "fresh_triplet_points": 116,
+      "coherent_fresh_triplet_points": 107,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1q2zv5o6545wcsdhbx4vvgqok",
+      "competition_id": "2000000000",
+      "home": "Everton",
+      "away": "Crystal Palace",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 306,
+      "max_internal_gap_s": 300,
+      "grid_points": 121,
+      "fresh_triplet_points": 76,
+      "coherent_fresh_triplet_points": 61,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1ro6dtfyd439umqwi6dq6xr84",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 293,
+      "max_internal_gap_s": 480,
+      "grid_points": 115,
+      "fresh_triplet_points": 100,
+      "coherent_fresh_triplet_points": 86,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1taq9euew4fs51eqk666nc2dw",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Arsenal",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 329,
+      "max_internal_gap_s": 300,
+      "grid_points": 121,
+      "fresh_triplet_points": 88,
+      "coherent_fresh_triplet_points": 82,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1u36beg0t6rceb5etaa7rcwes",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Everton",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 279,
+      "max_internal_gap_s": 720,
+      "grid_points": 116,
+      "fresh_triplet_points": 90,
+      "coherent_fresh_triplet_points": 82,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1vdtp9f8cyblesdc3cpw8dlhw",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Aston Villa",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 312,
+      "max_internal_gap_s": 420,
+      "grid_points": 119,
+      "fresh_triplet_points": 103,
+      "coherent_fresh_triplet_points": 97,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1xse56xeo3sjk9vbxu1rmwf10",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Sunderland",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 341,
+      "max_internal_gap_s": 120,
+      "grid_points": 117,
+      "fresh_triplet_points": 116,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "1y8dmrju1hkfvsl3srj1ycdn8",
+      "competition_id": "2000000000",
+      "home": "Everton",
+      "away": "Tottenham Hotspur",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 295,
+      "max_internal_gap_s": 840,
+      "grid_points": 119,
+      "fresh_triplet_points": 89,
+      "coherent_fresh_triplet_points": 84,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "1ymmbmwqt706tquiw6k5n649g",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "West Ham United",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 317,
+      "max_internal_gap_s": 360,
+      "grid_points": 124,
+      "fresh_triplet_points": 110,
+      "coherent_fresh_triplet_points": 105,
+      "polymarket_usable_decisions": 3
+    },
+    {
+      "match_id": "1zf0zsabpkibbzn05lty6cv10",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Fulham",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 311,
+      "max_internal_gap_s": 360,
+      "grid_points": 116,
+      "fresh_triplet_points": 106,
+      "coherent_fresh_triplet_points": 95,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "21snm4gvykm9jjq1rzq17ejo4",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Aston Villa",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 286,
+      "max_internal_gap_s": 600,
+      "grid_points": 115,
+      "fresh_triplet_points": 95,
+      "coherent_fresh_triplet_points": 88,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "22l2npjyvz69z79ahof2wafpw",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Manchester United",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 317,
+      "max_internal_gap_s": 180,
+      "grid_points": 114,
+      "fresh_triplet_points": 93,
+      "coherent_fresh_triplet_points": 90,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "23f8sz2bv6v5zzsc5k00guhw4",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Chelsea FC",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 350,
+      "max_internal_gap_s": 180,
+      "grid_points": 121,
+      "fresh_triplet_points": 111,
+      "coherent_fresh_triplet_points": 104,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "250bsbnukpv5wtmdp0e7k9lp0",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 286,
+      "max_internal_gap_s": 720,
+      "grid_points": 114,
+      "fresh_triplet_points": 90,
+      "coherent_fresh_triplet_points": 88,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "27dsai0y163f2lmufao3yg3ys",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Manchester United",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 324,
+      "max_internal_gap_s": 240,
+      "grid_points": 115,
+      "fresh_triplet_points": 111,
+      "coherent_fresh_triplet_points": 78,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2868qwytxs68nuc9752cva4us",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "West Ham United",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 314,
+      "max_internal_gap_s": 180,
+      "grid_points": 115,
+      "fresh_triplet_points": 109,
+      "coherent_fresh_triplet_points": 97,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "28m9dl3dg3b2kv50yxgrt2sk4",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Tottenham Hotspur",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 278,
+      "max_internal_gap_s": 480,
+      "grid_points": 113,
+      "fresh_triplet_points": 89,
+      "coherent_fresh_triplet_points": 89,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "29stxec16t171gwpixb6tcaok",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Sunderland",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 314,
+      "max_internal_gap_s": 180,
+      "grid_points": 115,
+      "fresh_triplet_points": 111,
+      "coherent_fresh_triplet_points": 106,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2a6yd5amo1do5nul3ia6yhg5w",
+      "competition_id": "2000000000",
+      "home": "Leeds United",
+      "away": "Aston Villa",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 347,
+      "max_internal_gap_s": 180,
+      "grid_points": 120,
+      "fresh_triplet_points": 118,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2azh9qqutb89iadfek7774ufo",
+      "competition_id": "2000000000",
+      "home": "Manchester United",
+      "away": "Everton",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 340,
+      "max_internal_gap_s": 120,
+      "grid_points": 115,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "2c6en0pmvpp4ltcnwp8nprhg4",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 330,
+      "max_internal_gap_s": 180,
+      "grid_points": 118,
+      "fresh_triplet_points": 95,
+      "coherent_fresh_triplet_points": 90,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "2ckrxonh0xhlk5zh2hd42xk44",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Burnley",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 308,
+      "max_internal_gap_s": 240,
+      "grid_points": 116,
+      "fresh_triplet_points": 106,
+      "coherent_fresh_triplet_points": 96,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "2e7k8n5g5qy61sq7e9nzw6djo",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Leeds United",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 309,
+      "max_internal_gap_s": 420,
+      "grid_points": 121,
+      "fresh_triplet_points": 103,
+      "coherent_fresh_triplet_points": 96,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2elw5n9p340grwmafewg25afo",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 311,
+      "max_internal_gap_s": 240,
+      "grid_points": 116,
+      "fresh_triplet_points": 85,
+      "coherent_fresh_triplet_points": 81,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2g6nccszuuullvt32g4sw7o5w",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "Everton",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 329,
+      "max_internal_gap_s": 180,
+      "grid_points": 114,
+      "fresh_triplet_points": 112,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2h2egsrc2jf9ocgrjt9zsgr9w",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Aston Villa",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 354,
+      "max_internal_gap_s": 180,
+      "grid_points": 121,
+      "fresh_triplet_points": 120,
+      "coherent_fresh_triplet_points": 115,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2o9v97aqrj9rmg20rell04xec",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 350,
+      "max_internal_gap_s": 120,
+      "grid_points": 118,
+      "fresh_triplet_points": 118,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2p2bn6raq23z2z9d2ubzelkpg",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Fulham",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 325,
+      "max_internal_gap_s": 240,
+      "grid_points": 115,
+      "fresh_triplet_points": 97,
+      "coherent_fresh_triplet_points": 86,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2pgl50uph4ipirpsal60030no",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Everton",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 310,
+      "max_internal_gap_s": 240,
+      "grid_points": 114,
+      "fresh_triplet_points": 105,
+      "coherent_fresh_triplet_points": 99,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2s81w4s408kw8ji84hnhmy7tg",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "Burnley",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 313,
+      "max_internal_gap_s": 240,
+      "grid_points": 115,
+      "fresh_triplet_points": 106,
+      "coherent_fresh_triplet_points": 99,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2ust52gpo2ahhjz76xjxcymfo",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "West Ham United",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 263,
+      "max_internal_gap_s": 960,
+      "grid_points": 113,
+      "fresh_triplet_points": 87,
+      "coherent_fresh_triplet_points": 85,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2v77t3k2p2nosucadlbbyln2s",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Chelsea FC",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 347,
+      "max_internal_gap_s": 120,
+      "grid_points": 117,
+      "fresh_triplet_points": 117,
+      "coherent_fresh_triplet_points": 106,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2vllrascd71vbiav6po9eg36c",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Liverpool",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 356,
+      "max_internal_gap_s": 240,
+      "grid_points": 122,
+      "fresh_triplet_points": 120,
+      "coherent_fresh_triplet_points": 114,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2w06t64qae19l0yny98uq21hw",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Brentford",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 304,
+      "max_internal_gap_s": 420,
+      "grid_points": 114,
+      "fresh_triplet_points": 98,
+      "coherent_fresh_triplet_points": 93,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2wehv0cptselv086q8jud4hec",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 337,
+      "max_internal_gap_s": 180,
+      "grid_points": 115,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 112,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "2xlqv4x38vvtjo11rv7w9sowk",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Aston Villa",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 339,
+      "max_internal_gap_s": 60,
+      "grid_points": 114,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 106,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "2yevv68uq8792c85hcq3xhiqc",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 321,
+      "max_internal_gap_s": 240,
+      "grid_points": 115,
+      "fresh_triplet_points": 109,
+      "coherent_fresh_triplet_points": 104,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "2z98uvv8ew6frqtuw6byswkyc",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Manchester City",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 330,
+      "max_internal_gap_s": 120,
+      "grid_points": 113,
+      "fresh_triplet_points": 107,
+      "coherent_fresh_triplet_points": 103,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "31msgzpmlihovrfon2pdnjjtg",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Bournemouth",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 359,
+      "max_internal_gap_s": 60,
+      "grid_points": 120,
+      "fresh_triplet_points": 119,
+      "coherent_fresh_triplet_points": 111,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3213l7phvb9z5fvoks5hkjnkk",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Fulham",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 347,
+      "max_internal_gap_s": 120,
+      "grid_points": 117,
+      "fresh_triplet_points": 116,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "32fdg42hguqxx71l16b9qahp0",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Leeds United",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 344,
+      "max_internal_gap_s": 120,
+      "grid_points": 115,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 109,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3388syfjeclm4i0tu0eonmk2c",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Everton",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 319,
+      "max_internal_gap_s": 180,
+      "grid_points": 112,
+      "fresh_triplet_points": 109,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "349efhlgerz5unwomykdoyk2c",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 345,
+      "max_internal_gap_s": 180,
+      "grid_points": 119,
+      "fresh_triplet_points": 118,
+      "coherent_fresh_triplet_points": 106,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "35lmyprx2hz72h9xyegf2n1n8",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Burnley",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 281,
+      "max_internal_gap_s": 540,
+      "grid_points": 113,
+      "fresh_triplet_points": 87,
+      "coherent_fresh_triplet_points": 86,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "37l8kxo29u6vg1gozdubqpmvo",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Crystal Palace",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 321,
+      "max_internal_gap_s": 360,
+      "grid_points": 117,
+      "fresh_triplet_points": 95,
+      "coherent_fresh_triplet_points": 92,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "37zge870saq1q1a4h6e3ctedw",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Sunderland",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 341,
+      "max_internal_gap_s": 120,
+      "grid_points": 116,
+      "fresh_triplet_points": 116,
+      "coherent_fresh_triplet_points": 110,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "39miak5jrvirotdvy8525nxg4",
+      "competition_id": "2000000000",
+      "home": "Brentford",
+      "away": "Sunderland",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 288,
+      "max_internal_gap_s": 420,
+      "grid_points": 113,
+      "fresh_triplet_points": 80,
+      "coherent_fresh_triplet_points": 78,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3a1d79a5mxnvo53se2vrxwphw",
+      "competition_id": "2000000000",
+      "home": "Burnley",
+      "away": "Manchester United",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 343,
+      "max_internal_gap_s": 120,
+      "grid_points": 116,
+      "fresh_triplet_points": 116,
+      "coherent_fresh_triplet_points": 112,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3c0qyvaoqkjrr55urxhrc7w2c",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Leeds United",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 372,
+      "max_internal_gap_s": 180,
+      "grid_points": 128,
+      "fresh_triplet_points": 126,
+      "coherent_fresh_triplet_points": 111,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3ceydebj8oya7h7yie1v8ehw4",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Nottingham Forest",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 345,
+      "max_internal_gap_s": 60,
+      "grid_points": 115,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 109,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3d7g431b3ctu2tnap650l82z8",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Bournemouth",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 361,
+      "max_internal_gap_s": 120,
+      "grid_points": 122,
+      "fresh_triplet_points": 122,
+      "coherent_fresh_triplet_points": 119,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3euckq6g15mkb2d6jes5yi68k",
+      "competition_id": "2000000000",
+      "home": "Manchester United",
+      "away": "Manchester City",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 339,
+      "max_internal_gap_s": 180,
+      "grid_points": 115,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3f8kheyscdow1tquwqldlvi1g",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Arsenal",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 345,
+      "max_internal_gap_s": 60,
+      "grid_points": 116,
+      "fresh_triplet_points": 116,
+      "coherent_fresh_triplet_points": 114,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3fmx6o7s1rd46n02lztt5yec4",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Crystal Palace",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 320,
+      "max_internal_gap_s": 240,
+      "grid_points": 113,
+      "fresh_triplet_points": 109,
+      "coherent_fresh_triplet_points": 103,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3gfh9sdmqnarb19nqc9t21xjo",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Newcastle United",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 338,
+      "max_internal_gap_s": 120,
+      "grid_points": 114,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 111,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3iezhys6o0o727757ymaskwlw",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Chelsea FC",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 310,
+      "max_internal_gap_s": 420,
+      "grid_points": 117,
+      "fresh_triplet_points": 89,
+      "coherent_fresh_triplet_points": 87,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3jmfogrcihpuf81y4u5jxwcus",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 297,
+      "max_internal_gap_s": 840,
+      "grid_points": 117,
+      "fresh_triplet_points": 99,
+      "coherent_fresh_triplet_points": 97,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3kgyje0fob0ewyybop6jpsg7o",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Sunderland",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 288,
+      "max_internal_gap_s": 420,
+      "grid_points": 114,
+      "fresh_triplet_points": 95,
+      "coherent_fresh_triplet_points": 92,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3kv7dtapynhbnlfenn593qrro",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Brentford",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 356,
+      "max_internal_gap_s": 180,
+      "grid_points": 123,
+      "fresh_triplet_points": 109,
+      "coherent_fresh_triplet_points": 104,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3mupduyj99i9jq4xrg9rneoes",
+      "competition_id": "2000000000",
+      "home": "Manchester United",
+      "away": "Fulham",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 350,
+      "max_internal_gap_s": 360,
+      "grid_points": 122,
+      "fresh_triplet_points": 118,
+      "coherent_fresh_triplet_points": 112,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3nni7s0t32dzfr5vzeqhxnvv8",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Burnley",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 290,
+      "max_internal_gap_s": 660,
+      "grid_points": 114,
+      "fresh_triplet_points": 91,
+      "coherent_fresh_triplet_points": 91,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3oumjz6zimfaum3qm0wemcljo",
+      "competition_id": "2000000000",
+      "home": "Bournemouth",
+      "away": "Aston Villa",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 336,
+      "max_internal_gap_s": 120,
+      "grid_points": 114,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 96,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "3paqoync1x6ffgogsb85v15p0",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Sunderland",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 309,
+      "max_internal_gap_s": 480,
+      "grid_points": 118,
+      "fresh_triplet_points": 100,
+      "coherent_fresh_triplet_points": 97,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "3s39ztipo4s0wdvo7c3u3vkt0",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Brentford",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 360,
+      "max_internal_gap_s": 60,
+      "grid_points": 121,
+      "fresh_triplet_points": 121,
+      "coherent_fresh_triplet_points": 110,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "3w40rqqpfqiv06c3cp8wrsutw",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Newcastle United",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 359,
+      "max_internal_gap_s": 120,
+      "grid_points": 120,
+      "fresh_triplet_points": 120,
+      "coherent_fresh_triplet_points": 118,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3wie337w5hnugj3j5iul98tuc",
+      "competition_id": "2000000000",
+      "home": "West Ham United",
+      "away": "Manchester United",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 342,
+      "max_internal_gap_s": 60,
+      "grid_points": 114,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3wwu6c90x5cn2qaf3glpifml0",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Leeds United",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 339,
+      "max_internal_gap_s": 120,
+      "grid_points": 115,
+      "fresh_triplet_points": 112,
+      "coherent_fresh_triplet_points": 102,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3xpl3ajq2hgkl8zf9qdhxru38",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Burnley",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 336,
+      "max_internal_gap_s": 120,
+      "grid_points": 115,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3y411aqwphh2bc1zrkkr0o74k",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Wolverhampton Wanderers",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 341,
+      "max_internal_gap_s": 240,
+      "grid_points": 119,
+      "fresh_triplet_points": 107,
+      "coherent_fresh_triplet_points": 102,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "3zqsl82hkajpz8q2ta9wz1ono",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Fulham",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 324,
+      "max_internal_gap_s": 240,
+      "grid_points": 122,
+      "fresh_triplet_points": 110,
+      "coherent_fresh_triplet_points": 104,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "400021493",
+      "competition_id": "17",
+      "home": "Senegal",
+      "away": "Iraq",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 356,
+      "max_internal_gap_s": 360,
+      "grid_points": 122,
+      "fresh_triplet_points": 117,
+      "coherent_fresh_triplet_points": 117,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "400021507",
+      "competition_id": "17",
+      "home": "England",
+      "away": "Croatia",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 360,
+      "max_internal_gap_s": 60,
+      "grid_points": 121,
+      "fresh_triplet_points": 121,
+      "coherent_fresh_triplet_points": 120,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "405a2do557or1ct3j3l0vo6j8",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Arsenal",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 364,
+      "max_internal_gap_s": 300,
+      "grid_points": 126,
+      "fresh_triplet_points": 121,
+      "coherent_fresh_triplet_points": 120,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "41cldzbwls4xo9gxeu50cu2vo",
+      "competition_id": "2000000000",
+      "home": "Arsenal",
+      "away": "Chelsea FC",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 351,
+      "max_internal_gap_s": 60,
+      "grid_points": 118,
+      "fresh_triplet_points": 118,
+      "coherent_fresh_triplet_points": 109,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "41r0h2drg86j5w2car2sd2iac",
+      "competition_id": "2000000000",
+      "home": "Brighton & Hove Albion",
+      "away": "Nottingham Forest",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 335,
+      "max_internal_gap_s": 120,
+      "grid_points": 116,
+      "fresh_triplet_points": 114,
+      "coherent_fresh_triplet_points": 110,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "45ec01q9riue4aiuw8r685wyc",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Chelsea FC",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 325,
+      "max_internal_gap_s": 660,
+      "grid_points": 124,
+      "fresh_triplet_points": 96,
+      "coherent_fresh_triplet_points": 93,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "47dvoq5r75sixlz45j51y0ys4",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Nottingham Forest",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 355,
+      "max_internal_gap_s": 120,
+      "grid_points": 120,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 110,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "47s90k4t3qdmtb1d8u2pby0ic",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Manchester United",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 369,
+      "max_internal_gap_s": 60,
+      "grid_points": 124,
+      "fresh_triplet_points": 124,
+      "coherent_fresh_triplet_points": 118,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "486hxmd9rt6ysjx8cez706gpg",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Crystal Palace",
+      "usable_decisions": 4,
+      "failures": {
+        "no_fill": 1
+      },
+      "in_regulation_yes_rows": 345,
+      "max_internal_gap_s": 300,
+      "grid_points": 120,
+      "fresh_triplet_points": 109,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "4depi2nt4nf4enc6vvdcy8mj8",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "West Ham United",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 325,
+      "max_internal_gap_s": 240,
+      "grid_points": 113,
+      "fresh_triplet_points": 110,
+      "coherent_fresh_triplet_points": 109,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4g9df2gm7puexyyyq0kcd7y8k",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Nottingham Forest",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 319,
+      "max_internal_gap_s": 300,
+      "grid_points": 116,
+      "fresh_triplet_points": 93,
+      "coherent_fresh_triplet_points": 93,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4ib5b6h12ok2qgdkbzwg1jv9w",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Manchester City",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 312,
+      "max_internal_gap_s": 420,
+      "grid_points": 117,
+      "fresh_triplet_points": 98,
+      "coherent_fresh_triplet_points": 97,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4ipkr2m649qfb4g5hndblp82c",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Newcastle United",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 320,
+      "max_internal_gap_s": 240,
+      "grid_points": 118,
+      "fresh_triplet_points": 112,
+      "coherent_fresh_triplet_points": 112,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4j6ivw9f5me8lnzenpp7vnuok",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Fulham",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 302,
+      "max_internal_gap_s": 360,
+      "grid_points": 112,
+      "fresh_triplet_points": 97,
+      "coherent_fresh_triplet_points": 97,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4l7u8xcjrptlo0te85spnio7o",
+      "competition_id": "2000000000",
+      "home": "Aston Villa",
+      "away": "Sunderland",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 326,
+      "max_internal_gap_s": 480,
+      "grid_points": 117,
+      "fresh_triplet_points": 98,
+      "coherent_fresh_triplet_points": 98,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4oavnftt8cn64ffjqjxxeuxas",
+      "competition_id": "2000000000",
+      "home": "Newcastle United",
+      "away": "Bournemouth",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 347,
+      "max_internal_gap_s": 120,
+      "grid_points": 117,
+      "fresh_triplet_points": 117,
+      "coherent_fresh_triplet_points": 113,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4p3u05341oavttuq79gix5yc4",
+      "competition_id": "2000000000",
+      "home": "Tottenham Hotspur",
+      "away": "Brighton & Hove Albion",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 357,
+      "max_internal_gap_s": 60,
+      "grid_points": 119,
+      "fresh_triplet_points": 119,
+      "coherent_fresh_triplet_points": 117,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4tbi56lct23i6mjvzto0otedw",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Tottenham Hotspur",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 355,
+      "max_internal_gap_s": 120,
+      "grid_points": 120,
+      "fresh_triplet_points": 120,
+      "coherent_fresh_triplet_points": 117,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4vc1zzuh5bx70tivhn30mgutw",
+      "competition_id": "2000000000",
+      "home": "Chelsea FC",
+      "away": "Nottingham Forest",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 375,
+      "max_internal_gap_s": 240,
+      "grid_points": 130,
+      "fresh_triplet_points": 126,
+      "coherent_fresh_triplet_points": 119,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4wkjiv475wzfcfplo9208ek9g",
+      "competition_id": "2000000000",
+      "home": "Manchester United",
+      "away": "Liverpool",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 348,
+      "max_internal_gap_s": 60,
+      "grid_points": 116,
+      "fresh_triplet_points": 116,
+      "coherent_fresh_triplet_points": 114,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "4xd8jav3nu5ft14s4b2s0z28k",
+      "competition_id": "2000000000",
+      "home": "Wolverhampton Wanderers",
+      "away": "Sunderland",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 329,
+      "max_internal_gap_s": 180,
+      "grid_points": 114,
+      "fresh_triplet_points": 111,
+      "coherent_fresh_triplet_points": 108,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4z1zxqksc6bleu9a1009ng7pw",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Bournemouth",
+      "usable_decisions": 4,
+      "failures": {
+        "price_sum": 1
+      },
+      "in_regulation_yes_rows": 354,
+      "max_internal_gap_s": 120,
+      "grid_points": 120,
+      "fresh_triplet_points": 120,
+      "coherent_fresh_triplet_points": 114,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "4zgf2nruglaxakbv5t3s8ll3o",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Chelsea FC",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 345,
+      "max_internal_gap_s": 60,
+      "grid_points": 115,
+      "fresh_triplet_points": 115,
+      "coherent_fresh_triplet_points": 112,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "56sqj49wua0241sbk71k9rdhw",
+      "competition_id": "2000000000",
+      "home": "Crystal Palace",
+      "away": "Arsenal",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 327,
+      "max_internal_gap_s": 300,
+      "grid_points": 119,
+      "fresh_triplet_points": 95,
+      "coherent_fresh_triplet_points": 94,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "5770cell6dg85i03xfikgnwus",
+      "competition_id": "2000000000",
+      "home": "Fulham",
+      "away": "Newcastle United",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 306,
+      "max_internal_gap_s": 480,
+      "grid_points": 119,
+      "fresh_triplet_points": 79,
+      "coherent_fresh_triplet_points": 78,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "57mwrh5wr8gy7obpu0kjmstg4",
+      "competition_id": "2000000000",
+      "home": "Liverpool",
+      "away": "Brentford",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 345,
+      "max_internal_gap_s": 180,
+      "grid_points": 120,
+      "fresh_triplet_points": 107,
+      "coherent_fresh_triplet_points": 106,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "5831hbgqqz9ehu1ae5qlphvdg",
+      "competition_id": "2000000000",
+      "home": "Manchester City",
+      "away": "Aston Villa",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 360,
+      "max_internal_gap_s": 60,
+      "grid_points": 121,
+      "fresh_triplet_points": 121,
+      "coherent_fresh_triplet_points": 118,
+      "polymarket_usable_decisions": 4
+    },
+    {
+      "match_id": "58j0iztxifq963szj8t2ylhjo",
+      "competition_id": "2000000000",
+      "home": "Nottingham Forest",
+      "away": "Bournemouth",
+      "usable_decisions": 4,
+      "failures": {
+        "stale_price": 1
+      },
+      "in_regulation_yes_rows": 351,
+      "max_internal_gap_s": 180,
+      "grid_points": 123,
+      "fresh_triplet_points": 107,
+      "coherent_fresh_triplet_points": 103,
+      "polymarket_usable_decisions": 5
+    },
+    {
+      "match_id": "58ywxm6h28x3wp2h4cx4wl3pw",
+      "competition_id": "2000000000",
+      "home": "Sunderland",
+      "away": "Chelsea FC",
+      "usable_decisions": 4,
+      "failures": {
+        "fill_sum": 1
+      },
+      "in_regulation_yes_rows": 356,
+      "max_internal_gap_s": 180,
+      "grid_points": 122,
+      "fresh_triplet_points": 120,
+      "coherent_fresh_triplet_points": 119,
+      "polymarket_usable_decisions": 5
+    }
+  ],
+  "paired_price_absolute_difference": {
+    "n": 6174,
+    "p50": 0.0050000000000000044,
+    "p95": 0.025000000000000022,
+    "max": 0.475,
+    "mean": 0.01058908325234856
+  },
+  "largest_paired_price_differences": [
+    {
+      "match_id": "4h2ew9waug2vsce1xchjf9zbo",
+      "decision": "h2+30",
+      "max_side_difference": 0.475,
+      "polymarket": {
+        "home": 0.395,
+        "draw": 0.495,
+        "away": 0.115
+      },
+      "kalshi": {
+        "home": 0.08,
+        "draw": 0.3,
+        "away": 0.59
+      }
+    },
+    {
+      "match_id": "425ir4df7xnr0yefcph23r3mc",
+      "decision": "h2+15",
+      "max_side_difference": 0.43049999999999994,
+      "polymarket": {
+        "home": 0.0495,
+        "draw": 0.191,
+        "away": 0.7605
+      },
+      "kalshi": {
+        "home": 0.26,
+        "draw": 0.43,
+        "away": 0.33
+      }
+    },
+    {
+      "match_id": "4fuln8b9rqgl56nwqw4ow0178",
+      "decision": "h2+30",
+      "max_side_difference": 0.395,
+      "polymarket": {
+        "home": 0.365,
+        "draw": 0.505,
+        "away": 0.1375
+      },
+      "kalshi": {
+        "home": 0.76,
+        "draw": 0.21,
+        "away": 0.07
+      }
+    },
+    {
+      "match_id": "4eljvcto747n3og5zxhsgn4es",
+      "decision": "h2+15",
+      "max_side_difference": 0.355,
+      "polymarket": {
+        "home": 0.495,
+        "draw": 0.37,
+        "away": 0.135
+      },
+      "kalshi": {
+        "home": 0.22,
+        "draw": 0.31,
+        "away": 0.49
+      }
+    },
+    {
+      "match_id": "4d0d8tamzjazpq7onnnj7fgus",
+      "decision": "h2+15",
+      "max_side_difference": 0.30500000000000005,
+      "polymarket": {
+        "home": 0.245,
+        "draw": 0.385,
+        "away": 0.375
+      },
+      "kalshi": {
+        "home": 0.13,
+        "draw": 0.24,
+        "away": 0.68
+      }
+    },
+    {
+      "match_id": "4mt8uz7mnwr88byu986z5m8lw",
+      "decision": "h1+30",
+      "max_side_difference": 0.265,
+      "polymarket": {
+        "home": 0.325,
+        "draw": 0.32,
+        "away": 0.355
+      },
+      "kalshi": {
+        "home": 0.14,
+        "draw": 0.22,
+        "away": 0.62
+      }
+    },
+    {
+      "match_id": "2fsbzlzf6ux1buhi1t67cquqc",
+      "decision": "h2+15",
+      "max_side_difference": 0.245,
+      "polymarket": {
+        "home": 0.135,
+        "draw": 0.35,
+        "away": 0.505
+      },
+      "kalshi": {
+        "home": 0.07,
+        "draw": 0.23,
+        "away": 0.75
+      }
+    },
+    {
+      "match_id": "4dt0xk254py5py96scdjiwys4",
+      "decision": "h1+30",
+      "max_side_difference": 0.225,
+      "polymarket": {
+        "home": 0.455,
+        "draw": 0.275,
+        "away": 0.275
+      },
+      "kalshi": {
+        "home": 0.23,
+        "draw": 0.29,
+        "away": 0.48
+      }
+    },
+    {
+      "match_id": "3bmnia1jn5bzt2z4pea3yr66s",
+      "decision": "h2+15",
+      "max_side_difference": 0.22499999999999998,
+      "polymarket": {
+        "home": 0.825,
+        "draw": 0.155,
+        "away": 0.0235
+      },
+      "kalshi": {
+        "home": 0.6,
+        "draw": 0.37,
+        "away": 0.08
+      }
+    },
+    {
+      "match_id": "400021469",
+      "decision": "h1+30",
+      "max_side_difference": 0.19499999999999995,
+      "polymarket": {
+        "home": 0.595,
+        "draw": 0.245,
+        "away": 0.165
+      },
+      "kalshi": {
+        "home": 0.4,
+        "draw": 0.26,
+        "away": 0.35
+      }
+    }
+  ],
+  "trade_sample_candle_comparison": {
+    "records": 1,
+    "decisions": {
+      "usable": 5
+    },
+    "tasks": 20,
+    "matches_with_tasks": 1,
+    "all_five_decisions": 1,
+    "in_regulation_yes_rows": 354,
+    "yes_rows_per_match_side": {
+      "n": 3,
+      "p50": 118,
+      "p95": 118,
+      "max": 118,
+      "mean": 118
+    },
+    "internal_sample_gap_s": {
+      "n": 351,
+      "p50": 60,
+      "p95": 60,
+      "max": 60,
+      "mean": 60
+    },
+    "asof_sample_age_s": {
+      "n": 357,
+      "p50": 11,
+      "p95": 11,
+      "max": 11,
+      "mean": 11
+    },
+    "unchanged_adjacent_price_fraction": 0.5954415954415955,
+    "minute_grid": {
+      "points": 119,
+      "fresh_triplets": 119,
+      "coherent_fresh_triplets": 119
+    },
+    "goal_plus_60s": {
+      "points": 2,
+      "coherent_fresh_triplets": 2
+    }
+  }
+}
