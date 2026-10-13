@@ -231,3 +231,4 @@ __marimo__/
 # Local prediction-market linkage and historical odds snapshots
 /data/processed/fifa-markets/
 /data/processed/fifa-market-history/
+/data/processed/trade_env/
