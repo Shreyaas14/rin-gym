@@ -1,0 +1,20 @@
+{
+  "splits": {
+    "train": {
+      "matches": 16,
+      "min_decision_utc": "2025-08-23T14:16:37.371000+00:00",
+      "max_decision_utc": "2026-05-17T15:35:09.579000+00:00"
+    },
+    "val": {
+      "matches": 16,
+      "min_decision_utc": "2026-06-14T01:17:33.843000+00:00",
+      "max_decision_utc": "2026-06-27T04:39:11.558000+00:00"
+    }
+  },
+  "chronological": true,
+  "seal": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  }
+}

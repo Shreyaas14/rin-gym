@@ -233,3 +233,9 @@ __marimo__/
 
 # Verbose migration evidence; distribute separately as a release asset
 /artifacts/trade-env-migration/comparison.json
+
+# Re-downloadable experiment inputs and verbose local rollout exports
+/data/release-archives/
+/artifacts/forecast-only/training/iteration_*/train.html
+/artifacts/forecast-only/training/iteration_*/train_logtree.json
+/artifacts/forecast-only/training/timing_spans.jsonl
