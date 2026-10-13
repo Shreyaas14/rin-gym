@@ -1,0 +1,23 @@
+{
+  "service": "fake; no remote calls or charges",
+  "run_directory": "runs/trade_env/dry-trajectory-default-check",
+  "training_steps": [
+    {
+      "step": 0,
+      "trajectories": 64,
+      "decisions": 304
+    },
+    {
+      "step": 1,
+      "trajectories": 64,
+      "decisions": 320
+    }
+  ],
+  "evaluation_steps": [
+    0,
+    2
+  ],
+  "diagnostic_tasks_per_evaluation": 200,
+  "replay_matches_per_evaluation": 72,
+  "final_checkpoint": "tinker://dry-run/sampler_weights/final"
+}

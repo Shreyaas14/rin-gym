@@ -1,14 +1,14 @@
-"""Train on trade_env tasks with tinker-cookbook's GRPO-style RL trainer.
+"""Train whole-match trajectories with tinker-cookbook's GRPO-style RL trainer.
 
 Ours: the env adapter, the dataset, a full-match replay evaluator and the launcher.
 The cookbook's (tinker_cookbook.rl.train.main): rollouts, advantages centred on the
 group mean, the importance-sampling loss, checkpoints, resume, eval scheduling, logs.
 
-    python -m app.trade_env.train_tinker                # print the estimate and stop
-    python -m app.trade_env.train_tinker dry_run=true   # rehearse on a fake service
-    python -m app.trade_env.train_tinker confirm=true   # train; needs TINKER_API_KEY
+    uv run --locked --extra train python -m app.trade_env.train_tinker                # print the estimate and stop
+    uv run --locked --extra train python -m app.trade_env.train_tinker dry_run=true   # rehearse on a fake service
+    uv run --locked --extra train python -m app.trade_env.train_tinker confirm=true   # train; needs TINKER_API_KEY
 
-Install requirements-train.txt first. A run's directory is named after its settings and
+Install with `uv sync --locked --extra train` first. A run's directory is named after its settings and
 the tasks file's contents, so the same command resumes its run and any change starts
 another. The cookbook evaluates before a step, so the launcher adds one evaluation of
 the final checkpoint; held-out metrics are logged under the eval split's name.
@@ -24,10 +24,6 @@ import math
 import os
 from pathlib import Path
 import random
-import re
-import shutil
-from types import SimpleNamespace
-from unittest import mock
 
 import chz
 import tinker
@@ -37,12 +33,13 @@ from tinker_cookbook.exceptions import RendererError
 from tinker_cookbook.rl import train, types as rl
 from tinker_cookbook.rl.metric_util import RLTestSetEvaluator
 from tinker_cookbook.tokenizer_utils import get_tokenizer
+from tinker_cookbook.stores import LocalStorage, TrainingRunStore
 
-from .config import DEFAULTS, make_config
-from .replay import by_match, replay_match
+from .config import DEFAULTS, make_config, config_hash
+from .replay import by_match, Replay
 from .reward import score
 from .stats import cents, mean
-from .tasks import read_tasks
+from .tasks import read_tasks, validate_tasks
 
 ANSWER_TOKENS = 80  # a JSON answer with a one-sentence reason; the cap is max_tokens
 # $ per million tokens (prefill, sample, train): Tinker pricing page, read 2026-10-12
@@ -110,7 +107,6 @@ class TradeGroupBuilder(rl.EnvGroupBuilder):
     config: dict
     group_size: int
     reward_scale: float
-    position_tag: bool = True
 
     async def make_envs(self):
         env = (self.task, self.renderer, self.config, self.reward_scale)
@@ -118,11 +114,75 @@ class TradeGroupBuilder(rl.EnvGroupBuilder):
 
     def logging_tags(self):
         held = "flat" if self.task["position"] == "flat" else "holding"
-        return [self.task["split"], held] if self.position_tag else [self.task["split"]]
+        return [self.task["split"], held]
+
+
+class MatchEnv(TradeEnv):
+    """One whole match, starting flat; fresh observations, carried position."""
+
+    def __init__(self, tasks, renderer, config, reward_scale):
+        self.states = {(t["t"], t["position"]): t for t in tasks}
+        self.times = sorted({t["t"] for t in tasks})
+        self.index = 0
+        super().__init__(
+            self.states[self.times[0], "flat"], renderer, config, reward_scale
+        )
+
+    async def step(self, action, *, extra=None):
+        if self.index == len(self.times):
+            raise ValueError("Match is complete")
+        result = await super().step(action, extra=extra)
+        position = self.task["scoring"]["next_position"][result.logs["action"]]
+        self.index += 1
+        result.episode_done = self.index == len(self.times)
+        if not result.episode_done:
+            self.task = self.states[self.times[self.index], position]
+            (
+                result.next_observation,
+                result.next_stop_condition,
+            ) = await self.initial_observation()
+        return result
+
+
+@dataclass(frozen=True)
+class MatchGroupBuilder(rl.EnvGroupBuilder):
+    """Independent full trajectories of the same match, all starting flat."""
+
+    tasks: list
+    renderer: renderers.Renderer
+    config: dict
+    group_size: int
+    reward_scale: float
+
+    async def make_envs(self):
+        return [
+            MatchEnv(self.tasks, self.renderer, self.config, self.reward_scale)
+            for _ in range(self.group_size)
+        ]
+
+    def logging_tags(self):
+        return [self.tasks[0]["split"]]
+
+    async def compute_group_rewards(self, trajectories, envs):
+        # Step rewards already sum to the full return. Never add P&L twice.
+        return [
+            (
+                0.0,
+                {
+                    "pnl_per_match": math.fsum(
+                        t.metrics["pnl"] for t in traj.transitions
+                    ),
+                    "cost_per_match": math.fsum(
+                        t.metrics["cost"] for t in traj.transitions
+                    ),
+                },
+            )
+            for traj in trajectories
+        ]
 
 
 class TradeDataset(rl.RLDataset):
-    """Every task once per epoch, in a seeded order that is reshuffled each epoch."""
+    """Every item once per epoch: matches for training, tasks for diagnostic eval."""
 
     def __init__(self, tasks, make_group, groups_per_batch, epochs=1, seed=0):
         self.tasks, self.make_group, self.seed = tasks, make_group, seed
@@ -142,18 +202,10 @@ class TradeDataset(rl.RLDataset):
         return self.per_epoch * self.epochs
 
 
-def pick_tasks(tasks, split, seed, flat_share=None, limit=None):
-    """One split's tasks. flat_share thins the holding tasks until that share is flat
-    (it cannot go below the share as built); limit takes a seeded sample."""
+def pick_tasks(tasks, split, seed, limit=None):
+    """One split, optionally taking a seeded sample."""
     tasks = [task for task in tasks if task["split"] == split]
     rng = random.Random(f"{seed}:{split}")
-    if flat_share is not None:
-        if not 0 < flat_share <= 1:
-            raise ValueError("flat_share must be in (0, 1]")
-        flat = [task for task in tasks if task["position"] == "flat"]
-        holding = [task for task in tasks if task["position"] != "flat"]
-        keep = round(len(flat) * (1 - flat_share) / flat_share)
-        tasks = flat + rng.sample(holding, min(len(holding), keep))
     if limit is not None and len(tasks) > limit:
         tasks = rng.sample(tasks, limit)
     return tasks
@@ -164,25 +216,17 @@ class TradeDatasetBuilder(rl.RLDatasetBuilder):
     tasks_path: str = "data/processed/trade_env/tasks.jsonl.gz"
     model_name: str = "Qwen/Qwen3-8B"
     renderer_name: str = "qwen3_disable_thinking"
-    groups_per_batch: int = 64  # tasks per training step
-    group_size: int = 8  # completions per task
+    groups_per_batch: int = 8  # matches per optimizer step
+    group_size: int = 8  # complete trajectories per match
     epochs: int = 1
     train_split: str = "train"
     eval_split: str = "val"
     eval_max_tasks: int = 200
     seed: int = 0
-    flat_share: float | None = None  # None: all four position variants, as built
-    # Raw rewards are dollars per share with an sd near 0.13 and the cookbook's numbers
-    # assume 0/1 rewards, so rewards are scaled up. Under Adam this does not change the
-    # step size (learning_rate alone sets it): it moves the logged reward/total, the
-    # fixed 0.5 cut behind by_group/frac_all_good and the weight against a KL penalty.
-    # Logged pnl stays in dollars.
-    reward_scale: float = 5.0
-    # True drops unanimous groups before the train step: the same gradient for fewer
-    # train tokens. The cookbook then logs train env/* over the surviving groups only
-    # and pairs tags with the wrong groups, so training groups lose their position tag.
-    # iteration_*/train_rollout_summaries.jsonl holds the whole batch either way.
-    remove_constant_reward_groups: bool = False
+    # Adam approximately cancels a uniform gradient scale (apart from epsilon,
+    # clipping and regularization). Keep reward logs in dollars by default.
+    reward_scale: float = 1.0
+    config_path: str | None = None  # optional task-build metadata for nondefault rules
     # scoring rules that are not baked into the tasks file
     invalid_penalty: float = DEFAULTS["invalid_penalty"]
     w_log: float = DEFAULTS["w_log"]
@@ -190,28 +234,33 @@ class TradeDatasetBuilder(rl.RLDatasetBuilder):
 
     def env_config(self):
         keys = ("invalid_penalty", "w_log", "w_missed")
-        return make_config({key: getattr(self, key) for key in keys})
+        built = (
+            json.loads(Path(self.config_path).read_text())["config"]
+            if self.config_path
+            else {}
+        )
+        return make_config({**built, **{key: getattr(self, key) for key in keys}})
 
     def renderer(self):
         tokenizer = get_tokenizer(self.model_name)
         return renderers.get_renderer(self.renderer_name, tokenizer)
 
     def datasets(self, tasks, renderer):
-        """(train, eval). The eval set is a seeded sample, one completion per task."""
-        chosen = pick_tasks(tasks, self.train_split, self.seed, self.flat_share)
+        """Train on matches; keep single-decision eval as a separate diagnostic."""
+        chosen = list(by_match(pick_tasks(tasks, self.train_split, self.seed)).values())
         held = pick_tasks(tasks, self.eval_split, self.seed, limit=self.eval_max_tasks)
         if not chosen:
             raise ValueError(f"No {self.train_split} tasks in {self.tasks_path}")
         config, scale = self.env_config(), self.reward_scale
 
-        def group(size, tag=True):
-            return lambda task: TradeGroupBuilder(
-                task, renderer, config, size, scale, tag
-            )
+        def group(size):
+            return lambda task: TradeGroupBuilder(task, renderer, config, size, scale)
 
         trained = TradeDataset(
             chosen,
-            group(self.group_size, not self.remove_constant_reward_groups),
+            lambda match: MatchGroupBuilder(
+                match, renderer, config, self.group_size, scale
+            ),
             self.groups_per_batch,
             self.epochs,
             self.seed,
@@ -233,10 +282,6 @@ def replay_matches(tasks, split, seed, limit):
     return [matches[match_id] for match_id in ids]
 
 
-class Unanswered(Exception):
-    """Raised inside a replay at a decision that has no sampled answer yet."""
-
-
 class MatchReplayEvaluator(SamplingClientEvaluator):
     """Full-match replay: one sampled completion per decision, carrying the position."""
 
@@ -252,21 +297,10 @@ class MatchReplayEvaluator(SamplingClientEvaluator):
         return None if truncated or text in task["legal_actions"] else text
 
     async def play(self, policy, match):
-        # replay_match takes a plain function, so it is rerun from the start each
-        # time it reaches a decision that has not been sampled yet
-        answers = {}
-
-        def recall(task):
-            if task["id"] not in answers:
-                raise Unanswered(task)
-            return answers[task["id"]]
-
-        while True:
-            try:
-                return replay_match(match, recall, self.config)
-            except Unanswered as pending:
-                task = pending.args[0]
-                answers[task["id"]] = await self.answer(policy, task)
+        replay = Replay(match, self.config)
+        while (task := replay.next_task()) is not None:
+            replay.step(await self.answer(policy, task))
+        return replay.result()
 
     async def eval_token_completer(self, policy):
         played = await asyncio.gather(*[self.play(policy, m) for m in self.matches])
@@ -283,89 +317,6 @@ class MatchReplayEvaluator(SamplingClientEvaluator):
     async def __call__(self, sampling_client):
         policy = completers.TinkerTokenCompleter(sampling_client, self.max_tokens)
         return await self.eval_token_completer(policy)
-
-
-class ScriptedCompleter(completers.TokenCompleter):
-    """Dry-run policy: a made-up answer per call, mostly legal, sometimes broken."""
-
-    def __init__(self, tokenizer, seed=0):
-        self.tokenizer, self.rng = tokenizer, random.Random(seed)
-
-    def answer(self, prompt):
-        """(text, finished) for a decoded prompt."""
-        legal = re.findall(r"Legal actions: ([a-z_, ]+)", prompt)[-1].split(", ")
-        roll = self.rng.random()
-        if roll < 0.1:
-            return "I would rather wait and see.", True
-        action = "buy_moon" if roll < 0.2 else self.rng.choice(legal)
-        probs = {"home": 0.5, "draw": 0.3, "away": 0.2}
-        answer = {"probs": probs, "action": action, "reason": "scripted"}
-        return json.dumps(answer), roll < 0.9
-
-    async def __call__(self, model_input, stop, *, max_tokens=None):
-        text, finished = self.answer(self.tokenizer.decode(model_input.to_ints()))
-        tokens = self.tokenizer.encode(text, add_special_tokens=False)
-        if max_tokens is not None and len(tokens) >= max_tokens:
-            tokens, finished = tokens[:max_tokens], False
-        if finished:
-            tokens = tokens + [stop[0]]  # the stop token is part of the sampled action
-        logprobs = [-self.rng.uniform(0.05, 1.0) for _ in tokens]
-        reason = "stop" if finished else "length"
-        return completers.TokensWithLogprobs(tokens, logprobs, reason)
-
-
-def done(**fields):
-    """An already finished Tinker API future."""
-
-    async def result_async():
-        return SimpleNamespace(**fields)
-
-    return SimpleNamespace(result_async=result_async)
-
-
-class FakeTinker:
-    """Dry-run stand-in for the Tinker service, training and sampling clients: just what
-    the cookbook's sync loop calls. It keeps what it is sent and learns nothing."""
-
-    last = None
-
-    def __init__(self, policy):
-        self.policy, self.batches, self.optim_steps = policy, [], []
-        FakeTinker.last = self
-
-    async def create_lora_training_client_async(self, base_model, rank=32, **more):
-        return self
-
-    async def save_weights_and_get_sampling_client_async(self):
-        return self
-
-    def create_sampling_client(self, model_path=None, **more):
-        return self
-
-    async def sample_async(self, prompt, num_samples, sampling_params):
-        limit = sampling_params.max_tokens
-        out = await self.policy(prompt, sampling_params.stop, max_tokens=limit)
-        sequence = SimpleNamespace(
-            tokens=out.tokens, logprobs=out.logprobs, stop_reason=out.stop_reason
-        )
-        return SimpleNamespace(sequences=[sequence])
-
-    async def forward_backward_async(self, data, loss_fn, loss_fn_config=None):
-        self.batches.append({"loss_fn": loss_fn, "data": data})
-        sampled = [datum.loss_fn_inputs["logprobs"].to_numpy() for datum in data]
-        learner = [tinker.TensorData.from_numpy(q - 0.01) for q in sampled]
-        outputs = [{"logprobs": logprobs} for logprobs in learner]
-        return done(loss_fn_outputs=outputs, metrics={})
-
-    async def optim_step_async(self, adam_params):
-        self.optim_steps.append(adam_params)
-        return done(metrics={})
-
-    async def save_state_async(self, name, ttl_seconds=None):
-        return done(path=f"tinker://dry-run/weights/{name}")
-
-    async def save_weights_for_sampler_async(self, name, ttl_seconds=None):
-        return done(path=f"tinker://dry-run/sampler_weights/{name}")
 
 
 @chz.chz
@@ -389,14 +340,63 @@ class CLI(TradeDatasetBuilder):
 def check(cli):
     """Stop on settings that would crash late, teach nothing or skew the estimate."""
     # a group of one has no group mean to beat: it would be paid for and teach nothing
-    least = dict(groups_per_batch=1, group_size=2, epochs=1, max_tokens=1, max_steps=1)
+    least = dict(
+        groups_per_batch=1,
+        group_size=2,
+        epochs=1,
+        max_tokens=1,
+        max_steps=1,
+        lora_rank=1,
+    )
     for key in (*least, "eval_every", "save_every", "replay_matches", "eval_max_tasks"):
         value = getattr(cli, key)
-        if value is not None and value < least.get(key, 0):
+        if value is not None and (type(value) is not int or value < least.get(key, 0)):
             raise SystemExit(f"{key} must be at least {least.get(key, 0)}, not {value}")
+    for key in (
+        "learning_rate",
+        "reward_scale",
+        "invalid_penalty",
+        "w_log",
+        "w_missed",
+    ):
+        value = getattr(cli, key)
+        if (
+            not math.isfinite(value)
+            or value < 0
+            or (key in ("learning_rate", "reward_scale") and value == 0)
+        ):
+            raise SystemExit(
+                f"{key} must be finite and "
+                + (
+                    "positive"
+                    if key in ("learning_rate", "reward_scale")
+                    else "non-negative"
+                )
+            )
+    if cli.loss_fn not in ("importance_sampling", "ppo"):
+        raise SystemExit(
+            "loss_fn must be importance_sampling or ppo for this RL adapter"
+        )
+    config = cli.env_config()
+    if config["mark"] != "mid" or config["start_mark"] != "decision":
+        raise SystemExit(
+            "Trajectory training requires mark=mid and start_mark=decision for additive P&L"
+        )
+    if cli.w_log or cli.w_missed:
+        raise SystemExit(
+            "Trajectory training requires w_log=0 and w_missed=0; optimize P&L directly"
+        )
     if not os.path.exists(cli.tasks_path):
         raise SystemExit(f"No tasks file at {cli.tasks_path}: build-tasks writes it")
-    splits = {task["split"] for task in read_tasks(cli.tasks_path)}
+    tasks = read_tasks(cli.tasks_path)
+    validate_tasks(tasks)
+    if {task["scoring"]["config_hash"] for task in tasks} != {config_hash(config)}:
+        raise SystemExit(
+            "Tasks were built under another config; pass config_path=tasks.meta.json or rebuild"
+        )
+    splits = {task["split"] for task in tasks}
+    if cli.eval_every and cli.eval_split == cli.train_split:
+        raise SystemExit("eval_split must differ from train_split")
     needed = [cli.train_split, cli.eval_split] if cli.eval_every else [cli.train_split]
     for split in needed:
         if split not in splits:
@@ -413,6 +413,14 @@ def settings(cli):
     """What makes a run that run: the settings that shape it and the tasks' bytes."""
     skipped = ("name", "confirm", "max_steps", "runs_dir")
     kept = {k: v for k, v in chz.asdict(cli).items() if k not in skipped}
+    # Refuse to resume across changed scoring/training code or dependency versions.
+    sources = sorted(Path(__file__).parent.glob("*.py"))
+    sources.append(Path(__file__).resolve().parents[2] / "uv.lock")
+    kept["code_sha256"] = hashlib.sha256(
+        b"".join(p.name.encode() + b"\0" + p.read_bytes() for p in sources)
+    ).hexdigest()
+    kept["training_unit"] = "match_trajectory/v1"
+    kept["env_config"] = cli.env_config()
     kept["tasks_sha256"] = hashlib.sha256(Path(cli.tasks_path).read_bytes()).hexdigest()
     return kept
 
@@ -477,7 +485,9 @@ def train_config(cli):
         evaluator_builders=evaluators,
         eval_every=cli.eval_every,
         save_every=cli.save_every,
-        remove_constant_reward_groups=cli.remove_constant_reward_groups,
+        remove_constant_reward_groups=False,
+        num_substeps=1,
+        temperature=1.0,
         loss_fn=cli.loss_fn,
         max_steps=cli.max_steps,
         log_path=os.path.expanduser(os.path.join(cli.runs_dir, run_name(cli))),
@@ -489,20 +499,27 @@ async def train_then_evaluate(config):
     score the final checkpoint once and log it at the step after the last."""
     await train.main(config)
     last = checkpoint_utils.get_last_checkpoint(config.log_path, "sampler_path")
-    log = Path(config.log_path, "metrics.jsonl")
-    if not (config.evaluator_builders and last and log.exists()):
+    if not (config.evaluator_builders and last):
         return
-    if json.loads(log.read_text().splitlines()[-1])["step"] == last.batch:
+    store = TrainingRunStore(LocalStorage(config.log_path))
+    if any(
+        row.get("final_evaluation") == last.sampler_path and row["step"] == last.batch
+        for row in store.read_metrics()
+    ):
         return  # a rerun of a finished run
     service = tinker.ServiceClient(base_url=config.base_url)
     client = service.create_sampling_client(model_path=last.sampler_path)
     evaluators = [build() for build in config.evaluator_builders]
-    metrics = {"step": last.batch}
-    for result in await asyncio.gather(*[evaluate(client) for evaluate in evaluators]):
-        metrics.update(result)
-    with log.open("a") as out:
-        out.write(json.dumps(metrics) + "\n")
-    print(f"Final checkpoint evaluated: step {last.batch} in {log}")
+    metrics = await train.run_evaluations_parallel(
+        evaluators,
+        client,
+        config,
+        last.batch,
+        store=store,
+    )
+    metrics.update(step=last.batch, final_evaluation=last.sampler_path)
+    store.write_metrics(metrics)
+    print(f"Final checkpoint evaluated: step {last.batch} in {config.log_path}")
 
 
 def prompt_tokens(tasks, cli):
@@ -530,13 +547,19 @@ def estimate(cli, start=0):
     trained, held = dataset_builder(cli).datasets(tasks, None)
     steps = len(trained) if cli.max_steps is None else min(len(trained), cli.max_steps)
     left = range(start, steps)
-    rollouts = cli.group_size * sum(len(trained.batch_tasks(i)) for i in left)
+    episodes = [match for i in left for match in trained.batch_tasks(i)]
+    trajectories = cli.group_size * len(episodes)
+    rollouts = cli.group_size * sum(len({t["t"] for t in match}) for match in episodes)
     # one before every eval_every-th step, and one of the final checkpoint
-    evals = sum(i % cli.eval_every == 0 for i in left) + 1 if cli.eval_every else 0
+    evals = (
+        sum(i % cli.eval_every == 0 for i in left) + 1
+        if cli.eval_every and (cli.eval_max_tasks or cli.replay_matches)
+        else 0
+    )
     replayed = replay_matches(tasks, cli.eval_split, cli.seed, cli.replay_matches)
     decisions = sum(len({task["t"] for task in match}) for match in replayed)
     sampled = rollouts + evals * (len(held.tasks if held else []) + decisions)
-    each, counted = prompt_tokens(trained.tasks, cli)
+    each, counted = prompt_tokens([t for match in trained.tasks for t in match], cli)
     prices = PRICES.get(cli.model_name)
     rates = "prefill {}, sample {}, train {}".format(*prices) if prices else "unknown"
     built = sorted({task["scoring"]["config_hash"] for task in tasks})
@@ -544,7 +567,8 @@ def estimate(cli, start=0):
         "model": cli.model_name,
         "tasks_file": f"sha256 {settings(cli)['tasks_sha256'][:12]}, built under "
         + ", ".join(built),
-        "train_tasks": len(trained.tasks),
+        "train_matches": len(trained.tasks),
+        "train_trajectories": trajectories,
         "steps": f"{len(left)} ({start} to {steps})" if start else steps,
         "train_rollouts": rollouts,
         "evals": evals,
@@ -553,7 +577,10 @@ def estimate(cli, start=0):
         "prompt_tokens": round(sampled * each),
         "usd_per_million_tokens": rates,
     }
-    for suffix, answer in (("", ANSWER_TOKENS), ("_max", cli.max_tokens)):
+    for suffix, answer in (
+        ("", min(ANSWER_TOKENS, cli.max_tokens)),
+        ("_max", cli.max_tokens),
+    ):
         learned = round(rollouts * (each + answer))
         tokens = (out["prompt_tokens"], sampled * answer, learned)
         out["completion_tokens" + suffix], out["train_tokens" + suffix] = tokens[1:]
@@ -564,11 +591,20 @@ def estimate(cli, start=0):
 
 def main(argv=None):
     cli = chz.entrypoint(CLI, argv=argv)
-    check(cli)
+    try:
+        check(cli)
+    except (ValueError, OSError, KeyError) as error:
+        raise SystemExit(str(error)) from error
     if cli.dry_run:
         cli = chz.replace(cli, max_steps=cli.max_steps or 2)
     config = train_config(cli)
     start = 0 if cli.dry_run else resume_step(cli, config.log_path)
+    if (
+        cli.confirm
+        and not cli.dry_run
+        and not os.environ.get("TINKER_API_KEY", "").strip()
+    ):
+        raise SystemExit("TINKER_API_KEY is required for confirm=true")
     figures = estimate(cli, start)
     print("ESTIMATE ONLY, not a quote. Nothing has been sent to Tinker.")
     for key, value in figures.items():
@@ -578,7 +614,7 @@ def main(argv=None):
         "prompt at the full prefill rate and no group dropped. Prices read 2026-10-12."
     )
     if start:
-        print(f"  RESUMING {config.log_path} at step {start}: the rest is counted.")
+        print(f"  Resuming from step {start}: {config.log_path}")
     else:
         print(f"  New run: {config.log_path}")
     if not (cli.confirm or cli.dry_run):
@@ -595,14 +631,9 @@ def main(argv=None):
         os.makedirs(config.log_path, exist_ok=True)
         Path(config.log_path, "settings.json").write_text(json.dumps(settings(cli)))
         return asyncio.run(train_then_evaluate(config))
-    if not os.path.basename(config.log_path).startswith("dry-"):
-        raise SystemExit(f"Not wiping {config.log_path}: it is not a dry run's")
-    shutil.rmtree(config.log_path, ignore_errors=True)
-    fake = FakeTinker(ScriptedCompleter(tokenizer))
-    # the trainer builds its own tinker.ServiceClient, so the fake is swapped in for it
-    with mock.patch.object(tinker, "ServiceClient", return_value=fake):
-        asyncio.run(train_then_evaluate(config))
-    print("Dry run done: fake service, nothing billed. Logs in", config.log_path)
+    from tests.trade_env.fake_tinker import run_dry
+
+    run_dry(config, tokenizer, train_then_evaluate)
 
 
 if __name__ == "__main__":

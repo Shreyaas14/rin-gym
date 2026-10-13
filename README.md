@@ -24,15 +24,23 @@ Start with the [research directions](research/forecasting/research-directions.md
 
 The [initial audit reports](research/initial-audit/) preserve scope and limitations. Forecasting experiments and learned simulators are research directions, not completed capabilities in this import.
 
+## Python setup
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run `uv sync --locked` from this directory. uv manages Python 3.12 and `.venv`; no activation or pip commands are needed. Dependencies live in `pyproject.toml` and exact resolutions in `uv.lock`.
+
+Use `uv run --locked python ...` for commands. For the [RL trainer](app/trade_env/README.md#tinker-training), use `uv sync --locked --extra train` and `uv run --locked --extra train python ...`. The optional `replay` extra supplies NumPy/Pillow for the external replay renderer.
+
+Add dependencies with `uv add PACKAGE` (or `uv add --optional train PACKAGE`), and commit both `pyproject.toml` and `uv.lock`. `uv lock --upgrade-package PACKAGE` deliberately updates a locked dependency.
+
 ## Run the data pipelines
 
-Python 3.11 or newer; acquisition and audit code uses the standard library.
+Use `uv` from the repository root. `.python-version` selects Python 3.12; acquisition and audit code uses the standard library.
 
 ```sh
-python3 -m pipelines.sports_data.run_audit
-python3 -m pipelines.sports_data.fifa_census
-python3 -m pipelines.sports_data.fifa_join
-python3 -m pipelines.sports_data.verify
+uv run --locked python -m pipelines.sports_data.run_audit
+uv run --locked python -m pipelines.sports_data.fifa_census
+uv run --locked python -m pipelines.sports_data.fifa_join
+uv run --locked python -m pipelines.sports_data.verify
 ```
 
 The first run needs public internet access. Downloads are cached under `data/raw/sports/`; generated tables live under `data/processed/sports/`. Raw caches are excluded from Git.
@@ -42,9 +50,9 @@ The first run needs public internet access. Downloads are cached under `data/raw
 Ingest Premier League 2025/26 and World Cup 2026 into shared local match/event tables:
 
 ```sh
-python3 -m pip install -r pipelines/fifa/requirements.txt
-python3 -m pipelines.fifa ingest
-python3 -m pipelines.fifa verify --cache data/raw/fifa
+uv sync --locked
+uv run --locked python -m pipelines.fifa ingest
+uv run --locked python -m pipelines.fifa verify --cache data/raw/fifa
 ```
 
 The [pipeline guide](docs/pipelines/fifa-parquet.md) documents the schemas, cache/refresh behavior, and replay adapter. The completed [ingestion report](artifacts/fifa-pipeline/REPORT.md) covers 484 matches and 40,848 events.

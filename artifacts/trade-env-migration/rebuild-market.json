@@ -1,0 +1,38 @@
+{
+  "config_hash": "eca43d60dc70",
+  "records": 484,
+  "matches_with_tasks": 484,
+  "matches_by_split": {
+    "test": 32,
+    "train": 380,
+    "val": 72
+  },
+  "tasks": 9448,
+  "tasks_by_split": {
+    "test": 640,
+    "train": 7372,
+    "val": 1436
+  },
+  "tasks_by_decision": {
+    "h1+15": 1884,
+    "h1+30": 1888,
+    "ht": 1912,
+    "h2+15": 1900,
+    "h2+30": 1864
+  },
+  "decision_points_dropped": {
+    "fill_sum": 25,
+    "price_sum": 31,
+    "stale_price": 2
+  },
+  "tasks_dropped": {
+    "fill_sum": 100,
+    "price_sum": 124,
+    "stale_price": 8
+  },
+  "demo_matches": [
+    "400021528",
+    "400021538",
+    "400021540"
+  ]
+}

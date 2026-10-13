@@ -54,7 +54,7 @@ def clean_probs(probs, tol):
     if any(type(v) not in (int, float) or not 0 <= v <= 1 for v in values):
         return None
     total = math.fsum(values)
-    if abs(total - 1) > tol + 1e-9:
+    if total <= 0 or abs(total - 1) > tol + 1e-9:
         return None
     return {o: v / total for o, v in zip(OUTCOMES, values)}
 

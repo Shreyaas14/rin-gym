@@ -1,0 +1,23 @@
+{
+  "matches": 484,
+  "contracts_verified": 1452,
+  "tasks": 9448,
+  "prompt_future_mutations_checked": 9548,
+  "byte_identical_rebuild": true,
+  "tasks_sha256": "c75246b689d3abcd2b0906e4a60eb35927249bd29865f2647cf9c1e94ebede65",
+  "matches_by_split": {
+    "test": 32,
+    "train": 380,
+    "val": 72
+  },
+  "drops": {
+    "fill_sum": 25,
+    "price_sum": 31,
+    "stale_price": 2
+  },
+  "limits": [
+    "Event-time checks cannot establish historical publication time or remove later corrections.",
+    "Task inclusion depends on future fill availability; this is retrospective sample selection.",
+    "No remote optimizer or learned model was tested."
+  ]
+}

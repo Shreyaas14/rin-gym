@@ -1,0 +1,27 @@
+{
+  "mode": "match_trajectory/v1",
+  "tests_passed": 152,
+  "fake_service_only": true,
+  "steps": [
+    {
+      "step": 0,
+      "replay/val/pnl_per_match_c": 22.68063187499999,
+      "env/all/total_episodes": 4,
+      "env/all/total_turns": 20,
+      "env/all/reward/total": -0.1639278125000001,
+      "env/all/pnl_per_match": -0.11392781250000011
+    },
+    {
+      "step": 1,
+      "env/all/total_episodes": 4,
+      "env/all/total_turns": 20,
+      "env/all/reward/total": -0.40888871875000005,
+      "env/all/pnl_per_match": -0.32888871875000003
+    },
+    {
+      "replay/val/pnl_per_match_c": 9.123738124999996,
+      "step": 2,
+      "final_evaluation": "tinker://dry-run/sampler_weights/final"
+    }
+  ]
+}

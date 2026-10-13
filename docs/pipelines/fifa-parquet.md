@@ -4,13 +4,12 @@ The default run acquires Premier League 2025/26 and World Cup 2026 into the same
 
 ## Install and run
 
-Python 3.11+; run from the repository root. PyArrow is the only ingestion dependency.
+Run from the repository root with `uv` (Python 3.12). PyArrow is the only ingestion dependency.
 
 ```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r pipelines/fifa/requirements.txt
-.venv/bin/python -m pipelines.fifa ingest
-.venv/bin/python -m pipelines.fifa verify --cache data/raw/fifa
+uv sync --locked
+uv run --locked python -m pipelines.fifa ingest
+uv run --locked python -m pipelines.fifa verify --cache data/raw/fifa
 ```
 
 The default run makes 486 public requests: two calendars and 484 timelines. It follows calendar continuation tokens, retries transient errors (honoring Retry-After), and uses four concurrent timeline requests. No FIFA credentials are needed for the tested public endpoints. Network availability and provider behavior can change.
@@ -32,14 +31,14 @@ A run publishes exactly the selected scopes. Selecting only one cohort produces 
 
 ```sh
 # Reuse verified cache only, with no network.
-.venv/bin/python -m pipelines.fifa ingest --offline
+uv run --locked python -m pipelines.fifa ingest --offline
 
 # Fetch source corrections and publish a new snapshot.
-.venv/bin/python -m pipelines.fifa ingest --refresh
+uv run --locked python -m pipelines.fifa ingest --refresh
 
 # One named cohort, another explicit competition/season, or a custom output root.
-.venv/bin/python -m pipelines.fifa ingest --cohort premier-league-2025-26
-.venv/bin/python -m pipelines.fifa ingest --scope 17:285023 --output ./cup-parquet
+uv run --locked python -m pipelines.fifa ingest --cohort premier-league-2025-26
+uv run --locked python -m pipelines.fifa ingest --scope 17:285023 --output ./cup-parquet
 ```
 
 `--workers` accepts 1–16. Default strict mode rejects publication if a required timeline fetch or structural normalization fails, or a completed match has an empty timeline. `--allow-partial` explicitly permits an incomplete dataset: every discovered calendar match remains present with its timeline status and null unavailable counts, and the manifest lists failures. Soft quality flags preserve unusual or ambiguous records instead of silently repairing them. Known historical cohorts additionally require the expected 380/104 calendar counts.
@@ -47,7 +46,7 @@ A run publishes exactly the selected scopes. Selecting only one cohort produces 
 Prior audit caches can seed a network-free run. Only recognized FIFA calendar/timeline files with valid original hash metadata are imported; unrelated market/credential files are not read. The importer supports `.http.json` metadata from the league audit and `.meta.json` from the repository's older sports cache. The World Cup legacy calendar is mapped to the equivalent explicit competition/season query only after its complete scope is validated; the original URL is retained.
 
 ```sh
-.venv/bin/python -m pipelines.fifa ingest --offline \
+uv run --locked python -m pipelines.fifa ingest --offline \
   --import-cache /path/to/premier-league-audit/raw \
   --import-cache /path/to/earlier-checkout/data/raw/sports
 ```
@@ -86,10 +85,10 @@ events = timeline["Event"]
 Export any ingested match as the earlier FIFA file format:
 
 ```sh
-.venv/bin/python -m pipelines.fifa export-replay \
+uv run --locked python -m pipelines.fifa export-replay \
   --match 400021440 --output artifacts/fifa-replay/czechia-south-africa
 
-.venv/bin/python -m pipelines.fifa export-replay \
+uv run --locked python -m pipelines.fifa export-replay \
   --match zhs8gg1hvcuqvhkk2itb54pg \
   --output artifacts/fifa-replay/liverpool-bournemouth --sanitize-locations
 ```
@@ -101,8 +100,7 @@ The earlier `main` chat's offline World Cup renderer is still hardcoded to Czech
 With that renderer checkout available and its NumPy/Pillow dependencies installed in this environment:
 
 ```sh
-.venv/bin/python -m pip install numpy Pillow
-.venv/bin/python -m pipelines.fifa replay-preview \
+uv run --locked --extra replay python -m pipelines.fifa replay-preview \
   --renderer /path/to/replay-checkout/app/replay/render.py \
   --output artifacts/fifa-replay/preview
 ```
@@ -112,8 +110,8 @@ This invokes the renderer's `initialize`/`main` implementation from the current 
 ## Validation
 
 ```sh
-.venv/bin/python -m unittest discover -s tests/fifa -v
-.venv/bin/python -m pipelines.fifa verify --cache data/raw/fifa
+uv run --locked python -m unittest discover -s tests/fifa -v
+uv run --locked python -m pipelines.fifa verify --cache data/raw/fifa
 ```
 
 Verification checks file hashes, exact Arrow types/nullability/metadata, counts, unique keys, match/event provenance, source-order continuity, and dataset versions. With `--cache`, it also verifies all source response hashes and every original event against Parquet. Unit tests cover network/cache failures, pagination, repeated IDs, nulls, unknown fields, extra time/shootouts, ambiguous coordinates, failed publication, and replay round trips.

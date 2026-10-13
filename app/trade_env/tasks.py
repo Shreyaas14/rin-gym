@@ -30,13 +30,9 @@ def _load_records(path):
 
 
 def load_records(path):
-    """Records in a stable order. Uses the shared loader when the data side has one."""
+    """Records in a stable order. Small JSON/JSONL fixture reader; the default input is the release."""
     path = Path(path)
-    try:
-        from .records import load_records as shared
-    except ImportError:
-        shared = None
-    records = _load_records(path) if shared is None or path.is_dir() else shared(path)
+    records = _load_records(path)
     for record in records:
         if record.get("schema") != SCHEMA:
             raise ValueError("Not a match_record/v1: " + str(record.get("match_id")))
@@ -80,6 +76,17 @@ def match_tasks(record, config):
     A chunk runs from a usable decision point to the next usable one, so the
     chunk-end mark is that point's shown price and a replay never has a gap.
     """
+    pricing = config
+    if config["fee_rate"] == "market":
+        rates = record.get("fee_rates", {})
+        if set(rates) != set(OUTCOMES) or any(
+            type(r) not in (int, float) or not math.isfinite(r) or r < 0
+            for r in rates.values()
+        ):
+            raise ValueError(
+                f"{record['match_id']}: missing or invalid market fee rates"
+            )
+        pricing = {**config, "market_fee_rates": rates}
     points = decision_points(record["periods"], config)
     kept = {p["name"] for p in points}
     drops = [(d, "after_period_end") for d in config["decisions"] if d not in kept]
@@ -99,7 +106,7 @@ def match_tasks(record, config):
         total = math.fsum(shown.values())
         for position in POSITIONS:
             state = build_state(record, points, i, position, shown, config)
-            rewards, costs = action_table(position, shown, fill, end, final, config)
+            rewards, costs = action_table(position, shown, fill, end, final, pricing)
             scoring = {
                 "action_rewards": rewards,
                 "next_position": {a: next_position(position, a) for a in rewards},
@@ -114,7 +121,9 @@ def match_tasks(record, config):
                 "chunk_end": "settlement" if final else points[usable[n + 1]]["name"],
                 "observed_score": state["score"],
             }
-            messages = render(state, config)
+            if config["fee_rate"] == "market":
+                scoring["fee_rates"] = record["fee_rates"]
+            messages = render(state, pricing)
             tasks.append(
                 make_task(record, points[i], position, messages, split, scoring, config)
             )
@@ -171,3 +180,38 @@ def read_tasks(path):
     opener = gzip.open if Path(path).suffix == ".gz" else open
     with opener(path, "rt", encoding="utf-8") as handle:
         return [json.loads(line) for line in handle if line.strip()]
+
+
+def validate_tasks(tasks):
+    """Reject overlapping splits and broken replay states before opening a client."""
+    ids, splits, states, matches = set(), {}, {}, {}
+    for task in tasks:
+        match, split = task["match_id"], task["split"]
+        if task["id"] in ids:
+            raise ValueError(f"Duplicate task: {task['id']}")
+        ids.add(task["id"])
+        if splits.setdefault(match, split) != split:
+            raise ValueError(f"Match {match} appears in multiple splits")
+        if task.get("demo") and split != "test":
+            raise ValueError(f"Demo match {match} must stay in test")
+        key = match, task["t"]
+        positions = states.setdefault(key, set())
+        if task["position"] in positions:
+            raise ValueError(f"Duplicate position at {key}")
+        positions.add(task["position"])
+        if task["position"] == "flat":
+            matches.setdefault(match, []).append(task)
+    for key, positions in states.items():
+        if positions != set(POSITIONS):
+            raise ValueError(f"Incomplete position variants at {key}")
+    chains = {}
+    for match, points in matches.items():
+        points.sort(key=lambda task: task["t"])
+        for i, task in enumerate(points):
+            final = i == len(points) - 1
+            end = "settlement" if final else points[i + 1]["decision"]
+            chains[match, task["t"]] = final, end
+    for task in tasks:
+        actual = task["scoring"]["final_chunk"], task["scoring"]["chunk_end"]
+        if actual != chains[task["match_id"], task["t"]]:
+            raise ValueError(f"Broken reward chain in match {task['match_id']}")

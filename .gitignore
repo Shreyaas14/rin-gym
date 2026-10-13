@@ -228,3 +228,8 @@ __marimo__/
 /data/processed/fifa/
 /artifacts/fifa-replay/
 /data/processed/trade_env/
+
+/runs/
+
+# Verbose migration evidence; distribute separately as a release asset
+/artifacts/trade-env-migration/comparison.json

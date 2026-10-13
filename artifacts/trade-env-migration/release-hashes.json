@@ -1,0 +1,74 @@
+[
+  {
+    "path": "data/processed/fifa-markets/current.json",
+    "sha256": "c2cf570605499c3dbf5d43585db60d95daef87bf2a78ec9fd1fd3ee234f85e91"
+  },
+  {
+    "path": "data/processed/fifa-markets/snapshots/20261013T030206-a098517b/catalog-resolution.json",
+    "sha256": "9875dc34df87a52aea8cd72df1d1196c9812fe6927c31ebe7b5af3bdc1d1e89f"
+  },
+  {
+    "path": "data/processed/fifa-markets/snapshots/20261013T030206-a098517b/events.parquet",
+    "sha256": "36fad3646428ea1e745d9c3293fa0d7624cb4b14184e2dc2044628fc4c81365b"
+  },
+  {
+    "path": "data/processed/fifa-markets/snapshots/20261013T030206-a098517b/fixture-contracts.parquet",
+    "sha256": "904edea6ab331f12d4da38746fa88221a4c9dcf4d59fdbb020442402f404843c"
+  },
+  {
+    "path": "data/processed/fifa-markets/snapshots/20261013T030206-a098517b/manifest.json",
+    "sha256": "52c73f467d6aea3047368fc47f41f2ed644f89934e0f6de0cdb1718d85e4b172"
+  },
+  {
+    "path": "data/processed/fifa-markets/snapshots/20261013T030206-a098517b/manifest.original.json",
+    "sha256": "bf358376fe4a5b46586049d597339fea098ea478652ce522c64457d15ff924b0"
+  },
+  {
+    "path": "data/processed/fifa-markets/snapshots/20261013T030206-a098517b/match-resolution.json",
+    "sha256": "45c36300e075823548b1f04bdbc8759a2f55f3ffdac6516b4b90e03b50e8fc64"
+  },
+  {
+    "path": "data/processed/fifa-markets/snapshots/20261013T030206-a098517b/matches.parquet",
+    "sha256": "935f549a4cbc60ac4918364afb12c78b821ee3d94e01989bfaf0dce9c1955d05"
+  },
+  {
+    "path": "data/processed/fifa-market-history/current.json",
+    "sha256": "6c159f01d30e3515f010a299a92eeb43e67de8f2f37844388f5e51b15c2a91d3"
+  },
+  {
+    "path": "data/processed/fifa-market-history/snapshots/20261013T030305-50201b7d/manifest.json",
+    "sha256": "9bcdc75d8ca45967d277af56f293c017a5e1bac54960eff20e0c71923d0e6338"
+  },
+  {
+    "path": "data/processed/fifa-market-history/snapshots/20261013T030305-50201b7d/manifest.original.json",
+    "sha256": "e14ac9e95edeec037b4894e00af631388265ed3a3a3b411c1ae5d2c31aeeae3b"
+  },
+  {
+    "path": "data/processed/fifa-market-history/snapshots/20261013T030305-50201b7d/market-resolution.json",
+    "sha256": "a4936f87a5556d96bafefe26684a781f3da87f9108f5b545ed3f5b58c747b574"
+  },
+  {
+    "path": "data/processed/fifa-market-history/snapshots/20261013T030305-50201b7d/markets.parquet",
+    "sha256": "19658c8ab3468f7ceb5abfb0ae2c611ac21e56c7c9c0cc87fe3669618a2c5035"
+  },
+  {
+    "path": "data/processed/fifa-market-history/snapshots/20261013T030305-50201b7d/prices.parquet",
+    "sha256": "a62a6c722d0fd61aaa3f3a784a5a35bc32bb580b2e74f7f3a55a642fb35bd83a"
+  },
+  {
+    "path": "data/processed/fifa/current.json",
+    "sha256": "636f13efb11a026499c753f8b36982ee0a973bbac93d9b57fc994533c4eef201"
+  },
+  {
+    "path": "data/processed/fifa/snapshots/20261013T012355-c487c002/events.parquet",
+    "sha256": "570eb3bf1b0c928b4fef10fe60ef47aad659b44c94c5994c390ea744a929169a"
+  },
+  {
+    "path": "data/processed/fifa/snapshots/20261013T012355-c487c002/manifest.json",
+    "sha256": "3222675202abc4673edc10edf4cab1c92f32fe08628c7693f57a7ac68a25c141"
+  },
+  {
+    "path": "data/processed/fifa/snapshots/20261013T012355-c487c002/matches.parquet",
+    "sha256": "ef81dabc1bb5d2a9efdc54e43e9456fb39cbaffa4561011cfce6de542762be5a"
+  }
+]

@@ -4,6 +4,7 @@ import copy
 import hashlib
 import json
 import math
+import re
 
 OUTCOMES = ("home", "draw", "away")
 POSITIONS = ("flat",) + OUTCOMES
@@ -80,13 +81,29 @@ def make_config(overrides=None):
     for key, value in (overrides or {}).items():
         if key not in DEFAULTS:
             raise ValueError("Unknown config key: " + key)
-        wanted = expected(value, DEFAULTS[key])
+        wanted = (
+            None
+            if key == "fee_rate" and value == "market"
+            else expected(value, DEFAULTS[key])
+        )
         if wanted:
             raise ValueError(f"{key} must be {wanted}, got {value!r}")
         config[key] = copy.deepcopy(value)
     for key, allowed in CHOICES.items():
         if config[key] not in allowed:
             raise ValueError(key + " must be one of " + ", ".join(allowed))
+    decisions = config["decisions"]
+    order = []
+    for name in decisions:
+        found = re.fullmatch(r"h([12])\+(\d+)", name)
+        if name in ("pre", "ht"):
+            order.append((-1, 0) if name == "pre" else (1, 0))
+        elif found:
+            order.append((0 if found[1] == "1" else 2, int(found[2])))
+        else:
+            raise ValueError("decisions: unknown decision name " + name)
+    if not order or any(a >= b for a, b in zip(order, order[1:])):
+        raise ValueError("decisions must be non-empty, unique and in time order")
     return config
 
 

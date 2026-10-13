@@ -6,9 +6,7 @@ import math
 from pathlib import Path
 import random
 import re
-import sys
 import tempfile
-import types
 import unittest
 
 from app.trade_env.__main__ import main, meta_path
@@ -1242,6 +1240,11 @@ class ParseTests(unittest.TestCase):
             body = '{"probs": {"home": %s, "draw": 0.5, "away": 0.5}, "action": "buy_home"}'
             self.assertEqual(parse(body % odd, FLAT)["error"], "bad_probs", odd)
 
+    def test_zero_probabilities_are_invalid_even_with_large_tolerance(self):
+        self.assertEqual(
+            parse(answer("buy_home", (0, 0, 0)), FLAT, tol=1)["error"], "bad_probs"
+        )
+
     def test_probs_within_tolerance_are_renormalised(self):
         out = parse(answer("buy_home", (0.52, 0.31, 0.21)), FLAT)
         self.assertTrue(out["ok"])
@@ -1662,20 +1665,84 @@ class CliTests(unittest.TestCase):
                 self.assertIn(bad.split("=")[0], errors.getvalue())
                 self.assertNotIn("Traceback", errors.getvalue())
 
-    def test_build_records_is_handed_to_the_data_side(self):
-        calls = []
-        fake = types.ModuleType("app.trade_env.build_records")
-        fake.main = calls.append
-        saved = sys.modules.get("app.trade_env.build_records")
-        sys.modules["app.trade_env.build_records"] = fake
-        try:
-            main(["build-records", "--offline", "--cohort", "world-cup-2026"])
-        finally:
-            if saved is None:
-                del sys.modules["app.trade_env.build_records"]
-            else:
-                sys.modules["app.trade_env.build_records"] = saved
-        self.assertEqual(calls, [["--offline", "--cohort", "world-cup-2026"]])
+    def test_bad_decisions_fail_before_reading_or_writing(self):
+        for decision in ("[]", '["wat"]', '["h2+15","ht"]', '["ht","ht"]'):
+            with tempfile.TemporaryDirectory() as directory:
+                output = Path(directory) / "tasks.jsonl.gz"
+                error = io.StringIO()
+                with (
+                    contextlib.redirect_stderr(error),
+                    self.assertRaises(SystemExit) as stopped,
+                ):
+                    main(
+                        [
+                            "build-tasks",
+                            "--records",
+                            "/missing",
+                            "--output",
+                            str(output),
+                            "--set",
+                            "decisions=" + decision,
+                        ]
+                    )
+                self.assertEqual(stopped.exception.code, 2)
+                self.assertIn("decisions", error.getvalue())
+                self.assertFalse(output.exists())
+
+    def test_build_records_command_is_removed(self):
+        with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+            main(["build-records"])
+
+
+class TemplateAndMarketFeesTests(unittest.TestCase):
+    def test_missing_template_variable_raises(self):
+        from jinja2 import UndefinedError
+        from app.trade_env.prompt import user_prompt, system_prompt
+
+        with self.assertRaises(UndefinedError):
+            user_prompt({}, make_config())
+        with self.assertRaises(UndefinedError):
+            system_prompt({})
+
+    def test_market_fees_change_only_costs_and_are_shown(self):
+        rec = record()
+        rec["fee_rates"] = {"home": 0.0, "draw": 0.03, "away": 0.05}
+        config = make_config({"fee_rate": "market"})
+        task = match_tasks(rec, config)[0][0]
+        self.assertIn("home 0, draw 0.03, away 0.05", task["messages"][0]["content"])
+        self.assertEqual(task["scoring"]["fee_rates"], rec["fee_rates"])
+        pricing = {**config, "market_fee_rates": rec["fee_rates"]}
+        for side in OUTCOMES:
+            p = task["scoring"]["fill_prices"][side]
+            expected = task["scoring"]["end_marks"][side] - buy_cost(p, pricing, side)
+            self.assertAlmostEqual(
+                task["scoring"]["action_rewards"]["buy_" + side], expected
+            )
+        for held in match_tasks(rec, config)[0]:
+            for action in held["legal_actions"]:
+                scoring = held["scoring"]
+                start, fill, end = (
+                    scoring[k] for k in ("shown_prices", "fill_prices", "end_marks")
+                )
+                position = held["position"]
+                if action == "do_nothing":
+                    expected = 0
+                elif action == "keep":
+                    expected = end[position] - start[position]
+                else:
+                    expected = (
+                        sell_proceeds(fill[position], pricing, position)
+                        - start[position]
+                        if position != "flat"
+                        else 0
+                    )
+                    if action != "close":
+                        side = action.split("_", 1)[1]
+                        expected += end[side] - buy_cost(fill[side], pricing, side)
+                self.assertAlmostEqual(scoring["action_rewards"][action], expected)
+        del rec["fee_rates"]
+        with self.assertRaisesRegex(ValueError, "fee rates"):
+            match_tasks(rec, config)
 
 
 if __name__ == "__main__":
