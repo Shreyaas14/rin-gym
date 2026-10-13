@@ -12,36 +12,52 @@ def by_match(tasks):
     return out
 
 
-def replay_match(tasks, policy, config):
-    """Play one match's tasks with policy(task) -> a legal action or a completion.
+class Replay:
+    """One position-carrying replay; policies may supply each answer asynchronously."""
 
-    The step P&Ls add up to the match P&L: buys and sells at fill prices with
-    costs, settlement at the end. Reward also carries penalties and shaping.
-    """
-    at = {(task["t"], task["position"]): task for task in tasks}
-    position, steps = "flat", []
-    for t in sorted({task["t"] for task in tasks}):
-        task = at[(t, position)]
-        answer = policy(task)
-        if answer in task["legal_actions"]:
-            step = score_action(task, answer, config)
-        else:
-            step = score(task, answer, config)
-        steps.append({"task_id": task["id"], "decision": task["decision"], **step})
-        position = step["next_position"]
-    first = tasks[0]
-    return {
-        "match_id": first["match_id"],
-        "split": first["split"],
-        "demo": first["demo"],
-        "pnl": math.fsum(s["pnl"] for s in steps),
-        "reward": math.fsum(s["reward"] for s in steps),
-        "trades": sum(s["trades"] for s in steps),
-        "cost": math.fsum(s["cost"] for s in steps),
-        "invalid": sum(not s["valid"] for s in steps),
-        "final_position": position,
-        "steps": steps,
-    }
+    def __init__(self, tasks, config):
+        self.at = {(t["t"], t["position"]): t for t in tasks}
+        self.times = sorted({t["t"] for t in tasks})
+        self.first, self.config = tasks[0], config
+        self.position, self.steps = "flat", []
+
+    def next_task(self):
+        i = len(self.steps)
+        return self.at[(self.times[i], self.position)] if i < len(self.times) else None
+
+    def step(self, answer):
+        task = self.next_task()
+        if task is None:
+            raise ValueError("Replay is complete")
+        out = (
+            score_action(task, answer, self.config)
+            if answer in task["legal_actions"]
+            else score(task, answer, self.config)
+        )
+        self.steps.append({"task_id": task["id"], "decision": task["decision"], **out})
+        self.position = out["next_position"]
+
+    def result(self):
+        if self.next_task() is not None:
+            raise ValueError("Replay is incomplete")
+        return {
+            **{k: self.first[k] for k in ("match_id", "split", "demo")},
+            **{
+                k: math.fsum(s[k] for s in self.steps)
+                for k in ("pnl", "reward", "cost")
+            },
+            "trades": sum(s["trades"] for s in self.steps),
+            "invalid": sum(not s["valid"] for s in self.steps),
+            "final_position": self.position,
+            "steps": self.steps,
+        }
+
+
+def replay_match(tasks, policy, config):
+    replay = Replay(tasks, config)
+    while (task := replay.next_task()) is not None:
+        replay.step(policy(task))
+    return replay.result()
 
 
 def replay(tasks, make_policy, config):

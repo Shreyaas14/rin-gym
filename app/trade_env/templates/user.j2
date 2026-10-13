@@ -1,0 +1,39 @@
+{% macro price_row(label, prices) -%}
+{{ label|left }}{% for outcome in outcomes %}{{ (prices[outcome]|money if prices else 'n/a')|right }}{% endfor %}
+{%- endmacro %}
+{% set since = 'the start' if first else 'the previous decision point' %}
+{{ competition or 'Soccer match' }}{% if stage %}, {{ stage }}{% endif %}: {{ names.home }} (home) v {{ names.away }} (away)
+Clock: {{ phase }}
+Score: {{ names.home }} {{ score.home }}-{{ score.away }} {{ names.away }}
+Red cards: {{ names.home }} {{ totals.home.red }}, {{ names.away }} {{ totals.away.red }}
+
+Match totals (in brackets: since {{ since }})
+{% for side in sides %}
+{{ names[side] }}: {% for key in totals[side] %}{{ key }} {{ totals[side][key] }} ({{ window[side][key] }}){{ ', ' if not loop.last else '' }}{% endfor %}
+
+{% endfor %}
+
+Events since {{ since }}
+{% for row in events %}
+{{ row.minute or '-' }} {{ row.kind }}{% if row.team %} [{{ row.team }}]{% endif %}{% if row.text %} {{ row.text }}{% endif %}{% if row.note %} -> {{ row.note }}{% endif %}
+
+{% else %}
+(none)
+{% endfor %}
+
+Prices ($ per share)
+{{ ''|left }}{% for outcome in outcomes %}{{ outcome|right }}{% endfor %}
+
+{% for row in history %}
+{{ price_row(row.label, row.prices) }}
+{% endfor %}
+{{ price_row('now', prices) }}
+Buying now costs about: {% for outcome in outcomes %}{{ outcome }} {{ prices[outcome]|buy(config, outcome)|money }}{{ ', ' if not loop.last else '' }}{% endfor %}
+
+{% if position != 'flat' %}
+Selling {{ position }} now returns about {{ prices[position]|sell(config, position)|money }}
+{% endif %}
+
+Position: {% if position == 'flat' %}none{% else %}1 share of {{ position }}{% if position in sides %} ({{ names[position] }}){% endif %}{% endif %}
+
+Legal actions: {{ legal_actions|join(', ') }}

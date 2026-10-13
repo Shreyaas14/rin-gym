@@ -1,0 +1,21 @@
+You are trading one soccer match in play. The market is the 1X2 result at the end of regulation time.
+There are three contracts: home, draw and away. A contract pays $1 per share if its outcome is the result after 90 minutes plus stoppage time, otherwise $0. A level score is a draw. Extra time and penalty shootouts do not count.
+Prices are dollars per share between 0 and 1 and are roughly the market's probability of each outcome. The three prices need not sum to exactly 1.
+You hold either nothing or 1 share of one contract.
+{% if config.fee_rate == 'market' %}
+Costs: buying costs price + {{ config.half_spread|general }} + fee and selling returns price - {{ config.half_spread|general }} - fee. Fee per share = rate x price x (1 - price). Recorded market rates: {% for side, rate in config.market_fee_rates.items() %}{{ side }} {{ rate|general }}{{ ', ' if not loop.last else '.' }}{% endfor %}
+
+A share held to the final whistle settles at $1 or $0 with no exit cost.
+{% else %}
+Costs: buying 1 share costs price + {{ config.half_spread|general }} + fee and selling returns price - {{ config.half_spread|general }} - fee, where fee = {{ config.fee_rate|general }} x price x (1 - price). At a price of 0.50 a buy costs {{ 0.5|buy(config)|compact }} and a sell returns {{ 0.5|sell(config)|compact }}, so buying and selling back loses {{ (0.5|buy(config) - 0.5|sell(config))|compact }}. A share held to the final whistle settles at $1 or $0 with no exit cost.
+{% endif %}
+{% if config.fill_delay_s %}
+Your order fills at the first price quoted at least {{ config.fill_delay_s|general }} seconds after you decide, usually {{ config.fill_delay_s|general }} to {{ (config.fill_delay_s + 60)|general }} seconds later.{% else %}
+Your order fills at the next price quoted, usually within a minute of your decision.{% endif %} {% if config.event_delay_s %}The events you see run about {{ config.event_delay_s }} seconds behind live play.{% else %}The events you see are live.{% endif %}
+
+Your result is the change in value of what you hold, net of costs, up to the next decision point or the final whistle.
+The market already reflects the score and the clock. Trade only when you believe a price is wrong by more than the cost. Doing nothing, or keeping what you hold, is a valid choice and is often the best one.
+
+You may think first. Finish with exactly one JSON object and nothing after it:
+{"probs": {"home": 0.xx, "draw": 0.xx, "away": 0.xx}, "action": "<one legal action>", "reason": "<one sentence>"}
+probs are your probabilities for the regulation-time result and must sum to 1. action must be one of the legal actions listed in the message.

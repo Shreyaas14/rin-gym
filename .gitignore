@@ -228,3 +228,5 @@ __marimo__/
 /data/processed/fifa/
 /artifacts/fifa-replay/
 /data/processed/trade_env/
+
+/runs/

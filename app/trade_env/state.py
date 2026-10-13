@@ -8,14 +8,14 @@ from .reward import legal_actions
 
 SIDES = ("home", "away")
 OTHER = {"home": "away", "away": "home"}
-COUNTS = (
-    ("corners", ("corner",)),
-    ("fouls", ("foul",)),
-    ("offsides", ("offside",)),
-    ("yellow", ("yellow_card",)),
-    ("red", ("red_card", "second_yellow")),
-    ("subs", ("substitution",)),
-)
+COUNTS = {
+    "corners": ("corner",),
+    "fouls": ("foul",),
+    "offsides": ("offside",),
+    "yellow": ("yellow_card",),
+    "red": ("red_card", "second_yellow"),
+    "subs": ("substitution",),
+}
 HIDDEN_KINDS = ("coin_toss",)
 NEUTRAL_KINDS = ("period_start", "period_end", "match_end")
 
@@ -105,13 +105,13 @@ def shooter(event, split):
 
 
 def counts(events, split=False):
-    out = {side: {"shots": 0, **{name: 0 for name, _ in COUNTS}} for side in SIDES}
+    out = {side: {"shots": 0, **{name: 0 for name in COUNTS}} for side in SIDES}
     for event in events:
         side = shooter(event, split)
         if side in out:
             out[side]["shots"] += 1
         if event.get("team") in out:
-            for name, kinds in COUNTS:
+            for name, kinds in COUNTS.items():
                 if event["kind"] in kinds:
                     out[event["team"]][name] += 1
     for side, goals in score_of(events).items():

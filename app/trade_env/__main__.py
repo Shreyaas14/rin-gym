@@ -3,8 +3,8 @@
 import argparse
 import json
 from pathlib import Path
-import sys
 
+from .dataset import RELEASE, load_release
 from .baselines import POLICIES, SENSITIVITY, run_baselines, sensitivity
 from .config import config_hash, make_config, parse_overrides
 from .stats import SPLITS, prompt_sizes, single_step, step_summary, table
@@ -42,8 +42,8 @@ def meta_path(output):
 
 def load_tasks(args, config):
     """Tasks from --records under the given config, else the built tasks file."""
-    if args.records:
-        return build_tasks(load_records(args.records), config)[0]
+    if args.records or args.release:
+        return build_tasks(input_records(args), config)[0]
     tasks = read_tasks(args.tasks)
     built = {task["scoring"]["config_hash"] for task in tasks}
     if built != {config_hash(config)}:
@@ -85,19 +85,52 @@ def print_stats(tasks):
         print(table(single_step(part), columns))
 
 
-def main(argv=None):
-    argv = sys.argv[1:] if argv is None else list(argv)
-    if argv[:1] == ["build-records"]:
-        from .build_records import main as build_records
+def input_records(args):
+    return (
+        load_records(args.records)
+        if args.records
+        else load_release(args.release or RELEASE)
+    )
 
-        return build_records(argv[1:])
+
+def build_command(args, config):
+    tasks, summary = build_tasks(input_records(args), config)
+    if not tasks:
+        raise ValueError("No usable tasks; output was not written")
+    write_tasks(args.output, tasks)
+    write_bytes(
+        meta_path(args.output),
+        (json.dumps({"config": config, **summary}, indent=2) + "\n").encode(),
+    )
+    print(json.dumps(summary, indent=2))
+    print("Wrote", args.output)
+
+
+def stats_command(args, config):
+    print_stats(load_tasks(args, config))
+
+
+def baselines_command(args, config):
+    if args.sensitivity:
+        rows = sensitivity(
+            input_records(args), parse_overrides(args.overrides), args.policy
+        )
+        columns = list(SENSITIVITY) + BASELINE_COLUMNS
+    else:
+        rows = run_baselines(load_tasks(args, config), config, args.policy)
+        columns = BASELINE_COLUMNS
+    print(json.dumps(rows, indent=2) if args.json else table(rows, columns))
+
+
+def build_parser():
     parser = argparse.ArgumentParser(
         prog="python -m app.trade_env", description=__doc__
     )
     sub = parser.add_subparsers(dest="command", required=True)
-    sub.add_parser("build-records", help="Fetch and join match records (data side)")
     build = sub.add_parser("build-tasks", help="Turn records into tasks.jsonl.gz")
-    build.add_argument("--records", type=Path, default=ROOT / "records.jsonl.gz")
+    source = build.add_mutually_exclusive_group()
+    source.add_argument("--records", type=Path, help="Offline JSONL fixtures")
+    source.add_argument("--release", type=Path, default=RELEASE)
     build.add_argument("--output", type=Path, default=ROOT / "tasks.jsonl.gz")
     add_config(build)
     one = sub.add_parser("show", help="Print one task's prompt")
@@ -106,7 +139,9 @@ def main(argv=None):
     one.add_argument("--reveal", action="store_true", help="Also print the scoring")
     base = sub.add_parser("baselines", help="Replay the no-model policies")
     base.add_argument("--tasks", type=Path, default=ROOT / "tasks.jsonl.gz")
-    base.add_argument("--records", type=Path, help="Rebuild tasks from records")
+    source = base.add_mutually_exclusive_group()
+    source.add_argument("--records", type=Path, help="Rebuild tasks from fixtures")
+    source.add_argument("--release", type=Path, help="Rebuild tasks from release")
     base.add_argument("--policy", action="append", choices=POLICIES)
     base.add_argument(
         "--sensitivity",
@@ -117,38 +152,28 @@ def main(argv=None):
     add_config(base)
     stat = sub.add_parser("stats", help="Prompt sizes and the single-step table")
     stat.add_argument("--tasks", type=Path, default=ROOT / "tasks.jsonl.gz")
-    stat.add_argument("--records", type=Path, help="Rebuild tasks from records")
+    source = stat.add_mutually_exclusive_group()
+    source.add_argument("--records", type=Path, help="Rebuild tasks from fixtures")
+    source.add_argument("--release", type=Path, help="Rebuild tasks from release")
     add_config(stat)
+    return parser
+
+
+def main(argv=None):
+    parser = build_parser()
     args = parser.parse_args(argv)
-    if args.command == "show":
-        return show(args)
     try:
-        overrides = parse_overrides(args.overrides)
-        config = make_config(overrides)
-    except ValueError as error:
+        if args.command == "show":
+            return show(args)
+        config = make_config(parse_overrides(args.overrides))
+        commands = {
+            "build-tasks": build_command,
+            "stats": stats_command,
+            "baselines": baselines_command,
+        }
+        return commands[args.command](args, config)
+    except (ValueError, OSError) as error:
         parser.error(str(error))
-    if args.command == "build-tasks":
-        tasks, summary = build_tasks(load_records(args.records), config)
-        write_tasks(args.output, tasks)
-        meta = {"config": config, **summary}
-        write_bytes(
-            meta_path(args.output), (json.dumps(meta, indent=2) + "\n").encode()
-        )
-        print(json.dumps(summary, indent=2))
-        print("Wrote", args.output)
-    elif args.command == "stats":
-        print_stats(load_tasks(args, config))
-    elif args.sensitivity:
-        if not args.records:
-            parser.error("--sensitivity needs --records")
-        rows = sensitivity(load_records(args.records), overrides, args.policy)
-        columns = list(SENSITIVITY) + BASELINE_COLUMNS
-        print(json.dumps(rows, indent=2) if args.json else table(rows, columns))
-    else:
-        rows = run_baselines(load_tasks(args, config), config, args.policy)
-        print(
-            json.dumps(rows, indent=2) if args.json else table(rows, BASELINE_COLUMNS)
-        )
 
 
 if __name__ == "__main__":

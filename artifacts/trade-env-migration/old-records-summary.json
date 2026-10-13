@@ -1,0 +1,82 @@
+{
+  "schema": "match_record/v1",
+  "matches": 484,
+  "records": 484,
+  "excluded": 0,
+  "competitions": {
+    "2000000000": {
+      "cohort": "premier-league-2025-26",
+      "matches": 380,
+      "records": 380,
+      "excluded": 0,
+      "results": {
+        "home": 162,
+        "draw": 104,
+        "away": 114
+      },
+      "extra_time": 0,
+      "stages": {
+        "Regular Season": 380
+      },
+      "events": 31159,
+      "price_points": 204400,
+      "price_coverage": {
+        "in_play_minutes": 37715,
+        "fresh_minutes": 37679,
+        "fresh_share": 0.999045,
+        "matches_fully_fresh": 369,
+        "lowest_match_share": {
+          "match_id": "4w69cq7gxy6jlk8hwflij7cic",
+          "fresh_share": 0.76
+        },
+        "price_sum_min": 0.455,
+        "price_sum_max": 1.78
+      }
+    },
+    "17": {
+      "cohort": "world-cup-2026",
+      "matches": 104,
+      "records": 104,
+      "excluded": 0,
+      "results": {
+        "home": 46,
+        "draw": 29,
+        "away": 29
+      },
+      "extra_time": 9,
+      "stages": {
+        "First Stage": 72,
+        "Round of 32": 16,
+        "Round of 16": 8,
+        "Quarter-final": 4,
+        "Semi-final": 2,
+        "Bronze final": 1,
+        "Final": 1
+      },
+      "events": 9183,
+      "price_points": 57282,
+      "price_coverage": {
+        "in_play_minutes": 10533,
+        "fresh_minutes": 10533,
+        "fresh_share": 1.0,
+        "matches_fully_fresh": 104,
+        "lowest_match_share": {
+          "match_id": "400021440",
+          "fresh_share": 1.0
+        },
+        "price_sum_min": 0.695,
+        "price_sum_max": 1.285
+      }
+    }
+  },
+  "exclusions": [],
+  "price_coverage_rule": "in-play minutes are a 60 s grid from h1_start+120 s to h2_end, halftime skipped; a minute is fresh when all three YES prices are at most 90 s old; price_sum is the sum of the three raw prices over fresh minutes",
+  "dataset_version": "20261013T023027-f6e299ad",
+  "output": {
+    "file": "records.jsonl.gz",
+    "records": 484,
+    "bytes": 2764583,
+    "sha256": "e6db1d090536b0ccbb7d21c0b20644b07fbea7f4b6c748f88a2497ba80f8acbb",
+    "jsonl_sha256": "ae58d4538c4308bb2c6d0f9137c462c8c0074cd3a2133f1fa2ebcd8f27313293"
+  }
+}

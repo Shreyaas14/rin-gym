@@ -1,13 +1,13 @@
 # Running the data pipelines
 
-Run commands from the repository root with Python 3.11+. No third-party Python dependencies are needed for these pipelines.
+Run commands from the repository root with `uv` (Python 3.12). These audit pipelines use the standard library.
 
 ```sh
-python3 -m pipelines.sports_data.run_audit
-python3 -m pipelines.sports_data.analyze
-python3 -m pipelines.sports_data.verify
-python3 -m pipelines.sports_data.fifa_census
-python3 -m pipelines.sports_data.fifa_join
+uv run --locked python -m pipelines.sports_data.run_audit
+uv run --locked python -m pipelines.sports_data.analyze
+uv run --locked python -m pipelines.sports_data.verify
+uv run --locked python -m pipelines.sports_data.fifa_census
+uv run --locked python -m pipelines.sports_data.fifa_join
 ```
 
 `run_audit` acquires and analyzes the NBA/EPL/Euro cohorts. The committed NBA/EPL selection manifests freeze the original 20-game samples. `analyze` recomputes metrics from the cache; `verify` checks the 60-game invariants and hashes of cached sources.
@@ -30,9 +30,9 @@ Some analysis functions retain cohort-specific checks and an explicitly document
 The [FIFA Parquet guide](fifa-parquet.md) covers ingestion of Premier League 2025/26 and World Cup 2026, immutable snapshots, validation, and the adapter for the existing FIFA replay visualization.
 
 ```sh
-python3 -m pip install -r pipelines/fifa/requirements.txt
-python3 -m pipelines.fifa ingest
-python3 -m pipelines.fifa verify --cache data/raw/fifa
+uv sync --locked
+uv run --locked python -m pipelines.fifa ingest
+uv run --locked python -m pipelines.fifa verify --cache data/raw/fifa
 ```
 
 This new pipeline requires PyArrow; the earlier CSV audit commands above retain their existing dependencies.

@@ -1,0 +1,220 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "renderer": "qwen3_disable_thinking",
+  "checked_on": "2026-10-13",
+  "pricing_source": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+  "rates_per_million_usd": {
+    "prefill": 0.195,
+    "cached_prefill": 0.039,
+    "sample": 0.6,
+    "train": 0.44
+  },
+  "storage_usd_per_gb_month": 0.1,
+  "tasks_sha256": "c75246b689d3abcd2b0906e4a60eb35927249bd29865f2647cf9c1e94ebede65",
+  "settings": {
+    "epochs": 1,
+    "groups_per_batch": 8,
+    "group_size": 8,
+    "max_tokens": 256,
+    "eval_every": 10,
+    "eval_max_tasks": 200,
+    "replay_matches": 72
+  },
+  "train_matches": 380,
+  "train_trajectories": 3040,
+  "optimizer_steps": 48,
+  "evaluation_steps": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    48
+  ],
+  "eval_matches": 72,
+  "eval_decisions": 359,
+  "diagnostic_eval_tasks": 200,
+  "train": {
+    "calls": 14744,
+    "prompt_min": 16170608,
+    "prompt_equal_position_mean": 16322486.0,
+    "prompt_max": 16396776
+  },
+  "evaluation": {
+    "calls": 3354,
+    "prompt_min": 3706668,
+    "prompt_equal_position_mean": 3728266.5,
+    "prompt_max": 3738126
+  },
+  "all_rendered_prompts": {
+    "count": 9448,
+    "min": 792,
+    "max": 1599
+  },
+  "scenarios": [
+    {
+      "answer_tokens_assumed": 64,
+      "position_assumption": "min",
+      "prefill_tokens": 19877276,
+      "sample_tokens": 1158272,
+      "train_input_tokens": 17099480,
+      "cost_usd": {
+        "prefill": 3.8760688200000004,
+        "sample": 0.6949632,
+        "train": 7.5237712000000005
+      },
+      "total_usd": 12.094803220000001
+    },
+    {
+      "answer_tokens_assumed": 64,
+      "position_assumption": "equal_position_mean",
+      "prefill_tokens": 20050752.5,
+      "sample_tokens": 1158272,
+      "train_input_tokens": 17251358.0,
+      "cost_usd": {
+        "prefill": 3.9098967375000004,
+        "sample": 0.6949632,
+        "train": 7.59059752
+      },
+      "total_usd": 12.1954574575
+    },
+    {
+      "answer_tokens_assumed": 64,
+      "position_assumption": "max",
+      "prefill_tokens": 20134902,
+      "sample_tokens": 1158272,
+      "train_input_tokens": 17325648,
+      "cost_usd": {
+        "prefill": 3.92630589,
+        "sample": 0.6949632,
+        "train": 7.62328512
+      },
+      "total_usd": 12.24455421
+    },
+    {
+      "answer_tokens_assumed": 80,
+      "position_assumption": "min",
+      "prefill_tokens": 19877276,
+      "sample_tokens": 1447840,
+      "train_input_tokens": 17335384,
+      "cost_usd": {
+        "prefill": 3.8760688200000004,
+        "sample": 0.868704,
+        "train": 7.62756896
+      },
+      "total_usd": 12.37234178
+    },
+    {
+      "answer_tokens_assumed": 80,
+      "position_assumption": "equal_position_mean",
+      "prefill_tokens": 20050752.5,
+      "sample_tokens": 1447840,
+      "train_input_tokens": 17487262.0,
+      "cost_usd": {
+        "prefill": 3.9098967375000004,
+        "sample": 0.868704,
+        "train": 7.69439528
+      },
+      "total_usd": 12.4729960175
+    },
+    {
+      "answer_tokens_assumed": 80,
+      "position_assumption": "max",
+      "prefill_tokens": 20134902,
+      "sample_tokens": 1447840,
+      "train_input_tokens": 17561552,
+      "cost_usd": {
+        "prefill": 3.92630589,
+        "sample": 0.868704,
+        "train": 7.72708288
+      },
+      "total_usd": 12.52209277
+    },
+    {
+      "answer_tokens_assumed": 128,
+      "position_assumption": "min",
+      "prefill_tokens": 19877276,
+      "sample_tokens": 2316544,
+      "train_input_tokens": 18043096,
+      "cost_usd": {
+        "prefill": 3.8760688200000004,
+        "sample": 1.3899264,
+        "train": 7.93896224
+      },
+      "total_usd": 13.204957460000001
+    },
+    {
+      "answer_tokens_assumed": 128,
+      "position_assumption": "equal_position_mean",
+      "prefill_tokens": 20050752.5,
+      "sample_tokens": 2316544,
+      "train_input_tokens": 18194974.0,
+      "cost_usd": {
+        "prefill": 3.9098967375000004,
+        "sample": 1.3899264,
+        "train": 8.00578856
+      },
+      "total_usd": 13.3056116975
+    },
+    {
+      "answer_tokens_assumed": 128,
+      "position_assumption": "max",
+      "prefill_tokens": 20134902,
+      "sample_tokens": 2316544,
+      "train_input_tokens": 18269264,
+      "cost_usd": {
+        "prefill": 3.92630589,
+        "sample": 1.3899264,
+        "train": 8.03847616
+      },
+      "total_usd": 13.35470845
+    },
+    {
+      "answer_tokens_assumed": 256,
+      "position_assumption": "min",
+      "prefill_tokens": 19877276,
+      "sample_tokens": 4633088,
+      "train_input_tokens": 19930328,
+      "cost_usd": {
+        "prefill": 3.8760688200000004,
+        "sample": 2.7798528,
+        "train": 8.76934432
+      },
+      "total_usd": 15.425265940000001
+    },
+    {
+      "answer_tokens_assumed": 256,
+      "position_assumption": "equal_position_mean",
+      "prefill_tokens": 20050752.5,
+      "sample_tokens": 4633088,
+      "train_input_tokens": 20082206.0,
+      "cost_usd": {
+        "prefill": 3.9098967375000004,
+        "sample": 2.7798528,
+        "train": 8.83617064
+      },
+      "total_usd": 15.525920177500002
+    },
+    {
+      "answer_tokens_assumed": 256,
+      "position_assumption": "max",
+      "prefill_tokens": 20134902,
+      "sample_tokens": 4633088,
+      "train_input_tokens": 20156496,
+      "cost_usd": {
+        "prefill": 3.92630589,
+        "sample": 2.7798528,
+        "train": 8.86885824
+      },
+      "total_usd": 15.57501693
+    }
+  ],
+  "assumptions": [
+    "All prompt variants counted using actual Qwen tokenizer and renderer. First decision is always flat; later positions depend on policy.",
+    "Answer lengths are scenarios, not measurements of a real model. Fake-service answer lengths are not a prediction.",
+    "Every sampling request charged at full uncached prefill rate. Cache discounts can lower cost.",
+    "Training counts all prompt and completion input tokens (minus shift by one), including masked prompt positions.",
+    "Excludes retries, extra experiments and checkpoint storage. Storage rate is shown separately.",
+    "No actual Tinker service calls."
+  ]
+}

@@ -1,27 +1,28 @@
 """The Tinker trainer adapter, offline: no API key, no model, a fake service."""
 
 import asyncio
+import copy
 import contextlib
 import hashlib
 import io
 import json
 import logging
 import math
+import os
 from pathlib import Path
 import tempfile
 import unittest
 from unittest import mock
 
-try:
-    import tinker
-    from tinker_cookbook.rl import train
-    from tinker_cookbook.rl.data_processing import (
-        assemble_training_data,
-        compute_advantages,
-    )
-    from tinker_cookbook.rl.rollouts import do_group_rollout
-except ImportError:
-    raise unittest.SkipTest("tinker-cookbook is not installed: requirements-train.txt")
+import tinker
+import torch
+from tinker_cookbook.rl import train
+from tinker_cookbook.rl.data_processing import (
+    assemble_training_data,
+    compute_advantages,
+)
+from tinker_cookbook.rl.rollouts import do_group_rollout
+from tests.trade_env.fake_tinker import FakeTinker, ScriptedCompleter
 
 from app.trade_env import train_tinker as tt
 from app.trade_env.config import make_config
@@ -34,10 +35,7 @@ FIXTURES = Path(__file__).parent / "fixtures" / "records.jsonl.gz"
 CONFIG = make_config()
 TASKS = build_tasks(load_records(FIXTURES), CONFIG)[0]
 BUILDER = tt.TradeDatasetBuilder(groups_per_batch=6, group_size=5)
-try:
-    RENDERER = BUILDER.renderer()
-except Exception as error:  # the tokenizer is neither cached nor downloadable
-    raise unittest.SkipTest(f"No tokenizer for {BUILDER.model_name}: {error}")
+RENDERER = BUILDER.renderer()  # missing tokenizer is a test failure, never a skip
 TOKENIZER = RENDERER.tokenizer
 STOP = RENDERER.get_stop_sequences()[0]
 SCALE = BUILDER.reward_scale
@@ -71,7 +69,7 @@ def step(one, text, finished=True, config=CONFIG):
     return asyncio.run(env.step(tokens(text, finished)))
 
 
-class SamePromptSameAnswer(tt.ScriptedCompleter):
+class SamePromptSameAnswer(ScriptedCompleter):
     """The scripted policy made a function of the prompt, and a count of its calls."""
 
     calls = 0
@@ -82,14 +80,14 @@ class SamePromptSameAnswer(tt.ScriptedCompleter):
         return super().answer(prompt)
 
 
-class BareAction(tt.ScriptedCompleter):
+class BareAction(ScriptedCompleter):
     """Drops the JSON: the first legal action as the whole answer."""
 
     def answer(self, prompt):
         return prompt.split("Legal actions: ")[-1].split(",")[0].strip(), True
 
 
-class StillWhenFlat(tt.ScriptedCompleter):
+class StillWhenFlat(ScriptedCompleter):
     """Every flat group agrees on do_nothing, so its reward is constant; the groups
     that hold a position get a mix of legal answers and junk."""
 
@@ -100,7 +98,7 @@ class StillWhenFlat(tt.ScriptedCompleter):
         return answer(legal[self.rng.randrange(3)]), True
 
 
-class ResumableFake(tt.FakeTinker):
+class ResumableFake(FakeTinker):
     """The dry-run fake plus the two calls the cookbook makes when it resumes."""
 
     resumed = None
@@ -250,6 +248,16 @@ class GroupTests(unittest.TestCase):
         self.assertTrue(prompt_text(one).endswith("</think>\n\n"))
         self.assertNotIn("action_rewards", prompt_text(one))
 
+    def test_hidden_labels_never_enter_the_model_input(self):
+        original = task()
+        changed = copy.deepcopy(original)
+        changed["scoring"] = {"secret": "FUTURE_RESULT_SENTINEL"}
+        changed["match_id"] = "HIDDEN_MATCH_SENTINEL"
+        changed["id"] = "HIDDEN_TASK_SENTINEL"
+        envs = [tt.TradeEnv(t, RENDERER, CONFIG, SCALE) for t in (original, changed)]
+        observations = [asyncio.run(e.initial_observation())[0].to_ints() for e in envs]
+        self.assertEqual(*observations)
+
     def test_logging_tags(self):
         def tags(one):
             return tt.TradeGroupBuilder(one, RENDERER, CONFIG, 1, SCALE).logging_tags()
@@ -257,25 +265,16 @@ class GroupTests(unittest.TestCase):
         self.assertEqual(tags(task("flat", "train")), ["train", "flat"])
         self.assertEqual(tags(task("draw", "val")), ["val", "holding"])
 
-    def test_groups_lose_the_position_tag_when_constant_groups_are_dropped(self):
-        def tags(dataset):
-            return {tuple(group.logging_tags()) for group in dataset.get_batch(0)}
-
-        builder = tt.TradeDatasetBuilder(remove_constant_reward_groups=True)
-        trained, held = builder.datasets(TASKS, RENDERER)
-        self.assertEqual(tags(trained), {("train",)})
-        self.assertEqual(tags(held), {("val", "flat"), ("val", "holding")})
-        trained, _ = tt.TradeDatasetBuilder().datasets(TASKS, RENDERER)
-        self.assertEqual(tags(trained), {("train", "flat"), ("train", "holding")})
-
 
 class TrainingDataTests(unittest.TestCase):
     """Real cookbook rollouts and data assembly, driven by the scripted completer."""
 
     @classmethod
     def setUpClass(cls):
-        dataset, _ = BUILDER.datasets(TASKS, RENDERER)
-        policy = tt.ScriptedCompleter(TOKENIZER)
+        dataset = tt.TradeDataset(
+            TASKS, lambda t: tt.TradeGroupBuilder(t, RENDERER, CONFIG, 5, SCALE), 6
+        )
+        policy = ScriptedCompleter(TOKENIZER)
 
         async def collect():
             return [await do_group_rollout(g, policy) for g in dataset.get_batch(0)]
@@ -314,6 +313,40 @@ class TrainingDataTests(unittest.TestCase):
             self.assertAlmostEqual(sum(advantages.tolist()), 0.0, places=5)
         self.assertGreater(mixed, 0)
 
+    def test_constant_groups_have_zero_advantage(self):
+        group = copy.deepcopy(self.groups[0])
+        for trajectory in group.trajectories_G:
+            trajectory.transitions[0].reward = 0.25
+        group.final_rewards_G[:] = [0.0] * len(group.trajectories_G)
+        self.assertEqual(compute_advantages([group])[0].tolist(), [0.0] * 5)
+
+    def test_local_policy_gradient_increases_expected_trading_reward(self):
+        # An exact four-action, one-token policy isolates the update's sign.
+        # This checks our rewards + cookbook advantages + documented IS loss;
+        # it does not pretend to test the remote Tinker optimizer.
+        one = task()
+        rewards = torch.tensor(
+            [score(one, answer(a), CONFIG)["reward"] for a in one["legal_actions"]]
+        )
+        group = tt.rl.TrajectoryGroup(
+            trajectories_G=[
+                tt.rl.Trajectory(transitions=[], final_ob=None) for _ in rewards
+            ],
+            final_rewards_G=rewards.tolist(),
+            metrics_G=[{} for _ in rewards],
+        )
+        advantages = compute_advantages([group])[0]
+        logits = torch.zeros(4, requires_grad=True)
+        old_logprobs = logits.log_softmax(0).detach()
+        before = (logits.softmax(0) * rewards).sum().item()
+        optimizer = torch.optim.Adam([logits], lr=0.01)
+        loss = -(torch.exp(logits.log_softmax(0) - old_logprobs) * advantages).sum()
+        loss.backward()
+        self.assertTrue(torch.isfinite(logits.grad).all())
+        self.assertLess(logits.grad[rewards.argmax()].item(), 0)
+        optimizer.step()
+        self.assertGreater((logits.softmax(0) * rewards).sum().item(), before)
+
     def test_datums_carry_only_rl_inputs_and_no_advantage_on_the_prompt(self):
         data, places = assemble_training_data(self.groups, self.advantages)
         self.assertEqual(len(data), 30)
@@ -338,67 +371,146 @@ class TrainingDataTests(unittest.TestCase):
                 self.assertAlmostEqual(value, sampled, places=5)
 
 
+class TrajectoryTests(unittest.TestCase):
+    def setUp(self):
+        self.match = next(
+            iter(tt.by_match([t for t in TASKS if t["split"] == "train"]).values())
+        )
+
+    def test_position_carries_and_return_equals_cash_flow(self):
+        env = tt.MatchEnv(self.match, RENDERER, CONFIG, 1.0)
+        actions = ["buy_home", "switch_draw", "close", "buy_away", "keep"]
+        results, cash, held = [], 0.0, None
+        for i, action in enumerate(actions):
+            one = env.task
+            fill = one["scoring"]["fill_prices"]
+
+            def fee(p):
+                return 0.05 * p * (1 - p)
+
+            if action == "close" or action.startswith("switch_"):
+                p = fill[held]
+                cash += max(0.0, min(p, max(0.001, p - 0.01)) - fee(p))
+                held = None
+            if action.startswith(("buy_", "switch_")):
+                held = action.split("_", 1)[1]
+                p = fill[held]
+                cash -= min(1.0, max(p, min(0.999, p + 0.01)) + fee(p))
+            result = asyncio.run(env.step(tokens(answer(action))))
+            results.append(result)
+            self.assertEqual(result.episode_done, i == 4)
+            if i < 4:
+                self.assertEqual(env.task["position"], held or "flat")
+                self.assertIn(
+                    "Position:", TOKENIZER.decode(result.next_observation.to_ints())
+                )
+        cash += float(held == one["scoring"]["result"])
+        self.assertAlmostEqual(sum(r.reward for r in results), cash)
+        self.assertEqual(results[-1].next_observation.length, 0)
+        with self.assertRaisesRegex(ValueError, "complete"):
+            asyncio.run(env.step(tokens(answer("keep"))))
+
+    def test_invalid_or_truncated_answer_continues_holding(self):
+        env = tt.MatchEnv(self.match, RENDERER, CONFIG, 1.0)
+        asyncio.run(env.step(tokens(answer("buy_home"))))
+        for ids in (tokens("buy_away"), tokens(answer("close"), finished=False)):
+            result = asyncio.run(env.step(ids))
+            self.assertFalse(result.episode_done)
+            self.assertEqual(env.task["position"], "home")
+            self.assertEqual(result.metrics["valid"], 0.0)
+            self.assertAlmostEqual(
+                result.reward, result.metrics["pnl"] - CONFIG["invalid_penalty"]
+            )
+
+    def test_whole_return_advantage_reaches_every_generated_turn(self):
+        group = tt.MatchGroupBuilder(self.match, RENDERER, CONFIG, 8, 1.0)
+        rolled = asyncio.run(do_group_rollout(group, ScriptedCompleter(TOKENIZER)))
+        advantages = compute_advantages([rolled])
+        self.assertEqual(rolled.final_rewards_G, [0.0] * 8)
+        self.assertEqual([len(t.transitions) for t in rolled.trajectories_G], [5] * 8)
+        self.assertGreater(advantages[0].abs().sum().item(), 0)
+        data, places = assemble_training_data([rolled], advantages)
+        self.assertEqual(len(data), 40)
+        for i, trajectory in enumerate(rolled.trajectories_G):
+            expected = sum(t.reward for t in trajectory.transitions)
+            self.assertAlmostEqual(rolled.get_total_rewards()[i], expected)
+            self.assertAlmostEqual(
+                rolled.metrics_G[i]["pnl_per_match"],
+                sum(t.metrics["pnl"] for t in trajectory.transitions),
+            )
+        for datum, place in zip(data, places):
+            mask = datum.loss_fn_inputs["mask"].to_torch().bool()
+            advantage = datum.loss_fn_inputs["advantages"].to_torch()
+            self.assertTrue(torch.all(advantage[~mask] == 0))
+            self.assertTrue(
+                torch.allclose(
+                    advantage[mask],
+                    advantages[0][place["traj_idx"]].expand_as(advantage[mask]),
+                )
+            )
+        # Changing only the last reward changes the FIRST turn's advantage too.
+        altered = copy.deepcopy(rolled)
+        altered.trajectories_G[0].transitions[-1].reward += 1
+        changed = compute_advantages([altered])
+        self.assertAlmostEqual(
+            (changed[0][0] - advantages[0][0]).item(), 7 / 8, places=5
+        )
+
+    def test_trajectories_do_not_share_positions(self):
+        group = tt.MatchGroupBuilder(self.match, RENDERER, CONFIG, 2, 1.0)
+        left, right = asyncio.run(group.make_envs())
+        asyncio.run(left.step(tokens(answer("buy_home"))))
+        self.assertEqual(right.task["position"], "flat")
+        self.assertEqual(right.index, 0)
+
+
 class DatasetTests(unittest.TestCase):
-    def ids(self, dataset, batches):
-        return [group.task["id"] for i in batches for group in dataset.get_batch(i)]
-
-    def test_an_epoch_covers_each_task_exactly_once(self):
-        builder = tt.TradeDatasetBuilder(groups_per_batch=6, group_size=3, epochs=3)
-        dataset, _ = builder.datasets(TASKS, RENDERER)
-        train_ids = sorted(t["id"] for t in TASKS if t["split"] == "train")
-        self.assertEqual(len(train_ids), 20)
-        self.assertEqual(len(dataset), 3 * 4)
-        epochs = [self.ids(dataset, range(4 * e, 4 * e + 4)) for e in range(3)]
-        for order in epochs:
-            self.assertEqual(sorted(order), train_ids)
-        self.assertNotEqual(epochs[0], epochs[1])
-        self.assertNotEqual(epochs[1], epochs[2])
-        self.assertEqual([len(dataset.get_batch(i)) for i in range(4)], [6, 6, 6, 2])
-        for group in dataset.get_batch(0):
+    def test_each_epoch_contains_each_match_once(self):
+        builder = tt.TradeDatasetBuilder(groups_per_batch=1, group_size=3, epochs=3)
+        dataset, held = builder.datasets(TASKS, RENDERER)
+        self.assertEqual(len(dataset), 3)  # fixture has one training match
+        for i in range(3):
+            (group,) = dataset.get_batch(i)
+            self.assertEqual(len(group.tasks), 20)
             self.assertEqual(group.group_size, 3)
-            self.assertEqual(group.reward_scale, 5.0)
+            self.assertEqual({t["split"] for t in group.tasks}, {"train"})
+        self.assertEqual(len(held.tasks), 40)
 
-    def test_the_order_is_fixed_by_the_seed(self):
-        def order(seed):
-            builder = tt.TradeDatasetBuilder(groups_per_batch=6, epochs=2, seed=seed)
-            dataset, _ = builder.datasets(TASKS, RENDERER)
-            return self.ids(dataset, range(len(dataset)))
+    def test_match_order_is_seeded_and_reshuffled(self):
+        matches = [
+            [dict(t, match_id=str(i)) for t in TASKS if t["split"] == "train"]
+            for i in range(12)
+        ]
 
-        self.assertEqual(order(0), order(0))
-        self.assertNotEqual(order(0), order(1))
+        def order(seed, epoch):
+            dataset = tt.TradeDataset(matches, lambda m: m, 5, epochs=2, seed=seed)
+            return [
+                m[0]["match_id"]
+                for b in range(epoch * 3, epoch * 3 + 3)
+                for m in dataset.get_batch(b)
+            ]
 
-    def test_eval_set_is_a_seeded_sample_with_one_completion_per_task(self):
+        self.assertEqual(order(0, 0), order(0, 0))
+        self.assertNotEqual(order(0, 0), order(0, 1))
+        self.assertNotEqual(order(0, 0), order(1, 0))
+        self.assertEqual(sorted(order(0, 1)), sorted(str(i) for i in range(12)))
+
+    def test_eval_remains_a_single_decision_diagnostic(self):
         builder = tt.TradeDatasetBuilder(eval_max_tasks=7)
         _, held = builder.datasets(TASKS, RENDERER)
-        self.assertEqual(len(held), 1)
         groups = held.get_batch(0)
         self.assertEqual(len(groups), 7)
-        self.assertEqual({group.task["split"] for group in groups}, {"val"})
-        self.assertEqual({group.group_size for group in groups}, {1})
-        self.assertEqual(len({group.task["id"] for group in groups}), 7)
+        self.assertEqual({g.task["split"] for g in groups}, {"val"})
+        self.assertEqual({g.group_size for g in groups}, {1})
         again = builder.datasets(TASKS, RENDERER)[1]
-        self.assertEqual(self.ids(held, [0]), self.ids(again, [0]))
-        everything = tt.TradeDatasetBuilder().datasets(TASKS, RENDERER)[1]
-        self.assertEqual(len(everything.get_batch(0)), 40)
-
-    def test_flat_share_thins_the_holding_tasks(self):
-        def positions(flat_share):
-            builder = tt.TradeDatasetBuilder(flat_share=flat_share)
-            dataset, _ = builder.datasets(TASKS, RENDERER)
-            return [t["position"] == "flat" for t in dataset.tasks]
-
-        self.assertEqual((sum(positions(None)), len(positions(None))), (5, 20))
-        self.assertEqual((sum(positions(0.5)), len(positions(0.5))), (5, 10))
-        self.assertEqual((sum(positions(1.0)), len(positions(1.0))), (5, 5))
-        self.assertEqual(len(positions(0.1)), 20)
-        with self.assertRaises(ValueError):
-            positions(0.0)
+        self.assertEqual(held.tasks, again.tasks)
 
     def test_a_split_without_tasks(self):
         with self.assertRaises(ValueError):
             tt.TradeDatasetBuilder(train_split="nope").datasets(TASKS, RENDERER)
-        _, held = tt.TradeDatasetBuilder(eval_split="nope").datasets(TASKS, RENDERER)
-        self.assertIsNone(held)
+        self.assertIsNone(
+            tt.TradeDatasetBuilder(eval_split="nope").datasets(TASKS, RENDERER)[1]
+        )
 
 
 class ReplayEvaluatorTests(unittest.TestCase):
@@ -464,11 +576,24 @@ class ReplayEvaluatorTests(unittest.TestCase):
 
 class LauncherTests(unittest.TestCase):
     def setUp(self):
+        credentials = mock.patch.dict(
+            os.environ, {"TINKER_API_KEY": "test-only-not-a-real-key"}
+        )
+        credentials.start()
+        self.addCleanup(credentials.stop)
         folder = tempfile.TemporaryDirectory()
         self.addCleanup(folder.cleanup)
         self.root = Path(folder.name)
         self.runs = self.root / "runs"
-        write_tasks(self.root / "tasks.jsonl.gz", TASKS)
+        self.tasks = [t for t in TASKS if t["split"] != "train"]
+        for i in range(20):
+            self.tasks += [
+                dict(t, id=f"{i}:{t['id']}", match_id=f"train-{i}")
+                for t in TASKS
+                if t["split"] == "train"
+            ]
+        self.tasks.sort(key=lambda t: t["split"] != "train")
+        write_tasks(self.root / "tasks.jsonl.gz", self.tasks)
         self.args = [
             f"tasks_path={self.root / 'tasks.jsonl.gz'}",
             f"runs_dir={self.runs}",
@@ -480,7 +605,7 @@ class LauncherTests(unittest.TestCase):
 
     def launch(self, *args, policy=None):
         """confirm=true against a fake service: (the fake, what was printed)."""
-        fake = ResumableFake(policy or tt.ScriptedCompleter(TOKENIZER))
+        fake = ResumableFake(policy or ScriptedCompleter(TOKENIZER))
         with mock.patch.object(tinker, "ServiceClient", return_value=fake):
             with quiet() as out:
                 tt.main(self.args + ["confirm=true", *args])
@@ -524,6 +649,9 @@ class LauncherTests(unittest.TestCase):
         self.assertEqual((first.max_tokens, first.max_steps), (256, None))
         self.assertEqual((first.eval_every, first.save_every), (10, 20))
         self.assertEqual(first.kl_penalty_coef, 0.0)
+        self.assertEqual(first.num_substeps, 1)
+        self.assertEqual(first.temperature, 1.0)
+        self.assertIsNone(first.async_config)
         self.assertEqual(first.dataset_builder.group_size, 4)
         self.assertEqual(Path(first.log_path).parent, self.runs)
         self.assertEqual(first.log_path, second.log_path)
@@ -550,20 +678,19 @@ class LauncherTests(unittest.TestCase):
 
     def test_defaults(self):
         cli = tt.CLI()
-        self.assertEqual((cli.group_size, cli.groups_per_batch, cli.epochs), (8, 64, 1))
-        self.assertEqual((cli.reward_scale, cli.eval_max_tasks), (5.0, 200))
+        self.assertEqual((cli.group_size, cli.groups_per_batch, cli.epochs), (8, 8, 1))
+        self.assertEqual((cli.reward_scale, cli.eval_max_tasks), (1.0, 200))
         self.assertEqual((cli.train_split, cli.eval_split), ("train", "val"))
         self.assertEqual(cli.tasks_path, "data/processed/trade_env/tasks.jsonl.gz")
         self.assertEqual(cli.runs_dir, "runs/trade_env")
         self.assertFalse(cli.confirm or cli.dry_run)
-        self.assertFalse(cli.remove_constant_reward_groups)
         self.assertIn(cli.model_name, tt.PRICES)
 
     def test_estimate_counts_the_run(self):
         cli = tt.chz.entrypoint(tt.CLI, argv=self.args + ["epochs=2", "eval_every=3"])
         est = tt.estimate(cli)
-        self.assertEqual((est["train_tasks"], est["steps"]), (20, 10))
-        self.assertEqual(est["train_rollouts"], 2 * 20 * 4)
+        self.assertEqual((est["train_matches"], est["steps"]), (20, 10))
+        self.assertEqual(est["train_rollouts"], 2 * 20 * 4 * 5)
         self.assertEqual(est["evals"], 4 + 1)  # before steps 0, 3, 6, 9 and at the end
         self.assertEqual(est["eval_rollouts"], 5 * (8 + 2 * 5))
         sampled = est["train_rollouts"] + est["eval_rollouts"]
@@ -581,16 +708,18 @@ class LauncherTests(unittest.TestCase):
         self.assertAlmostEqual(est["dollars"], dollars, places=2)
         self.assertGreater(est["dollars_max"], est["dollars"])
         capped = tt.estimate(tt.chz.replace(cli, max_steps=3))
-        self.assertEqual((capped["steps"], capped["train_rollouts"]), (3, 3 * 4 * 4))
+        self.assertEqual(
+            (capped["steps"], capped["train_rollouts"]), (3, 3 * 4 * 4 * 5)
+        )
         self.assertEqual(capped["evals"], 1 + 1)
         rest = tt.estimate(cli, start=7)  # steps 7, 8, 9: one eval, and the final one
-        self.assertEqual((rest["steps"], rest["train_rollouts"]), ("3 (7 to 10)", 48))
+        self.assertEqual((rest["steps"], rest["train_rollouts"]), ("3 (7 to 10)", 240))
         self.assertEqual((rest["evals"], rest["eval_rollouts"]), (2, 2 * 18))
         none = tt.estimate(tt.chz.replace(cli, eval_every=0))
         self.assertEqual((none["evals"], none["eval_rollouts"]), (0, 0))
         digest = hashlib.sha256((self.root / "tasks.jsonl.gz").read_bytes()).hexdigest()
         self.assertIn(digest[:12], est["tasks_file"])
-        self.assertIn(TASKS[0]["scoring"]["config_hash"], est["tasks_file"])
+        self.assertIn(self.tasks[0]["scoring"]["config_hash"], est["tasks_file"])
 
     def test_estimate_works_without_a_tokenizer_or_a_price(self):
         cli = tt.chz.entrypoint(tt.CLI, argv=self.args + ["model_name=Qwen/Nope"])
@@ -654,6 +783,91 @@ class LauncherTests(unittest.TestCase):
                     self.assertEqual(printed, "")
         self.assertFalse(self.runs.exists())
 
+    def test_trajectory_training_rejects_non_pnl_shaping(self):
+        for option in ("w_log=0.2", "w_missed=1"):
+            message, printed = self.refused(option, "confirm=true")
+            self.assertIn("optimize P&L directly", message)
+            self.assertEqual(printed, "")
+
+    def test_broken_reward_chain_fails_before_client(self):
+        changed = copy.deepcopy(self.tasks)
+        changed[0]["scoring"]["chunk_end"] = "settlement"
+        write_tasks(self.root / "tasks.jsonl.gz", changed)
+        message, printed = self.refused("confirm=true")
+        self.assertIn("Broken reward chain", message)
+        self.assertEqual(printed, "")
+
+    def test_bad_rl_loss_fails_before_client(self):
+        message, printed = self.refused("loss_fn=cross_entropy", "confirm=true")
+        self.assertIn("loss_fn must be", message)
+        self.assertEqual(printed, "")
+
+    def test_match_cannot_cross_split_boundaries(self):
+        changed = [dict(t) for t in self.tasks]
+        changed[0]["split"] = "val"
+        write_tasks(self.root / "tasks.jsonl.gz", changed)
+        message, printed = self.refused("confirm=true")
+        self.assertIn("multiple splits", message)
+        self.assertEqual(printed, "")
+
+    def test_incomplete_replay_and_duplicate_tasks_fail_early(self):
+        for tasks, expected in (
+            (self.tasks[1:], "Incomplete position"),
+            (self.tasks + self.tasks[:1], "Duplicate task"),
+        ):
+            write_tasks(self.root / "tasks.jsonl.gz", tasks)
+            message, printed = self.refused("confirm=true")
+            self.assertIn(expected, message)
+            self.assertEqual(printed, "")
+
+    def test_estimate_respects_small_completion_cap_and_disabled_evaluators(self):
+        cli = tt.chz.entrypoint(
+            tt.CLI,
+            argv=self.args + ["max_tokens=16", "eval_max_tasks=0", "replay_matches=0"],
+        )
+        figures = tt.estimate(cli)
+        self.assertEqual(figures["completion_tokens"], figures["completion_tokens_max"])
+        self.assertEqual(figures["evals"], 0)
+
+    def test_missing_credentials_fail_before_client(self):
+        with mock.patch.dict(os.environ, {}, clear=True):
+            message, _ = self.refused("confirm=true")
+        self.assertIn("TINKER_API_KEY", message)
+
+    def test_task_hash_must_match_expected_config(self):
+        changed = [
+            dict(t, scoring={**t["scoring"], "config_hash": "wrong"})
+            for t in self.tasks
+        ]
+        write_tasks(self.root / "tasks.jsonl.gz", changed)
+        message, printed = self.refused("confirm=true")
+        self.assertIn("another config", message)
+        self.assertEqual(printed, "")
+
+    def test_nondefault_build_config_is_explicit(self):
+        config = make_config({"half_spread": 0.03})
+        tasks, _ = build_tasks(load_records(FIXTURES), config)
+        write_tasks(self.root / "tasks.jsonl.gz", tasks)
+        self.assertIn("another config", self.refused()[0])
+        path = self.root / "tasks.meta.json"
+        path.write_text(json.dumps({"config": config}))
+        message, _ = self.refused(f"config_path={path}")
+        self.assertIn("confirm=true", message)
+
+    def test_finite_numeric_settings_are_checked(self):
+        for value in (
+            "learning_rate=nan",
+            "learning_rate=-1",
+            "reward_scale=0",
+            "w_log=inf",
+            "invalid_penalty=-1",
+            "lora_rank=0",
+            "eval_split=train",
+        ):
+            message, printed = self.refused(value)
+            self.assertTrue(message)
+            self.assertEqual(printed, "")
+
     def test_training_without_evaluation_needs_no_eval_split(self):
         message, printed = self.refused("eval_split=nope", "eval_every=0")
         self.assertIn("confirm=true", message)
@@ -689,69 +903,43 @@ class LauncherTests(unittest.TestCase):
         self.assertEqual(
             set(logged[0]["steps"][0]["logs"]), {"task_id", "action", "completion"}
         )
-        fake = tt.FakeTinker.last
+        fake = FakeTinker.last
         self.assertEqual(len(fake.batches), 2)
         self.assertEqual(len(fake.optim_steps), 2)
         self.assertEqual(fake.optim_steps[0].learning_rate, 1e-5)
         for batch in fake.batches:
             self.assertEqual(batch["loss_fn"], "importance_sampling")
-            self.assertEqual(len(batch["data"]), 16)
+            self.assertEqual(len(batch["data"]), 80)
             for datum in batch["data"]:
                 self.assertEqual(set(datum.loss_fn_inputs), RL_KEYS)
 
-    def test_train_metrics_cover_the_whole_batch_under_the_right_tags(self):
-        """The cookbook drops constant-reward groups from the batch but not from the
-        tags, so with the filter on every tag after the first dropped group is off."""
-
-        def episodes(rows, tag):
-            return sum(tag in row["tags"] for row in rows)
-
-        once = ("groups_per_batch=20", "max_steps=1")  # all 20 train tasks in one step
-        self.launch("name=kept", *once, policy=StillWhenFlat(TOKENIZER))
-        (row,) = lines(self.runs / "kept" / "metrics.jsonl")[:1]
-        truth = lines(
-            self.runs / "kept" / "iteration_000000" / "train_rollout_summaries.jsonl"
-        )
-        flat = [r["steps"][0]["metrics"] for r in truth if "flat" in r["tags"]]
-        self.assertEqual((len(truth), len(flat)), (80, 20))
-        self.assertEqual(row["env/all/total_episodes"], 80)
-        self.assertEqual(row["env/flat/total_episodes"], episodes(truth, "flat"))
-        self.assertEqual(row["env/holding/total_episodes"], episodes(truth, "holding"))
-        self.assertEqual({m["noop"] for m in flat}, {1.0})
-        self.assertEqual((row["env/flat/noop"], row["env/flat/traded"]), (1.0, 0.0))
-        self.assertEqual(row["env/flat/by_group/frac_mixed"], 0.0)
-        self.assertLess(row["env/holding/valid"], 1.0)
-
-        fake, _ = self.launch(
-            "name=dropped",
-            *once,
-            "remove_constant_reward_groups=true",
+    def test_train_metrics_cover_whole_trajectories(self):
+        self.launch(
+            "name=kept",
+            "groups_per_batch=20",
+            "max_steps=1",
             policy=StillWhenFlat(TOKENIZER),
         )
-        (row,) = lines(self.runs / "dropped" / "metrics.jsonl")[:1]
-        truth = lines(
-            self.runs / "dropped" / "iteration_000000" / "train_rollout_summaries.jsonl"
-        )
-        self.assertEqual({tuple(r["tags"]) for r in truth}, {("train",)})
-        self.assertEqual(len(truth), 80)
-        self.assertEqual(len(fake.batches[0]["data"]), row["env/all/total_episodes"])
-        self.assertLessEqual(row["env/all/total_episodes"], 60)  # no flat group is left
-        tagged = [key for key in row if key.startswith(("env/flat", "env/holding"))]
-        self.assertEqual(tagged, [])
+        row = lines(self.runs / "kept" / "metrics.jsonl")[0]
+        self.assertEqual(row["env/all/total_episodes"], 80)
+        self.assertEqual(row["env/all/total_turns"], 400)
+        self.assertEqual(row["env/all/pnl_per_match"], 0.0)
+        self.assertEqual(row["env/all/reward/total"], 0.0)
+        self.assertEqual(row["env/all/by_group/frac_mixed"], 0.0)
 
     def test_a_rerun_resumes_and_says_so(self):
         fake, printed = self.launch("max_steps=2", "save_every=1", "eval_every=0")
         self.assertIsNone(fake.resumed)
         self.assertIn("New run: ", printed)
-        self.assertNotIn("RESUMING", printed)
+        self.assertNotIn("Resuming from step", printed)
         (name,) = self.run_dirs()
         metrics = self.runs / name / "metrics.jsonl"
         self.assertEqual([row["step"] for row in lines(metrics)], [0, 1])
         fake, printed = self.launch("max_steps=4", "save_every=1", "eval_every=0")
         self.assertEqual(fake.resumed, "tinker://dry-run/weights/final")
-        self.assertIn(f"RESUMING {self.runs / name} at step 2", printed)
+        self.assertIn(f"Resuming from step 2: {self.runs / name}", printed)
         self.assertRegex(printed, r"steps +2 \(2 to 4\)\n")
-        self.assertRegex(printed, r"train_rollouts +32\n")
+        self.assertRegex(printed, r"train_rollouts +160\n")
         self.assertEqual(self.run_dirs(), [name])
         self.assertEqual([row["step"] for row in lines(metrics)], [0, 1, 2, 3])
         self.assertEqual(len(fake.batches), 2)
@@ -764,10 +952,29 @@ class LauncherTests(unittest.TestCase):
         self.assertIn("replay/val/valid_rate", rows[2])
         self.assertEqual(fake.batches, [])
 
+    def test_final_evaluation_is_exported_and_repeated_after_more_training(self):
+        self.launch("max_steps=1", "name=extended")
+        self.launch("max_steps=2", "name=extended")
+        path = self.runs / "extended"
+        rows = lines(path / "metrics.jsonl")
+        self.assertEqual([r["step"] for r in rows if "final_evaluation" in r], [1, 2])
+        self.assertTrue(
+            list((path / "iteration_000002").glob("eval_*rollout_summaries.jsonl"))
+        )
+
+    def test_same_step_without_final_marker_does_not_skip_final_eval(self):
+        self.launch("max_steps=1", "name=incomplete")
+        path = self.runs / "incomplete" / "metrics.jsonl"
+        rows = lines(path)
+        rows[-1] = {"step": 1, "unrelated_metric": 42}
+        path.write_text("".join(json.dumps(r) + "\n" for r in rows))
+        self.launch("max_steps=1", "name=incomplete")
+        self.assertIn("final_evaluation", lines(path)[-1])
+
     def test_rebuilt_tasks_start_a_new_run(self):
         self.launch("max_steps=2")
         (first,) = self.run_dirs()
-        write_tasks(self.root / "tasks.jsonl.gz", TASKS[4:])
+        write_tasks(self.root / "tasks.jsonl.gz", self.tasks[4:])
         fake, printed = self.launch("max_steps=2")
         self.assertIsNone(fake.resumed)
         self.assertIn("New run: ", printed)
@@ -778,19 +985,30 @@ class LauncherTests(unittest.TestCase):
         self.launch("name=mine", "max_steps=2")
         before = (self.runs / "mine" / "metrics.jsonl").read_text()
         message, printed = self.refused(
-            "name=mine", "confirm=true", "seed=7", "reward_scale=1.0", "w_log=0.5"
+            "name=mine", "confirm=true", "seed=7", "reward_scale=2.0"
         )
         self.assertIn(str(self.runs / "mine"), message)
-        self.assertIn("another reward_scale, seed, w_log.", message)
+        self.assertIn("another reward_scale, seed.", message)
         self.assertEqual(printed, "")
-        write_tasks(self.root / "tasks.jsonl.gz", TASKS[4:])
+        write_tasks(self.root / "tasks.jsonl.gz", self.tasks[4:])
         message, _ = self.refused("name=mine", "confirm=true")
         self.assertIn("another tasks_sha256.", message)
         self.assertEqual((self.runs / "mine" / "metrics.jsonl").read_text(), before)
-        write_tasks(self.root / "tasks.jsonl.gz", TASKS)
+        write_tasks(self.root / "tasks.jsonl.gz", self.tasks)
         fake, printed = self.launch("name=mine", "max_steps=3")
-        self.assertIn("RESUMING", printed)
+        self.assertIn("Resuming from step", printed)
         self.assertEqual(len(fake.batches), 1)
+
+    def test_dry_run_refuses_symlink_to_real_run(self):
+        real = self.root / "real"
+        real.mkdir()
+        sentinel = real / "keep.txt"
+        sentinel.write_text("real run")
+        self.runs.mkdir()
+        (self.runs / "dry-link").symlink_to(real, target_is_directory=True)
+        message, _ = self.refused("dry_run=true", "name=link")
+        self.assertIn("unsafe dry-run directory", message)
+        self.assertEqual(sentinel.read_text(), "real run")
 
     def test_a_dry_run_can_only_wipe_its_own_directory(self):
         cli = tt.chz.entrypoint(tt.CLI, argv=self.args + ["name=mine"])

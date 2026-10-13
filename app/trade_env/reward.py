@@ -37,15 +37,15 @@ def action_table(position, start, fill, end, final, config):
     def value(outcome):
         if final or config["mark"] == "mid":
             return end[outcome]
-        return sell_proceeds(end[outcome], config)
+        return sell_proceeds(end[outcome], config, outcome)
 
     def buy(outcome):
-        return value(outcome) - buy_cost(fill[outcome], config)
+        return value(outcome) - buy_cost(fill[outcome], config, outcome)
 
     def spread_paid(outcome, side):
         if side == "buy":
-            return buy_cost(fill[outcome], config) - fill[outcome]
-        return fill[outcome] - sell_proceeds(fill[outcome], config)
+            return buy_cost(fill[outcome], config, outcome) - fill[outcome]
+        return fill[outcome] - sell_proceeds(fill[outcome], config, outcome)
 
     rewards, costs = {}, {}
     if position == "flat":
@@ -55,7 +55,7 @@ def action_table(position, start, fill, end, final, config):
         rewards["do_nothing"], costs["do_nothing"] = 0.0, 0.0
         return rewards, costs
     held = start[position] if config["start_mark"] == "decision" else fill[position]
-    sold = sell_proceeds(fill[position], config) - held
+    sold = sell_proceeds(fill[position], config, position) - held
     rewards["keep"], costs["keep"] = value(position) - held, 0.0
     rewards["close"], costs["close"] = sold, spread_paid(position, "sell")
     for outcome in OUTCOMES:
