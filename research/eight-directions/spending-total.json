@@ -1,0 +1,92 @@
+{
+  "latest_combined_hard_limit_usd": 5,
+  "supersedes_original_total_usd": 40,
+  "scope": "All incremental external-service work in this chat, including eight-direction research and execution awareness. Prior source experiments excluded as sunk costs. Native Codex account usage not assigned a fictitious external-service charge.",
+  "directions": [
+    {
+      "direction": 1,
+      "name": "consistency",
+      "completed_logged_token_estimate_usd": 0,
+      "retained_maximum_reservation_usd": 0,
+      "paid_requests": 0,
+      "ledger": "artifacts/eight-directions/d1_consistency/spending.json",
+      "verified_invoice_billing_usd": null,
+      "pending_reservations": 0
+    },
+    {
+      "direction": 2,
+      "name": "market_prior",
+      "completed_logged_token_estimate_usd": 0.39600783000000017,
+      "retained_maximum_reservation_usd": 0.9751440599999991,
+      "paid_requests": 990,
+      "ledger": "artifacts/eight-directions/d2_market_prior/spending.json",
+      "verified_invoice_billing_usd": null,
+      "pending_reservations": 0
+    },
+    {
+      "direction": 3,
+      "name": "calibration",
+      "completed_logged_token_estimate_usd": 0,
+      "retained_maximum_reservation_usd": 0,
+      "paid_requests": 0,
+      "ledger": "artifacts/eight-directions/d3_calibration/spending.json",
+      "verified_invoice_billing_usd": null,
+      "pending_reservations": 0
+    },
+    {
+      "direction": 4,
+      "name": "position_bias",
+      "completed_logged_token_estimate_usd": 0.1849156799999999,
+      "retained_maximum_reservation_usd": 0.4601673600000003,
+      "paid_requests": 480,
+      "ledger": "artifacts/eight-directions/d4_position_bias/spending.json",
+      "verified_invoice_billing_usd": null,
+      "pending_reservations": 0
+    },
+    {
+      "direction": 5,
+      "name": "timing_memory",
+      "completed_logged_token_estimate_usd": 0.16746768,
+      "retained_maximum_reservation_usd": 0.48783216000000074,
+      "paid_requests": 1354,
+      "ledger": "artifacts/eight-directions/d5_timing_memory/spending.json",
+      "verified_invoice_billing_usd": null,
+      "pending_reservations": 0
+    },
+    {
+      "direction": 6,
+      "name": "training_scale",
+      "completed_logged_token_estimate_usd": 0,
+      "retained_maximum_reservation_usd": 0,
+      "paid_requests": 0,
+      "ledger": "artifacts/eight-directions/d6_training_scale/spending.json",
+      "verified_invoice_billing_usd": null,
+      "pending_reservations": 0
+    },
+    {
+      "direction": 7,
+      "name": "execution_realism",
+      "completed_logged_token_estimate_usd": 0,
+      "retained_maximum_reservation_usd": 0,
+      "paid_requests": 0,
+      "ledger": "artifacts/eight-directions/d7_execution_realism/spending.json",
+      "verified_invoice_billing_usd": null,
+      "pending_reservations": 0
+    },
+    {
+      "direction": 8,
+      "name": "specialization",
+      "completed_logged_token_estimate_usd": 0,
+      "retained_maximum_reservation_usd": 0,
+      "paid_requests": 0,
+      "ledger": "artifacts/eight-directions/d8_specialization/spending.json",
+      "verified_invoice_billing_usd": null,
+      "pending_reservations": 0
+    }
+  ],
+  "completed_logged_token_estimate_usd": 0.7483911900000001,
+  "retained_maximum_reservation_usd": 1.92314358,
+  "execution_implementation_incremental_external_spend_usd": 0,
+  "verified_invoice_billing_usd": null,
+  "policy": "No further paid calls authorized by orchestrator; all frozen pilots completed. Future proposals are not launched/reserved."
+}

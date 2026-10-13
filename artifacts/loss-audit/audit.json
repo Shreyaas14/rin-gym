@@ -1,0 +1,2020 @@
+{
+  "cost_usd": 0,
+  "policies": {
+    "original": {},
+    "entry_cost_max_0.75": {
+      "cap": 0.75
+    },
+    "entry_cost_max_0.85": {
+      "cap": 0.85
+    },
+    "entry_cost_max_0.95": {
+      "cap": 0.95
+    },
+    "entry_edge_min_0": {
+      "edge": 0
+    },
+    "entry_edge_min_0.02": {
+      "edge": 0.02
+    },
+    "stop_loss_0.15": {
+      "stop": 0.15
+    },
+    "stop_loss_0.25": {
+      "stop": 0.25
+    },
+    "stop_loss_0.35": {
+      "stop": 0.35
+    },
+    "take_profit_0.1": {
+      "take": 0.1
+    },
+    "take_profit_0.2": {
+      "take": 0.2
+    },
+    "exit_below_liquidation_value": {
+      "belief_exit": true
+    },
+    "skip_switch_entries": {
+      "skip_switch": true
+    },
+    "followup_take_0.10_stop_0.25": {
+      "take": 0.1,
+      "stop": 0.25
+    },
+    "followup_exit_h2_30": {
+      "exit_decision": "h2+30"
+    }
+  },
+  "datasets": {
+    "original": {
+      "quantity": 1,
+      "positions": 246,
+      "expensive_positions": {
+        "count": 107,
+        "pnl": -5.483777487500002
+      },
+      "negative_forecast_edge_positions": {
+        "count": 209,
+        "pnl": -16.048531887500005
+      },
+      "policies": {
+        "original": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 120,
+          "losing_cases": 88,
+          "win_rate_traded": 0.5769230769230769,
+          "win_rate_all_cases": 0.5555555555555556,
+          "total_pnl": -20.619153437500007,
+          "gross_wins": 25.057777499999997,
+          "gross_losses": -45.6769309375,
+          "average_win": 0.20881481249999997,
+          "average_loss": -0.5190560333806818,
+          "worst_case_pnl": -1.19303625,
+          "mean_pnl_per_case": -0.09545904369212965,
+          "pnl_95_game_cluster": [
+            -39.031914331875,
+            -2.1117445546875016
+          ],
+          "pnl_delta_95_game_cluster": [
+            0.0,
+            0.0
+          ],
+          "leave_one_game_out_total_range": [
+            -22.247287187500007,
+            -17.746357187500006
+          ],
+          "original_winning_cases_lost": 0,
+          "losing_cases_rescued": 0
+        },
+        "entry_cost_max_0.75": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 117,
+          "winning_cases": 42,
+          "losing_cases": 75,
+          "win_rate_traded": 0.358974358974359,
+          "win_rate_all_cases": 0.19444444444444445,
+          "total_pnl": -15.135375950000004,
+          "gross_wins": 17.20542625,
+          "gross_losses": -32.3408022,
+          "average_win": 0.4096530059523809,
+          "average_loss": -0.431210696,
+          "worst_case_pnl": -0.9928362500000001,
+          "mean_pnl_per_case": -0.07007118495370372,
+          "pnl_95_game_cluster": [
+            -29.988905807187503,
+            -0.42310124593750265
+          ],
+          "pnl_delta_95_game_cluster": [
+            -4.876021260624998,
+            17.841661763125003
+          ],
+          "leave_one_game_out_total_range": [
+            -16.763509700000007,
+            -12.406017200000004
+          ],
+          "original_winning_cases_lost": 78,
+          "losing_cases_rescued": 0
+        },
+        "entry_cost_max_0.85": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 150,
+          "winning_cases": 71,
+          "losing_cases": 79,
+          "win_rate_traded": 0.47333333333333333,
+          "win_rate_all_cases": 0.3287037037037037,
+          "total_pnl": -15.517378450000004,
+          "gross_wins": 22.036815224999998,
+          "gross_losses": -37.554193675,
+          "average_win": 0.3103776792253521,
+          "average_loss": -0.47536954018987343,
+          "worst_case_pnl": -0.9928362500000001,
+          "mean_pnl_per_case": -0.07183971504629631,
+          "pnl_95_game_cluster": [
+            -31.815590125937504,
+            0.7866985106249971
+          ],
+          "pnl_delta_95_game_cluster": [
+            -3.139692669062498,
+            15.599992651562504
+          ],
+          "leave_one_game_out_total_range": [
+            -17.145512200000006,
+            -12.788019700000007
+          ],
+          "original_winning_cases_lost": 49,
+          "losing_cases_rescued": 0
+        },
+        "entry_cost_max_0.95": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 182,
+          "winning_cases": 97,
+          "losing_cases": 85,
+          "win_rate_traded": 0.532967032967033,
+          "win_rate_all_cases": 0.44907407407407407,
+          "total_pnl": -18.083789037500004,
+          "gross_wins": 24.72034565,
+          "gross_losses": -42.8041346875,
+          "average_win": 0.2548489242268041,
+          "average_loss": -0.5035780551470589,
+          "worst_case_pnl": -1.19303625,
+          "mean_pnl_per_case": -0.08372124554398151,
+          "pnl_95_game_cluster": [
+            -35.662429956875016,
+            -0.33448209187499955
+          ],
+          "pnl_delta_95_game_cluster": [
+            -0.6670009562499993,
+            8.515855211249999
+          ],
+          "leave_one_game_out_total_range": [
+            -19.711922787500004,
+            -15.354430287500005
+          ],
+          "original_winning_cases_lost": 23,
+          "losing_cases_rescued": 0
+        },
+        "entry_edge_min_0": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 36,
+          "winning_cases": 7,
+          "losing_cases": 29,
+          "win_rate_traded": 0.19444444444444445,
+          "win_rate_all_cases": 0.032407407407407406,
+          "total_pnl": -4.57062155,
+          "gross_wins": 3.04732125,
+          "gross_losses": -7.617942800000001,
+          "average_win": 0.4353316071428571,
+          "average_loss": -0.2626876827586207,
+          "worst_case_pnl": -0.45798625000000004,
+          "mean_pnl_per_case": -0.021160284953703708,
+          "pnl_95_game_cluster": [
+            -10.5162009046875,
+            1.5315594684375025
+          ],
+          "pnl_delta_95_game_cluster": [
+            -1.961114306249994,
+            34.22978700562501
+          ],
+          "leave_one_game_out_total_range": [
+            -6.2290853,
+            -3.2289653000000005
+          ],
+          "original_winning_cases_lost": 115,
+          "losing_cases_rescued": 2
+        },
+        "entry_edge_min_0.02": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 29,
+          "winning_cases": 4,
+          "losing_cases": 25,
+          "win_rate_traded": 0.13793103448275862,
+          "win_rate_all_cases": 0.018518518518518517,
+          "total_pnl": -5.084359000000001,
+          "gross_wins": 1.3888574999999999,
+          "gross_losses": -6.4732165,
+          "average_win": 0.34721437499999996,
+          "average_loss": -0.25892866000000003,
+          "worst_case_pnl": -0.45798625000000004,
+          "mean_pnl_per_case": -0.023538699074074076,
+          "pnl_95_game_cluster": [
+            -9.849602371250002,
+            -0.7916811034374994
+          ],
+          "pnl_delta_95_game_cluster": [
+            -2.687774362187496,
+            34.089153814375
+          ],
+          "leave_one_game_out_total_range": [
+            -5.85092025,
+            -3.7427027500000003
+          ],
+          "original_winning_cases_lost": 118,
+          "losing_cases_rescued": 2
+        },
+        "stop_loss_0.15": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 102,
+          "losing_cases": 106,
+          "win_rate_traded": 0.49038461538461536,
+          "win_rate_all_cases": 0.4722222222222222,
+          "total_pnl": -19.345923837500006,
+          "gross_wins": 19.16380125,
+          "gross_losses": -38.5097250875,
+          "average_win": 0.18788040441176468,
+          "average_loss": -0.3632992932783019,
+          "worst_case_pnl": -0.9928362500000001,
+          "mean_pnl_per_case": -0.08956446221064818,
+          "pnl_95_game_cluster": [
+            -34.39301204750001,
+            -4.467178482500004
+          ],
+          "pnl_delta_95_game_cluster": [
+            -9.179015356875002,
+            11.4597353021875
+          ],
+          "leave_one_game_out_total_range": [
+            -20.974057587500006,
+            -16.473127587500006
+          ],
+          "original_winning_cases_lost": 18,
+          "losing_cases_rescued": 0
+        },
+        "stop_loss_0.25": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 115,
+          "losing_cases": 93,
+          "win_rate_traded": 0.5528846153846154,
+          "win_rate_all_cases": 0.5324074074074074,
+          "total_pnl": -17.947673000000005,
+          "gross_wins": 23.606011249999998,
+          "gross_losses": -41.55368425,
+          "average_win": 0.20526966304347824,
+          "average_loss": -0.44681380913978497,
+          "worst_case_pnl": -0.9928362500000001,
+          "mean_pnl_per_case": -0.08309107870370373,
+          "pnl_95_game_cluster": [
+            -34.6644893946875,
+            -0.1896732228125044
+          ],
+          "pnl_delta_95_game_cluster": [
+            -3.3530048003125006,
+            9.018506285625
+          ],
+          "leave_one_game_out_total_range": [
+            -19.575806750000005,
+            -15.074876750000005
+          ],
+          "original_winning_cases_lost": 5,
+          "losing_cases_rescued": 0
+        },
+        "stop_loss_0.35": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 117,
+          "losing_cases": 91,
+          "win_rate_traded": 0.5625,
+          "win_rate_all_cases": 0.5416666666666666,
+          "total_pnl": -18.813199687500006,
+          "gross_wins": 24.433782499999996,
+          "gross_losses": -43.2469821875,
+          "average_win": 0.20883574786324785,
+          "average_loss": -0.47524156250000005,
+          "worst_case_pnl": -0.9928362500000001,
+          "mean_pnl_per_case": -0.08709814670138892,
+          "pnl_95_game_cluster": [
+            -36.078286889062504,
+            -1.2938838190625026
+          ],
+          "pnl_delta_95_game_cluster": [
+            -2.9455474687500005,
+            6.7747665
+          ],
+          "leave_one_game_out_total_range": [
+            -20.441333437500006,
+            -15.940403437500006
+          ],
+          "original_winning_cases_lost": 3,
+          "losing_cases_rescued": 0
+        },
+        "take_profit_0.1": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 132,
+          "losing_cases": 76,
+          "win_rate_traded": 0.6346153846153846,
+          "win_rate_all_cases": 0.6111111111111112,
+          "total_pnl": -19.843059912500006,
+          "gross_wins": 20.607844887499997,
+          "gross_losses": -40.4509048,
+          "average_win": 0.1561200370265151,
+          "average_loss": -0.5322487473684211,
+          "worst_case_pnl": -1.19303625,
+          "mean_pnl_per_case": -0.09186601811342596,
+          "pnl_95_game_cluster": [
+            -36.239570575312506,
+            -3.1747846006250047
+          ],
+          "pnl_delta_95_game_cluster": [
+            -5.052939496250001,
+            7.415021411874998
+          ],
+          "leave_one_game_out_total_range": [
+            -21.441013662500005,
+            -16.970263662500006
+          ],
+          "original_winning_cases_lost": 0,
+          "losing_cases_rescued": 12
+        },
+        "take_profit_0.2": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 122,
+          "losing_cases": 86,
+          "win_rate_traded": 0.5865384615384616,
+          "win_rate_all_cases": 0.5648148148148148,
+          "total_pnl": -21.391778737500005,
+          "gross_wins": 23.030942299999996,
+          "gross_losses": -44.422721037500004,
+          "average_win": 0.18877821557377047,
+          "average_loss": -0.516543267877907,
+          "worst_case_pnl": -1.19303625,
+          "mean_pnl_per_case": -0.09903601267361115,
+          "pnl_95_game_cluster": [
+            -38.941351347812514,
+            -3.6880829203125014
+          ],
+          "pnl_delta_95_game_cluster": [
+            -3.751244828750001,
+            2.33759448
+          ],
+          "leave_one_game_out_total_range": [
+            -22.989732487500003,
+            -18.518982487500004
+          ],
+          "original_winning_cases_lost": 0,
+          "losing_cases_rescued": 2
+        },
+        "exit_below_liquidation_value": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 66,
+          "losing_cases": 142,
+          "win_rate_traded": 0.3173076923076923,
+          "win_rate_all_cases": 0.3055555555555556,
+          "total_pnl": -13.704884337500008,
+          "gross_wins": 10.411856199999997,
+          "gross_losses": -24.116740537500004,
+          "average_win": 0.15775539696969693,
+          "average_loss": -0.1698362009683099,
+          "worst_case_pnl": -0.9928362500000001,
+          "mean_pnl_per_case": -0.06344853859953707,
+          "pnl_95_game_cluster": [
+            -23.850385408750007,
+            -4.097751739687507
+          ],
+          "pnl_delta_95_game_cluster": [
+            -8.3335255090625,
+            22.2595062803125
+          ],
+          "leave_one_game_out_total_range": [
+            -15.161571837500006,
+            -11.241205587500007
+          ],
+          "original_winning_cases_lost": 71,
+          "losing_cases_rescued": 17
+        },
+        "skip_switch_entries": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 117,
+          "losing_cases": 91,
+          "win_rate_traded": 0.5625,
+          "win_rate_all_cases": 0.5416666666666666,
+          "total_pnl": -20.606918937500005,
+          "gross_wins": 24.110456874999997,
+          "gross_losses": -44.7173758125,
+          "average_win": 0.20607228098290598,
+          "average_loss": -0.49139973420329675,
+          "worst_case_pnl": -1.19303625,
+          "mean_pnl_per_case": -0.09540240248842595,
+          "pnl_95_game_cluster": [
+            -38.39610337562501,
+            -2.0597904590625027
+          ],
+          "pnl_delta_95_game_cluster": [
+            -3.6417986759374994,
+            3.5700128746875004
+          ],
+          "leave_one_game_out_total_range": [
+            -22.235052687500005,
+            -17.734122687500005
+          ],
+          "original_winning_cases_lost": 4,
+          "losing_cases_rescued": 1
+        },
+        "followup_take_0.10_stop_0.25": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 127,
+          "losing_cases": 81,
+          "win_rate_traded": 0.6105769230769231,
+          "win_rate_all_cases": 0.5879629629629629,
+          "total_pnl": -17.171579475000005,
+          "gross_wins": 19.1560786375,
+          "gross_losses": -36.3276581125,
+          "average_win": 0.1508352648622047,
+          "average_loss": -0.4484896063271605,
+          "worst_case_pnl": -0.9928362500000001,
+          "mean_pnl_per_case": -0.07949805312500002,
+          "pnl_95_game_cluster": [
+            -31.816584215937503,
+            -2.0433735521875067
+          ],
+          "pnl_delta_95_game_cluster": [
+            -4.9966626703125,
+            11.798278637187503
+          ],
+          "leave_one_game_out_total_range": [
+            -18.769533225000004,
+            -14.298783225000005
+          ],
+          "original_winning_cases_lost": 5,
+          "losing_cases_rescued": 12
+        },
+        "followup_exit_h2_30": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 208,
+          "winning_cases": 108,
+          "losing_cases": 100,
+          "win_rate_traded": 0.5192307692307693,
+          "win_rate_all_cases": 0.5,
+          "total_pnl": -12.866364225000005,
+          "gross_wins": 15.028533112499998,
+          "gross_losses": -27.894897337500005,
+          "average_win": 0.13915308437499999,
+          "average_loss": -0.278948973375,
+          "worst_case_pnl": -0.9928362500000001,
+          "mean_pnl_per_case": -0.05956650104166669,
+          "pnl_95_game_cluster": [
+            -24.84655839343751,
+            -1.0352324328125027
+          ],
+          "pnl_delta_95_game_cluster": [
+            -5.10634970875,
+            20.730714036562503
+          ],
+          "leave_one_game_out_total_range": [
+            -14.396842312500006,
+            -10.494489225000006
+          ],
+          "original_winning_cases_lost": 27,
+          "losing_cases_rescued": 15
+        }
+      },
+      "worst_positions": [
+        {
+          "match_id": "400021447",
+          "repeat": 0,
+          "match": "FIFA World Cup 2026, First Stage: Qatar (home) v Switzerland (away)",
+          "side": "away",
+          "entry_decision": "h1+30",
+          "entry_action": "buy_away",
+          "shown_cost": 0.9575987499999999,
+          "entry_cost": 0.9575987499999999,
+          "prob": 0.6,
+          "edge": -0.35759874999999997,
+          "reason": "{\"probs\":{\"home\":0.25,\"draw\":0.15,\"away\":0.60},\"next_goal\":{\"home\":0.10,\"away\":0.35,\"none\":0.55},\"future_prices\":{\"home\":0.23,\"draw\":0.12,\"away\":0.65},\"action\":\"buy_away\",\"reason\":\"Away team is heavily favored and the price reflects a strong expectation, but there's potential for value if the trend continues\"}",
+          "checkpoints": [
+            {
+              "decision": "ht",
+              "shown": 0.935,
+              "fill": 0.935,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.935,
+              "fill": 0.925,
+              "prob": 0.6,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.945,
+              "fill": 0.945,
+              "prob": 0.55,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.9575987499999999,
+          "pnl": -0.9575987499999999
+        },
+        {
+          "match_id": "400021447",
+          "repeat": 1,
+          "match": "FIFA World Cup 2026, First Stage: Qatar (home) v Switzerland (away)",
+          "side": "away",
+          "entry_decision": "h1+30",
+          "entry_action": "buy_away",
+          "shown_cost": 0.9575987499999999,
+          "entry_cost": 0.9575987499999999,
+          "prob": 0.7,
+          "edge": -0.25759875,
+          "reason": "{\"probs\":{\"home\":0.20,\"draw\":0.10,\"away\":0.70},\"next_goal\":{\"home\":0.15,\"away\":0.25,\"none\":0.60},\"future_prices\":{\"home\":0.25,\"draw\":0.15,\"away\":0.60},\"action\":\"buy_away\",\"reason\":\"Away team has strong momentum and high chances, while the market price is undervalued.\"}",
+          "checkpoints": [
+            {
+              "decision": "ht",
+              "shown": 0.935,
+              "fill": 0.935,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.935,
+              "fill": 0.925,
+              "prob": 0.6,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.945,
+              "fill": 0.945,
+              "prob": 0.6,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.9575987499999999,
+          "pnl": -0.9575987499999999
+        },
+        {
+          "match_id": "400021447",
+          "repeat": 2,
+          "match": "FIFA World Cup 2026, First Stage: Qatar (home) v Switzerland (away)",
+          "side": "away",
+          "entry_decision": "h1+30",
+          "entry_action": "buy_away",
+          "shown_cost": 0.9575987499999999,
+          "entry_cost": 0.9575987499999999,
+          "prob": 0.65,
+          "edge": -0.3075987499999999,
+          "reason": "{\"probs\":{\"home\":0.20,\"draw\":0.15,\"away\":0.65},\"next_goal\":{\"home\":0.25,\"away\":0.25,\"none\":0.50},\"future_prices\":{\"home\":0.22,\"draw\":0.16,\"away\":0.62},\"action\":\"buy_away\",\"reason\":\"Away team has strong momentum and scoring chances, while home team is under pressure with yellow cards\"}",
+          "checkpoints": [
+            {
+              "decision": "ht",
+              "shown": 0.935,
+              "fill": 0.935,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.935,
+              "fill": 0.925,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.945,
+              "fill": 0.945,
+              "prob": 0.7,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.9575987499999999,
+          "pnl": -0.9575987499999999
+        },
+        {
+          "match_id": "400021502",
+          "repeat": 0,
+          "match": "FIFA World Cup 2026, First Stage: Portugal (home) v Congo DR (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.92888875,
+          "entry_cost": 0.92888875,
+          "prob": 0.65,
+          "edge": -0.27888875,
+          "reason": "{\n  \"probs\": {\"home\": 0.65, \"draw\": 0.15, \"away\": 0.20},\n  \"next_goal\": {\"home\": 0.35, \"away\": 0.30, \"none\": 0.35},\n  \"future_prices\": {\"home\": 0.85, \"draw\": 0.08, \"away\": 0.07},\n  \"action\": \"buy_home\",\n  \"reason\": \"Home team has strong position and momentum, while away team has not scored yet.\"\n}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.915,
+              "fill": 0.91,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.665,
+              "fill": 0.635,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.595,
+              "fill": 0.57,
+              "prob": 0.48,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.455,
+              "fill": 0.445,
+              "prob": 0.45,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.92888875,
+          "pnl": -0.92888875
+        },
+        {
+          "match_id": "400021502",
+          "repeat": 2,
+          "match": "FIFA World Cup 2026, First Stage: Portugal (home) v Congo DR (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.92888875,
+          "entry_cost": 0.92888875,
+          "prob": 0.65,
+          "edge": -0.27888875,
+          "reason": "{\"probs\":{\"home\":0.65,\"draw\":0.15,\"away\":0.20},\"next_goal\":{\"home\":0.25,\"away\":0.20,\"none\":0.55},\"future_prices\":{\"home\":0.60,\"draw\":0.18,\"away\":0.22},\"action\":\"buy_home\",\"reason\":\"Home team has strong control and a leading goal, while away team is struggling to create chances.\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.915,
+              "fill": 0.91,
+              "prob": 0.55,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.665,
+              "fill": 0.635,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.595,
+              "fill": 0.57,
+              "prob": 0.48,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.455,
+              "fill": 0.445,
+              "prob": 0.55,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.92888875,
+          "pnl": -0.92888875
+        },
+        {
+          "match_id": "400021487",
+          "repeat": 2,
+          "match": "FIFA World Cup 2026, First Stage: Uruguay (home) v Cabo Verde (away)",
+          "side": "home",
+          "entry_decision": "ht",
+          "entry_action": "buy_home",
+          "shown_cost": 0.90008875,
+          "entry_cost": 0.90008875,
+          "prob": 0.65,
+          "edge": -0.25008874999999997,
+          "reason": "{\"probs\":{\"home\":0.65,\"draw\":0.20,\"away\":0.15},\"next_goal\":{\"home\":0.40,\"away\":0.30,\"none\":0.30},\"future_prices\":{\"home\":0.75,\"draw\":0.15,\"away\":0.10},\"action\":\"buy_home\",\"reason\":\"Home team has strong momentum and scoring chances, suggesting undervalued opportunity\"}",
+          "checkpoints": [
+            {
+              "decision": "h2+15",
+              "shown": 0.875,
+              "fill": 0.515,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.465,
+              "fill": 0.425,
+              "prob": 0.45,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.90008875,
+          "pnl": -0.90008875
+        },
+        {
+          "match_id": "400021482",
+          "repeat": 0,
+          "match": "FIFA World Cup 2026, First Stage: Spain (home) v Cabo Verde (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.89046875,
+          "entry_cost": 0.87119875,
+          "prob": 0.55,
+          "edge": -0.34046875,
+          "reason": "{\"probs\":{\"home\":0.55,\"draw\":0.25,\"away\":0.20},\"next_goal\":{\"home\":0.40,\"away\":0.30,\"none\":0.30},\"future_prices\":{\"home\":0.65,\"draw\":0.20,\"away\":0.15},\"action\":\"buy_home\",\"reason\":\"Market prices undervalue Spain's strong possession and attacking threat\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.835,
+              "fill": 0.825,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.795,
+              "fill": 0.785,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.725,
+              "fill": 0.725,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.645,
+              "fill": 0.605,
+              "prob": 0.55,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.87119875,
+          "pnl": -0.87119875
+        },
+        {
+          "match_id": "400021482",
+          "repeat": 1,
+          "match": "FIFA World Cup 2026, First Stage: Spain (home) v Cabo Verde (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.89046875,
+          "entry_cost": 0.87119875,
+          "prob": 0.55,
+          "edge": -0.34046875,
+          "reason": "{\"probs\":{\"home\":0.55,\"draw\":0.25,\"away\":0.20},\"next_goal\":{\"home\":0.35,\"away\":0.25,\"none\":0.40},\"future_prices\":{\"home\":0.50,\"draw\":0.25,\"away\":0.25},\"action\":\"buy_home\",\"reason\":\"Home team has better possession and more chances, suggesting undervalued probability\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.835,
+              "fill": 0.825,
+              "prob": 0.55,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.795,
+              "fill": 0.785,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.725,
+              "fill": 0.725,
+              "prob": 0.7,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.645,
+              "fill": 0.605,
+              "prob": 0.55,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.87119875,
+          "pnl": -0.87119875
+        },
+        {
+          "match_id": "400021482",
+          "repeat": 2,
+          "match": "FIFA World Cup 2026, First Stage: Spain (home) v Cabo Verde (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.89046875,
+          "entry_cost": 0.87119875,
+          "prob": 0.65,
+          "edge": -0.24046875,
+          "reason": "{\"probs\":{\"home\":0.65,\"draw\":0.25,\"away\":0.10},\"next_goal\":{\"home\":0.45,\"away\":0.40,\"none\":0.15},\"future_prices\":{\"home\":0.75,\"draw\":0.15,\"away\":0.10},\"action\":\"buy_home\",\"reason\":\"Market undervalues home team's chances\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.835,
+              "fill": 0.825,
+              "prob": 0.48,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.795,
+              "fill": 0.785,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.725,
+              "fill": 0.725,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.645,
+              "fill": 0.605,
+              "prob": 0.55,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.87119875,
+          "pnl": -0.87119875
+        },
+        {
+          "match_id": "400021465",
+          "repeat": 2,
+          "match": "FIFA World Cup 2026, First Stage: Ecuador (home) v Cura\u00e7ao (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.83253875,
+          "entry_cost": 0.84221875,
+          "prob": 0.55,
+          "edge": -0.28253874999999995,
+          "reason": "{\"probs\":{\"home\":0.55,\"draw\":0.25,\"away\":0.20},\"next_goal\":{\"home\":0.35,\"away\":0.30,\"none\":0.35},\"future_prices\":{\"home\":0.65,\"draw\":0.20,\"away\":0.15},\"action\":\"buy_home\",\"reason\":\"Home team has more shots and better possession, suggesting higher probability of scoring\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.775,
+              "fill": 0.775,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.715,
+              "fill": 0.715,
+              "prob": 0.55,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.605,
+              "fill": 0.585,
+              "prob": 0.55,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.545,
+              "fill": 0.545,
+              "prob": 0.55,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.84221875,
+          "pnl": -0.84221875
+        },
+        {
+          "match_id": "400021506",
+          "repeat": 0,
+          "match": "FIFA World Cup 2026, First Stage: England (home) v Ghana (away)",
+          "side": "home",
+          "entry_decision": "h1+30",
+          "entry_action": "buy_home",
+          "shown_cost": 0.8131487500000001,
+          "entry_cost": 0.8131487500000001,
+          "prob": 0.45,
+          "edge": -0.3631487500000001,
+          "reason": "{\"probs\":{\"home\":0.45,\"draw\":0.30,\"away\":0.25},\"next_goal\":{\"home\":0.20,\"away\":0.20,\"none\":0.60},\"future_prices\":{\"home\":0.65,\"draw\":0.25,\"away\":0.10},\"action\":\"buy_home\",\"reason\":\"England's higher shot count and fewer fouls suggest a higher likelihood of scoring\"}",
+          "checkpoints": [
+            {
+              "decision": "ht",
+              "shown": 0.655,
+              "fill": 0.655,
+              "prob": 0.55,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.575,
+              "fill": 0.555,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.485,
+              "fill": 0.455,
+              "prob": 0.45,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.8131487500000001,
+          "pnl": -0.8131487500000001
+        },
+        {
+          "match_id": "400021506",
+          "repeat": 1,
+          "match": "FIFA World Cup 2026, First Stage: England (home) v Ghana (away)",
+          "side": "home",
+          "entry_decision": "h1+30",
+          "entry_action": "buy_home",
+          "shown_cost": 0.8131487500000001,
+          "entry_cost": 0.8131487500000001,
+          "prob": 0.48,
+          "edge": -0.3331487500000001,
+          "reason": "{\"probs\":{\"home\":0.48,\"draw\":0.32,\"away\":0.20},\"next_goal\":{\"home\":0.35,\"away\":0.25,\"none\":0.40},\"future_prices\":{\"home\":0.55,\"draw\":0.30,\"away\":0.15},\"action\":\"buy_home\",\"reason\":\"Home team has more shot attempts and is more likely to score first\"}",
+          "checkpoints": [
+            {
+              "decision": "ht",
+              "shown": 0.655,
+              "fill": 0.655,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.575,
+              "fill": 0.555,
+              "prob": 0.55,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.485,
+              "fill": 0.455,
+              "prob": 0.45,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.8131487500000001,
+          "pnl": -0.8131487500000001
+        }
+      ]
+    },
+    "quarter_fresh": {
+      "quantity": 0.25,
+      "positions": 441,
+      "expensive_positions": {
+        "count": 120,
+        "pnl": -0.23642830312500063
+      },
+      "negative_forecast_edge_positions": {
+        "count": 312,
+        "pnl": -4.775258437500002
+      },
+      "policies": {
+        "original": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 103,
+          "losing_cases": 113,
+          "win_rate_traded": 0.47685185185185186,
+          "win_rate_all_cases": 0.47685185185185186,
+          "total_pnl": -7.343604665625003,
+          "gross_wins": 4.785807699999999,
+          "gross_losses": -12.129412365625003,
+          "average_win": 0.046464152427184456,
+          "average_loss": -0.1073399324391593,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.033998169748263904,
+          "pnl_95_game_cluster": [
+            -11.441419636484378,
+            -3.218695014218752
+          ],
+          "pnl_delta_95_game_cluster": [
+            0.0,
+            0.0
+          ],
+          "leave_one_game_out_total_range": [
+            -7.647055915625002,
+            -6.627293981250002
+          ],
+          "original_winning_cases_lost": 0,
+          "losing_cases_rescued": 0
+        },
+        "entry_cost_max_0.75": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 147,
+          "winning_cases": 42,
+          "losing_cases": 105,
+          "win_rate_traded": 0.2857142857142857,
+          "win_rate_all_cases": 0.19444444444444445,
+          "total_pnl": -7.107176362500002,
+          "gross_wins": 3.360166387499999,
+          "gross_losses": -10.467342750000002,
+          "average_win": 0.08000396160714285,
+          "average_loss": -0.09968897857142858,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.03290359427083334,
+          "pnl_95_game_cluster": [
+            -10.358190740937504,
+            -3.682936395
+          ],
+          "pnl_delta_95_game_cluster": [
+            -1.784661281093749,
+            2.5071843466406265
+          ],
+          "leave_one_game_out_total_range": [
+            -7.410627612500003,
+            -6.390865678125002
+          ],
+          "original_winning_cases_lost": 61,
+          "losing_cases_rescued": 0
+        },
+        "entry_cost_max_0.85": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 170,
+          "winning_cases": 65,
+          "losing_cases": 105,
+          "win_rate_traded": 0.38235294117647056,
+          "win_rate_all_cases": 0.30092592592592593,
+          "total_pnl": -6.603066575000002,
+          "gross_wins": 4.155321487499999,
+          "gross_losses": -10.758388062500002,
+          "average_win": 0.06392802288461537,
+          "average_loss": -0.1024608386904762,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.03056975266203705,
+          "pnl_95_game_cluster": [
+            -10.158485867734377,
+            -2.9169455056250024
+          ],
+          "pnl_delta_95_game_cluster": [
+            -0.8557582848437498,
+            2.92547650953125
+          ],
+          "leave_one_game_out_total_range": [
+            -6.906517825000003,
+            -5.886755890625003
+          ],
+          "original_winning_cases_lost": 38,
+          "losing_cases_rescued": 0
+        },
+        "entry_cost_max_0.95": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 196,
+          "winning_cases": 90,
+          "losing_cases": 106,
+          "win_rate_traded": 0.45918367346938777,
+          "win_rate_all_cases": 0.4166666666666667,
+          "total_pnl": -6.865262759375002,
+          "gross_wins": 4.756688812499999,
+          "gross_losses": -11.621951571875002,
+          "average_win": 0.05285209791666666,
+          "average_loss": -0.10964105256485851,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.031783623885995385,
+          "pnl_95_game_cluster": [
+            -10.816862971250004,
+            -2.81992627375
+          ],
+          "pnl_delta_95_game_cluster": [
+            -0.18979209648437484,
+            1.6036233973437513
+          ],
+          "leave_one_game_out_total_range": [
+            -7.1687140093750035,
+            -6.148952075000003
+          ],
+          "original_winning_cases_lost": 13,
+          "losing_cases_rescued": 0
+        },
+        "entry_edge_min_0": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 95,
+          "winning_cases": 14,
+          "losing_cases": 81,
+          "win_rate_traded": 0.14736842105263157,
+          "win_rate_all_cases": 0.06481481481481481,
+          "total_pnl": -2.5683462281250007,
+          "gross_wins": 1.2053932562499998,
+          "gross_losses": -3.7737394843750005,
+          "average_win": 0.08609951830357142,
+          "average_loss": -0.04658937635030865,
+          "worst_case_pnl": -0.1445259375,
+          "mean_pnl_per_case": -0.011890491796875003,
+          "pnl_95_game_cluster": [
+            -4.050230492734375,
+            -1.1160827605468755
+          ],
+          "pnl_delta_95_game_cluster": [
+            1.069516846640628,
+            8.629946426015628
+          ],
+          "leave_one_game_out_total_range": [
+            -2.7452293531250005,
+            -2.268329353125001
+          ],
+          "original_winning_cases_lost": 93,
+          "losing_cases_rescued": 4
+        },
+        "entry_edge_min_0.02": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 80,
+          "winning_cases": 9,
+          "losing_cases": 71,
+          "win_rate_traded": 0.1125,
+          "win_rate_all_cases": 0.041666666666666664,
+          "total_pnl": -2.3333047187500005,
+          "gross_wins": 0.73021075625,
+          "gross_losses": -3.0635154750000004,
+          "average_win": 0.08113452847222222,
+          "average_loss": -0.04314810528169015,
+          "worst_case_pnl": -0.1148165625,
+          "mean_pnl_per_case": -0.010802336660879631,
+          "pnl_95_game_cluster": [
+            -3.537322510000001,
+            -1.1834032100000005
+          ],
+          "pnl_delta_95_game_cluster": [
+            1.2046821752343777,
+            8.892561602031254
+          ],
+          "leave_one_game_out_total_range": [
+            -2.492280656250001,
+            -2.033287843750001
+          ],
+          "original_winning_cases_lost": 97,
+          "losing_cases_rescued": 3
+        },
+        "stop_loss_0.15": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 101,
+          "losing_cases": 115,
+          "win_rate_traded": 0.4675925925925926,
+          "win_rate_all_cases": 0.4675925925925926,
+          "total_pnl": -6.749127740625003,
+          "gross_wins": 4.594688687499999,
+          "gross_losses": -11.343816428125002,
+          "average_win": 0.04549196720297029,
+          "average_loss": -0.09864188198369567,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.03124596176215279,
+          "pnl_95_game_cluster": [
+            -10.659444763203128,
+            -2.7821693425781286
+          ],
+          "pnl_delta_95_game_cluster": [
+            -0.4639826234375001,
+            1.6953068525000001
+          ],
+          "leave_one_game_out_total_range": [
+            -7.052578990625004,
+            -6.032817056250003
+          ],
+          "original_winning_cases_lost": 3,
+          "losing_cases_rescued": 1
+        },
+        "stop_loss_0.25": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 103,
+          "losing_cases": 113,
+          "win_rate_traded": 0.47685185185185186,
+          "win_rate_all_cases": 0.47685185185185186,
+          "total_pnl": -7.098728415625003,
+          "gross_wins": 4.785807699999999,
+          "gross_losses": -11.884536115625002,
+          "average_win": 0.046464152427184456,
+          "average_loss": -0.10517288597898232,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.03286448340567131,
+          "pnl_95_game_cluster": [
+            -11.233712374921877,
+            -2.956991935156253
+          ],
+          "pnl_delta_95_game_cluster": [
+            0.034612812500000034,
+            0.5810822500000001
+          ],
+          "leave_one_game_out_total_range": [
+            -7.402179665625003,
+            -6.382417731250003
+          ],
+          "original_winning_cases_lost": 0,
+          "losing_cases_rescued": 0
+        },
+        "stop_loss_0.35": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 103,
+          "losing_cases": 113,
+          "win_rate_traded": 0.47685185185185186,
+          "win_rate_all_cases": 0.47685185185185186,
+          "total_pnl": -7.2668265406250026,
+          "gross_wins": 4.785807699999999,
+          "gross_losses": -12.052634240625002,
+          "average_win": 0.046464152427184456,
+          "average_loss": -0.106660480005531,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.033642715465856496,
+          "pnl_95_game_cluster": [
+            -11.369349969687503,
+            -3.1412704430468774
+          ],
+          "pnl_delta_95_game_cluster": [
+            0.0,
+            0.18049103124999993
+          ],
+          "leave_one_game_out_total_range": [
+            -7.570277790625004,
+            -6.550515856250003
+          ],
+          "original_winning_cases_lost": 0,
+          "losing_cases_rescued": 0
+        },
+        "take_profit_0.1": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 109,
+          "losing_cases": 107,
+          "win_rate_traded": 0.5046296296296297,
+          "win_rate_all_cases": 0.5046296296296297,
+          "total_pnl": -6.824312303125003,
+          "gross_wins": 4.071710687499999,
+          "gross_losses": -10.896022990625001,
+          "average_win": 0.03735514392201834,
+          "average_loss": -0.1018319905665888,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.03159403844039353,
+          "pnl_95_game_cluster": [
+            -10.513844741015628,
+            -3.2364484869531274
+          ],
+          "pnl_delta_95_game_cluster": [
+            -0.842180011796875,
+            1.9423873896875006
+          ],
+          "leave_one_game_out_total_range": [
+            -7.036151990625003,
+            -6.108001618750003
+          ],
+          "original_winning_cases_lost": 1,
+          "losing_cases_rescued": 7
+        },
+        "take_profit_0.2": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 107,
+          "losing_cases": 109,
+          "win_rate_traded": 0.49537037037037035,
+          "win_rate_all_cases": 0.49537037037037035,
+          "total_pnl": -7.185511053125003,
+          "gross_wins": 4.642760062499999,
+          "gross_losses": -11.828271115625002,
+          "average_win": 0.043390280957943915,
+          "average_loss": -0.10851624876720185,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.033266254875578716,
+          "pnl_95_game_cluster": [
+            -11.100306107421877,
+            -3.318392503515628
+          ],
+          "pnl_delta_95_game_cluster": [
+            -0.551616803828125,
+            1.0602994786718751
+          ],
+          "leave_one_game_out_total_range": [
+            -7.3973507406250025,
+            -6.469200368750003
+          ],
+          "original_winning_cases_lost": 0,
+          "losing_cases_rescued": 4
+        },
+        "exit_below_liquidation_value": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 66,
+          "losing_cases": 150,
+          "win_rate_traded": 0.3055555555555556,
+          "win_rate_all_cases": 0.3055555555555556,
+          "total_pnl": -4.827569312500003,
+          "gross_wins": 3.0098155906249993,
+          "gross_losses": -7.8373849031250025,
+          "average_win": 0.0456032665246212,
+          "average_loss": -0.052249232687500015,
+          "worst_case_pnl": -0.31831968750000006,
+          "mean_pnl_per_case": -0.022349857928240756,
+          "pnl_95_game_cluster": [
+            -7.517527036015629,
+            -2.146767820859377
+          ],
+          "pnl_delta_95_game_cluster": [
+            -0.5197282189062506,
+            5.728738647578126
+          ],
+          "leave_one_game_out_total_range": [
+            -5.099633062500003,
+            -4.268185940625003
+          ],
+          "original_winning_cases_lost": 50,
+          "losing_cases_rescued": 13
+        },
+        "skip_switch_entries": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 99,
+          "losing_cases": 117,
+          "win_rate_traded": 0.4583333333333333,
+          "win_rate_all_cases": 0.4583333333333333,
+          "total_pnl": -4.168413225000002,
+          "gross_wins": 3.741296068749999,
+          "gross_losses": -7.909709293750001,
+          "average_win": 0.037790869381313125,
+          "average_loss": -0.0676043529380342,
+          "worst_case_pnl": -0.23939968749999999,
+          "mean_pnl_per_case": -0.019298209375000007,
+          "pnl_95_game_cluster": [
+            -7.206103081171876,
+            -1.0145022719531267
+          ],
+          "pnl_delta_95_game_cluster": [
+            0.704404000625001,
+            5.676777491015627
+          ],
+          "leave_one_game_out_total_range": [
+            -4.471864475000002,
+            -3.458590100000002
+          ],
+          "original_winning_cases_lost": 18,
+          "losing_cases_rescued": 14
+        },
+        "followup_take_0.10_stop_0.25": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 109,
+          "losing_cases": 107,
+          "win_rate_traded": 0.5046296296296297,
+          "win_rate_all_cases": 0.5046296296296297,
+          "total_pnl": -6.5794360531250025,
+          "gross_wins": 4.071710687499999,
+          "gross_losses": -10.651146740625002,
+          "average_win": 0.03735514392201834,
+          "average_loss": -0.09954342748247666,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.03046035209780094,
+          "pnl_95_game_cluster": [
+            -10.287856112031253,
+            -2.9582903703906265
+          ],
+          "pnl_delta_95_game_cluster": [
+            -0.6489962647656253,
+            2.214566011875
+          ],
+          "leave_one_game_out_total_range": [
+            -6.791275740625002,
+            -5.863125368750002
+          ],
+          "original_winning_cases_lost": 1,
+          "losing_cases_rescued": 7
+        },
+        "followup_exit_h2_30": {
+          "replay_cases": 216,
+          "unique_matches": 72,
+          "traded_cases": 216,
+          "winning_cases": 95,
+          "losing_cases": 121,
+          "win_rate_traded": 0.4398148148148148,
+          "win_rate_all_cases": 0.4398148148148148,
+          "total_pnl": -6.071033843750003,
+          "gross_wins": 3.3680417374999996,
+          "gross_losses": -9.439075581250002,
+          "average_win": 0.035453070921052626,
+          "average_loss": -0.07800888910123968,
+          "worst_case_pnl": -0.3286434375,
+          "mean_pnl_per_case": -0.028106638165509273,
+          "pnl_95_game_cluster": [
+            -9.410026521093753,
+            -2.7859742930468765
+          ],
+          "pnl_delta_95_game_cluster": [
+            -1.096657866796875,
+            3.901626613203126
+          ],
+          "leave_one_game_out_total_range": [
+            -6.3459107187500035,
+            -5.354723159375003
+          ],
+          "original_winning_cases_lost": 16,
+          "losing_cases_rescued": 8
+        }
+      },
+      "worst_positions": [
+        {
+          "match_id": "400021447",
+          "repeat": 0,
+          "match": "FIFA World Cup 2026, First Stage: Qatar (home) v Switzerland (away)",
+          "side": "away",
+          "entry_decision": "h1+30",
+          "entry_action": "buy_away",
+          "shown_cost": 0.9575987499999999,
+          "entry_cost": 0.9575987499999999,
+          "prob": 0.6,
+          "edge": -0.35759874999999997,
+          "reason": "{\"probs\":{\"home\":0.15,\"draw\":0.25,\"away\":0.60},\"next_goal\":{\"home\":0.20,\"away\":0.30,\"none\":0.50},\"future_prices\":{\"home\":0.12,\"draw\":0.23,\"away\":0.65},\"action\":\"buy_away\",\"reason\":\"Away team has higher scoring potential with more shots and momentum\"}",
+          "checkpoints": [
+            {
+              "decision": "ht",
+              "shown": 0.935,
+              "fill": 0.935,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.935,
+              "fill": 0.925,
+              "prob": 0.6,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.945,
+              "fill": 0.945,
+              "prob": 0.65,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.9575987499999999,
+          "pnl": -0.23939968749999999
+        },
+        {
+          "match_id": "400021447",
+          "repeat": 2,
+          "match": "FIFA World Cup 2026, First Stage: Qatar (home) v Switzerland (away)",
+          "side": "away",
+          "entry_decision": "h1+30",
+          "entry_action": "buy_away",
+          "shown_cost": 0.9575987499999999,
+          "entry_cost": 0.9575987499999999,
+          "prob": 0.65,
+          "edge": -0.3075987499999999,
+          "reason": "{\n  \"probs\": {\"home\": 0.20, \"draw\": 0.15, \"away\": 0.65},\n  \"next_goal\": {\"home\": 0.25, \"away\": 0.25, \"none\": 0.50},\n  \"future_prices\": {\"home\": 0.22, \"draw\": 0.18, \"away\": 0.59},\n  \"action\": \"buy_away\",\n  \"reason\": \"Away team has strong scoring chances and the market is undervaluing their prospects.\"\n}",
+          "checkpoints": [
+            {
+              "decision": "ht",
+              "shown": 0.935,
+              "fill": 0.935,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.935,
+              "fill": 0.925,
+              "prob": 0.7,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.945,
+              "fill": 0.945,
+              "prob": 0.65,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.9575987499999999,
+          "pnl": -0.23939968749999999
+        },
+        {
+          "match_id": "400021447",
+          "repeat": 1,
+          "match": "FIFA World Cup 2026, First Stage: Qatar (home) v Switzerland (away)",
+          "side": "away",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_away",
+          "shown_cost": 0.87119875,
+          "entry_cost": 0.924095,
+          "prob": 0.5,
+          "edge": -0.37119875,
+          "reason": "{\"probs\":{\"home\":0.25,\"draw\":0.25,\"away\":0.5},\"next_goal\":{\"home\":0.3,\"away\":0.3,\"none\":0.4},\"future_prices\":{\"home\":0.28,\"draw\":0.22,\"away\":0.5},\"action\":\"buy_away\",\"reason\":\"Switzerland's higher shot count and control suggest a higher chance of scoring\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.945,
+              "fill": 0.945,
+              "prob": 0.7,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.935,
+              "fill": 0.935,
+              "prob": 0.6,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.935,
+              "fill": 0.925,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.945,
+              "fill": 0.945,
+              "prob": 0.65,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.924095,
+          "pnl": -0.23102375
+        },
+        {
+          "match_id": "400021482",
+          "repeat": 1,
+          "match": "FIFA World Cup 2026, First Stage: Spain (home) v Cabo Verde (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.89046875,
+          "entry_cost": 0.87119875,
+          "prob": 0.85,
+          "edge": -0.04046875000000005,
+          "reason": "{\"probs\":{\"home\":0.85,\"draw\":0.10,\"away\":0.05},\"next_goal\":{\"home\":0.35,\"away\":0.25,\"none\":0.40},\"future_prices\":{\"home\":0.82,\"draw\":0.11,\"away\":0.07},\"action\":\"buy_home\",\"reason\":\"Home team has more possession and a corner kick opportunity, suggesting higher probability of scoring.\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.835,
+              "fill": 0.825,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.795,
+              "fill": 0.785,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.725,
+              "fill": 0.725,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.645,
+              "fill": 0.605,
+              "prob": 0.55,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.87119875,
+          "pnl": -0.2177996875
+        },
+        {
+          "match_id": "400021482",
+          "repeat": 2,
+          "match": "FIFA World Cup 2026, First Stage: Spain (home) v Cabo Verde (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.89046875,
+          "entry_cost": 0.87119875,
+          "prob": 0.65,
+          "edge": -0.24046875,
+          "reason": "{\"probs\":{\"home\":0.65,\"draw\":0.25,\"away\":0.10},\"next_goal\":{\"home\":0.40,\"away\":0.30,\"none\":0.30},\"future_prices\":{\"home\":0.60,\"draw\":0.20,\"away\":0.20},\"action\":\"buy_home\",\"reason\":\"Home team has more possession and a corner kick, indicating better chances\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.835,
+              "fill": 0.825,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.795,
+              "fill": 0.785,
+              "prob": 0.5,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.725,
+              "fill": 0.725,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.645,
+              "fill": 0.605,
+              "prob": 0.45,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.87119875,
+          "pnl": -0.2177996875
+        },
+        {
+          "match_id": "400021465",
+          "repeat": 1,
+          "match": "FIFA World Cup 2026, First Stage: Ecuador (home) v Cura\u00e7ao (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.83253875,
+          "entry_cost": 0.84221875,
+          "prob": 0.65,
+          "edge": -0.18253874999999997,
+          "reason": "{\"probs\":{\"home\":0.65,\"draw\":0.20,\"away\":0.15},\"next_goal\":{\"home\":0.55,\"away\":0.40,\"none\":0.05},\"future_prices\":{\"home\":0.75,\"draw\":0.15,\"away\":0.10},\"action\":\"buy_home\",\"reason\":\"Home team has more possession and shot attempts, suggesting higher probability of scoring\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.775,
+              "fill": 0.775,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.715,
+              "fill": 0.715,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.605,
+              "fill": 0.585,
+              "prob": 0.45,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.545,
+              "fill": 0.545,
+              "prob": 0.45,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.84221875,
+          "pnl": -0.2105546875
+        },
+        {
+          "match_id": "400021470",
+          "repeat": 0,
+          "match": "FIFA World Cup 2026, First Stage: Netherlands (home) v Japan (away)",
+          "side": "home",
+          "entry_decision": "h2+30",
+          "entry_action": "switch_home",
+          "shown_cost": 0.78398875,
+          "entry_cost": 0.8131487500000001,
+          "prob": 0.65,
+          "edge": -0.13398875,
+          "reason": "{\"probs\":{\"home\":0.65,\"draw\":0.25,\"away\":0.10},\"next_goal\":{\"home\":0.30,\"away\":0.20,\"none\":0.50},\"future_prices\":{\"home\":0.68,\"draw\":0.22,\"away\":0.10},\"action\":\"switch_home\",\"reason\":\"Home team has strong momentum and scoring chances, making it undervalued compared to implied probability\"}",
+          "checkpoints": [],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.8131487500000001,
+          "pnl": -0.20328718750000002
+        },
+        {
+          "match_id": "400021440",
+          "repeat": 0,
+          "match": "FIFA World Cup 2026, First Stage: Czechia (home) v South Africa (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.74496875,
+          "entry_cost": 0.74496875,
+          "prob": 0.65,
+          "edge": -0.09496874999999994,
+          "reason": "{\"probs\":{\"home\":0.65,\"draw\":0.20,\"away\":0.15},\"next_goal\":{\"home\":0.45,\"away\":0.35,\"none\":0.20},\"future_prices\":{\"home\":0.68,\"draw\":0.22,\"away\":0.10},\"action\":\"buy_home\",\"reason\":\"Home team has a clear advantage with 1-0 lead and better stats, buying at a discount\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.715,
+              "fill": 0.705,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.725,
+              "fill": 0.725,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.775,
+              "fill": 0.775,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.805,
+              "fill": 0.805,
+              "prob": 0.75,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.74496875,
+          "pnl": -0.1862421875
+        },
+        {
+          "match_id": "400021482",
+          "repeat": 0,
+          "match": "FIFA World Cup 2026, First Stage: Spain (home) v Cabo Verde (away)",
+          "side": "home",
+          "entry_decision": "h2+15",
+          "entry_action": "switch_home",
+          "shown_cost": 0.74496875,
+          "entry_cost": 0.74496875,
+          "prob": 0.55,
+          "edge": -0.1949687499999999,
+          "reason": "{\"probs\":{\"home\":0.55,\"draw\":0.30,\"away\":0.15},\"next_goal\":{\"home\":0.40,\"away\":0.30,\"none\":0.30},\"future_prices\":{\"home\":0.65,\"draw\":0.25,\"away\":0.10},\"action\":\"switch_home\",\"reason\":\"Home team has more possession and shot attempts, suggesting a higher chance of scoring.\"}",
+          "checkpoints": [
+            {
+              "decision": "h2+30",
+              "shown": 0.645,
+              "fill": 0.605,
+              "prob": 0.45,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.74496875,
+          "pnl": -0.1862421875
+        },
+        {
+          "match_id": "400021440",
+          "repeat": 1,
+          "match": "FIFA World Cup 2026, First Stage: Czechia (home) v South Africa (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.74496875,
+          "entry_cost": 0.74496875,
+          "prob": 0.65,
+          "edge": -0.09496874999999994,
+          "reason": "{\"probs\":{\"home\":0.65,\"draw\":0.15,\"away\":0.20},\"next_goal\":{\"home\":0.35,\"away\":0.30,\"none\":0.35},\"future_prices\":{\"home\":0.68,\"draw\":0.17,\"away\":0.15},\"action\":\"buy_home\",\"reason\":\"Home team has strong scoring chances and the market undervalues their likelihood\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.715,
+              "fill": 0.705,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.725,
+              "fill": 0.725,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.775,
+              "fill": 0.775,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.805,
+              "fill": 0.805,
+              "prob": 0.75,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.74496875,
+          "pnl": -0.1862421875
+        },
+        {
+          "match_id": "400021440",
+          "repeat": 2,
+          "match": "FIFA World Cup 2026, First Stage: Czechia (home) v South Africa (away)",
+          "side": "home",
+          "entry_decision": "h1+15",
+          "entry_action": "buy_home",
+          "shown_cost": 0.74496875,
+          "entry_cost": 0.74496875,
+          "prob": 0.65,
+          "edge": -0.09496874999999994,
+          "reason": "{\"probs\":{\"home\":0.65,\"draw\":0.15,\"away\":0.20},\"next_goal\":{\"home\":0.35,\"away\":0.30,\"none\":0.35},\"future_prices\":{\"home\":0.68,\"draw\":0.17,\"away\":0.15},\"action\":\"buy_home\",\"reason\":\"Home team has a strong lead with a goal and better stats, price seems undervalued\"}",
+          "checkpoints": [
+            {
+              "decision": "h1+30",
+              "shown": 0.715,
+              "fill": 0.705,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "ht",
+              "shown": 0.725,
+              "fill": 0.725,
+              "prob": 0.65,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+15",
+              "shown": 0.775,
+              "fill": 0.775,
+              "prob": 0.6,
+              "action": "keep"
+            },
+            {
+              "decision": "h2+30",
+              "shown": 0.805,
+              "fill": 0.805,
+              "prob": 0.6,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.74496875,
+          "pnl": -0.1862421875
+        },
+        {
+          "match_id": "400021441",
+          "repeat": 2,
+          "match": "FIFA World Cup 2026, First Stage: Korea Republic (home) v Czechia (away)",
+          "side": "away",
+          "entry_decision": "h2+15",
+          "entry_action": "switch_away",
+          "shown_cost": 0.66644875,
+          "entry_cost": 0.66644875,
+          "prob": 0.5,
+          "edge": -0.16644875000000003,
+          "reason": "{\"probs\":{\"home\":0.25,\"draw\":0.25,\"away\":0.5},\"next_goal\":{\"home\":0.15,\"away\":0.25,\"none\":0.6},\"future_prices\":{\"home\":0.22,\"draw\":0.28,\"away\":0.5},\"action\":\"switch_away\",\"reason\":\"Czechia's recent goal and strong attack suggest higher probability of away win\"}",
+          "checkpoints": [
+            {
+              "decision": "h2+30",
+              "shown": 0.145,
+              "fill": 0.155,
+              "prob": 0.2,
+              "action": "keep"
+            }
+          ],
+          "exit_decision": "settlement",
+          "exit_type": "settlement",
+          "exit_value": 0.0,
+          "pnl_per_share": -0.66644875,
+          "pnl": -0.1666121875
+        }
+      ]
+    }
+  },
+  "holdout_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "method": "Frozen original entry/exit tape; filters skip positions, early exits stay flat until the next original entry. Switches close the old position even when the new entry is filtered. Signals at recorded checkpoints only; delayed fills and fees applied. No new model responses. All policy comparisons are exploratory on previously inspected development games.",
+  "holdout_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "source_sha256": {
+    "artifacts/earlier-run-risk/tasks.jsonl.gz": "afedb22fc96debd7ad0fb7b85165b7b0a868a7e7e09dff372e030a68ccf5a306",
+    "artifacts/earlier-run-risk/comparison.json": "8967e39a92364352854ebadbf907428ed6962e3f31c09c747b17db3ab05dd5d6",
+    "artifacts/closed-loop-risk/matches.jsonl": "c3bd4483310c3494a9de429864aca8dbe42dbd742bbb5c899d867a2efd3dc1cb",
+    "artifacts/closed-loop-risk/predictions.jsonl": "f64ebf77ea3a3bbfabfa647ed89430de648d0feb5f447583189b05fa35ebe030",
+    "artifacts/quarter-original-live/matches.jsonl": "825dd935e7b1886c33c442d19acc07324026c18e531da75014b6a7216a6ec13e",
+    "artifacts/quarter-original-live/predictions.jsonl": "6c828c4b426b857c683ccb876906a7e1d9189bcdaa023fd4fac794912c6089d7"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "incremental_actual_usd": 0.0,
+  "incremental_reserved_usd": 0.0,
+  "paid_calls": 0,
+  "historical_pilot_full_rate_estimate_usd": 0.18157373,
+  "historical_cost_note": "Pre-existing pilot estimate, not invoice or current D6 incremental spend",
+  "cap_scope": "Latest user $5 total combined current task overrides older $5 per direction; D6 launches no paid work",
+  "future_proposal_is_not_a_reservation": true
+}

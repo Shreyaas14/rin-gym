@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "eight_reports_accepted": [
+    {
+      "direction": "d1_consistency",
+      "results_sha256": "f117a2bc6a6cc67d4a99e2db2afdbc8bf8cc05e6450bb6a5b053d96cb45a93f7",
+      "report_sha256": "c2f24e02dfd33153be1652441cc0729aeb6c5a6cf1e70cc9aa6bba40044a4e0d",
+      "verification_sha256": "9726ffe30825bd88e528619937dc2ce265096fa1efe0afb08e55aa93f6842c35"
+    },
+    {
+      "direction": "d2_market_prior",
+      "results_sha256": "074afb0254c04a47749d624a368962f479bcc6f455bfe6b8aed6be2a1a04dd96",
+      "report_sha256": "80b685b6b07698bc67745be6559bbfc4d9f2a66a6b2abec1349dc4a6c0854910",
+      "verification_sha256": "358bfa4e62201156b6f695eddb263c26a5e659352adce3f8129068080f653826"
+    },
+    {
+      "direction": "d3_calibration",
+      "results_sha256": "c46cce595699fadf2f82b24d5928639308103aa8f656739b0c2376620595a99d",
+      "report_sha256": "f1a651aefa76fbf559c17ad222fe172486b539dc6ad0148f5dbefb751db0dedb",
+      "verification_sha256": "ade784b1e618a572a5103059244e93ac9be83fbad009a8204fa3a47a2fa05f82"
+    },
+    {
+      "direction": "d4_position_bias",
+      "results_sha256": "1ff00d57419e43b510c88354e27b15bc79319922152e36ec71e4af42df21b6dc",
+      "report_sha256": "640a9b50aed76e759500ed02f720223f32d56b5a18fdd491b3316bb917dcc195",
+      "verification_sha256": "c6f7f38e44c8433e7a46192541db7abd3fd455c3570050afeac93e0c2eb07433"
+    },
+    {
+      "direction": "d5_timing_memory",
+      "results_sha256": "a8fcf07db9d6485e3fe55607fcaca7207f534254cc11c17a848b8f089d70a3cc",
+      "report_sha256": "7469f8700823ea5aaac4d8280f67c8cb793082e437654e9bc44c4f4418418836",
+      "verification_sha256": "fb983a1a714b6d695754d3789c34b30a45d43777843a39caf1b3edac157bd4b3"
+    },
+    {
+      "direction": "d6_training_scale",
+      "results_sha256": "c067c9b4b0b6e73c420a4b4b9d93a7659aad4a7c51d9c5d36c52fee122398e65",
+      "report_sha256": "d48fc02718d9151ccda34213814140550887b3995ccbda15e7a6d6b9edb899cd",
+      "verification_sha256": "32523d1cf819d8bd804977e97c387eb9ee2a1b39079abaa9f83c1b8901f2cd3e"
+    },
+    {
+      "direction": "d7_execution_realism",
+      "results_sha256": "3222d5046c18ac96f01a2c37af46c464829c90fb0196b2fdda970c606e95c534",
+      "report_sha256": "0249ad8b455023b03cb5537d3b3e9f6cdfe5026a2977602de16806f04a1ae753",
+      "verification_sha256": "78b33e20db06ad4d4c964f71200e71fdd3a9ced01ffa51ff5687d275486b2d37"
+    },
+    {
+      "direction": "d8_specialization",
+      "results_sha256": "b9a18e3929a028e0cf31152ad60e2cdc680d3311a5b2c272e5cdd726364e060b",
+      "report_sha256": "6981d862120be3d68a7efda5e82a5a57c4330b8782891dfa160f1633fea21094",
+      "verification_sha256": "ef00ad85ae2f4d720934fda8507c630e3828e4f2d6caf0151765516e3a16d97a"
+    }
+  ],
+  "paid_requests_reconciled": [
+    {
+      "direction": 2,
+      "requests": 990,
+      "estimated_usd": 0.39600783000000017,
+      "reserved_usd": 0.9751440599999991
+    },
+    {
+      "direction": 4,
+      "requests": 480,
+      "estimated_usd": 0.1849156799999999,
+      "reserved_usd": 0.4601673600000003
+    },
+    {
+      "direction": 5,
+      "requests": 1354,
+      "estimated_usd": 0.16746768,
+      "reserved_usd": 0.48783216000000074
+    }
+  ],
+  "total_completed_requests": 2824,
+  "total_token_estimate_usd": 0.7483911900000001,
+  "total_reserved_max_usd": 1.92314358,
+  "latest_combined_limit_usd": 5,
+  "no_pending_paid_requests": true,
+  "source_and_snapshot_hashes_unchanged": 59,
+  "seal_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "seal_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "execution_core_and_harness_hashes_match": true,
+  "execution_baseline_max_error": 0.0,
+  "all_execution_tests": "196 passed; full-suite.log",
+  "invoice_status": "unavailable; provider usage query retrieved no attributable events yet, absence not zero",
+  "known_corrected_failures": "Initial mixed-role harness test assumed signal survived180s; updated explicit300s test fixture and added actual180s deadline test. Production180s unchanged; final full suite green."
+}

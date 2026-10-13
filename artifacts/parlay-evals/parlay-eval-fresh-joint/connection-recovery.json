@@ -1,0 +1,5 @@
+{
+  "reason": "Initial sandboxed process stalled during sampling-client initialization; stopped before any forecast request receipts existed.",
+  "paid_forecast_requests_before_recovery": 0,
+  "original_start_marker": "STARTED-network-stall.json"
+}

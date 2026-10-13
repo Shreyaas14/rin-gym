@@ -1,0 +1,89 @@
+{
+  "calls": 1354,
+  "input_tokens": 717584,
+  "max_prompt_tokens": 1196,
+  "maximum_output_tokens": 173312,
+  "maximum_token_cost_usd": 0.24391608,
+  "reserved_2x_max_usd": 0.48783216,
+  "rates": {
+    "prefill": 0.195,
+    "sample": 0.6
+  },
+  "paid_requests": 0,
+  "prompt_checks": {
+    "no_labels_or_fills": true,
+    "common_time_messages_same": true,
+    "memory_latest_before_decision": true
+  },
+  "coverage": [
+    {
+      "match_id": "400021480",
+      "minute_requested": 75,
+      "minute_supported": 75,
+      "original_supported": 5,
+      "drops": []
+    },
+    {
+      "match_id": "400021494",
+      "minute_requested": 75,
+      "minute_supported": 75,
+      "original_supported": 5,
+      "drops": []
+    },
+    {
+      "match_id": "400021492",
+      "minute_requested": 75,
+      "minute_supported": 75,
+      "original_supported": 5,
+      "drops": []
+    },
+    {
+      "match_id": "400021491",
+      "minute_requested": 75,
+      "minute_supported": 75,
+      "original_supported": 5,
+      "drops": []
+    },
+    {
+      "match_id": "400021499",
+      "minute_requested": 75,
+      "minute_supported": 72,
+      "original_supported": 5,
+      "drops": [
+        {
+          "decision": "h1+36",
+          "reason": "price_sum"
+        },
+        {
+          "decision": "h2+38",
+          "reason": "price_sum"
+        },
+        {
+          "decision": "h2+39",
+          "reason": "price_sum"
+        }
+      ]
+    },
+    {
+      "match_id": "400021503",
+      "minute_requested": 75,
+      "minute_supported": 75,
+      "original_supported": 5,
+      "drops": []
+    },
+    {
+      "match_id": "400021506",
+      "minute_requested": 75,
+      "minute_supported": 75,
+      "original_supported": 5,
+      "drops": []
+    },
+    {
+      "match_id": "400021511",
+      "minute_requested": 75,
+      "minute_supported": 75,
+      "original_supported": 5,
+      "drops": []
+    }
+  ]
+}

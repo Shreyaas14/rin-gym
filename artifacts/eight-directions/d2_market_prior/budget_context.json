@@ -1,0 +1,9 @@
+{
+  "initial_per_direction_cap_usd": 5,
+  "initial_total_cap_usd": 40,
+  "latest_total_incremental_paid_service_cap_usd": 5,
+  "combined_limit_enforced_by": "root orchestrator across all directions and newly requested implementation",
+  "root_instruction": "Finish already authorized frozen run unchanged; no additional paid runs beyond current protocol.",
+  "this_frozen_run_maximum_token_estimate_usd": 0.48757203,
+  "this_frozen_run_maximum_reserved_usd": 0.97514406
+}

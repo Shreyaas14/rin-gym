@@ -1,0 +1,10 @@
+test_equal_match_weight_preserves_repeats_and_singleton_uncertainty (experiments.eight_directions.d8_specialization.test_analysis.ObservableScreenTests.test_equal_match_weight_preserves_repeats_and_singleton_uncertainty) ... ok
+test_exact_predeclared_decimal_movement_boundary (experiments.eight_directions.d8_specialization.test_analysis.ObservableScreenTests.test_exact_predeclared_decimal_movement_boundary) ... ok
+test_no_first_quote_movement_or_system_rule_false_positive (experiments.eight_directions.d8_specialization.test_analysis.ObservableScreenTests.test_no_first_quote_movement_or_system_rule_false_positive) ... ok
+test_original_validity_tolerance_and_truncation (experiments.eight_directions.d8_specialization.test_analysis.ObservableScreenTests.test_original_validity_tolerance_and_truncation) ... ok
+test_slice_inputs_and_prefix_red_parsing (experiments.eight_directions.d8_specialization.test_analysis.ObservableScreenTests.test_slice_inputs_and_prefix_red_parsing) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.009s
+
+OK

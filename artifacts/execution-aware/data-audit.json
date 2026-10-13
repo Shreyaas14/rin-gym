@@ -1,0 +1,4161 @@
+{
+  "release": "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/data/raw/release-data-2026-10-13-v1",
+  "schemas_only_inventory": {
+    "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/data/raw/release-data-2026-10-13-v1/data/processed/fifa-markets/snapshots/20261013T030206-a098517b/events.parquet": [
+      "source",
+      "match_id",
+      "competition_id",
+      "season_id",
+      "event_uid",
+      "event_id",
+      "source_index",
+      "event_time_utc",
+      "period_code",
+      "phase",
+      "match_minute_raw",
+      "clock_minute",
+      "stoppage_minute",
+      "period_elapsed_ms",
+      "event_type_code",
+      "event_type_label",
+      "event_kind",
+      "event_description",
+      "team_id",
+      "player_id",
+      "sub_player_id",
+      "sub_team_id",
+      "person_id",
+      "home_score",
+      "away_score",
+      "home_shootout_score",
+      "away_shootout_score",
+      "x_raw",
+      "y_raw",
+      "location_status",
+      "goal_gate_x_raw",
+      "goal_gate_y_raw",
+      "foul_party_code",
+      "qualifiers_json",
+      "var_notification_json",
+      "quality_flags",
+      "source_response_sha256",
+      "fetched_at_utc",
+      "dataset_version",
+      "schema_version",
+      "normalization_version",
+      "source_event_json",
+      "market_odds",
+      "odds_usable"
+    ],
+    "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/data/raw/release-data-2026-10-13-v1/data/processed/fifa-markets/snapshots/20261013T030206-a098517b/matches.parquet": [
+      "source",
+      "match_id",
+      "competition_id",
+      "competition_name",
+      "season_id",
+      "season_name",
+      "stage_id",
+      "stage_name",
+      "group_id",
+      "group_name",
+      "matchday_raw",
+      "scheduled_kickoff_utc",
+      "home_team_id",
+      "away_team_id",
+      "home_team_name",
+      "away_team_name",
+      "home_placeholder",
+      "away_placeholder",
+      "match_status_code",
+      "match_status",
+      "calendar_home_score",
+      "calendar_away_score",
+      "regulation_home_score",
+      "regulation_away_score",
+      "final_home_score",
+      "final_away_score",
+      "shootout_home_score",
+      "shootout_away_score",
+      "went_to_extra_time",
+      "went_to_shootout",
+      "winner_team_id",
+      "result_type_code",
+      "ifes_match_id",
+      "statsperform_match_id",
+      "timeline_status",
+      "event_count",
+      "located_event_count",
+      "quality_flags",
+      "calendar_response_sha256",
+      "timeline_response_sha256",
+      "calendar_fetched_at_utc",
+      "timeline_fetched_at_utc",
+      "dataset_version",
+      "schema_version",
+      "normalization_version",
+      "source_match_json",
+      "prediction_markets"
+    ],
+    "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/data/raw/release-data-2026-10-13-v1/data/processed/fifa-markets/snapshots/20261013T030206-a098517b/fixture-contracts.parquet": [
+      "match_id",
+      "competition_id",
+      "market_id",
+      "polymarket_event_id",
+      "slug",
+      "question",
+      "sports_market_type",
+      "hda_outcome",
+      "kickoff_delta_seconds",
+      "catalog_sha256",
+      "source_market_json",
+      "condition_id",
+      "series_id",
+      "contract_policy_version",
+      "token_registry_sha256"
+    ],
+    "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/data/raw/release-data-2026-10-13-v1/data/processed/fifa-market-history/snapshots/20261013T030305-50201b7d/markets.parquet": [
+      "match_id",
+      "competition_id",
+      "market_id",
+      "polymarket_event_id",
+      "slug",
+      "question",
+      "sports_market_type",
+      "hda_outcome",
+      "kickoff_delta_seconds",
+      "catalog_sha256",
+      "source_market_json",
+      "condition_id",
+      "series_id",
+      "contract_policy_version",
+      "token_registry_sha256",
+      "market_family",
+      "tokens",
+      "all_outcomes_have_history",
+      "entity_resolution_scope"
+    ],
+    "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/data/raw/release-data-2026-10-13-v1/data/processed/fifa-market-history/snapshots/20261013T030305-50201b7d/prices.parquet": [
+      "match_id",
+      "market_id",
+      "token_id",
+      "outcome_index",
+      "outcome",
+      "timestamp",
+      "price",
+      "in_game",
+      "source_response_sha256"
+    ]
+  },
+  "filtered_matches": [
+    "400021440",
+    "400021441",
+    "400021442",
+    "400021443",
+    "400021444",
+    "400021445",
+    "400021446",
+    "400021447",
+    "400021448",
+    "400021449",
+    "400021450",
+    "400021451",
+    "400021452",
+    "400021453",
+    "400021454",
+    "400021455",
+    "400021456",
+    "400021457",
+    "400021458",
+    "400021459",
+    "400021460",
+    "400021461",
+    "400021462",
+    "400021463",
+    "400021464",
+    "400021465",
+    "400021466",
+    "400021467",
+    "400021468",
+    "400021469",
+    "400021470",
+    "400021471",
+    "400021472",
+    "400021473",
+    "400021474",
+    "400021475",
+    "400021476",
+    "400021477",
+    "400021478",
+    "400021479",
+    "400021480",
+    "400021481",
+    "400021482",
+    "400021483",
+    "400021484",
+    "400021485",
+    "400021486",
+    "400021487",
+    "400021488",
+    "400021489",
+    "400021490",
+    "400021491",
+    "400021492",
+    "400021493",
+    "400021494",
+    "400021495",
+    "400021496",
+    "400021497",
+    "400021498",
+    "400021499",
+    "400021500",
+    "400021501",
+    "400021502",
+    "400021503",
+    "400021504",
+    "400021505",
+    "400021506",
+    "400021507",
+    "400021508",
+    "400021509",
+    "400021510",
+    "400021511"
+  ],
+  "filtered_metadata": [
+    {
+      "match_id": "400021440",
+      "market_id": "1897106",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T18:13:20.684271Z",
+      "createdAt": "2026-04-06T22:19:49.055086Z",
+      "yes_token_id": "37088846718363125743947103938325144949409419304219830474975395227343762118615",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021440",
+      "market_id": "1897107",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T18:19:22.356027Z",
+      "createdAt": "2026-04-06T22:19:49.334702Z",
+      "yes_token_id": "25547941541163379167027433013111695108245471419110558598651133766324877924515",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021440",
+      "market_id": "1897108",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T18:13:20.684271Z",
+      "createdAt": "2026-04-06T22:19:49.629471Z",
+      "yes_token_id": "29904085738634800807850286108673899231278214025131538572228243310371586316124",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021441",
+      "market_id": "1897037",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:55:37.870971Z",
+      "createdAt": "2026-04-06T22:18:49.95028Z",
+      "yes_token_id": "52684921837049562400037353238223049293166344115053393981883920285480538360105",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021441",
+      "market_id": "1897038",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:55:37.721617Z",
+      "createdAt": "2026-04-06T22:18:50.421575Z",
+      "yes_token_id": "49396156480688770869378179133906823616889681020710122888263516916801618839975",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021441",
+      "market_id": "1897039",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:55:37.79677Z",
+      "createdAt": "2026-04-06T22:18:50.706758Z",
+      "yes_token_id": "77191186536909014586922022659322569099273509749066699749214305589630021269429",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021442",
+      "market_id": "1897115",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-20T03:18:12.723032Z",
+      "createdAt": "2026-04-06T22:19:57.223906Z",
+      "yes_token_id": "84622337225923971667543390025202237459542894380445135038857655043890030217262",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021442",
+      "market_id": "1897116",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-20T03:12:02.277288Z",
+      "createdAt": "2026-04-06T22:19:57.510367Z",
+      "yes_token_id": "51958120300750633024043231741875227303543295888125840580124643399830654381246",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021442",
+      "market_id": "1897117",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-20T03:10:11.356415Z",
+      "createdAt": "2026-04-06T22:19:57.801041Z",
+      "yes_token_id": "40559900670015709472472801511880289852513956415696043408438494025364180866146",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021443",
+      "market_id": "1897034",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:55:55.107684Z",
+      "createdAt": "2026-04-06T22:18:47.13355Z",
+      "yes_token_id": "20779063998268474490699884714808310289659170477959115489741275295270359962039",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021443",
+      "market_id": "1897035",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:55:55.157335Z",
+      "createdAt": "2026-04-06T22:18:47.607286Z",
+      "yes_token_id": "11634144673803325466643188834337300341803737096067092239834760823912726000274",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021443",
+      "market_id": "1897036",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:55:55.215548Z",
+      "createdAt": "2026-04-06T22:18:47.915229Z",
+      "yes_token_id": "115307860962719805060784163204351769077176612029040401546976102705811910754396",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021444",
+      "market_id": "1897296",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T03:11:04.650909Z",
+      "createdAt": "2026-04-06T22:21:04.631297Z",
+      "yes_token_id": "75582324068408801617260879555413324403573690501232841899134550992026699982390",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021444",
+      "market_id": "1897297",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T03:06:55.662886Z",
+      "createdAt": "2026-04-06T22:21:04.926351Z",
+      "yes_token_id": "104735262279610516248406908690291013202167988132813028132950707551552452029652",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021444",
+      "market_id": "1897299",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T03:17:06.341812Z",
+      "createdAt": "2026-04-06T22:21:05.217322Z",
+      "yes_token_id": "67466148034529849001749283892995420841255740280965377423907471965663421834164",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021445",
+      "market_id": "1897303",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T03:21:05.526251Z",
+      "createdAt": "2026-04-06T22:21:07.230633Z",
+      "yes_token_id": "58830526078196302612867530222421263708170468828968028907746961007548153805793",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021445",
+      "market_id": "1897305",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T03:09:06.041991Z",
+      "createdAt": "2026-04-06T22:21:07.522055Z",
+      "yes_token_id": "103052895473654725211234208718417485025769469987098102360162412805062007216205",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021445",
+      "market_id": "1897306",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T03:13:04.862695Z",
+      "createdAt": "2026-04-06T22:21:07.803515Z",
+      "yes_token_id": "78041669573197271831143243516603089617333411410934465631182277350983388128942",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021446",
+      "market_id": "1897109",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T21:17:29.463189Z",
+      "createdAt": "2026-04-06T22:19:51.717791Z",
+      "yes_token_id": "106591280142630626115724651117201657682325101150171422307265130569697670708657",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021446",
+      "market_id": "1897110",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T21:11:20.9579Z",
+      "createdAt": "2026-04-06T22:19:52.00028Z",
+      "yes_token_id": "32304224949031261019227504618353662335004029148594248531414917789977278987468",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021446",
+      "market_id": "1897111",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T21:11:20.9579Z",
+      "createdAt": "2026-04-06T22:19:52.287366Z",
+      "yes_token_id": "66489726367925595502503158446006075400401621519147621264189323965755835894613",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021447",
+      "market_id": "1897046",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:54:14.854006Z",
+      "createdAt": "2026-04-06T22:18:57.870859Z",
+      "yes_token_id": "87801481723150143095656392688212600042782229576502495783917440071310994656016",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021447",
+      "market_id": "1897047",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:54:14.731972Z",
+      "createdAt": "2026-04-06T22:18:58.152932Z",
+      "yes_token_id": "84958042326881081629130565587739718054426374664464529827722909775907948361787",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021447",
+      "market_id": "1897048",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:54:14.792604Z",
+      "createdAt": "2026-04-06T22:18:58.428449Z",
+      "yes_token_id": "66066640081366099233010777058886646300763486736056057848435195209438713673265",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021448",
+      "market_id": "1897271",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T21:21:01.403584Z",
+      "createdAt": "2026-04-06T22:20:56.669211Z",
+      "yes_token_id": "4925888325464503545476254709875431093074337031801188092359865362530954679246",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021448",
+      "market_id": "1897273",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T21:09:02.543291Z",
+      "createdAt": "2026-04-06T22:20:56.954458Z",
+      "yes_token_id": "41091023424245040139527172073533600163970138599488326259532662687088517955772",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021448",
+      "market_id": "1897274",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T21:16:54.829939Z",
+      "createdAt": "2026-04-06T22:20:57.262641Z",
+      "yes_token_id": "89402197250849053016718398593367058168289729633872183585442421218420206745943",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021449",
+      "market_id": "1897040",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:55:10.369605Z",
+      "createdAt": "2026-04-06T22:18:52.771586Z",
+      "yes_token_id": "94742454704773778167568688948405770414791647129006368131301932311609594298387",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021449",
+      "market_id": "1897041",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:55:10.313579Z",
+      "createdAt": "2026-04-06T22:18:53.066694Z",
+      "yes_token_id": "22172667310022772208699373598096867628027942277851933544696144873879741224440",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021449",
+      "market_id": "1897042",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-13T23:14:05.205174Z",
+      "createdAt": "2026-04-06T22:18:53.353045Z",
+      "yes_token_id": "74187637053502514449598313026757559914734686113697608141302796666649587118979",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021450",
+      "market_id": "1897112",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-20T00:25:59.122923Z",
+      "createdAt": "2026-04-06T22:19:54.552181Z",
+      "yes_token_id": "72434460309427898004674696764153066565237298072408402131497058701161364650505",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021450",
+      "market_id": "1897113",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-20T00:05:58.820195Z",
+      "createdAt": "2026-04-06T22:19:54.845181Z",
+      "yes_token_id": "20349696283279625969179471671979665049068091025127882278606364235785111743882",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021450",
+      "market_id": "1897114",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-20T00:07:59.225967Z",
+      "createdAt": "2026-04-06T22:19:55.13217Z",
+      "yes_token_id": "12449312449220028732329011560175624873500857403580896927070982513454645477597",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021451",
+      "market_id": "1897263",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T21:21:01.403584Z",
+      "createdAt": "2026-04-06T22:20:54.099796Z",
+      "yes_token_id": "47959944460657228985055674449790383802464381124119024576562949363346901336433",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021451",
+      "market_id": "1897265",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T21:09:02.543291Z",
+      "createdAt": "2026-04-06T22:20:54.397332Z",
+      "yes_token_id": "37383901604222109615025559390838815185792875162240758491134459674611890551849",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021451",
+      "market_id": "1897266",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T21:11:01.858383Z",
+      "createdAt": "2026-04-06T22:20:54.68743Z",
+      "yes_token_id": "11943790724298456336310029997668350808838445628633810142424962411400618768716",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021452",
+      "market_id": "1897279",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T00:20:53.259168Z",
+      "createdAt": "2026-04-06T22:20:59.274904Z",
+      "yes_token_id": "42374815657442465500075937904016131801776204492796944288908751005433960581826",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021452",
+      "market_id": "1897280",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T00:12:53.386418Z",
+      "createdAt": "2026-04-06T22:20:59.578363Z",
+      "yes_token_id": "68776813465861057429364788692653606338774440682215453744115148189876641784361",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021452",
+      "market_id": "1897281",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T00:12:53.386418Z",
+      "createdAt": "2026-04-06T22:20:59.873135Z",
+      "yes_token_id": "16734149502738704359673067089022355535903790350570508474097898646900570148376",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021453",
+      "market_id": "1897052",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:53:20.385381Z",
+      "createdAt": "2026-04-06T22:19:02.948893Z",
+      "yes_token_id": "56618826743104010959172273659413209775316700999254592964223431451553591299446",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021453",
+      "market_id": "1897053",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:53:20.435798Z",
+      "createdAt": "2026-04-06T22:19:03.232643Z",
+      "yes_token_id": "24186604708120375516053204147615433593913499983599603531568767418358336827296",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021453",
+      "market_id": "1897054",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:53:20.324885Z",
+      "createdAt": "2026-04-06T22:19:03.516995Z",
+      "yes_token_id": "38620007602877950561785055194486422431765048561026651240000808038396318703092",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021454",
+      "market_id": "1897121",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T00:11:59.7416Z",
+      "createdAt": "2026-04-06T22:20:02.70925Z",
+      "yes_token_id": "101256141817216466245038151589296191044974050560393587426784474074655264282404",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021454",
+      "market_id": "1897122",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T00:11:59.7416Z",
+      "createdAt": "2026-04-06T22:20:03.004064Z",
+      "yes_token_id": "109269497217299502116676395480596041754607662236964061073622120751625474742107",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021454",
+      "market_id": "1897123",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T00:17:59.551467Z",
+      "createdAt": "2026-04-06T22:20:03.306363Z",
+      "yes_token_id": "40791250908933508853723465614961035896557737979546129504169818299128524475478",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021455",
+      "market_id": "1897286",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T00:20:53.259168Z",
+      "createdAt": "2026-04-06T22:21:01.992103Z",
+      "yes_token_id": "47270884544902187710532732045488098581735089212206395717548237797985049565017",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021455",
+      "market_id": "1897289",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T00:16:53.911495Z",
+      "createdAt": "2026-04-06T22:21:02.283306Z",
+      "yes_token_id": "54309860001036020325260313945791541663708085536541558286760328646880884748167",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021455",
+      "market_id": "1897291",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T00:32:54.451135Z",
+      "createdAt": "2026-04-06T22:21:02.645671Z",
+      "yes_token_id": "52345319584298671384241333674201063268836142597903677481641810116870044724915",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021456",
+      "market_id": "1897049",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:53:55.860997Z",
+      "createdAt": "2026-04-06T22:19:00.376919Z",
+      "yes_token_id": "105492577477219588134242978490999229511934661984574714868659540712157271273221",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021456",
+      "market_id": "1897050",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:53:55.909058Z",
+      "createdAt": "2026-04-06T22:19:00.686202Z",
+      "yes_token_id": "28514355574680631350512719849093140985552525989838015190207068633860196282876",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021456",
+      "market_id": "1897051",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:53:55.794837Z",
+      "createdAt": "2026-04-06T22:19:00.980145Z",
+      "yes_token_id": "75153795433255397954364392370254909445351765396945509274877503457182682318715",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021457",
+      "market_id": "1897124",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T02:50:09.367737Z",
+      "createdAt": "2026-04-06T22:20:05.28825Z",
+      "yes_token_id": "103041090730063233481678246468943921262520375914356653176409396265510672924686",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021457",
+      "market_id": "1897125",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T02:38:13.191528Z",
+      "createdAt": "2026-04-06T22:20:05.576952Z",
+      "yes_token_id": "44654769333046528346139965331873489889567163297280225286353492828529494504482",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021457",
+      "market_id": "1897126",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T02:40:02.411157Z",
+      "createdAt": "2026-04-06T22:20:05.86493Z",
+      "yes_token_id": "103635844992876723144379951385842243916752648056505794536281053774467895997557",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021458",
+      "market_id": "1897043",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:54:43.187537Z",
+      "createdAt": "2026-04-06T22:18:55.361174Z",
+      "yes_token_id": "1053697017401072331517873943000159665286188444438499834342450614809920055961",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021458",
+      "market_id": "1897044",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:54:43.128097Z",
+      "createdAt": "2026-04-06T22:18:55.641594Z",
+      "yes_token_id": "21443346281887816581515410030230333606155013108124688608906518902705450285763",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021458",
+      "market_id": "1897045",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:54:43.269252Z",
+      "createdAt": "2026-04-06T22:18:55.918346Z",
+      "yes_token_id": "61818169216515152409825014521551448207788109103141434403938162619298245828983",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021459",
+      "market_id": "1897354",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T04:24:03.545785Z",
+      "createdAt": "2026-04-06T22:21:23.120695Z",
+      "yes_token_id": "23905785647225133250068955131316534532801742215919018709867564550696854194755",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021459",
+      "market_id": "1897355",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T04:20:04.107603Z",
+      "createdAt": "2026-04-06T22:21:23.440413Z",
+      "yes_token_id": "84455986553231783484004493796796163763072739538940527173028153992346042419876",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021459",
+      "market_id": "1897356",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T04:20:04.107603Z",
+      "createdAt": "2026-04-06T22:21:23.769464Z",
+      "yes_token_id": "47236739815607347436394828740644657912816815268002585518946427187074399713739",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021460",
+      "market_id": "1897127",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T05:20:02.713253Z",
+      "createdAt": "2026-04-06T22:20:07.908455Z",
+      "yes_token_id": "28938745417558857896442238911870725474349404919267969141124175484009211562921",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021460",
+      "market_id": "1897130",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T05:20:02.713253Z",
+      "createdAt": "2026-04-06T22:20:08.195014Z",
+      "yes_token_id": "32119774861601767809867283650069946484685075980505835201995035137150231372345",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021460",
+      "market_id": "1897133",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T05:24:09.444611Z",
+      "createdAt": "2026-04-06T22:20:08.49951Z",
+      "yes_token_id": "71048226321294851841817266819205234468444418485834628185639241813564580583954",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021461",
+      "market_id": "1897345",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T04:10:03.638479Z",
+      "createdAt": "2026-04-06T22:21:20.289965Z",
+      "yes_token_id": "49296719184627637111102906756410924588753297305614598618877406701338912319300",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021461",
+      "market_id": "1897347",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T04:18:04.622012Z",
+      "createdAt": "2026-04-06T22:21:20.580055Z",
+      "yes_token_id": "37005314859048726898779825465316653816506760625587636277026357315052111971182",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021461",
+      "market_id": "1897348",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T04:10:03.638479Z",
+      "createdAt": "2026-04-06T22:21:20.862992Z",
+      "yes_token_id": "21990437237634439641535931317392242133464382121486985420713435551817663743535",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021462",
+      "market_id": "1897118",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-20T21:27:59.665125Z",
+      "createdAt": "2026-04-06T22:20:00.024305Z",
+      "yes_token_id": "39108014906147153132558864303811863989716119429482110734018531773663181557097",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021462",
+      "market_id": "1897119",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-20T21:24:09.625673Z",
+      "createdAt": "2026-04-06T22:20:00.302969Z",
+      "yes_token_id": "14729379386817258537354006783786102068178286988322042272817558435233867171838",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021462",
+      "market_id": "1897120",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-20T21:18:00.278455Z",
+      "createdAt": "2026-04-06T22:20:00.590517Z",
+      "yes_token_id": "63278746552959073436363985715772152424855372958904540749550690656971780048497",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021463",
+      "market_id": "1897055",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:46:23.898725Z",
+      "createdAt": "2026-04-06T22:19:05.516228Z",
+      "yes_token_id": "45307929350007847491024268648960623527752242214197163455465935647967776740420",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021463",
+      "market_id": "1897056",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:46:22.634485Z",
+      "createdAt": "2026-04-06T22:19:05.805635Z",
+      "yes_token_id": "6662878441952849446233566648423545530864333832885592059537972358106179673000",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021463",
+      "market_id": "1897057",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:46:23.249868Z",
+      "createdAt": "2026-04-06T22:19:06.090407Z",
+      "yes_token_id": "75303319363351541204962251598715680468515536085970822119844634963431663113508",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021464",
+      "market_id": "1897058",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:46:03.634371Z",
+      "createdAt": "2026-04-06T22:19:08.083734Z",
+      "yes_token_id": "80258038883060787104700033663206548991173635281684057844048254140005841868705",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021464",
+      "market_id": "1897059",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:46:04.912671Z",
+      "createdAt": "2026-04-06T22:19:08.375517Z",
+      "yes_token_id": "43065699114218738643061430368238869232700747238329067809024727726995177258597",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021464",
+      "market_id": "1897060",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:46:04.268958Z",
+      "createdAt": "2026-04-06T22:19:08.673002Z",
+      "yes_token_id": "84520506461080918199836241264297202134105253634264892405638380867421157597093",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021465",
+      "market_id": "1897150",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T02:10:51.297163Z",
+      "createdAt": "2026-04-06T22:20:15.659796Z",
+      "yes_token_id": "7079595983448256774998692261246256964535880004732387005017898482275441988994",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021465",
+      "market_id": "1897151",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T02:12:47.347417Z",
+      "createdAt": "2026-04-06T22:20:15.946546Z",
+      "yes_token_id": "76080209269268194960994324761022940023118517246399247746844169234710576675814",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021465",
+      "market_id": "1897152",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T02:08:48.834215Z",
+      "createdAt": "2026-04-06T22:20:16.234662Z",
+      "yes_token_id": "22922754856620040574706795332414925251832240378503831196222537952159137725220",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021466",
+      "market_id": "1897311",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T22:18:02.879561Z",
+      "createdAt": "2026-04-06T22:21:09.846392Z",
+      "yes_token_id": "14621976022388339155866443939403907158807725281606484508612016632018100973573",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021466",
+      "market_id": "1897312",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T22:12:03.236796Z",
+      "createdAt": "2026-04-06T22:21:10.132751Z",
+      "yes_token_id": "9059650700126795019827485089957938050581213031053374092199507389736394347163",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021466",
+      "market_id": "1897315",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T22:16:01.84694Z",
+      "createdAt": "2026-04-06T22:21:10.411592Z",
+      "yes_token_id": "101279272797775203956659007084828831261331275405585994446661991301016814257223",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021467",
+      "market_id": "1897064",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:44:42.776792Z",
+      "createdAt": "2026-04-06T22:19:13.172019Z",
+      "yes_token_id": "97954339861337592198517897825570585108397895633529524888621528267394350049120",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021467",
+      "market_id": "1897065",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:44:41.535763Z",
+      "createdAt": "2026-04-06T22:19:13.445533Z",
+      "yes_token_id": "51076507708274140524034686501213174543010993864036676754773732528820025061669",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021467",
+      "market_id": "1897066",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:44:42.162182Z",
+      "createdAt": "2026-04-06T22:19:13.729851Z",
+      "yes_token_id": "28508563298912772074214719307109307518904085025750423135797235005006783326548",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021468",
+      "market_id": "1897320",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T22:04:00.95945Z",
+      "createdAt": "2026-04-06T22:21:12.401768Z",
+      "yes_token_id": "19148172802481517881692352905829372357755800754194043495831127988905408662349",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021468",
+      "market_id": "1897322",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T22:04:00.95945Z",
+      "createdAt": "2026-04-06T22:21:12.685976Z",
+      "yes_token_id": "100613082629822213553264871806294534405119465896030760287440778049574323720676",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021468",
+      "market_id": "1897323",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-26T22:16:01.84694Z",
+      "createdAt": "2026-04-06T22:21:12.973835Z",
+      "yes_token_id": "112165227742342790816614520312092947420861337398279265432656445292580690894446",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021469",
+      "market_id": "1897147",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T22:28:49.877744Z",
+      "createdAt": "2026-04-06T22:20:13.071296Z",
+      "yes_token_id": "110881534500357968934646596900153818247967390745149544995654778360419076918150",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021469",
+      "market_id": "1897148",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T22:16:43.621393Z",
+      "createdAt": "2026-04-06T22:20:13.352855Z",
+      "yes_token_id": "107928370782866384352393308470448074487232209143841431481520161337861243389626",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021469",
+      "market_id": "1897149",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T22:16:43.621393Z",
+      "createdAt": "2026-04-06T22:20:13.645035Z",
+      "yes_token_id": "34949477535476026489714414939200175816336848313521000211837354783838790884040",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021470",
+      "market_id": "1897061",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:45:49.686189Z",
+      "createdAt": "2026-04-06T22:19:10.614393Z",
+      "yes_token_id": "46118045327286643463479614908512136607324773588723756546332480247027286666715",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021470",
+      "market_id": "1897062",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:45:49.062689Z",
+      "createdAt": "2026-04-06T22:19:10.900623Z",
+      "yes_token_id": "45105978043736940399020460688923720821814878879331783138334562105702459648812",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021470",
+      "market_id": "1897063",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:45:48.540069Z",
+      "createdAt": "2026-04-06T22:19:11.181282Z",
+      "yes_token_id": "51849195089345361433940393336005306019563641384117823557920274041538875387918",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021471",
+      "market_id": "1897329",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T01:12:02.549104Z",
+      "createdAt": "2026-04-06T22:21:15.102503Z",
+      "yes_token_id": "101491499269793539765890729500440478078979559571972876836355209033272846559170",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021471",
+      "market_id": "1897330",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T01:16:00.806274Z",
+      "createdAt": "2026-04-06T22:21:15.410006Z",
+      "yes_token_id": "103921367649237605886104535173979078531662655072769163320410011491550422861515",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021471",
+      "market_id": "1897331",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T01:12:02.549104Z",
+      "createdAt": "2026-04-06T22:21:15.692822Z",
+      "yes_token_id": "12789581828610654936852030631608949195058761081844775016106587060501098784149",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021472",
+      "market_id": "1897144",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T19:18:48.025768Z",
+      "createdAt": "2026-04-06T22:20:10.474926Z",
+      "yes_token_id": "81043398291360463170235957547610256181022662944963722274721633505163503937838",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021472",
+      "market_id": "1897145",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T19:06:44.741777Z",
+      "createdAt": "2026-04-06T22:20:10.769059Z",
+      "yes_token_id": "76430088308493460494891335845203272510723451292248221729565378437032576762940",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021472",
+      "market_id": "1897146",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-21T19:14:44.808667Z",
+      "createdAt": "2026-04-06T22:20:11.061563Z",
+      "yes_token_id": "40679081595356904709519473256184794013741938720159613262750624703767617499056",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021473",
+      "market_id": "1897336",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T01:05:52.324671Z",
+      "createdAt": "2026-04-06T22:21:17.708589Z",
+      "yes_token_id": "98721981590572841910847700506915134910696602397328529619763154982886944471014",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021473",
+      "market_id": "1897338",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T01:05:52.324671Z",
+      "createdAt": "2026-04-06T22:21:18.001391Z",
+      "yes_token_id": "26955252857582298749666469746136063544098108020808079857285492441529135677527",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021473",
+      "market_id": "1897340",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T01:13:53.11562Z",
+      "createdAt": "2026-04-06T22:21:18.284144Z",
+      "yes_token_id": "28763246044322995220208532073700111687599343514604674596345286876678085708461",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021474",
+      "market_id": "1897067",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:43:11.906605Z",
+      "createdAt": "2026-04-06T22:19:15.691909Z",
+      "yes_token_id": "77891685052397355147816140430897431230743681776824155461036740561521945442239",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021474",
+      "market_id": "1897068",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:43:12.443566Z",
+      "createdAt": "2026-04-06T22:19:15.974319Z",
+      "yes_token_id": "59191041992708759461556734329410471789809724249248263993334423672893905512717",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021474",
+      "market_id": "1897069",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:43:13.034701Z",
+      "createdAt": "2026-04-06T22:19:16.269837Z",
+      "yes_token_id": "83899205056028320634506792090435502639229370708908873019388029731945043477417",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021475",
+      "market_id": "1897153",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T06:10:42.232742Z",
+      "createdAt": "2026-04-06T22:20:18.295694Z",
+      "yes_token_id": "62516949205730668430138255140150438665483187962069999240136080804116109915287",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021475",
+      "market_id": "1897154",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T06:06:52.353895Z",
+      "createdAt": "2026-04-06T22:20:18.598754Z",
+      "yes_token_id": "50275383633644719253389412495747849486228904621414058936414415835809185820411",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021475",
+      "market_id": "1897155",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T06:16:50.780709Z",
+      "createdAt": "2026-04-06T22:20:18.898547Z",
+      "yes_token_id": "91234906493805354217250440222911012200186057450151286874925972448339630680686",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021476",
+      "market_id": "1897079",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T03:25:53.909482Z",
+      "createdAt": "2026-04-06T22:19:25.846594Z",
+      "yes_token_id": "98258440478094610167729510800284333090952142769785486649204893493792445830714",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021476",
+      "market_id": "1897080",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T03:32:12.830822Z",
+      "createdAt": "2026-04-06T22:19:26.122506Z",
+      "yes_token_id": "81680331983186046997381955280648457847630354885398475637844800869325464253779",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021476",
+      "market_id": "1897081",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.01,
+      "updatedAt": "2026-06-17T03:17:53.757113Z",
+      "createdAt": "2026-04-06T22:19:26.409217Z",
+      "yes_token_id": "55137687241393541361565001012865874102902217097342494894791514463933071353645",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021477",
+      "market_id": "1897168",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T21:20:13.490474Z",
+      "createdAt": "2026-04-06T22:20:23.848137Z",
+      "yes_token_id": "73247571006255574285385183553023235681702880602976519365262465179094676130340",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021477",
+      "market_id": "1897171",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T21:30:08.478031Z",
+      "createdAt": "2026-04-06T22:20:24.148051Z",
+      "yes_token_id": "65206879169809471684171181962606426355936771076631263853333189016369249957120",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021477",
+      "market_id": "1897173",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T21:18:17.231682Z",
+      "createdAt": "2026-04-06T22:20:24.448319Z",
+      "yes_token_id": "107259278816298402654822103861927486042412499982187590917424237525323082866574",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021478",
+      "market_id": "1897073",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T01:56:02.730068Z",
+      "createdAt": "2026-04-06T22:19:20.785327Z",
+      "yes_token_id": "5699266164849713169703648234886411053444418385408086203990916861286572010447",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021478",
+      "market_id": "1897074",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T08:35:51.235709Z",
+      "createdAt": "2026-04-06T22:19:21.067666Z",
+      "yes_token_id": "11945055302217621784910045410746746975726300882345977028546086393834748493487",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021478",
+      "market_id": "1897075",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T23:02:05.666749Z",
+      "createdAt": "2026-04-06T22:19:21.351626Z",
+      "yes_token_id": "71175597030142754954710752283935666239163672397586595724135510152247112429550",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021479",
+      "market_id": "1897397",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T05:20:02.997381Z",
+      "createdAt": "2026-04-06T22:21:36.782633Z",
+      "yes_token_id": "75595072506593093609125758283657089382220899252356081539276899905086401333602",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021479",
+      "market_id": "1897398",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T05:33:54.646144Z",
+      "createdAt": "2026-04-06T22:21:37.067367Z",
+      "yes_token_id": "78120279705291218158294867165496451864789831831028096964508511026890389826312",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021479",
+      "market_id": "1897399",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T05:22:03.199037Z",
+      "createdAt": "2026-04-06T22:21:37.352976Z",
+      "yes_token_id": "34787355244902293604560127433609469815330269379035336530397136777594424715528",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021480",
+      "market_id": "1897186",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-23T03:14:10.254985Z",
+      "createdAt": "2026-04-06T22:20:29.249168Z",
+      "yes_token_id": "33714788520669769280954321212574588471029548850737990640617719122550413982550",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021480",
+      "market_id": "1897187",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-23T03:14:10.254985Z",
+      "createdAt": "2026-04-06T22:20:29.539339Z",
+      "yes_token_id": "106573441938278169951840270152617513270375496735835936558802812191575117517631",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021480",
+      "market_id": "1897188",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-23T03:20:19.777339Z",
+      "createdAt": "2026-04-06T22:20:29.843772Z",
+      "yes_token_id": "13689393741027779813840434297856122590360803048059505899834082936957632248186",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021481",
+      "market_id": "1897406",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T05:08:22.008125Z",
+      "createdAt": "2026-04-06T22:21:39.476099Z",
+      "yes_token_id": "51519876214140449660166550584440656906007152566889523395451234960389805633766",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021481",
+      "market_id": "1897408",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T05:12:04.250364Z",
+      "createdAt": "2026-04-06T22:21:39.75886Z",
+      "yes_token_id": "62409843405324454061803814330319520418244336052868125219110920850254110405657",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021481",
+      "market_id": "1897409",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T05:25:55.617286Z",
+      "createdAt": "2026-04-06T22:21:40.047133Z",
+      "yes_token_id": "56919576321692543804120333477806892227587677219602902701553511079254437421526",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021482",
+      "market_id": "1897070",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:42:19.347779Z",
+      "createdAt": "2026-04-06T22:19:18.253988Z",
+      "yes_token_id": "3612393435281522540359979834655761894598376313180591710384535406994913064931",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021482",
+      "market_id": "1897071",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:42:19.875238Z",
+      "createdAt": "2026-04-06T22:19:18.535494Z",
+      "yes_token_id": "83072215710101175871081563765894926731657038656927257285040774204247563097609",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021482",
+      "market_id": "1897072",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-16T21:42:20.521666Z",
+      "createdAt": "2026-04-06T22:19:18.817549Z",
+      "yes_token_id": "85135836978485179530031184162395126176783303519695757365796392230161124240788",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021483",
+      "market_id": "1897161",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T18:30:26.7785Z",
+      "createdAt": "2026-04-06T22:20:21.105033Z",
+      "yes_token_id": "73510205866448375978164321647457824822309414197359016110940718743916953674850",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021483",
+      "market_id": "1897162",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T18:18:25.770319Z",
+      "createdAt": "2026-04-06T22:20:21.399543Z",
+      "yes_token_id": "82898292053233796019218455463083153847413990945759207495147091875359141826965",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021483",
+      "market_id": "1897163",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-22T18:22:26.508175Z",
+      "createdAt": "2026-04-06T22:20:21.692536Z",
+      "yes_token_id": "34595222436901694034568466087145334098073564547697700427928775408006876228602",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021484",
+      "market_id": "1897389",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T02:17:55.245503Z",
+      "createdAt": "2026-04-06T22:21:34.115753Z",
+      "yes_token_id": "19006898597508386281847912902191120242282582317334085817745325501448261696961",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021484",
+      "market_id": "1897390",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T02:17:55.245503Z",
+      "createdAt": "2026-04-06T22:21:34.408277Z",
+      "yes_token_id": "31752155862447409149067389255977203243895111018202743434902043543164266789354",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021484",
+      "market_id": "1897392",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T02:29:55.743779Z",
+      "createdAt": "2026-04-06T22:21:34.693657Z",
+      "yes_token_id": "21212784061998732060753310583727616688784929823373352237868078199791664491531",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021485",
+      "market_id": "1897379",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T02:15:56.987569Z",
+      "createdAt": "2026-04-06T22:21:31.475898Z",
+      "yes_token_id": "102982370594795926465551165513338503688720151395360838811850524398055739613847",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021485",
+      "market_id": "1897381",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T02:28:05.232718Z",
+      "createdAt": "2026-04-06T22:21:31.763018Z",
+      "yes_token_id": "26569990508696410491447892272390543392383885606267392357555942494960533615950",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021485",
+      "market_id": "1897383",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T02:15:56.987569Z",
+      "createdAt": "2026-04-06T22:21:32.073757Z",
+      "yes_token_id": "13230917211575471424029299482277772949555090343730463577580317503550035691955",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021486",
+      "market_id": "1897076",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T02:08:00.535767Z",
+      "createdAt": "2026-04-06T22:19:23.310227Z",
+      "yes_token_id": "108315368637387262892957153811435904912510274825529229627147648105187493645849",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021486",
+      "market_id": "1897077",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T02:10:16.068313Z",
+      "createdAt": "2026-04-06T22:19:23.609404Z",
+      "yes_token_id": "6109686258397883114797998126787263049884408157800816627628909717221408645880",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021486",
+      "market_id": "1897078",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T02:02:19.51869Z",
+      "createdAt": "2026-04-06T22:19:23.882078Z",
+      "yes_token_id": "67375566273017733280418349633635206252639538869301457434188127341791609355341",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021487",
+      "market_id": "1897177",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-23T00:18:15.109395Z",
+      "createdAt": "2026-04-06T22:20:26.616356Z",
+      "yes_token_id": "115744004241615826068373834065815885045802138463705964527622590795637356148787",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021487",
+      "market_id": "1897179",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-23T00:34:17.426692Z",
+      "createdAt": "2026-04-06T22:20:26.911378Z",
+      "yes_token_id": "67002593218190822532665099166898408129313819429898582664969051678894195427511",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021487",
+      "market_id": "1897181",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-23T00:18:15.109395Z",
+      "createdAt": "2026-04-06T22:20:27.217375Z",
+      "yes_token_id": "92373800853975207163715439849233105963580357686874848773967900936113195244769",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021488",
+      "market_id": "1897085",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T00:15:36.265638Z",
+      "createdAt": "2026-04-06T22:19:30.882287Z",
+      "yes_token_id": "73942127055672070093762091576846712862472894975200730653926386031270714825841",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021488",
+      "market_id": "1897086",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T00:15:36.297961Z",
+      "createdAt": "2026-04-06T22:19:31.167447Z",
+      "yes_token_id": "33611416347839198763745720789541666193855030736143138228415524192683636379208",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021488",
+      "market_id": "1897087",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T00:19:27.149717Z",
+      "createdAt": "2026-04-06T22:19:31.453403Z",
+      "yes_token_id": "60561627760165737508115128719081450929284195423420376549887420810076954490283",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021489",
+      "market_id": "1897363",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T21:14:01.995319Z",
+      "createdAt": "2026-04-06T22:21:26.081775Z",
+      "yes_token_id": "13720141007204726132976932163658350553917819242912487119786312240512385978016",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021489",
+      "market_id": "1897365",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T21:11:53.944016Z",
+      "createdAt": "2026-04-06T22:21:26.366728Z",
+      "yes_token_id": "67725404666433555568518066011245937746455974844800713635030484522525394449095",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021489",
+      "market_id": "1897366",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T21:22:01.769403Z",
+      "createdAt": "2026-04-06T22:21:26.651141Z",
+      "yes_token_id": "24577773509300358817327680170546846259151744300648018180120742538153285610470",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021490",
+      "market_id": "1897082",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T21:33:37.608465Z",
+      "createdAt": "2026-04-06T22:19:28.356138Z",
+      "yes_token_id": "10541943766977992250149902475024620982770128161688998706490955791758263657916",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021490",
+      "market_id": "1897083",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T21:19:39.884138Z",
+      "createdAt": "2026-04-06T22:19:28.633977Z",
+      "yes_token_id": "1558773458881829509791065143596154799682035256543521797575065685839455307034",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021490",
+      "market_id": "1897084",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-17T21:19:40.868992Z",
+      "createdAt": "2026-04-06T22:19:28.926995Z",
+      "yes_token_id": "68110647781535190797837703927589470479832774174814667833732459898847586979826",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021491",
+      "market_id": "1897211",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T02:15:40.632506Z",
+      "createdAt": "2026-04-06T22:20:37.436899Z",
+      "yes_token_id": "87342664839192211473271920800753463563092786516324349723605782526214890691197",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021491",
+      "market_id": "1897212",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T02:13:48.500002Z",
+      "createdAt": "2026-04-06T22:20:37.749183Z",
+      "yes_token_id": "12958252976539629930654162912931008487270492230310027375150666031145896793768",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021491",
+      "market_id": "1897213",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T02:13:48.500002Z",
+      "createdAt": "2026-04-06T22:20:38.045206Z",
+      "yes_token_id": "41610575626461486529455331665861057346399083513953711754678027926024708412903",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021492",
+      "market_id": "1897202",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T01:07:42.752149Z",
+      "createdAt": "2026-04-06T22:20:34.647479Z",
+      "yes_token_id": "33487993003158194673584478096137518804695909934938955095498705571367038286718",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021492",
+      "market_id": "1897204",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T01:01:50.02095Z",
+      "createdAt": "2026-04-06T22:20:34.952151Z",
+      "yes_token_id": "39089612180122602052604481401475144070730204978096939222616905288374331154272",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021492",
+      "market_id": "1897206",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T01:01:50.02095Z",
+      "createdAt": "2026-04-06T22:20:35.25737Z",
+      "yes_token_id": "76510222428165877597575721449543571541796482738486080354541430902498097062984",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021493",
+      "market_id": "1897372",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T21:39:53.91781Z",
+      "createdAt": "2026-04-06T22:21:28.756131Z",
+      "yes_token_id": "18743217884084451181326534803259386349719190738348996062011676818990905009388",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021493",
+      "market_id": "1897373",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T21:25:53.461035Z",
+      "createdAt": "2026-04-06T22:21:29.067219Z",
+      "yes_token_id": "33076998160231714351902565130026409459762688445353107036154768256214120659381",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021493",
+      "market_id": "1897374",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-27T21:20:02.223117Z",
+      "createdAt": "2026-04-06T22:21:29.457763Z",
+      "yes_token_id": "42446028394641227058711863003994762636042573921212384468888917154482444605317",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021494",
+      "market_id": "1897193",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-23T19:23:54.61001Z",
+      "createdAt": "2026-04-06T22:20:31.903375Z",
+      "yes_token_id": "43065377931595109421738195806896155428299627622642742017785976384593510801128",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021494",
+      "market_id": "1897194",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-23T19:18:00.964886Z",
+      "createdAt": "2026-04-06T22:20:32.21362Z",
+      "yes_token_id": "42455935076310849881859802799668778227947193880181063098828866359749449345600",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021494",
+      "market_id": "1897197",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-23T19:18:00.964886Z",
+      "createdAt": "2026-04-06T22:20:32.506688Z",
+      "yes_token_id": "89153404871462295225932923711930844386489455338217882638440216779894680412312",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021495",
+      "market_id": "1897440",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T04:11:55.110229Z",
+      "createdAt": "2026-04-06T22:21:53.128131Z",
+      "yes_token_id": "45668841020533558878058431264255444612420443086293898941905939792694888997711",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021495",
+      "market_id": "1897441",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T04:01:57.023052Z",
+      "createdAt": "2026-04-06T22:21:53.40793Z",
+      "yes_token_id": "616354135091983275441980781778127730973983204686602475633890523765647649939",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021495",
+      "market_id": "1897442",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T04:15:55.337956Z",
+      "createdAt": "2026-04-06T22:21:53.69302Z",
+      "yes_token_id": "89969054941820905260983372139923320038115693660830083208242956669285748681379",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021496",
+      "market_id": "1897088",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T03:29:43.797445Z",
+      "createdAt": "2026-04-06T22:19:33.424796Z",
+      "yes_token_id": "7496871387824498705150337097986995704782987980926026827618928384721521953608",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021496",
+      "market_id": "1897089",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T03:17:58.17723Z",
+      "createdAt": "2026-04-06T22:19:33.701932Z",
+      "yes_token_id": "72072713045468216718276752473321256680046799783934448189111366264812474363575",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021496",
+      "market_id": "1897090",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T03:15:58.512386Z",
+      "createdAt": "2026-04-06T22:19:33.990826Z",
+      "yes_token_id": "83723975923165835008525905491690092591784814181150430498971361513206559812229",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021497",
+      "market_id": "1897443",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T04:15:55.337956Z",
+      "createdAt": "2026-04-06T22:21:55.908936Z",
+      "yes_token_id": "82930050367767323602185033959522193504232064039705778455362784267890724471276",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021497",
+      "market_id": "1897444",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T04:21:56.344263Z",
+      "createdAt": "2026-04-06T22:21:56.18822Z",
+      "yes_token_id": "54474886969816453525385753955468883023194567537518813967701106946658819435076",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021497",
+      "market_id": "1897445",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T04:18:03.977855Z",
+      "createdAt": "2026-04-06T22:21:56.478947Z",
+      "yes_token_id": "101870693068643777907933185168096005823100471428921617507976765091257562327892",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021498",
+      "market_id": "1897091",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T06:29:09.701256Z",
+      "createdAt": "2026-04-06T22:19:35.946151Z",
+      "yes_token_id": "20499437472769847560241881624039508074540415562884114297532631910880371793587",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021498",
+      "market_id": "1897092",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T06:19:07.289848Z",
+      "createdAt": "2026-04-06T22:19:36.233343Z",
+      "yes_token_id": "10941081591300181699750371173224077143006238150019210682727492628846716482576",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021498",
+      "market_id": "1897093",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T06:21:46.443837Z",
+      "createdAt": "2026-04-06T22:19:36.516903Z",
+      "yes_token_id": "10127485596146788190022715162162490005929142831190335412854285290235849822876",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021499",
+      "market_id": "1897218",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T05:15:46.101001Z",
+      "createdAt": "2026-04-06T22:20:40.079668Z",
+      "yes_token_id": "79556419900577322611626767862690562089176805129072624901443226554922952966745",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021499",
+      "market_id": "1897221",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T05:13:43.427683Z",
+      "createdAt": "2026-04-06T22:20:40.364319Z",
+      "yes_token_id": "1769702396265889184498190792362704022902870513706256830724500024171753050535",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021499",
+      "market_id": "1897223",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T05:29:38.838002Z",
+      "createdAt": "2026-04-06T22:20:40.660442Z",
+      "yes_token_id": "115548088586633825662425519500723984422794579404944891967166045543435931523785",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021500",
+      "market_id": "1897437",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T02:04:04.28135Z",
+      "createdAt": "2026-04-06T22:21:50.558858Z",
+      "yes_token_id": "32203747233944015438487799675613943430837031417969455986362970409671575279826",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021500",
+      "market_id": "1897438",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T01:46:16.992545Z",
+      "createdAt": "2026-04-06T22:21:50.847311Z",
+      "yes_token_id": "81552362010142345634703929302259930833935413033049071585470045256395801009970",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021500",
+      "market_id": "1897439",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T01:49:57.607671Z",
+      "createdAt": "2026-04-06T22:21:51.126143Z",
+      "yes_token_id": "18008867159313570769262912171658897336337384293159822028565187451480762621316",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021501",
+      "market_id": "1897254",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T04:10:57.822157Z",
+      "createdAt": "2026-04-06T22:20:51.407282Z",
+      "yes_token_id": "34999267410182663441586115553518943962188580583548745660828050477474485422496",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021501",
+      "market_id": "1897255",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T04:06:59.163361Z",
+      "createdAt": "2026-04-06T22:20:51.699675Z",
+      "yes_token_id": "79983794318718332304327981666825218942232843954396702058226061148160445738463",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021501",
+      "market_id": "1897256",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T04:10:57.822157Z",
+      "createdAt": "2026-04-06T22:20:51.983514Z",
+      "yes_token_id": "27087363386694674049005402437888440764538397638814511740652870655708130928058",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021502",
+      "market_id": "1897094",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T19:19:54.266997Z",
+      "createdAt": "2026-04-06T22:19:38.541447Z",
+      "yes_token_id": "76071109489406808599878692125264766321676001700733380917373465772841855210643",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021502",
+      "market_id": "1897095",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T19:31:53.700876Z",
+      "createdAt": "2026-04-06T22:19:38.824106Z",
+      "yes_token_id": "2328333301741750345417630454121106244367883081134709887163965516147303610120",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021502",
+      "market_id": "1897096",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T19:19:56.411262Z",
+      "createdAt": "2026-04-06T22:19:39.103164Z",
+      "yes_token_id": "59454896622130760276442490722222126894150925046963444585060045915889624278803",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021503",
+      "market_id": "1897228",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T19:17:04.394715Z",
+      "createdAt": "2026-04-06T22:20:42.898852Z",
+      "yes_token_id": "46788745865873849751895851580006231458025441200398102606849707486161173481896",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021503",
+      "market_id": "1897230",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T19:01:00.79306Z",
+      "createdAt": "2026-04-06T22:20:43.192297Z",
+      "yes_token_id": "24809423528124284224090069515582587237857005059059577506414057066347413921482",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021503",
+      "market_id": "1897231",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T19:12:59.162619Z",
+      "createdAt": "2026-04-06T22:20:43.487833Z",
+      "yes_token_id": "76563067682631227603609066044534706683559659816004868232381337856810074987695",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021504",
+      "market_id": "1897103",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T04:21:50.030615Z",
+      "createdAt": "2026-04-06T22:19:46.235945Z",
+      "yes_token_id": "42349324891891531052261785579549036042703894030589864369388972549681820562082",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021504",
+      "market_id": "1897104",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T04:17:28.254865Z",
+      "createdAt": "2026-04-06T22:19:46.527306Z",
+      "yes_token_id": "29696609003438481519695227807182574735991421576025755342707611041941932867266",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021504",
+      "market_id": "1897105",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T04:31:50.340941Z",
+      "createdAt": "2026-04-06T22:19:46.847742Z",
+      "yes_token_id": "107303881689780116979934419713652545873528717512161697004408881489729317049047",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021505",
+      "market_id": "1897432",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T01:44:18.138088Z",
+      "createdAt": "2026-04-06T22:21:47.840656Z",
+      "yes_token_id": "66645018399244327793816970436640892806720466803924622381310200425167561934656",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021505",
+      "market_id": "1897433",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T01:51:56.304585Z",
+      "createdAt": "2026-04-06T22:21:48.122622Z",
+      "yes_token_id": "59969732588381163791331816857468861959000541135529686594887337761858409837896",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021505",
+      "market_id": "1897435",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-29T01:42:00.44967Z",
+      "createdAt": "2026-04-06T22:21:48.419429Z",
+      "yes_token_id": "68238163315667435120694805573568977252273759352712823951184501420027891362809",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021506",
+      "market_id": "1897236",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T22:16:59.385094Z",
+      "createdAt": "2026-04-06T22:20:45.75282Z",
+      "yes_token_id": "63611572432092712507452794046269856873324193737948513078896856667745770559698",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021506",
+      "market_id": "1897238",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T22:20:56.116624Z",
+      "createdAt": "2026-04-06T22:20:46.044045Z",
+      "yes_token_id": "113575947344702991323223447752604645066262694843576298874524902811228579544185",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021506",
+      "market_id": "1897240",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-24T22:16:59.385094Z",
+      "createdAt": "2026-04-06T22:20:46.344728Z",
+      "yes_token_id": "111239697803361919523803068759725643725914563280609261384832780529311817077235",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021507",
+      "market_id": "1897097",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T22:33:51.205646Z",
+      "createdAt": "2026-04-06T22:19:41.11413Z",
+      "yes_token_id": "45513813860398961340723481590130352932611791552209098368268600222240572304551",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021507",
+      "market_id": "1897098",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T22:17:47.671449Z",
+      "createdAt": "2026-04-06T22:19:41.404676Z",
+      "yes_token_id": "92623193147229968536967595026209377290569876277152414806208806159046880692537",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021507",
+      "market_id": "1897099",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-18T22:19:47.684995Z",
+      "createdAt": "2026-04-06T22:19:41.692162Z",
+      "yes_token_id": "55443738818158231803517291185008080654932985451404315852703585757411667902597",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021508",
+      "market_id": "1897415",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T23:08:01.654605Z",
+      "createdAt": "2026-04-06T22:21:42.344529Z",
+      "yes_token_id": "59058041199432950171496335927523101634207424833883434829808368909648870164143",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021508",
+      "market_id": "1897416",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T23:09:53.280139Z",
+      "createdAt": "2026-04-06T22:21:42.63935Z",
+      "yes_token_id": "59060314792119542598872086330330421934194999186952058617387110515321473268432",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021508",
+      "market_id": "1897417",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T23:15:53.263333Z",
+      "createdAt": "2026-04-06T22:21:42.929729Z",
+      "yes_token_id": "93320332124999747203356838766183249400983580913731153318561555477528481141967",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021509",
+      "market_id": "1897423",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T23:30:00.799147Z",
+      "createdAt": "2026-04-06T22:21:45.125465Z",
+      "yes_token_id": "23522010053796928314095406008924900761833610419543982088160250459540934114445",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021509",
+      "market_id": "1897425",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T23:20:00.965818Z",
+      "createdAt": "2026-04-06T22:21:45.422246Z",
+      "yes_token_id": "73617947654081997431498367652195704493094967542363882616248674397638553207873",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021509",
+      "market_id": "1897427",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-28T23:09:53.280139Z",
+      "createdAt": "2026-04-06T22:21:45.718397Z",
+      "yes_token_id": "90597327262250836004646033934453860417100833449408628755662053427096482500586",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021510",
+      "market_id": "1897100",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T01:27:44.42196Z",
+      "createdAt": "2026-04-06T22:19:43.656009Z",
+      "yes_token_id": "4583065636155233526779653080435458405485537158452842777526478181105245518840",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021510",
+      "market_id": "1897101",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T01:15:58.490666Z",
+      "createdAt": "2026-04-06T22:19:43.987863Z",
+      "yes_token_id": "61203648901328553286317484050722946819387883550381338646535487039149670812946",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021510",
+      "market_id": "1897102",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-19T01:19:52.468429Z",
+      "createdAt": "2026-04-06T22:19:44.269086Z",
+      "yes_token_id": "98450368978745606301240607141388168410536324949220985931158206007509106995457",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021511",
+      "market_id": "1897246",
+      "hda_outcome": "home",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T01:09:04.533755Z",
+      "createdAt": "2026-04-06T22:20:48.602231Z",
+      "yes_token_id": "24996055382005658349790471423878721697831808533961896596758588230034679203014",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021511",
+      "market_id": "1897247",
+      "hda_outcome": "draw",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T01:11:01.605225Z",
+      "createdAt": "2026-04-06T22:20:48.889788Z",
+      "yes_token_id": "281014131890775346711528419616637935334914824702644832308015615443957627676",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    },
+    {
+      "match_id": "400021511",
+      "market_id": "1897249",
+      "hda_outcome": "away",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.03,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "orderMinSize": 5,
+      "orderPriceMinTickSize": 0.001,
+      "updatedAt": "2026-06-25T01:11:01.605225Z",
+      "createdAt": "2026-04-06T22:20:49.223594Z",
+      "yes_token_id": "109027609951989526893628757693490068717900103024949393927658066962316915180001",
+      "historical_validity": "unknown: source observation timestamp/effective interval not supplied for June trade time"
+    }
+  ],
+  "orders_trades_depth_queue_available": false,
+  "price_columns": [
+    "match_id",
+    "market_id",
+    "token_id",
+    "outcome_index",
+    "outcome",
+    "timestamp",
+    "price",
+    "in_game",
+    "source_response_sha256"
+  ],
+  "read_policy": "No load_release, outcomes, events, market-resolution or protected labels read; only schemas and 72-match mapping/216-market metadata projections",
+  "current_docs_verified_date": "2026-10-13",
+  "documentation": {
+    "fees": "https://docs.polymarket.com/trading/fees",
+    "rebates": "https://docs.polymarket.com/programs/maker-rebates",
+    "orders": "https://docs.polymarket.com/trading/place-orders"
+  },
+  "docs_claims": {
+    "fee_formula": "shares * feeRate * p * (1-p)",
+    "sports_current_taker_rate": 0.05,
+    "maker_rate": 0,
+    "precision": 5,
+    "rebates": "daily relative fee-equivalent pool allocation; eligibility/allocation not verified here",
+    "post_only": "reject if would cross; local GTC cancellation modeled"
+  },
+  "metadata_fee_schedules": {
+    "{\"exponent\": 1, \"rate\": 0.03, \"rebateRate\": 0.25, \"takerOnly\": true}": 216
+  },
+  "metadata_min_sizes_raw_units_uncertain": {
+    "5": 216
+  },
+  "min_size_unit_conflict": "Gamma market-details docs call orderMinSize minimum USD notional; order-book place-orders docs call min_order_size shares. Raw metadata is not definitive share size. One share costs <=$1, below either interpretation of5",
+  "metadata_ticks": {
+    "0.001": 215,
+    "0.01": 1
+  },
+  "required_validation_data": [
+    "historical effective fee schedules per market",
+    "timestamped L2 book snapshots/deltas including depths",
+    "trades with price,size,aggressor side and sequence",
+    "order acks/rejections/fills/cancel acks and clock/latency records",
+    "queue position assumptions calibrated against own fills",
+    "contemporaneous min-size/tick and trading-enabled changes",
+    "timestamped post-fill midpoints at fixed horizons",
+    "daily rebate eligibility and pool denominator"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "checkpoint": "tinker://d2426bc1-ec71-559d-bb81-e17da9372e58:train:0/sampler_weights/final",
+  "cohort": "24 maximum seeded disjoint fixture pairs, same active checkpoint, both observed scores tied; selection ignores final outcomes.",
+  "scope": "Fresh retrospective development forecasts; phase-matched pairs may be from different days. Not real-time simultaneous execution.",
+  "cases": 24,
+  "unique_games": 48,
+  "phase_counts": {
+    "h1+30": 6,
+    "h1+15": 14,
+    "h2+30": 3,
+    "h2+15": 1
+  },
+  "arms": [
+    "joint",
+    "single_a",
+    "single_b"
+  ],
+  "repeats": 3,
+  "temperature": 1.0,
+  "seed": 20261013,
+  "max_tokens": 384,
+  "parser_tolerance": 0.02,
+  "invalid_brier": 2,
+  "invalid_log_loss": 13.815510557964274,
+  "primary": "Joint nine-cell Brier versus product of normalized contemporaneous market probabilities; repeats averaged within disjoint pair.",
+  "secondary": "Joint versus product of fresh single-match forecasts; same checkpoint and observations. Joint marginal calibration, log loss, validity and paired disjoint-pair bootstrap.",
+  "budget_usd": 5,
+  "request_reservation_ceiling_usd": 2.5,
+  "maximum_requests": 216,
+  "max_token_cost_estimate_usd": 0.08334657000000001,
+  "rates_per_million": {
+    "prefill": 0.195,
+    "sample": 0.6
+  },
+  "pricing_source": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+  "billing_limit": "Token-cost reservation with >2x margin; not a provider-enforced billing cap. No application-level inference retries or paid reruns.",
+  "source_hashes": {
+    "rin-gym-forecast-only/artifacts/earlier-run-risk/tasks.jsonl.gz": "afedb22fc96debd7ad0fb7b85165b7b0a868a7e7e09dff372e030a68ccf5a306",
+    "outputs/parlay-eval-context/features.json": "ba048618bc2d238d6ee4fbfb448307efd25bd562035ff30b5995388a004b303b",
+    "outputs/parlay-eval-context/protocol.json": "9baba4d115ecf2afc23b6705b265aba39b438ad69a745d7c3bce503ac5e7c425",
+    "outputs/parlay-eval-fresh-joint/experiment.py": "f6c2db7a912fd151fc0fd94d6675993fe2471ab68859345960911409892e6785"
+  },
+  "holdout_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "cases_sha256": "45526b275be2467324475bb35b7cc609913b00e58e4d790a0dbcd2691c753ee9",
+  "sha256": "cf9fe2dfc1eb0a61e81676918e0c0b8e7dba108fc7948307a8e2497b2ae5d997"
+}

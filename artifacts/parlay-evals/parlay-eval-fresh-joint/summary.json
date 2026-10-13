@@ -1,0 +1,126 @@
+{
+  "cases": 24,
+  "unique_games": 48,
+  "repeat_cases": 72,
+  "results": {
+    "joint": {
+      "valid_fraction": 0.09722222222222222,
+      "brier": 1.8903403192586437,
+      "log_loss": 12.670869954257164,
+      "valid_only_brier": 0.872071855231764,
+      "favorite_ticket_hit_rate_valid_only": 0.0,
+      "common_valid_brier": 0.872071855231764
+    },
+    "single_product": {
+      "valid_fraction": 1.0,
+      "brier": 0.830712516345881,
+      "log_loss": 1.8818475348644113,
+      "valid_only_brier": 0.830712516345881,
+      "favorite_ticket_hit_rate_valid_only": 0.3194444444444444,
+      "common_valid_brier": 0.9284300770394107
+    },
+    "market": {
+      "valid_fraction": 1.0,
+      "brier": 0.8344096288457106,
+      "log_loss": 1.892433329019697,
+      "valid_only_brier": 0.8344096288457106,
+      "favorite_ticket_hit_rate_valid_only": 0.2916666666666667,
+      "common_valid_brier": 0.9284300770394107
+    },
+    "joint_marginal_product": {
+      "valid_fraction": 0.09722222222222222,
+      "brier": 1.8932273435694127,
+      "log_loss": 12.681647496449763,
+      "valid_only_brier": 0.9017669624282433,
+      "favorite_ticket_hit_rate_valid_only": 0.0,
+      "common_valid_brier": 0.9017669624282433
+    }
+  },
+  "paired": {
+    "market/brier": {
+      "mean_joint_minus_control": 1.055930690412933,
+      "disjoint_pair_bootstrap_95": [
+        0.908489524161626,
+        1.1937797272688067
+      ]
+    },
+    "market/log_loss": {
+      "mean_joint_minus_control": 10.778436625237468,
+      "disjoint_pair_bootstrap_95": [
+        9.656785450181278,
+        11.732499488541077
+      ]
+    },
+    "single_product/brier": {
+      "mean_joint_minus_control": 1.0596278029127626,
+      "disjoint_pair_bootstrap_95": [
+        0.912885463370271,
+        1.197306055639464
+      ]
+    },
+    "single_product/log_loss": {
+      "mean_joint_minus_control": 10.789022419392756,
+      "disjoint_pair_bootstrap_95": [
+        9.674834154914794,
+        11.738703644010192
+      ]
+    },
+    "joint_marginal_product/brier": {
+      "mean_joint_minus_control": -0.002887024310768805,
+      "disjoint_pair_bootstrap_95": [
+        -0.01014062038303429,
+        0.0015332256858279802
+      ]
+    },
+    "joint_marginal_product/log_loss": {
+      "mean_joint_minus_control": -0.010777542192597063,
+      "disjoint_pair_bootstrap_95": [
+        -0.03972528755111587,
+        0.007559795859635627
+      ]
+    }
+  },
+  "single_product_vs_market": {
+    "brier": {
+      "mean_single_product_minus_market": -0.003697112499829624,
+      "disjoint_pair_bootstrap_95": [
+        -0.011898915178705952,
+        0.0039175860177795
+      ],
+      "interpretation": "Secondary control comparison; same small development cohort, not a confirmatory independent improvement."
+    },
+    "log_loss": {
+      "mean_single_product_minus_market": -0.010585794155285445,
+      "disjoint_pair_bootstrap_95": [
+        -0.031226949831373654,
+        0.007671566712922529
+      ],
+      "interpretation": "Secondary control comparison; same small development cohort, not a confirmatory independent improvement."
+    }
+  },
+  "usage": {
+    "requests": 216,
+    "input_tokens": 172206,
+    "known_output_tokens": 12602,
+    "full_rate_token_cost_estimate_usd": 0.04114137,
+    "reserved_max_token_cost_usd": 0.08334657,
+    "note": "Token-rate estimate, not provider invoice; unobserved output charged at max cap in estimate."
+  },
+  "common_valid_repeat_cases": 7,
+  "phase_counts": {
+    "h1+30": 6,
+    "h1+15": 14,
+    "h2+30": 3,
+    "h2+15": 1
+  },
+  "joint_average_dependence_l1": 0.13150884114035527,
+  "errors": {
+    "invalid_schema_or_probabilities": 65
+  },
+  "holdout_before_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "limitation": "Retrospective development, phase-matched synthetic pairs; disjoint games but shared teams across pairs and memorization can remain. No live Combo quotes or P&L."
+}

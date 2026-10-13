@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "legacy_max_error": 0.0,
+  "arms": 31,
+  "match_repeats_per_arm": 216,
+  "order_logs": 8730,
+  "net_legacy": -20.619153437500007,
+  "holdout_seal": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "paid_spend_usd": 0
+}

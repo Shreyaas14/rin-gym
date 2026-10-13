@@ -1,0 +1,17 @@
+{
+  "checkpoint": "tinker://d2426bc1-ec71-559d-bb81-e17da9372e58:train:0/sampler_weights/final",
+  "checked_utc": "2026-10-13T21:13:25.188741+00:00",
+  "local_provenance": {
+    "source": "/Users/alexkan/Desktop/frontiers/training-results/run-3-results/forecast-rules-run-3/checkpoints.jsonl",
+    "sha256": "5c5462815024f335e320d5b7b7e3ac6fd9956606821206b62eebfa1e08a68209",
+    "batch": 48
+  },
+  "paid_requests": 0,
+  "purpose": "Metadata availability only; no prediction, training, enrollment or scoring.",
+  "availability": "verified",
+  "weights_info": {
+    "base_model": "Qwen/Qwen3-8B",
+    "is_lora": true,
+    "lora_rank": 32
+  }
+}

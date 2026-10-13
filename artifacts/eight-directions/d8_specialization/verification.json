@@ -1,0 +1,37 @@
+{
+  "analysis_command": [
+    "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python",
+    "-m",
+    "experiments.eight_directions.d8_specialization.analyze"
+  ],
+  "analysis_exit_code": 0,
+  "analysis_stdout": "{\"classification\": \"negative\", \"selected_candidate\": null, \"observations\": 1077, \"fit_matches\": 39, \"assessment_matches\": 33, \"spend_usd\": 0}",
+  "tests_command": [
+    "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python",
+    "-m",
+    "unittest",
+    "experiments.eight_directions.d8_specialization.test_analysis",
+    "-v"
+  ],
+  "tests_exit_code": 0,
+  "test_count": 5,
+  "deterministic_rerun": true,
+  "deterministic_output_sha256": {
+    "results.json": "b9a18e3929a028e0cf31152ad60e2cdc680d3311a5b2c272e5cdd726364e060b",
+    "analysis_receipts.jsonl": "f8993b56c151c71fbe198cb14ad71423a8c8ef0e47c62488faf80500cf93d204",
+    "selection.json": "efe0463ff93f47541ee2e96db6dbdb88dbf081c58c6e26e882c5c65f6110ec91",
+    "REPORT.md": "6981d862120be3d68a7efda5e82a5a57c4330b8782891dfa160f1633fea21094"
+  },
+  "recorded_pnl_cost_and_turnover_reconciled_match_replays": 216,
+  "recorded_agent_reference_reconciled_match_replays": 216,
+  "partition_whole_match_disjoint": true,
+  "fit_matches": 39,
+  "assessment_matches": 33,
+  "guard_unchanged": true,
+  "owned_source_sha256": {
+    "experiments/eight_directions/d8_specialization/test_analysis.py": "cb45e6786ac69e5169fcc463db88046bf8f0ad838ec73bf7da01b7fa4949234c",
+    "experiments/eight_directions/d8_specialization/verify.py": "11890f16575a99586d4600b61c4bb536b27ae003676e9c29b18d781d168a4c28",
+    "experiments/eight_directions/d8_specialization/analyze.py": "6bfa29d93c8b97078c6d7f03284c3bd61eb005bed4cf1cd5c44e3bdd8d65e71d"
+  },
+  "paid_requests": 0
+}

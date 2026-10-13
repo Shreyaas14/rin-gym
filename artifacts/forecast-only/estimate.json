@@ -1,0 +1,11 @@
+{
+  "upper_estimated_usd": 0.22034428999999997,
+  "budget_usd": 5.0,
+  "train_completions": 320,
+  "eval_completions": 160,
+  "max_output_tokens": 61440,
+  "prompt_tokens": 340214,
+  "max_prompt": 1050,
+  "pricing_source": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+  "note": "Token-rate estimate, not provider billing limit. No automatic experiment restart."
+}

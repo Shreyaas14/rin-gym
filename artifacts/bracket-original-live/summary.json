@@ -1,0 +1,81 @@
+{
+  "summaries": {
+    "original_one_share_previous_fresh": {
+      "replay_cases": 216,
+      "unique_matches": 72,
+      "traded_cases": 208,
+      "winning_cases": 120,
+      "losing_cases": 88,
+      "win_rate_traded": 0.5769230769230769,
+      "win_rate_all_cases": 0.5555555555555556,
+      "total_pnl": -20.619153437500007,
+      "gross_wins": 25.057777499999997,
+      "gross_losses": -45.6769309375,
+      "average_win": 0.20881481249999997,
+      "average_loss": -0.5190560333806818,
+      "worst_case_pnl": -1.19303625,
+      "mean_pnl_per_case": -0.09545904369212965
+    },
+    "original_bracket_fresh": {
+      "replay_cases": 216,
+      "unique_matches": 72,
+      "traded_cases": 212,
+      "winning_cases": 122,
+      "losing_cases": 90,
+      "win_rate_traded": 0.5754716981132075,
+      "win_rate_all_cases": 0.5648148148148148,
+      "total_pnl": -24.142188900000008,
+      "gross_wins": 18.772511487499997,
+      "gross_losses": -42.914700387500005,
+      "average_win": 0.15387304497950816,
+      "average_loss": -0.4768300043055556,
+      "worst_case_pnl": -0.9928362500000001,
+      "mean_pnl_per_case": -0.1117693930555556
+    }
+  },
+  "paired_pnl": {
+    "original_one_share_previous_fresh": {
+      "mean_pnl_delta_per_game_repeat": -0.016310349363425933,
+      "match_cluster_bootstrap_95": [
+        -0.06338315732494215,
+        0.0275971254224537
+      ]
+    }
+  },
+  "fresh_bracket_mean_pnl_bootstrap_95": [
+    -0.18914543906105327,
+    -0.03166816230034726
+  ],
+  "win_rate_difference": {
+    "fresh_bracket_minus_original": -0.0014513788098693414,
+    "match_cluster_bootstrap_95": [
+      -0.05837357604114258,
+      0.055066278172177706
+    ]
+  },
+  "behavior": {
+    "decisions_with_different_executed_action": 267,
+    "decisions": 1077
+  },
+  "valid_rate": 1,
+  "usage": {
+    "requests": 1077,
+    "input_tokens": 1788285,
+    "output_tokens": 107029,
+    "full_rate_cost_estimate_usd": 0.412932975,
+    "note": "Logged-token estimate, not billing invoice; cache discounts excluded."
+  },
+  "seal_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "scope": "Fresh one-share original-entry inference with external bracket exits. Baseline is the immediately preceding verified one-share fresh replay, with identical checkpoint/games/seeds. No protected holdout use, no training, no threshold tuning.",
+  "bracket_execution": {
+    "trigger_counts": {
+      "take_profit": 69,
+      "stop_loss": 65
+    },
+    "overridden_model_actions": 113
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "correction": "Protocol source_timing_limitation names France-Iraq correctly but incorrectly associates match400021511. Actual France-Iraq is400021492, halftime gap7912.041s;400021511 is Panama-Croatia gap949.172s.",
+  "basis": "Owned selective loading timing_audit.json, all same fixed predeclared cohort; no outcome-based exclusion or replacement.",
+  "protocol_preserved": true,
+  "effect": "Metadata label only; every model arm and all metrics still use the same eight IDs and source periods."
+}

@@ -1,0 +1,24 @@
+{
+  "scope": "Post-hoc diagnostic following three invalid outputs. Does not change primary acceptance, scoring or experiment success criteria.",
+  "fallback_rule": "Replace an invalid leg forecast with its contemporaneous normalized market vector; no result or future price reaches fallback.",
+  "common_valid": {
+    "pair_points": 2122,
+    "model_equal_phase_brier": 0.8257076444013242,
+    "market_same_cases_equal_phase_brier": 0.828091086047799,
+    "mean_model_minus_market": -0.00238344164647486,
+    "game_bootstrap_95": [
+      -0.011206878801528316,
+      0.006452945645495713
+    ]
+  },
+  "invalid_leg_market_fallback": {
+    "pair_points": 2146,
+    "model_equal_phase_brier": 0.8253254489648977,
+    "market_same_cases_equal_phase_brier": 0.8276471909190023,
+    "mean_model_minus_market": -0.002321741954104617,
+    "game_bootstrap_95": [
+      -0.011128828365341412,
+      0.006453631302296941
+    ]
+  }
+}

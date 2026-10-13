@@ -1,0 +1,29 @@
+{
+  "legacy_replay_matches": 216,
+  "maximum_pnl_absolute_error": 0.0,
+  "maximum_cash_accounting_error": 1.1102230246251565e-16,
+  "passed": true,
+  "seal_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "seal_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "ledger_unchanged": true,
+  "source_hashes_match": true,
+  "configuration_sha256": "f3fe93c4c20ffa7d8608eb7a5ffa50b7cb378a074ff5428c49417464f574ffa7",
+  "code_sha256": {
+    "experiments/execution_aware/evaluate.py": "8d1d4c3e041f49b5b883ea174ec15deaa72cfca2d98bd222f0c4fb47637f9e85",
+    "app/trade_env/execution.py": "43c34ad0ce7a996b238770f1f4d6ae01f8774785825cf23806212611d159666a",
+    "app/trade_env/costs.py": "42d9d32e4ccb41a8b04202815d4ad0a69c3d28768abd3a1074309ce00a0148d9",
+    "app/trade_env/replay.py": "236a40d7c8a33d5e6e837bbd08e9ffd332e867602941399f7712fb6afa9cea20"
+  },
+  "incremental_paid_requests": 0,
+  "rows": 6696,
+  "order_intent_logs": 8730,
+  "classification": "offline accounting reproduction and synthetic sensitivity; no fresh closed-loop inference"
+}

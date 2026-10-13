@@ -1,0 +1,552 @@
+{
+  "classification": "inconclusive for RL benefit; negative vs market; model-training efficacy unresolved",
+  "analysis_kind": "registered offline descriptive reanalysis of previously inspected pilot; not preregistered original evidence",
+  "historical_training_seed_count": 1,
+  "historical_training_seed": 20261013,
+  "historical_train_matches": 16,
+  "historical_val_matches": 16,
+  "historical_rl_updates": 4,
+  "historical_rollout_trajectories": 64,
+  "historical_rollout_decisions": 320,
+  "strict": {
+    "base": {
+      "matches": 16,
+      "decisions": 80,
+      "valid_decisions": 59,
+      "brier": 0.9791281249999999,
+      "log_loss": 4.381482847405179,
+      "valid_rate": 0.7375
+    },
+    "final": {
+      "matches": 16,
+      "decisions": 80,
+      "valid_decisions": 61,
+      "brier": 0.951825625,
+      "log_loss": 4.073410845627157,
+      "valid_rate": 0.7625
+    },
+    "market": {
+      "matches": 16,
+      "decisions": 80,
+      "valid_decisions": 80,
+      "brier": 0.4010095641922862,
+      "log_loss": 0.6846442967740284,
+      "valid_rate": 1.0
+    }
+  },
+  "strict_final_minus_base": {
+    "brier": {
+      "mean": -0.027302499999999993,
+      "match_bootstrap_95": [
+        -0.07955249999999998,
+        0.013395000000000004
+      ]
+    },
+    "log_loss": {
+      "mean": -0.3080720017780232,
+      "match_bootstrap_95": [
+        -0.7881967193507554,
+        0.02162493593716508
+      ]
+    },
+    "valid_rate": {
+      "mean": 0.024999999999999998,
+      "match_bootstrap_95": [
+        0.0,
+        0.06249999999999999
+      ]
+    }
+  },
+  "strict_final_minus_market": {
+    "brier": {
+      "mean": 0.5508160608077137,
+      "match_bootstrap_95": [
+        0.34018548578480173,
+        0.7588724902752159
+      ]
+    },
+    "log_loss": {
+      "mean": 3.3887665488531282,
+      "match_bootstrap_95": [
+        1.8289684998564089,
+        5.098364852214939
+      ]
+    },
+    "valid_rate": {
+      "mean": -0.2375,
+      "match_bootstrap_95": [
+        -0.375,
+        -0.11249999999999999
+      ]
+    }
+  },
+  "tolerance_0_05_diagnostic": {
+    "base": {
+      "matches": 16,
+      "decisions": 80,
+      "valid_decisions": 80,
+      "brier": 0.5726678618954091,
+      "log_loss": 0.9554917491213903,
+      "valid_rate": 1.0
+    },
+    "final": {
+      "matches": 16,
+      "decisions": 80,
+      "valid_decisions": 80,
+      "brier": 0.5857551060489206,
+      "log_loss": 0.9771668418303081,
+      "valid_rate": 1.0
+    }
+  },
+  "tolerant_final_minus_base": {
+    "brier": {
+      "mean": 0.01308724415351158,
+      "match_bootstrap_95": [
+        -0.0007204742304487421,
+        0.033337187959719426
+      ]
+    },
+    "log_loss": {
+      "mean": 0.021675092708917737,
+      "match_bootstrap_95": [
+        -0.001157018814100158,
+        0.055319672200518186
+      ]
+    },
+    "valid_rate": {
+      "mean": 0.0,
+      "match_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "common_strict_valid": {
+    "count": 59,
+    "base": {
+      "matches": 16,
+      "decisions": 59,
+      "valid_decisions": 59,
+      "brier": 0.6320006249999999,
+      "log_loss": 1.0470922002510383,
+      "valid_rate": 1.0
+    },
+    "final": {
+      "matches": 16,
+      "decisions": 59,
+      "valid_decisions": 59,
+      "brier": 0.6403724999999999,
+      "log_loss": 1.0606077852117666,
+      "valid_rate": 1.0
+    },
+    "final_minus_base": {
+      "brier": {
+        "mean": 0.008371875,
+        "match_bootstrap_95": [
+          0.0,
+          0.025115625000000003
+        ]
+      },
+      "log_loss": {
+        "mean": 0.013515584960728196,
+        "match_bootstrap_95": [
+          0.0,
+          0.04054675488218459
+        ]
+      },
+      "valid_rate": {
+        "mean": 0.0,
+        "match_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "format_failures": {
+    "base": {
+      "sum": 21
+    },
+    "final": {
+      "sum": 19
+    }
+  },
+  "prediction_changes": {
+    "same_tolerant_probability_vector": 77,
+    "decisions": 80,
+    "newly_strict_valid": 2,
+    "lost_strict_valid": 0
+  },
+  "training_curves": [
+    {
+      "iteration": 0,
+      "sampling_checkpoint_step": 0,
+      "unique_matches": 4,
+      "match_ids": [
+        "2g6nccszuuullvt32g4sw7o5w",
+        "2inc8vql65bi2clvs6z2buqs4",
+        "2ntyu72wz8vu95ocn09cwlmok",
+        "53xkqr8ahhgqnm6d5mt3jrims"
+      ],
+      "trajectories": 16,
+      "decisions": 80,
+      "brier": 0.9329200000000002,
+      "valid_rate": 0.85,
+      "format_failures": {
+        "sum": 12
+      },
+      "logged_entropy": 0.021480929106473923,
+      "logged_kl_sample_train_v2": 0.0008957497775554657,
+      "mixed_reward_group_fraction": 0.75,
+      "note": "Different training matches in each batch; training curves do not measure same-cohort improvement."
+    },
+    {
+      "iteration": 1,
+      "sampling_checkpoint_step": 1,
+      "unique_matches": 4,
+      "match_ids": [
+        "15ipwqyqunn8fzwb3l9bsiot0",
+        "21snm4gvykm9jjq1rzq17ejo4",
+        "2ddgt0wgk8212ask4bgjokqac",
+        "4ipkr2m649qfb4g5hndblp82c"
+      ],
+      "trajectories": 16,
+      "decisions": 80,
+      "brier": 0.7739739312499999,
+      "valid_rate": 0.8625,
+      "format_failures": {
+        "sum": 11
+      },
+      "logged_entropy": 0.023912634700536728,
+      "logged_kl_sample_train_v2": 0.0006737079820595682,
+      "mixed_reward_group_fraction": 0.75,
+      "note": "Different training matches in each batch; training curves do not measure same-cohort improvement."
+    },
+    {
+      "iteration": 2,
+      "sampling_checkpoint_step": 2,
+      "unique_matches": 4,
+      "match_ids": [
+        "154ru5ptp2kfs14iguma92kno",
+        "2knvskhww99qrbj71gbu13578",
+        "2znj52xnfa1uxidhp2c3thd78",
+        "4pi8q807b9bc5r55gvpy5omqc"
+      ],
+      "trajectories": 16,
+      "decisions": 80,
+      "brier": 0.663933125,
+      "valid_rate": 0.9625,
+      "format_failures": {
+        "sum": 3
+      },
+      "logged_entropy": 0.015065200626850128,
+      "logged_kl_sample_train_v2": 0.00037132491706870496,
+      "mixed_reward_group_fraction": 0.5,
+      "note": "Different training matches in each batch; training curves do not measure same-cohort improvement."
+    },
+    {
+      "iteration": 3,
+      "sampling_checkpoint_step": 3,
+      "unique_matches": 4,
+      "match_ids": [
+        "1m2q53bt7g2w2nzxpt8zwvklw",
+        "3uwscuw3pka1nis987nbuotn8",
+        "4jkq3hfgw6nq6tesl83wpy80k",
+        "4l7u8xcjrptlo0te85spnio7o"
+      ],
+      "trajectories": 16,
+      "decisions": 80,
+      "brier": 0.709689375,
+      "valid_rate": 0.95,
+      "format_failures": {
+        "sum": 4
+      },
+      "logged_entropy": 0.017025884240865707,
+      "logged_kl_sample_train_v2": 0.000552266021259129,
+      "mixed_reward_group_fraction": 0.75,
+      "note": "Different training matches in each batch; training curves do not measure same-cohort improvement."
+    }
+  ],
+  "posthoc_prompt_template_diagnostic": {
+    "status": "Post-hoc confound diagnostic; see separate posthoc_prompt_diagnostic_protocol.json",
+    "template_probabilities": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "validation_template_echo": {
+      "base": {
+        "exact_vector_count": 56,
+        "decisions": 80
+      },
+      "final": {
+        "exact_vector_count": 59,
+        "decisions": 80
+      }
+    },
+    "training_batches": [
+      {
+        "iteration": 0,
+        "decisions": 80,
+        "exact_vector_count": 60,
+        "total_reward_std_within_group": [
+          0.17819090885900998,
+          0.0,
+          0.10911920087683927,
+          0.10911920087683927
+        ],
+        "zero_reward_variance_groups": 1,
+        "groups": 4,
+        "note": "Each group has four same-match stochastic trajectories. Zero total-reward variance supplies no reward-ranking signal within that group. Nonzero variance may reflect invalidity as well as forecast content."
+      },
+      {
+        "iteration": 1,
+        "decisions": 80,
+        "exact_vector_count": 62,
+        "total_reward_std_within_group": [
+          0.09646223960052971,
+          0.0,
+          0.11926957155955581,
+          0.16352644266280572
+        ],
+        "zero_reward_variance_groups": 1,
+        "groups": 4,
+        "note": "Each group has four same-match stochastic trajectories. Zero total-reward variance supplies no reward-ranking signal within that group. Nonzero variance may reflect invalidity as well as forecast content."
+      },
+      {
+        "iteration": 2,
+        "decisions": 80,
+        "exact_vector_count": 69,
+        "total_reward_std_within_group": [
+          0.1146821865799131,
+          0.126,
+          0.0,
+          0.0
+        ],
+        "zero_reward_variance_groups": 2,
+        "groups": 4,
+        "note": "Each group has four same-match stochastic trajectories. Zero total-reward variance supplies no reward-ranking signal within that group. Nonzero variance may reflect invalidity as well as forecast content."
+      },
+      {
+        "iteration": 3,
+        "decisions": 80,
+        "exact_vector_count": 74,
+        "total_reward_std_within_group": [
+          0.0,
+          0.12643970895252807,
+          0.12643970895252807,
+          0.10498645064364259
+        ],
+        "zero_reward_variance_groups": 1,
+        "groups": 4,
+        "note": "Each group has four same-match stochastic trajectories. Zero total-reward variance supplies no reward-ranking signal within that group. Nonzero variance may reflect invalidity as well as forecast content."
+      }
+    ],
+    "interpretation": "A discovered echo confound can motivate an example-free SYSTEM ablation, but these frozen counts cannot establish its causal impact. Format self-distillation can reproduce the same bias."
+  },
+  "offline_integration": {
+    "status": "data/loss/serialization reference only, no trained model or API integration",
+    "train_records": 80,
+    "format_sft_records": 80,
+    "target_uses": "Outcome one-hot remains outside prompts, for proper class loss/reward only; numeric serialized self-distillation is formatting assistance, not a proper forecasting loss."
+  },
+  "d3_supporting_posthoc": {
+    "pilot/base": {
+      "strict": {
+        "raw": {
+          "matches": 16,
+          "decisions": 80,
+          "valid_decisions": 59,
+          "invalid_inclusive": {
+            "brier": 0.9791281249999999,
+            "log_loss": 4.381482847405179,
+            "valid_rate": 0.7375
+          },
+          "valid_only": {
+            "matches": 16,
+            "brier": 0.6320006249999999,
+            "log_loss": 1.0470922002510383
+          }
+        },
+        "valid_only_minus_market": {
+          "matches": 16,
+          "orientation": "left minus right; negative loss is better",
+          "brier": {
+            "mean": 0.19746138502248797,
+            "match_bootstrap_95": [
+              0.041426364284290924,
+              0.34278755143559675
+            ]
+          },
+          "log_loss": {
+            "mean": 0.31795045892883966,
+            "match_bootstrap_95": [
+              0.09487406204053896,
+              0.5282007817530386
+            ]
+          },
+          "valid_rate": {
+            "mean": 0.0,
+            "match_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "tolerance_0.05": {
+        "raw": {
+          "matches": 16,
+          "decisions": 80,
+          "valid_decisions": 80,
+          "invalid_inclusive": {
+            "brier": 0.5726678618954091,
+            "log_loss": 0.9554917491213903,
+            "valid_rate": 1.0
+          },
+          "valid_only": {
+            "matches": 16,
+            "brier": 0.5726678618954091,
+            "log_loss": 0.9554917491213903
+          }
+        },
+        "valid_only_minus_market": {
+          "matches": 16,
+          "orientation": "left minus right; negative loss is better",
+          "brier": {
+            "mean": 0.17165829770312285,
+            "match_bootstrap_95": [
+              0.033011525031022705,
+              0.301458256570716
+            ]
+          },
+          "log_loss": {
+            "mean": 0.27084745234736196,
+            "match_bootstrap_95": [
+              0.06626259118008526,
+              0.4648246284440744
+            ]
+          },
+          "valid_rate": {
+            "mean": 0.0,
+            "match_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "pilot/final": {
+      "strict": {
+        "raw": {
+          "matches": 16,
+          "decisions": 80,
+          "valid_decisions": 61,
+          "invalid_inclusive": {
+            "brier": 0.9518256249999999,
+            "log_loss": 4.073410845627157,
+            "valid_rate": 0.7625
+          },
+          "valid_only": {
+            "matches": 16,
+            "brier": 0.6403724999999999,
+            "log_loss": 1.0606077852117666
+          }
+        },
+        "valid_only_minus_market": {
+          "matches": 16,
+          "orientation": "left minus right; negative loss is better",
+          "brier": {
+            "mean": 0.21465178471837626,
+            "match_bootstrap_95": [
+              0.06313913389279494,
+              0.35621690426061126
+            ]
+          },
+          "log_loss": {
+            "mean": 0.3398483992447127,
+            "match_bootstrap_95": [
+              0.1153129674740188,
+              0.5533856366641297
+            ]
+          },
+          "valid_rate": {
+            "mean": 0.0,
+            "match_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "tolerance_0.05": {
+        "raw": {
+          "matches": 16,
+          "decisions": 80,
+          "valid_decisions": 80,
+          "invalid_inclusive": {
+            "brier": 0.5857551060489206,
+            "log_loss": 0.9771668418303081,
+            "valid_rate": 1.0
+          },
+          "valid_only": {
+            "matches": 16,
+            "brier": 0.5857551060489206,
+            "log_loss": 0.9771668418303081
+          }
+        },
+        "valid_only_minus_market": {
+          "matches": 16,
+          "orientation": "left minus right; negative loss is better",
+          "brier": {
+            "mean": 0.18474554185663442,
+            "match_bootstrap_95": [
+              0.039900446157550715,
+              0.3209785386620609
+            ]
+          },
+          "log_loss": {
+            "mean": 0.2925225450562797,
+            "match_bootstrap_95": [
+              0.07765986678128318,
+              0.49817201993022564
+            ]
+          },
+          "valid_rate": {
+            "mean": 0.0,
+            "match_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  },
+  "historical_usage_estimate": {
+    "training_input_tokens": 225264,
+    "training_output_tokens": 11746,
+    "evaluation_input_tokens": 114950,
+    "evaluation_output_tokens": 6500,
+    "full_rate_token_cost_estimate_usd": 0.18157373,
+    "preflight_upper_estimate_usd": 0.22034428999999997,
+    "budget_usd": 5,
+    "note": "Derived from logged tokens and published full rates, not a provider invoice; cache discounts excluded."
+  },
+  "budget": {
+    "actual_incremental_usd": 0.0,
+    "reserved_incremental_usd": 0.0,
+    "paid_calls": 0
+  },
+  "seal_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "seal_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  }
+}

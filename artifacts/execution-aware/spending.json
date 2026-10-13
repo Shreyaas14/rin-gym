@@ -1,0 +1,15 @@
+{
+  "incremental_paid_requests": 0,
+  "reserved_max_usd": 0,
+  "estimated_incremental_spend_usd": 0,
+  "actual_incremental_spend_usd": 0,
+  "verified_service_billing_usd": null,
+  "chat_cap_usd": 5,
+  "note": "Offline only; no service invocation. Existing inference is sunk cost.",
+  "direction": 7,
+  "paid_requests": 0,
+  "token_cost_estimate_usd": 0,
+  "verified_billing_usd": null,
+  "entries": [],
+  "hard_limit_entire_chat_usd": 5
+}

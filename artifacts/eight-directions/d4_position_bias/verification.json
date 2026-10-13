@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "checks": [
+    "known 0.10 matched held uplift recovered",
+    "invalid four-arm set excluded",
+    "probability sensitivity retains invalid action forecast",
+    "truncation invalidates probability",
+    "legal action validated",
+    "protocol/source/code hashes intact",
+    "messages and common observed state invariant",
+    "four arms and paired seeds per set",
+    "unique request receipts and no duplicate requests",
+    "raw completion parse and token counts verified",
+    "durable spending reconciles",
+    "holdout seal intact"
+  ],
+  "maximum_requests": 480,
+  "requests": 480,
+  "completed": 480,
+  "complete": true,
+  "seal_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  }
+}

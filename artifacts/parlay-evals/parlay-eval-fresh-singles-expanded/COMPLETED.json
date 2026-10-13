@@ -1,0 +1,9 @@
+{
+  "requests": 396,
+  "reserved_max_cost_usd": 0.14236096500000006,
+  "holdout_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "direction": "d6_training_scale",
+  "hypothesis": "Four-update proper forecast RL may improve format compliance without measurable discrimination; a training-only proper-probability SFT interface is feasible, efficacy requires a fresh seeded intervention.",
+  "analysis_kind": "registered offline descriptive reanalysis of previously inspected pilot; not preregistered original evidence",
+  "prior_inspection": "Prior base Brier .9791, final .9518, market .401 and CI crossing zero supplied by orchestrator; D3 diagnostic previously available.",
+  "intervention": "No model update or inference. Audit saved train metrics/rollouts and pair frozen base/final predictions; construct training-only proper probability targets and serialization/loss tests.",
+  "cohorts": {
+    "train": [
+      "154ru5ptp2kfs14iguma92kno",
+      "15ipwqyqunn8fzwb3l9bsiot0",
+      "1m2q53bt7g2w2nzxpt8zwvklw",
+      "21snm4gvykm9jjq1rzq17ejo4",
+      "2ddgt0wgk8212ask4bgjokqac",
+      "2g6nccszuuullvt32g4sw7o5w",
+      "2inc8vql65bi2clvs6z2buqs4",
+      "2knvskhww99qrbj71gbu13578",
+      "2ntyu72wz8vu95ocn09cwlmok",
+      "2znj52xnfa1uxidhp2c3thd78",
+      "3uwscuw3pka1nis987nbuotn8",
+      "4ipkr2m649qfb4g5hndblp82c",
+      "4jkq3hfgw6nq6tesl83wpy80k",
+      "4l7u8xcjrptlo0te85spnio7o",
+      "4pi8q807b9bc5r55gvpy5omqc",
+      "53xkqr8ahhgqnm6d5mt3jrims"
+    ],
+    "val": [
+      "400021442",
+      "400021450",
+      "400021452",
+      "400021453",
+      "400021460",
+      "400021461",
+      "400021463",
+      "400021467",
+      "400021478",
+      "400021479",
+      "400021483",
+      "400021493",
+      "400021499",
+      "400021501",
+      "400021502",
+      "400021511"
+    ]
+  },
+  "partitions": "Original train Premier League and validation World Cup; historical validation reused development. No new fitting on validation.",
+  "sources": [
+    "inputs/forecast-only/training",
+    "inputs/forecast-only/tasks.jsonl.gz",
+    "inputs/forecast-only/predictions.jsonl",
+    "inputs/forecast-only/summary.json",
+    "artifacts/eight-directions/d3_calibration/results.json"
+  ],
+  "primary_metrics": [
+    "invalid-inclusive equal-match Brier",
+    "strict exact-schema valid rate",
+    "paired final-minus-base match Brier"
+  ],
+  "secondary_metrics": [
+    "log_loss",
+    "tolerant probability valid rate",
+    "valid-only Brier",
+    "training reward/entropy/advantage/loss"
+  ],
+  "seed": 20261013,
+  "bootstrap": {
+    "reps": 4000,
+    "unit": "whole match",
+    "confidence": 0.95,
+    "limitation": "One training seed; shared teams and reused development not corrected by bootstrap."
+  },
+  "stopping_rule": "One bounded offline analysis; no threshold/checkpoint search; no paid calls.",
+  "spend_authorization": "Latest user $5 total incremental task cap overrides older per-direction wording; D6 reserves and spends $0.",
+  "paid_status": "Fresh multi-seed SFT/RL study blocked by no-new-paid-work parent instruction; proposal only."
+}

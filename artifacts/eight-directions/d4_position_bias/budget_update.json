@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-13T21:25:44.654287+00:00",
+  "updated_effective_global_incremental_paid_service_cap_usd": 5,
+  "orchestrator_instruction": "Finish frozen480 request run unchanged; no additional paid experiments.",
+  "d4_maximum_retained_reservation_usd": 0.46016736,
+  "status": "Unchanged frozen design remains under orchestrator combined cap."
+}

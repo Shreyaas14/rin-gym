@@ -1,0 +1,23 @@
+{
+  "maximum_calls": 990,
+  "input_tokens": 1720554,
+  "maximum_output_tokens": 253440,
+  "maximum_prompt_tokens": 2209,
+  "rates_per_million": {
+    "prefill": 0.195,
+    "sample": 0.6
+  },
+  "maximum_token_cost_usd": 0.48757203000000005,
+  "reservation_with_2x_headroom_usd": 0.9751440600000001,
+  "maximum_tokens_each": 256,
+  "arms": [
+    "original_prompt",
+    "market_prior_prompt"
+  ],
+  "instruction": "\nMarket-prior forecasting instruction: for your regulation-result probs, start from the normalized current displayed prices supplied below. Adjust each outcome probability only when the observed match information supports it, by at most 0.10 in absolute probability from that prior. Preserve probabilities summing to one and the complete existing five-field JSON schema. Market prices are noisy evidence; unchanged prices are an acceptable forecast.",
+  "assessment_matches": 33,
+  "repeats": 3,
+  "pairs": 495,
+  "status": "preflight_only_no_requests",
+  "checkpoint": "tinker://d2426bc1-ec71-559d-bb81-e17da9372e58:train:0/sampler_weights/final"
+}

@@ -1,0 +1,55 @@
+{
+  "minute_no_memory": {
+    "predictions": 1194,
+    "distinct_forecasts": 9,
+    "most_common": [
+      [
+        "{\"away\": 0.3, \"draw\": 0.3, \"home\": 0.4}",
+        1163
+      ],
+      [
+        "{\"away\": 0.0, \"draw\": 0.05, \"home\": 0.95}",
+        11
+      ],
+      [
+        "{\"away\": 0.02, \"draw\": 0.03, \"home\": 0.95}",
+        8
+      ],
+      [
+        "{\"away\": 0.1, \"draw\": 0.15, \"home\": 0.75}",
+        3
+      ],
+      [
+        "{\"away\": 0.0, \"draw\": 0.01, \"home\": 0.99}",
+        3
+      ]
+    ],
+    "exact_schema_example_rate": 0.974036850921273
+  },
+  "sparse_memory": {
+    "predictions": 80,
+    "distinct_forecasts": 1,
+    "most_common": [
+      [
+        "{\"away\": 0.3, \"draw\": 0.3, \"home\": 0.4}",
+        80
+      ]
+    ],
+    "exact_schema_example_rate": 1.0
+  },
+  "sparse_no_memory": {
+    "predictions": 80,
+    "distinct_forecasts": 2,
+    "most_common": [
+      [
+        "{\"away\": 0.3, \"draw\": 0.3, \"home\": 0.4}",
+        79
+      ],
+      [
+        "{\"away\": 0.15, \"draw\": 0.2, \"home\": 0.65}",
+        1
+      ]
+    ],
+    "exact_schema_example_rate": 0.9875
+  }
+}

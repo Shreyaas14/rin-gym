@@ -1,0 +1,17 @@
+{
+  "complete_requests": 990,
+  "complete_pairs": 495,
+  "complete_match_repeat_trajectories": 99,
+  "unique_matches": 33,
+  "joined_protocol_request_prediction_reservation_ids": true,
+  "all_raw_completion_parser_results_reproduced": true,
+  "all_max_reservations_reproduced_2x": true,
+  "all_reservations_completed_no_pending": true,
+  "frozen_code_hashes_match": true,
+  "input_tokens": 1720554,
+  "output_tokens": 100833,
+  "token_cost_estimate_usd": 0.39600783,
+  "reserved_max_usd": 0.9751440599999991,
+  "verified_invoice_billing_usd": null,
+  "holdout_guard_unchanged": true
+}

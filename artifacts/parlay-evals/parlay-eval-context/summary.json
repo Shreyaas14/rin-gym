@@ -1,0 +1,5575 @@
+{
+  "cost_usd": 0,
+  "results": [
+    {
+      "seed": 20261013,
+      "group": "all_active",
+      "recipe": "market",
+      "pair_points": 1469,
+      "unique_fixtures": 72,
+      "brier": 0.666577320798623,
+      "log_loss": 1.3839527947240802,
+      "favorite_hit": 0.427501701837985,
+      "common_ticket_brier": 0.20845785442223255
+    },
+    {
+      "seed": 20261013,
+      "group": "all_active",
+      "recipe": "model",
+      "pair_points": 1469,
+      "unique_fixtures": 72,
+      "brier": 0.7230520974694128,
+      "log_loss": 1.597998861072546,
+      "favorite_hit": 0.43907420013614706,
+      "common_ticket_brier": 0.23508357536765798
+    },
+    {
+      "seed": 20261013,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "pair_points": 1469,
+      "unique_fixtures": 72,
+      "brier": 0.6705221311566539,
+      "log_loss": 1.393417158702163,
+      "favorite_hit": 0.4200136147038802,
+      "common_ticket_brier": 0.21082201763808367
+    },
+    {
+      "seed": 20261013,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "pair_points": 1469,
+      "unique_fixtures": 72,
+      "brier": 0.6704444601822813,
+      "log_loss": 1.4010790582837584,
+      "favorite_hit": 0.43135920127070576,
+      "common_ticket_brier": 0.21136915777361204
+    },
+    {
+      "seed": 20261013,
+      "group": "all_active",
+      "recipe": "event_gated_market",
+      "pair_points": 1469,
+      "unique_fixtures": 72,
+      "brier": 0.667623429566991,
+      "log_loss": 1.386853845434787,
+      "favorite_hit": 0.42069434989788973,
+      "common_ticket_brier": 0.20864529503647683
+    },
+    {
+      "seed": 20261013,
+      "group": "all_active",
+      "recipe": "event_gated_blend",
+      "pair_points": 1469,
+      "unique_fixtures": 72,
+      "brier": 0.6706030714046068,
+      "log_loss": 1.3922038835607338,
+      "favorite_hit": 0.4211481733605628,
+      "common_ticket_brier": 0.21039936695200365
+    },
+    {
+      "seed": 20261013,
+      "group": "first_half",
+      "recipe": "market",
+      "pair_points": 740,
+      "unique_fixtures": 72,
+      "brier": 0.726716455244739,
+      "log_loss": 1.5654995368530344,
+      "favorite_hit": 0.3810810810810811,
+      "common_ticket_brier": 0.21164886363862342
+    },
+    {
+      "seed": 20261013,
+      "group": "first_half",
+      "recipe": "model",
+      "pair_points": 740,
+      "unique_fixtures": 72,
+      "brier": 0.770794766972973,
+      "log_loss": 1.7514421344726918,
+      "favorite_hit": 0.39549549549549545,
+      "common_ticket_brier": 0.23576764354504506
+    },
+    {
+      "seed": 20261013,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "pair_points": 740,
+      "unique_fixtures": 72,
+      "brier": 0.7416075638286905,
+      "log_loss": 1.5981327555343954,
+      "favorite_hit": 0.39864864864864863,
+      "common_ticket_brier": 0.22371653015239695
+    },
+    {
+      "seed": 20261013,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "pair_points": 740,
+      "unique_fixtures": 72,
+      "brier": 0.7480406046390957,
+      "log_loss": 1.6231452156500057,
+      "favorite_hit": 0.3945945945945946,
+      "common_ticket_brier": 0.22834363991621803
+    },
+    {
+      "seed": 20261013,
+      "group": "second_half",
+      "recipe": "market",
+      "pair_points": 729,
+      "unique_fixtures": 72,
+      "brier": 0.6055307371358988,
+      "log_loss": 1.19966666416794,
+      "favorite_hit": 0.47462277091906724,
+      "common_ticket_brier": 0.20521869554688385
+    },
+    {
+      "seed": 20261013,
+      "group": "second_half",
+      "recipe": "model",
+      "pair_points": 729,
+      "unique_fixtures": 72,
+      "brier": 0.6745890310323284,
+      "log_loss": 1.4422402570723973,
+      "favorite_hit": 0.483310470964792,
+      "common_ticket_brier": 0.2343891851738769
+    },
+    {
+      "seed": 20261013,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "pair_points": 729,
+      "unique_fixtures": 72,
+      "brier": 0.6113803153277176,
+      "log_loss": 1.2277133202900388,
+      "favorite_hit": 0.4334705075445816,
+      "common_ticket_brier": 0.20774705932905405
+    },
+    {
+      "seed": 20261013,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "pair_points": 729,
+      "unique_fixtures": 72,
+      "brier": 0.6113803153277176,
+      "log_loss": 1.2277133202900388,
+      "favorite_hit": 0.4334705075445816,
+      "common_ticket_brier": 0.20774705932905405
+    },
+    {
+      "seed": 20261013,
+      "group": "both_tied",
+      "recipe": "market",
+      "pair_points": 335,
+      "unique_fixtures": 54,
+      "brier": 0.8260496560374833,
+      "log_loss": 1.8770290205088522,
+      "favorite_hit": 0.25970149253731345,
+      "common_ticket_brier": 0.19565739193733153
+    },
+    {
+      "seed": 20261013,
+      "group": "both_tied",
+      "recipe": "model",
+      "pair_points": 335,
+      "unique_fixtures": 54,
+      "brier": 0.8393458340696516,
+      "log_loss": 1.9793176120344194,
+      "favorite_hit": 0.2835820895522388,
+      "common_ticket_brier": 0.19414331218905473
+    },
+    {
+      "seed": 20261013,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "pair_points": 335,
+      "unique_fixtures": 54,
+      "brier": 0.821180269161107,
+      "log_loss": 1.8683244215596209,
+      "favorite_hit": 0.27761194029850744,
+      "common_ticket_brier": 0.19268546031058864
+    },
+    {
+      "seed": 20261013,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "pair_points": 335,
+      "unique_fixtures": 54,
+      "brier": 0.8162377168338548,
+      "log_loss": 1.8534682279188415,
+      "favorite_hit": 0.25870646766169153,
+      "common_ticket_brier": 0.19077821891455302
+    },
+    {
+      "seed": 20261013,
+      "group": "recent_goal_any",
+      "recipe": "market",
+      "pair_points": 308,
+      "unique_fixtures": 72,
+      "brier": 0.6183273316706109,
+      "log_loss": 1.2570116894577414,
+      "favorite_hit": 0.45454545454545453,
+      "common_ticket_brier": 0.19031281629776603
+    },
+    {
+      "seed": 20261013,
+      "group": "recent_goal_any",
+      "recipe": "model",
+      "pair_points": 308,
+      "unique_fixtures": 72,
+      "brier": 0.6927698522510822,
+      "log_loss": 1.5129302918537344,
+      "favorite_hit": 0.42748917748917753,
+      "common_ticket_brier": 0.231765583495671
+    },
+    {
+      "seed": 20261013,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "pair_points": 308,
+      "unique_fixtures": 72,
+      "brier": 0.6215117127716007,
+      "log_loss": 1.2684239497390712,
+      "favorite_hit": 0.45454545454545453,
+      "common_ticket_brier": 0.19030976838811606
+    },
+    {
+      "seed": 20261013,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "pair_points": 308,
+      "unique_fixtures": 72,
+      "brier": 0.6215117127716007,
+      "log_loss": 1.2684239497390712,
+      "favorite_hit": 0.45454545454545453,
+      "common_ticket_brier": 0.19030976838811606
+    },
+    {
+      "seed": 20261013,
+      "group": "red_visible_any",
+      "recipe": "market",
+      "pair_points": 113,
+      "unique_fixtures": 57,
+      "brier": 0.4681605470105908,
+      "log_loss": 0.8673839843881549,
+      "favorite_hit": 0.6637168141592921,
+      "common_ticket_brier": 0.21189894291213587
+    },
+    {
+      "seed": 20261013,
+      "group": "red_visible_any",
+      "recipe": "model",
+      "pair_points": 113,
+      "unique_fixtures": 57,
+      "brier": 0.5673880842731898,
+      "log_loss": 1.1428628410746917,
+      "favorite_hit": 0.6755162241887905,
+      "common_ticket_brier": 0.2832016031634421
+    },
+    {
+      "seed": 20261013,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "pair_points": 113,
+      "unique_fixtures": 57,
+      "brier": 0.501710486174703,
+      "log_loss": 0.9173572158927146,
+      "favorite_hit": 0.584070796460177,
+      "common_ticket_brier": 0.23285034579474273
+    },
+    {
+      "seed": 20261013,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "pair_points": 113,
+      "unique_fixtures": 57,
+      "brier": 0.5067363987851983,
+      "log_loss": 0.9364943362220342,
+      "favorite_hit": 0.5899705014749262,
+      "common_ticket_brier": 0.23484557610620288
+    },
+    {
+      "seed": 20261013,
+      "group": "uncertain_any",
+      "recipe": "market",
+      "pair_points": 933,
+      "unique_fixtures": 72,
+      "brier": 0.767972211445281,
+      "log_loss": 1.6312421141336522,
+      "favorite_hit": 0.2904608788853162,
+      "common_ticket_brier": 0.2070473867922472
+    },
+    {
+      "seed": 20261013,
+      "group": "uncertain_any",
+      "recipe": "model",
+      "pair_points": 933,
+      "unique_fixtures": 72,
+      "brier": 0.799343841031496,
+      "log_loss": 1.7990909090508695,
+      "favorite_hit": 0.3086816720257235,
+      "common_ticket_brier": 0.20776110151397192
+    },
+    {
+      "seed": 20261013,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "pair_points": 933,
+      "unique_fixtures": 72,
+      "brier": 0.7642712688819748,
+      "log_loss": 1.633221166522831,
+      "favorite_hit": 0.2990353697749196,
+      "common_ticket_brier": 0.20494077800366056
+    },
+    {
+      "seed": 20261013,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "pair_points": 933,
+      "unique_fixtures": 72,
+      "brier": 0.7672039839429436,
+      "log_loss": 1.6443020696095056,
+      "favorite_hit": 0.2879599857091818,
+      "common_ticket_brier": 0.20459680209257503
+    },
+    {
+      "seed": 20261013,
+      "group": "quiet",
+      "recipe": "market",
+      "pair_points": 1076,
+      "unique_fixtures": 71,
+      "brier": 0.6944120534961183,
+      "log_loss": 1.456826981922993,
+      "favorite_hit": 0.3996282527881041,
+      "common_ticket_brier": 0.21167899278405178
+    },
+    {
+      "seed": 20261013,
+      "group": "quiet",
+      "recipe": "model",
+      "pair_points": 1076,
+      "unique_fixtures": 71,
+      "brier": 0.7416972365703502,
+      "log_loss": 1.6517720374517604,
+      "favorite_hit": 0.42348203221809166,
+      "common_ticket_brier": 0.22981880863471563
+    },
+    {
+      "seed": 20261013,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "pair_points": 1076,
+      "unique_fixtures": 71,
+      "brier": 0.7006596074064543,
+      "log_loss": 1.4766375335412338,
+      "favorite_hit": 0.3912639405204461,
+      "common_ticket_brier": 0.21614118075176142
+    },
+    {
+      "seed": 20261013,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "pair_points": 1076,
+      "unique_fixtures": 71,
+      "brier": 0.6995417388208544,
+      "log_loss": 1.4790033320383749,
+      "favorite_hit": 0.4070631970260223,
+      "common_ticket_brier": 0.21553417853016052
+    },
+    {
+      "seed": 20261014,
+      "group": "all_active",
+      "recipe": "market",
+      "pair_points": 1479,
+      "unique_fixtures": 72,
+      "brier": 0.6477004617490502,
+      "log_loss": 1.3750331975413754,
+      "favorite_hit": 0.444895199459094,
+      "common_ticket_brier": 0.19672877694187435
+    },
+    {
+      "seed": 20261014,
+      "group": "all_active",
+      "recipe": "model",
+      "pair_points": 1479,
+      "unique_fixtures": 72,
+      "brier": 0.718288088144782,
+      "log_loss": 1.5992334708224694,
+      "favorite_hit": 0.4336263240928555,
+      "common_ticket_brier": 0.23818339068110297
+    },
+    {
+      "seed": 20261014,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "pair_points": 1479,
+      "unique_fixtures": 72,
+      "brier": 0.6634063897153313,
+      "log_loss": 1.4055561127526979,
+      "favorite_hit": 0.4259634888438134,
+      "common_ticket_brier": 0.20845705077174861
+    },
+    {
+      "seed": 20261014,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "pair_points": 1479,
+      "unique_fixtures": 72,
+      "brier": 0.6636701055811425,
+      "log_loss": 1.4115719948412542,
+      "favorite_hit": 0.4259634888438134,
+      "common_ticket_brier": 0.20782703644737685
+    },
+    {
+      "seed": 20261014,
+      "group": "all_active",
+      "recipe": "event_gated_market",
+      "pair_points": 1479,
+      "unique_fixtures": 72,
+      "brier": 0.6521566114665663,
+      "log_loss": 1.3868780758070711,
+      "favorite_hit": 0.42866801893171064,
+      "common_ticket_brier": 0.19893194948605034
+    },
+    {
+      "seed": 20261014,
+      "group": "all_active",
+      "recipe": "event_gated_blend",
+      "pair_points": 1479,
+      "unique_fixtures": 72,
+      "brier": 0.6521566114665663,
+      "log_loss": 1.3868780758070711,
+      "favorite_hit": 0.42866801893171064,
+      "common_ticket_brier": 0.19893194948605034
+    },
+    {
+      "seed": 20261014,
+      "group": "first_half",
+      "recipe": "market",
+      "pair_points": 744,
+      "unique_fixtures": 72,
+      "brier": 0.7142042029495559,
+      "log_loss": 1.5520508078616087,
+      "favorite_hit": 0.38844086021505375,
+      "common_ticket_brier": 0.20317910721301013
+    },
+    {
+      "seed": 20261014,
+      "group": "first_half",
+      "recipe": "model",
+      "pair_points": 744,
+      "unique_fixtures": 72,
+      "brier": 0.7685098681182796,
+      "log_loss": 1.7488613476542239,
+      "favorite_hit": 0.37275985663082434,
+      "common_ticket_brier": 0.23787202548387096
+    },
+    {
+      "seed": 20261014,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "pair_points": 744,
+      "unique_fixtures": 72,
+      "brier": 0.7278502523863677,
+      "log_loss": 1.577690646198222,
+      "favorite_hit": 0.3978494623655914,
+      "common_ticket_brier": 0.2133204920581942
+    },
+    {
+      "seed": 20261014,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "pair_points": 744,
+      "unique_fixtures": 72,
+      "brier": 0.7238380978750208,
+      "log_loss": 1.578707259041008,
+      "favorite_hit": 0.4050179211469534,
+      "common_ticket_brier": 0.2116542266364723
+    },
+    {
+      "seed": 20261014,
+      "group": "second_half",
+      "recipe": "market",
+      "pair_points": 735,
+      "unique_fixtures": 72,
+      "brier": 0.5803823890236405,
+      "log_loss": 1.1958480246457923,
+      "favorite_hit": 0.5020408163265306,
+      "common_ticket_brier": 0.19019946303476554
+    },
+    {
+      "seed": 20261014,
+      "group": "second_half",
+      "recipe": "model",
+      "pair_points": 735,
+      "unique_fixtures": 72,
+      "brier": 0.6674513476001804,
+      "log_loss": 1.4477734159070617,
+      "favorite_hit": 0.49523809523809526,
+      "common_ticket_brier": 0.2384985685134031
+    },
+    {
+      "seed": 20261014,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "pair_points": 735,
+      "unique_fixtures": 72,
+      "brier": 0.5981734185217922,
+      "log_loss": 1.231313809509882,
+      "favorite_hit": 0.454421768707483,
+      "common_ticket_brier": 0.20353405714302006
+    },
+    {
+      "seed": 20261014,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "pair_points": 735,
+      "unique_fixtures": 72,
+      "brier": 0.5992248029590467,
+      "log_loss": 1.2363904096663356,
+      "favorite_hit": 0.454421768707483,
+      "common_ticket_brier": 0.2033732838735794
+    },
+    {
+      "seed": 20261014,
+      "group": "both_tied",
+      "recipe": "market",
+      "pair_points": 342,
+      "unique_fixtures": 54,
+      "brier": 0.8259104353337807,
+      "log_loss": 1.91442382328895,
+      "favorite_hit": 0.2719298245614035,
+      "common_ticket_brier": 0.1920701639576378
+    },
+    {
+      "seed": 20261014,
+      "group": "both_tied",
+      "recipe": "model",
+      "pair_points": 342,
+      "unique_fixtures": 54,
+      "brier": 0.8435828493177389,
+      "log_loss": 1.997124098863526,
+      "favorite_hit": 0.260233918128655,
+      "common_ticket_brier": 0.20157061811890836
+    },
+    {
+      "seed": 20261014,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "pair_points": 342,
+      "unique_fixtures": 54,
+      "brier": 0.8461128875325441,
+      "log_loss": 1.9719803461570375,
+      "favorite_hit": 0.28362573099415206,
+      "common_ticket_brier": 0.20652225659685366
+    },
+    {
+      "seed": 20261014,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "pair_points": 342,
+      "unique_fixtures": 54,
+      "brier": 0.8469923418455183,
+      "log_loss": 1.977353942069425,
+      "favorite_hit": 0.28167641325536064,
+      "common_ticket_brier": 0.20852646219573426
+    },
+    {
+      "seed": 20261014,
+      "group": "recent_goal_any",
+      "recipe": "market",
+      "pair_points": 311,
+      "unique_fixtures": 72,
+      "brier": 0.5787026109375007,
+      "log_loss": 1.1942070832475282,
+      "favorite_hit": 0.5209003215434084,
+      "common_ticket_brier": 0.19643954986932066
+    },
+    {
+      "seed": 20261014,
+      "group": "recent_goal_any",
+      "recipe": "model",
+      "pair_points": 311,
+      "unique_fixtures": 72,
+      "brier": 0.6713580657183279,
+      "log_loss": 1.469378570947123,
+      "favorite_hit": 0.4458735262593783,
+      "common_ticket_brier": 0.25653482581993564
+    },
+    {
+      "seed": 20261014,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "pair_points": 311,
+      "unique_fixtures": 72,
+      "brier": 0.5954266317117215,
+      "log_loss": 1.2442427373701175,
+      "favorite_hit": 0.45980707395498394,
+      "common_ticket_brier": 0.2054415681704531
+    },
+    {
+      "seed": 20261014,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "pair_points": 311,
+      "unique_fixtures": 72,
+      "brier": 0.5954266317117215,
+      "log_loss": 1.2442427373701175,
+      "favorite_hit": 0.45980707395498394,
+      "common_ticket_brier": 0.2054415681704531
+    },
+    {
+      "seed": 20261014,
+      "group": "red_visible_any",
+      "recipe": "market",
+      "pair_points": 112,
+      "unique_fixtures": 46,
+      "brier": 0.44099849073961706,
+      "log_loss": 0.8499726675026829,
+      "favorite_hit": 0.6875,
+      "common_ticket_brier": 0.18755222902551003
+    },
+    {
+      "seed": 20261014,
+      "group": "red_visible_any",
+      "recipe": "model",
+      "pair_points": 112,
+      "unique_fixtures": 46,
+      "brier": 0.5470111933305639,
+      "log_loss": 1.1028981060821073,
+      "favorite_hit": 0.6666666666666666,
+      "common_ticket_brier": 0.27256827176905535
+    },
+    {
+      "seed": 20261014,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "pair_points": 112,
+      "unique_fixtures": 46,
+      "brier": 0.48797205247497505,
+      "log_loss": 0.935435884090783,
+      "favorite_hit": 0.6339285714285714,
+      "common_ticket_brier": 0.2129828146957547
+    },
+    {
+      "seed": 20261014,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "pair_points": 112,
+      "unique_fixtures": 46,
+      "brier": 0.48824473341928804,
+      "log_loss": 0.933572722697911,
+      "favorite_hit": 0.6458333333333334,
+      "common_ticket_brier": 0.21243402649987386
+    },
+    {
+      "seed": 20261014,
+      "group": "uncertain_any",
+      "recipe": "market",
+      "pair_points": 954,
+      "unique_fixtures": 72,
+      "brier": 0.7662825535357726,
+      "log_loss": 1.6576270431946887,
+      "favorite_hit": 0.29979035639413,
+      "common_ticket_brier": 0.20354986155910967
+    },
+    {
+      "seed": 20261014,
+      "group": "uncertain_any",
+      "recipe": "model",
+      "pair_points": 954,
+      "unique_fixtures": 72,
+      "brier": 0.8016707427929001,
+      "log_loss": 1.8144567654969135,
+      "favorite_hit": 0.2833682739343117,
+      "common_ticket_brier": 0.21059226742907552
+    },
+    {
+      "seed": 20261014,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "pair_points": 954,
+      "unique_fixtures": 72,
+      "brier": 0.7740992869771828,
+      "log_loss": 1.6797892894437962,
+      "favorite_hit": 0.27044025157232704,
+      "common_ticket_brier": 0.20739783703080455
+    },
+    {
+      "seed": 20261014,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "pair_points": 954,
+      "unique_fixtures": 72,
+      "brier": 0.7730100708700504,
+      "log_loss": 1.6784744924451485,
+      "favorite_hit": 0.29000698812019565,
+      "common_ticket_brier": 0.2072343860172213
+    },
+    {
+      "seed": 20261014,
+      "group": "quiet",
+      "recipe": "market",
+      "pair_points": 1083,
+      "unique_fixtures": 71,
+      "brier": 0.6793443965702352,
+      "log_loss": 1.4589549646890427,
+      "favorite_hit": 0.4090489381348107,
+      "common_ticket_brier": 0.19640453544150616
+    },
+    {
+      "seed": 20261014,
+      "group": "quiet",
+      "recipe": "model",
+      "pair_points": 1083,
+      "unique_fixtures": 71,
+      "brier": 0.7409193115186608,
+      "log_loss": 1.6659862915349315,
+      "favorite_hit": 0.41458910433979684,
+      "common_ticket_brier": 0.2292481275462146
+    },
+    {
+      "seed": 20261014,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "pair_points": 1083,
+      "unique_fixtures": 71,
+      "brier": 0.6906904224176952,
+      "log_loss": 1.485578025841835,
+      "favorite_hit": 0.39981532779316714,
+      "common_ticket_brier": 0.2045225381433529
+    },
+    {
+      "seed": 20261014,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "pair_points": 1083,
+      "unique_fixtures": 71,
+      "brier": 0.6936103472080732,
+      "log_loss": 1.4892956400388744,
+      "favorite_hit": 0.4136657433056325,
+      "common_ticket_brier": 0.20743067978861815
+    },
+    {
+      "seed": 20261015,
+      "group": "all_active",
+      "recipe": "market",
+      "pair_points": 1497,
+      "unique_fixtures": 72,
+      "brier": 0.6526139913711133,
+      "log_loss": 1.3766150752188226,
+      "favorite_hit": 0.44021376085504343,
+      "common_ticket_brier": 0.198801507461904
+    },
+    {
+      "seed": 20261015,
+      "group": "all_active",
+      "recipe": "model",
+      "pair_points": 1497,
+      "unique_fixtures": 72,
+      "brier": 0.7171855274237429,
+      "log_loss": 1.5959262311090046,
+      "favorite_hit": 0.43598307726564245,
+      "common_ticket_brier": 0.2324840673224824
+    },
+    {
+      "seed": 20261015,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "pair_points": 1497,
+      "unique_fixtures": 72,
+      "brier": 0.6642669126068022,
+      "log_loss": 1.404955442275645,
+      "favorite_hit": 0.44021376085504343,
+      "common_ticket_brier": 0.20660222993165298
+    },
+    {
+      "seed": 20261015,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "pair_points": 1497,
+      "unique_fixtures": 72,
+      "brier": 0.6642669126068022,
+      "log_loss": 1.404955442275645,
+      "favorite_hit": 0.44021376085504343,
+      "common_ticket_brier": 0.20660222993165298
+    },
+    {
+      "seed": 20261015,
+      "group": "all_active",
+      "recipe": "event_gated_market",
+      "pair_points": 1497,
+      "unique_fixtures": 72,
+      "brier": 0.6554643121460408,
+      "log_loss": 1.383052490988264,
+      "favorite_hit": 0.43687374749499,
+      "common_ticket_brier": 0.20039598860437957
+    },
+    {
+      "seed": 20261015,
+      "group": "all_active",
+      "recipe": "event_gated_blend",
+      "pair_points": 1497,
+      "unique_fixtures": 72,
+      "brier": 0.6548470780982037,
+      "log_loss": 1.3813002426916605,
+      "favorite_hit": 0.43687374749499,
+      "common_ticket_brier": 0.19994973957179493
+    },
+    {
+      "seed": 20261015,
+      "group": "first_half",
+      "recipe": "market",
+      "pair_points": 754,
+      "unique_fixtures": 72,
+      "brier": 0.7138789566921817,
+      "log_loss": 1.5588848323866014,
+      "favorite_hit": 0.3912466843501326,
+      "common_ticket_brier": 0.20275815630233593
+    },
+    {
+      "seed": 20261015,
+      "group": "first_half",
+      "recipe": "model",
+      "pair_points": 754,
+      "unique_fixtures": 72,
+      "brier": 0.7665979430238726,
+      "log_loss": 1.7496374557655876,
+      "favorite_hit": 0.38549955791335094,
+      "common_ticket_brier": 0.23538209312113176
+    },
+    {
+      "seed": 20261015,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "pair_points": 754,
+      "unique_fixtures": 72,
+      "brier": 0.7216221315244491,
+      "log_loss": 1.5678666361420734,
+      "favorite_hit": 0.40716180371352784,
+      "common_ticket_brier": 0.21142048970263047
+    },
+    {
+      "seed": 20261015,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "pair_points": 754,
+      "unique_fixtures": 72,
+      "brier": 0.7217439212533611,
+      "log_loss": 1.5760707090556976,
+      "favorite_hit": 0.4076038903625111,
+      "common_ticket_brier": 0.21189072900463854
+    },
+    {
+      "seed": 20261015,
+      "group": "second_half",
+      "recipe": "market",
+      "pair_points": 743,
+      "unique_fixtures": 72,
+      "brier": 0.5904420077209309,
+      "log_loss": 1.1916468425075102,
+      "favorite_hit": 0.4899057873485868,
+      "common_ticket_brier": 0.19478628104779144
+    },
+    {
+      "seed": 20261015,
+      "group": "second_half",
+      "recipe": "model",
+      "pair_points": 743,
+      "unique_fixtures": 72,
+      "brier": 0.6670415686586042,
+      "log_loss": 1.4399393355624859,
+      "favorite_hit": 0.48721399730820997,
+      "common_ticket_brier": 0.22954313670043455
+    },
+    {
+      "seed": 20261015,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "pair_points": 743,
+      "unique_fixtures": 72,
+      "brier": 0.6023010379466031,
+      "log_loss": 1.2246489235414064,
+      "favorite_hit": 0.4737550471063257,
+      "common_ticket_brier": 0.20112068523959142
+    },
+    {
+      "seed": 20261015,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "pair_points": 743,
+      "unique_fixtures": 72,
+      "brier": 0.6023010379466031,
+      "log_loss": 1.2246489235414064,
+      "favorite_hit": 0.4737550471063257,
+      "common_ticket_brier": 0.20112068523959142
+    },
+    {
+      "seed": 20261015,
+      "group": "both_tied",
+      "recipe": "market",
+      "pair_points": 341,
+      "unique_fixtures": 54,
+      "brier": 0.8239682653018524,
+      "log_loss": 1.8877886323850477,
+      "favorite_hit": 0.24926686217008798,
+      "common_ticket_brier": 0.1831780927934715
+    },
+    {
+      "seed": 20261015,
+      "group": "both_tied",
+      "recipe": "model",
+      "pair_points": 341,
+      "unique_fixtures": 54,
+      "brier": 0.8432317319257088,
+      "log_loss": 1.9943737673558313,
+      "favorite_hit": 0.2805474095796676,
+      "common_ticket_brier": 0.18758906766373412
+    },
+    {
+      "seed": 20261015,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "pair_points": 341,
+      "unique_fixtures": 54,
+      "brier": 0.8346662292463395,
+      "log_loss": 1.9193970339206343,
+      "favorite_hit": 0.2785923753665689,
+      "common_ticket_brier": 0.18974458497463953
+    },
+    {
+      "seed": 20261015,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "pair_points": 341,
+      "unique_fixtures": 54,
+      "brier": 0.8213811088489814,
+      "log_loss": 1.8778524771398912,
+      "favorite_hit": 0.2873900293255132,
+      "common_ticket_brier": 0.18518774019441203
+    },
+    {
+      "seed": 20261015,
+      "group": "recent_goal_any",
+      "recipe": "market",
+      "pair_points": 306,
+      "unique_fixtures": 72,
+      "brier": 0.6055486818986842,
+      "log_loss": 1.2412437718137614,
+      "favorite_hit": 0.4934640522875817,
+      "common_ticket_brier": 0.19819550125026278
+    },
+    {
+      "seed": 20261015,
+      "group": "recent_goal_any",
+      "recipe": "model",
+      "pair_points": 306,
+      "unique_fixtures": 72,
+      "brier": 0.6890918063424355,
+      "log_loss": 1.509484667453015,
+      "favorite_hit": 0.4335511982570806,
+      "common_ticket_brier": 0.2506906293673526
+    },
+    {
+      "seed": 20261015,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "pair_points": 306,
+      "unique_fixtures": 72,
+      "brier": 0.6264213994715786,
+      "log_loss": 1.2955518125278702,
+      "favorite_hit": 0.45751633986928103,
+      "common_ticket_brier": 0.20720560296834997
+    },
+    {
+      "seed": 20261015,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "pair_points": 306,
+      "unique_fixtures": 72,
+      "brier": 0.6256014095533581,
+      "log_loss": 1.29456840035387,
+      "favorite_hit": 0.45751633986928103,
+      "common_ticket_brier": 0.20651377593131712
+    },
+    {
+      "seed": 20261015,
+      "group": "red_visible_any",
+      "recipe": "market",
+      "pair_points": 109,
+      "unique_fixtures": 36,
+      "brier": 0.5131315027356746,
+      "log_loss": 0.9516777205226241,
+      "favorite_hit": 0.6330275229357798,
+      "common_ticket_brier": 0.22077199554274646
+    },
+    {
+      "seed": 20261015,
+      "group": "red_visible_any",
+      "recipe": "model",
+      "pair_points": 109,
+      "unique_fixtures": 36,
+      "brier": 0.5772018032831169,
+      "log_loss": 1.1606983515467901,
+      "favorite_hit": 0.6299694189602447,
+      "common_ticket_brier": 0.26428755186549646
+    },
+    {
+      "seed": 20261015,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "pair_points": 109,
+      "unique_fixtures": 36,
+      "brier": 0.526229744964573,
+      "log_loss": 0.9779261149887102,
+      "favorite_hit": 0.5596330275229358,
+      "common_ticket_brier": 0.22481219262172483
+    },
+    {
+      "seed": 20261015,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "pair_points": 109,
+      "unique_fixtures": 36,
+      "brier": 0.5414007007206117,
+      "log_loss": 0.9989533727875847,
+      "favorite_hit": 0.5657492354740061,
+      "common_ticket_brier": 0.23214708658816455
+    },
+    {
+      "seed": 20261015,
+      "group": "uncertain_any",
+      "recipe": "market",
+      "pair_points": 963,
+      "unique_fixtures": 72,
+      "brier": 0.7641739343517455,
+      "log_loss": 1.6361900191117187,
+      "favorite_hit": 0.29906542056074764,
+      "common_ticket_brier": 0.20156283537010516
+    },
+    {
+      "seed": 20261015,
+      "group": "uncertain_any",
+      "recipe": "model",
+      "pair_points": 963,
+      "unique_fixtures": 72,
+      "brier": 0.7993486169726643,
+      "log_loss": 1.8045866628886367,
+      "favorite_hit": 0.2962962962962963,
+      "common_ticket_brier": 0.20700382898414904
+    },
+    {
+      "seed": 20261015,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "pair_points": 963,
+      "unique_fixtures": 72,
+      "brier": 0.7672900358815742,
+      "log_loss": 1.654569471269528,
+      "favorite_hit": 0.29906542056074764,
+      "common_ticket_brier": 0.2011840155632974
+    },
+    {
+      "seed": 20261015,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "pair_points": 963,
+      "unique_fixtures": 72,
+      "brier": 0.7666497028388787,
+      "log_loss": 1.6540747954937494,
+      "favorite_hit": 0.29906542056074764,
+      "common_ticket_brier": 0.20023857208481655
+    },
+    {
+      "seed": 20261015,
+      "group": "quiet",
+      "recipe": "market",
+      "pair_points": 1111,
+      "unique_fixtures": 71,
+      "brier": 0.6764831767591366,
+      "log_loss": 1.4433113041270125,
+      "favorite_hit": 0.41134113411341133,
+      "common_ticket_brier": 0.19850738248923913
+    },
+    {
+      "seed": 20261015,
+      "group": "quiet",
+      "recipe": "model",
+      "pair_points": 1111,
+      "unique_fixtures": 71,
+      "brier": 0.734460124779059,
+      "log_loss": 1.6473465134095724,
+      "favorite_hit": 0.42304230423042305,
+      "common_ticket_brier": 0.22552575933142405
+    },
+    {
+      "seed": 20261015,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "pair_points": 1111,
+      "unique_fixtures": 71,
+      "brier": 0.686631304496131,
+      "log_loss": 1.4662830800035225,
+      "favorite_hit": 0.41764176417641763,
+      "common_ticket_brier": 0.20593769520018618
+    },
+    {
+      "seed": 20261015,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "pair_points": 1111,
+      "unique_fixtures": 71,
+      "brier": 0.6803167663861971,
+      "log_loss": 1.4527265763964845,
+      "favorite_hit": 0.41764176417641763,
+      "common_ticket_brier": 0.20304169236913303
+    }
+  ],
+  "group_coverage": [
+    {
+      "group": "all_active",
+      "pair_points_all_games": 9581,
+      "unique_matches": 72,
+      "unique_pair_fixtures": 2412
+    },
+    {
+      "group": "first_half",
+      "pair_points_all_games": 4824,
+      "unique_matches": 72,
+      "unique_pair_fixtures": 2412
+    },
+    {
+      "group": "second_half",
+      "pair_points_all_games": 4757,
+      "unique_matches": 72,
+      "unique_pair_fixtures": 2412
+    },
+    {
+      "group": "both_tied",
+      "pair_points_all_games": 2170,
+      "unique_matches": 54,
+      "unique_pair_fixtures": 1240
+    },
+    {
+      "group": "recent_goal_any",
+      "pair_points_all_games": 1962,
+      "unique_matches": 72,
+      "unique_pair_fixtures": 1561
+    },
+    {
+      "group": "red_visible_any",
+      "pair_points_all_games": 717,
+      "unique_matches": 72,
+      "unique_pair_fixtures": 324
+    },
+    {
+      "group": "uncertain_any",
+      "pair_points_all_games": 6082,
+      "unique_matches": 72,
+      "unique_pair_fixtures": 2000
+    },
+    {
+      "group": "quiet",
+      "pair_points_all_games": 7091,
+      "unique_matches": 71,
+      "unique_pair_fixtures": 2337
+    }
+  ],
+  "parameter_receipts": [
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1713,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1713,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 6628,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6628,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.5,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 3286,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 3286,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1701,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1701,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1368,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1368,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 490,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.5,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 490,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4368,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4368,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 4915,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261013,
+      "fold": 0,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4915,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1709,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1709,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6629,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6629,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3287,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3287,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1386,
+      "fit_unique_matches": 45
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1386,
+      "fit_unique_matches": 45
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1367,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1367,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 486,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 486,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4097,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4097,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4920,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261013,
+      "fold": 1,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4920,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1760,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1760,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6621,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6621,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3283,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3283,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1343,
+      "fit_unique_matches": 44
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1343,
+      "fit_unique_matches": 44
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1319,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1319,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4280,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4280,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4861,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261013,
+      "fold": 2,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4861,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1651,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1651,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6611,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6611,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3334,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3334,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3277,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3277,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1539,
+      "fit_unique_matches": 45
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1539,
+      "fit_unique_matches": 45
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1315,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1315,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 372,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        0.5,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 372,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4200,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4200,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4960,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 3,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4960,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1755,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1755,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6680,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6680,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3340,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3340,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3340,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3340,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1594,
+      "fit_unique_matches": 47
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1594,
+      "fit_unique_matches": 47
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1411,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1411,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 494,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        0.75,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 494,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4452,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4452,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4925,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261013,
+      "fold": 4,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4925,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1765,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1765,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6624,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6624,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3340,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3340,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3284,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3284,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1452,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1452,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1376,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1376,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 547,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 547,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3864,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3864,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4859,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261013,
+      "fold": 5,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4859,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1812,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1812,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6632,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6632,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3344,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3344,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3288,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3288,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1624,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1624,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1470,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1470,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 494,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 494,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3965,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3965,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4820,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 0,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4820,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1761,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1761,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6676,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6676,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1703,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1703,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1319,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1319,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4356,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4356,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4915,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 1,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4915,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1714,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1714,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 6625,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 6625,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 3340,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3340,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 3285,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 3285,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1474,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1474,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1371,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1371,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        0.75
+      ],
+      "fallback": false,
+      "fit_pair_points": 488,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.5,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 488,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 4245,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4245,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 4911,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 2,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4911,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1801,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1801,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6629,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6629,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3287,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3287,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.5,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1349,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1349,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1365,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1365,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4176,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4176,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4828,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 3,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4828,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1654,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1654,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6613,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6613,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3334,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3334,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3279,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3279,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1286,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1286,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1311,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1311,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 487,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        0.5,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 487,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4099,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4099,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4959,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 4,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4959,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1614,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1614,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6628,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6628,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3286,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3286,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.5,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1586,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1586,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1323,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1323,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        0.75
+      ],
+      "fallback": false,
+      "fit_pair_points": 321,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        0.75
+      ],
+      "fallback": false,
+      "fit_pair_points": 321,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4441,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4441,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 5014,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261014,
+      "fold": 5,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 5014,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1664,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1664,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6629,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6629,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3287,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3287,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.5,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1435,
+      "fit_unique_matches": 45
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1435,
+      "fit_unique_matches": 45
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1416,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1416,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 382,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.5,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 382,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4248,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4248,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4965,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261015,
+      "fold": 0,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4965,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1745,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1745,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6636,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6636,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3346,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3346,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3290,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3290,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1459,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1459,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1362,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1362,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 539,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        0.75,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 539,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4143,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4143,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4891,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261015,
+      "fold": 1,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4891,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1529,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1529,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6628,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6628,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3342,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3286,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3286,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1627,
+      "fit_unique_matches": 47
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1627,
+      "fit_unique_matches": 47
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1279,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1279,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "red_visible_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 274,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "red_visible_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 274,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4332,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4332,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 5099,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 2,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 5099,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1713,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1713,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 6688,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 6688,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3344,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3344,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 3344,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 3344,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 1543,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1543,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        0.75
+      ],
+      "fallback": false,
+      "fit_pair_points": 1268,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        0.75
+      ],
+      "fallback": false,
+      "fit_pair_points": 1268,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 4171,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 4171,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.0
+      ],
+      "fallback": false,
+      "fit_pair_points": 4975,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261015,
+      "fold": 3,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4975,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1801,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1801,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6621,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6621,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3283,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3283,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1611,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1611,
+      "fit_unique_matches": 46
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1364,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1364,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4414,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4414,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4820,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261015,
+      "fold": 4,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4820,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1894,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "event_gate_fit",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1894,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "all_active",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6619,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "all_active",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 6619,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "first_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "first_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3338,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "second_half",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3281,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "second_half",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3281,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "both_tied",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.25,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1346,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "both_tied",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.5,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1346,
+      "fit_unique_matches": 43
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1465,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "recent_goal_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        0.75,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 1465,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "uncertain_any",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3983,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "uncertain_any",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 3983,
+      "fit_unique_matches": 60
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "quiet",
+      "recipe": "calibrated_market",
+      "params": [
+        0.0,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4725,
+      "fit_unique_matches": 59
+    },
+    {
+      "seed": 20261015,
+      "fold": 5,
+      "group": "quiet",
+      "recipe": "calibrated_blend",
+      "params": [
+        0.1,
+        1.0,
+        1.25
+      ],
+      "fallback": false,
+      "fit_pair_points": 4725,
+      "fit_unique_matches": 59
+    }
+  ],
+  "saved_forecast_positions": {
+    "h1+15": {
+      "flat": 216
+    },
+    "h1+30": {
+      "away": 36,
+      "draw": 3,
+      "flat": 115,
+      "home": 62
+    },
+    "h2+15": {
+      "away": 73,
+      "draw": 17,
+      "flat": 29,
+      "home": 97
+    },
+    "h2+30": {
+      "away": 75,
+      "draw": 23,
+      "flat": 20,
+      "home": 95
+    }
+  },
+  "holdout_before_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  }
+}

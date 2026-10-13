@@ -1,0 +1,3301 @@
+{
+  "market_only": [
+    {
+      "match_id": "400021444",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021445",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021448",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021451",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021452",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021455",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021459",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021461",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021466",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021468",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021471",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021473",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021479",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021480",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021481",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021484",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021485",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021489",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021491",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021492",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021493",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021494",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021495",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021497",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021499",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021500",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021501",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021503",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021505",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021506",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021508",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021509",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021511",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021444",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021445",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021448",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021451",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021452",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021455",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021459",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021461",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021466",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021468",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021471",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021473",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021479",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021480",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021481",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021484",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021485",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021489",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021491",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021492",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021493",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021494",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021495",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021497",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021499",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021500",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021501",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021503",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021505",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021506",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021508",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021509",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021511",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021444",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021445",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021448",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021451",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021452",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021455",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021459",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021461",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021466",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021468",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021471",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021473",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021479",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021480",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021481",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021484",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021485",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021489",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021491",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021492",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021493",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021494",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021495",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021497",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021499",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021500",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021501",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021503",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021505",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021506",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021508",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021509",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021511",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    }
+  ],
+  "original_prompt": [
+    {
+      "match_id": "400021444",
+      "traded": true,
+      "stake": 0.0609296875,
+      "pnl": -0.0609296875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.24371875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021445",
+      "traded": true,
+      "stake": 0.05321218750000001,
+      "pnl": 0.1967878125,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.21284875000000003
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021448",
+      "traded": true,
+      "stake": 0.0402996875,
+      "pnl": -0.0402996875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.16119875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021451",
+      "traded": true,
+      "stake": 0.005254871875,
+      "pnl": -0.005254871875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.0210194875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021452",
+      "traded": true,
+      "stake": 0.050634687500000004,
+      "pnl": -0.050634687500000004,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.20253875000000002
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021455",
+      "traded": true,
+      "stake": 0.008661846875,
+      "pnl": -0.008661846875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.0346473875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021459",
+      "traded": true,
+      "stake": 0.06606218750000001,
+      "pnl": 0.1839378125,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.26424875000000003
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021461",
+      "traded": true,
+      "stake": 0.05321218750000001,
+      "pnl": -0.05321218750000001,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.21284875000000003
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021466",
+      "traded": true,
+      "stake": 0.056687846875,
+      "pnl": 0.193312153125,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.2267513875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021468",
+      "traded": true,
+      "stake": 0.008137971875,
+      "pnl": -0.008137971875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.0325518875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021471",
+      "traded": true,
+      "stake": 0.0994328,
+      "pnl": -0.0994328,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.3977312
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021473",
+      "traded": true,
+      "stake": 0.004992621875,
+      "pnl": -0.004992621875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.0199704875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021479",
+      "traded": true,
+      "stake": 0.06606218750000001,
+      "pnl": -0.06606218750000001,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.26424875000000003
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021480",
+      "traded": true,
+      "stake": 0.0351171875,
+      "pnl": -0.0351171875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.14046875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021481",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021484",
+      "traded": true,
+      "stake": 0.0480546875,
+      "pnl": -0.0480546875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.19221875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021485",
+      "traded": true,
+      "stake": 0.0609296875,
+      "pnl": -0.0609296875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.24371875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021489",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021491",
+      "traded": true,
+      "stake": 0.029924687499999998,
+      "pnl": -0.029924687499999998,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.11969874999999999
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021492",
+      "traded": true,
+      "stake": 0.003418596875,
+      "pnl": -0.003418596875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.0136743875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021493",
+      "traded": true,
+      "stake": 0.007089921875000001,
+      "pnl": -0.007089921875000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.028359687500000005
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021494",
+      "traded": true,
+      "stake": 0.0325221875,
+      "pnl": -0.0325221875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.13008875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021495",
+      "traded": true,
+      "stake": 0.012587721875000001,
+      "pnl": -0.012587721875000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.050350887500000004
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021497",
+      "traded": true,
+      "stake": 0.0762971875,
+      "pnl": -0.0762971875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.30518875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021499",
+      "traded": true,
+      "stake": 0.0351171875,
+      "pnl": -0.0351171875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.14046875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021500",
+      "traded": true,
+      "stake": 0.07118468750000001,
+      "pnl": 0.1788153125,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.28473875000000004
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021501",
+      "traded": true,
+      "stake": 0.0273246875,
+      "pnl": -0.0273246875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.10929875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021503",
+      "traded": true,
+      "stake": 0.0043368875,
+      "pnl": -0.0043368875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.01734755
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021505",
+      "traded": true,
+      "stake": 0.07118468750000001,
+      "pnl": -0.07118468750000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.28473875000000004
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021506",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021508",
+      "traded": true,
+      "stake": 0.013633671875000001,
+      "pnl": -0.013633671875000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.054534687500000005
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021509",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021511",
+      "traded": true,
+      "stake": 0.037709687500000005,
+      "pnl": -0.037709687500000005,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.15083875000000002
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021444",
+      "traded": true,
+      "stake": 0.0609296875,
+      "pnl": -0.0609296875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.24371875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021445",
+      "traded": true,
+      "stake": 0.05321218750000001,
+      "pnl": 0.1967878125,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.21284875000000003
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021448",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021451",
+      "traded": true,
+      "stake": 0.07374218750000001,
+      "pnl": -0.07374218750000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.29496875000000006
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021452",
+      "traded": true,
+      "stake": 0.050634687500000004,
+      "pnl": -0.050634687500000004,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.20253875000000002
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021455",
+      "traded": true,
+      "stake": 0.008661846875,
+      "pnl": -0.008661846875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.0346473875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021459",
+      "traded": true,
+      "stake": 0.06606218750000001,
+      "pnl": 0.1839378125,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.26424875000000003
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021461",
+      "traded": true,
+      "stake": 0.0634971875,
+      "pnl": -0.0634971875,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.25398875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021466",
+      "traded": true,
+      "stake": 0.056687846875,
+      "pnl": 0.193312153125,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.2267513875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021468",
+      "traded": true,
+      "stake": 0.008137971875,
+      "pnl": -0.008137971875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.0325518875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021471",
+      "traded": true,
+      "stake": 0.0516659875,
+      "pnl": -0.0516659875,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.20666395
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021473",
+      "traded": true,
+      "stake": 0.002893721875,
+      "pnl": -0.002893721875,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.0115748875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021479",
+      "traded": true,
+      "stake": 0.06606218750000001,
+      "pnl": -0.06606218750000001,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.26424875000000003
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021480",
+      "traded": true,
+      "stake": 0.10423718750000001,
+      "pnl": -0.10423718750000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.41694875000000003
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021481",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021484",
+      "traded": true,
+      "stake": 0.0480546875,
+      "pnl": -0.0480546875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.19221875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021485",
+      "traded": true,
+      "stake": 0.10928468749999999,
+      "pnl": 0.14071531250000002,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.43713874999999996
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021489",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021491",
+      "traded": true,
+      "stake": 0.0195096875,
+      "pnl": -0.0195096875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.07803875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021492",
+      "traded": true,
+      "stake": 0.003418596875,
+      "pnl": -0.003418596875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.0136743875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021493",
+      "traded": true,
+      "stake": 0.007089921875000001,
+      "pnl": -0.007089921875000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.028359687500000005
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021494",
+      "traded": true,
+      "stake": 0.0325221875,
+      "pnl": -0.0325221875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.13008875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021495",
+      "traded": true,
+      "stake": 0.012587721875000001,
+      "pnl": -0.012587721875000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.050350887500000004
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021497",
+      "traded": true,
+      "stake": 0.0762971875,
+      "pnl": -0.0762971875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.30518875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021499",
+      "traded": true,
+      "stake": 0.0351171875,
+      "pnl": -0.0351171875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.14046875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021500",
+      "traded": true,
+      "stake": 0.07118468750000001,
+      "pnl": 0.1788153125,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.28473875000000004
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021501",
+      "traded": true,
+      "stake": 0.0273246875,
+      "pnl": -0.0273246875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.10929875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021503",
+      "traded": true,
+      "stake": 0.0032873875000000003,
+      "pnl": -0.0032873875000000003,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.013149550000000001
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021505",
+      "traded": true,
+      "stake": 0.07118468750000001,
+      "pnl": -0.07118468750000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.28473875000000004
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021506",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021508",
+      "traded": true,
+      "stake": 0.013633671875000001,
+      "pnl": -0.013633671875000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.054534687500000005
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021509",
+      "traded": true,
+      "stake": 0.011018046875000001,
+      "pnl": -0.011018046875000001,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.044072187500000005
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021511",
+      "traded": true,
+      "stake": 0.037709687500000005,
+      "pnl": -0.037709687500000005,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.15083875000000002
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021444",
+      "traded": true,
+      "stake": 0.0609296875,
+      "pnl": -0.0609296875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.24371875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021445",
+      "traded": true,
+      "stake": 0.05321218750000001,
+      "pnl": 0.1967878125,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.21284875000000003
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021448",
+      "traded": true,
+      "stake": 0.0402996875,
+      "pnl": -0.0402996875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.16119875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021451",
+      "traded": true,
+      "stake": 0.005254871875,
+      "pnl": -0.005254871875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.0210194875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021452",
+      "traded": true,
+      "stake": 0.050634687500000004,
+      "pnl": -0.050634687500000004,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.20253875000000002
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021455",
+      "traded": true,
+      "stake": 0.008661846875,
+      "pnl": -0.008661846875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.0346473875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021459",
+      "traded": true,
+      "stake": 0.06606218750000001,
+      "pnl": 0.1839378125,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.26424875000000003
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021461",
+      "traded": true,
+      "stake": 0.05321218750000001,
+      "pnl": -0.05321218750000001,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.21284875000000003
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021466",
+      "traded": true,
+      "stake": 0.056687846875,
+      "pnl": 0.193312153125,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.2267513875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021468",
+      "traded": true,
+      "stake": 0.008137971875,
+      "pnl": -0.008137971875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.0325518875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021471",
+      "traded": true,
+      "stake": 0.0994328,
+      "pnl": -0.0994328,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.3977312
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021473",
+      "traded": true,
+      "stake": 0.004992621875,
+      "pnl": -0.004992621875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.0199704875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021479",
+      "traded": true,
+      "stake": 0.050634687500000004,
+      "pnl": -0.050634687500000004,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.20253875000000002
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021480",
+      "traded": true,
+      "stake": 0.0351171875,
+      "pnl": -0.0351171875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.14046875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021481",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021484",
+      "traded": true,
+      "stake": 0.0480546875,
+      "pnl": -0.0480546875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.19221875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021485",
+      "traded": true,
+      "stake": 0.0609296875,
+      "pnl": -0.0609296875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.24371875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021489",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021491",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021492",
+      "traded": true,
+      "stake": 0.008923746875000001,
+      "pnl": -0.008923746875000001,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.035694987500000004
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021493",
+      "traded": true,
+      "stake": 0.004205721875,
+      "pnl": -0.004205721875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.0168228875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021494",
+      "traded": true,
+      "stake": 0.0325221875,
+      "pnl": -0.0325221875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.13008875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021495",
+      "traded": true,
+      "stake": 0.012587721875000001,
+      "pnl": -0.012587721875000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.050350887500000004
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021497",
+      "traded": true,
+      "stake": 0.0762971875,
+      "pnl": -0.0762971875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.30518875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021499",
+      "traded": true,
+      "stake": 0.0351171875,
+      "pnl": -0.0351171875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.14046875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021500",
+      "traded": true,
+      "stake": 0.07118468750000001,
+      "pnl": 0.1788153125,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.28473875000000004
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021501",
+      "traded": true,
+      "stake": 0.0273246875,
+      "pnl": -0.0273246875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.10929875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021503",
+      "traded": true,
+      "stake": 0.0043368875,
+      "pnl": -0.0043368875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.01734755
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021505",
+      "traded": true,
+      "stake": 0.07374218750000001,
+      "pnl": -0.07374218750000001,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.29496875000000006
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021506",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021508",
+      "traded": true,
+      "stake": 0.013633671875000001,
+      "pnl": -0.013633671875000001,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.054534687500000005
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021509",
+      "traded": true,
+      "stake": 0.0402996875,
+      "pnl": -0.0402996875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.16119875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021511",
+      "traded": true,
+      "stake": 0.037709687500000005,
+      "pnl": -0.037709687500000005,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.15083875000000002
+        }
+      ],
+      "repeat": 2
+    }
+  ],
+  "market_prior_prompt": [
+    {
+      "match_id": "400021444",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021445",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021448",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021451",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021452",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021455",
+      "traded": true,
+      "stake": 0.008661846875,
+      "pnl": -0.008661846875,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.0346473875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021459",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021461",
+      "traded": true,
+      "stake": 0.0402996875,
+      "pnl": -0.0402996875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.16119875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021466",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021468",
+      "traded": true,
+      "stake": 0.026674296875,
+      "pnl": -0.026674296875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.1066971875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021471",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021473",
+      "traded": true,
+      "stake": 0.0045992,
+      "pnl": -0.0045992,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.0183968
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021479",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021480",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021481",
+      "traded": true,
+      "stake": 0.0168996875,
+      "pnl": -0.0168996875,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.06759875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021484",
+      "traded": true,
+      "stake": 0.0195096875,
+      "pnl": -0.0195096875,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.07803875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021485",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021489",
+      "traded": true,
+      "stake": 0.006827846875000001,
+      "pnl": -0.006827846875000001,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.027311387500000003
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021491",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021492",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021493",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021494",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021495",
+      "traded": true,
+      "stake": 0.0142871875,
+      "pnl": -0.0142871875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.05714875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021497",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021499",
+      "traded": true,
+      "stake": 0.0325221875,
+      "pnl": -0.0325221875,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.13008875
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021500",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021501",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021503",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021505",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021506",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021508",
+      "traded": true,
+      "stake": 0.0048614875,
+      "pnl": -0.0048614875,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.01944595
+        }
+      ],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021509",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021511",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 0
+    },
+    {
+      "match_id": "400021444",
+      "traded": true,
+      "stake": 0.007089921875000001,
+      "pnl": -0.007089921875000001,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.028359687500000005
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021445",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021448",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021451",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021452",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021455",
+      "traded": true,
+      "stake": 0.0247221875,
+      "pnl": -0.0247221875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.09888875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021459",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021461",
+      "traded": true,
+      "stake": 0.0402996875,
+      "pnl": -0.0402996875,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.16119875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021466",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021468",
+      "traded": true,
+      "stake": 0.003418596875,
+      "pnl": -0.003418596875,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.0136743875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021471",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021473",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021479",
+      "traded": true,
+      "stake": 0.050634687500000004,
+      "pnl": -0.050634687500000004,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.20253875000000002
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021480",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021481",
+      "traded": true,
+      "stake": 0.0168996875,
+      "pnl": -0.0168996875,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.06759875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021484",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021485",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021489",
+      "traded": true,
+      "stake": 0.0221171875,
+      "pnl": -0.0221171875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.08846875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021491",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021492",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021493",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021494",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021495",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021497",
+      "traded": true,
+      "stake": 0.037709687500000005,
+      "pnl": -0.037709687500000005,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.15083875000000002
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021499",
+      "traded": true,
+      "stake": 0.0325221875,
+      "pnl": -0.0325221875,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.13008875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021500",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021501",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021503",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021505",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021506",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021508",
+      "traded": true,
+      "stake": 0.0557871875,
+      "pnl": -0.0557871875,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.22314875
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021509",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021511",
+      "traded": true,
+      "stake": 0.011541371875000001,
+      "pnl": -0.011541371875000001,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.046165487500000005
+        }
+      ],
+      "repeat": 1
+    },
+    {
+      "match_id": "400021444",
+      "traded": true,
+      "stake": 0.007089921875000001,
+      "pnl": -0.007089921875000001,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.028359687500000005
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021445",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021448",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021451",
+      "traded": true,
+      "stake": 0.056945121875,
+      "pnl": -0.056945121875,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.2277804875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021452",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021455",
+      "traded": true,
+      "stake": 0.008661846875,
+      "pnl": -0.008661846875,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.0346473875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021459",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021461",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021466",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021468",
+      "traded": true,
+      "stake": 0.026674296875,
+      "pnl": -0.026674296875,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.1066971875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021471",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021473",
+      "traded": true,
+      "stake": 0.004992621875,
+      "pnl": -0.004992621875,
+      "attempts": [
+        {
+          "decision": "h1+15",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.0199704875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021479",
+      "traded": true,
+      "stake": 0.050634687500000004,
+      "pnl": -0.050634687500000004,
+      "attempts": [
+        {
+          "decision": "h2+15",
+          "side": "away",
+          "accepted": true,
+          "cost_per_share": 0.20253875000000002
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021480",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021481",
+      "traded": true,
+      "stake": 0.0168996875,
+      "pnl": -0.0168996875,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.06759875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021484",
+      "traded": true,
+      "stake": 0.0195096875,
+      "pnl": -0.0195096875,
+      "attempts": [
+        {
+          "decision": "ht",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.07803875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021485",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021489",
+      "traded": true,
+      "stake": 0.031093871874999998,
+      "pnl": -0.031093871874999998,
+      "attempts": [
+        {
+          "decision": "h1+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.12437548749999999
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021491",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021492",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021493",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021494",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021495",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021497",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021499",
+      "traded": true,
+      "stake": 0.0325221875,
+      "pnl": -0.0325221875,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "home",
+          "accepted": true,
+          "cost_per_share": 0.13008875
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021500",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021501",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021503",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021505",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021506",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021508",
+      "traded": true,
+      "stake": 0.0048614875,
+      "pnl": -0.0048614875,
+      "attempts": [
+        {
+          "decision": "h2+30",
+          "side": "draw",
+          "accepted": true,
+          "cost_per_share": 0.01944595
+        }
+      ],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021509",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    },
+    {
+      "match_id": "400021511",
+      "traded": false,
+      "stake": 0.0,
+      "pnl": 0.0,
+      "attempts": [],
+      "repeat": 2
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-13T21:29:52.468273+00:00",
+  "commands": [
+    {
+      "command": "HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 PYTHONPATH=. /Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python experiments/eight_directions/d4_position_bias/study.py --live",
+      "exit_code": 0,
+      "completed_requests": 480,
+      "automatic_restart": false
+    },
+    {
+      "command": "HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 PYTHONPATH=. /Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python experiments/eight_directions/d4_position_bias/analyze.py",
+      "exit_code": 0
+    },
+    {
+      "command": "HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 PYTHONPATH=. /Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python experiments/eight_directions/d4_position_bias/verify.py",
+      "exit_code": 0
+    }
+  ],
+  "code_sha256": {
+    "experiments/eight_directions/d4_position_bias/analyze.py": "663793c5c58cc068a9be389380838b35d10c3181234ad3944a505bf13be47b1a",
+    "experiments/eight_directions/d4_position_bias/study.py": "b4cc9fff046015018af1db9d48941316a25da86969adf0cab03a0adb1c6579f7",
+    "experiments/eight_directions/d4_position_bias/verify.py": "bb12902bb0ce33917f4866a6a4518bcd42a6f5bff9566cfddf62600269d2f6e4"
+  },
+  "inputs_sha256": {
+    "inputs/MANIFEST.json": "ba77802adee2968f30d76ae286198c2956795d7c15a96b1250a8e3aecc042b6a",
+    "research/eight-directions/checkpoint-verification.json": "eca3163ccd4a221d43148096324090557b7e6b2b8858db6bc668abb27670edde",
+    "artifacts/eight-directions/d4_position_bias/protocol.json": "4f9ac24b57a808e4e4af20c2ef053e0a466f0bf983bab4919ae94819ac74bdd2",
+    "artifacts/eight-directions/d4_position_bias/prepared_requests.jsonl": "3ee3b35e35d7948b9e994aa6acaf66f4fc8b159171f94400dbee3346bcf3856a",
+    "artifacts/eight-directions/d4_position_bias/predictions.jsonl": "c021b0c331446080eddca704c9c76117ab89c777e73b731b6b9e1e8d4f589a7e"
+  },
+  "scope": "Retrospective repeatedly inspected development only; no enrollment, training, execution or protected holdout test."
+}

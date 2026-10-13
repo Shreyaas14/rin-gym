@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "verified_fresh_predictions": 1077,
+  "verified_game_replays": 216,
+  "unique_development_matches": 72,
+  "quantity_and_position_feedback_verified": true,
+  "original_entry_exit_engine_verified": true,
+  "same_seeds_as_baseline": true,
+  "cashflows_scaled_by_quarter": true,
+  "baseline_and_code_hashes_match": true,
+  "holdout_ledger_unchanged": true
+}

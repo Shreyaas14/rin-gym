@@ -1,0 +1,8 @@
+{
+  "analysis_kind": "Post-hoc supporting diagnostic, separate from initial D6 protocol",
+  "trigger": "Orchestrator relayed D5 numeric SYSTEM example echo confound after D6 main analysis completed",
+  "intervention": "Count exact normalized(.4,.3,.3) vectors in pinned pilot base/final and four training batches; describe within-group total reward standard deviations, without fitting or prompt intervention.",
+  "hypothesis": "Forecast prompt numeric example echo may confound forecast behavior and reinforce constant/template self-distillation",
+  "no_new_model_result": true,
+  "paid_calls": 0
+}

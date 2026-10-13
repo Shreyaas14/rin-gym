@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "verified_predictions": 2154,
+  "verified_game_replays": 432,
+  "verified_unique_matches": 72,
+  "verified_state_feedback": true,
+  "verified_risk_limits": true,
+  "ledger_unchanged": true,
+  "source_hashes_match": true
+}

@@ -1,0 +1,44 @@
+{
+  "status": "proposal only; no allocation or paid calls",
+  "seeds": [
+    20261013,
+    20261014
+  ],
+  "model": "Qwen/Qwen3-8B",
+  "pricing_source": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+  "rates_verified_on": "2026-10-13",
+  "published_usd_per_million": {
+    "prefill": 0.195,
+    "cached_prefill": 0.039,
+    "sample": 0.6,
+    "train": 0.44
+  },
+  "max_prompt_tokens": 2048,
+  "max_output_tokens": 128,
+  "max_evaluation_requests": 400,
+  "max_rl_rollout_requests": 640,
+  "max_sft_examples_one_epoch": 160,
+  "max_prefill_tokens": 2129920,
+  "max_sample_tokens": 133120,
+  "max_training_tokens": 1740800,
+  "full_uncached_token_upper_usd": 1.2611584,
+  "double_token_upper_usd": 2.5223168,
+  "storage_reserve_usd": 0.05,
+  "unallocated_headroom_usd": 0.25,
+  "required_unreserved_combined_budget_usd": 2.8223168,
+  "storage_assumption": "At most 0.5 GB-month billed at $0.10/GB-month; verify billing size/TTL before saving.",
+  "admission_rule": "Do not run now. A future run must verify current official rates, exact rendered prompt and completion limits, SDK retry semantics, training accounting and storage bound; require combined recorded completed spend + all reservations + this bound <= latest user total cap. Any unknown bound blocks calls; no automatic retries.",
+  "config": {
+    "lora_rank": 32,
+    "learning_rate": 1e-05,
+    "sft_epochs": 1,
+    "rl_steps": 4,
+    "rl_groups_per_batch": 4,
+    "rl_group_size": 4,
+    "rl_train_temperature": 1.0,
+    "eval_temperature": 0.0,
+    "rl_reward": "negative match-mean multiclass Brier; exact-schema invalid=2",
+    "checkpoint_choice": "Final only, no intermediate selection",
+    "execution": "Frozen forecasts only; no execution change"
+  }
+}

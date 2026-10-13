@@ -1,0 +1,7 @@
+{
+  "scope": "Retrospective research synthesis, not profitable policy selection or protected evaluation",
+  "ranking_basis": ["Incremental forecast value beyond contemporaneous market on chronological assessment", "Mechanism isolated by matched or controlled comparisons", "Net risk and execution evidence, including no-trade", "Scientific value of next discriminating experiment and feasibility"],
+  "ranking_caveat": "Qualitative prioritization informed by the first three offline reports; not a preregistered statistical winner-selection procedure",
+  "evidence_labels": ["evidence-backed retrospective finding", "pilot or integration evidence", "untested hypothesis or blocked component"],
+  "rules": ["No cross-direction multiple-testing victory claims", "Do not pool different prompt/checkpoint families or duplicate matches", "Keep all match repeats clustered", "Report estimates separately from provider usage estimates and verified invoices", "Directions retain separate $5 caps; unused allocations do not justify searches", "Check receipt completeness and holdout guard before accepting each conclusion"]
+}

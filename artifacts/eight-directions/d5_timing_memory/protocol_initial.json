@@ -1,0 +1,94 @@
+{
+  "hypothesis": "Minute updates reduce stale-forecast error; compact memory may improve forecasts at fixed sparse observation cadence.",
+  "cohort_match_ids": [
+    "400021480",
+    "400021494",
+    "400021492",
+    "400021491",
+    "400021499",
+    "400021503",
+    "400021506",
+    "400021511"
+  ],
+  "selection": "First eight IDs in frozen chronological later-33 assessment partition, fixed before selective loading outcomes; no replacements.",
+  "scope": "Repeatedly inspected retrospective development; no fitting, tuning or protected evaluation.",
+  "arms": [
+    "sparse_no_memory",
+    "sparse_memory",
+    "minute_no_memory",
+    "minute_memory"
+  ],
+  "repeats": 2,
+  "checkpoint": "tinker://d2426bc1-ec71-559d-bb81-e17da9372e58:train:0/sampler_weights/final",
+  "intervention": "Same compact forecast-only current observation prompt. Sparse original five times versus every supported minute from first-half minute15 through44, halftime, second-half minutes1 through44. Quotes must satisfy original as-of age90/coherence. Do not require future-fill coverage for forecast support. Memory separately appends last three earlier original sparse snapshots of observed score/totals/prices at fixed sparse cadence in BOTH schedules; no model predictions, results or fills in memory.",
+  "prompt": "Compact JSON: observed score, cumulative counts, phase/team identity, shown prices, last12 observed event rows since preceding original sparse point. Same prompt and seed at common decision times. Original full template replaced consistently across all arms; cadence pilot, not exact original-template reproduction.",
+  "common_times": "Minute schedule points with valid quotes, including original sparse common points and halftime; sparse forecast carried forward only after first supported sparse point. Dense available updates carried forward only if supported; same common clock for all arms. Include equal-match scores averaged over minutes then seeds. Report exact original common-decision subset separately.",
+  "metrics": [
+    "Brier sum invalid=2",
+    "log loss floor1e-4 invalid=-log1e-4",
+    "valid forecast rate",
+    "normalized contemporaneous market baseline"
+  ],
+  "uncertainty": "Paired match cluster bootstrap10000 seed20261013; seeds and minutes stay within whole-match clusters; shared teams and inspected development limit claims.",
+  "execution": "Secondary frozen-signal counterfactual, fixed RiskPolicy 0.25 shares edge>0.05 displayed cost<=0.65; delayed fill cost cap0.65; hold settlement max one entry; fill delay60/maxwait120; execution simulator alone sees future fills. Quote-supported forecast rows chosen before any fill check. Pending order prevents another order until delayed fill window passes. No portfolio feedback in forecast prompt.",
+  "config": {
+    "decisions": [
+      "h1+15",
+      "h1+30",
+      "ht",
+      "h2+15",
+      "h2+30"
+    ],
+    "pre_lead_s": 60,
+    "event_delay_s": 60,
+    "price_max_age_s": 90,
+    "max_sum_dev": 0.05,
+    "fill_delay_s": 60,
+    "fill_max_wait_s": 120,
+    "fee_rate": 0.05,
+    "half_spread": 0.01,
+    "mark": "mid",
+    "start_mark": "decision",
+    "invalid_penalty": 0.04,
+    "w_log": 0.0,
+    "w_missed": 0.0,
+    "prob_sum_tol": 0.05,
+    "forecast_rewards": false,
+    "forecast_horizon_s": 300,
+    "w_result": 0.1,
+    "w_goal": 0.1,
+    "w_price": 0.1,
+    "show_kickoff_price": true,
+    "football_rules": true,
+    "split_shot_competitions": [
+      "2000000000"
+    ],
+    "competitions": {
+      "17": "FIFA World Cup 2026",
+      "2000000000": "Premier League 2025/26"
+    },
+    "train_competitions": [
+      "2000000000"
+    ],
+    "world_cup_competition": "17",
+    "group_stage_name": "First Stage",
+    "knockout_from_utc": "2026-06-28T12:00:00Z",
+    "demo_match_ids": [
+      "400021540",
+      "400021528",
+      "400021538"
+    ],
+    "seed": 20261012,
+    "bootstrap_reps": 2000
+  },
+  "guard_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "stopping": "One run, no retries or automatic restarts; stop new scheduling on first failed request. No changes after outcomes.",
+  "seed_recipe": "digest([20261013,repeat,match_id,decision])[:8] mod2147483647",
+  "hard_limit_usd": 5,
+  "release": "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/data/raw/release-data-2026-10-13-v1",
+  "source_manifest_sha256": "ba77802adee2968f30d76ae286198c2956795d7c15a96b1250a8e3aecc042b6a"
+}

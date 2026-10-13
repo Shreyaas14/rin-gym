@@ -1,0 +1,26 @@
+{
+  "git_commit": "f29f7625e66c5fafbdb4aead0dd1207fd86ea2ca",
+  "files": {
+    "app/trade_env/__init__.py": "0f9b4aa0d19b40fdf0de85bcb5dac6d81c2972158f5a2448e91567b604c39799",
+    "app/trade_env/__main__.py": "1894bd0fe96646d4b9d6dc0eb9c8b9020b2a05b539f3cf36cb7e165ef1f7f804",
+    "app/trade_env/baselines.py": "6c4c28e72eea0a6cfd83b635f1651fd17bde1ad28ed5680f5b47e2619a9048db",
+    "app/trade_env/clock.py": "475a0a54d089bb0b7ea9a2213f9bdc23d02409ba42abb0c27145dfac9427f577",
+    "app/trade_env/config.py": "402865faf6cce2a9428e227520d239fbd6e575c05bbd8ac01347a6f26d805352",
+    "app/trade_env/costs.py": "42d9d32e4ccb41a8b04202815d4ad0a69c3d28768abd3a1074309ce00a0148d9",
+    "app/trade_env/dataset.py": "7dbe3eb7c5fdfd3dd6f0a6672333892bf7b579e0de270b4f803fb9f51f4ebf7b",
+    "app/trade_env/forecast.py": "f6e7bdbf3bb4e22c982f57279489039ea68c5adb96a3a117226ca448b7fefe59",
+    "app/trade_env/parse.py": "e01f71e6c64b40392dbee7ed901e0f185c96f173f02f84303c2b7c6df027bfd8",
+    "app/trade_env/prompt.py": "44a608f67ca56f63939c1a1e4355deced1c47291acaadb9d72909ba3d11af8b1",
+    "app/trade_env/replay.py": "236a40d7c8a33d5e6e837bbd08e9ffd332e867602941399f7712fb6afa9cea20",
+    "app/trade_env/reward.py": "51abe7147bb1ba3dab737fb851adc292517d27633b1f7f171a6d7b46eff9ee1b",
+    "app/trade_env/splits.py": "47ffedd225aed094660f3ee899ddd27335d63a34574eca7253a42f41f2d324a3",
+    "app/trade_env/state.py": "f2111e60fb06328bd0b89ad77181ad944af35285f0ed8dfb6324ea84baf07e02",
+    "app/trade_env/stats.py": "f8832f29cdb4d1c4799731e667fe94e2e1e1d1fa368b4a97c698803366428d58",
+    "app/trade_env/tasks.py": "4ad2123277354fdf0c421a8244e239931a79e4cda8f52dccbabf954e4245fe82",
+    "app/trade_env/templates/football_rules.j2": "ba6e60ebe55ab93a69f5d35ca005f2eb4d945beeb5435c2f7d5019598023e572",
+    "app/trade_env/templates/system.j2": "4b827de13c7511e90904dc597b0cef0838a74e052340b5a99f6cd837c79d8e89",
+    "app/trade_env/templates/user.j2": "42692ae44dc33a627c543c2ca03ec5e40e0e45bf836b9a59615c7383ead749bc",
+    "app/trade_env/train_tinker.py": "560182d3344072e2cc3e27b0961804fd590176d1f6ac295ad9cda29f1f497fe0",
+    "uv.lock": "3fa812bda5c25ba31bc8ba01ec8a6aa86106dd29d8515a68b6b5b536469094bc"
+  }
+}

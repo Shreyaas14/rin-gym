@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "prompt_rows_checked": 1194,
+  "planned_requests": 1354,
+  "completed_requests": 1354,
+  "actual_cohort_ids": [
+    "400021480",
+    "400021491",
+    "400021492",
+    "400021494",
+    "400021499",
+    "400021503",
+    "400021506",
+    "400021511"
+  ],
+  "guard_identical": true,
+  "guard": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "note": "Structure verifies no outcomes/fills/prediction history in prompt; event cutoff implemented by existing state builder, source hashes fixed before live."
+}

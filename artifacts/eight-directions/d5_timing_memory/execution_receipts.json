@@ -1,0 +1,866 @@
+[
+  {
+    "match_id": "400021480",
+    "repeat": 0,
+    "arm": "sparse_no_memory",
+    "pnl": 0.1916403125,
+    "stake": 0.0583596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.23343875
+      }
+    ]
+  },
+  {
+    "match_id": "400021480",
+    "repeat": 0,
+    "arm": "sparse_memory",
+    "pnl": 0.1916403125,
+    "stake": 0.0583596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.23343875
+      }
+    ]
+  },
+  {
+    "match_id": "400021480",
+    "repeat": 0,
+    "arm": "minute_no_memory",
+    "pnl": 0.1916403125,
+    "stake": 0.0583596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.23343875
+      }
+    ]
+  },
+  {
+    "match_id": "400021480",
+    "repeat": 1,
+    "arm": "sparse_no_memory",
+    "pnl": 0.1916403125,
+    "stake": 0.0583596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.23343875
+      }
+    ]
+  },
+  {
+    "match_id": "400021480",
+    "repeat": 1,
+    "arm": "sparse_memory",
+    "pnl": 0.1916403125,
+    "stake": 0.0583596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.23343875
+      }
+    ]
+  },
+  {
+    "match_id": "400021480",
+    "repeat": 1,
+    "arm": "minute_no_memory",
+    "pnl": 0.1916403125,
+    "stake": 0.0583596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.23343875
+      }
+    ]
+  },
+  {
+    "match_id": "400021494",
+    "repeat": 0,
+    "arm": "sparse_no_memory",
+    "pnl": -0.0325221875,
+    "stake": 0.0325221875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.13008875
+      }
+    ]
+  },
+  {
+    "match_id": "400021494",
+    "repeat": 0,
+    "arm": "sparse_memory",
+    "pnl": -0.0325221875,
+    "stake": 0.0325221875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.13008875
+      }
+    ]
+  },
+  {
+    "match_id": "400021494",
+    "repeat": 0,
+    "arm": "minute_no_memory",
+    "pnl": -0.0325221875,
+    "stake": 0.0325221875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.13008875
+      }
+    ]
+  },
+  {
+    "match_id": "400021494",
+    "repeat": 1,
+    "arm": "sparse_no_memory",
+    "pnl": -0.0325221875,
+    "stake": 0.0325221875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.13008875
+      }
+    ]
+  },
+  {
+    "match_id": "400021494",
+    "repeat": 1,
+    "arm": "sparse_memory",
+    "pnl": -0.0325221875,
+    "stake": 0.0325221875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.13008875
+      }
+    ]
+  },
+  {
+    "match_id": "400021494",
+    "repeat": 1,
+    "arm": "minute_no_memory",
+    "pnl": -0.0325221875,
+    "stake": 0.0325221875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.13008875
+      }
+    ]
+  },
+  {
+    "match_id": "400021492",
+    "repeat": 0,
+    "arm": "sparse_no_memory",
+    "pnl": -0.003418596875,
+    "stake": 0.003418596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.0136743875
+      }
+    ]
+  },
+  {
+    "match_id": "400021492",
+    "repeat": 0,
+    "arm": "sparse_memory",
+    "pnl": -0.003418596875,
+    "stake": 0.003418596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.0136743875
+      }
+    ]
+  },
+  {
+    "match_id": "400021492",
+    "repeat": 0,
+    "arm": "minute_no_memory",
+    "pnl": -0.003418596875,
+    "stake": 0.003418596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.0136743875
+      }
+    ]
+  },
+  {
+    "match_id": "400021492",
+    "repeat": 1,
+    "arm": "sparse_no_memory",
+    "pnl": -0.003418596875,
+    "stake": 0.003418596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.0136743875
+      }
+    ]
+  },
+  {
+    "match_id": "400021492",
+    "repeat": 1,
+    "arm": "sparse_memory",
+    "pnl": -0.003418596875,
+    "stake": 0.003418596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.0136743875
+      }
+    ]
+  },
+  {
+    "match_id": "400021492",
+    "repeat": 1,
+    "arm": "minute_no_memory",
+    "pnl": -0.003418596875,
+    "stake": 0.003418596875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.0136743875
+      }
+    ]
+  },
+  {
+    "match_id": "400021491",
+    "repeat": 0,
+    "arm": "sparse_no_memory",
+    "pnl": -0.029924687499999998,
+    "stake": 0.029924687499999998,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.11969874999999999
+      }
+    ]
+  },
+  {
+    "match_id": "400021491",
+    "repeat": 0,
+    "arm": "sparse_memory",
+    "pnl": -0.029924687499999998,
+    "stake": 0.029924687499999998,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.11969874999999999
+      }
+    ]
+  },
+  {
+    "match_id": "400021491",
+    "repeat": 0,
+    "arm": "minute_no_memory",
+    "pnl": 0.1635078125,
+    "stake": 0.08649218750000001,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+31",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.34596875000000005
+      }
+    ]
+  },
+  {
+    "match_id": "400021491",
+    "repeat": 1,
+    "arm": "sparse_no_memory",
+    "pnl": -0.029924687499999998,
+    "stake": 0.029924687499999998,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.11969874999999999
+      }
+    ]
+  },
+  {
+    "match_id": "400021491",
+    "repeat": 1,
+    "arm": "sparse_memory",
+    "pnl": -0.029924687499999998,
+    "stake": 0.029924687499999998,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "ht",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.11969874999999999
+      }
+    ]
+  },
+  {
+    "match_id": "400021491",
+    "repeat": 1,
+    "arm": "minute_no_memory",
+    "pnl": 0.1635078125,
+    "stake": 0.08649218750000001,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+31",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.34596875000000005
+      }
+    ]
+  },
+  {
+    "match_id": "400021499",
+    "repeat": 0,
+    "arm": "sparse_no_memory",
+    "pnl": -0.0351171875,
+    "stake": 0.0351171875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.14046875
+      }
+    ]
+  },
+  {
+    "match_id": "400021499",
+    "repeat": 0,
+    "arm": "sparse_memory",
+    "pnl": -0.0351171875,
+    "stake": 0.0351171875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.14046875
+      }
+    ]
+  },
+  {
+    "match_id": "400021499",
+    "repeat": 0,
+    "arm": "minute_no_memory",
+    "pnl": -0.0351171875,
+    "stake": 0.0351171875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.14046875
+      }
+    ]
+  },
+  {
+    "match_id": "400021499",
+    "repeat": 1,
+    "arm": "sparse_no_memory",
+    "pnl": -0.0351171875,
+    "stake": 0.0351171875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.14046875
+      }
+    ]
+  },
+  {
+    "match_id": "400021499",
+    "repeat": 1,
+    "arm": "sparse_memory",
+    "pnl": -0.0351171875,
+    "stake": 0.0351171875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.14046875
+      }
+    ]
+  },
+  {
+    "match_id": "400021499",
+    "repeat": 1,
+    "arm": "minute_no_memory",
+    "pnl": -0.0351171875,
+    "stake": 0.0351171875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.14046875
+      }
+    ]
+  },
+  {
+    "match_id": "400021503",
+    "repeat": 0,
+    "arm": "sparse_no_memory",
+    "pnl": -0.0032873875000000003,
+    "stake": 0.0032873875000000003,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.013149550000000001
+      }
+    ]
+  },
+  {
+    "match_id": "400021503",
+    "repeat": 0,
+    "arm": "sparse_memory",
+    "pnl": -0.0032873875000000003,
+    "stake": 0.0032873875000000003,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.013149550000000001
+      }
+    ]
+  },
+  {
+    "match_id": "400021503",
+    "repeat": 0,
+    "arm": "minute_no_memory",
+    "pnl": -0.0032873875000000003,
+    "stake": 0.0032873875000000003,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.013149550000000001
+      }
+    ]
+  },
+  {
+    "match_id": "400021503",
+    "repeat": 1,
+    "arm": "sparse_no_memory",
+    "pnl": -0.0032873875000000003,
+    "stake": 0.0032873875000000003,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.013149550000000001
+      }
+    ]
+  },
+  {
+    "match_id": "400021503",
+    "repeat": 1,
+    "arm": "sparse_memory",
+    "pnl": -0.0032873875000000003,
+    "stake": 0.0032873875000000003,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.013149550000000001
+      }
+    ]
+  },
+  {
+    "match_id": "400021503",
+    "repeat": 1,
+    "arm": "minute_no_memory",
+    "pnl": -0.0032873875000000003,
+    "stake": 0.0032873875000000003,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.013149550000000001
+      }
+    ]
+  },
+  {
+    "match_id": "400021506",
+    "repeat": 0,
+    "arm": "sparse_no_memory",
+    "pnl": -0.0142871875,
+    "stake": 0.0142871875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.05714875
+      }
+    ]
+  },
+  {
+    "match_id": "400021506",
+    "repeat": 0,
+    "arm": "sparse_memory",
+    "pnl": -0.0142871875,
+    "stake": 0.0142871875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.05714875
+      }
+    ]
+  },
+  {
+    "match_id": "400021506",
+    "repeat": 0,
+    "arm": "minute_no_memory",
+    "pnl": -0.0142871875,
+    "stake": 0.0142871875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.05714875
+      }
+    ]
+  },
+  {
+    "match_id": "400021506",
+    "repeat": 1,
+    "arm": "sparse_no_memory",
+    "pnl": -0.0142871875,
+    "stake": 0.0142871875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.05714875
+      }
+    ]
+  },
+  {
+    "match_id": "400021506",
+    "repeat": 1,
+    "arm": "sparse_memory",
+    "pnl": -0.0142871875,
+    "stake": 0.0142871875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.05714875
+      }
+    ]
+  },
+  {
+    "match_id": "400021506",
+    "repeat": 1,
+    "arm": "minute_no_memory",
+    "pnl": -0.0142871875,
+    "stake": 0.0142871875,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "away",
+        "accepted": true,
+        "cost_per_share": 0.05714875
+      }
+    ]
+  },
+  {
+    "match_id": "400021511",
+    "repeat": 0,
+    "arm": "sparse_no_memory",
+    "pnl": -0.037709687500000005,
+    "stake": 0.037709687500000005,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.15083875000000002
+      }
+    ]
+  },
+  {
+    "match_id": "400021511",
+    "repeat": 0,
+    "arm": "sparse_memory",
+    "pnl": -0.037709687500000005,
+    "stake": 0.037709687500000005,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.15083875000000002
+      }
+    ]
+  },
+  {
+    "match_id": "400021511",
+    "repeat": 0,
+    "arm": "minute_no_memory",
+    "pnl": -0.037709687500000005,
+    "stake": 0.037709687500000005,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.15083875000000002
+      }
+    ]
+  },
+  {
+    "match_id": "400021511",
+    "repeat": 1,
+    "arm": "sparse_no_memory",
+    "pnl": -0.037709687500000005,
+    "stake": 0.037709687500000005,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.15083875000000002
+      }
+    ]
+  },
+  {
+    "match_id": "400021511",
+    "repeat": 1,
+    "arm": "sparse_memory",
+    "pnl": -0.037709687500000005,
+    "stake": 0.037709687500000005,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.15083875000000002
+      }
+    ]
+  },
+  {
+    "match_id": "400021511",
+    "repeat": 1,
+    "arm": "minute_no_memory",
+    "pnl": -0.037709687500000005,
+    "stake": 0.037709687500000005,
+    "traded": true,
+    "turnover_shares": 0.25,
+    "entry_and_settlement_turnover_shares": 0.5,
+    "attempts": [
+      {
+        "decision": "h1+15",
+        "side": "home",
+        "accepted": true,
+        "cost_per_share": 0.15083875000000002
+      }
+    ]
+  }
+]

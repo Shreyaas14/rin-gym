@@ -1,0 +1,1451 @@
+{
+  "matches": 72,
+  "responses": 216,
+  "passed": true,
+  "break_seconds_min": 900.1989998817444,
+  "break_seconds_max": 7912.041000127792,
+  "mean_predicted_any_goal": 0.5486111111111112,
+  "rows": [
+    {
+      "match_id": "400021440",
+      "halftime_t": 1781801372.952,
+      "horizon_end_t": 1781801672.952,
+      "second_half_start_t": 1781802376.485,
+      "break_seconds": 1003.5329999923706,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "fdd344a2ac44d5545154d5992d5b803e0d830e748d3678605a8df15f066606c8",
+      "mean_predicted_any_goal": 0.5833333333333334,
+      "errors": []
+    },
+    {
+      "match_id": "400021441",
+      "halftime_t": 1781232528.049,
+      "horizon_end_t": 1781232828.049,
+      "second_half_start_t": 1781233431.647,
+      "break_seconds": 903.5980000495911,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "ab159d72a010d6defc90719e35e5ad976721bb3ade2d95416e37bd285541ec06",
+      "mean_predicted_any_goal": 0.6333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021442",
+      "halftime_t": 1781833793.219,
+      "horizon_end_t": 1781834093.219,
+      "second_half_start_t": 1781834699.719,
+      "break_seconds": 906.5,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "32a9a52582e1ae513350d637a4b2a0a80150126c0379ba1d28744bb56b5944a7",
+      "mean_predicted_any_goal": 0.5333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021443",
+      "halftime_t": 1781207695.842,
+      "horizon_end_t": 1781207995.842,
+      "second_half_start_t": 1781208685.023,
+      "break_seconds": 989.180999994278,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "90fdefeda68f726e2b638371da8f7dab80cfd5773f6153225984bafb5e87d9f0",
+      "mean_predicted_any_goal": 0.6166666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021444",
+      "halftime_t": 1782352176.162,
+      "horizon_end_t": 1782352476.162,
+      "second_half_start_t": 1782353135.217,
+      "break_seconds": 959.0550000667572,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "f7e2b31dd1404e015877885fffff43cf1c7c4111db15a7e8024c1bceb2355f71",
+      "mean_predicted_any_goal": 0.48333333333333334,
+      "errors": []
+    },
+    {
+      "match_id": "400021445",
+      "halftime_t": 1782352177.113,
+      "horizon_end_t": 1782352477.113,
+      "second_half_start_t": 1782353144.696,
+      "break_seconds": 967.5830001831055,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "22e9ff8e77af405108c7615669b8967ec6566228e015a68e9e98ad8fc74f2ef0",
+      "mean_predicted_any_goal": 0.5666666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021446",
+      "halftime_t": 1781812085.98,
+      "horizon_end_t": 1781812385.98,
+      "second_half_start_t": 1781813053.468,
+      "break_seconds": 967.4879999160767,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "4a0644fb51ff49abf90c0949af9795803cbef2c9a17c51d39e755450484c057e",
+      "mean_predicted_any_goal": 0.5,
+      "errors": []
+    },
+    {
+      "match_id": "400021447",
+      "halftime_t": 1781380551.734,
+      "horizon_end_t": 1781380851.734,
+      "second_half_start_t": 1781381524.627,
+      "break_seconds": 972.893000125885,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "9ea038f8889a3e5399787f8ec0a6d3f07e4e8b1b74beba709d34b4d9329ff937",
+      "mean_predicted_any_goal": 0.4666666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021448",
+      "halftime_t": 1782330650.873,
+      "horizon_end_t": 1782330950.873,
+      "second_half_start_t": 1782331645.387,
+      "break_seconds": 994.5140001773834,
+      "score_before": [
+        2,
+        1
+      ],
+      "score_after_horizon": [
+        2,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "891677123a1d7cc7de676bfa96b8d510b92d3fd8061b2ea515e6178c49ee9ff3",
+      "mean_predicted_any_goal": 0.6,
+      "errors": []
+    },
+    {
+      "match_id": "400021449",
+      "halftime_t": 1781293875.289,
+      "horizon_end_t": 1781294175.289,
+      "second_half_start_t": 1781294790.598,
+      "break_seconds": 915.3090000152588,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "2046c8c1988a5524c1a1e0cde324385ebfeaeb0d919642f9d5c6ebb5090ef90b",
+      "mean_predicted_any_goal": 0.4333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021450",
+      "halftime_t": 1781823108.082,
+      "horizon_end_t": 1781823408.082,
+      "second_half_start_t": 1781824012.785,
+      "break_seconds": 904.7030000686646,
+      "score_before": [
+        3,
+        0
+      ],
+      "score_after_horizon": [
+        3,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "066874520f531b9d33cf73f003ad26638034256b7d0f03e56896eaa5293ae5c3",
+      "mean_predicted_any_goal": 0.75,
+      "errors": []
+    },
+    {
+      "match_id": "400021451",
+      "halftime_t": 1782330544.434,
+      "horizon_end_t": 1782330844.434,
+      "second_half_start_t": 1782331444.924,
+      "break_seconds": 900.4900000095367,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "c3783b5e2ac30765ef76b16b440f3fd14534365afd2580477a432226ffedcd39",
+      "mean_predicted_any_goal": 0.5,
+      "errors": []
+    },
+    {
+      "match_id": "400021452",
+      "halftime_t": 1782341466.38,
+      "horizon_end_t": 1782341766.38,
+      "second_half_start_t": 1782342448.646,
+      "break_seconds": 982.2659997940063,
+      "score_before": [
+        2,
+        2
+      ],
+      "score_after_horizon": [
+        2,
+        2
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "43d5b423c8d9403e6002013d37371528c593591ffcdfa27d12c5b32457cb9ea4",
+      "mean_predicted_any_goal": 0.6,
+      "errors": []
+    },
+    {
+      "match_id": "400021453",
+      "halftime_t": 1781401911.63,
+      "horizon_end_t": 1781402211.63,
+      "second_half_start_t": 1781402949.718,
+      "break_seconds": 1038.0879998207092,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "deb5d42ff07bbc5c37cdf116b0ee6fd06f26aabd496fa75319c901a4400ef1bd",
+      "mean_predicted_any_goal": 0.44999999999999996,
+      "errors": []
+    },
+    {
+      "match_id": "400021454",
+      "halftime_t": 1781909415.305,
+      "horizon_end_t": 1781909715.305,
+      "second_half_start_t": 1781910447.087,
+      "break_seconds": 1031.7819998264313,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "eee9228d84ff0a997a659df8bf3d3a79b1b9cb5685f4ddf9f2e11222781d2285",
+      "mean_predicted_any_goal": 0.4166666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021455",
+      "halftime_t": 1782341570.314,
+      "horizon_end_t": 1782341870.314,
+      "second_half_start_t": 1782342610.286,
+      "break_seconds": 1039.9720001220703,
+      "score_before": [
+        0,
+        2
+      ],
+      "score_after_horizon": [
+        0,
+        2
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "6b5e2bb55a4d5647416812976722242039976db42a726cd4164e9614e326b297",
+      "mean_predicted_any_goal": 0.25,
+      "errors": []
+    },
+    {
+      "match_id": "400021456",
+      "halftime_t": 1781391201.897,
+      "horizon_end_t": 1781391501.897,
+      "second_half_start_t": 1781392204.143,
+      "break_seconds": 1002.2459998130798,
+      "score_before": [
+        1,
+        1
+      ],
+      "score_after_horizon": [
+        1,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "9c16df95fb2ef6e349d69b23a3ed7f2b83057f91ec040bf4d07b2217add439ea",
+      "mean_predicted_any_goal": 0.5666666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021457",
+      "halftime_t": 1781918627.102,
+      "horizon_end_t": 1781918927.102,
+      "second_half_start_t": 1781919624.78,
+      "break_seconds": 997.6779999732971,
+      "score_before": [
+        3,
+        0
+      ],
+      "score_after_horizon": [
+        3,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "eea3984a5a383886c1ad20f578caf092f1cddc714b873e0c1e01e57092117f7f",
+      "mean_predicted_any_goal": 0.5166666666666666,
+      "errors": []
+    },
+    {
+      "match_id": "400021458",
+      "halftime_t": 1781315545.672,
+      "horizon_end_t": 1781315845.672,
+      "second_half_start_t": 1781316539.513,
+      "break_seconds": 993.8410000801086,
+      "score_before": [
+        3,
+        0
+      ],
+      "score_after_horizon": [
+        3,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "e121c6995ab923f0affb76891cf0577fd6d43121a5bb23536c13117a67dac326",
+      "mean_predicted_any_goal": 0.8666666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021459",
+      "halftime_t": 1782442269.519,
+      "horizon_end_t": 1782442569.519,
+      "second_half_start_t": 1782443270.782,
+      "break_seconds": 1001.2630000114441,
+      "score_before": [
+        2,
+        1
+      ],
+      "score_after_horizon": [
+        2,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "1942fb8b31d7c914e61e00991b0ac84349fa922b971ce9ae80114d653b44f54e",
+      "mean_predicted_any_goal": 0.6166666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021460",
+      "halftime_t": 1781927717.202,
+      "horizon_end_t": 1781928017.202,
+      "second_half_start_t": 1781928701.463,
+      "break_seconds": 984.2610001564026,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "ee164bbb4187dc1430c94ae46cbf314e69b0f1de20177f81d7745b2ea037a29d",
+      "mean_predicted_any_goal": 0.5,
+      "errors": []
+    },
+    {
+      "match_id": "400021461",
+      "halftime_t": 1782442282.442,
+      "horizon_end_t": 1782442582.442,
+      "second_half_start_t": 1782443282.404,
+      "break_seconds": 999.962000131607,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "d04b5e8fd4c784d8af808278ea5e9a096ee4b472ac93c129c9a22e1a355dbf8c",
+      "mean_predicted_any_goal": 0.5666666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021462",
+      "halftime_t": 1781898772.948,
+      "horizon_end_t": 1781899072.948,
+      "second_half_start_t": 1781899837.9,
+      "break_seconds": 1064.9520001411438,
+      "score_before": [
+        2,
+        0
+      ],
+      "score_after_horizon": [
+        2,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "bae3fa830ade4be82d72874a9ed5ed1be8fb2754b286957f4797d4846f68c718",
+      "mean_predicted_any_goal": 0.7333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021463",
+      "halftime_t": 1781412578.316,
+      "horizon_end_t": 1781412878.316,
+      "second_half_start_t": 1781413519.051,
+      "break_seconds": 940.7350001335144,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "53c9758281d9218c7c178be8965bd9629430f42aa376caa243a9115d428edaff",
+      "mean_predicted_any_goal": 0.6666666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021464",
+      "halftime_t": 1781459517.684,
+      "horizon_end_t": 1781459817.684,
+      "second_half_start_t": 1781460507.453,
+      "break_seconds": 989.7690000534058,
+      "score_before": [
+        3,
+        1
+      ],
+      "score_after_horizon": [
+        3,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "7f19d496911e6cdda0ad12637d2556195e7959a632dd7bc6e77c5ed451512f1a",
+      "mean_predicted_any_goal": 0.7333333333333334,
+      "errors": []
+    },
+    {
+      "match_id": "400021465",
+      "halftime_t": 1782002974.025,
+      "horizon_end_t": 1782003274.025,
+      "second_half_start_t": 1782003884.305,
+      "break_seconds": 910.2799999713898,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "8de4a4ed565921d80bd8349b927d8891559a0e1d2b821ed53629329f7f8daf59",
+      "mean_predicted_any_goal": 0.5333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021466",
+      "halftime_t": 1782420557.496,
+      "horizon_end_t": 1782420857.496,
+      "second_half_start_t": 1782421544.089,
+      "break_seconds": 986.5929999351501,
+      "score_before": [
+        1,
+        1
+      ],
+      "score_after_horizon": [
+        1,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "1e7415d19e676e2835d0477897ea53a884f260bedc907ab2efd5733fa0676725",
+      "mean_predicted_any_goal": 0.55,
+      "errors": []
+    },
+    {
+      "match_id": "400021467",
+      "halftime_t": 1781481155.932,
+      "horizon_end_t": 1781481455.932,
+      "second_half_start_t": 1781482224.899,
+      "break_seconds": 1068.9670000076294,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "eaa8af87f3c7b998fc363176fcf8e588a39e0a246202d3274e3977d4c6dbcdfd",
+      "mean_predicted_any_goal": 0.6,
+      "errors": []
+    },
+    {
+      "match_id": "400021468",
+      "halftime_t": 1782420626.68,
+      "horizon_end_t": 1782420926.68,
+      "second_half_start_t": 1782421580.079,
+      "break_seconds": 953.3989999294281,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "cd417d987506f41daac7131a54e16ef19e7de2b9d8d5edd95c838eebe98abb03",
+      "mean_predicted_any_goal": 0.5,
+      "errors": []
+    },
+    {
+      "match_id": "400021469",
+      "halftime_t": 1781988728.468,
+      "horizon_end_t": 1781989028.468,
+      "second_half_start_t": 1781989664.597,
+      "break_seconds": 936.1289999485016,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "387b08014b2f2a39d1cd28b53b53674b9dd4e610205c80a94b49d9e209bd30d1",
+      "mean_predicted_any_goal": 0.49999999999999994,
+      "errors": []
+    },
+    {
+      "match_id": "400021470",
+      "halftime_t": 1781470089.978,
+      "horizon_end_t": 1781470389.978,
+      "second_half_start_t": 1781471045.666,
+      "break_seconds": 955.6879999637604,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "15f726bc291a693fe8d176f14ffae526c3cfea87b74bedf07c319a74955a4f78",
+      "mean_predicted_any_goal": 0.5333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021471",
+      "halftime_t": 1782431405.776,
+      "horizon_end_t": 1782431705.776,
+      "second_half_start_t": 1782432347.74,
+      "break_seconds": 941.9639999866486,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "5130ffdaaa7e6aa67b2b6b243c3838981ab007dc902cd664fe31eaa0807cb0a9",
+      "mean_predicted_any_goal": 0.48333333333333334,
+      "errors": []
+    },
+    {
+      "match_id": "400021472",
+      "halftime_t": 1781977803.878,
+      "horizon_end_t": 1781978103.878,
+      "second_half_start_t": 1781978775.042,
+      "break_seconds": 971.1640000343323,
+      "score_before": [
+        2,
+        0
+      ],
+      "score_after_horizon": [
+        2,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "1e3cf45ae01726dbb0319312a6696594d23382b5dcb7bb11272b642f68e3f798",
+      "mean_predicted_any_goal": 0.6,
+      "errors": []
+    },
+    {
+      "match_id": "400021473",
+      "halftime_t": 1782431289.839,
+      "horizon_end_t": 1782431589.839,
+      "second_half_start_t": 1782432257.04,
+      "break_seconds": 967.2009999752045,
+      "score_before": [
+        0,
+        2
+      ],
+      "score_after_horizon": [
+        0,
+        2
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "c6a64e703758031d3f1eb9bf6ff351dec6a9d3ab37f8550f8b6368b2414063f1",
+      "mean_predicted_any_goal": 0.4666666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021474",
+      "halftime_t": 1781491779.575,
+      "horizon_end_t": 1781492079.575,
+      "second_half_start_t": 1781492735.35,
+      "break_seconds": 955.7749998569489,
+      "score_before": [
+        2,
+        1
+      ],
+      "score_after_horizon": [
+        2,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "ae8b70f114fcd0944e365f5bbb879d8edbc792af39a7c09f664f6f2d1cc2136a",
+      "mean_predicted_any_goal": 0.7166666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021475",
+      "halftime_t": 1782017347.045,
+      "horizon_end_t": 1782017647.045,
+      "second_half_start_t": 1782018299.594,
+      "break_seconds": 952.5490000247955,
+      "score_before": [
+        0,
+        2
+      ],
+      "score_after_horizon": [
+        0,
+        2
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "55001c94d6ac721aa9e8b6b1849b4152e5edc70ac2af8af293581ddf53ca7d29",
+      "mean_predicted_any_goal": 0.3,
+      "errors": []
+    },
+    {
+      "match_id": "400021476",
+      "halftime_t": 1781574902.03,
+      "horizon_end_t": 1781575202.03,
+      "second_half_start_t": 1781575951.612,
+      "break_seconds": 1049.5820000171661,
+      "score_before": [
+        1,
+        1
+      ],
+      "score_after_horizon": [
+        1,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "9d5f7e37d4520650b87fce425fd702f93c318e3d6310fc5542b8851179da2f37",
+      "mean_predicted_any_goal": 0.48333333333333334,
+      "errors": []
+    },
+    {
+      "match_id": "400021477",
+      "halftime_t": 1782071597.55,
+      "horizon_end_t": 1782071897.55,
+      "second_half_start_t": 1782072628.098,
+      "break_seconds": 1030.5480000972748,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "15e1a57594f805f714e4b6dbe248abf82668f2bd873a608e910dba21ede4481a",
+      "mean_predicted_any_goal": 0.5,
+      "errors": []
+    },
+    {
+      "match_id": "400021478",
+      "halftime_t": 1781553001.393,
+      "horizon_end_t": 1781553301.393,
+      "second_half_start_t": 1781554047.74,
+      "break_seconds": 1046.3470001220703,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "620b6a87b8d219c5416f7fa143a02cd3bd2fa93c9de3a3fd558e5752c5dc4b3e",
+      "mean_predicted_any_goal": 0.6,
+      "errors": []
+    },
+    {
+      "match_id": "400021479",
+      "halftime_t": 1782532285.619,
+      "horizon_end_t": 1782532585.619,
+      "second_half_start_t": 1782533351.558,
+      "break_seconds": 1065.9390001296997,
+      "score_before": [
+        1,
+        1
+      ],
+      "score_after_horizon": [
+        1,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "f6a12c92651f6127541ce17ad76852b3f244286fcf373b3d55e92a186401b7ce",
+      "mean_predicted_any_goal": 0.5333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021480",
+      "halftime_t": 1782092952.93,
+      "horizon_end_t": 1782093252.93,
+      "second_half_start_t": 1782093919.623,
+      "break_seconds": 966.6929998397827,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "d7458cf9f2afcaf8aa5a7240a723dc8c9c1d21ef86ac90c8985099248189fff2",
+      "mean_predicted_any_goal": 0.6,
+      "errors": []
+    },
+    {
+      "match_id": "400021481",
+      "halftime_t": 1782532349.004,
+      "horizon_end_t": 1782532649.004,
+      "second_half_start_t": 1782533250.978,
+      "break_seconds": 901.9739999771118,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "c4e0a9f20ab9ed1d18e133cd10163b048dddf49d7daae15e24914f7c2fafbadf",
+      "mean_predicted_any_goal": 0.2833333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021482",
+      "halftime_t": 1781542214.848,
+      "horizon_end_t": 1781542514.848,
+      "second_half_start_t": 1781543164.637,
+      "break_seconds": 949.7890000343323,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "35c781becadd429f2f48d6021659a0f63a05e5436b0cb65134b68295f88c01a4",
+      "mean_predicted_any_goal": 0.36666666666666664,
+      "errors": []
+    },
+    {
+      "match_id": "400021483",
+      "halftime_t": 1782060655.117,
+      "horizon_end_t": 1782060955.117,
+      "second_half_start_t": 1782061684.557,
+      "break_seconds": 1029.4399998188019,
+      "score_before": [
+        3,
+        0
+      ],
+      "score_after_horizon": [
+        3,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "f71510deaaf69d497a0a2af1ff8bf9e7bfb4a4799aabcdcea9ea637927792acb",
+      "mean_predicted_any_goal": 0.8,
+      "errors": []
+    },
+    {
+      "match_id": "400021484",
+      "halftime_t": 1782521666.696,
+      "horizon_end_t": 1782521966.696,
+      "second_half_start_t": 1782522566.895,
+      "break_seconds": 900.1989998817444,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "e6408d78e8469a67d40288115041829b6c6d14f86e2d43b443f2b8868f73ff91",
+      "mean_predicted_any_goal": 0.4666666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021485",
+      "halftime_t": 1782521576.929,
+      "horizon_end_t": 1782521876.929,
+      "second_half_start_t": 1782522538.273,
+      "break_seconds": 961.3440001010895,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "8e0cfcf58fdd355fe2e2c7b99e5ac3f1a54addd9ca3ed7a3d83d55367f4eca60",
+      "mean_predicted_any_goal": 0.43333333333333335,
+      "errors": []
+    },
+    {
+      "match_id": "400021486",
+      "halftime_t": 1781563993.376,
+      "horizon_end_t": 1781564293.376,
+      "second_half_start_t": 1781565054.486,
+      "break_seconds": 1061.1100001335144,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "30e9b7c819f07b202e7768fd210441f6ba9f30b1ee8fd46589e642cb41c95637",
+      "mean_predicted_any_goal": 0.36666666666666664,
+      "errors": []
+    },
+    {
+      "match_id": "400021487",
+      "halftime_t": 1782082419.069,
+      "horizon_end_t": 1782082719.069,
+      "second_half_start_t": 1782083436.995,
+      "break_seconds": 1017.925999879837,
+      "score_before": [
+        2,
+        1
+      ],
+      "score_after_horizon": [
+        2,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "13d16b512f4977e414a7d2b5e056927ec5559be65aed55e4b260f0274864ae84",
+      "mean_predicted_any_goal": 0.6,
+      "errors": []
+    },
+    {
+      "match_id": "400021488",
+      "halftime_t": 1781650324.208,
+      "horizon_end_t": 1781650624.208,
+      "second_half_start_t": 1781651284.88,
+      "break_seconds": 960.672000169754,
+      "score_before": [
+        1,
+        2
+      ],
+      "score_after_horizon": [
+        1,
+        2
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "4b1334379e8dd2b37ef6f97b08e2b41cb0511ba347dd736196ec24a9120f8166",
+      "mean_predicted_any_goal": 0.5499999999999999,
+      "errors": []
+    },
+    {
+      "match_id": "400021489",
+      "halftime_t": 1782503505.577,
+      "horizon_end_t": 1782503805.577,
+      "second_half_start_t": 1782504545.368,
+      "break_seconds": 1039.7910001277924,
+      "score_before": [
+        1,
+        3
+      ],
+      "score_after_horizon": [
+        1,
+        3
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "3dd32154f7960ae752c7150f0daedda3d12e94ccd772bc63e3e16cab7fc77b5f",
+      "mean_predicted_any_goal": 0.45,
+      "errors": []
+    },
+    {
+      "match_id": "400021490",
+      "halftime_t": 1781639642.658,
+      "horizon_end_t": 1781639942.658,
+      "second_half_start_t": 1781640553.0,
+      "break_seconds": 910.3420000076294,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "b89db4083ac594ec2563915a65184541fe643955201e2a3c9fad352ca3f39648",
+      "mean_predicted_any_goal": 0.5333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021491",
+      "halftime_t": 1782175758.017,
+      "horizon_end_t": 1782176058.017,
+      "second_half_start_t": 1782176658.216,
+      "break_seconds": 900.199000120163,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "ad0442daf08c682b91bef0cf900c7333fbfbc45b0182d42b0b4dfb716194319a",
+      "mean_predicted_any_goal": 0.7166666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021492",
+      "halftime_t": 1782164927.136,
+      "horizon_end_t": 1782165227.136,
+      "second_half_start_t": 1782172839.177,
+      "break_seconds": 7912.041000127792,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "4bb487db95eb6fa3155c179a09ef7d8f1319674c76936713571ddea264864b1c",
+      "mean_predicted_any_goal": 0.7333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021493",
+      "halftime_t": 1782503792.646,
+      "horizon_end_t": 1782504092.646,
+      "second_half_start_t": 1782504777.659,
+      "break_seconds": 985.0130000114441,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "45f9dd1058cf45635bec8014cb1f28afd93a534497cfe7513f0775b6bc04f806",
+      "mean_predicted_any_goal": 0.6166666666666667,
+      "errors": []
+    },
+    {
+      "match_id": "400021494",
+      "halftime_t": 1782150779.125,
+      "horizon_end_t": 1782151079.125,
+      "second_half_start_t": 1782151764.719,
+      "break_seconds": 985.5940001010895,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "58e48528c1c5d5c9048930baf44c165d0aa220734af97c1bba2538fa6dd3ad4f",
+      "mean_predicted_any_goal": 0.7333333333333334,
+      "errors": []
+    },
+    {
+      "match_id": "400021495",
+      "halftime_t": 1782615054.695,
+      "horizon_end_t": 1782615354.695,
+      "second_half_start_t": 1782616021.643,
+      "break_seconds": 966.9479999542236,
+      "score_before": [
+        0,
+        2
+      ],
+      "score_after_horizon": [
+        0,
+        2
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "d30f179976a75fa2e67614f39cc1287794c54e3255de20500e89166341b64617",
+      "mean_predicted_any_goal": 0.38333333333333336,
+      "errors": []
+    },
+    {
+      "match_id": "400021496",
+      "halftime_t": 1781661127.696,
+      "horizon_end_t": 1781661427.696,
+      "second_half_start_t": 1781662100.055,
+      "break_seconds": 972.3589999675751,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "5b4746cc4769c39c6e047f3583f9c0905fdf52caedcb3b22e4171ce9bb0b724e",
+      "mean_predicted_any_goal": 0.6333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021497",
+      "halftime_t": 1782614989.337,
+      "horizon_end_t": 1782615289.337,
+      "second_half_start_t": 1782616025.117,
+      "break_seconds": 1035.7800002098083,
+      "score_before": [
+        1,
+        1
+      ],
+      "score_after_horizon": [
+        1,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "c60e877bb08f4ba7bd6322f361b20da12916e6da9df4013a5e6c6ef16a40b92a",
+      "mean_predicted_any_goal": 0.6,
+      "errors": []
+    },
+    {
+      "match_id": "400021498",
+      "halftime_t": 1781671917.418,
+      "horizon_end_t": 1781672217.418,
+      "second_half_start_t": 1781673004.277,
+      "break_seconds": 1086.858999967575,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "aeed8b4b6b151fae5b254d22e47ba2504548efbf9a8ccb69dbd86f472df6eddf",
+      "mean_predicted_any_goal": 0.6,
+      "errors": []
+    },
+    {
+      "match_id": "400021499",
+      "halftime_t": 1782186622.309,
+      "horizon_end_t": 1782186922.309,
+      "second_half_start_t": 1782187650.398,
+      "break_seconds": 1028.0889999866486,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "50e34cc8deddcd2f96efe6b6572955271a00fc4897b79da00baaf1ccc6e9abad",
+      "mean_predicted_any_goal": 0.55,
+      "errors": []
+    },
+    {
+      "match_id": "400021500",
+      "halftime_t": 1782606201.835,
+      "horizon_end_t": 1782606501.835,
+      "second_half_start_t": 1782607117.722,
+      "break_seconds": 915.8869998455048,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "d758140dbd82c046a8913de31a7cb52693eef411135150b55c6259e9d1589558",
+      "mean_predicted_any_goal": 0.48333333333333334,
+      "errors": []
+    },
+    {
+      "match_id": "400021501",
+      "halftime_t": 1782269403.674,
+      "horizon_end_t": 1782269703.674,
+      "second_half_start_t": 1782270376.888,
+      "break_seconds": 973.2139999866486,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "e10f83b2178c3cbe621faac4d89079562d44dc7818a9b48ec2a651d2a0def8b4",
+      "mean_predicted_any_goal": 0.43333333333333335,
+      "errors": []
+    },
+    {
+      "match_id": "400021502",
+      "halftime_t": 1781718731.253,
+      "horizon_end_t": 1781719031.253,
+      "second_half_start_t": 1781719734.27,
+      "break_seconds": 1003.0169999599457,
+      "score_before": [
+        1,
+        1
+      ],
+      "score_after_horizon": [
+        1,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "805ab38f7673a6f6b6ca3323a7b3fed7756944752f37d68b08528cbc424941cf",
+      "mean_predicted_any_goal": 0.36666666666666664,
+      "errors": []
+    },
+    {
+      "match_id": "400021503",
+      "halftime_t": 1782237080.164,
+      "horizon_end_t": 1782237380.164,
+      "second_half_start_t": 1782238145.301,
+      "break_seconds": 1065.1370000839233,
+      "score_before": [
+        3,
+        0
+      ],
+      "score_after_horizon": [
+        3,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "1584d1b8ba25ab5913a3af2c071769dc59378028c6e333de16fa040a8db7975d",
+      "mean_predicted_any_goal": 0.7833333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021504",
+      "halftime_t": 1781751009.541,
+      "horizon_end_t": 1781751309.541,
+      "second_half_start_t": 1781751954.744,
+      "break_seconds": 945.2030000686646,
+      "score_before": [
+        0,
+        1
+      ],
+      "score_after_horizon": [
+        0,
+        1
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "1fd4ca42cf3638e791bf4393d53b2f657260b307ee5f79cdfd55e0539a6dcabc",
+      "mean_predicted_any_goal": 0.5166666666666666,
+      "errors": []
+    },
+    {
+      "match_id": "400021505",
+      "halftime_t": 1782605957.046,
+      "horizon_end_t": 1782606257.046,
+      "second_half_start_t": 1782607026.644,
+      "break_seconds": 1069.598000049591,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "6aa308643ebccc6bb90e74afb880276dedad7d0922d0fcd8dcbb65c881676a5e",
+      "mean_predicted_any_goal": 0.5,
+      "errors": []
+    },
+    {
+      "match_id": "400021506",
+      "halftime_t": 1782247890.12,
+      "horizon_end_t": 1782248190.12,
+      "second_half_start_t": 1782248928.816,
+      "break_seconds": 1038.6960000991821,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "251bc25ef116e7a7f98652c4d7d34267d07836b4cff721e3b97f11a6eca8a815",
+      "mean_predicted_any_goal": 0.6666666666666666,
+      "errors": []
+    },
+    {
+      "match_id": "400021507",
+      "halftime_t": 1781729460.119,
+      "horizon_end_t": 1781729760.119,
+      "second_half_start_t": 1781730554.377,
+      "break_seconds": 1094.2580001354218,
+      "score_before": [
+        2,
+        2
+      ],
+      "score_after_horizon": [
+        2,
+        2
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "834f9ff28414e4515ac9d179dd0e3c5b5fe537235dcbd0575a3e4ef997a88f56",
+      "mean_predicted_any_goal": 0.5166666666666666,
+      "errors": []
+    },
+    {
+      "match_id": "400021508",
+      "halftime_t": 1782596933.015,
+      "horizon_end_t": 1782597233.015,
+      "second_half_start_t": 1782597837.078,
+      "break_seconds": 904.0629999637604,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "bd4769e450d7b4d173409318245816c7d1eaf73022dab28753f2c1994258f739",
+      "mean_predicted_any_goal": 0.5333333333333333,
+      "errors": []
+    },
+    {
+      "match_id": "400021509",
+      "halftime_t": 1782596962.499,
+      "horizon_end_t": 1782597262.499,
+      "second_half_start_t": 1782597975.055,
+      "break_seconds": 1012.555999994278,
+      "score_before": [
+        1,
+        0
+      ],
+      "score_after_horizon": [
+        1,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "2211c4a2b789d4d029204631fa7191a5f6fa05aee125b3c647248808e407edf5",
+      "mean_predicted_any_goal": 0.6666666666666666,
+      "errors": []
+    },
+    {
+      "match_id": "400021510",
+      "halftime_t": 1781740277.425,
+      "horizon_end_t": 1781740577.425,
+      "second_half_start_t": 1781741183.854,
+      "break_seconds": 906.4290001392365,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "726d69560b37095abab4e4b87873c5713616ff7bf40f8033409b0506b418ee0f",
+      "mean_predicted_any_goal": 0.5,
+      "errors": []
+    },
+    {
+      "match_id": "400021511",
+      "halftime_t": 1782258489.702,
+      "horizon_end_t": 1782258789.702,
+      "second_half_start_t": 1782259438.874,
+      "break_seconds": 949.172000169754,
+      "score_before": [
+        0,
+        0
+      ],
+      "score_after_horizon": [
+        0,
+        0
+      ],
+      "recomputed_label": "none",
+      "responses": 3,
+      "source_sha256": "7e894585fbdce115911e34bcb2d6bbe4ef884cc9b4b939d2da48d75610b87ac4",
+      "mean_predicted_any_goal": 0.4666666666666666,
+      "errors": []
+    }
+  ],
+  "scope": "Final-feed retrospective verification; does not attest historical availability or rule out later feed corrections."
+}

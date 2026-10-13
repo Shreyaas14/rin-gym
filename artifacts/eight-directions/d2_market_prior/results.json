@@ -1,0 +1,464 @@
+{
+  "classification": "negative",
+  "alpha_model_weight": 0.40004230091728926,
+  "fit_weight_objective": {
+    "numerator": 0.8865282140100418,
+    "denominator": 2.216086178829713
+  },
+  "partitions": {
+    "fit": {
+      "matches": 39,
+      "forecast": {
+        "market_only": {
+          "brier": 0.47633598929547966,
+          "log_loss": 0.7723653980774517,
+          "valid": 1
+        },
+        "original_model_with_market_visible": {
+          "brier": 0.4876957264957265,
+          "log_loss": 0.8212142771430964,
+          "valid": 1
+        },
+        "fitted_blend": {
+          "brier": 0.46724243066571886,
+          "log_loss": 0.773549610308275,
+          "valid": 1
+        }
+      },
+      "trading": {
+        "market_only": {
+          "game_repeats": 117,
+          "matches": 39,
+          "net_pnl": 0.0,
+          "gross_wins": 0,
+          "gross_losses": 0,
+          "average_win": null,
+          "average_loss": null,
+          "worst_loss": 0.0,
+          "traded_game_repeats": 0,
+          "trading_coverage": 0.0,
+          "win_rate_traded": null,
+          "total_entry_exposure": 0.0,
+          "maximum_match_exposure": 0.0,
+          "turnover_shares": 0.0,
+          "mean_pnl_per_game_repeat": 0.0,
+          "simultaneous_exposure": "Not simulated; total entry debits and maximum per-match exposure only"
+        },
+        "original_model_with_market_visible": {
+          "game_repeats": 117,
+          "matches": 39,
+          "net_pnl": -0.5355998875000001,
+          "gross_wins": 2.448471778125,
+          "gross_losses": -2.984071665625,
+          "average_win": 0.1883439829326923,
+          "average_loss": -0.02869299678485577,
+          "worst_loss": -0.11683718750000001,
+          "traded_game_repeats": 117,
+          "trading_coverage": 1.0,
+          "win_rate_traded": 0.1111111111111111,
+          "total_entry_exposure": 3.7855998875,
+          "maximum_match_exposure": 0.11683718750000001,
+          "turnover_shares": 29.25,
+          "mean_pnl_per_game_repeat": -0.004577776816239317,
+          "simultaneous_exposure": "Not simulated; total entry debits and maximum per-match exposure only"
+        },
+        "fitted_blend": {
+          "game_repeats": 117,
+          "matches": 39,
+          "net_pnl": -0.3366540250000001,
+          "gross_wins": 0.7963543156249999,
+          "gross_losses": -1.133008340625,
+          "average_win": 0.19908857890624998,
+          "average_loss": -0.0192035311970339,
+          "worst_loss": -0.06606218750000001,
+          "traded_game_repeats": 63,
+          "trading_coverage": 0.5384615384615384,
+          "win_rate_traded": 0.06349206349206349,
+          "total_entry_exposure": 1.336654025,
+          "maximum_match_exposure": 0.06606218750000001,
+          "turnover_shares": 15.75,
+          "mean_pnl_per_game_repeat": -0.0028773848290598297,
+          "simultaneous_exposure": "Not simulated; total entry debits and maximum per-match exposure only"
+        },
+        "no_trade": {
+          "net_pnl": 0.0,
+          "mean_pnl_per_game_repeat": 0.0,
+          "trading_coverage": 0.0,
+          "turnover_shares": 0.0,
+          "total_entry_exposure": 0.0
+        }
+      },
+      "paired": {
+        "original_model_with_market_visible_minus_market_only": {
+          "brier": {
+            "mean_delta": 0.011359737200246824,
+            "paired_match_bootstrap_95": [
+              -0.05692422721443918,
+              0.0706684592073961
+            ],
+            "matches": 39
+          },
+          "log_loss": {
+            "mean_delta": 0.048848879065644696,
+            "paired_match_bootstrap_95": [
+              -0.06094969718224769,
+              0.1411221925743932
+            ],
+            "matches": 39
+          },
+          "pnl": {
+            "mean_delta": -0.004577776816239317,
+            "paired_match_bootstrap_95": [
+              -0.022783174704861114,
+              0.016951143854834382
+            ],
+            "matches": 39
+          }
+        },
+        "fitted_blend_minus_market_only": {
+          "brier": {
+            "mean_delta": -0.009093558629760828,
+            "paired_match_bootstrap_95": [
+              -0.03662027141889362,
+              0.013720833137855206
+            ],
+            "matches": 39
+          },
+          "log_loss": {
+            "mean_delta": 0.0011842122308232828,
+            "paired_match_bootstrap_95": [
+              -0.05202321791021029,
+              0.04302783468499723
+            ],
+            "matches": 39
+          },
+          "pnl": {
+            "mean_delta": -0.0028773848290598284,
+            "paired_match_bootstrap_95": [
+              -0.011585240276442307,
+              0.010136020685763884
+            ],
+            "matches": 39
+          }
+        },
+        "fitted_blend_minus_original_model_with_market_visible": {
+          "brier": {
+            "mean_delta": -0.02045329583000766,
+            "paired_match_bootstrap_95": [
+              -0.05762908620358258,
+              0.02077304821466911
+            ],
+            "matches": 39
+          },
+          "log_loss": {
+            "mean_delta": -0.04766466683482141,
+            "paired_match_bootstrap_95": [
+              -0.09900848377846445,
+              0.0102816050417199
+            ],
+            "matches": 39
+          },
+          "pnl": {
+            "mean_delta": 0.0017003919871794876,
+            "paired_match_bootstrap_95": [
+              -0.01582414968616453,
+              0.01607905165531517
+            ],
+            "matches": 39
+          }
+        }
+      }
+    },
+    "assessment": {
+      "matches": 33,
+      "forecast": {
+        "market_only": {
+          "brier": 0.33934174985021176,
+          "log_loss": 0.589718627671161,
+          "valid": 1
+        },
+        "original_model_with_market_visible": {
+          "brier": 0.4460114615700933,
+          "log_loss": 0.7774330180600244,
+          "valid": 1
+        },
+        "fitted_blend": {
+          "brier": 0.36453276880446317,
+          "log_loss": 0.6492319794023964,
+          "valid": 1
+        }
+      },
+      "trading": {
+        "market_only": {
+          "game_repeats": 99,
+          "matches": 33,
+          "net_pnl": 0.0,
+          "gross_wins": 0,
+          "gross_losses": 0,
+          "average_win": null,
+          "average_loss": null,
+          "worst_loss": 0.0,
+          "traded_game_repeats": 0,
+          "trading_coverage": 0.0,
+          "win_rate_traded": null,
+          "total_entry_exposure": 0.0,
+          "maximum_match_exposure": 0.0,
+          "turnover_shares": 0.0,
+          "mean_pnl_per_game_repeat": 0.0,
+          "simultaneous_exposure": "Not simulated; total entry debits and maximum per-match exposure only"
+        },
+        "original_model_with_market_visible": {
+          "game_repeats": 99,
+          "matches": 33,
+          "net_pnl": -0.43296287812500023,
+          "gross_wins": 2.399274584375,
+          "gross_losses": -2.8322374625,
+          "average_win": 0.18455958341346154,
+          "average_loss": -0.03332044073529412,
+          "worst_loss": -0.10423718750000001,
+          "traded_game_repeats": 98,
+          "trading_coverage": 0.98989898989899,
+          "win_rate_traded": 0.1326530612244898,
+          "total_entry_exposure": 3.682962878125,
+          "maximum_match_exposure": 0.10928468749999999,
+          "turnover_shares": 24.5,
+          "mean_pnl_per_game_repeat": -0.004373362405303033,
+          "simultaneous_exposure": "Not simulated; total entry debits and maximum per-match exposure only"
+        },
+        "fitted_blend": {
+          "game_repeats": 99,
+          "matches": 33,
+          "net_pnl": -0.6106390312500001,
+          "gross_wins": 1.0020190625,
+          "gross_losses": -1.6126580937500001,
+          "average_win": 0.2004038125,
+          "average_loss": -0.023715560202205884,
+          "worst_loss": -0.0634971875,
+          "traded_game_repeats": 73,
+          "trading_coverage": 0.7373737373737373,
+          "win_rate_traded": 0.0684931506849315,
+          "total_entry_exposure": 1.86063903125,
+          "maximum_match_exposure": 0.0634971875,
+          "turnover_shares": 18.25,
+          "mean_pnl_per_game_repeat": -0.006168071022727274,
+          "simultaneous_exposure": "Not simulated; total entry debits and maximum per-match exposure only"
+        },
+        "no_trade": {
+          "net_pnl": 0.0,
+          "mean_pnl_per_game_repeat": 0.0,
+          "trading_coverage": 0.0,
+          "turnover_shares": 0.0,
+          "total_entry_exposure": 0.0
+        }
+      },
+      "paired": {
+        "original_model_with_market_visible_minus_market_only": {
+          "brier": {
+            "mean_delta": 0.10666971171988159,
+            "paired_match_bootstrap_95": [
+              0.051199109827066686,
+              0.15832224259858704
+            ],
+            "matches": 33
+          },
+          "log_loss": {
+            "mean_delta": 0.1877143903888634,
+            "paired_match_bootstrap_95": [
+              0.10068468912128602,
+              0.2685400756992371
+            ],
+            "matches": 33
+          },
+          "pnl": {
+            "mean_delta": -0.004373362405303033,
+            "paired_match_bootstrap_95": [
+              -0.02810847211568813,
+              0.022871783255208326
+            ],
+            "matches": 33
+          }
+        },
+        "fitted_blend_minus_market_only": {
+          "brier": {
+            "mean_delta": 0.025191018954251444,
+            "paired_match_bootstrap_95": [
+              0.00472597836300384,
+              0.04393214831149716
+            ],
+            "matches": 33
+          },
+          "log_loss": {
+            "mean_delta": 0.05951335173123534,
+            "paired_match_bootstrap_95": [
+              0.024640990613784997,
+              0.0914578454751521
+            ],
+            "matches": 33
+          },
+          "pnl": {
+            "mean_delta": -0.006168071022727272,
+            "paired_match_bootstrap_95": [
+              -0.018889061587752526,
+              0.010907709007260083
+            ],
+            "matches": 33
+          }
+        },
+        "fitted_blend_minus_original_model_with_market_visible": {
+          "brier": {
+            "mean_delta": -0.08147869276563013,
+            "paired_match_bootstrap_95": [
+              -0.11525186556276161,
+              -0.046013980158490585
+            ],
+            "matches": 33
+          },
+          "log_loss": {
+            "mean_delta": -0.12820103865762808,
+            "paired_match_bootstrap_95": [
+              -0.17739224349590682,
+              -0.0760661304294128
+            ],
+            "matches": 33
+          },
+          "pnl": {
+            "mean_delta": -0.0017947086174242416,
+            "paired_match_bootstrap_95": [
+              -0.021505534235321967,
+              0.01594589105508207
+            ],
+            "matches": 33
+          }
+        }
+      }
+    }
+  },
+  "guard_before": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "scope": "Post-hoc research on repeatedly inspected historical development matches; predeclared before this direction analysis results. No protected assessment.",
+  "prompt_availability": {
+    "market_prices_visible": true,
+    "original_model_is_market_blind": false,
+    "source_template": "app/trade_env/templates/user.j2"
+  },
+  "fresh_status": "complete",
+  "guard_after": {
+    "ledger_head": "2f6051410929bd283e984574ecce2a944e82aa12911a13d24c194f48dc5a995d",
+    "state": "pending_enrollment",
+    "protected_matches": 0
+  },
+  "classification_basis": "The selected blend improves the original model but worsens Brier and log loss versus market on the later development partition; this does not reject all market-conditioned approaches.",
+  "fresh_classification": "negative",
+  "fresh_summary": {
+    "market_only": {
+      "brier": 0.33934174985021176,
+      "log_loss": 0.589718627671161,
+      "valid": 1
+    },
+    "original_prompt": {
+      "brier": 0.4450514120904999,
+      "log_loss": 0.775840025818262,
+      "valid": 1
+    },
+    "market_prior_prompt": {
+      "brier": 0.3490474331371236,
+      "log_loss": 0.6107806970631683,
+      "valid": 1
+    }
+  },
+  "fresh_attrition": {
+    "planned_requests": 990,
+    "completed_requests": 990,
+    "missing_request_ids": [],
+    "planned_pairs": 495,
+    "complete_pairs": 495,
+    "orphan_completed_predictions": 0,
+    "assessment_match_count": 33,
+    "forecast_point_pairs_by_match": {
+      "400021444": 15,
+      "400021445": 15,
+      "400021448": 15,
+      "400021451": 15,
+      "400021452": 15,
+      "400021455": 15,
+      "400021459": 15,
+      "400021461": 15,
+      "400021466": 15,
+      "400021468": 15,
+      "400021471": 15,
+      "400021473": 15,
+      "400021479": 15,
+      "400021480": 15,
+      "400021481": 15,
+      "400021484": 15,
+      "400021485": 15,
+      "400021489": 15,
+      "400021491": 15,
+      "400021492": 15,
+      "400021493": 15,
+      "400021494": 15,
+      "400021495": 15,
+      "400021497": 15,
+      "400021499": 15,
+      "400021500": 15,
+      "400021501": 15,
+      "400021503": 15,
+      "400021505": 15,
+      "400021506": 15,
+      "400021508": 15,
+      "400021509": 15,
+      "400021511": 15
+    },
+    "expected_game_repeat_cases": 99,
+    "full_paired_trajectory_cases": 99,
+    "full_paired_trajectory_match_count": 33,
+    "trading_case_repeats_by_match": {
+      "400021444": 3,
+      "400021445": 3,
+      "400021448": 3,
+      "400021451": 3,
+      "400021452": 3,
+      "400021455": 3,
+      "400021459": 3,
+      "400021461": 3,
+      "400021466": 3,
+      "400021468": 3,
+      "400021471": 3,
+      "400021473": 3,
+      "400021479": 3,
+      "400021480": 3,
+      "400021481": 3,
+      "400021484": 3,
+      "400021485": 3,
+      "400021489": 3,
+      "400021491": 3,
+      "400021492": 3,
+      "400021493": 3,
+      "400021494": 3,
+      "400021495": 3,
+      "400021497": 3,
+      "400021499": 3,
+      "400021500": 3,
+      "400021501": 3,
+      "400021503": 3,
+      "400021505": 3,
+      "400021506": 3,
+      "400021508": 3,
+      "400021509": 3,
+      "400021511": 3
+    },
+    "complete_pair_exclusion_rule": "Only missing arm predictions exclude a pair; invalid completed outputs remain with penalty; P&L requires a full paired trajectory."
+  },
+  "spending_summary": {
+    "hard_limit_usd": 5,
+    "reserved_max_usd": 0.9751440599999991,
+    "token_cost_estimate_usd": 0.39600783000000017,
+    "billing_evidence_usd": null,
+    "paid_requests": 990,
+    "note": "Full-rate logged-token estimate; verified invoice billing unavailable. Reservations retained; pending requests remain encumbered."
+  },
+  "overall_classification": "negative"
+}

@@ -1,0 +1,460 @@
+{
+  "scope": "Immutable snapshots of this chat experiment artifacts; no credentials, provider caches, or protected-cohort data.",
+  "files": [
+    {
+      "original_workspace_path": "outputs/parlay-eval-context/REPORT.md",
+      "published_path": "parlay-eval-context/REPORT.md",
+      "original_sha256": "9d462445b9e00a5e35ea064c3fb65e001b186e47720bb28a154feaafc982a583",
+      "published_sha256": "9d462445b9e00a5e35ea064c3fb65e001b186e47720bb28a154feaafc982a583",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-context/cases.jsonl",
+      "published_path": "parlay-eval-context/cases.jsonl.gz",
+      "original_sha256": "7f4739de0f4f72406b6b7eefea4053562a75947ff6fb816b5fdd47b647cd2fad",
+      "published_sha256": "446d8beda16b11cfd6eecc7609d0b2025fee1791e4c66ec8802e11fb9fd5c05d",
+      "gzip_wrapped": true
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-context/features.json",
+      "published_path": "parlay-eval-context/features.json",
+      "original_sha256": "ba048618bc2d238d6ee4fbfb448307efd25bd562035ff30b5995388a004b303b",
+      "published_sha256": "ba048618bc2d238d6ee4fbfb448307efd25bd562035ff30b5995388a004b303b",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-context/protocol.json",
+      "published_path": "parlay-eval-context/protocol.json",
+      "original_sha256": "9baba4d115ecf2afc23b6705b265aba39b438ad69a745d7c3bce503ac5e7c425",
+      "published_sha256": "9baba4d115ecf2afc23b6705b265aba39b438ad69a745d7c3bce503ac5e7c425",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-context/run_context.py",
+      "published_path": "parlay-eval-context/run_context.py",
+      "original_sha256": "18116037e5ec56b93d137647d058137876d1cf8b9f39dad46173c3aaf35c8646",
+      "published_sha256": "18116037e5ec56b93d137647d058137876d1cf8b9f39dad46173c3aaf35c8646",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-context/summary.json",
+      "published_path": "parlay-eval-context/summary.json",
+      "original_sha256": "d9a3be97a7f5f650ba083ef58117caa8d2b17e677d27d87bfcc723ed2f4ed384",
+      "published_sha256": "d9a3be97a7f5f650ba083ef58117caa8d2b17e677d27d87bfcc723ed2f4ed384",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-context/verification.json",
+      "published_path": "parlay-eval-context/verification.json",
+      "original_sha256": "46117773e5401e1b6410de92c976ad957454b95ffc1598fe0ea195a86fd80a15",
+      "published_sha256": "46117773e5401e1b6410de92c976ad957454b95ffc1598fe0ea195a86fd80a15",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-context/verify_context.py",
+      "published_path": "parlay-eval-context/verify_context.py",
+      "original_sha256": "e0596d31383af6810b71bccd22a4f7a428c0851bd7bb129b568b6314c0e2d685",
+      "published_sha256": "e0596d31383af6810b71bccd22a4f7a428c0851bd7bb129b568b6314c0e2d685",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/COMPLETED.json",
+      "published_path": "parlay-eval-fresh-joint/COMPLETED.json",
+      "original_sha256": "0b7c0a1c0321ab6cce02442d6a9d43f90261cff3962dcd2d7ba21aef62dfc816",
+      "published_sha256": "0b7c0a1c0321ab6cce02442d6a9d43f90261cff3962dcd2d7ba21aef62dfc816",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/REPORT.md",
+      "published_path": "parlay-eval-fresh-joint/REPORT.md",
+      "original_sha256": "b0c49acbf77d3a2fbe82c53c16f18aac0edb91b379346f4ed3b2cedc6f263a9b",
+      "published_sha256": "b0c49acbf77d3a2fbe82c53c16f18aac0edb91b379346f4ed3b2cedc6f263a9b",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/STARTED.json",
+      "published_path": "parlay-eval-fresh-joint/STARTED.json",
+      "original_sha256": "5391bdb23514bbe871d93e1faa019b52963d69c9490a4dc68efd6d355c3235b2",
+      "published_sha256": "5391bdb23514bbe871d93e1faa019b52963d69c9490a4dc68efd6d355c3235b2",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/cases.json",
+      "published_path": "parlay-eval-fresh-joint/cases.json",
+      "original_sha256": "74f89691ae1d99a601afa867aaa973568170a71d51d36734e66064eb49cea72b",
+      "published_sha256": "74f89691ae1d99a601afa867aaa973568170a71d51d36734e66064eb49cea72b",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/connection-recovery.json",
+      "published_path": "parlay-eval-fresh-joint/connection-recovery.json",
+      "original_sha256": "325057f251c5c79c7530b6a003756e50fed0b02c3e7b99c25622256603610288",
+      "published_sha256": "325057f251c5c79c7530b6a003756e50fed0b02c3e7b99c25622256603610288",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/experiment.py",
+      "published_path": "parlay-eval-fresh-joint/experiment.py",
+      "original_sha256": "f6c2db7a912fd151fc0fd94d6675993fe2471ab68859345960911409892e6785",
+      "published_sha256": "f6c2db7a912fd151fc0fd94d6675993fe2471ab68859345960911409892e6785",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/normalization-diagnostic.json",
+      "published_path": "parlay-eval-fresh-joint/normalization-diagnostic.json",
+      "original_sha256": "05fdcb2b58003f74fb8828088077ffd37adad94ab285201520feb0f110c5cb10",
+      "published_sha256": "05fdcb2b58003f74fb8828088077ffd37adad94ab285201520feb0f110c5cb10",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/normalization_diagnostic.py",
+      "published_path": "parlay-eval-fresh-joint/normalization_diagnostic.py",
+      "original_sha256": "e93aa0ea3b62799a559f4215026b8d119be19c0b1a7d63421f2c9fcd39baffa2",
+      "published_sha256": "e93aa0ea3b62799a559f4215026b8d119be19c0b1a7d63421f2c9fcd39baffa2",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/predictions.jsonl",
+      "published_path": "parlay-eval-fresh-joint/predictions.jsonl",
+      "original_sha256": "921d327f2f7f10826090f405f8525e7dd3bd0618b75eaea5140272c749e94dc7",
+      "published_sha256": "921d327f2f7f10826090f405f8525e7dd3bd0618b75eaea5140272c749e94dc7",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/protocol.json",
+      "published_path": "parlay-eval-fresh-joint/protocol.json",
+      "original_sha256": "fa8ead4a691cb3eb54b6de2cae787d120d0376ada1b144dfc1867e6f76391c34",
+      "published_sha256": "fa8ead4a691cb3eb54b6de2cae787d120d0376ada1b144dfc1867e6f76391c34",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/requests.jsonl",
+      "published_path": "parlay-eval-fresh-joint/requests.jsonl",
+      "original_sha256": "0b978de23268ca7a4de219cc9d804822b3c10035a8ba828e47510f307576520d",
+      "published_sha256": "0b978de23268ca7a4de219cc9d804822b3c10035a8ba828e47510f307576520d",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/score.py",
+      "published_path": "parlay-eval-fresh-joint/score.py",
+      "original_sha256": "bae16d62e9ea4d657a8c280f628d264c1136e86f22a7ff997b9082f517b3db09",
+      "published_sha256": "bae16d62e9ea4d657a8c280f628d264c1136e86f22a7ff997b9082f517b3db09",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/scored-cases.json",
+      "published_path": "parlay-eval-fresh-joint/scored-cases.json",
+      "original_sha256": "f171234f4ae114f8451b7fb3c36094d6db2a656c456b71ae6532da0d4f3a90cf",
+      "published_sha256": "f171234f4ae114f8451b7fb3c36094d6db2a656c456b71ae6532da0d4f3a90cf",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/summary.json",
+      "published_path": "parlay-eval-fresh-joint/summary.json",
+      "original_sha256": "6ac371e162a687f64efb5fdf00cd5448d05b1d4f33751c16ab5ac073425c349a",
+      "published_sha256": "6ac371e162a687f64efb5fdf00cd5448d05b1d4f33751c16ab5ac073425c349a",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/test_experiment.py",
+      "published_path": "parlay-eval-fresh-joint/test_experiment.py",
+      "original_sha256": "ea97cb3eed765cf5780067b512bb570b8801910896104436f241e8c5f2b95c00",
+      "published_sha256": "ea97cb3eed765cf5780067b512bb570b8801910896104436f241e8c5f2b95c00",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/verification.json",
+      "published_path": "parlay-eval-fresh-joint/verification.json",
+      "original_sha256": "3ac4a92e752b6c04f438cd1857b50f6b2137b64c04faf1e75b9493107797a889",
+      "published_sha256": "3ac4a92e752b6c04f438cd1857b50f6b2137b64c04faf1e75b9493107797a889",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-joint/verify.py",
+      "published_path": "parlay-eval-fresh-joint/verify.py",
+      "original_sha256": "05bab073242e191265c5de9a1ed43d1ded0166ec5152578e80476e14451a8a54",
+      "published_sha256": "05bab073242e191265c5de9a1ed43d1ded0166ec5152578e80476e14451a8a54",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/COMPLETED.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/COMPLETED.json",
+      "original_sha256": "d0fff93d444659e6d60a0479a0113956d3416704eef7fea7f749815171c4470d",
+      "published_sha256": "d0fff93d444659e6d60a0479a0113956d3416704eef7fea7f749815171c4470d",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/REPORT.md",
+      "published_path": "parlay-eval-fresh-singles-expanded/REPORT.md",
+      "original_sha256": "9e8a016d890435cd26a3433cfc222fc198d1a64cbd2f257efe9f1a6975769f91",
+      "published_sha256": "9e8a016d890435cd26a3433cfc222fc198d1a64cbd2f257efe9f1a6975769f91",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/STARTED.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/STARTED.json",
+      "original_sha256": "5f4930fb32925ca97cfdc262897259f47b90440c55cbd5c1b0e8dc2f4ee0bc8d",
+      "published_sha256": "5f4930fb32925ca97cfdc262897259f47b90440c55cbd5c1b0e8dc2f4ee0bc8d",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/diagnostics.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/diagnostics.json",
+      "original_sha256": "2fe327af7fca8e7a244d894237f8d399fdd4b1806645a30503a15fde1fade683",
+      "published_sha256": "2fe327af7fca8e7a244d894237f8d399fdd4b1806645a30503a15fde1fade683",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/diagnostics.py",
+      "published_path": "parlay-eval-fresh-singles-expanded/diagnostics.py",
+      "original_sha256": "f2a84846b45ca58de970f3be15cb86cad8c41cfa466e203252c7b46d36ffa6e3",
+      "published_sha256": "f2a84846b45ca58de970f3be15cb86cad8c41cfa466e203252c7b46d36ffa6e3",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/expanded.py",
+      "published_path": "parlay-eval-fresh-singles-expanded/expanded.py",
+      "original_sha256": "136e815cfc10b077762982aea7aafe31361a9816ee915b7f6d1199afaae2279b",
+      "published_sha256": "136e815cfc10b077762982aea7aafe31361a9816ee915b7f6d1199afaae2279b",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/observations.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/observations.json",
+      "original_sha256": "07d6dff1555b2ff11bcab88b64459b6efc1f0355333dfe3c30d1a29be8de64df",
+      "published_sha256": "07d6dff1555b2ff11bcab88b64459b6efc1f0355333dfe3c30d1a29be8de64df",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/pairs.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/pairs.json",
+      "original_sha256": "7b1fd4bd6575d23bb5a9f457537eda3f82890186be3e770fa16b8ca9cb6dc7a5",
+      "published_sha256": "7b1fd4bd6575d23bb5a9f457537eda3f82890186be3e770fa16b8ca9cb6dc7a5",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/predictions.jsonl",
+      "published_path": "parlay-eval-fresh-singles-expanded/predictions.jsonl",
+      "original_sha256": "383c036dfd18c0869744f89ae258ea627f69e1420e13f20c52465cb7d095cb59",
+      "published_sha256": "383c036dfd18c0869744f89ae258ea627f69e1420e13f20c52465cb7d095cb59",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/protocol.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/protocol.json",
+      "original_sha256": "9dd399cd77a4175bca4fc6998feadb9aefff44f55cd5ff4d21adba936c572202",
+      "published_sha256": "9dd399cd77a4175bca4fc6998feadb9aefff44f55cd5ff4d21adba936c572202",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/requests.jsonl",
+      "published_path": "parlay-eval-fresh-singles-expanded/requests.jsonl",
+      "original_sha256": "c4202c29190f05cae4d004ae947ee5cc0eb9d4532fecfeceaf8978afb691a7ff",
+      "published_sha256": "c4202c29190f05cae4d004ae947ee5cc0eb9d4532fecfeceaf8978afb691a7ff",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/score_expanded.py",
+      "published_path": "parlay-eval-fresh-singles-expanded/score_expanded.py",
+      "original_sha256": "fdb6daaa2028ec5bf791156025a70b67019e7555949deeef95a725f06f2baec9",
+      "published_sha256": "fdb6daaa2028ec5bf791156025a70b67019e7555949deeef95a725f06f2baec9",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/scored-pairs.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/scored-pairs.json.gz",
+      "original_sha256": "10c4bd16cb0d6061db47bbb2695c5c77da7e5ef48c5df1fd2bc6839496861a55",
+      "published_sha256": "bea92f5bf5a2db5a04f0315f17c47806d06ace3ce9c430dca1e0c26f6e0fde38",
+      "gzip_wrapped": true
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/single-game-scores.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/single-game-scores.json",
+      "original_sha256": "4cca50285fd670b5afdef1ed47295c57629084988cb9bb4b2a5afda35840658f",
+      "published_sha256": "4cca50285fd670b5afdef1ed47295c57629084988cb9bb4b2a5afda35840658f",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/summary.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/summary.json",
+      "original_sha256": "a13f5418688b740679e2d958c1ab60491ca180f8abc8784b3d4fd34e16fd00ef",
+      "published_sha256": "a13f5418688b740679e2d958c1ab60491ca180f8abc8784b3d4fd34e16fd00ef",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/test_expanded.py",
+      "published_path": "parlay-eval-fresh-singles-expanded/test_expanded.py",
+      "original_sha256": "d1cd678f705c633a8bf152024ed59a562775b280f4d051338389d8cc57d5300d",
+      "published_sha256": "d1cd678f705c633a8bf152024ed59a562775b280f4d051338389d8cc57d5300d",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/verification.json",
+      "published_path": "parlay-eval-fresh-singles-expanded/verification.json",
+      "original_sha256": "5c4b4ce053b09dd82c6347533da5d2a7eac91f9f2cd83a151ee3715a6ad1e797",
+      "published_sha256": "5c4b4ce053b09dd82c6347533da5d2a7eac91f9f2cd83a151ee3715a6ad1e797",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-fresh-singles-expanded/verify_expanded.py",
+      "published_path": "parlay-eval-fresh-singles-expanded/verify_expanded.py",
+      "original_sha256": "790c5041c884e8310b3f4b1438811a73847032f8f1b2d4c8483ea6995453d81a",
+      "published_sha256": "790c5041c884e8310b3f4b1438811a73847032f8f1b2d4c8483ea6995453d81a",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/REPORT.md",
+      "published_path": "parlay-eval-improvement/REPORT.md",
+      "original_sha256": "dafaaa22359f2721243f440b910ad04d8302a26d5de8d493a214543204c1a9e0",
+      "published_sha256": "dafaaa22359f2721243f440b910ad04d8302a26d5de8d493a214543204c1a9e0",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/cases.jsonl",
+      "published_path": "parlay-eval-improvement/cases.jsonl.gz",
+      "original_sha256": "4a08070946578754e2db2bc1082f6d6cf8712032c7f3a495223ea23a7cc7d58b",
+      "published_sha256": "decbd750db7e71eef623f7193dad7fda443543679e591e049202fab83e20cec8",
+      "gzip_wrapped": true
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/protocol.json",
+      "published_path": "parlay-eval-improvement/protocol.json",
+      "original_sha256": "b55c4c027cb7e08bda939708466ebbb2ad61bc46ba445890627b80d57ec8726c",
+      "published_sha256": "b55c4c027cb7e08bda939708466ebbb2ad61bc46ba445890627b80d57ec8726c",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/residual-cases.jsonl",
+      "published_path": "parlay-eval-improvement/residual-cases.jsonl.gz",
+      "original_sha256": "a70eae3f0ec7a046b16a7446cb368db872a3a466aad5ec82dad486f1b8263308",
+      "published_sha256": "4550ce101125f9db4d1d2fb458ab6a823759ebbd69c361df1ed094910343458a",
+      "gzip_wrapped": true
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/residual-protocol.json",
+      "published_path": "parlay-eval-improvement/residual-protocol.json",
+      "original_sha256": "3331c567b470966a1f95caba4cd89fdd464375773c6c7e3f93d7e43c0cf01632",
+      "published_sha256": "3331c567b470966a1f95caba4cd89fdd464375773c6c7e3f93d7e43c0cf01632",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/residual-summary.json",
+      "published_path": "parlay-eval-improvement/residual-summary.json",
+      "original_sha256": "afbabe6a4aeeaea1953bb88d9ec62f2479f3eb65c45e3f73f237b74654420937",
+      "published_sha256": "afbabe6a4aeeaea1953bb88d9ec62f2479f3eb65c45e3f73f237b74654420937",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/residual.py",
+      "published_path": "parlay-eval-improvement/residual.py",
+      "original_sha256": "5ce07c598e789c3cac782a4cb602f8feaa8e17ac796692886e41cf3e6b9147f7",
+      "published_sha256": "5ce07c598e789c3cac782a4cb602f8feaa8e17ac796692886e41cf3e6b9147f7",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/run.py",
+      "published_path": "parlay-eval-improvement/run.py",
+      "original_sha256": "b41a206f214f8d6d0248a44d4a59aef156f53fbd74fbcd600f2886c8a3a6f1fb",
+      "published_sha256": "b41a206f214f8d6d0248a44d4a59aef156f53fbd74fbcd600f2886c8a3a6f1fb",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/summary.json",
+      "published_path": "parlay-eval-improvement/summary.json",
+      "original_sha256": "71b22f1f59b7dab4b613089b3429a0aaaa42e2b493ecbd5b9e2255be5fe61d3a",
+      "published_sha256": "71b22f1f59b7dab4b613089b3429a0aaaa42e2b493ecbd5b9e2255be5fe61d3a",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/verification.json",
+      "published_path": "parlay-eval-improvement/verification.json",
+      "original_sha256": "d87e612428a23ee1aed9aac82037557551e3fed12b48565820d87d10a4d9f819",
+      "published_sha256": "d87e612428a23ee1aed9aac82037557551e3fed12b48565820d87d10a4d9f819",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-improvement/verify.py",
+      "published_path": "parlay-eval-improvement/verify.py",
+      "original_sha256": "b852dac2e49959c0ca080d5f70bdb741fa4439b318a682121dbe6852382797fe",
+      "published_sha256": "b852dac2e49959c0ca080d5f70bdb741fa4439b318a682121dbe6852382797fe",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-investigation/APPROACHES.md",
+      "published_path": "parlay-eval-investigation/APPROACHES.md",
+      "original_sha256": "a9d188799e58c0fac2007be9ca2e0cfb27c688a80f336274ecef8fc6ca6909ef",
+      "published_sha256": "a9d188799e58c0fac2007be9ca2e0cfb27c688a80f336274ecef8fc6ca6909ef",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-investigation/REPORT.md",
+      "published_path": "parlay-eval-investigation/REPORT.md",
+      "original_sha256": "82437120550c1e4badfb8baaf9148a3df348965e127e82a1467fd983846ea902",
+      "published_sha256": "82437120550c1e4badfb8baaf9148a3df348965e127e82a1467fd983846ea902",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-investigation/audit.py",
+      "published_path": "parlay-eval-investigation/audit.py",
+      "original_sha256": "1813f72569711d6721bc7c929768eccc5a414a121edf127ae0a48238d57e2a0b",
+      "published_sha256": "1813f72569711d6721bc7c929768eccc5a414a121edf127ae0a48238d57e2a0b",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-investigation/feasibility.json",
+      "published_path": "parlay-eval-investigation/feasibility.json",
+      "original_sha256": "68a89889c119d43939c7927ff4c7f11cde9a50eee8c579afaaa46907504507ef",
+      "published_sha256": "68a89889c119d43939c7927ff4c7f11cde9a50eee8c579afaaa46907504507ef",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-offline/REPORT.md",
+      "published_path": "parlay-eval-offline/REPORT.md",
+      "original_sha256": "462ff08d2adb688ca5f709c87209620572c4a7d2c17d4a8db775a174720e64cd",
+      "published_sha256": "462ff08d2adb688ca5f709c87209620572c4a7d2c17d4a8db775a174720e64cd",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-offline/cases.jsonl.gz",
+      "published_path": "parlay-eval-offline/cases.jsonl.gz",
+      "original_sha256": "b38dd0dfd098a701c034a2e349d1fd05bf7152b4e8c9acb7dd37ece35942fce9",
+      "published_sha256": "b38dd0dfd098a701c034a2e349d1fd05bf7152b4e8c9acb7dd37ece35942fce9",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-offline/protocol.json",
+      "published_path": "parlay-eval-offline/protocol.json",
+      "original_sha256": "3c14d52e413021618b06719b27f96e4a39d5ab18452f49fa7135c4ab7551c170",
+      "published_sha256": "3c14d52e413021618b06719b27f96e4a39d5ab18452f49fa7135c4ab7551c170",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-offline/run.py",
+      "published_path": "parlay-eval-offline/run.py",
+      "original_sha256": "1cfc412d57de00d28af4443ce84498eff0e8346b1a1504196354a20724a8f415",
+      "published_sha256": "1cfc412d57de00d28af4443ce84498eff0e8346b1a1504196354a20724a8f415",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-offline/summary.json",
+      "published_path": "parlay-eval-offline/summary.json",
+      "original_sha256": "eb83e75a6cfef13b744f4a7335dcc3a13f5d3ad4265b085069d8fb8df62ea690",
+      "published_sha256": "eb83e75a6cfef13b744f4a7335dcc3a13f5d3ad4265b085069d8fb8df62ea690",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-offline/verification.json",
+      "published_path": "parlay-eval-offline/verification.json",
+      "original_sha256": "ce4beb690b4072b80c6b9fb6328ef36dfb7b528ad9cca591fb28b1bfd1011463",
+      "published_sha256": "ce4beb690b4072b80c6b9fb6328ef36dfb7b528ad9cca591fb28b1bfd1011463",
+      "gzip_wrapped": false
+    },
+    {
+      "original_workspace_path": "outputs/parlay-eval-offline/verify.py",
+      "published_path": "parlay-eval-offline/verify.py",
+      "original_sha256": "091197678e98bfeae509398f28a43a0b0d34a6bae292b7e9f53513422bcf8719",
+      "published_sha256": "091197678e98bfeae509398f28a43a0b0d34a6bae292b7e9f53513422bcf8719",
+      "gzip_wrapped": false
+    }
+  ]
+}

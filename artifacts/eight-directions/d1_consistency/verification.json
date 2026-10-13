@@ -1,0 +1,53 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python",
+        "experiments/eight_directions/d1_consistency/analyze.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"closed_loop_original\": {\n    \"later_33_delta\": {\n      \"mean\": -0.04688498030303031,\n      \"match_cluster_95\": [\n        -0.2069446992613636,\n        0.1251565982733586\n      ],\n      \"unique_matches\": 33\n    },\n    \"later_33_original\": -1.776921187500002,\n    \"later_33_consistency\": -6.418534237500001,\n    \"all_72_audit\": {\n      \"mean\": 0.2238425925925926,\n      \"match_cluster_95\": [\n        0.19999999999999998,\n        0.24930555555555556\n      ],\n      \"unique_matches\": 72\n    }\n  },\n  \"earlier_original\": {\n    \"later_33_delta\": {\n      \"mean\": -0.08306160063131313,\n      \"match_cluster_95\": [\n        -0.24317941687184338,\n        0.09509679459595947\n      ],\n      \"unique_matches\": 33\n    },\n    \"later_33_original\": 1.200851687499998,\n    \"later_33_consistency\": -7.022246775000002,\n    \"all_72_audit\": {\n      \"mean\": 0.2099537037037037,\n      \"match_cluster_95\": [\n        0.19143518518518518,\n        0.23217592592592595\n      ],\n      \"unique_matches\": 72\n    }\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python",
+        "-m",
+        "unittest",
+        "experiments.eight_directions.d1_consistency.test_analysis"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.003s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Users/alexkan/Desktop/frontiers/rin-gym-forecast-only/.venv/bin/python",
+        "experiments/eight_directions/d1_consistency/report.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "guard_before_after_equal": true,
+  "audit_receipts": 2154,
+  "original_cases_reproduced": 432,
+  "intervention_cases": 432,
+  "cost_usd": 0,
+  "output_sha256": {
+    "artifacts/eight-directions/d1_consistency/REPORT.md": "c2f24e02dfd33153be1652441cc0729aeb6c5a6cf1e70cc9aa6bba40044a4e0d",
+    "artifacts/eight-directions/d1_consistency/audit-receipts.jsonl": "b7991e092d5114e17ee086d2d80395368b78a32a5d4da7db07304bfe5bfeb18f",
+    "artifacts/eight-directions/d1_consistency/execution-receipts.json": "84b685153cf66f96507449091546e05cbfa52d77b8f096c0f3465c52bd241e3d",
+    "artifacts/eight-directions/d1_consistency/guard_after.json": "09376a8260b31f3ec84ef474b402dc96405e75de389506f43484815ee36470be",
+    "artifacts/eight-directions/d1_consistency/guard_before.json": "09376a8260b31f3ec84ef474b402dc96405e75de389506f43484815ee36470be",
+    "artifacts/eight-directions/d1_consistency/protocol.json": "608ec7e240855c39ffb8006ac1042e7c9d73c994ff1da61deb3484bf0c76dfe5",
+    "artifacts/eight-directions/d1_consistency/results.json": "f117a2bc6a6cc67d4a99e2db2afdbc8bf8cc05e6450bb6a5b053d96cb45a93f7",
+    "artifacts/eight-directions/d1_consistency/spending.json": "65484640f2c360a69c8c47221f3c4e7ffc1581a7f1389c4ba2532426a63e3cd7"
+  },
+  "code_sha256": {
+    "experiments/eight_directions/d1_consistency/test_analysis.py": "2e3371d6ffff6064040bccf2753db891c780ff400fc3a90037325fef1a5b6ff5",
+    "experiments/eight_directions/d1_consistency/report.py": "382fc0200dfceea366d1c55e3f621947e9e32999768ca48cb45cf26a4fb990ce",
+    "experiments/eight_directions/d1_consistency/analyze.py": "02f42f44cd7a0731247e097530e5128e117f0864a7cca2d4d3f96f1242374e7b"
+  }
+}
