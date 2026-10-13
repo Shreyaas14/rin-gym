@@ -22,7 +22,9 @@ Start with the [research directions](research/forecasting/research-directions.md
 - Two FIFA matches have verified joins to all three Polymarket regulation-time outcome markets.
 - Spatial observations are event locations, not continuous player or ball tracking. Historical prices do not establish executable fills or publication timing.
 
-The [initial audit reports](research/initial-audit/) preserve scope and limitations. Forecasting experiments and learned simulators are research directions, not completed capabilities in this import.
+The [initial audit reports](research/initial-audit/) preserve scope and limitations. The [forecast replay harness](app/forecast/README.md) adds a Poisson score simulator and a chronological benchmark across 72 group-stage games (39 training, 13 validation, 20 test). The simulator produces home/draw/away probabilities from observed score and time, with optional frozen pregame market initialization.
+
+On the 20 test games, calibrated simulator Brier is 0.3231 versus 0.3300 for live Polymarket. The paired match-bootstrap interval for the difference includes zero, and a two-minute observation delay removes the advantage. This is an inconclusive retrospective result, not evidence of profitable betting. See the [methodology and results](artifacts/forecast-eval/REPORT.md).
 
 ## Run the data pipelines
 

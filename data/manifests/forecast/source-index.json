@@ -1,0 +1,1598 @@
+[
+  {
+    "file": "data/raw/forecast/catalog_0.json",
+    "url": "https://gamma-api.polymarket.com/events?tag_id=102232&closed=true&limit=100&offset=0",
+    "sha256": "ea55d92cf73526dad6702454076afff704ef31092b3434de5b93c4272d97d065",
+    "retrieved_utc": "2026-10-12T21:51:45.708028+00:00"
+  },
+  {
+    "file": "data/raw/forecast/catalog_100.json",
+    "url": "https://gamma-api.polymarket.com/events?tag_id=102232&closed=true&limit=100&offset=100",
+    "sha256": "5445f5cde4fe6668bbc47984c92beeb24347138bde2f95abdd3268edcf2191f5",
+    "retrieved_utc": "2026-10-12T21:51:47.455942+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021440.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-cze-rsa-2026-06-18",
+    "sha256": "398bfcda49719a810c45f517db188eeab620e0d14b4039340a3b161139250891",
+    "retrieved_utc": "2026-10-12T21:49:43.042814+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021443.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-mex-rsa-2026-06-11",
+    "sha256": "277a9716ab717689189527a154fefffd9f9d1c95f91dfb2f1cf51d94fca5c20c",
+    "retrieved_utc": "2026-10-12T21:49:30.971156+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021444.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-cze-mex-2026-06-24",
+    "sha256": "b55075d8a7e1241d27e6d63cb6a4472c1634cebc76aee83c2f3ae6295d00a4db",
+    "retrieved_utc": "2026-10-12T21:49:54.415786+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021448.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-bih-qat-2026-06-24",
+    "sha256": "2b46812099c9a5d4c78ffdcb75b31c0778f57d9a75b9d0a026a1d13fc503452b",
+    "retrieved_utc": "2026-10-12T21:49:53.437995+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021449.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-can-bih-2026-06-12",
+    "sha256": "1e3d2d805c78e0b7e1c15f43946e3644b6def90d35ec04f52ee41ff55985de8e",
+    "retrieved_utc": "2026-10-12T21:49:30.955204+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021450.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-can-qat-2026-06-18",
+    "sha256": "d309cf2a7fe647a64bf5be13c128b7b612d3eb527bd410d7d772f6ea15eb128a",
+    "retrieved_utc": "2026-10-12T21:49:44.342183+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021452.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-mar-hai-2026-06-24",
+    "sha256": "ffd7453b13de85898028a18dd3b4c865dec1785f4509af521c4f8f4e0643a477",
+    "retrieved_utc": "2026-10-12T21:49:53.941959+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021453.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-hai-sco-2026-06-13",
+    "sha256": "abf21d56dcae3a01ed5ffbbdf4f0de53d72c6bbea61557bab3f497e7dee5bc95",
+    "retrieved_utc": "2026-10-12T21:49:34.467720+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021454.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-sco-mar-2026-06-19",
+    "sha256": "fa6c4322d6bafcb279b70c7819a1e263e56f34cf6bd1fc2e60146fad31a19886",
+    "retrieved_utc": "2026-10-12T21:49:44.781287+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021455.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-sco-bra-2026-06-24",
+    "sha256": "6d82422ebe505f46f801a5004dd8b5ac1f1e58c8694dd75ff2a6bc47ced9af18",
+    "retrieved_utc": "2026-10-12T21:49:53.941081+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021456.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-bra-mar-2026-06-13",
+    "sha256": "09c4b3b14c372ed05fabd332a04ece921b45d1c7bedf66b6ad9c412fe454875b",
+    "retrieved_utc": "2026-10-12T21:49:31.917770+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021457.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-bra-hai-2026-06-19",
+    "sha256": "012fd68a36751784e6cf6c04c2c50c3ab29b604dc04990672480f34dc5ed2fde",
+    "retrieved_utc": "2026-10-12T21:49:46.076947+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021458.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-usa-par-2026-06-12",
+    "sha256": "9653e34925ea7ab4d04d5d49f87cc68f90733ade0574f364cead4e32ea591f70",
+    "retrieved_utc": "2026-10-12T21:49:30.990548+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021459.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-tur-usa-2026-06-25",
+    "sha256": "5239e153aff0c4e174fe6688b7b57c4e8299b37e86e36fd363ca3c7a0d8ee916",
+    "retrieved_utc": "2026-10-12T21:49:55.922405+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021460.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-tur-par-2026-06-19",
+    "sha256": "53070a1ba2a3fdc9271c5a59c699ea2f160ac33173cdcdcdb0377ef2376cb1c8",
+    "retrieved_utc": "2026-10-12T21:49:47.442629+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021461.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-par-aus-2026-06-25",
+    "sha256": "90b475ca7fc1f2098dd0b4d3b79040670cb2eebc4c416aefad4b201529c123aa",
+    "retrieved_utc": "2026-10-12T21:49:56.338146+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021462.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-usa-aus-2026-06-19",
+    "sha256": "e1a2d29c92353e3eb4f9b9a7a60875c6520a6ab896a5d077b01b66563ba7da41",
+    "retrieved_utc": "2026-10-12T21:49:44.819272+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021463.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-aus-tur-2026-06-14",
+    "sha256": "224c582354d79e41678a2038eb2e9645e34657f4e8e676d844e7846b185dfc0b",
+    "retrieved_utc": "2026-10-12T21:49:34.652745+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021466.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-ecu-ger-2026-06-25",
+    "sha256": "ae93221172bd6477aad8ec2b1c36bab82ab0b262bcacfd70d92f51731aa4f282",
+    "retrieved_utc": "2026-10-12T21:49:54.912856+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021467.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-civ-ecu-2026-06-14",
+    "sha256": "fdb9f298799e2e0840aeef81f49438b470cd2618f929ab8292bf68fe135680df",
+    "retrieved_utc": "2026-10-12T21:49:37.743203+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021469.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-ger-civ-2026-06-20",
+    "sha256": "c8a486cdc981023961162184659ab090f0261aa8fbb72f14e41b45d42018ed7f",
+    "retrieved_utc": "2026-10-12T21:49:47.820821+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021471.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-jpn-swe-2026-06-25",
+    "sha256": "555a971042ab81ee74cdb7097fe2c1534b4402b3c11c4d091303c2997532c14b",
+    "retrieved_utc": "2026-10-12T21:49:55.473595+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021474.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-swe-tun-2026-06-14",
+    "sha256": "5486410d85b2947b0bd8246b965ab145aebbe29e3e94b3d037eafaf3557873d2",
+    "retrieved_utc": "2026-10-12T21:49:38.294545+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021475.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-tun-jpn-2026-06-21",
+    "sha256": "d8eaa843671beb85fa259301a97edbe681f2902d41015938a4b4b0820fd476e4",
+    "retrieved_utc": "2026-10-12T21:49:48.303423+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021476.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-irn-nzl-2026-06-15",
+    "sha256": "c58d490a83612ca290366310cd0ccea4f1ba3fe1d32a859308df1ad248a25ce3",
+    "retrieved_utc": "2026-10-12T21:49:39.813519+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021477.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-bel-irn-2026-06-21",
+    "sha256": "c8592fd305f593c28151c69fa8c94c46bc258346a510741e45913272265c4021",
+    "retrieved_utc": "2026-10-12T21:49:49.660988+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021478.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-bel-egy-2026-06-15",
+    "sha256": "11742b65b9ac1710b59958ad288b4a00e6309567d11804eaae337f2f5b8cdee4",
+    "retrieved_utc": "2026-10-12T21:49:39.080815+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021479.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-egy-irn-2026-06-26",
+    "sha256": "b978b4db2ab82c57944f50d6cb8c50353fb998606464695f7622d3eb0f91c79e",
+    "retrieved_utc": "2026-10-12T21:49:58.545797+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021480.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-nzl-egy-2026-06-21",
+    "sha256": "0fdba2c1a1a80d9eac57b86f8ca82e8b36d1ab918125196680ba0d17235dbc9b",
+    "retrieved_utc": "2026-10-12T21:49:50.198153+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021481.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-nzl-bel-2026-06-26",
+    "sha256": "280dd47dc095effd7715b946671bfdd16bf86c3f481959f1503888ce3ad96652",
+    "retrieved_utc": "2026-10-12T21:49:58.468993+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021483.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-esp-ksa-2026-06-21",
+    "sha256": "198f504b7fdc2d1b5e31b4479ab3f722ffdf8badc668ea30c9e9b0b9f4aaa40f",
+    "retrieved_utc": "2026-10-12T21:49:48.807846+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021488.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-irq-nor-2026-06-16",
+    "sha256": "17ccd87ef3fdd33dd6c2670f31462f612c04711bba2812a78df1348eaa36b1ab",
+    "retrieved_utc": "2026-10-12T21:49:40.199132+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021489.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-nor-fra-2026-06-26",
+    "sha256": "9d58207dfd2995880f829de88bfa0504041792f7db5968ddfb2e583ec0c863cf",
+    "retrieved_utc": "2026-10-12T21:49:56.551775+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021490.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-fra-sen-2026-06-16",
+    "sha256": "ac4ebb7a44db65b617fc74fe6437bbb0c1e08c49fcd91d74c1fb7af098f1de04",
+    "retrieved_utc": "2026-10-12T21:49:40.072008+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021491.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-nor-sen-2026-06-22",
+    "sha256": "bf8ada182002de73a0659cec673c5e60f407ada0f59851def617a507efe1ec01",
+    "retrieved_utc": "2026-10-12T21:49:51.456990+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021492.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-fra-irq-2026-06-22",
+    "sha256": "6b48f92780fdfb950f507ecdbf915652327a4b46439d54d57a47c92df6c222f5",
+    "retrieved_utc": "2026-10-12T21:49:50.645015+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021493.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-sen-irq-2026-06-26",
+    "sha256": "61a331baf9be6d5545e11bed516e9c1c5b35b224e065b2817382571d37316227",
+    "retrieved_utc": "2026-10-12T21:49:57.476673+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021494.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-arg-aut-2026-06-22",
+    "sha256": "e78bba25cbb86a001ab2668a17fdb3c73cfbd444cce29944e7ea3987a119f718",
+    "retrieved_utc": "2026-10-12T21:49:50.222515+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021495.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-jor-arg-2026-06-27",
+    "sha256": "47577831a0dd1e80481826ef88ea664489ca50063ead699334f75d1e68791b5f",
+    "retrieved_utc": "2026-10-12T21:50:00.328113+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021496.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-arg-alg-2026-06-16",
+    "sha256": "8c8bad5f56b63f9111feb709d3f7e3dc146a68dfa5734ba4e45c82517e612612",
+    "retrieved_utc": "2026-10-12T21:49:41.071638+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021497.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-alg-aut-2026-06-27",
+    "sha256": "a983d60acf3b70fd9f3b417dfe7b62cca6ea303c6e69ec849b6ef9948036fdef",
+    "retrieved_utc": "2026-10-12T21:50:00.313435+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021498.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-aut-jor-2026-06-17",
+    "sha256": "20d5aaf801e2fa106d5a90a83b071aaededde8c0cb744aa5f3744d0fe87f0875",
+    "retrieved_utc": "2026-10-12T21:49:42.082630+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021499.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-jor-alg-2026-06-22",
+    "sha256": "d667686538e3e91627d52d701ce6bf6bb50a6a90960902df65bc2dcd8d2d0e64",
+    "retrieved_utc": "2026-10-12T21:49:52.059474+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021504.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-uzb-col-2026-06-17",
+    "sha256": "63d3bab9f9e60d792261b9783f157e2bd567f05793f6d48001ad7e245c8e05eb",
+    "retrieved_utc": "2026-10-12T21:49:42.953672+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021506.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-eng-gha-2026-06-23",
+    "sha256": "7cdc7860116148958c1cb612643fedfcafc3c99522ed6ba67c54c0d93607074b",
+    "retrieved_utc": "2026-10-12T21:49:52.540294+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021508.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-pan-eng-2026-06-27",
+    "sha256": "e38d52df527dfa42b0ebe5f51705134adb64a5795b915d8607996964d9c01887",
+    "retrieved_utc": "2026-10-12T21:49:59.000051+00:00"
+  },
+  {
+    "file": "data/raw/forecast/event_400021510.json",
+    "url": "https://gamma-api.polymarket.com/events/slug/fifwc-gha-pan-2026-06-17",
+    "sha256": "3c08c71757a89333d5727dc88f3b5bd85c3464352f7a29b9ecf51ce4a71df7ad",
+    "retrieved_utc": "2026-10-12T21:49:42.902084+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897034.json",
+    "url": "https://clob.polymarket.com/prices-history?market=20779063998268474490699884714808310289659170477959115489741275295270359962039&startTs=1781200800&endTs=1781211932&fidelity=1",
+    "sha256": "1b0cd6b954ee6952c12d150c1941f772c8220846f8b80418dc756cde003377aa",
+    "retrieved_utc": "2026-10-12T21:49:31.571018+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897035.json",
+    "url": "https://clob.polymarket.com/prices-history?market=11634144673803325466643188834337300341803737096067092239834760823912726000274&startTs=1781200800&endTs=1781211932&fidelity=1",
+    "sha256": "8bf9c6a0a39639872d7077cdb6bb6a31a0acdf7f47fce0f371edfd47022ecd94",
+    "retrieved_utc": "2026-10-12T21:49:31.987213+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897036.json",
+    "url": "https://clob.polymarket.com/prices-history?market=115307860962719805060784163204351769077176612029040401546976102705811910754396&startTs=1781200800&endTs=1781211932&fidelity=1",
+    "sha256": "8986cfc3cef0e1861f2e9308fefd315ef505e6b377507c59d8f8b73304a8b9d3",
+    "retrieved_utc": "2026-10-12T21:49:32.821601+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897037.json",
+    "url": "https://clob.polymarket.com/prices-history?market=52684921837049562400037353238223049293166344115053393981883920285480538360105&startTs=1781226000&endTs=1781236647&fidelity=1",
+    "sha256": "497a065444c7775031a857af66a7fe86813ea6267b6a870d07ee23cac1693dc8",
+    "retrieved_utc": "2026-10-12T21:51:50.222263+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897038.json",
+    "url": "https://clob.polymarket.com/prices-history?market=49396156480688770869378179133906823616889681020710122888263516916801618839975&startTs=1781226000&endTs=1781236647&fidelity=1",
+    "sha256": "906bb983647db9a9ac9e61b360e14f00ce40cb810261fbfd0252e44c3d881859",
+    "retrieved_utc": "2026-10-12T21:51:50.753286+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897039.json",
+    "url": "https://clob.polymarket.com/prices-history?market=77191186536909014586922022659322569099273509749066699749214305589630021269429&startTs=1781226000&endTs=1781236647&fidelity=1",
+    "sha256": "8cc7accced397cef8ca6c2485b545f8b3d9a6375a09369f6aad543b6816e6a03",
+    "retrieved_utc": "2026-10-12T21:51:51.202095+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897040.json",
+    "url": "https://clob.polymarket.com/prices-history?market=94742454704773778167568688948405770414791647129006368131301932311609594298387&startTs=1781287200&endTs=1781297978&fidelity=1",
+    "sha256": "85f74e5dd20efed75f21a804328ed84f3c9f9c4c67fd2e951252ce1c3704bcba",
+    "retrieved_utc": "2026-10-12T21:49:31.504263+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897041.json",
+    "url": "https://clob.polymarket.com/prices-history?market=22172667310022772208699373598096867628027942277851933544696144873879741224440&startTs=1781287200&endTs=1781297978&fidelity=1",
+    "sha256": "25be366f86eb9915bc0c564b5a02a4a0309fb85e20e2d330e8f3a0989c499714",
+    "retrieved_utc": "2026-10-12T21:49:31.971197+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897042.json",
+    "url": "https://clob.polymarket.com/prices-history?market=74187637053502514449598313026757559914734686113697608141302796666649587118979&startTs=1781287200&endTs=1781297978&fidelity=1",
+    "sha256": "f893c6ad79fb7ce24367d83a8784f066d32429d6b5c495671aa7bf49dae63f1b",
+    "retrieved_utc": "2026-10-12T21:49:32.821504+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897043.json",
+    "url": "https://clob.polymarket.com/prices-history?market=1053697017401072331517873943000159665286188444438499834342450614809920055961&startTs=1781308800&endTs=1781319876&fidelity=1",
+    "sha256": "cd8a2fd9b94ac673bb46bf8735833468526d39e499734363d9801f40c2013068",
+    "retrieved_utc": "2026-10-12T21:49:31.491453+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897044.json",
+    "url": "https://clob.polymarket.com/prices-history?market=21443346281887816581515410030230333606155013108124688608906518902705450285763&startTs=1781308800&endTs=1781319876&fidelity=1",
+    "sha256": "d0515e1f78570be62af0c8bd33c8b3d2ab6e5049ccf7d6b2de8be30527ec1379",
+    "retrieved_utc": "2026-10-12T21:49:31.900804+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897045.json",
+    "url": "https://clob.polymarket.com/prices-history?market=61818169216515152409825014521551448207788109103141434403938162619298245828983&startTs=1781308800&endTs=1781319876&fidelity=1",
+    "sha256": "dba2c5a838ab5e32f75ec65b8df28cf0e983745d56bdeba5ad88439bb0248125",
+    "retrieved_utc": "2026-10-12T21:49:32.473553+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897046.json",
+    "url": "https://clob.polymarket.com/prices-history?market=87801481723150143095656392688212600042782229576502495783917440071310994656016&startTs=1781373600&endTs=1781384786&fidelity=1",
+    "sha256": "fce91c97121b91c02fc983475b7c53d422d0c67645455c6380a53d7173cd2bd6",
+    "retrieved_utc": "2026-10-12T21:51:50.175965+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897047.json",
+    "url": "https://clob.polymarket.com/prices-history?market=84958042326881081629130565587739718054426374664464529827722909775907948361787&startTs=1781373600&endTs=1781384786&fidelity=1",
+    "sha256": "d6e8249e452ccc79ffa98e165ebcb0fdd1b5c179c36347db14ab8357866ce1da",
+    "retrieved_utc": "2026-10-12T21:51:50.673400+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897048.json",
+    "url": "https://clob.polymarket.com/prices-history?market=66066640081366099233010777058886646300763486736056057848435195209438713673265&startTs=1781373600&endTs=1781384786&fidelity=1",
+    "sha256": "7d099891244c82c76f6bc35aa7882f1a0619895b0b87bb44495f955cf4271033",
+    "retrieved_utc": "2026-10-12T21:51:51.062174+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897049.json",
+    "url": "https://clob.polymarket.com/prices-history?market=105492577477219588134242978490999229511934661984574714868659540712157271273221&startTs=1781384400&endTs=1781395630&fidelity=1",
+    "sha256": "a1d110e0f870ece23dac26c94dda588b725db84531e55919a29dcfb45a4ae4be",
+    "retrieved_utc": "2026-10-12T21:49:32.581687+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897050.json",
+    "url": "https://clob.polymarket.com/prices-history?market=28514355574680631350512719849093140985552525989838015190207068633860196282876&startTs=1781384400&endTs=1781395630&fidelity=1",
+    "sha256": "ed160e736987263d4d398ce33c35588b1cc47aa3b20785ff2826c09cc771af56",
+    "retrieved_utc": "2026-10-12T21:49:34.635286+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897051.json",
+    "url": "https://clob.polymarket.com/prices-history?market=75153795433255397954364392370254909445351765396945509274877503457182682318715&startTs=1781384400&endTs=1781395630&fidelity=1",
+    "sha256": "cbe9f3b343edf1252ec4bb7a171205b24e3ab96752499b54dd922dcb765b51cd",
+    "retrieved_utc": "2026-10-12T21:49:36.224161+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897052.json",
+    "url": "https://clob.polymarket.com/prices-history?market=56618826743104010959172273659413209775316700999254592964223431451553591299446&startTs=1781395200&endTs=1781406254&fidelity=1",
+    "sha256": "054abec3af5586774b7695ff02ba6ec639ca2b2980cc78bcfc6a3754950c6de5",
+    "retrieved_utc": "2026-10-12T21:49:36.266325+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897053.json",
+    "url": "https://clob.polymarket.com/prices-history?market=24186604708120375516053204147615433593913499983599603531568767418358336827296&startTs=1781395200&endTs=1781406254&fidelity=1",
+    "sha256": "e10d9ac47e3caa20160031c1a3d29b18ca7d03590c74bd938c8b3793389d41ee",
+    "retrieved_utc": "2026-10-12T21:49:37.704375+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897054.json",
+    "url": "https://clob.polymarket.com/prices-history?market=38620007602877950561785055194486422431765048561026651240000808038396318703092&startTs=1781395200&endTs=1781406254&fidelity=1",
+    "sha256": "dde60cad6e13104b900ba8cf3585d1bc9259aed939374cfe2376a20ae01db212",
+    "retrieved_utc": "2026-10-12T21:49:38.604477+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897055.json",
+    "url": "https://clob.polymarket.com/prices-history?market=45307929350007847491024268648960623527752242214197163455465935647967776740420&startTs=1781406000&endTs=1781416709&fidelity=1",
+    "sha256": "68348111c73758cf2826938e7bb417103b016905e0ef3d62a98bcee56000fee8",
+    "retrieved_utc": "2026-10-12T21:49:36.220954+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897056.json",
+    "url": "https://clob.polymarket.com/prices-history?market=6662878441952849446233566648423545530864333832885592059537972358106179673000&startTs=1781406000&endTs=1781416709&fidelity=1",
+    "sha256": "63d74da643645724262c7f097a4c29e7eea610640e7a229a7d882466ac10d544",
+    "retrieved_utc": "2026-10-12T21:49:37.826413+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897057.json",
+    "url": "https://clob.polymarket.com/prices-history?market=75303319363351541204962251598715680468515536085970822119844634963431663113508&startTs=1781406000&endTs=1781416709&fidelity=1",
+    "sha256": "8a2aad07df37e82d68219f57369dc29c503fd1d3b7e17665faa07f28c08c1d34",
+    "retrieved_utc": "2026-10-12T21:49:38.458815+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897058.json",
+    "url": "https://clob.polymarket.com/prices-history?market=80258038883060787104700033663206548991173635281684057844048254140005841868705&startTs=1781452800&endTs=1781463642&fidelity=1",
+    "sha256": "43721882309f61ed7ec39e6315d3a92f9335d87627d89f58f63c41f478da3e21",
+    "retrieved_utc": "2026-10-12T21:51:50.176181+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897059.json",
+    "url": "https://clob.polymarket.com/prices-history?market=43065699114218738643061430368238869232700747238329067809024727726995177258597&startTs=1781452800&endTs=1781463642&fidelity=1",
+    "sha256": "b9dde0bcecab2fed1bd0cdedef9609895f4cd5eae3032c9536283e5139e46369",
+    "retrieved_utc": "2026-10-12T21:51:50.617042+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897060.json",
+    "url": "https://clob.polymarket.com/prices-history?market=84520506461080918199836241264297202134105253634264892405638380867421157597093&startTs=1781452800&endTs=1781463642&fidelity=1",
+    "sha256": "4265522d8e819aa86eedd556646a662121cdb359e1bdaca2a0a3734b97eea8b6",
+    "retrieved_utc": "2026-10-12T21:51:51.120162+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897061.json",
+    "url": "https://clob.polymarket.com/prices-history?market=46118045327286643463479614908512136607324773588723756546332480247027286666715&startTs=1781463600&endTs=1781474233&fidelity=1",
+    "sha256": "c97ab00c77932a55b8a6fc651e97bc0e7ffac10ddebbf35579c045941c81d9b9",
+    "retrieved_utc": "2026-10-12T21:51:50.176108+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897062.json",
+    "url": "https://clob.polymarket.com/prices-history?market=45105978043736940399020460688923720821814878879331783138334562105702459648812&startTs=1781463600&endTs=1781474233&fidelity=1",
+    "sha256": "a5aa1904cdb3fc7881f4b01f10a5c31eb00ce397a042b91ee4befa704db3ec54",
+    "retrieved_utc": "2026-10-12T21:51:50.856830+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897063.json",
+    "url": "https://clob.polymarket.com/prices-history?market=51849195089345361433940393336005306019563641384117823557920274041538875387918&startTs=1781463600&endTs=1781474233&fidelity=1",
+    "sha256": "e48912d2ed73e8c10ed5206855c4c03a47441d60716a9d825be4b24db2ef2182",
+    "retrieved_utc": "2026-10-12T21:51:51.359820+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897064.json",
+    "url": "https://clob.polymarket.com/prices-history?market=97954339861337592198517897825570585108397895633529524888621528267394350049120&startTs=1781474400&endTs=1781485571&fidelity=1",
+    "sha256": "2a8e4b0ad7c4ddbc0677ef74dbd4b769ecf23aac696011b4d2b948bfab90f55b",
+    "retrieved_utc": "2026-10-12T21:49:38.432780+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897065.json",
+    "url": "https://clob.polymarket.com/prices-history?market=51076507708274140524034686501213174543010993864036676754773732528820025061669&startTs=1781474400&endTs=1781485571&fidelity=1",
+    "sha256": "e8fe39d8c27a46c9783304fadda639cc9ee00c2d2beca818a22b4d992aa47a43",
+    "retrieved_utc": "2026-10-12T21:49:38.897200+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897066.json",
+    "url": "https://clob.polymarket.com/prices-history?market=28508563298912772074214719307109307518904085025750423135797235005006783326548&startTs=1781474400&endTs=1781485571&fidelity=1",
+    "sha256": "6fcdaae6d570c5e49f4bc3c2b39b21f28f9f6eb670007da88ab14097afde3963",
+    "retrieved_utc": "2026-10-12T21:49:39.641488+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897067.json",
+    "url": "https://clob.polymarket.com/prices-history?market=77891685052397355147816140430897431230743681776824155461036740561521945442239&startTs=1781485200&endTs=1781495947&fidelity=1",
+    "sha256": "317a03dd8e02aa6f88121deeb245e4e27d614bb9871025c3b45220de15d0d435",
+    "retrieved_utc": "2026-10-12T21:49:38.760712+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897068.json",
+    "url": "https://clob.polymarket.com/prices-history?market=59191041992708759461556734329410471789809724249248263993334423672893905512717&startTs=1781485200&endTs=1781495947&fidelity=1",
+    "sha256": "d2214b0f5c6c087cf72a257f6a3fa0e22c052293a718c1f1f3fdf92a36a2cc84",
+    "retrieved_utc": "2026-10-12T21:49:39.282645+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897069.json",
+    "url": "https://clob.polymarket.com/prices-history?market=83899205056028320634506792090435502639229370708908873019388029731945043477417&startTs=1781485200&endTs=1781495947&fidelity=1",
+    "sha256": "82f4ed60bb5add8692a0cb5b40d146be59c59f3718470eee855c783bdd284256",
+    "retrieved_utc": "2026-10-12T21:49:39.720319+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897070.json",
+    "url": "https://clob.polymarket.com/prices-history?market=3612393435281522540359979834655761894598376313180591710384535406994913064931&startTs=1781535600&endTs=1781546300&fidelity=1",
+    "sha256": "ddf2f067bd9cc2d1499c4b9fc2ab335123d4f8ef46ae9e5a8190f22a0d156b92",
+    "retrieved_utc": "2026-10-12T21:51:51.588296+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897071.json",
+    "url": "https://clob.polymarket.com/prices-history?market=83072215710101175871081563765894926731657038656927257285040774204247563097609&startTs=1781535600&endTs=1781546300&fidelity=1",
+    "sha256": "5face216ceea823b3de9ca03af25a0b841e46a8a15369fd47e28db78bd875954",
+    "retrieved_utc": "2026-10-12T21:51:52.046179+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897072.json",
+    "url": "https://clob.polymarket.com/prices-history?market=85135836978485179530031184162395126176783303519695757365796392230161124240788&startTs=1781535600&endTs=1781546300&fidelity=1",
+    "sha256": "9ce546e720591485a88598b8f5a5e87cb405f18cb4f77bfaf4256256961ecb00",
+    "retrieved_utc": "2026-10-12T21:51:52.821689+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897073.json",
+    "url": "https://clob.polymarket.com/prices-history?market=5699266164849713169703648234886411053444418385408086203990916861286572010447&startTs=1781546400&endTs=1781557176&fidelity=1",
+    "sha256": "5f0b284cbf22d922f0e8a83e7415af71b8b37da1f4fe7d7beff0639f843b725f",
+    "retrieved_utc": "2026-10-12T21:49:39.586453+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897074.json",
+    "url": "https://clob.polymarket.com/prices-history?market=11945055302217621784910045410746746975726300882345977028546086393834748493487&startTs=1781546400&endTs=1781557176&fidelity=1",
+    "sha256": "0eee57fe2c420bf12c40d299ba7d2cad9972d5358a8fefe2520e807ef0bd77c4",
+    "retrieved_utc": "2026-10-12T21:49:39.992620+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897075.json",
+    "url": "https://clob.polymarket.com/prices-history?market=71175597030142754954710752283935666239163672397586595724135510152247112429550&startTs=1781546400&endTs=1781557176&fidelity=1",
+    "sha256": "27e8fc4a18733a1b5d1b940cf0e4a4db7c3fd943a973ccf52b863239d902bac8",
+    "retrieved_utc": "2026-10-12T21:49:40.365638+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897076.json",
+    "url": "https://clob.polymarket.com/prices-history?market=108315368637387262892957153811435904912510274825529229627147648105187493645849&startTs=1781557200&endTs=1781568356&fidelity=1",
+    "sha256": "74d10d812fcb28a6e93a6338b2cd66c8b6fb07432bcf796a9a47b893116da882",
+    "retrieved_utc": "2026-10-12T21:51:51.611274+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897077.json",
+    "url": "https://clob.polymarket.com/prices-history?market=6109686258397883114797998126787263049884408157800816627628909717221408645880&startTs=1781557200&endTs=1781568356&fidelity=1",
+    "sha256": "39d6612d6fa2be01cce426e77031d47e83db4b8f6e62b8fb8559ea6bfd561785",
+    "retrieved_utc": "2026-10-12T21:51:52.068478+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897078.json",
+    "url": "https://clob.polymarket.com/prices-history?market=67375566273017733280418349633635206252639538869301457434188127341791609355341&startTs=1781557200&endTs=1781568356&fidelity=1",
+    "sha256": "f78d79626a0a660685e531d90694095b44ddf4ca106f6019b3606e511e68ad66",
+    "retrieved_utc": "2026-10-12T21:51:52.793548+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897079.json",
+    "url": "https://clob.polymarket.com/prices-history?market=98258440478094610167729510800284333090952142769785486649204893493792445830714&startTs=1781568000&endTs=1781579091&fidelity=1",
+    "sha256": "157dfaa2aaea8e0bf3147e090e8749a7900017892a884bcefbe6f95f4b031a08",
+    "retrieved_utc": "2026-10-12T21:49:40.483498+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897080.json",
+    "url": "https://clob.polymarket.com/prices-history?market=81680331983186046997381955280648457847630354885398475637844800869325464253779&startTs=1781568000&endTs=1781579091&fidelity=1",
+    "sha256": "3c68c1ec4a58228485e95f9e07f27627c605f111b53a59ce1fba5394c022f775",
+    "retrieved_utc": "2026-10-12T21:49:41.269049+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897081.json",
+    "url": "https://clob.polymarket.com/prices-history?market=55137687241393541361565001012865874102902217097342494894791514463933071353645&startTs=1781568000&endTs=1781579091&fidelity=1",
+    "sha256": "22af1bb4f970c59223dc4b535ed522fe3118180de9c057ebeec4ce153e4cbb71",
+    "retrieved_utc": "2026-10-12T21:49:41.697140+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897082.json",
+    "url": "https://clob.polymarket.com/prices-history?market=10541943766977992250149902475024620982770128161688998706490955791758263657916&startTs=1781632800&endTs=1781643973&fidelity=1",
+    "sha256": "8d6b2b7ab27d4b0537607cb51b7588fa561961501d8954b032a7b71ddbbd2b26",
+    "retrieved_utc": "2026-10-12T21:49:40.557298+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897083.json",
+    "url": "https://clob.polymarket.com/prices-history?market=1558773458881829509791065143596154799682035256543521797575065685839455307034&startTs=1781632800&endTs=1781643973&fidelity=1",
+    "sha256": "6fdbb9921c753c03e95fcd5fab34a4c8867146de418cf4e3a7fe8501e4e60203",
+    "retrieved_utc": "2026-10-12T21:49:41.296838+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897084.json",
+    "url": "https://clob.polymarket.com/prices-history?market=68110647781535190797837703927589470479832774174814667833732459898847586979826&startTs=1781632800&endTs=1781643973&fidelity=1",
+    "sha256": "c17c1bc250042c1da5554295e37e63bd52411f3db99d1ec971a3a60a80465b9a",
+    "retrieved_utc": "2026-10-12T21:49:42.001598+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897085.json",
+    "url": "https://clob.polymarket.com/prices-history?market=73942127055672070093762091576846712862472894975200730653926386031270714825841&startTs=1781643600&endTs=1781654548&fidelity=1",
+    "sha256": "02992df13aa4762da9e8f4b35703a08879787838d8b60f9036fb0ab6bf2315eb",
+    "retrieved_utc": "2026-10-12T21:49:40.656219+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897086.json",
+    "url": "https://clob.polymarket.com/prices-history?market=33611416347839198763745720789541666193855030736143138228415524192683636379208&startTs=1781643600&endTs=1781654548&fidelity=1",
+    "sha256": "b67aff99f4ab339b7cc3ac76a8172cbc5d53d45149c2b340779825d234b7e251",
+    "retrieved_utc": "2026-10-12T21:49:41.506019+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897087.json",
+    "url": "https://clob.polymarket.com/prices-history?market=60561627760165737508115128719081450929284195423420376549887420810076954490283&startTs=1781643600&endTs=1781654548&fidelity=1",
+    "sha256": "b3ef29972e29c394aecf543c7e02ff40d2333573fd329240a2cf827114378ad0",
+    "retrieved_utc": "2026-10-12T21:49:42.068719+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897088.json",
+    "url": "https://clob.polymarket.com/prices-history?market=7496871387824498705150337097986995704782987980926026827618928384721521953608&startTs=1781654400&endTs=1781665291&fidelity=1",
+    "sha256": "f8754b803b976bc7da2816d604cd1d0aad9f9747b4232b924521add7a0858ea2",
+    "retrieved_utc": "2026-10-12T21:49:41.599014+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897089.json",
+    "url": "https://clob.polymarket.com/prices-history?market=72072713045468216718276752473321256680046799783934448189111366264812474363575&startTs=1781654400&endTs=1781665291&fidelity=1",
+    "sha256": "ab017ee93f7887b123601c8897771d4a830d44b2ab3ce51d556b73c6f5ef7db4",
+    "retrieved_utc": "2026-10-12T21:49:42.063523+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897090.json",
+    "url": "https://clob.polymarket.com/prices-history?market=83723975923165835008525905491690092591784814181150430498971361513206559812229&startTs=1781654400&endTs=1781665291&fidelity=1",
+    "sha256": "778383469dadd6d6b1d324e7247f21bbd5c5b36e82ab332ab64272c5e95f897f",
+    "retrieved_utc": "2026-10-12T21:49:42.481460+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897091.json",
+    "url": "https://clob.polymarket.com/prices-history?market=20499437472769847560241881624039508074540415562884114297532631910880371793587&startTs=1781665200&endTs=1781676598&fidelity=1",
+    "sha256": "84db39f6eac972fe2a2f2ad22140e7629ad3940c055a7ac9f8d6ddcdb599f1b9",
+    "retrieved_utc": "2026-10-12T21:49:42.560290+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897092.json",
+    "url": "https://clob.polymarket.com/prices-history?market=10941081591300181699750371173224077143006238150019210682727492628846716482576&startTs=1781665200&endTs=1781676598&fidelity=1",
+    "sha256": "0fd385c4bb12f7f6fb09652fbea9b650bca9a658db06ba111339b0b211114782",
+    "retrieved_utc": "2026-10-12T21:49:42.974399+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897093.json",
+    "url": "https://clob.polymarket.com/prices-history?market=10127485596146788190022715162162490005929142831190335412854285290235849822876&startTs=1781665200&endTs=1781676598&fidelity=1",
+    "sha256": "92af6aebe97abdd244e544b164cdfcff5b74b9bcbbd4c5f26c841dee36b39ed3",
+    "retrieved_utc": "2026-10-12T21:49:43.417409+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897094.json",
+    "url": "https://clob.polymarket.com/prices-history?market=76071109489406808599878692125264766321676001700733380917373465772841855210643&startTs=1781712000&endTs=1781722854&fidelity=1",
+    "sha256": "aff081092a00ffb545a61db319afa3fc9801376e581baa6950afc7233591932b",
+    "retrieved_utc": "2026-10-12T21:51:51.669538+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897095.json",
+    "url": "https://clob.polymarket.com/prices-history?market=2328333301741750345417630454121106244367883081134709887163965516147303610120&startTs=1781712000&endTs=1781722854&fidelity=1",
+    "sha256": "1b1ca41d215ce0d50b16f64f5362624ae956b801cc097ce64757e3a6f2cd193c",
+    "retrieved_utc": "2026-10-12T21:51:52.144616+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897096.json",
+    "url": "https://clob.polymarket.com/prices-history?market=59454896622130760276442490722222126894150925046963444585060045915889624278803&startTs=1781712000&endTs=1781722854&fidelity=1",
+    "sha256": "747c9ee36416525e75c78a67a5bb27e2699856c9a1d4930a23d53a8865c727cc",
+    "retrieved_utc": "2026-10-12T21:51:52.774861+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897097.json",
+    "url": "https://clob.polymarket.com/prices-history?market=45513813860398961340723481590130352932611791552209098368268600222240572304551&startTs=1781722800&endTs=1781733750&fidelity=1",
+    "sha256": "30b5aa524eba3c4ba648626ca9928d8de99cd173cd1b4e9a48d4b17eb388e73c",
+    "retrieved_utc": "2026-10-12T21:51:51.846419+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897098.json",
+    "url": "https://clob.polymarket.com/prices-history?market=92623193147229968536967595026209377290569876277152414806208806159046880692537&startTs=1781722800&endTs=1781733750&fidelity=1",
+    "sha256": "cf21ad895facc290bc79dbb833b61a15fedacd1307ae8644f3d3cc789426f8c5",
+    "retrieved_utc": "2026-10-12T21:51:52.451113+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897099.json",
+    "url": "https://clob.polymarket.com/prices-history?market=55443738818158231803517291185008080654932985451404315852703585757411667902597&startTs=1781722800&endTs=1781733750&fidelity=1",
+    "sha256": "9a0ae5959881ee2bd511eb8dc701eba31407f215f85348a262ec4099921e360a",
+    "retrieved_utc": "2026-10-12T21:51:53.289139+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897100.json",
+    "url": "https://clob.polymarket.com/prices-history?market=4583065636155233526779653080435458405485537158452842777526478181105245518840&startTs=1781733600&endTs=1781744706&fidelity=1",
+    "sha256": "4acc2ce638c6d866181a38fd52a31ca10befba4ec4c0fa9a4f840ed20fe9f600",
+    "retrieved_utc": "2026-10-12T21:49:43.382549+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897101.json",
+    "url": "https://clob.polymarket.com/prices-history?market=61203648901328553286317484050722946819387883550381338646535487039149670812946&startTs=1781733600&endTs=1781744706&fidelity=1",
+    "sha256": "b4ae2ddd0d4a3a1de2b5a9fe22d4542df497d1ffd248ed3ec28dae97b92f9c79",
+    "retrieved_utc": "2026-10-12T21:49:43.767489+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897102.json",
+    "url": "https://clob.polymarket.com/prices-history?market=98450368978745606301240607141388168410536324949220985931158206007509106995457&startTs=1781733600&endTs=1781744706&fidelity=1",
+    "sha256": "7c337b63c555c12be4dac4f314851e673206bf8c5af17ad4bcd74684e39effc7",
+    "retrieved_utc": "2026-10-12T21:49:44.273838+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897103.json",
+    "url": "https://clob.polymarket.com/prices-history?market=42349324891891531052261785579549036042703894030589864369388972549681820562082&startTs=1781744400&endTs=1781755408&fidelity=1",
+    "sha256": "c25d9628767014985eb8923f919b8a94d5f96100b5dfdd26eb8fdf48c574b668",
+    "retrieved_utc": "2026-10-12T21:49:43.407325+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897104.json",
+    "url": "https://clob.polymarket.com/prices-history?market=29696609003438481519695227807182574735991421576025755342707611041941932867266&startTs=1781744400&endTs=1781755408&fidelity=1",
+    "sha256": "3974d7b88b0a96363a9e2e0ef878e9138a4f3ea3ceffe4c78d02bc94e092b817",
+    "retrieved_utc": "2026-10-12T21:49:43.898907+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897105.json",
+    "url": "https://clob.polymarket.com/prices-history?market=107303881689780116979934419713652545873528717512161697004408881489729317049047&startTs=1781744400&endTs=1781755408&fidelity=1",
+    "sha256": "f01371c97288cda5faa6c49648cd09db39fa79da17988631754c71f742fe8b1a",
+    "retrieved_utc": "2026-10-12T21:49:44.378526+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897106.json",
+    "url": "https://clob.polymarket.com/prices-history?market=37088846718363125743947103938325144949409419304219830474975395227343762118615&startTs=1781794800&endTs=1781805624&fidelity=1",
+    "sha256": "e38087c6752de775058a29062e35dcf852cf77cac13cefe739e6e153130b3b88",
+    "retrieved_utc": "2026-10-12T21:49:43.450087+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897107.json",
+    "url": "https://clob.polymarket.com/prices-history?market=25547941541163379167027433013111695108245471419110558598651133766324877924515&startTs=1781794800&endTs=1781805624&fidelity=1",
+    "sha256": "eb8e0168e84c1d2da0edb2ec03cd8a8aa796943f3bfe88529eebf876b9566592",
+    "retrieved_utc": "2026-10-12T21:49:43.910957+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897108.json",
+    "url": "https://clob.polymarket.com/prices-history?market=29904085738634800807850286108673899231278214025131538572228243310371586316124&startTs=1781794800&endTs=1781805624&fidelity=1",
+    "sha256": "a90fc16a4a241649d0e790d1791bd7d2020b29aca552afb3253eea0d0240680d",
+    "retrieved_utc": "2026-10-12T21:49:44.339769+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897109.json",
+    "url": "https://clob.polymarket.com/prices-history?market=106591280142630626115724651117201657682325101150171422307265130569697670708657&startTs=1781805600&endTs=1781816315&fidelity=1",
+    "sha256": "1743317d0d681f911db47a4e3ef0d8ffb33d54cc7261d188fb7a54aa6a18254b",
+    "retrieved_utc": "2026-10-12T21:51:53.558770+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897110.json",
+    "url": "https://clob.polymarket.com/prices-history?market=32304224949031261019227504618353662335004029148594248531414917789977278987468&startTs=1781805600&endTs=1781816315&fidelity=1",
+    "sha256": "e3efa3e9fb605546d6c3b86599db3656f5044d4ffedd9ff07349af7d6044423e",
+    "retrieved_utc": "2026-10-12T21:51:54.100759+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897111.json",
+    "url": "https://clob.polymarket.com/prices-history?market=66489726367925595502503158446006075400401621519147621264189323965755835894613&startTs=1781805600&endTs=1781816315&fidelity=1",
+    "sha256": "21fd26b1ded67793362f044916d7bd05499247972cb0b785650d193b106608c8",
+    "retrieved_utc": "2026-10-12T21:51:54.598126+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897112.json",
+    "url": "https://clob.polymarket.com/prices-history?market=72434460309427898004674696764153066565237298072408402131497058701161364650505&startTs=1781816400&endTs=1781827403&fidelity=1",
+    "sha256": "5f5d53e2b7f501a4401cdafcd35b04ae8affe01e63975108e684dbae6bcfbbfb",
+    "retrieved_utc": "2026-10-12T21:49:44.781121+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897113.json",
+    "url": "https://clob.polymarket.com/prices-history?market=20349696283279625969179471671979665049068091025127882278606364235785111743882&startTs=1781816400&endTs=1781827403&fidelity=1",
+    "sha256": "e556dde9b249c59c6d05c3704d4051c1c459d046d1bf63e1c20561ca6c4db861",
+    "retrieved_utc": "2026-10-12T21:49:45.225645+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897114.json",
+    "url": "https://clob.polymarket.com/prices-history?market=12449312449220028732329011560175624873500857403580896927070982513454645477597&startTs=1781816400&endTs=1781827403&fidelity=1",
+    "sha256": "b96dfe605653b2e320e6f7e25b18b42183382b0eb109f3d5e8acd4d4ef02a9a1",
+    "retrieved_utc": "2026-10-12T21:49:47.031004+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897115.json",
+    "url": "https://clob.polymarket.com/prices-history?market=84622337225923971667543390025202237459542894380445135038857655043890030217262&startTs=1781827200&endTs=1781837888&fidelity=1",
+    "sha256": "b5fe857fbe20634c71829999150793fac78ae2f194628f8e4a7b97e1e8e00ab7",
+    "retrieved_utc": "2026-10-12T21:51:53.556868+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897116.json",
+    "url": "https://clob.polymarket.com/prices-history?market=51958120300750633024043231741875227303543295888125840580124643399830654381246&startTs=1781827200&endTs=1781837888&fidelity=1",
+    "sha256": "319750e6d214007912fc8f63b30b2062120cc2714dfbacc971001c613a95eff3",
+    "retrieved_utc": "2026-10-12T21:51:54.093851+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897117.json",
+    "url": "https://clob.polymarket.com/prices-history?market=40559900670015709472472801511880289852513956415696043408438494025364180866146&startTs=1781827200&endTs=1781837888&fidelity=1",
+    "sha256": "f4f48c73df392282cf234c7e0e1905afeb5d9e8ceee4d7ae059704e9cb2f6c07",
+    "retrieved_utc": "2026-10-12T21:51:54.581928+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897118.json",
+    "url": "https://clob.polymarket.com/prices-history?market=39108014906147153132558864303811863989716119429482110734018531773663181557097&startTs=1781892000&endTs=1781903145&fidelity=1",
+    "sha256": "5ffe397ca5c12cfa0bddb984bc1cecf84cf04dde0b6991598125242cabfa69f1",
+    "retrieved_utc": "2026-10-12T21:49:45.302951+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897119.json",
+    "url": "https://clob.polymarket.com/prices-history?market=14729379386817258537354006783786102068178286988322042272817558435233867171838&startTs=1781892000&endTs=1781903145&fidelity=1",
+    "sha256": "414eae2fc4374a71abc433b5a5ee04b71c42be81c7eabe1d1b9afd8f029be7a4",
+    "retrieved_utc": "2026-10-12T21:49:46.854062+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897120.json",
+    "url": "https://clob.polymarket.com/prices-history?market=63278746552959073436363985715772152424855372958904540749550690656971780048497&startTs=1781892000&endTs=1781903145&fidelity=1",
+    "sha256": "e70279216635eb6f055e15dc891ebfe30483a871de79f9642e10ef3d2abf284a",
+    "retrieved_utc": "2026-10-12T21:49:47.341756+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897121.json",
+    "url": "https://clob.polymarket.com/prices-history?market=101256141817216466245038151589296191044974050560393587426784474074655264282404&startTs=1781902800&endTs=1781913664&fidelity=1",
+    "sha256": "b0a43269bd8773b9afce48f73126e6b4d29a999946d267c95589cc9463a03b8f",
+    "retrieved_utc": "2026-10-12T21:49:45.439920+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897122.json",
+    "url": "https://clob.polymarket.com/prices-history?market=109269497217299502116676395480596041754607662236964061073622120751625474742107&startTs=1781902800&endTs=1781913664&fidelity=1",
+    "sha256": "8952dcbcd125edc7a5ac38cf16c5605c46d39be8cd4ad4a5ba9916062d9dcdd0",
+    "retrieved_utc": "2026-10-12T21:49:46.856672+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897123.json",
+    "url": "https://clob.polymarket.com/prices-history?market=40791250908933508853723465614961035896557737979546129504169818299128524475478&startTs=1781902800&endTs=1781913664&fidelity=1",
+    "sha256": "173bf632e17775a46c8d6b7bd9083312942e3b94bbf4f0eba6c5ebeb2d2ef7be",
+    "retrieved_utc": "2026-10-12T21:49:47.341589+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897124.json",
+    "url": "https://clob.polymarket.com/prices-history?market=103041090730063233481678246468943921262520375914356653176409396265510672924686&startTs=1781911800&endTs=1781922772&fidelity=1",
+    "sha256": "780cedd32aee442ab0825d3cc5a5fa8e90b4f622c4c5c816e66d204f21e0075b",
+    "retrieved_utc": "2026-10-12T21:49:46.929479+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897125.json",
+    "url": "https://clob.polymarket.com/prices-history?market=44654769333046528346139965331873489889567163297280225286353492828529494504482&startTs=1781911800&endTs=1781922772&fidelity=1",
+    "sha256": "0612ec84cc4b89368ef7c3110f07dd0279a7b1bef474fd321797fad87496f117",
+    "retrieved_utc": "2026-10-12T21:49:47.363146+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897126.json",
+    "url": "https://clob.polymarket.com/prices-history?market=103635844992876723144379951385842243916752648056505794536281053774467895997557&startTs=1781911800&endTs=1781922772&fidelity=1",
+    "sha256": "c083e578f7aa38851ca5cc6956b5ed06a4d0fc19401ee7a90567878f59982548",
+    "retrieved_utc": "2026-10-12T21:49:47.820589+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897127.json",
+    "url": "https://clob.polymarket.com/prices-history?market=28938745417558857896442238911870725474349404919267969141124175484009211562921&startTs=1781920800&endTs=1781932047&fidelity=1",
+    "sha256": "9a79035abc62181932aa1aeb60792ce828ceb44df0caee1584717950cdaa0e6c",
+    "retrieved_utc": "2026-10-12T21:49:47.905664+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897130.json",
+    "url": "https://clob.polymarket.com/prices-history?market=32119774861601767809867283650069946484685075980505835201995035137150231372345&startTs=1781920800&endTs=1781932047&fidelity=1",
+    "sha256": "672ac2bd64e534948746984a27aa81b5314af0473a476bb1a05122964d136794",
+    "retrieved_utc": "2026-10-12T21:49:48.389139+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897133.json",
+    "url": "https://clob.polymarket.com/prices-history?market=71048226321294851841817266819205234468444418485834628185639241813564580583954&startTs=1781920800&endTs=1781932047&fidelity=1",
+    "sha256": "bbb277c3c1f969778e08c0fb1070cf249e00d42fb8e34b7bd25aae512c7ed571",
+    "retrieved_utc": "2026-10-12T21:49:49.279303+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897144.json",
+    "url": "https://clob.polymarket.com/prices-history?market=81043398291360463170235957547610256181022662944963722274721633505163503937838&startTs=1781971200&endTs=1781981921&fidelity=1",
+    "sha256": "acbf5af9f6497593526dc8873fff18cb0395e9c9b138fb8978d47fb1fcc6f85f",
+    "retrieved_utc": "2026-10-12T21:51:53.594950+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897145.json",
+    "url": "https://clob.polymarket.com/prices-history?market=76430088308493460494891335845203272510723451292248221729565378437032576762940&startTs=1781971200&endTs=1781981921&fidelity=1",
+    "sha256": "7616de7f1c259940e5902811e051baffeeff507457a62731e4eab54b7b05ad49",
+    "retrieved_utc": "2026-10-12T21:51:54.114169+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897146.json",
+    "url": "https://clob.polymarket.com/prices-history?market=40679081595356904709519473256184794013741938720159613262750624703767617499056&startTs=1781971200&endTs=1781981921&fidelity=1",
+    "sha256": "1cf88c7438bdf0d2e770858efce81bbb296c8023699491c718b7364d67479d62",
+    "retrieved_utc": "2026-10-12T21:51:54.566000+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897147.json",
+    "url": "https://clob.polymarket.com/prices-history?market=110881534500357968934646596900153818247967390745149544995654778360419076918150&startTs=1781982000&endTs=1781992908&fidelity=1",
+    "sha256": "c57675177213eff4eff6abc93df6e4b67d890a5a9f8c65c6ff174c7392789314",
+    "retrieved_utc": "2026-10-12T21:49:48.340038+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897148.json",
+    "url": "https://clob.polymarket.com/prices-history?market=107928370782866384352393308470448074487232209143841431481520161337861243389626&startTs=1781982000&endTs=1781992908&fidelity=1",
+    "sha256": "a29d4e09a3d286e5b2b6d92493e88c2493b76884bdfb75f246b1c18c500600fb",
+    "retrieved_utc": "2026-10-12T21:49:48.791433+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897149.json",
+    "url": "https://clob.polymarket.com/prices-history?market=34949477535476026489714414939200175816336848313521000211837354783838790884040&startTs=1781982000&endTs=1781992908&fidelity=1",
+    "sha256": "c97c9b6186b60990723ff28f072b623c3982f596e9e999ed62ca1e40ae92ff2f",
+    "retrieved_utc": "2026-10-12T21:49:49.242414+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897150.json",
+    "url": "https://clob.polymarket.com/prices-history?market=7079595983448256774998692261246256964535880004732387005017898482275441988994&startTs=1781996400&endTs=1782007034&fidelity=1",
+    "sha256": "9089eb7295015d588ae56d65a933223fe8eb4ef3d2c3d279076174ff01d866ca",
+    "retrieved_utc": "2026-10-12T21:51:54.260351+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897151.json",
+    "url": "https://clob.polymarket.com/prices-history?market=76080209269268194960994324761022940023118517246399247746844169234710576675814&startTs=1781996400&endTs=1782007034&fidelity=1",
+    "sha256": "7008862b8ee940b879bd1b87d9bc80be247eff2220b159cc798c4ba314370a6e",
+    "retrieved_utc": "2026-10-12T21:51:54.677178+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897152.json",
+    "url": "https://clob.polymarket.com/prices-history?market=22922754856620040574706795332414925251832240378503831196222537952159137725220&startTs=1781996400&endTs=1782007034&fidelity=1",
+    "sha256": "651add48615787585eb6655d167aed3cf074feddcdc112b6fb11decd90ecc6e6",
+    "retrieved_utc": "2026-10-12T21:51:55.180812+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897153.json",
+    "url": "https://clob.polymarket.com/prices-history?market=62516949205730668430138255140150438665483187962069999240136080804116109915287&startTs=1782010800&endTs=1782021481&fidelity=1",
+    "sha256": "3fb3a4bcfab3010a8c1e88d96a884ccd781c893d723f526b1cebdec81cb84849",
+    "retrieved_utc": "2026-10-12T21:49:48.818191+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897154.json",
+    "url": "https://clob.polymarket.com/prices-history?market=50275383633644719253389412495747849486228904621414058936414415835809185820411&startTs=1782010800&endTs=1782021481&fidelity=1",
+    "sha256": "85a3b550a3af88aebb772ea6b36958ef222c948c7d3ac074787a43cf4bc2bec7",
+    "retrieved_utc": "2026-10-12T21:49:49.252429+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897155.json",
+    "url": "https://clob.polymarket.com/prices-history?market=91234906493805354217250440222911012200186057450151286874925972448339630680686&startTs=1782010800&endTs=1782021481&fidelity=1",
+    "sha256": "d88a0706df6200a24709df6562cbf94ef5d902509fbae21d773375cfe4f3f394",
+    "retrieved_utc": "2026-10-12T21:49:49.751536+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897161.json",
+    "url": "https://clob.polymarket.com/prices-history?market=73510205866448375978164321647457824822309414197359016110940718743916953674850&startTs=1782054000&endTs=1782064997&fidelity=1",
+    "sha256": "9e32104156f027845e5e9621b04a927600fad0ffd59a3e1e97419efa12e40cd0",
+    "retrieved_utc": "2026-10-12T21:49:49.305457+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897162.json",
+    "url": "https://clob.polymarket.com/prices-history?market=82898292053233796019218455463083153847413990945759207495147091875359141826965&startTs=1782054000&endTs=1782064997&fidelity=1",
+    "sha256": "b91b3335691588b9056881ec7a2b5d38fcf313fdd778786945843b454457f774",
+    "retrieved_utc": "2026-10-12T21:49:49.804194+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897163.json",
+    "url": "https://clob.polymarket.com/prices-history?market=34595222436901694034568466087145334098073564547697700427928775408006876228602&startTs=1782054000&endTs=1782064997&fidelity=1",
+    "sha256": "4a37f4ab32d6e5731ff134109dd72e749967c8327de9132eda9fa49db45bf0ee",
+    "retrieved_utc": "2026-10-12T21:49:50.254962+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897168.json",
+    "url": "https://clob.polymarket.com/prices-history?market=73247571006255574285385183553023235681702880602976519365262465179094676130340&startTs=1782064800&endTs=1782075756&fidelity=1",
+    "sha256": "e4b5b628b9291dfb37b4c7d31464afbc1732fc964822dd2c420dccbc6e048926",
+    "retrieved_utc": "2026-10-12T21:49:50.074339+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897171.json",
+    "url": "https://clob.polymarket.com/prices-history?market=65206879169809471684171181962606426355936771076631263853333189016369249957120&startTs=1782064800&endTs=1782075756&fidelity=1",
+    "sha256": "231c08fa4d3a7cc92591a99c23957d6cd7d49b0a3180a5af6308092125ab8940",
+    "retrieved_utc": "2026-10-12T21:49:50.574056+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897173.json",
+    "url": "https://clob.polymarket.com/prices-history?market=107259278816298402654822103861927486042412499982187590917424237525323082866574&startTs=1782064800&endTs=1782075756&fidelity=1",
+    "sha256": "8b797cb168945e38859470b79a43405d19c7e971a7a2a386a7e615893d1f6eb0",
+    "retrieved_utc": "2026-10-12T21:49:51.030819+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897177.json",
+    "url": "https://clob.polymarket.com/prices-history?market=115744004241615826068373834065815885045802138463705964527622590795637356148787&startTs=1782075600&endTs=1782086766&fidelity=1",
+    "sha256": "6798f29856f91ecea11e0ec9c4f4e30fd3df894ee90787ddc212bef4aea6a5fe",
+    "retrieved_utc": "2026-10-12T21:51:55.031091+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897179.json",
+    "url": "https://clob.polymarket.com/prices-history?market=67002593218190822532665099166898408129313819429898582664969051678894195427511&startTs=1782075600&endTs=1782086766&fidelity=1",
+    "sha256": "adc27757ac8bb4f790f7cf911d07fc4be7ac2ab6ccd40545070f8ff75cee48a7",
+    "retrieved_utc": "2026-10-12T21:51:55.548530+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897181.json",
+    "url": "https://clob.polymarket.com/prices-history?market=92373800853975207163715439849233105963580357686874848773967900936113195244769&startTs=1782075600&endTs=1782086766&fidelity=1",
+    "sha256": "798dc1f2e38518b5abc037ec96427db996828ed223381c432521db024e62f8a8",
+    "retrieved_utc": "2026-10-12T21:51:56.012384+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897186.json",
+    "url": "https://clob.polymarket.com/prices-history?market=33714788520669769280954321212574588471029548850737990640617719122550413982550&startTs=1782086400&endTs=1782097354&fidelity=1",
+    "sha256": "0118861dacee80afacc3cb9a2cc69465c4cf7ad32ac6592a39973a2c1dbdc66d",
+    "retrieved_utc": "2026-10-12T21:49:50.695253+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897187.json",
+    "url": "https://clob.polymarket.com/prices-history?market=106573441938278169951840270152617513270375496735835936558802812191575117517631&startTs=1782086400&endTs=1782097354&fidelity=1",
+    "sha256": "e451653f2371a9b738acd25b58fe95f6b57bcb9260b69c4a3ea008351a7a3d55",
+    "retrieved_utc": "2026-10-12T21:49:51.168815+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897188.json",
+    "url": "https://clob.polymarket.com/prices-history?market=13689393741027779813840434297856122590360803048059505899834082936957632248186&startTs=1782086400&endTs=1782097354&fidelity=1",
+    "sha256": "f707fb26ea83dcc216cc71007874de923fce88b889902734db811a790385179a",
+    "retrieved_utc": "2026-10-12T21:49:51.627391+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897193.json",
+    "url": "https://clob.polymarket.com/prices-history?market=43065377931595109421738195806896155428299627622642742017785976384593510801128&startTs=1782144000&endTs=1782155037&fidelity=1",
+    "sha256": "7d8a93e7b6096da6285e8e8207675b5c56ce7e125f22e0996199dbc84628bbaf",
+    "retrieved_utc": "2026-10-12T21:49:50.678562+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897194.json",
+    "url": "https://clob.polymarket.com/prices-history?market=42455935076310849881859802799668778227947193880181063098828866359749449345600&startTs=1782144000&endTs=1782155037&fidelity=1",
+    "sha256": "e4ac2806c7e544415b95eadcf75131e8b67a6a215a8f397e7fc131d35e59454a",
+    "retrieved_utc": "2026-10-12T21:49:51.161910+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897197.json",
+    "url": "https://clob.polymarket.com/prices-history?market=89153404871462295225932923711930844386489455338217882638440216779894680412312&startTs=1782144000&endTs=1782155037&fidelity=1",
+    "sha256": "7dd44f3ca72de7d6656909de5f6938905046de7cdbd4a5c303eec72791649560",
+    "retrieved_utc": "2026-10-12T21:49:51.654143+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897202.json",
+    "url": "https://clob.polymarket.com/prices-history?market=33487993003158194673584478096137518804695909934938955095498705571367038286718&startTs=1782158400&endTs=1782175799&fidelity=1",
+    "sha256": "ac4dec7880ec72688ddc1fe2ee7e207b5439aceefca5efdd5beaeed930bd042e",
+    "retrieved_utc": "2026-10-12T21:49:51.132272+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897204.json",
+    "url": "https://clob.polymarket.com/prices-history?market=39089612180122602052604481401475144070730204978096939222616905288374331154272&startTs=1782158400&endTs=1782175799&fidelity=1",
+    "sha256": "017b69f0ae9610a4b5fdee9c3f5093bb35731bf180b01c2c65dd7a8239872e56",
+    "retrieved_utc": "2026-10-12T21:49:51.627127+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897206.json",
+    "url": "https://clob.polymarket.com/prices-history?market=76510222428165877597575721449543571541796482738486080354541430902498097062984&startTs=1782158400&endTs=1782175799&fidelity=1",
+    "sha256": "7d9f8fa4c097e25947cd16ac28b159f1dbdc05976f3790ad4e6bc7a6e403f4f6",
+    "retrieved_utc": "2026-10-12T21:49:52.081737+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897211.json",
+    "url": "https://clob.polymarket.com/prices-history?market=87342664839192211473271920800753463563092786516324349723605782526214890691197&startTs=1782169200&endTs=1782180085&fidelity=1",
+    "sha256": "d5db10d46e4091417a4768645e8c4e071c97cf88c9d8ae79caac5c1d89fba727",
+    "retrieved_utc": "2026-10-12T21:49:51.964728+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897212.json",
+    "url": "https://clob.polymarket.com/prices-history?market=12958252976539629930654162912931008487270492230310027375150666031145896793768&startTs=1782169200&endTs=1782180085&fidelity=1",
+    "sha256": "5cb1515f84eef45e6bbce0f4978ec0a518ba0c52318cf10111241592bfbc6734",
+    "retrieved_utc": "2026-10-12T21:49:52.540469+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897213.json",
+    "url": "https://clob.polymarket.com/prices-history?market=41610575626461486529455331665861057346399083513953711754678027926024708412903&startTs=1782169200&endTs=1782180085&fidelity=1",
+    "sha256": "f009bacc68cd79f82249e3dccbccd5536966c6bb15ed5840ef51eb17cd3fc345",
+    "retrieved_utc": "2026-10-12T21:49:52.963665+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897218.json",
+    "url": "https://clob.polymarket.com/prices-history?market=79556419900577322611626767862690562089176805129072624901443226554922952966745&startTs=1782180000&endTs=1782190920&fidelity=1",
+    "sha256": "be7adfb41a55128e15e22fb969c135b92dc863a3a9e752a525b7d7dc987a783f",
+    "retrieved_utc": "2026-10-12T21:49:52.562109+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897221.json",
+    "url": "https://clob.polymarket.com/prices-history?market=1769702396265889184498190792362704022902870513706256830724500024171753050535&startTs=1782180000&endTs=1782190920&fidelity=1",
+    "sha256": "87d74a43817d16d55ea0620930541408ccd55ad322cdec6cb81991f3f02839eb",
+    "retrieved_utc": "2026-10-12T21:49:52.990481+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897223.json",
+    "url": "https://clob.polymarket.com/prices-history?market=115548088586633825662425519500723984422794579404944891967166045543435931523785&startTs=1782180000&endTs=1782190920&fidelity=1",
+    "sha256": "e865aa91537e28ce2576f352fa0a4eb6fa1010568162820b9abbb342b8ea82fe",
+    "retrieved_utc": "2026-10-12T21:49:53.471191+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897228.json",
+    "url": "https://clob.polymarket.com/prices-history?market=46788745865873849751895851580006231458025441200398102606849707486161173481896&startTs=1782230400&endTs=1782241276&fidelity=1",
+    "sha256": "db91ca56fb39e5feefcaf6e8346d48235a9a2810058e27baa93b53a48bccbbe2",
+    "retrieved_utc": "2026-10-12T21:51:55.179372+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897230.json",
+    "url": "https://clob.polymarket.com/prices-history?market=24809423528124284224090069515582587237857005059059577506414057066347413921482&startTs=1782230400&endTs=1782241276&fidelity=1",
+    "sha256": "ab180768c0b69a67c8748b9a2c1daa0c411d4b356ac5c02ce7fa146901c701d5",
+    "retrieved_utc": "2026-10-12T21:51:55.672109+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897231.json",
+    "url": "https://clob.polymarket.com/prices-history?market=76563067682631227603609066044534706683559659816004868232381337856810074987695&startTs=1782230400&endTs=1782241276&fidelity=1",
+    "sha256": "ebc5d91cc8caa034ca8300bdd32d4ffd8170cf4e952c6edd51f22fee8fe70d8c",
+    "retrieved_utc": "2026-10-12T21:51:56.077450+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897236.json",
+    "url": "https://clob.polymarket.com/prices-history?market=63611572432092712507452794046269856873324193737948513078896856667745770559698&startTs=1782241200&endTs=1782252119&fidelity=1",
+    "sha256": "23e62986b9178ec4103496bea90d3b8f88ae25701209b3e32a5492412db7b063",
+    "retrieved_utc": "2026-10-12T21:49:52.962305+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897238.json",
+    "url": "https://clob.polymarket.com/prices-history?market=113575947344702991323223447752604645066262694843576298874524902811228579544185&startTs=1782241200&endTs=1782252119&fidelity=1",
+    "sha256": "fa0c04eb771cad8c88f5c4cb7c47cda15b7d1ef9458ee27fd4483b51ce643bec",
+    "retrieved_utc": "2026-10-12T21:49:53.471621+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897240.json",
+    "url": "https://clob.polymarket.com/prices-history?market=111239697803361919523803068759725643725914563280609261384832780529311817077235&startTs=1782241200&endTs=1782252119&fidelity=1",
+    "sha256": "662785ca0c4b907d0479eacfc67c74995af305021f7dc379bec4f817ab221302",
+    "retrieved_utc": "2026-10-12T21:49:53.975566+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897246.json",
+    "url": "https://clob.polymarket.com/prices-history?market=24996055382005658349790471423878721697831808533961896596758588230034679203014&startTs=1782252000&endTs=1782262565&fidelity=1",
+    "sha256": "7c89e248239e30ee11927243dacb69677c7bcef1eecebe2fe84369f67ad6b9e7",
+    "retrieved_utc": "2026-10-12T21:51:55.081616+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897247.json",
+    "url": "https://clob.polymarket.com/prices-history?market=281014131890775346711528419616637935334914824702644832308015615443957627676&startTs=1782252000&endTs=1782262565&fidelity=1",
+    "sha256": "cf990279e0f3dd429ce8613e68b82d9d937a2027449c1e3be7a8ddbe798b2331",
+    "retrieved_utc": "2026-10-12T21:51:55.529169+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897249.json",
+    "url": "https://clob.polymarket.com/prices-history?market=109027609951989526893628757693490068717900103024949393927658066962316915180001&startTs=1782252000&endTs=1782262565&fidelity=1",
+    "sha256": "dca7f4d2a66ead557196a7e406afd6c203569488233504822ac9c547a943cca3",
+    "retrieved_utc": "2026-10-12T21:51:55.990950+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897254.json",
+    "url": "https://clob.polymarket.com/prices-history?market=34999267410182663441586115553518943962188580583548745660828050477474485422496&startTs=1782262800&endTs=1782273568&fidelity=1",
+    "sha256": "14c7222c9c8e77384fc605417de7a3d99e3ae58c11a3bd05c64ea4f351a1d3d5",
+    "retrieved_utc": "2026-10-12T21:51:55.662154+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897255.json",
+    "url": "https://clob.polymarket.com/prices-history?market=79983794318718332304327981666825218942232843954396702058226061148160445738463&startTs=1782262800&endTs=1782273568&fidelity=1",
+    "sha256": "21b59e574aba5ff09e144c77954d72ec88d3396f70fd218726014bcf91ac71f9",
+    "retrieved_utc": "2026-10-12T21:51:56.133390+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897256.json",
+    "url": "https://clob.polymarket.com/prices-history?market=27087363386694674049005402437888440764538397638814511740652870655708130928058&startTs=1782262800&endTs=1782273568&fidelity=1",
+    "sha256": "13721c59768a1435ec0508dbcdefc49db209ba00576f5e747ab51f62b9a53c69",
+    "retrieved_utc": "2026-10-12T21:51:56.618893+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897263.json",
+    "url": "https://clob.polymarket.com/prices-history?market=47959944460657228985055674449790383802464381124119024576562949363346901336433&startTs=1782324000&endTs=1782334666&fidelity=1",
+    "sha256": "f831e710e45ba40ec8e1917e13452e9529dc1e9f3f93fcbfa6baa0ee5ea011eb",
+    "retrieved_utc": "2026-10-12T21:51:56.526133+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897265.json",
+    "url": "https://clob.polymarket.com/prices-history?market=37383901604222109615025559390838815185792875162240758491134459674611890551849&startTs=1782324000&endTs=1782334666&fidelity=1",
+    "sha256": "e54b62764ef39216dc302ffca3177d4436c2baad3312bb60c8991bb8b6db40bd",
+    "retrieved_utc": "2026-10-12T21:51:57.003922+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897266.json",
+    "url": "https://clob.polymarket.com/prices-history?market=11943790724298456336310029997668350808838445628633810142424962411400618768716&startTs=1782324000&endTs=1782334666&fidelity=1",
+    "sha256": "f33c8f04de898c1373aff87f04321ef79f5ac077fba6e0f39467f1ce3a90d19a",
+    "retrieved_utc": "2026-10-12T21:51:57.485456+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897271.json",
+    "url": "https://clob.polymarket.com/prices-history?market=4925888325464503545476254709875431093074337031801188092359865362530954679246&startTs=1782324000&endTs=1782334831&fidelity=1",
+    "sha256": "bcea5b4220fb7b7c13e55fafa06d89eebc80feb427e6bca69f896a5d856d5007",
+    "retrieved_utc": "2026-10-12T21:49:53.846552+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897273.json",
+    "url": "https://clob.polymarket.com/prices-history?market=41091023424245040139527172073533600163970138599488326259532662687088517955772&startTs=1782324000&endTs=1782334831&fidelity=1",
+    "sha256": "668e1761102be42fc326a549d267d704d964675cd2374d12a7524167f86148c3",
+    "retrieved_utc": "2026-10-12T21:49:54.304442+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897274.json",
+    "url": "https://clob.polymarket.com/prices-history?market=89402197250849053016718398593367058168289729633872183585442421218420206745943&startTs=1782324000&endTs=1782334831&fidelity=1",
+    "sha256": "9e3417c7382cd70fe0b6f792babaccc2931f17df7ca5cd6c162c14db8544477f",
+    "retrieved_utc": "2026-10-12T21:49:54.707433+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897279.json",
+    "url": "https://clob.polymarket.com/prices-history?market=42374815657442465500075937904016131801776204492796944288908751005433960581826&startTs=1782334800&endTs=1782345769&fidelity=1",
+    "sha256": "488008689eaf057f9decb4117357fecf041ca57b04a1c8774482d45828baa93f",
+    "retrieved_utc": "2026-10-12T21:51:56.526299+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897280.json",
+    "url": "https://clob.polymarket.com/prices-history?market=68776813465861057429364788692653606338774440682215453744115148189876641784361&startTs=1782334800&endTs=1782345769&fidelity=1",
+    "sha256": "a212cc6039aff2a21ad73a9427a1dff9f7528f05311426b3877dc02058151442",
+    "retrieved_utc": "2026-10-12T21:51:56.951820+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897281.json",
+    "url": "https://clob.polymarket.com/prices-history?market=16734149502738704359673067089022355535903790350570508474097898646900570148376&startTs=1782334800&endTs=1782345769&fidelity=1",
+    "sha256": "b62c7c4ea0692a45963c2222ef381b78db4154eae73bafba1758650f92e9f792",
+    "retrieved_utc": "2026-10-12T21:51:57.394439+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897286.json",
+    "url": "https://clob.polymarket.com/prices-history?market=47270884544902187710532732045488098581735089212206395717548237797985049565017&startTs=1782334800&endTs=1782345812&fidelity=1",
+    "sha256": "ca52b9bb5b6b5c5b6da7b3721a6c515e1518e0b95a6fd35995dbf272e09323e7",
+    "retrieved_utc": "2026-10-12T21:49:54.443571+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897289.json",
+    "url": "https://clob.polymarket.com/prices-history?market=54309860001036020325260313945791541663708085536541558286760328646880884748167&startTs=1782334800&endTs=1782345812&fidelity=1",
+    "sha256": "1bd9aa110126a90784707017140d44bb1cdad71fcdac89f716a6f44c106786ab",
+    "retrieved_utc": "2026-10-12T21:49:54.949526+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897291.json",
+    "url": "https://clob.polymarket.com/prices-history?market=52345319584298671384241333674201063268836142597903677481641810116870044724915&startTs=1782334800&endTs=1782345812&fidelity=1",
+    "sha256": "c18e6c38480cde391dd0c0b81c22ac0f291fc26c2e9c4d239535e0d96d3ecf18",
+    "retrieved_utc": "2026-10-12T21:49:55.442852+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897296.json",
+    "url": "https://clob.polymarket.com/prices-history?market=75582324068408801617260879555413324403573690501232841899134550992026699982390&startTs=1782345600&endTs=1782356320&fidelity=1",
+    "sha256": "466deea027222761acc9f94deaeac9d5e13bddb49a83f48a8ef197add9174f6a",
+    "retrieved_utc": "2026-10-12T21:49:55.178345+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897297.json",
+    "url": "https://clob.polymarket.com/prices-history?market=104735262279610516248406908690291013202167988132813028132950707551552452029652&startTs=1782345600&endTs=1782356320&fidelity=1",
+    "sha256": "1de7154f0e0e5b7443d663ed1c79699a476c0cc2e22c7f405795cb7aacbc8f8e",
+    "retrieved_utc": "2026-10-12T21:49:55.619668+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897299.json",
+    "url": "https://clob.polymarket.com/prices-history?market=67466148034529849001749283892995420841255740280965377423907471965663421834164&startTs=1782345600&endTs=1782356320&fidelity=1",
+    "sha256": "e2d3245682a878ff92a018608556c3556dd95b999d1ebee1930f2db66d51482d",
+    "retrieved_utc": "2026-10-12T21:49:56.090828+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897303.json",
+    "url": "https://clob.polymarket.com/prices-history?market=58830526078196302612867530222421263708170468828968028907746961007548153805793&startTs=1782345600&endTs=1782356332&fidelity=1",
+    "sha256": "81614629f16b05137e38fcff308d2b85144bc17136ce64c3e70f3a62cef610fd",
+    "retrieved_utc": "2026-10-12T21:51:56.528750+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897305.json",
+    "url": "https://clob.polymarket.com/prices-history?market=103052895473654725211234208718417485025769469987098102360162412805062007216205&startTs=1782345600&endTs=1782356332&fidelity=1",
+    "sha256": "787a422b02da518df4d40f0582a19c422ed1fab8f9d77925bee3b09097820d0e",
+    "retrieved_utc": "2026-10-12T21:51:57.002353+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897306.json",
+    "url": "https://clob.polymarket.com/prices-history?market=78041669573197271831143243516603089617333411410934465631182277350983388128942&startTs=1782345600&endTs=1782356332&fidelity=1",
+    "sha256": "d2ac7bafa126bb91e6147234ab9b072c0ecd86fe13bcec6693524639c68aa232",
+    "retrieved_utc": "2026-10-12T21:51:57.510395+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897311.json",
+    "url": "https://clob.polymarket.com/prices-history?market=14621976022388339155866443939403907158807725281606484508612016632018100973573&startTs=1782414000&endTs=1782424788&fidelity=1",
+    "sha256": "13cb6b8e6d0cd330ff4ea94ab361c366cd95ea38119174f2c8cac4cfafadfa68",
+    "retrieved_utc": "2026-10-12T21:51:57.085801+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897312.json",
+    "url": "https://clob.polymarket.com/prices-history?market=9059650700126795019827485089957938050581213031053374092199507389736394347163&startTs=1782414000&endTs=1782424788&fidelity=1",
+    "sha256": "50775d31be327af550d6f50795186ccd33a280a444483d2f5ffb4a1220754180",
+    "retrieved_utc": "2026-10-12T21:51:57.539754+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897315.json",
+    "url": "https://clob.polymarket.com/prices-history?market=101279272797775203956659007084828831261331275405585994446661991301016814257223&startTs=1782414000&endTs=1782424788&fidelity=1",
+    "sha256": "735a982fdfc945a6931f95b68ea432b193f4411a60683f173af2d6c352f2b548",
+    "retrieved_utc": "2026-10-12T21:51:58.008900+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897320.json",
+    "url": "https://clob.polymarket.com/prices-history?market=19148172802481517881692352905829372357755800754194043495831127988905408662349&startTs=1782414000&endTs=1782424766&fidelity=1",
+    "sha256": "c2b50c9ba69a33adcc597c8aebbcd7169f63f36cebdc265743ed6e924be684e2",
+    "retrieved_utc": "2026-10-12T21:51:57.850608+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897322.json",
+    "url": "https://clob.polymarket.com/prices-history?market=100613082629822213553264871806294534405119465896030760287440778049574323720676&startTs=1782414000&endTs=1782424766&fidelity=1",
+    "sha256": "e1c40efeb8b671148499ad58fe94c9dffac1e65ed71ded30f3d9666dd9b4e662",
+    "retrieved_utc": "2026-10-12T21:51:58.231125+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897323.json",
+    "url": "https://clob.polymarket.com/prices-history?market=112165227742342790816614520312092947420861337398279265432656445292580690894446&startTs=1782414000&endTs=1782424766&fidelity=1",
+    "sha256": "6f86c05fece074bc12f816daabc197f91bc543e6698365d76ca4cbb164b97f66",
+    "retrieved_utc": "2026-10-12T21:51:58.738090+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897329.json",
+    "url": "https://clob.polymarket.com/prices-history?market=101491499269793539765890729500440478078979559571972876836355209033272846559170&startTs=1782424800&endTs=1782435594&fidelity=1",
+    "sha256": "b81536b2ead5b1297ced4bc056f2b9b263258aec7e3b352a40ebd0c8e4208034",
+    "retrieved_utc": "2026-10-12T21:49:55.974401+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897330.json",
+    "url": "https://clob.polymarket.com/prices-history?market=103921367649237605886104535173979078531662655072769163320410011491550422861515&startTs=1782424800&endTs=1782435594&fidelity=1",
+    "sha256": "fae851cc6bf89663bcf6af75e77dac98c2080ecb4e50bf159a7baa76b86d2786",
+    "retrieved_utc": "2026-10-12T21:49:56.477586+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897331.json",
+    "url": "https://clob.polymarket.com/prices-history?market=12789581828610654936852030631608949195058761081844775016106587060501098784149&startTs=1782424800&endTs=1782435594&fidelity=1",
+    "sha256": "2243bf43d8da4d15d8e62e44f2d9a7dc119f9d45a677d010ffa133c9acbce391",
+    "retrieved_utc": "2026-10-12T21:49:56.896318+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897336.json",
+    "url": "https://clob.polymarket.com/prices-history?market=98721981590572841910847700506915134910696602397328529619763154982886944471014&startTs=1782424800&endTs=1782435385&fidelity=1",
+    "sha256": "a266b4919655e73111827237d0bace13f48e316441cb34ca0ae4313d5eb04ec8",
+    "retrieved_utc": "2026-10-12T21:51:57.965157+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897338.json",
+    "url": "https://clob.polymarket.com/prices-history?market=26955252857582298749666469746136063544098108020808079857285492441529135677527&startTs=1782424800&endTs=1782435385&fidelity=1",
+    "sha256": "90e0896d9f0ebfeb3a16ae92e6e0175a87d9a600a134db88fe51a460e07f5abe",
+    "retrieved_utc": "2026-10-12T21:51:58.417943+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897340.json",
+    "url": "https://clob.polymarket.com/prices-history?market=28763246044322995220208532073700111687599343514604674596345286876678085708461&startTs=1782424800&endTs=1782435385&fidelity=1",
+    "sha256": "b45311c110262f91f0393b67c658493d77236a5431572f8a026222f59f283171",
+    "retrieved_utc": "2026-10-12T21:51:58.881366+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897345.json",
+    "url": "https://clob.polymarket.com/prices-history?market=49296719184627637111102906756410924588753297305614598618877406701338912319300&startTs=1782435600&endTs=1782446415&fidelity=1",
+    "sha256": "6e62eb2589376c702ee8c9d6e9d9ff437f29d1a353aba68ae2107856759d18b0",
+    "retrieved_utc": "2026-10-12T21:49:56.798262+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897347.json",
+    "url": "https://clob.polymarket.com/prices-history?market=37005314859048726898779825465316653816506760625587636277026357315052111971182&startTs=1782435600&endTs=1782446415&fidelity=1",
+    "sha256": "b0bec28e9514035c967e7386fc4394b47115fd11c9b89b4e0fccec03b5278c56",
+    "retrieved_utc": "2026-10-12T21:49:57.420667+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897348.json",
+    "url": "https://clob.polymarket.com/prices-history?market=21990437237634439641535931317392242133464382121486985420713435551817663743535&startTs=1782435600&endTs=1782446415&fidelity=1",
+    "sha256": "e3352fb450959295e9a895bc1012ebd0093ce0b5f52445c753e29dc4b40d8643",
+    "retrieved_utc": "2026-10-12T21:49:58.012417+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897354.json",
+    "url": "https://clob.polymarket.com/prices-history?market=23905785647225133250068955131316534532801742215919018709867564550696854194755&startTs=1782435600&endTs=1782446627&fidelity=1",
+    "sha256": "bd21b2684fb6c7df0a5e345528c727493ff4677afd72d26be1bc5da35c2a340f",
+    "retrieved_utc": "2026-10-12T21:49:56.693998+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897355.json",
+    "url": "https://clob.polymarket.com/prices-history?market=84455986553231783484004493796796163763072739538940527173028153992346042419876&startTs=1782435600&endTs=1782446627&fidelity=1",
+    "sha256": "6ddd411cf998e6db5c1d8f030f4db3869ec4c01ecf7d4ed4f548e63770202b74",
+    "retrieved_utc": "2026-10-12T21:49:57.146340+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897356.json",
+    "url": "https://clob.polymarket.com/prices-history?market=47236739815607347436394828740644657912816815268002585518946427187074399713739&startTs=1782435600&endTs=1782446627&fidelity=1",
+    "sha256": "231fdc6374b6dd57c387e94bd05b3dfc6a0cd365fa977342432385f6835bba4c",
+    "retrieved_utc": "2026-10-12T21:49:57.618565+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897363.json",
+    "url": "https://clob.polymarket.com/prices-history?market=13720141007204726132976932163658350553917819242912487119786312240512385978016&startTs=1782496800&endTs=1782507674&fidelity=1",
+    "sha256": "abda3450dd213f8a5dbed4861ec8503a09d24e27a63cece1623dfdba44ea861d",
+    "retrieved_utc": "2026-10-12T21:49:57.025782+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897365.json",
+    "url": "https://clob.polymarket.com/prices-history?market=67725404666433555568518066011245937746455974844800713635030484522525394449095&startTs=1782496800&endTs=1782507674&fidelity=1",
+    "sha256": "a2deb0e9c0b7f24b0cd389de645688398d2771197ab4ea42e5558d70584ded1a",
+    "retrieved_utc": "2026-10-12T21:49:57.593658+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897366.json",
+    "url": "https://clob.polymarket.com/prices-history?market=24577773509300358817327680170546846259151744300648018180120742538153285610470&startTs=1782496800&endTs=1782507674&fidelity=1",
+    "sha256": "ff0a8e48ba624508484106882f155a99a3dd04d41fa8fce364b46e223ffc31c1",
+    "retrieved_utc": "2026-10-12T21:49:58.035890+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897372.json",
+    "url": "https://clob.polymarket.com/prices-history?market=18743217884084451181326534803259386349719190738348996062011676818990905009388&startTs=1782496800&endTs=1782507964&fidelity=1",
+    "sha256": "bed853592379a5644f8375323236225520b1223dad9dbf76cded31092607ed2e",
+    "retrieved_utc": "2026-10-12T21:49:58.256522+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897373.json",
+    "url": "https://clob.polymarket.com/prices-history?market=33076998160231714351902565130026409459762688445353107036154768256214120659381&startTs=1782496800&endTs=1782507964&fidelity=1",
+    "sha256": "2ac59332813ee9eb53247f101547b057a4993155eb5f585ccc5d7655c5760629",
+    "retrieved_utc": "2026-10-12T21:49:58.749589+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897374.json",
+    "url": "https://clob.polymarket.com/prices-history?market=42446028394641227058711863003994762636042573921212384468888917154482444605317&startTs=1782496800&endTs=1782507964&fidelity=1",
+    "sha256": "1fdadea27ad3f6c7f098d4f4c531149fc924f821b120a2c124487dc4d20599ae",
+    "retrieved_utc": "2026-10-12T21:49:59.165364+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897379.json",
+    "url": "https://clob.polymarket.com/prices-history?market=102982370594795926465551165513338503688720151395360838811850524398055739613847&startTs=1782514800&endTs=1782525676&fidelity=1",
+    "sha256": "ac9b7eced2f799650140461ce3c66d7417820929d5e8485f9dcb887c89ccc821",
+    "retrieved_utc": "2026-10-12T21:51:58.486410+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897381.json",
+    "url": "https://clob.polymarket.com/prices-history?market=26569990508696410491447892272390543392383885606267392357555942494960533615950&startTs=1782514800&endTs=1782525676&fidelity=1",
+    "sha256": "84ba5299047ebc2f32042b92f95bed88e435a5735018c31a828a4a42acc34310",
+    "retrieved_utc": "2026-10-12T21:51:58.942361+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897383.json",
+    "url": "https://clob.polymarket.com/prices-history?market=13230917211575471424029299482277772949555090343730463577580317503550035691955&startTs=1782514800&endTs=1782525676&fidelity=1",
+    "sha256": "352f47a31a8ba0fb1e312c353e5430c0c3bed1862a6e553185590884af2a1c3b",
+    "retrieved_utc": "2026-10-12T21:51:59.418687+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897389.json",
+    "url": "https://clob.polymarket.com/prices-history?market=19006898597508386281847912902191120242282582317334085817745325501448261696961&startTs=1782514800&endTs=1782525778&fidelity=1",
+    "sha256": "6de06f8c882de64af2272dce5a8aeb7e58123523600ac7b8484015e662557bdc",
+    "retrieved_utc": "2026-10-12T21:51:57.993068+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897390.json",
+    "url": "https://clob.polymarket.com/prices-history?market=31752155862447409149067389255977203243895111018202743434902043543164266789354&startTs=1782514800&endTs=1782525778&fidelity=1",
+    "sha256": "143d367d4e5abeb65bc5e3f0ed38d1e0764a9deade824f2fb28dd9632e720578",
+    "retrieved_utc": "2026-10-12T21:51:58.458077+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897392.json",
+    "url": "https://clob.polymarket.com/prices-history?market=21212784061998732060753310583727616688784929823373352237868078199791664491531&startTs=1782514800&endTs=1782525778&fidelity=1",
+    "sha256": "1197e51d3c84a3053672be189f90631008ff3d302994ee1cabe306dc2f6975f1",
+    "retrieved_utc": "2026-10-12T21:51:58.931484+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897397.json",
+    "url": "https://clob.polymarket.com/prices-history?market=75595072506593093609125758283657089382220899252356081539276899905086401333602&startTs=1782525600&endTs=1782536711&fidelity=1",
+    "sha256": "227304e9014a5f5cbd9062eb85e51ba8213567d0c941eef28fe26849beb257cf",
+    "retrieved_utc": "2026-10-12T21:49:59.020808+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897398.json",
+    "url": "https://clob.polymarket.com/prices-history?market=78120279705291218158294867165496451864789831831028096964508511026890389826312&startTs=1782525600&endTs=1782536711&fidelity=1",
+    "sha256": "c5e3c1953262c2f3582a713e7039793bdbce2b4f08e865620b936c7e9222d94c",
+    "retrieved_utc": "2026-10-12T21:49:59.472585+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897399.json",
+    "url": "https://clob.polymarket.com/prices-history?market=34787355244902293604560127433609469815330269379035336530397136777594424715528&startTs=1782525600&endTs=1782536711&fidelity=1",
+    "sha256": "f3656faa3005d3663830fd3c9a3017ef5c712e31c96baabc78100ff63b698a72",
+    "retrieved_utc": "2026-10-12T21:49:59.868340+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897406.json",
+    "url": "https://clob.polymarket.com/prices-history?market=51519876214140449660166550584440656906007152566889523395451234960389805633766&startTs=1782525600&endTs=1782536375&fidelity=1",
+    "sha256": "62c875b5b7811b9a0f776c0b134d1d511ca9de2eea8b01beba9618fd645f5ee3",
+    "retrieved_utc": "2026-10-12T21:49:58.932980+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897408.json",
+    "url": "https://clob.polymarket.com/prices-history?market=62409843405324454061803814330319520418244336052868125219110920850254110405657&startTs=1782525600&endTs=1782536375&fidelity=1",
+    "sha256": "d768d53a41458c359890974fb1147b0d197103a539d5698206af0e07ae0121e7",
+    "retrieved_utc": "2026-10-12T21:49:59.376893+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897409.json",
+    "url": "https://clob.polymarket.com/prices-history?market=56919576321692543804120333477806892227587677219602902701553511079254437421526&startTs=1782525600&endTs=1782536375&fidelity=1",
+    "sha256": "6318f2373c8a3605d21af168711eb69ea0a70753da2d45e2f4fa7077e0c1a4a3",
+    "retrieved_utc": "2026-10-12T21:49:59.807849+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897415.json",
+    "url": "https://clob.polymarket.com/prices-history?market=59058041199432950171496335927523101634207424833883434829808368909648870164143&startTs=1782590400&endTs=1782601086&fidelity=1",
+    "sha256": "e72bc9d5035a760af6ddaae5bcfe3f28add625c5db5832f3f6599f438769b735",
+    "retrieved_utc": "2026-10-12T21:49:59.461272+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897416.json",
+    "url": "https://clob.polymarket.com/prices-history?market=59060314792119542598872086330330421934194999186952058617387110515321473268432&startTs=1782590400&endTs=1782601086&fidelity=1",
+    "sha256": "873591291621f8dc3fd19be7a3a8b480e5b035dc31c40c49c64e7156289c5a99",
+    "retrieved_utc": "2026-10-12T21:49:59.937361+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897417.json",
+    "url": "https://clob.polymarket.com/prices-history?market=93320332124999747203356838766183249400983580913731153318561555477528481141967&startTs=1782590400&endTs=1782601086&fidelity=1",
+    "sha256": "ca4a89200c1bd5200a99b4e28b44a0007c2942981abe471ea4f4ba62c6285730",
+    "retrieved_utc": "2026-10-12T21:50:00.332621+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897423.json",
+    "url": "https://clob.polymarket.com/prices-history?market=23522010053796928314095406008924900761833610419543982088160250459540934114445&startTs=1782590400&endTs=1782601237&fidelity=1",
+    "sha256": "3f237598f7548500f853b1335de174e3a42e705e10dacabfd2b32a7f47cc5dad",
+    "retrieved_utc": "2026-10-12T21:51:59.270226+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897425.json",
+    "url": "https://clob.polymarket.com/prices-history?market=73617947654081997431498367652195704493094967542363882616248674397638553207873&startTs=1782590400&endTs=1782601237&fidelity=1",
+    "sha256": "c099326eccb17b095cec25e5fea53a0fe9261fd35a370bb68e00d6bbdfc9786b",
+    "retrieved_utc": "2026-10-12T21:51:59.767056+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897427.json",
+    "url": "https://clob.polymarket.com/prices-history?market=90597327262250836004646033934453860417100833449408628755662053427096482500586&startTs=1782590400&endTs=1782601237&fidelity=1",
+    "sha256": "00a99bf1f9335bddd6f3f1581d1db4e9eff3fb57ce1643535ac039dad06bbf00",
+    "retrieved_utc": "2026-10-12T21:52:00.228948+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897432.json",
+    "url": "https://clob.polymarket.com/prices-history?market=66645018399244327793816970436640892806720466803924622381310200425167561934656&startTs=1782599400&endTs=1782610206&fidelity=1",
+    "sha256": "2749e5f24acdf04628e5e084aa70221a2dee34cf5fdaf68c18ebc7ad3bea8c8e",
+    "retrieved_utc": "2026-10-12T21:51:59.416805+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897433.json",
+    "url": "https://clob.polymarket.com/prices-history?market=59969732588381163791331816857468861959000541135529686594887337761858409837896&startTs=1782599400&endTs=1782610206&fidelity=1",
+    "sha256": "8142b94cf21faf990670eb1e8c371d7b6857b34064067fcbf427a97f33bf6a6a",
+    "retrieved_utc": "2026-10-12T21:51:59.891444+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897435.json",
+    "url": "https://clob.polymarket.com/prices-history?market=68238163315667435120694805573568977252273759352712823951184501420027891362809&startTs=1782599400&endTs=1782610206&fidelity=1",
+    "sha256": "54d73db71dbb7f3b04b8abb1e5f6bbf4c356d307743925135e76bfefd56fc0ca",
+    "retrieved_utc": "2026-10-12T21:52:00.324440+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897437.json",
+    "url": "https://clob.polymarket.com/prices-history?market=32203747233944015438487799675613943430837031417969455986362970409671575279826&startTs=1782599400&endTs=1782610423&fidelity=1",
+    "sha256": "5bd12b6ff2892e27566f1db1058b8021e4ea402a89e61fe6f15629969e7e737c",
+    "retrieved_utc": "2026-10-12T21:51:59.297446+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897438.json",
+    "url": "https://clob.polymarket.com/prices-history?market=81552362010142345634703929302259930833935413033049071585470045256395801009970&startTs=1782599400&endTs=1782610423&fidelity=1",
+    "sha256": "3c03bda87f21f960015d5244b9a709b032f8cce093d5e52a09837a63207921a7",
+    "retrieved_utc": "2026-10-12T21:51:59.779235+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897439.json",
+    "url": "https://clob.polymarket.com/prices-history?market=18008867159313570769262912171658897336337384293159822028565187451480762621316&startTs=1782599400&endTs=1782610423&fidelity=1",
+    "sha256": "550bb7a87dd7706a6d7e88446e56fc51769230f97da13fdf5d557fdb8df0683f",
+    "retrieved_utc": "2026-10-12T21:52:00.252530+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897440.json",
+    "url": "https://clob.polymarket.com/prices-history?market=45668841020533558878058431264255444612420443086293898941905939792694888997711&startTs=1782608400&endTs=1782619147&fidelity=1",
+    "sha256": "8e5f50ffca2c9b830a38faabe76c7355ae1e0ed6219f8acbe186bb85caed53ee",
+    "retrieved_utc": "2026-10-12T21:50:00.841608+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897441.json",
+    "url": "https://clob.polymarket.com/prices-history?market=616354135091983275441980781778127730973983204686602475633890523765647649939&startTs=1782608400&endTs=1782619147&fidelity=1",
+    "sha256": "810bb0eacdb61118943b89ba956c8ef1c59e00f29f1c221caac034cd06851c72",
+    "retrieved_utc": "2026-10-12T21:50:01.361719+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897442.json",
+    "url": "https://clob.polymarket.com/prices-history?market=89969054941820905260983372139923320038115693660830083208242956669285748681379&startTs=1782608400&endTs=1782619147&fidelity=1",
+    "sha256": "94e98712913f5f81b67822239de099a1dd7383fab148f781b57ef799e4d92333",
+    "retrieved_utc": "2026-10-12T21:50:01.774470+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897443.json",
+    "url": "https://clob.polymarket.com/prices-history?market=82930050367767323602185033959522193504232064039705778455362784267890724471276&startTs=1782608400&endTs=1782619249&fidelity=1",
+    "sha256": "ea508883698d19ea1e289b565d1698f9dcf9d965d9d81fac1098b51d5aa66f0d",
+    "retrieved_utc": "2026-10-12T21:50:00.791583+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897444.json",
+    "url": "https://clob.polymarket.com/prices-history?market=54474886969816453525385753955468883023194567537518813967701106946658819435076&startTs=1782608400&endTs=1782619249&fidelity=1",
+    "sha256": "543cd5b5c0c28dcbadad735d906604a2756386aaa14648f114bb22a7a357fc9b",
+    "retrieved_utc": "2026-10-12T21:50:01.357128+00:00"
+  },
+  {
+    "file": "data/raw/forecast/history_1897445.json",
+    "url": "https://clob.polymarket.com/prices-history?market=101870693068643777907933185168096005823100471428921617507976765091257562327892&startTs=1782608400&endTs=1782619249&fidelity=1",
+    "sha256": "d8fc5b3c4e9b7c929aa90f9b198c2cc0c8a6e7af4062ce996049924f7147af4a",
+    "retrieved_utc": "2026-10-12T21:50:01.826890+00:00"
+  },
+  {
+    "file": "data/raw/forecast/world_cup_event_catalog_0.json",
+    "url": "https://gamma-api.polymarket.com/events?tag_id=102232&closed=true&limit=500&offset=0",
+    "sha256": "ea55d92cf73526dad6702454076afff704ef31092b3434de5b93c4272d97d065",
+    "retrieved_utc": "2026-10-12T21:50:36.502005+00:00"
+  }
+]

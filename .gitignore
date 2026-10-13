@@ -224,6 +224,9 @@ __marimo__/
 .venv/
 .DS_Store
 
+# Regenerated per-snapshot forecast export
+/data/processed/forecast/predictions.csv
+
 # Local FIFA Parquet snapshots and replay exports
 /data/processed/fifa/
 /artifacts/fifa-replay/
