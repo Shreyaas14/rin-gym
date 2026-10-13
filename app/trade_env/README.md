@@ -194,3 +194,50 @@ uv run --locked python -m tests.trade_env.audit_release  # full local release re
 ```
 
 Training `env/all/reward/total` is mean whole-match penalized return (scaled only if `reward_scale` changes). `env/all/pnl_per_match` and `cost_per_match` are unscaled dollars. Existing `pnl`, `valid`, and `truncated` metrics remain per-decision averages. `val/` is a single-decision diagnostic; `replay/val/pnl_per_match_c` measures the full-match policy and is the primary P&L evaluation. Estimates distinguish `train_matches`, `train_trajectories`, and `train_rollouts` (individual model calls). Old single-decision checkpoints cannot resume under this training mode.
+
+
+## Forecast-shaped trajectory experiment
+
+This is an opt-in experiment; the existing P&L-only task file and finished run are preserved. Build a separate task file:
+
+```sh
+uv run --locked python -m app.trade_env build-tasks --set forecast_rewards=true --output data/processed/trade_env/tasks.forecast.jsonl.gz
+uv run --locked --extra train python -m app.trade_env.train_tinker tasks_path=data/processed/trade_env/tasks.forecast.jsonl.gz config_path=data/processed/trade_env/tasks.forecast.meta.json
+```
+
+The second command estimates only. `dry_run=true` exercises the fake service. Billed training still requires explicit `confirm=true` and `uv run --env-file .env`; no new paid run is part of this change. Forecast estimates assume 180 answer tokens rather than 80. The previous $12.33 measured estimate is not a quote for this larger prompt/schema.
+
+Keep `probs`, `action`, and optional `reason`. Add `next_goal` (home/away/none probabilities summing to one) and `future_prices` (three expected YES prices in [0,1], not necessarily summing to one). Both forecast objects are required in this mode. The horizon is 300 wall-clock seconds **from the decision timestamp**, not the delayed event cutoff or next checkpoint. `probs` still predicts the regulation result. Goals before or exactly at the decision are not future targets; own goals are credited from score changes. If both scores first increase at one timestamp, goal order is unknown and that target is masked. A horizon past regulation end masks both short-horizon targets; missing/stale price observations mask price scoring. Forecast availability never drops a trading checkpoint. These are final-feed labels with the historical-correction limits described above.
+
+For each match with N usable checkpoints, the training return is:
+
+```
+net_match_pnl - invalid_penalty * invalid_answers
++ (w_result / N) * sum(market_Brier - model_result_Brier)
++ (w_goal / N) * sum(2/3 - model_next_goal_Brier)       # available labels only
++ (w_price / N) * sum(persistence_MSE - model_price_MSE) # available labels only
+```
+
+Brier here is the sum of squared errors over three classes; price MSE is the mean across the three contracts. Result and goal Brier range [0,2], price MSE [0,1]. The goal reference is uniform, a fixed centering term—not a fitted football baseline. Predicting current prices earns zero price bonus. Baselines depend only on the task and labels, so they do not change ranking between answers to that task. Default `w_result=w_goal=w_price=0.1` are provisional coefficient choices, **not tuned weights or actual dollars**. They can be overridden independently at the trainer CLI; setting all three to zero removes shaping, but the enabled forecast schema still applies. Shaped reward is not P&L. Invalid forecasts hold the current position, incur the existing penalty, and receive worst-case forecast errors for available labels. Correct explanations alone earn nothing.
+
+Training metrics include separate `forecast/result_reward`, `goal_reward`, `price_reward`, their per-match totals, result/market Brier, goal Brier, price/persistence MSE, and target availability. Masked losses are logged as zero with availability zero: divide aggregated goal/price loss by its availability fraction when reporting accuracy. P&L and fees remain independently logged, with no forecast bonuses in `replay/val/pnl_per_match_c`. Run fingerprints prevent old checkpoints from resuming under this changed objective.
+
+### Evaluation handoff to AK
+
+- Update the answer parser to accept and validate `next_goal` and `future_prices`; retain the same action execution, fees, delays, one-share sizing, settlement and match splits. Malformed forecasts are invalid in the new mode. Existing P&L-only models need the original schema.
+- **Profit remains the headline:** whole-match net P&L versus always-flat, gross P&L, fees, turnover, drawdown, and match-bootstrap confidence intervals. Never report shaped return as profit. Use repeated sampling seeds and paired match comparisons against the original checkpoint.
+- Report regulation Brier/log loss versus normalized market prices; next-goal Brier/log loss versus a training-only fitted time/score baseline; five-minute price MSE versus unchanged prices. Include target coverage and keep masked labels out of accuracy denominators.
+- Test full-state, prices-only, and game-only inputs on the same held-out matches, plus internally consistent score/red-card counterfactuals with prices fixed. Forecast accuracy alone does not establish game-state use or causal understanding. These ablations are an evaluation requirement, not implemented paid experiments here.
+- Save per-match and per-decision results. Our replay evaluator now puts a `match_replays` JSON payload in each evaluation's logtree JSON/HTML, including P&L, costs, actions, probabilities and forecast scores. This supports paired uncertainty and trade audits; decode the JSON text entry in `eval_1_logtree.json` when both evaluators are enabled.
+- Select coefficients/checkpoints using validation only. Keep the 32-match test split untouched until the final comparison. Retain both P&L-only and shaped-reward runs as separate experiments.
+
+
+### Football-rules prompt comparison
+
+`football_rules=true` includes `templates/football_rules.j2` in the system prompt. Default false preserves the control prompt. This concise reference covers clock/score, goals, player numbers, cards, penalties and substitutions; it is not the full rulebook or a betting strategy. The common rules were checked against IFAB [Law 3](https://www.theifab.com/laws/latest/the-players/), [Law 7](https://www.theifab.com/laws/latest/the-duration-of-the-match/), [Law 10](https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/) and [Law 12](https://www.theifab.com/laws/latest/fouls-and-misconduct/) on 2026-10-13. No season-specific substitution quota or new timing protocol is assumed.
+
+```sh
+uv run --locked python -m app.trade_env build-tasks --set forecast_rewards=true --set football_rules=true --output data/processed/trade_env/tasks.forecast.rules.jsonl.gz
+```
+
+Use `tasks_path=data/processed/trade_env/tasks.forecast.rules.jsonl.gz config_path=data/processed/trade_env/tasks.forecast.rules.meta.json` for this variant. Compare with the corrected no-rules forecast prompts, not the stopped run's split-JSON prompt. Hold checkpoint, tasks, sampling settings and seeds fixed for an inference comparison before considering two training runs. Inspect factual correctness and support in the visible state of each rationale, as well as forecasts, actions, net P&L and validity; merely mentioning more football terms is not evidence of understanding. Labels, rewards and user-state messages are identical across variants, except the config fingerprint. Added input tokens increase cost. No paired model comparison has run yet.

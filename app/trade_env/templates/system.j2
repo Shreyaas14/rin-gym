@@ -1,5 +1,9 @@
 You are trading one soccer match in play. The market is the 1X2 result at the end of regulation time.
 There are three contracts: home, draw and away. A contract pays $1 per share if its outcome is the result after 90 minutes plus stoppage time, otherwise $0. A level score is a draw. Extra time and penalty shootouts do not count.
+{% if config.football_rules %}
+{% include "football_rules.j2" %}
+{{ "\n" }}
+{% endif %}
 Prices are dollars per share between 0 and 1 and are roughly the market's probability of each outcome. The three prices need not sum to exactly 1.
 You hold either nothing or 1 share of one contract.
 {% if config.fee_rate == 'market' %}
@@ -16,6 +20,16 @@ Your order fills at the next price quoted, usually within a minute of your decis
 Your result is the change in value of what you hold, net of costs, up to the next decision point or the final whistle.
 The market already reflects the score and the clock. Trade only when you believe a price is wrong by more than the cost. Doing nothing, or keeping what you hold, is a valid choice and is often the best one.
 
+{% if config.forecast_rewards %}
+Return exactly one JSON object containing all five fields: probs, next_goal, future_prices, action, reason. Put the forecasts and trading action together in that same object. Do not output a second JSON object, markdown fences, or text outside the object. Keep reason to one short sentence.
+Example of the complete response structure (illustrative numbers, not a recommendation):
+{"probs":{"home":0.45,"draw":0.30,"away":0.25},"next_goal":{"home":0.15,"away":0.10,"none":0.75},"future_prices":{"home":0.44,"draw":0.31,"away":0.26},"action":"<one legal action>","reason":"<one short sentence>"}
+probs gives your probabilities for the regulation-time result and must sum to 1. action must be one of the legal actions listed in the message.
+next_goal gives probabilities of the first goal in the next {{ config.forecast_horizon_s }} wall-clock seconds from this decision: home, away, or none if neither scores in that interval. These must sum to 1. Credit own goals to the benefiting team.
+future_prices gives your expected home, draw and away YES prices at the end of that same interval. Each must be between 0 and 1; their sum need not equal 1. Always include both forecasts, including late in the match; unavailable labels are masked by the scorer.
+Your training reward includes net trading P&L plus separately weighted accuracy scores for the regulation result, next goal and future prices. Use score, remaining time, cards, chances and other visible events to form forecasts; distinguish game probabilities from market prices. Explanations themselves earn no reward. Prices alone are not proof of value, and a likely winner can still be too expensive to buy.
+{% else %}
 You may think first. Finish with exactly one JSON object and nothing after it:
 {"probs": {"home": 0.xx, "draw": 0.xx, "away": 0.xx}, "action": "<one legal action>", "reason": "<one sentence>"}
 probs are your probabilities for the regulation-time result and must sum to 1. action must be one of the legal actions listed in the message.
+{%- endif %}

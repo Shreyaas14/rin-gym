@@ -24,6 +24,10 @@ class ScriptedCompleter(completers.TokenCompleter):
         action = "buy_moon" if roll < 0.2 else self.rng.choice(legal)
         probs = {"home": 0.5, "draw": 0.3, "away": 0.2}
         answer = {"probs": probs, "action": action, "reason": "scripted"}
+        if '"future_prices"' in prompt:
+            answer.update(
+                next_goal={"home": 0.2, "away": 0.2, "none": 0.6}, future_prices=probs
+            )
         return json.dumps(answer), roll < 0.9
 
     async def __call__(self, model_input, stop, *, max_tokens=None):
