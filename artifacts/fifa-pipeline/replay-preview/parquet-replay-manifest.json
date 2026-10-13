@@ -1,0 +1,8 @@
+{
+  "match_id": "400021440",
+  "events": 94,
+  "dataset_version": "20261013T012355-c487c002",
+  "timeline_source_sha256": "fdd344a2ac44d5545154d5992d5b803e0d830e748d3678605a8df15f066606c8",
+  "renderer_sha256": "bd0fa2281ff08ced77b4b8873ca728d419bf9fe2e029cd161b42d563368628a9",
+  "input": "FIFA events read from Parquet; existing renderer supplies its market fixtures"
+}

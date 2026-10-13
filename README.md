@@ -38,3 +38,15 @@ python3 -m pipelines.sports_data.verify
 ```
 
 The first run needs public internet access. Downloads are cached under `data/raw/sports/`; generated tables live under `data/processed/sports/`. Raw caches are excluded from Git.
+
+## FIFA Parquet ingestion
+
+Ingest Premier League 2025/26 and World Cup 2026 into shared local match/event tables:
+
+```sh
+python3 -m pip install -r pipelines/fifa/requirements.txt
+python3 -m pipelines.fifa ingest
+python3 -m pipelines.fifa verify --cache data/raw/fifa
+```
+
+The [pipeline guide](docs/pipelines/fifa-parquet.md) documents the schemas, cache/refresh behavior, and replay adapter. The completed [ingestion report](artifacts/fifa-pipeline/REPORT.md) covers 484 matches and 40,848 events.

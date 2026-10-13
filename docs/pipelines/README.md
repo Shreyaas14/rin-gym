@@ -24,3 +24,15 @@ python3 -m pipelines.sports_data.fifa_join
 The initial import reorganizes exploratory code with minimal changes to its analysis. The cache primarily uses stable filenames; delete a specific cached response and its metadata to deliberately refresh it. Provider responses can change, so refreshed results need not reproduce the original hashes. The original source index is not silently updated by reruns.
 
 Some analysis functions retain cohort-specific checks and an explicitly documented EPL reschedule override. These are research pipelines, not a generic production ingestion service.
+
+## Shared FIFA Parquet pipeline
+
+The [FIFA Parquet guide](fifa-parquet.md) covers ingestion of Premier League 2025/26 and World Cup 2026, immutable snapshots, validation, and the adapter for the existing FIFA replay visualization.
+
+```sh
+python3 -m pip install -r pipelines/fifa/requirements.txt
+python3 -m pipelines.fifa ingest
+python3 -m pipelines.fifa verify --cache data/raw/fifa
+```
+
+This new pipeline requires PyArrow; the earlier CSV audit commands above retain their existing dependencies.
