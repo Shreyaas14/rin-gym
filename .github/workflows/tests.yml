@@ -1,7 +1,11 @@
 name: Tests and installed tool
 on:
   push:
+    branches: [main]
   pull_request:
+concurrency:
+  group: rin-gym-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
 env:
   HF_HUB_OFFLINE: '1'
 permissions:
@@ -43,3 +47,19 @@ jobs:
           cd '${{ runner.temp }}'
           '${{ runner.temp }}/rin-gym-bin/rin-gym' --help
           '${{ runner.temp }}/rin-gym-tools/rin-gym/bin/python' '${{ github.workspace }}/scripts/check_tests.py' --installed
+  optional-evaluation-integrations:
+    runs-on: macos-14
+    env:
+      MLFLOW_DISABLE_TELEMETRY: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          enable-cache: true
+      - name: Install locked optional evaluation SDKs
+        if: ${{ hashFiles('pyproject.toml') != '' }}
+        run: uv sync --frozen --all-extras
+      - name: Run native SDK and local MLflow integration tests
+        if: ${{ hashFiles('pyproject.toml') != '' }}
+        run: .venv/bin/python scripts/check_tests.py

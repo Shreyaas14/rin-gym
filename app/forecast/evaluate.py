@@ -17,6 +17,17 @@ MODEL_NAMES = ['climatology', 'pregame_market', 'poisson_training', 'poisson_pre
 
 def select_temperature(probabilities, labels, ids, splits, config):
     """The selection function masks to validation before consulting any target."""
+    from .governance import assert_development_matches
+    assert_development_matches(ids)
+    if not (len(probabilities) == len(labels) == len(ids) == len(splits)):
+        raise ValueError('Predictions, labels, match IDs and splits must align')
+    membership = {}
+    for mid, split in zip(ids, splits):
+        if split not in ['train', 'validation', 'test']:
+            raise ValueError('Unknown development split')
+        if mid in membership and membership[mid] != split:
+            raise ValueError('A whole match must belong to exactly one split')
+        membership[mid] = split
     val = np.asarray(splits) == 'validation'
     if not val.any():
         raise ValueError('Temperature selection requires validation matches')
@@ -33,6 +44,8 @@ def select_temperature(probabilities, labels, ids, splits, config):
 def run():
     config = read(ROOT / 'config.json')
     manifest = read(MANIFESTS / 'manifest.json')
+    from .governance import assert_development_matches
+    assert_development_matches(row['match_id'] for row in manifest)
     training = [r for r in manifest if r['split'] == 'train' and r['status'] == 'ok']
     simulator = Simulator.fit(training, config)
     OUTPUT.mkdir(parents=True, exist_ok=True)

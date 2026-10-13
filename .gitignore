@@ -227,7 +227,26 @@ __marimo__/
 # Regenerated per-snapshot forecast export
 /data/processed/forecast/predictions.csv
 
+# Local evaluation evidence and optional MLflow storage
+/data/evals/
+/artifacts/eval-quality/
+/artifacts/mlflow/
+
+/artifacts/tinker/
+
 # Local FIFA Parquet snapshots and replay exports
 /data/processed/fifa/
 /artifacts/fifa-replay/
+
+# Local prediction-market linkage and historical odds snapshots
+/data/processed/fifa-markets/
+/data/processed/fifa-market-history/
+
+# Local replay query databases
+*.duckdb
+*.duckdb.wal
+
+# Regenerable granular replay artifacts
+/artifacts/play-by-play/
+/data/processed/play-by-play/
 /data/processed/trade_env/

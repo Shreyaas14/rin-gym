@@ -8,6 +8,7 @@ import json
 
 
 def main():
+    ROOT.mkdir(parents=True, exist_ok=True)
     batch({'fifa_calendar_2026': 'https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023'})
     matches = load('fifa_calendar_2026')['Results']
     batch({f'fifa_{m["IdMatch"]}_timeline': f'https://api.fifa.com/api/v3/timelines/{m["IdMatch"]}?language=en' for m in matches})

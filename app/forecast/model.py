@@ -55,6 +55,8 @@ class Simulator:
     def fit(cls, training_rows, config):
         if not training_rows or any(row['split'] != 'train' for row in training_rows):
             raise ValueError('Fit must receive training matches only')
+        from .governance import assert_development_matches
+        assert_development_matches(row['match_id'] for row in training_rows)
         durations = [[], []]
         goals = np.zeros(2)
         counts = np.zeros(3)
@@ -128,6 +130,8 @@ def demo(argv):
     parser.add_argument('--utc', required=True)
     parser.add_argument('--runs', type=int, default=10000)
     args = parser.parse_args(argv)
+    from .governance import assert_development_matches
+    assert_development_matches([args.match])
     config = read(ROOT / 'config.json')
     model = Simulator(read(OUTPUT / 'model.json'), config)
     row = next(r for r in read(MANIFESTS / 'manifest.json') if r['match_id'] == args.match and r['status'] == 'ok')

@@ -36,3 +36,22 @@ python3 -m pipelines.fifa verify --cache data/raw/fifa
 ```
 
 This new pipeline requires PyArrow; the earlier CSV audit commands above retain their existing dependencies.
+
+## Match and price history resolution
+
+The [FIFA market-resolution guide](fifa-market-resolution.md) covers the full
+fixture-to-contract join and historical odds ingestion for all supported market
+families, with separate raw preservation and final inclusion policies.
+
+```sh
+python3 -m pipelines.fifa.markets
+python3 -m pipelines.fifa.market_history
+python3 -m pipelines.fifa.verify_markets
+```
+
+The [full mapping audit](../../artifacts/fifa-market-mapping/REPORT.md) records
+coverage, exclusions, local Parquet outputs, and validation evidence.
+
+## Installed tool
+
+The full integration branch installs with `uv tool install .`. Run `rin-gym pipeline --help` for legacy audit commands and `rin-gym pipeline fifa --help` for Parquet ingestion. `rin-gym pipeline markets`, `rin-gym pipeline market-history` and `rin-gym pipeline verify-markets` operate on the same workspace. Put `--workspace /path/to/data` before the command to keep outputs separate from the checkout. See the [complete installed workflow](../../README.md).

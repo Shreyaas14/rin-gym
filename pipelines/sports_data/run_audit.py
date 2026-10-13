@@ -1,11 +1,12 @@
 """Reproduce the fixed cohort audit using public endpoints; existing downloads are cached."""
-from .cache import fetch, RAW, MANIFESTS
+from .cache import fetch, RAW, ROOT, MANIFESTS
 from .collect import collect
 from .analyze import run as analyze
 import concurrent.futures
 import datetime
 import json
 import shutil
+from rin_gym.paths import seed_sports_manifests
 
 
 def batch(urls):
@@ -16,6 +17,9 @@ def batch(urls):
 
 
 def run():
+    ROOT.mkdir(parents=True, exist_ok=True)
+    RAW.mkdir(parents=True, exist_ok=True)
+    seed_sports_manifests()
     base = 'https://api.elections.kalshi.com/trade-api/v2/historical/markets'
     batch({
         'kalshi_nba_all': base + '?limit=1000&series_ticker=KXNBAGAME',

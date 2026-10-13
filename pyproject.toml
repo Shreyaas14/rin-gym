@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rin-gym"
+version = "0.1.0"
+description = "Sports data pipelines, replay, simulation and protected forecasting evaluation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "tzdata>=2024.1", "pyarrow>=20,<26", "duckdb>=1.3,<2", "Pillow>=10.1,<13", "pytz>=2024.1"]
+
+[project.optional-dependencies]
+tracking = ["mlflow>=3.0,<4"]
+tinker = ["tinker==0.33.1", "tinker-cookbook==0.5.7"]
+
+[project.scripts]
+rin-gym = "rin_gym.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["rin_gym", "app", "pipelines"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/rin_gym", "/app", "/pipelines", "/tests", "/docs", "/README.md", "/pyproject.toml", "/uv.lock"]

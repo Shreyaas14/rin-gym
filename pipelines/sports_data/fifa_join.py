@@ -26,6 +26,7 @@ def batch(urls):
 
 
 def main():
+    ROOT.mkdir(parents=True, exist_ok=True)
     urls = {'fifa_calendar_2026': 'https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023'}
     for mid, slug in MATCHES.items():
         urls[f'fifa_{mid}_timeline'] = f'https://api.fifa.com/api/v3/timelines/{mid}?language=en'

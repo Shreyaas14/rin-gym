@@ -11,9 +11,10 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from rin_gym.paths import workspace_root
 
 ROOT = Path(__file__).resolve().parent
-REPOSITORY = ROOT.parents[1]
+REPOSITORY = workspace_root()
 RAW = REPOSITORY / 'data' / 'raw' / 'forecast'
 MANIFESTS = REPOSITORY / 'data' / 'manifests' / 'forecast'
 ARTIFACTS = REPOSITORY / 'artifacts' / 'forecast-eval'
@@ -98,6 +99,8 @@ def score_batches(events):
 def prepare():
     config = read(ROOT / 'config.json')
     matches = group_matches()
+    from .governance import assert_development_matches
+    assert_development_matches(m['IdMatch'] for m in matches)
     # Freeze split membership independently of market retrieval or model scores.
     split = [{'match_id': m['IdMatch'], 'scheduled_utc': m['Date'], 'split': split_for(m['Date'], config)} for m in matches]
     write(MANIFESTS / 'splits.json', split)
