@@ -154,7 +154,7 @@ def main():
     parser.add_argument('--port', type=int, default=8765)
     parser.add_argument('--model', default='jev-1.13.0', help='Pinned TypeSafe model version')
     parser.add_argument('--recorded', type=Path, help='Compatible market-valuations/v1 JSON recording')
-    parser.add_argument('--dataset', type=Path, help='Anonymous game catalog directory (defaults to data/processed/market-demo)')
+    parser.add_argument('--dataset', type=Path, help='Anonymous Parquet catalog file (defaults to data/processed/market-demo.parquet)')
     args = parser.parse_args()
     server = MarketServer(('127.0.0.1', args.port), args.recorded, args.model, args.dataset)
     print(f'Trade the Match: http://127.0.0.1:{server.server_port}', flush=True)

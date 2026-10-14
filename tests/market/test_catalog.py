@@ -10,8 +10,11 @@ import tempfile
 import unittest
 
 from app.market.catalog import Catalog
-from app.market.data import Fixture, POLICY_VERSION, TIME_ORIGIN, make_payload
+from app.market.data import Fixture, TIME_ORIGIN, make_payload
 from app.market.import_dataset import import_dataset
+from app.market.storage import read_catalog, write_catalog, SCHEMA
+import pyarrow as pa
+import pyarrow.parquet as pq
 
 
 def source_rows(shift=0):
@@ -26,7 +29,7 @@ def source_rows(shift=0):
                      'type': 'Private Country Player Fullname', 'team_id': 'private-home-id',
                      'player_id': 'private-player-id', 'sub_player_id': 'private-sub-player-id' if code == 5 else None,
                      'sub_team_id': 'private-home-id', 'home_goals': score[0], 'away_goals': score[1],
-                     'x': 33, 'y': 66, 'location_status': 'present_unverified',
+                     'x': 33.0, 'y': 66.0, 'location_status': 'present_unverified',
                      'description': 'Full name from Private Country scored the goal'})
     return rows
 
@@ -37,18 +40,7 @@ def payload(source_id='private-match-id', label='Game 001'):
 
 
 def publish(folder, games):
-    items = []
-    for game in games:
-        raw = json.dumps(game).encode()
-        filename = game['id'] + '.json'
-        (folder / filename).write_bytes(raw)
-        items.append({'id': game['id'], 'label': game['label'], 'event_count': len(game['events']),
-                      'has_reference': bool(game['prices']), 'file': filename,
-                      'sha256': hashlib.sha256(raw).hexdigest()})
-    manifest = {'schema': 'market-catalog/v1', 'policy_version': POLICY_VERSION,
-                'default_id': items[0]['id'], 'games': items}
-    (folder / 'manifest.json').write_text(json.dumps(manifest))
-    return manifest
+    write_catalog(games, folder / 'catalog.parquet')
 
 
 def density_payload(number, active_events=10, half_seconds=2700, extra_events=0):
@@ -60,7 +52,7 @@ def density_payload(number, active_events=10, half_seconds=2700, extra_events=0)
     template = game['events'][0]
 
     def event(when, period, code, typ):
-        return {**template, 'time': when, 'period': period, 'type_code': code, 'type': typ, 'score': [0, 0]}
+        return {**template, 'time': float(when), 'period': period, 'type_code': code, 'type': typ, 'score': [0, 0]}
 
     events = [event(start, 3, 7, 'Start Time'), event(start + half_seconds, 3, 8, 'End Time'),
               event(second, 5, 7, 'Start Time'), event(end, 5, 8, 'End Time')]
@@ -136,7 +128,7 @@ class CatalogTests(unittest.TestCase):
             folder = Path(temporary)
             games = [payload(), payload('second-private-match', 'Game 002')]
             publish(folder, games)
-            catalog = Catalog(folder)
+            catalog = Catalog(folder / 'catalog.parquet')
             listed = catalog.list_games()
             self.assertEqual(len(listed), 2)
             self.assertNotEqual(listed[0]['id'], listed[1]['id'])
@@ -156,7 +148,7 @@ class CatalogTests(unittest.TestCase):
             slow = density_payload(1, active_events=100, half_seconds=3600)
             dense = density_payload(2, active_events=90, half_seconds=2700)
             publish(folder, [slow, dense])
-            catalog = Catalog(folder)
+            catalog = Catalog(folder / 'catalog.parquet')
             first, second = catalog.list_games()
             self.assertEqual(first['id'], dense['id'])
             self.assertEqual(first['event_density'], 1)
@@ -188,7 +180,7 @@ class CatalogTests(unittest.TestCase):
             folder = Path(temporary)
             games = [density_payload(i, active_events=20 + i) for i in range(1, 13)]
             publish(folder, games)
-            catalog = Catalog(folder)
+            catalog = Catalog(folder / 'catalog.parquet')
             selected = catalog.list_games()
             self.assertEqual(catalog.candidate_count, 12)
             self.assertEqual(len(selected), 10)
@@ -212,65 +204,82 @@ class CatalogTests(unittest.TestCase):
             twice = density_payload(6, active_events=20, half_seconds=6000)
             # All density=.1, so the 20-event game wins the first tie.
             publish(folder, [same_b, same_a, twice])
-            listed = Catalog(folder).list_games()
+            listed = Catalog(folder / 'catalog.parquet').list_games()
             self.assertEqual(listed[0]['id'], twice['id'])
             self.assertEqual([item['id'] for item in listed[1:]], sorted([same_a['id'], same_b['id']]))
 
-    def test_manifest_metrics_cannot_spoof_ranking_and_cached_load_checks_hash(self):
+    def test_parquet_payloads_preserve_hashes_and_cannot_spoof_metrics(self):
         with tempfile.TemporaryDirectory() as temporary:
             folder = Path(temporary)
-            game = density_payload(7, active_events=20)
-            other = density_payload(8, active_events=30)
-            manifest = publish(folder, [game, other])
-            manifest['games'][0].update(event_density=999, active_minutes=1, active_event_count=999, rank=1)
-            (folder / 'manifest.json').write_text(json.dumps(manifest))
-            catalog = Catalog(folder)
-            self.assertEqual(catalog.default_id, other['id'])
-            path = folder / manifest['games'][1]['file']
-            path.write_text(path.read_text() + ' ')
-            with self.assertRaises(ValueError):
-                catalog.load(other['id'])
+            games = [density_payload(7, active_events=20), density_payload(8, active_events=30)]
+            publish(folder, games)
+            path = folder / 'catalog.parquet'
+            self.assertEqual(read_catalog(path), games)
+            for game, restored in zip(games, read_catalog(path)):
+                self.assertEqual(Fixture.from_payload(game).source_hash, Fixture.from_payload(restored).source_hash)
+            self.assertEqual(Catalog(path).default_id, games[1]['id'])
+            self.assertNotIn('event_density', pq.read_schema(path).names)
+            games[0]['event_density'] = 999
+            with self.assertRaisesRegex(ValueError, 'conversion changes'):
+                write_catalog(games, folder / 'spoofed.parquet')
 
     def test_ranked_fixture_instances_do_not_share_mutable_events(self):
         with tempfile.TemporaryDirectory() as temporary:
             folder = Path(temporary)
             game = density_payload(9)
             publish(folder, [game])
-            catalog = Catalog(folder)
+            catalog = Catalog(folder / 'catalog.parquet')
             first = catalog.load(game['id'])
             first.events[0]['type'] = 'Edited externally'
             self.assertEqual(catalog.load(game['id']).events[0]['type'], 'Start Time')
 
-    def test_tampered_hash_missing_file_and_escaping_manifest_path_rejected(self):
+    def test_cached_catalog_detects_changes_and_missing_file(self):
         with tempfile.TemporaryDirectory() as temporary:
             folder = Path(temporary)
             game = payload()
-            manifest = publish(folder, [game])
-            catalog = Catalog(folder)
-            path = folder / manifest['games'][0]['file']
-            path.write_text(path.read_text() + ' ')
+            publish(folder, [game])
+            path = folder / 'catalog.parquet'
+            catalog = Catalog(path)
+            path.write_bytes(path.read_bytes() + b' ')
             with self.assertRaises(ValueError):
                 catalog.load(game['id'])
             path.unlink()
             with self.assertRaises(ValueError):
                 catalog.load(game['id'])
-            manifest['games'][0]['file'] = '../escape.json'
-            (folder / 'manifest.json').write_text(json.dumps(manifest))
-            with self.assertRaises(ValueError):
-                Catalog(folder)
+            with self.assertRaisesRegex(ValueError, 'not found'):
+                Catalog(path)
 
-    def test_symlink_cannot_escape_catalog_root(self):
-        with tempfile.TemporaryDirectory() as temporary, tempfile.TemporaryDirectory() as outside:
-            folder = Path(temporary)
-            game = payload()
-            manifest = publish(folder, [game])
-            path = folder / manifest['games'][0]['file']
-            target = Path(outside) / 'outside.json'
-            target.write_bytes(path.read_bytes())
-            path.unlink()
-            path.symlink_to(target)
+    def test_corrupt_wrong_schema_and_payload_hash_are_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / 'bad.parquet'
+            path.write_bytes(b'not parquet')
             with self.assertRaises(ValueError):
-                Catalog(folder)
+                Catalog(path)
+            pq.write_table(pa.table({'unrecognized': [1]}), path)
+            with self.assertRaisesRegex(ValueError, 'schema'):
+                Catalog(path)
+            game = payload()
+            table = pa.Table.from_pylist([{**game, 'payload_sha256': '0' * 64}], schema=SCHEMA)
+            pq.write_table(table, path)
+            with self.assertRaisesRegex(ValueError, 'content hash'):
+                Catalog(path)
+
+    def test_empty_duplicate_and_existing_publications_are_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            folder = Path(temporary)
+            path = folder / 'catalog.parquet'
+            with self.assertRaises(ValueError):
+                write_catalog([], path)
+            publish(folder, [payload()])
+            original = path.read_bytes()
+            with self.assertRaises(ValueError):
+                publish(folder, [payload('other')])
+            self.assertEqual(path.read_bytes(), original)
+            duplicate = folder / 'duplicate.parquet'
+            write_catalog([payload(), payload()], duplicate)
+            with self.assertRaisesRegex(ValueError, 'Duplicate'):
+                Catalog(duplicate)
+
 
 
 @unittest.skipUnless(importlib.util.find_spec('duckdb'), 'Optional duckdb ingestion dependency is not installed')
@@ -281,7 +290,7 @@ class DatasetImportTests(unittest.TestCase):
         for tag in cases:
             with self.subTest(tag=tag), tempfile.TemporaryDirectory() as temporary:
                 root = Path(temporary)
-                database, output = root / 'source.duckdb', root / 'published'
+                database, output = root / 'source.duckdb', root / 'published.parquet'
                 connection = duckdb.connect(str(database))
                 if tag == 'metadata':
                     connection.execute('CREATE TABLE replay_metadata(metadata JSON)')
@@ -305,7 +314,7 @@ class DatasetImportTests(unittest.TestCase):
         import duckdb
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
-            database, output = root / 'source.duckdb', root / 'published'
+            database, output = root / 'source.duckdb', root / 'published.parquet'
             connection = duckdb.connect(str(database))
             connection.execute('CREATE TABLE matches(match_id VARCHAR, home_team_id VARCHAR, away_team_id VARCHAR, regulation_home_score INT, regulation_away_score INT, timeline_status VARCHAR)')
             connection.execute('CREATE TABLE events(match_id VARCHAR, event_time_utc TIMESTAMPTZ, period_code INT, event_type_code INT, event_type_label VARCHAR, team_id VARCHAR, player_id VARCHAR, sub_player_id VARCHAR, sub_team_id VARCHAR, home_score INT, away_score INT, x_raw DOUBLE, y_raw DOUBLE, location_status VARCHAR, source_index INT)')
@@ -333,14 +342,14 @@ class DatasetImportTests(unittest.TestCase):
                 fixture = catalog.load(item['id'])
                 self.assertEqual(fixture.kickoff, TIME_ORIGIN)
                 self.assertEqual(fixture.state(fixture.end)['score'], [1, 0])
-            published = ''.join(path.read_text() for path in output.glob('*.json'))
+            published = json.dumps(read_catalog(output))
             for forbidden in ('private-', 'Fullname', 'Private Country', '2023-'):
                 self.assertNotIn(forbidden, published)
-            # An import may not rewrite bundles underneath a live manifest.
-            manifest_before = (output / 'manifest.json').read_bytes()
+            # An import may not replace a live Parquet catalog.
+            manifest_before = output.read_bytes()
             with self.assertRaises(ValueError):
                 import_dataset(database, output)
-            self.assertEqual((output / 'manifest.json').read_bytes(), manifest_before)
+            self.assertEqual(output.read_bytes(), manifest_before)
 
 
 if __name__ == '__main__':

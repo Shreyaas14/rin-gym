@@ -1,17 +1,18 @@
-"""Read the existing replay database and publish anonymous portable bundles.
+"""Read the replay database and publish one anonymous Parquet catalog.
 
 DuckDB is an optional ingestion dependency. Neither the web server nor the
-portable catalog imports it. Source databases are opened read-only.
+portable catalog imports it. Parquet uses the existing PyArrow dependency.
+Source databases are opened read-only.
 """
 
 import argparse
 from collections import Counter, defaultdict
-import hashlib
 import json
 import math
 from pathlib import Path
 
 from .data import Fixture, POLICY_VERSION, TYPE_NAMES, anonymous_id, make_payload
+from .storage import write_catalog
 
 
 def _require_polymarket(connection):
@@ -55,8 +56,8 @@ def import_dataset(database, output):
     database, output = Path(database), Path(output)
     if not database.is_file():
         raise ValueError('Replay database was not found')
-    if (output / 'manifest.json').exists():
-        raise ValueError('Output already contains a catalog; choose a new output folder')
+    if output.exists():
+        raise ValueError('Output already contains a catalog; choose a new output file')
     connection = duckdb.connect(str(database), read_only=True)
     try:
         _require_polymarket(connection)
@@ -105,7 +106,7 @@ def import_dataset(database, output):
                 or type(price) not in (int, float) or not math.isfinite(price) or not 0 <= price <= 1):
             raise ValueError('Source dataset includes an invalid reference price')
         grouped_prices[match_id].append({'t': when, 'p': price})
-    bundles, metadata = [], []
+    bundles = []
     unknown, event_count, price_count = 0, 0, 0
     for number, (match_id, home_id, away_id, home_score, away_score) in enumerate(
             sorted(matches, key=lambda row: anonymous_id(row[0])), 1):
@@ -119,33 +120,18 @@ def import_dataset(database, output):
         if fixture.state(fixture.end)['score'] != [home_score, away_score]:
             raise ValueError('Structured regulation score disagrees with the source period-end event')
         unknown += sum(e['type_code'] not in TYPE_NAMES for e in payload['events'])
-        raw = json.dumps(payload, sort_keys=True, separators=(',', ':'), allow_nan=False).encode()
-        filename = payload['id'] + '.json'
-        metadata.append({'id': payload['id'], 'label': payload['label'], 'file': filename,
-                         'sha256': hashlib.sha256(raw).hexdigest(), 'event_count': len(payload['events']),
-                         'has_reference': bool(payload['prices']), **fixture.activity_metrics()})
-        bundles.append((filename, raw))
+        bundles.append(payload)
         event_count += len(payload['events'])
         price_count += len(payload['prices'])
-    if not metadata or len({game['id'] for game in metadata}) != len(metadata):
+    if not bundles or len({game['id'] for game in bundles}) != len(bundles):
         raise ValueError('Source dataset has no games or duplicate game identities')
-    manifest = {'schema': 'market-catalog/v1', 'policy_version': POLICY_VERSION,
-                'default_id': metadata[0]['id'], 'games': metadata}
-    output.mkdir(parents=True, exist_ok=True)
-    for filename, raw in bundles:
-        path = output / filename
-        temporary = path.with_suffix('.json.tmp')
-        temporary.write_bytes(raw)
-        temporary.replace(path)
-    temporary = output / 'manifest.json.tmp'
-    temporary.write_text(json.dumps(manifest, sort_keys=True, indent=2) + '\n')
-    temporary.replace(output / 'manifest.json')
-    return {'games': len(metadata), 'events': event_count, 'reference_points': price_count,
+    write_catalog(bundles, output)
+    return {'games': len(bundles), 'events': event_count, 'reference_points': price_count,
             'unrecognized_event_types': unknown, 'policy_version': POLICY_VERSION}
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description='Publish anonymous replay game bundles from a read-only database')
+    parser = argparse.ArgumentParser(description='Publish an anonymous replay Parquet catalog from a read-only database')
     parser.add_argument('--database', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args(argv)

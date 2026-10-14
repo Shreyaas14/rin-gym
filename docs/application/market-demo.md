@@ -7,10 +7,11 @@ The original replay now has an interactive browser companion with a picker for t
 From the `rin-gym` checkout, with Python 3.11 or later:
 
 ```sh
-python3 -m app.market --port 8765
+uv sync --locked
+uv run --locked python -m app.market --port 8765
 ```
 
-Open [the local demo](http://127.0.0.1:8765). No package installation or external request is needed for the default mode. The server binds to loopback; each browser cookie gets its own private exchange. Keep the server running while using the page.
+Open [the local demo](http://127.0.0.1:8765). After installing the repository’s locked dependencies, Local simulation works offline and needs no model API requests. The server binds to loopback; each browser cookie gets its own private exchange. Keep the server running while using the page.
 
 Choose a game from the ranked picker. Density is recorded events per minute of active regulation play: events inside each half’s start/end boundaries divided by the combined duration of both halves, including stoppage time and excluding halftime, pre-match activity, extra time and shootouts. Boundary events count. The picker shows rank, density and event count; only the top 10 can be selected, and the densest game opens by default. Every selection starts paused, with fresh 1,000-dollar paper accounts and a new order book, and preserves the current live/local mode. Old-game commands cannot change the new session. Buy YES to back a Team A regulation win or buy NO to back a draw/Team B win. A limit order may rest until the next agent refresh; choose immediate-or-cancel to take available liquidity and cancel the remainder. Closing a position can fill partially when the book has insufficient depth.
 
@@ -18,17 +19,19 @@ Agents refresh every 15 match seconds and on recorded regulation events, with no
 
 ## Anonymous dataset
 
-The server automatically reads the portable catalog in `data/processed/market-demo/`. This workspace's catalog contains 484 real games exported from the existing replay database. The server verifies and scores all candidates, then exposes only the top 10 through the picker and game-selection API. Scores are computed from verified events, not trusted from manifest metadata. Ties use active event count, total event count, then anonymous ID. Use `--dataset /absolute/path/to/catalog` to choose another exported catalog. If no catalog exists and no explicit path is supplied, the server offers one anonymous bundled example; an explicitly missing catalog fails with an error.
+The server automatically reads the portable catalog in `data/processed/market-demo.parquet`. This workspace's catalog contains 484 real games exported from the existing replay database. The server verifies and scores all candidates, then exposes only the top 10 through the picker and game-selection API. Scores are computed from verified events, not trusted from stored ranking metadata. Ties use active event count, total event count, then anonymous ID. Use `--dataset /absolute/path/to/catalog.parquet` to choose another exported Parquet file. If no catalog exists and no explicit path is supplied, the server offers one anonymous bundled example; an explicitly missing Parquet file fails with an error.
 
 Create a catalog from an existing replay database:
 
 ```sh
-python3 -m app.market.import_dataset \
+uv run --with duckdb python -m app.market.import_dataset \
   --database /absolute/path/to/replay.duckdb \
-  --output data/processed/market-demo
+  --output data/processed/market-demo.parquet
 ```
 
-Only the importer requires `duckdb`; it opens a Polymarket replay database read-only. Kalshi or mixed-venue databases are rejected explicitly because this version labels its reference as Polymarket. The browser/server runtime continues to use only the standard library and exported JSON. Import into a fresh output directory; an existing published manifest is protected from overwrite. Copying that catalog directory preserves the candidate set and its top-10 selection without copying the original database.
+Only the importer requires `duckdb`; it opens a Polymarket replay database read-only. Kalshi or mixed-venue databases are rejected explicitly because this version labels its reference as Polymarket. The catalog uses PyArrow, already a repository dependency. The committed Zstandard-compressed Parquet file is 992,328 bytes (about 969 KiB), replacing 485 JSON files totaling 9,861,363 bytes. It contains one typed row per game, with nested event and price columns, schema/policy metadata, and a per-game SHA-256. There are no opaque JSON payload columns. All 484 existing game hashes and top-ten rankings are preserved, so compatible recordings remain compatible.
+
+Import into a new `.parquet` filename; an existing file is protected from overwrite. Publication is atomic. The loader checks schema, per-game hashes and on-disk integrity, and computes ranking metrics from the verified events. Copying this single file preserves the entire candidate set and its top-10 selection.
 
 The importer removes team/country/player names, real fixture dates, competition labels, raw commentary and source match/player IDs. Descriptions are generated from allowlisted event types and stable per-game aliases such as Player A01. Both substitution participants retain aliases. Every timeline and reference series is shifted to a common synthetic origin; the browser displays elapsed time. Public catalog metadata contains only anonymous IDs, labels, rank, event counts, active minutes, density and reference availability, with no final scores. This hides explicit identities; it does not claim that a distinctive historical event sequence is impossible to recognize.
 
@@ -52,7 +55,7 @@ The adapter uses the official [TypeSafe endpoint and typed Noul schema](https://
 
 Each decision round runs the two requests concurrently with a shared ten-second application deadline and ten-second socket timeout; there are no automatic retries. Failed agents have no orders for that round. If both fail, replay pauses and the user can retry. A retry preserves the round identity and healthy agent/human orders. Late responses cannot place orders. No failure silently switches to local estimates.
 
-Live integration is covered by mocked transport tests and a real four-request pilot completed October 13, 2026 after the user authorized loading the TypeSafe credential into server memory. All four pinned-model responses were valid. Opening home-win estimates were 56% for Anchor and 52% for Pulse; the next round returned 55% and 52%. The agents generated a two-sided book, a human paper order filled, and the session audit passed. Evidence is in `artifacts/market-demo/live-pilot/`. This checks integration, not forecast quality or full-match liquidity. The faster cadence produces roughly 500 valuation rounds per complete game (516 for the default Game 032), with two model requests per uncached live round; retries/reset patterns and caching determine actual call count. The server does not apply a dollar spending cap, so live mode should be run deliberately.
+Live integration is covered by mocked transport tests and a real four-request pilot completed October 13, 2026 after the user authorized loading the TypeSafe credential into server memory. All four pinned-model responses were valid. Opening home-win estimates were 56% for Anchor and 52% for Pulse; the next round returned 55% and 52%. The agents generated a two-sided book, a human paper order filled, and the session audit passed. Small verification reports are in `artifacts/market-demo/live-pilot/`; the captured session and valuations are retained locally and ignored by Git. This checks integration, not forecast quality or full-match liquidity. The faster cadence produces roughly 500 valuation rounds per complete game (516 for the default Game 032), with two model requests per uncached live round; retries/reset patterns and caching determine actual call count. The server does not apply a dollar spending cap, so live mode should be run deliberately.
 
 ## Recorded valuations and audit export
 
@@ -61,7 +64,8 @@ The footer's **Export session** link downloads the session journal: anonymous mo
 After a complete live run, save [the recording endpoint](http://127.0.0.1:8765/api/recording) from the same browser session as `valuations.json`. Restart with:
 
 ```sh
-python3 -m app.market --port 8765 --recorded /absolute/path/to/valuations.json
+uv sync --locked
+uv run --locked python -m app.market --port 8765 --recorded /absolute/path/to/valuations.json
 ```
 
 Select **Recorded Jev**. The recording must use schema `market-valuations/v1` and match both the selected game's anonymous payload hash and pinned model. Values are indexed by anonymous snapshot hash and agent. A missing snapshot produces an explicit agent failure; it is never interpolated or replaced with historical prices. Orders and fills are still calculated interactively, so different human trades produce different results. Select Local simulation or Live Jev before changing games when a game-specific recording is active. Recordings created before the anonymous-payload policy changed are incompatible and fail explicitly.
@@ -82,10 +86,12 @@ Verify a saved journal independently:
 python3 -m app.market.audit /absolute/path/to/journal.json
 ```
 
-The verifier regenerates engine activity from the journal, compares actual fills and the final book/ledger, and fails on inconsistencies. The original implementation's browser-exported run is saved in `artifacts/market-demo/browser-session.json`: 438 orders, 37 fills, settled, and 300,000 cents of total paper cash. Its independent result is in `artifacts/market-demo/verification.json`.
+The verifier regenerates engine activity from the journal, compares actual fills and the final book/ledger, and fails on inconsistencies. The original implementation's browser-exported run is retained locally in `artifacts/market-demo/browser-session.json`: 438 orders, 37 fills, settled, and 300,000 cents of total paper cash. Its independent result is in `artifacts/market-demo/verification.json`.
 
 The anonymous catalog update initially passed 59 automated tests, Ruff, JavaScript syntax checking and Python compilation. All 484 games were compared against their source regulation scores, timing, event counts and valid coordinates. All 484 also completed an offline human-fill/settlement/journal-audit pass with conserved balances; the 16 second-caution games were audited again after dismissal-label handling changed. Results are saved in `artifacts/market-demo/anonymous-catalog/`. Browser checks confirmed game switching, anonymous player text, restored balances and mobile layout.
 
-Implementation adds `app/market/` and leaves the original video renderer and source payloads intact. Data/server/valuation code uses Python's standard library; frontend assets have no CDN dependency. Sessions and per-game valuation caches are in memory, with up to 32 browser sessions per process. Export before restarting the server or changing games to preserve a journal. Shared public hosting and durable multi-user storage are outside this demo.
+Implementation adds `app/market/` and leaves the original video renderer and source payloads intact. The catalog reader uses the repository’s PyArrow dependency; server, exchange and valuation code use Python’s standard library; frontend assets have no CDN dependency. Sessions and per-game valuation caches are in memory, with up to 32 browser sessions per process. Export before restarting the server or changing games to preserve a journal. Shared public hosting and durable multi-user storage are outside this demo.
 
-The top-10 density update passed 67 automated tests and adds coverage for active-time normalization, halftime/pre-match/extra-time exclusion, deterministic ties, manifest-metric spoofing, and selection restrictions. The complete anonymous ranking is saved in `artifacts/market-demo/anonymous-catalog/event-density-ranking.json`.
+The top-10 density update passed 67 automated tests and adds coverage for active-time normalization, halftime/pre-match/extra-time exclusion, deterministic ties, manifest-metric spoofing, and selection restrictions. The complete anonymous ranking can be generated locally in `artifacts/market-demo/anonymous-catalog/event-density-ranking.json`.
+
+Large session journals, live-provider captures and the complete generated ranking are ignored by Git. See `artifacts/market-demo/README.md` for regenerating or auditing them. Small verification summaries remain versioned.
