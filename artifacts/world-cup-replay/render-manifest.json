@@ -1,0 +1,20 @@
+{
+  "match_id": "400021440",
+  "duration_seconds": 123.83333333333333,
+  "fps": 24,
+  "resolution": [
+    1600,
+    900
+  ],
+  "events": 94,
+  "coordinate_events": 63,
+  "market_ids": [
+    "1897106",
+    "1897107",
+    "1897108"
+  ],
+  "time_mapping": "UTC replay with compressed gaps and event holds",
+  "position_policy": "Only observed raw FIFA event coordinates; no inferred positions or movement",
+  "price_policy": "Latest sample at or before current replay UTC; no future interpolation",
+  "audio": false
+}

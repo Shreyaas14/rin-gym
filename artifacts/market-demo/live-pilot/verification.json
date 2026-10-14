@@ -1,0 +1,13 @@
+{
+  "verification": {
+    "valid": true,
+    "orders": 14,
+    "fills": 2,
+    "settled": false,
+    "total_cash": 300000
+  },
+  "mode": "live",
+  "rounds": 2,
+  "successful_provider_responses": 4,
+  "error": null
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Field / Forecast — Agent market</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <a class="brand" href="/" aria-label="Field / Forecast home">FIELD <span>/</span> FORECAST</a>
+      <div class="header-meta">Anonymous match replay</div>
+      <span class="paper-badge">Paper trading</span>
+    </header>
+    <section class="game-selection" aria-label="Choose a replay">
+      <div class="game-picker-field"><label for="game-picker">Game</label><select id="game-picker" aria-describedby="game-ranking-note game-reset-note" disabled><option value="">Loading games…</option></select><span id="dataset-count" class="dataset-count"></span></div>
+      <div class="game-selection-notes"><span id="game-ranking-note">Ranked by events per minute of regulation play; halftime excluded.</span><span id="game-reset-note">Changing game resets your paper account.</span></div>
+    </section>
+    <section class="match-header" aria-label="Anonymous match scoreboard">
+      <div>
+        <h1><span id="home-team" class="home">Team A</span> <span class="versus">×</span> <span id="away-team" class="away">Team B</span></h1>
+        <p id="game-metadata">Two agents. A market you can trade.</p>
+      </div>
+      <div class="scoreboard"><div id="score" class="score">0 <span>:</span> 0</div><div class="match-clock"><strong id="clock">00:00</strong><span id="phase">Kickoff</span></div></div>
+    </section>
+    <section class="transport" aria-label="Replay controls">
+      <div class="transport-buttons">
+        <button id="play" class="primary play" disabled>▶ Play replay</button>
+        <button id="next-event" title="Advance to the next recorded match event" disabled>Next event <span aria-hidden="true">↦</span></button>
+        <label class="speed-label" for="speed">Speed <select id="speed" disabled><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+      </div>
+      <div class="session-controls"><label for="mode" class="sr-only">Agent mode</label><select id="mode" disabled><option value="local">Local simulation</option><option value="live" disabled>Live Jev</option><option value="recorded" disabled>Recorded Jev</option></select><button id="reset" class="subtle" title="Restart match and reset all paper accounts" disabled>↺ Reset</button></div>
+      <div class="progress-track" role="progressbar" aria-label="Match progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progress"></div></div>
+    </section>
+    <div class="status-line"><span id="connection" class="connection">Connecting to replay…</span><span id="mode-note">Agents respond to the match state as it unfolds.</span></div>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <main class="workspace">
+      <div class="match-column">
+        <section class="pitch-section" aria-labelledby="pitch-heading">
+          <div class="section-heading"><h2 id="pitch-heading">On the pitch</h2><span>Observed event locations</span></div>
+          <div class="pitch-wrap">
+            <svg id="pitch" class="pitch" viewBox="-3 -3 111 74" role="img" aria-label="Soccer pitch showing observed match event locations">
+              <defs><pattern id="stripes" width="21" height="68" patternUnits="userSpaceOnUse"><rect width="21" height="68" fill="#E7ECE0"/><rect width="10.5" height="68" fill="#E2E9DA"/></pattern></defs>
+              <rect width="105" height="68" fill="url(#stripes)"/>
+              <g class="pitch-lines" fill="none" stroke="#A7B6A7" stroke-width=".22"><rect width="105" height="68"/><path d="M52.5 0V68"/><circle cx="52.5" cy="34" r="9.15"/><rect x="0" y="13.84" width="16.5" height="40.32"/><rect x="88.5" y="13.84" width="16.5" height="40.32"/><rect x="0" y="24.84" width="5.5" height="18.32"/><rect x="99.5" y="24.84" width="5.5" height="18.32"/><rect x="-1.5" y="30.34" width="1.5" height="7.32"/><rect x="105" y="30.34" width="1.5" height="7.32"/><circle cx="52.5" cy="34" r=".25" fill="#A7B6A7"/><circle cx="11" cy="34" r=".25" fill="#A7B6A7"/><circle cx="94" cy="34" r=".25" fill="#A7B6A7"/></g>
+              <g id="event-marks"></g>
+            </svg>
+            <div class="pitch-caption"><span><i class="dot home-dot"></i> <span id="home-legend">Team A</span> <i class="dot away-dot"></i> <span id="away-legend">Team B</span></span><span>Event locations, not player tracking</span></div>
+          </div>
+          <div class="event-story"><span id="event-minute" class="event-minute">—</span><div><div id="event-type" class="event-type">Ready for kickoff</div><p id="event-description">Play the replay or advance to the next event to open the market.</p></div></div>
+          <div id="event-feed" class="event-feed" aria-label="Recent match events"></div>
+        </section>
+        <section class="chart-section" aria-labelledby="chart-heading">
+          <div class="section-heading"><h2 id="chart-heading">Team A win probability</h2><label class="reference-toggle"><input id="reference-toggle" type="checkbox" checked> Historical reference</label></div>
+          <div class="chart-stats"><strong id="midpoint">—<small>%</small></strong><span id="quote-label">Waiting for a two-sided book</span><div class="chart-key"><span><i class="line-key"></i> Our market</span><span><i class="trade-key"></i> Trades</span><span id="reference-key"><i class="line-key reference-line"></i> Polymarket</span></div></div>
+          <svg id="chart" viewBox="0 0 740 160" role="img" aria-label="Market midpoint and historical Polymarket probability over replay time"></svg>
+          <div class="chart-footer"><span id="chart-window">Kickoff</span><span id="reference-age">Only observations available by replay time</span><span id="chart-now">Now</span></div>
+        </section>
+        <section class="agents-section" aria-labelledby="agents-heading"><div class="section-heading"><h2 id="agents-heading">At the table</h2><span id="agent-source">Local strategies</span></div><div id="agents" class="agents"></div></section>
+      </div>
+      <aside class="market-column" aria-label="Market and paper trading">
+        <section class="book-section" aria-labelledby="book-heading">
+          <div class="market-question"><span class="market-label">Binary market · regulation + stoppage time</span><h2 id="question">Will Team A win?</h2><p id="settlement-rule">YES pays $1 if Team A wins. A draw or Team B win settles NO.</p></div>
+          <div class="section-heading book-title"><h3 id="book-heading">Order book <span class="yes-label">YES</span></h3><span id="book-count">0 orders</span></div>
+          <div class="book-summary"><span>Last trade <strong id="last-price">—</strong></span><span>Spread <strong id="spread">—</strong></span></div>
+          <div class="book-columns" aria-hidden="true"><span>Price</span><span>Shares</span><span>Total</span><span>Trader</span></div>
+          <div class="book-side-label ask-color">Asks <span>Buy YES at these prices</span></div>
+          <div id="asks" class="book-levels asks"><div class="empty">No sell orders yet</div></div>
+          <div class="book-mid"><span id="book-midpoint">—</span><span>midpoint</span></div>
+          <div id="bids" class="book-levels bids"><div class="empty">No buy orders yet</div></div>
+          <div class="book-side-label bid-color">Bids <span>Sell YES at these prices</span></div>
+          <p class="book-footnote">Individual resting orders. Total = cumulative shares from the best price. Prices come from the book.</p>
+        </section>
+        <section class="ticket-section" aria-labelledby="ticket-heading">
+          <div class="section-heading"><h2 id="ticket-heading">Your paper trade</h2><span id="available">$1,000.00 available</span></div>
+          <form id="ticket">
+            <div class="ticket-toggles"><div class="segmented" role="group" aria-label="Trade side"><button type="button" class="selected" data-side="buy" aria-pressed="true">Buy</button><button type="button" data-side="sell" aria-pressed="false">Sell</button></div><div class="segmented outcome" role="group" aria-label="Outcome"><button type="button" class="selected" data-outcome="YES" aria-pressed="true">YES</button><button type="button" data-outcome="NO" aria-pressed="false">NO</button></div></div>
+            <div class="ticket-inputs"><label for="price">Limit price <span class="input-unit"><input id="price" type="number" min="1" max="99" step="1" value="50" required inputmode="numeric"><span>¢</span></span></label><label for="size">Shares <input id="size" type="number" min="1" max="100000" step="1" value="10" required inputmode="numeric"></label></div>
+            <label for="tif" class="execution-label">Execution <select id="tif"><option value="GTC">Rest unfilled shares in book</option><option value="IOC">Fill now, cancel remainder</option></select></label>
+            <div class="ticket-estimate"><span id="cost-label">Maximum cost</span><strong id="cost">$5.00</strong></div>
+            <p id="liquidity-preview" class="liquidity-preview">Checking available liquidity…</p>
+            <button type="submit" id="submit-order" class="primary order-button" disabled>Buy 10 YES shares</button>
+            <p id="ticket-hint" class="ticket-hint">Paper funds only. Orders execute against available liquidity.</p>
+          </form>
+          <div class="account"><div class="section-heading"><h3>Your position</h3><button id="close-position" class="text-button" disabled>Close position</button></div><div class="account-stats"><div><span>Shares</span><strong id="position">0 YES</strong></div><div><span>Equity</span><strong id="equity">$1,000.00</strong></div><div><span>P&amp;L</span><strong id="pnl">$0.00</strong></div></div><div class="cash-detail"><span id="cash">Cash $1,000.00</span><span id="reserved">Reserved $0.00</span></div></div>
+          <div class="open-orders"><h3>Your open orders <span id="user-order-count">0</span></h3><div id="user-orders"><p class="empty">Your resting orders will appear here.</p></div></div>
+        </section>
+      </aside>
+      <section class="trades-section" aria-labelledby="trades-heading"><div class="section-heading"><h2 id="trades-heading">Recent trades</h2><span>Executed prices · newest first</span></div><div class="trades-scroll"><table><thead><tr><th>Replay time</th><th>Price</th><th>Shares</th><th>Buyer</th><th>Seller</th><th>Maker → taker</th></tr></thead><tbody id="trades"><tr><td colspan="6" class="empty">No trades yet. Play the replay to let the agents start quoting.</td></tr></tbody></table></div></section>
+    </main>
+    <footer><span>Anonymous match events + historical market reference</span><span>Paper exchange · prices set by orders · <a href="/api/journal" download="field-forecast-session.json">Export session</a></span></footer>
+  </div>
+</body>
+</html>

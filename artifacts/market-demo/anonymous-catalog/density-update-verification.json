@@ -1,0 +1,19 @@
+{
+  "automated_tests": 67,
+  "result": "passed",
+  "commands": [
+    "python3 -m unittest discover -s tests/market -v",
+    "ruff check app/market tests/market",
+    "node --check app/market/static/app.js",
+    "python3 -m compileall -q app/market tests/market",
+    "git diff --check"
+  ],
+  "source_comparison": "All 484 candidate event counts, active durations, densities and ranking match an independent read-only source SQL query.",
+  "browser_checks": [
+    "Exactly 10 options with ranks, density and active event count",
+    "Rank 10 selectable and resets session paused",
+    "Rank 1 restored at kickoff paused with fresh balances",
+    "No console warnings or errors"
+  ],
+  "demo_url": "http://127.0.0.1:8765/"
+}

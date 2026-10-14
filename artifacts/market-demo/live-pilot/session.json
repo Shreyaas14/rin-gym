@@ -1,0 +1,942 @@
+{
+  "schema": "market-session/v1",
+  "epoch": "b2170c60-3efd-4cc2-a877-3747035d8f59",
+  "mode": "live",
+  "source_hash": "fdd344a2ac44d5545154d5992d5b803e0d830e748d3678605a8df15f066606c8",
+  "model": "jev-1.13.0",
+  "events": [
+    {
+      "type": "valuation",
+      "time": 1781798409.26,
+      "observation": {
+        "period": "First half",
+        "minute": 0,
+        "score": [
+          0,
+          0
+        ],
+        "counts": {
+          "home": {},
+          "away": {}
+        },
+        "recent_events": [
+          {
+            "age_seconds": 0.0,
+            "side": null,
+            "type": "Start Time"
+          }
+        ],
+        "pre_match_expected_goals": {
+          "home": 1.6,
+          "away": 1.1
+        }
+      },
+      "answers": {
+        "anchor": {
+          "value": 0.56,
+          "model": "jev-1.13.0",
+          "snapshot_id": "9302ed5be10d0c0882a15671ad0c2da6c0bc284ae096c8d2893626c73fb207a7",
+          "error": null
+        },
+        "pulse": {
+          "value": 0.52,
+          "model": "jev-1.13.0",
+          "snapshot_id": "9302ed5be10d0c0882a15671ad0c2da6c0bc284ae096c8d2893626c73fb207a7",
+          "error": null
+        }
+      }
+    },
+    {
+      "type": "command",
+      "time": 1781798409.26,
+      "command": {
+        "epoch": "4b40a6dc-f006-4f7f-97d2-3eef421c5f90",
+        "command_id": "adfde7dc-ae71-4588-9700-212346a41b15",
+        "action": "reset",
+        "mode": "live"
+      }
+    },
+    {
+      "type": "command",
+      "time": 1781798409.26,
+      "command": {
+        "epoch": "b2170c60-3efd-4cc2-a877-3747035d8f59",
+        "command_id": "45654089-ad03-4e58-a334-7d32133eaea2",
+        "action": "order",
+        "outcome": "YES",
+        "side": "buy",
+        "price": 56,
+        "size": 1,
+        "tif": "IOC"
+      }
+    },
+    {
+      "type": "valuation",
+      "time": 1781798469,
+      "observation": {
+        "period": "First half",
+        "minute": 0,
+        "score": [
+          0,
+          0
+        ],
+        "counts": {
+          "home": {
+            "Attempt at Goal": 1
+          },
+          "away": {}
+        },
+        "recent_events": [
+          {
+            "age_seconds": 59.74,
+            "side": null,
+            "type": "Start Time"
+          },
+          {
+            "age_seconds": 15.63,
+            "side": "home",
+            "type": "Attempt at Goal"
+          }
+        ],
+        "pre_match_expected_goals": {
+          "home": 1.6,
+          "away": 1.1
+        }
+      },
+      "answers": {
+        "anchor": {
+          "value": 0.55,
+          "model": "jev-1.13.0",
+          "snapshot_id": "97d752e0932b7bc98a146fdabb3a79a05671ca467bd7bba4864ab8bf20144dff",
+          "error": null
+        },
+        "pulse": {
+          "value": 0.52,
+          "model": "jev-1.13.0",
+          "snapshot_id": "97d752e0932b7bc98a146fdabb3a79a05671ca467bd7bba4864ab8bf20144dff",
+          "error": null
+        }
+      }
+    },
+    {
+      "type": "command",
+      "time": 1781798469.000011,
+      "command": {
+        "epoch": "b2170c60-3efd-4cc2-a877-3747035d8f59",
+        "command_id": "8d1fac7b-cd2c-4e59-aa3e-01cbb4b2206f",
+        "action": "step"
+      }
+    }
+  ],
+  "exchange": [
+    {
+      "type": "order",
+      "sequence": 1,
+      "order": {
+        "id": "o1",
+        "owner": "anchor",
+        "side": "buy",
+        "price": 54,
+        "size": 10,
+        "remaining": 10,
+        "status": "open",
+        "sequence": 1
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "order",
+      "sequence": 2,
+      "order": {
+        "id": "o2",
+        "owner": "anchor",
+        "side": "sell",
+        "price": 59,
+        "size": 10,
+        "remaining": 10,
+        "status": "open",
+        "sequence": 2
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "order",
+      "sequence": 3,
+      "order": {
+        "id": "o3",
+        "owner": "pulse",
+        "side": "sell",
+        "price": 53,
+        "size": 5,
+        "remaining": 5,
+        "status": "open",
+        "sequence": 3
+      },
+      "tif": "IOC"
+    },
+    {
+      "type": "fill",
+      "id": "t4",
+      "price": 54,
+      "size": 5,
+      "buyer": "anchor",
+      "seller": "pulse",
+      "maker": "anchor",
+      "taker": "pulse",
+      "sequence": 4
+    },
+    {
+      "type": "order",
+      "sequence": 5,
+      "order": {
+        "id": "o5",
+        "owner": "pulse",
+        "side": "buy",
+        "price": 49,
+        "size": 5,
+        "remaining": 5,
+        "status": "open",
+        "sequence": 5
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "order",
+      "sequence": 6,
+      "order": {
+        "id": "o6",
+        "owner": "pulse",
+        "side": "sell",
+        "price": 56,
+        "size": 5,
+        "remaining": 5,
+        "status": "open",
+        "sequence": 6
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "order",
+      "sequence": 7,
+      "order": {
+        "id": "o7",
+        "owner": "user",
+        "side": "buy",
+        "price": 56,
+        "size": 1,
+        "remaining": 1,
+        "status": "open",
+        "sequence": 7
+      },
+      "tif": "IOC"
+    },
+    {
+      "type": "fill",
+      "id": "t8",
+      "price": 56,
+      "size": 1,
+      "buyer": "user",
+      "seller": "pulse",
+      "maker": "pulse",
+      "taker": "user",
+      "sequence": 8
+    },
+    {
+      "type": "cancel",
+      "sequence": 9,
+      "order_id": "o1",
+      "owner": "anchor",
+      "reason": "owner"
+    },
+    {
+      "type": "cancel",
+      "sequence": 10,
+      "order_id": "o2",
+      "owner": "anchor",
+      "reason": "owner"
+    },
+    {
+      "type": "order",
+      "sequence": 11,
+      "order": {
+        "id": "o11",
+        "owner": "anchor",
+        "side": "buy",
+        "price": 53,
+        "size": 10,
+        "remaining": 10,
+        "status": "open",
+        "sequence": 11
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "order",
+      "sequence": 12,
+      "order": {
+        "id": "o12",
+        "owner": "anchor",
+        "side": "sell",
+        "price": 58,
+        "size": 10,
+        "remaining": 10,
+        "status": "open",
+        "sequence": 12
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "cancel",
+      "sequence": 13,
+      "order_id": "o5",
+      "owner": "pulse",
+      "reason": "owner"
+    },
+    {
+      "type": "cancel",
+      "sequence": 14,
+      "order_id": "o6",
+      "owner": "pulse",
+      "reason": "owner"
+    },
+    {
+      "type": "order",
+      "sequence": 15,
+      "order": {
+        "id": "o15",
+        "owner": "pulse",
+        "side": "buy",
+        "price": 49,
+        "size": 5,
+        "remaining": 5,
+        "status": "open",
+        "sequence": 15
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "order",
+      "sequence": 16,
+      "order": {
+        "id": "o16",
+        "owner": "pulse",
+        "side": "sell",
+        "price": 56,
+        "size": 5,
+        "remaining": 5,
+        "status": "open",
+        "sequence": 16
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "cancel",
+      "sequence": 17,
+      "order_id": "o11",
+      "owner": "anchor",
+      "reason": "refresh"
+    },
+    {
+      "type": "cancel",
+      "sequence": 18,
+      "order_id": "o12",
+      "owner": "anchor",
+      "reason": "refresh"
+    },
+    {
+      "type": "cancel",
+      "sequence": 19,
+      "order_id": "o15",
+      "owner": "pulse",
+      "reason": "refresh"
+    },
+    {
+      "type": "cancel",
+      "sequence": 20,
+      "order_id": "o16",
+      "owner": "pulse",
+      "reason": "refresh"
+    },
+    {
+      "type": "order",
+      "sequence": 21,
+      "order": {
+        "id": "o21",
+        "owner": "pulse",
+        "side": "buy",
+        "price": 49,
+        "size": 5,
+        "remaining": 5,
+        "status": "open",
+        "sequence": 21
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "order",
+      "sequence": 22,
+      "order": {
+        "id": "o22",
+        "owner": "pulse",
+        "side": "sell",
+        "price": 56,
+        "size": 5,
+        "remaining": 5,
+        "status": "open",
+        "sequence": 22
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "order",
+      "sequence": 23,
+      "order": {
+        "id": "o23",
+        "owner": "anchor",
+        "side": "buy",
+        "price": 52,
+        "size": 10,
+        "remaining": 10,
+        "status": "open",
+        "sequence": 23
+      },
+      "tif": "post_only"
+    },
+    {
+      "type": "order",
+      "sequence": 24,
+      "order": {
+        "id": "o24",
+        "owner": "anchor",
+        "side": "sell",
+        "price": 57,
+        "size": 10,
+        "remaining": 10,
+        "status": "open",
+        "sequence": 24
+      },
+      "tif": "post_only"
+    }
+  ],
+  "state": {
+    "epoch": "b2170c60-3efd-4cc2-a877-3747035d8f59",
+    "version": 6,
+    "playing": false,
+    "speed": 1,
+    "mode": "live",
+    "error": null,
+    "message": "",
+    "status": "Paused",
+    "replay": {
+      "timestamp": 1781798469.000011,
+      "utc": "16:01:09 UTC",
+      "clock": "00:59",
+      "phase": "First half",
+      "score": [
+        0,
+        0
+      ],
+      "events": [
+        {
+          "id": "900492290",
+          "time": 1781798286.628,
+          "minute": "0'",
+          "type": "Coin Toss",
+          "description": "Czechia won the coin toss and chose to kick off",
+          "team": "home",
+          "x": null,
+          "y": null,
+          "period": 2
+        },
+        {
+          "id": "1012903937",
+          "time": 1781798409.26,
+          "minute": "0'",
+          "type": "Start Time",
+          "description": "The referee signals the start of the first period.",
+          "team": null,
+          "x": null,
+          "y": null,
+          "period": 3
+        },
+        {
+          "id": "1058420737",
+          "time": 1781798453.365,
+          "minute": "1'",
+          "type": "Attempt at Goal",
+          "description": "Patrik SCHICK (Czechia) attempts an effort on goal.",
+          "team": "home",
+          "x": 92.94972,
+          "y": 39.62576,
+          "period": 3
+        }
+      ],
+      "current": {
+        "id": "1058420737",
+        "time": 1781798453.365,
+        "minute": "1'",
+        "type": "Attempt at Goal",
+        "description": "Patrik SCHICK (Czechia) attempts an effort on goal.",
+        "team": "home",
+        "x": 92.94972,
+        "y": 39.62576,
+        "period": 3
+      },
+      "progress": 0.00883882848164876
+    },
+    "market": {
+      "question": "Will Czechia win in regulation time?",
+      "midpoint": 54.0,
+      "last_trade": {
+        "id": "t8",
+        "price": 56,
+        "size": 1,
+        "buyer": "user",
+        "seller": "pulse",
+        "maker": "pulse",
+        "taker": "user",
+        "sequence": 8,
+        "time": 1781798409.26
+      },
+      "history": [
+        {
+          "time": 1781798409.26,
+          "midpoint": 55.0
+        },
+        {
+          "time": 1781798409.26,
+          "midpoint": 54.5
+        },
+        {
+          "time": 1781798469,
+          "midpoint": 54.0
+        }
+      ],
+      "mark_stale": false,
+      "reference": [
+        {
+          "time": 1781798345,
+          "price": 49.5
+        },
+        {
+          "time": 1781798405,
+          "price": 49.5
+        },
+        {
+          "time": 1781798466,
+          "price": 50.5
+        }
+      ],
+      "reference_age": 3.0000109672546387,
+      "reference_price": 50.5
+    },
+    "exchange": {
+      "bids": [
+        {
+          "id": "o23",
+          "owner": "anchor",
+          "side": "buy",
+          "price": 52,
+          "size": 10,
+          "remaining": 10,
+          "status": "open",
+          "sequence": 23
+        },
+        {
+          "id": "o21",
+          "owner": "pulse",
+          "side": "buy",
+          "price": 49,
+          "size": 5,
+          "remaining": 5,
+          "status": "open",
+          "sequence": 21
+        }
+      ],
+      "asks": [
+        {
+          "id": "o22",
+          "owner": "pulse",
+          "side": "sell",
+          "price": 56,
+          "size": 5,
+          "remaining": 5,
+          "status": "open",
+          "sequence": 22
+        },
+        {
+          "id": "o24",
+          "owner": "anchor",
+          "side": "sell",
+          "price": 57,
+          "size": 10,
+          "remaining": 10,
+          "status": "open",
+          "sequence": 24
+        }
+      ],
+      "orders": [
+        {
+          "id": "o21",
+          "owner": "pulse",
+          "side": "buy",
+          "price": 49,
+          "size": 5,
+          "remaining": 5,
+          "status": "open",
+          "sequence": 21
+        },
+        {
+          "id": "o22",
+          "owner": "pulse",
+          "side": "sell",
+          "price": 56,
+          "size": 5,
+          "remaining": 5,
+          "status": "open",
+          "sequence": 22
+        },
+        {
+          "id": "o23",
+          "owner": "anchor",
+          "side": "buy",
+          "price": 52,
+          "size": 10,
+          "remaining": 10,
+          "status": "open",
+          "sequence": 23
+        },
+        {
+          "id": "o24",
+          "owner": "anchor",
+          "side": "sell",
+          "price": 57,
+          "size": 10,
+          "remaining": 10,
+          "status": "open",
+          "sequence": 24
+        }
+      ],
+      "trades": [
+        {
+          "id": "t4",
+          "price": 54,
+          "size": 5,
+          "buyer": "anchor",
+          "seller": "pulse",
+          "maker": "anchor",
+          "taker": "pulse",
+          "sequence": 4,
+          "time": 1781798409.26
+        },
+        {
+          "id": "t8",
+          "price": 56,
+          "size": 1,
+          "buyer": "user",
+          "seller": "pulse",
+          "maker": "pulse",
+          "taker": "user",
+          "sequence": 8,
+          "time": 1781798409.26
+        }
+      ],
+      "accounts": {
+        "anchor": {
+          "cash": 99730,
+          "position": 5,
+          "collateral": 0,
+          "reserved": 950,
+          "available": 98780,
+          "equity": 100000.0,
+          "pnl": 0.0
+        },
+        "pulse": {
+          "cash": 100326,
+          "position": -6,
+          "collateral": 600,
+          "reserved": 465,
+          "available": 99261,
+          "equity": 100002.0,
+          "pnl": 2.0
+        },
+        "user": {
+          "cash": 99944,
+          "position": 1,
+          "collateral": 0,
+          "reserved": 0,
+          "available": 99944,
+          "equity": 99998.0,
+          "pnl": -2.0
+        }
+      },
+      "settled": false,
+      "outcome": null
+    },
+    "agents": [
+      {
+        "id": "anchor",
+        "name": "Anchor",
+        "valuation": 0.55,
+        "source": "jev-1.13.0",
+        "last_action": "Quoting around valuation, adjusted for inventory",
+        "error": null
+      },
+      {
+        "id": "pulse",
+        "name": "Pulse",
+        "valuation": 0.52,
+        "source": "jev-1.13.0",
+        "last_action": "Quoting around valuation, adjusted for inventory",
+        "error": null
+      }
+    ],
+    "capabilities": {
+      "live": true,
+      "recorded": false
+    }
+  },
+  "recording": {
+    "schema": "market-valuations/v1",
+    "source_hash": "fdd344a2ac44d5545154d5992d5b803e0d830e748d3678605a8df15f066606c8",
+    "model": "jev-1.13.0",
+    "valuations": {
+      "9302ed5be10d0c0882a15671ad0c2da6c0bc284ae096c8d2893626c73fb207a7": {
+        "pulse": {
+          "value": 0.52,
+          "model": "jev-1.13.0",
+          "snapshot_id": "9302ed5be10d0c0882a15671ad0c2da6c0bc284ae096c8d2893626c73fb207a7",
+          "error": null
+        },
+        "anchor": {
+          "value": 0.56,
+          "model": "jev-1.13.0",
+          "snapshot_id": "9302ed5be10d0c0882a15671ad0c2da6c0bc284ae096c8d2893626c73fb207a7",
+          "error": null
+        }
+      },
+      "97d752e0932b7bc98a146fdabb3a79a05671ca467bd7bba4864ab8bf20144dff": {
+        "anchor": {
+          "value": 0.55,
+          "model": "jev-1.13.0",
+          "snapshot_id": "97d752e0932b7bc98a146fdabb3a79a05671ca467bd7bba4864ab8bf20144dff",
+          "error": null
+        },
+        "pulse": {
+          "value": 0.52,
+          "model": "jev-1.13.0",
+          "snapshot_id": "97d752e0932b7bc98a146fdabb3a79a05671ca467bd7bba4864ab8bf20144dff",
+          "error": null
+        }
+      }
+    }
+  },
+  "provider_receipts": [
+    {
+      "agent": "pulse",
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "period": "First half",
+          "minute": 0,
+          "score": [
+            0,
+            0
+          ],
+          "counts": {
+            "home": {},
+            "away": {}
+          },
+          "recent_events": [
+            {
+              "age_seconds": 0.0,
+              "side": null,
+              "type": "Start Time"
+            }
+          ],
+          "pre_match_expected_goals": {
+            "home": 1.6,
+            "away": 1.1
+          }
+        },
+        "questions": {
+          "home_win": {
+            "type": "noul",
+            "instructions": "Given only this anonymous match state, will the home team win at the end of regulation, including stoppage time and excluding extra time and penalties? Estimate the probability. Emphasize recent attacking events and disciplinary changes alongside score and time."
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "home_win": {
+            "type": "noul",
+            "noul": 0.52
+          }
+        },
+        "usage": {
+          "input_tokens": 416,
+          "output_tokens": 21
+        }
+      }
+    },
+    {
+      "agent": "anchor",
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "period": "First half",
+          "minute": 0,
+          "score": [
+            0,
+            0
+          ],
+          "counts": {
+            "home": {},
+            "away": {}
+          },
+          "recent_events": [
+            {
+              "age_seconds": 0.0,
+              "side": null,
+              "type": "Start Time"
+            }
+          ],
+          "pre_match_expected_goals": {
+            "home": 1.6,
+            "away": 1.1
+          }
+        },
+        "questions": {
+          "home_win": {
+            "type": "noul",
+            "instructions": "Given only this anonymous match state, will the home team win at the end of regulation, including stoppage time and excluding extra time and penalties? Estimate the probability. Emphasize score, time remaining and pre-match strength. Consider all supplied events."
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "home_win": {
+            "type": "noul",
+            "noul": 0.56
+          }
+        },
+        "usage": {
+          "input_tokens": 419,
+          "output_tokens": 21
+        }
+      }
+    },
+    {
+      "agent": "anchor",
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "period": "First half",
+          "minute": 0,
+          "score": [
+            0,
+            0
+          ],
+          "counts": {
+            "home": {
+              "Attempt at Goal": 1
+            },
+            "away": {}
+          },
+          "recent_events": [
+            {
+              "age_seconds": 59.74,
+              "side": null,
+              "type": "Start Time"
+            },
+            {
+              "age_seconds": 15.63,
+              "side": "home",
+              "type": "Attempt at Goal"
+            }
+          ],
+          "pre_match_expected_goals": {
+            "home": 1.6,
+            "away": 1.1
+          }
+        },
+        "questions": {
+          "home_win": {
+            "type": "noul",
+            "instructions": "Given only this anonymous match state, will the home team win at the end of regulation, including stoppage time and excluding extra time and penalties? Estimate the probability. Emphasize score, time remaining and pre-match strength. Consider all supplied events."
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "home_win": {
+            "type": "noul",
+            "noul": 0.55
+          }
+        },
+        "usage": {
+          "input_tokens": 459,
+          "output_tokens": 21
+        }
+      }
+    },
+    {
+      "agent": "pulse",
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "period": "First half",
+          "minute": 0,
+          "score": [
+            0,
+            0
+          ],
+          "counts": {
+            "home": {
+              "Attempt at Goal": 1
+            },
+            "away": {}
+          },
+          "recent_events": [
+            {
+              "age_seconds": 59.74,
+              "side": null,
+              "type": "Start Time"
+            },
+            {
+              "age_seconds": 15.63,
+              "side": "home",
+              "type": "Attempt at Goal"
+            }
+          ],
+          "pre_match_expected_goals": {
+            "home": 1.6,
+            "away": 1.1
+          }
+        },
+        "questions": {
+          "home_win": {
+            "type": "noul",
+            "instructions": "Given only this anonymous match state, will the home team win at the end of regulation, including stoppage time and excluding extra time and penalties? Estimate the probability. Emphasize recent attacking events and disciplinary changes alongside score and time."
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "home_win": {
+            "type": "noul",
+            "noul": 0.52
+          }
+        },
+        "usage": {
+          "input_tokens": 456,
+          "output_tokens": 21
+        }
+      }
+    }
+  ]
+}

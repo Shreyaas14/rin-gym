@@ -56,3 +56,13 @@ uv run --locked python -m pipelines.fifa verify --cache data/raw/fifa
 ```
 
 The [pipeline guide](docs/pipelines/fifa-parquet.md) documents the schemas, cache/refresh behavior, and replay adapter. The completed [ingestion report](artifacts/fifa-pipeline/REPORT.md) covers 484 matches and 40,848 events.
+
+## Replay application
+
+The [application guide](docs/application/README.md) explains how to render the offline World Cup demo. Code lives in `app/replay/`, its small input fixture in `data/examples/`, and generated media in `artifacts/world-cup-replay/`.
+
+![World Cup replay](artifacts/world-cup-replay/preview-goal-1.png)
+
+## Interactive paper market
+
+Run `python3 -m app.market --port 8765` and open [the local demo](http://127.0.0.1:8765). The original replay design now has an anonymous game picker, a shared order book, agent quotes, recent trades and a paper-trading account. The picker offers the top 10 games by regulation event density from 484 real games, shown as Team A versus Team B with player aliases. The default local simulation works offline; live Jev and compatible recorded valuations are optional. See the [market demo guide](docs/application/market-demo.md).
