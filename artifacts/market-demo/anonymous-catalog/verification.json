@@ -1,0 +1,17 @@
+{
+  "valid": true,
+  "checks": [
+    "source regulation scores",
+    "source duration and event counts",
+    "observed coordinate counts",
+    "no explicit team names in full replay state",
+    "anonymous keys and clocks",
+    "opening-prefix prices"
+  ],
+  "games": 484,
+  "events": 40342,
+  "reference_points": 86258,
+  "located_events": 29218,
+  "home_wins": 208,
+  "no_outcomes": 276
+}

@@ -1,0 +1,23 @@
+{
+  "game": "Game 032",
+  "before": {
+    "valuation_rounds": 111,
+    "fills": 41,
+    "traded_shares": 205,
+    "opening_orders": 4,
+    "opening_bid_shares": 15,
+    "opening_ask_shares": 15,
+    "audit_valid": true,
+    "settled": true
+  },
+  "after": {
+    "valuation_rounds": 516,
+    "fills": 114,
+    "traded_shares": 704,
+    "opening_orders": 16,
+    "opening_bid_shares": 104,
+    "opening_ask_shares": 104,
+    "audit_valid": true,
+    "settled": true
+  }
+}

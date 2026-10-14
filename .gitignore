@@ -233,3 +233,10 @@ __marimo__/
 
 # Verbose migration evidence; distribute separately as a release asset
 /artifacts/trade-env-migration/comparison.json
+
+# Superseded per-game catalogs and generated demo journals
+/data/processed/market-demo/
+/artifacts/market-demo/browser-session.json
+/artifacts/market-demo/live-pilot/session.json
+/artifacts/market-demo/live-pilot/valuations.json
+/artifacts/market-demo/anonymous-catalog/event-density-ranking.json

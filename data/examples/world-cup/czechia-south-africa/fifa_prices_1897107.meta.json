@@ -1,0 +1,7 @@
+{
+  "url": "https://clob.polymarket.com/prices-history?market=25547941541163379167027433013111695108245471419110558598651133766324877924515&startTs=1781797986&endTs=1781805899&fidelity=1",
+  "status": 200,
+  "bytes": 3552,
+  "sha256": "def524b4f3f0bcfdd0430c6dca4babfe91809928eafd0f81842a639d793c5bd4",
+  "fetched_at": "2026-10-12T21:32:56.078523+00:00"
+}

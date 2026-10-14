@@ -1,0 +1,5 @@
+{
+  "valid": true,
+  "games": 16,
+  "check": "Post-change full settlement and ledger replay for every second-caution dismissal game"
+}

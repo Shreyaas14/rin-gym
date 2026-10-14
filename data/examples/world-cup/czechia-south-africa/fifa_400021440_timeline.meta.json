@@ -1,0 +1,7 @@
+{
+  "url": "https://api.fifa.com/api/v3/timelines/400021440?language=en",
+  "status": 200,
+  "bytes": 42122,
+  "sha256": "fdd344a2ac44d5545154d5992d5b803e0d830e748d3678605a8df15f066606c8",
+  "fetched_at": "2026-10-12T21:31:44.291222+00:00"
+}
