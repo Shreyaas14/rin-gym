@@ -1,0 +1,21 @@
+{
+  "frozen_at_utc": "2026-10-13T23:47:42.327230+00:00",
+  "labeler": "investigating assistant, source-based, before inference; no independent adjudication",
+  "pairs": 60,
+  "identity_counts": {
+    "match": 26,
+    "nonmatch": 34
+  },
+  "settlement_counts": {
+    "different": 52,
+    "unknown": 8
+  },
+  "kalshi_markets": 1072,
+  "polymarket_markets": 600,
+  "file_sha256": {
+    "reference.json": "23337439b31269bf5746f1200d51c20fc3eba172b85cc6cc2b4bd16f2122d5df",
+    "features.py": "0df728607372fbf9016c646280d2552d1fe3bf26571f5df34c2d25ea0c8a193b",
+    "PROTOCOL.md": "11a0b654b6248d3f1535559543e5b2dc0dfac2d9897dafada2913c54c2608288",
+    "markets.json": "2b51ce69bbc4492c2873d25a4964be51756ad95989821de1ec3bad944f070938"
+  }
+}

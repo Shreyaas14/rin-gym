@@ -1,0 +1,797 @@
+{
+  "experiment": "market-entity-resolution-real",
+  "archive": {
+    "path": "archives/market-entity-resolution-real.tar.gz",
+    "bytes": 5151609,
+    "sha256": "226101441ba91e26f1d7eb984a00fa89c82eac2c3cb19ae8c73e7e381ceb0703"
+  },
+  "file_count": 157,
+  "uncompressed_bytes": 57697712,
+  "files": [
+    {
+      "path": "market-entity-resolution-real/PROTOCOL.md",
+      "bytes": 4770,
+      "sha256": "11a0b654b6248d3f1535559543e5b2dc0dfac2d9897dafada2913c54c2608288"
+    },
+    {
+      "path": "market-entity-resolution-real/REPORT.md",
+      "bytes": 17218,
+      "sha256": "0f78b1f6496b057014913d540777f94c0a69064b31b4be4c2d63d4e9a6ed3f01"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXALIENS.json",
+      "bytes": 10078,
+      "sha256": "a9d9fb5e336b81a906745bccbad021579e46bfffeab67747f002dc1f5e3a5135"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXBTCD.json",
+      "bytes": 375400,
+      "sha256": "8d2e2d1568f0b91141427c1ab675cfc62db42e8f82251f4ab0e5f5a12f57a1c7"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXBTCMAXMON.json",
+      "bytes": 16889,
+      "sha256": "065c049e1a2f17a89f08b7c3c67a3833b15898d051eb54a59bffb6aae298acf8"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXCPI.json",
+      "bytes": 82475,
+      "sha256": "e8d81b6550d2642c688e6b99d8a90a1abf51824905a75d36831e1be806b83b97"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXCPICOREYOY.json",
+      "bytes": 88763,
+      "sha256": "d515af8e918e32eb9ee8ff4ac00ed89d18a97308a5463179006f372ced505c2d"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXCPIYOY.json",
+      "bytes": 117092,
+      "sha256": "1c372cb56b371ae278ea11979b8dbc146bd231ee1b5132ecae33633796a80fa3"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXFED.json",
+      "bytes": 350185,
+      "sha256": "322b2b76a1bbbd27781d8bf3b29dea71f60378e6505231b884c535e5d6c70633"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXFEDDECISION.json",
+      "bytes": 97370,
+      "sha256": "8a8274ffa040842384e7320b2083e12f8b518283d52be75cd53450efea07be16"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXFEDFUNDSYEAR.json",
+      "bytes": 365686,
+      "sha256": "574bec8f1fa3b4c0cf02ada31ac1c62bd080b47384b2a3fa87734e44966d1cfb"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXGDP.json",
+      "bytes": 62683,
+      "sha256": "9fabd0b3c02ae755ffc6a7d72051f3bfac513dae8f3c35800649eb0b9e758959"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXNBAGAME.json",
+      "bytes": 120665,
+      "sha256": "565254dd4ea2693083bdbcd2fb783d76f5ee3f0f13e1429f5f6d5ba5a6f932bd"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXNFLGAME.json",
+      "bytes": 125612,
+      "sha256": "0b62c0de5e0aa98b07ef60aa8510ad11882641926b52abb2fa67aee3341e9490"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/kalshi_KXNHLGAME.json",
+      "bytes": 187945,
+      "sha256": "3a5919b4252e6ed24d89adbc8d28ef6474271f8ac4bd413f6185a52808b591a6"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/polymarket_0.json",
+      "bytes": 769444,
+      "sha256": "d5df8f05033dc6df64fbbb80bec0c852e59d61c20a0848440b07b82023c2f8af"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/polymarket_100.json",
+      "bytes": 734080,
+      "sha256": "05d249d5c36bd14103b94effeacb943a174eba0f35e4c57de60642e23009867a"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/polymarket_200.json",
+      "bytes": 729401,
+      "sha256": "c472b062507820ae7b222f18fe0c8c571d6f54f6af762eefc635396a1e607758"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/polymarket_300.json",
+      "bytes": 680325,
+      "sha256": "210b55043bf9c033c701c4f92932ae142639fa8d2c7b1f31dc59bb6400344db8"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/polymarket_400.json",
+      "bytes": 683106,
+      "sha256": "36dc1ee7814de4abb341832574485028755b65dd44ec5431c758657cb6638307"
+    },
+    {
+      "path": "market-entity-resolution-real/catalog/polymarket_500.json",
+      "bytes": 747439,
+      "sha256": "6ef7582e5bb7f27f8e4ccdb481a9d366123c1113bdf284b32212b6deee4c3759"
+    },
+    {
+      "path": "market-entity-resolution-real/collect.py",
+      "bytes": 3704,
+      "sha256": "3032ec563faef2a7b811b2b25d1205df98e00a8fbf7949c7b78ad4ce95d27990"
+    },
+    {
+      "path": "market-entity-resolution-real/evaluate.py",
+      "bytes": 13882,
+      "sha256": "1d12f7b69eaa6084ec8362cea6592dc4e9855a7c99392a388c2dea7316583c83"
+    },
+    {
+      "path": "market-entity-resolution-real/evaluation-metadata.json",
+      "bytes": 2947,
+      "sha256": "3164cbea91ecefa853767cb3d296d811bc55acfa216733bc9384c72c33c87d9c"
+    },
+    {
+      "path": "market-entity-resolution-real/features.py",
+      "bytes": 9170,
+      "sha256": "0df728607372fbf9016c646280d2552d1fe3bf26571f5df34c2d25ea0c8a193b"
+    },
+    {
+      "path": "market-entity-resolution-real/freeze.json",
+      "bytes": 736,
+      "sha256": "698bd40ae8176aeab2d1b50e23e86ae039f6f19b06d06ee21d6c03b15025a959"
+    },
+    {
+      "path": "market-entity-resolution-real/heuristic-results.json",
+      "bytes": 39729,
+      "sha256": "1637ce7e1caa65286e51de353410fe2f6543b725089845a85ea8a715e9dc3b73"
+    },
+    {
+      "path": "market-entity-resolution-real/kalshi_open.json",
+      "bytes": 2619355,
+      "sha256": "fbe0e617a7d582f8b3de190a517a45773a8aaf95d81a0c2719019c60a1a74bf1"
+    },
+    {
+      "path": "market-entity-resolution-real/kalshi_open_alt.json",
+      "bytes": 1327075,
+      "sha256": "f3f54ea164d16e426096dd8ea5855fa6302417ce4ab3ea0b6a0f93fbb5ae7d23"
+    },
+    {
+      "path": "market-entity-resolution-real/kalshi_series.json",
+      "bytes": 24424197,
+      "sha256": "040ce337c52b948ed4ddb24117f8f3c53080c5af2a1b6b5ce8b99eb136758afb"
+    },
+    {
+      "path": "market-entity-resolution-real/kalshi_series_alt.json",
+      "bytes": 2195042,
+      "sha256": "0f1137db3e19ece022a9382e47bbf865f8d878141a8a330bfc6ba11d384601fb"
+    },
+    {
+      "path": "market-entity-resolution-real/manifest.json",
+      "bytes": 13154,
+      "sha256": "bc975df6da502780e437b94589ee9d4c95c86f69ccc4c3cf44eb726c710ed0c4"
+    },
+    {
+      "path": "market-entity-resolution-real/markets.json",
+      "bytes": 16921296,
+      "sha256": "2b51ce69bbc4492c2873d25a4964be51756ad95989821de1ec3bad944f070938"
+    },
+    {
+      "path": "market-entity-resolution-real/metrics.json",
+      "bytes": 18086,
+      "sha256": "c2bf119d6470dc253ae79358a31b5017ea7f7b629835733a40e0b431c4a16e0e"
+    },
+    {
+      "path": "market-entity-resolution-real/offline-metrics.json",
+      "bytes": 1120,
+      "sha256": "dbfe2b466e720f59a2db8bcda65d3d1504d127d1b7a8cd931efefbf139bf34fd"
+    },
+    {
+      "path": "market-entity-resolution-real/pair-review.csv",
+      "bytes": 35680,
+      "sha256": "3014c80c3e37d1ef81271b1a24988bc04f8853f792791828435ce16e7ec272dd"
+    },
+    {
+      "path": "market-entity-resolution-real/polymarket_open.json",
+      "bytes": 896803,
+      "sha256": "e657ee2100bd3f5a4e121f40d816a7ddab3daac9a69b9d194960093b888a5b47"
+    },
+    {
+      "path": "market-entity-resolution-real/polymarket_open_alt.json",
+      "bytes": 765753,
+      "sha256": "bfd8593ecdf355b056e6474327726ea3fdb2cb6d925e8f9d9d9e3c63bb79d372"
+    },
+    {
+      "path": "market-entity-resolution-real/predictions.json",
+      "bytes": 91302,
+      "sha256": "741f10a69d0ee7919b2af045191ffadd5596ae216b9fb570016f1b1d194ec9f8"
+    },
+    {
+      "path": "market-entity-resolution-real/prepare.py",
+      "bytes": 10740,
+      "sha256": "ca707dd693fdd76c4616a3924cfa7719df66f7c9e6c8db34ef6a837c8200ae54"
+    },
+    {
+      "path": "market-entity-resolution-real/reference.json",
+      "bytes": 1268502,
+      "sha256": "23337439b31269bf5746f1200d51c20fc3eba172b85cc6cc2b4bd16f2122d5df"
+    },
+    {
+      "path": "market-entity-resolution-real/report.py",
+      "bytes": 19030,
+      "sha256": "ba6f7da9a474ee7a4a86c1214ea512a3253202f5e46ecc7c767544e9065ba913"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_009.json",
+      "bytes": 806,
+      "sha256": "ac8268e666ccd8543157931984342ee1e4d090c9fc9f38a53cbcc7d6d65ded9c"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_010.json",
+      "bytes": 804,
+      "sha256": "f0317d65fbc0fa9243c757c8b53a9fcf660c8c4a6d3ea2db4f6ec4de4e662287"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_011.json",
+      "bytes": 806,
+      "sha256": "787b579a39f15b1613f1ac69fbf3932103bb8f11c77ef7b0fb034a2b3567185d"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_012.json",
+      "bytes": 806,
+      "sha256": "4d7222d3c7e40defaa275bff752a67fd7cbcd0ba5313df7ad9eb00cd5d1dc000"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_013.json",
+      "bytes": 806,
+      "sha256": "75c1518113112fb165e7d733d6c4ebb5b3e8446bfdbee7147952cffb0e9f08eb"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_014.json",
+      "bytes": 804,
+      "sha256": "d39c88f176f11096fc800d163acbd7bca6ff0776fb6e8adb873077fc7224417d"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_021.json",
+      "bytes": 805,
+      "sha256": "194538266f26aaebcd45c66770b84decaec4dd6690805fbb5fe2e522abf9d01e"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_023.json",
+      "bytes": 806,
+      "sha256": "a26609262e929f405b0fb1d0f693a3a11973d5ada37acce664d084b238fdac41"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_025.json",
+      "bytes": 807,
+      "sha256": "b6bd32e737b3bb55434e9e73e3a8813b6f63cdd66e75878f7ff7563319d8bdcb"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_026.json",
+      "bytes": 806,
+      "sha256": "a4b522372c33b18b5f54b585b4c27882baa54fe6356c1498a0876e7c6bbb0b9a"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_028.json",
+      "bytes": 803,
+      "sha256": "dbe0462b094ddcd52f0533e6b31983d4d069d4d70513458f520dacc17510b801"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_030.json",
+      "bytes": 808,
+      "sha256": "f794ea5d850d0a9b76914891dec4e4562b471dde220925a3e0519145145cecf4"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_037.json",
+      "bytes": 810,
+      "sha256": "00d8186396b44ebaaacac6d68a78f7ed6e04e62e67dbaabf87dd1a938aeb7bd9"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_038.json",
+      "bytes": 810,
+      "sha256": "ad0703ff47e5f90c2db9177c3b08094338d66e1f486cc7c5aaeceaba38a4f034"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_039.json",
+      "bytes": 806,
+      "sha256": "56a074270958e45ab293df292cd2e2261f7002185dd07447d84ee7526cec06f0"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_040.json",
+      "bytes": 807,
+      "sha256": "de8e8342590a10068a590fc165ba003ec1fb41af2c338301fc074530e46b56ad"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_041.json",
+      "bytes": 807,
+      "sha256": "94a934360fb930bae1000c86070ec90b409ad6ea82f8bab13de3c9aee2aa93b2"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_042.json",
+      "bytes": 809,
+      "sha256": "b54e081883cb62d14737b7d1a4822556dfabbf914f37ea69aa829d62e41bb0d2"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_043.json",
+      "bytes": 809,
+      "sha256": "815961ffeddc1face016b591fc9d16c3cae044314d0835090ecd4d2c68926629"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_044.json",
+      "bytes": 806,
+      "sha256": "caaab0aa021636d328d29455dc4fdcc49d3a70077f7491fa6fbcb5bc0d807652"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_045.json",
+      "bytes": 823,
+      "sha256": "12d5cb6f722eb22548ed15127b9ea4da1354fc49f2a0034affef2f4d3dfacf15"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_046.json",
+      "bytes": 806,
+      "sha256": "74000751eb9d8b344aa49f36ed255b2188a241ab16d0697e1ee094b709c47c44"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_051.json",
+      "bytes": 805,
+      "sha256": "b33d5fe37334460a9b6ed4b856c541e3e92f161af2779638515998e20a2ff1ff"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_052.json",
+      "bytes": 806,
+      "sha256": "76218961ad6420835ec05d4d052ecffafda11d6c95dea5fc99b6e6589fbaf7db"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_053.json",
+      "bytes": 805,
+      "sha256": "fc86a71613994b5f27853fb9bb331b5a0cff53afe2dd190467520786403b65b9"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_054.json",
+      "bytes": 807,
+      "sha256": "21cf6e3a11241a1c525104c676fc881f6fbf7c7a468e908bfb3d8028b3f1cbae"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/hybrid/pair_060.json",
+      "bytes": 806,
+      "sha256": "bcd519baa1fb31adb61141bbd848a95ba86a2410268f9fba684506aa72d7768b"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_001.json",
+      "bytes": 800,
+      "sha256": "8393be9a1d93aa14e677cd643dc63c41b7aa949a82b4bea661a252ad9f658e70"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_002.json",
+      "bytes": 803,
+      "sha256": "ea5817a6e7eee2996c63d9ae2ec48ad5e90b1d1929a793ce28971fd5e7d489a2"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_003.json",
+      "bytes": 800,
+      "sha256": "cfffaf810e8a1b5da3d4da9164cbad6b31676b136d8ac2fd5869ebefc386fe18"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_004.json",
+      "bytes": 804,
+      "sha256": "61ce7c0800cd93fc8d4495a0fa792d8b3034595c12cd05575fe17a5dece6d810"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_005.json",
+      "bytes": 804,
+      "sha256": "31681a215dcf7ae0c452b8dc3df09cff917963faa07d2fc504c53192fbe44b3d"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_006.json",
+      "bytes": 804,
+      "sha256": "3313520cc3bd811acb573379c0817d4681b495fa6bc003fa0e3e0de605c81ac1"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_007.json",
+      "bytes": 804,
+      "sha256": "d2a3785ad68d0e0311b4db9be83078099f3898416c24c6337e76d67df6f13f18"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_008.json",
+      "bytes": 803,
+      "sha256": "7089c7970357dd8b84f2ffd92b662e887a34e9df2af247d2d1b420f198a175e1"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_009.json",
+      "bytes": 803,
+      "sha256": "da7684cfb055d6c3a7a46e4a9c65d9b2865a314c9f8c0babedc1c1f29365b67b"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_010.json",
+      "bytes": 804,
+      "sha256": "93b72b8e8d552c01ad6767025213db77032002623c442341b00a0580faa2440b"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_011.json",
+      "bytes": 803,
+      "sha256": "07ea6d2a5ff1eb0fb6c19ab76a1c8d1cf788ed246feab17f8b8af4a6578b1911"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_012.json",
+      "bytes": 817,
+      "sha256": "62237e385b6cbe0a25c5f4639d3b7adcd1c59d07b19cb6856da96caf8b50144d"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_013.json",
+      "bytes": 803,
+      "sha256": "6dfb5bac6d904bc58bdcf1371ec8edc0806d7916a9a35c7a8cbc1c0ac7c34234"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_014.json",
+      "bytes": 803,
+      "sha256": "b6d62a249758ac0d370bc567b110e46fba789f9841dedfc2b5328e7bee056b41"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_015.json",
+      "bytes": 807,
+      "sha256": "04666e70443990e8adc43e11807410ac4c8c723beacb19497219a23533098828"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_016.json",
+      "bytes": 804,
+      "sha256": "8f6d5f7ccb702848dd83083b8400d73aa8144425635a1f1fb77356621c2454f3"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_017.json",
+      "bytes": 807,
+      "sha256": "ffc3379cc8cf6d29957b84bc757294124832aafd38a8646ecf2e54b218164c55"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_018.json",
+      "bytes": 806,
+      "sha256": "0d41f4c3ac9b85eb43843fa9bf8d6d91e0c7a20a181a51b53b1518e2b0820433"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_019.json",
+      "bytes": 807,
+      "sha256": "deb989397b2f7e025740f4a0603930a69c7d0145a6260b25a57037aa9f2dff4e"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_020.json",
+      "bytes": 802,
+      "sha256": "fed3c3b85c256e27b91295106540ac7e9c87cce1221865aac6f8d9b42d68281e"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_021.json",
+      "bytes": 804,
+      "sha256": "f9b88b022fff68e9a808b62b6e45749f92fad9bb9b7b47d7bc4e8970ddc50eb2"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_022.json",
+      "bytes": 804,
+      "sha256": "9ad5b2ba0e3ffab1dfff01c49e5a519d6d277963c931daf7384218618ee406b7"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_023.json",
+      "bytes": 805,
+      "sha256": "0b3f393771aca829113239103837112955d6ae4075c5a94639b9101e009ef82d"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_024.json",
+      "bytes": 803,
+      "sha256": "d26da2c0d9081dfcf120f1d0f7a06c5b717ecf372f9aaf8bab6d607451f13019"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_025.json",
+      "bytes": 803,
+      "sha256": "df3539deff76f2f1f02d989296578deed94c3d467553cecfde42611fa42aeaa4"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_026.json",
+      "bytes": 803,
+      "sha256": "a5b293b5373b0fc1e1e7d0b0f78f37709736a9fa945a3314a2a5aaac4d4e9a76"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_027.json",
+      "bytes": 802,
+      "sha256": "69540807063d1ac357d17b03277a395d6252289be5cf9ab584768572644e4841"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_028.json",
+      "bytes": 803,
+      "sha256": "97dd5267848e009a0e2caa433c79565b5b738df1dc9eaa73bbebebb52e0879ca"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_029.json",
+      "bytes": 818,
+      "sha256": "c9c4f355972d6b0a206f24d99ca79055aea95e3a120ad7345e6d73bb1cbcdb94"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_030.json",
+      "bytes": 803,
+      "sha256": "f820f366a06195db319e79cd57141ac42bc380a14ace70be69246e05e77f316a"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_031.json",
+      "bytes": 806,
+      "sha256": "efd51bd648f61d8e004e56c6f2899cc53a7db8736d186140192bfc389009f4a7"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_032.json",
+      "bytes": 806,
+      "sha256": "a777125ed9e755bcbdc405ba4634363e80d9f3ae13669c7036a1a64dfe135260"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_033.json",
+      "bytes": 803,
+      "sha256": "2bc4f527e9880ff8eeb3044dbcb92136cdf4601113ad4a74b4ee83b7d2e19140"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_034.json",
+      "bytes": 806,
+      "sha256": "a3e490966310b330edb7623bee3ec32673e857f4de1a46c7444d6e2cb05c3390"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_035.json",
+      "bytes": 805,
+      "sha256": "c661ba586d729a1f250c54a14f34fac6efc59786228d3e6cc2f040710a5cad43"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_036.json",
+      "bytes": 800,
+      "sha256": "89b3d8d88db0a271f4c659ca3d8913f49d6837dec70fb6fe9f759e675ffbe946"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_037.json",
+      "bytes": 806,
+      "sha256": "011c43f64450106db50b09687480212b8ea05765233e00ccd6045b8f0502b81b"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_038.json",
+      "bytes": 806,
+      "sha256": "b10fc026a4e841db24094896a37c38993a7c845e2018cca245347a75f4e42842"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_039.json",
+      "bytes": 803,
+      "sha256": "f1c7ab1f7e04f23399eeef8a642551ab73439b532a5465660589111fabd4f43c"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_040.json",
+      "bytes": 807,
+      "sha256": "11cec34f925e7a7bccf10a1b807b6e93bcbed1936af03241b96141f19442c60b"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_041.json",
+      "bytes": 806,
+      "sha256": "5f6eea526b2de6ca7492d919b87f37825fe63349e524b49c4d24d3db5870a471"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_042.json",
+      "bytes": 806,
+      "sha256": "a926c0a3f9d97d0ebd91688cae5def2404908b2249c3253451b4f03fb6a06fa3"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_043.json",
+      "bytes": 803,
+      "sha256": "9e84d19c44b85b35230b8f39e46607457472f1fefded0754242f11f0a0a8c791"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_044.json",
+      "bytes": 803,
+      "sha256": "d82ff2f501c8d842ccadd521dd9e4e0ab0928b253e4a8a110b8db9eddd479997"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_045.json",
+      "bytes": 804,
+      "sha256": "a1c080682007138f13db7bed6d5a99415c486b5f5519eec127382294cbd69f77"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_046.json",
+      "bytes": 803,
+      "sha256": "333f08c187febb890cf2c477f8eaf12b0992de9a8e2d304cb4660ada6a5e26d2"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_047.json",
+      "bytes": 800,
+      "sha256": "491c800c4870dd81dc1e52d0d43e01db8294e578525da218870380f329bbfe78"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_048.json",
+      "bytes": 804,
+      "sha256": "9a393eda8ac461e1878cf77bf97571d0beaaa2001eda3ad1a3796b73dd414850"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_049.json",
+      "bytes": 801,
+      "sha256": "4a3796498f17d818d05f0523040e3d506541a25f344c5a9813307f76673a3aac"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_050.json",
+      "bytes": 802,
+      "sha256": "b6715d4851e8f733fcebb6e6d1875770eea8a9537c1db5eb6e9c21a23d52230c"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_051.json",
+      "bytes": 803,
+      "sha256": "7f5dcc1ffcab4dc8453eb5fe9fbd617f17774552b7d32d3cbd727a44a7ebb6a4"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_052.json",
+      "bytes": 798,
+      "sha256": "286d1f510f2eecc7d90b13d2b190f6ef12ee55e617abd5c41057a9bed9c19027"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_053.json",
+      "bytes": 803,
+      "sha256": "87d3de6b63d557973281d0ffe58947b146ecbf7e68f55948d2a4f2023f727c65"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_054.json",
+      "bytes": 805,
+      "sha256": "9ccc036b6a498664ae04784176f471d855b4c61291242004d4c546bda618bedd"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_055.json",
+      "bytes": 806,
+      "sha256": "55185f20b852b376fe7093988092a009b20e16a657eb8600d0aa54c3aa100406"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_056.json",
+      "bytes": 803,
+      "sha256": "836d045e8b7917b7761c3e9788cc3f13cf6b3721b38eb5731f59289af06162c4"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_057.json",
+      "bytes": 803,
+      "sha256": "7a8a3b4dfc015c7247209a03a305a20b2da04a65d9abe03e3afee604ed0ce6ef"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_058.json",
+      "bytes": 799,
+      "sha256": "8c4b6e7ed55a98ada86ab1330cbe499e1cb23e88c1f76e580b37f64b56810664"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_059.json",
+      "bytes": 817,
+      "sha256": "33455712f9eddd1cb86919a4fc6d2be1dc7d193537154e22282bf70f779052b9"
+    },
+    {
+      "path": "market-entity-resolution-real/responses/jev/pair_060.json",
+      "bytes": 803,
+      "sha256": "b63e4beb613f686ec2331d067d82ed39a69c6db4168de84deccbc79fd1416778"
+    },
+    {
+      "path": "market-entity-resolution-real/retrieval-results.json",
+      "bytes": 5522,
+      "sha256": "279bbf7c4b991ae1209ae8d83f64cd3cabe2384432275fde335d12a6b71ef64d"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/ALIENS.pdf",
+      "bytes": 24952,
+      "sha256": "e415a11a11a347821991b1ddf2d7ff09e40e2b5361755dc1f54f76fcb04a6620"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/ALIENS.txt",
+      "bytes": 3108,
+      "sha256": "e394a5c66b19e0a5e1d8de889bade22f5d2cb460ff1b1b3967dffd035ae969af"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/BASKETBALLGAMEWIN.pdf",
+      "bytes": 55313,
+      "sha256": "7db0904a1d578a2bca0f6a1f55d0d7962d32b76ce5fafb0e23823e5444381556"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/BASKETBALLGAMEWIN.txt",
+      "bytes": 16027,
+      "sha256": "0a7a7e3691c0893abd42391b33942983adaf2ee7cbc762c424717db7a6a5eea1"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/BTC.pdf",
+      "bytes": 38090,
+      "sha256": "7bba1b819bd027e69755c76ed082e1004eb9466e170c1ae38996cf7d52e322a6"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/BTC.txt",
+      "bytes": 3161,
+      "sha256": "99df388bcc478ebc1627a7b5afc7047425e73959ac59abfa659a94ade920695d"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/CPI.pdf",
+      "bytes": 41838,
+      "sha256": "2cdb3a94c1419e18d0652c47133dd82284a2c153366a7603c03ac0370daf57e6"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/CPI.txt",
+      "bytes": 4445,
+      "sha256": "69abd725924a8c404445124a6454ede24e2b28ae295e682ddbdd9758ff6ee193"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/CRYPTOMINMAX.pdf",
+      "bytes": 26964,
+      "sha256": "fdad29833d5bf0d377dce7936c16cd33a24907aa175f54c3def171f739419159"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/CRYPTOMINMAX.txt",
+      "bytes": 3981,
+      "sha256": "906fb4be7ae284af2fbdd238174dd79cbc90a8deb9e4adfddce4758262f8fdd2"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/ECONSTAT.pdf",
+      "bytes": 30099,
+      "sha256": "4713a5c55ef2e13fa1cfdd3ac15cc2ea8aa472db67c70a6f0377ef225970255f"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/ECONSTAT.txt",
+      "bytes": 5758,
+      "sha256": "539d0e1620f0e509767d05b0a0588caa4d5a2cfcc61e28691686bf7fe0f9478f"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/FED.pdf",
+      "bytes": 44802,
+      "sha256": "bc7d0093bfcdfcb21ee3a9aadd9e2affec5a9b555f18d7ab6070d1911d7498e4"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/FED.txt",
+      "bytes": 4832,
+      "sha256": "a17648af6385fa130c608406205d0f29f1d9af8634c88a9085194de39b8c6d97"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/FEDDECISION.pdf",
+      "bytes": 38538,
+      "sha256": "3a8851179be6e53dbdaa7228179375996a1267412b26af923b7349c35297e198"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/FEDDECISION.txt",
+      "bytes": 3127,
+      "sha256": "971673842fd335f9d6a264a95850581fbc1136b88e4655ddeed515656872dd79"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/FOOTBALLGAMEWIN.pdf",
+      "bytes": 40410,
+      "sha256": "57b57e1ad96466e413e9274c0d2598225997e35d71262eb63c4ae13858b81d38"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/FOOTBALLGAMEWIN.txt",
+      "bytes": 12247,
+      "sha256": "aa71266442e49c1b99170e573cce97cb078e60a1e9992f164eaf0deb7ff7c277"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/GDP.pdf",
+      "bytes": 40977,
+      "sha256": "7f7fa439d727a233f5b86b04e901d2675c3164d0f7d397aa22556d10503ea5e7"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/GDP.txt",
+      "bytes": 3850,
+      "sha256": "1f03e2adc2feac88f26124991ef9a706bcde61aac0821533e2e59d439f908f10"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/HOCKEYWINNINGINPERIOD.pdf",
+      "bytes": 35574,
+      "sha256": "adf31742fa165efa8d0fd0fb6126520b07b283a26b4375dde125a5b06e641da5"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/HOCKEYWINNINGINPERIOD.txt",
+      "bytes": 8820,
+      "sha256": "9212b08643308466c7bea98ec7572645ccf5c34a88d556beaa3eec958b22c77e"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/YOYCPI.pdf",
+      "bytes": 40103,
+      "sha256": "f16b89ea360ce49142ada62c06e9a9c7f7b1451ea88baab6b223656cb73f6660"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/YOYCPI.txt",
+      "bytes": 3846,
+      "sha256": "5ad16cf903fbf2ed9b7b37cedfaec4a414b5b908b3cd7ebc8a7a64af90e6ea88"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/YOYCPICORE.pdf",
+      "bytes": 39580,
+      "sha256": "c65af0968469636c0f46dc90ce625a0fa4a4205d1ff3a2dd67be124e97fc9646"
+    },
+    {
+      "path": "market-entity-resolution-real/sources/YOYCPICORE.txt",
+      "bytes": 4636,
+      "sha256": "1cf9d80819fa3a19d3e8d730ecdd127ee7d027991cf7d1e5b9f965565548ac38"
+    },
+    {
+      "path": "market-entity-resolution-real/threshold-sensitivity.json",
+      "bytes": 3138,
+      "sha256": "7185222ecda0b620a80395d6286e905b6f4cdd977dd6be5a0d6cd223fc72aba1"
+    }
+  ]
+}

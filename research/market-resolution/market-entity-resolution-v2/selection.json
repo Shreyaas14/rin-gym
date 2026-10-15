@@ -1,0 +1,87 @@
+{
+  "seed": 20261013,
+  "quotas": {
+    "nfl": 88,
+    "nba": 88,
+    "nhl": 144,
+    "mlb": 40,
+    "btc_point": 40
+  },
+  "anchors": [
+    {
+      "family": "nfl",
+      "available_anchors": 48,
+      "candidate_outcomes": 1882,
+      "selected_pairs": 88
+    },
+    {
+      "family": "nba",
+      "available_anchors": 52,
+      "candidate_outcomes": 558,
+      "selected_pairs": 88
+    },
+    {
+      "family": "nhl",
+      "available_anchors": 98,
+      "candidate_outcomes": 1200,
+      "selected_pairs": 144
+    },
+    {
+      "family": "mlb",
+      "available_anchors": 10,
+      "candidate_outcomes": 1526,
+      "selected_pairs": 40
+    },
+    {
+      "family": "btc_point",
+      "available_anchors": 238,
+      "candidate_outcomes": 234,
+      "selected_pairs": 40
+    }
+  ],
+  "old_k_event_groups_excluded": [
+    "KXALIENS-27",
+    "KXBTCD-26OCT1320",
+    "KXBTCD-26OCT1417",
+    "KXBTCMAXMON-BTC-26OCT31",
+    "KXCPI-26SEP",
+    "KXCPICOREYOY-26NOV",
+    "KXCPIYOY-26SEP",
+    "KXFED-27APR",
+    "KXFEDDECISION-26DEC",
+    "KXFEDDECISION-26OCT",
+    "KXFEDDECISION-27JAN",
+    "KXNBAGAME-26OCT13CLEORL",
+    "KXNBAGAME-26OCT13INDOKC",
+    "KXNBAGAME-26OCT13NYKTOR",
+    "KXNFLGAME-26OCT15SEADEN",
+    "KXNFLGAME-26OCT18ARILAR",
+    "KXNFLGAME-26OCT18CARPHI",
+    "KXNFLGAME-26OCT25KCSEA",
+    "KXNHLGAME-26OCT13FLACBJ",
+    "KXNHLGAME-26OCT13STLOTT",
+    "KXNHLGAME-26OCT14DALCOL"
+  ],
+  "old_p_event_groups_excluded": [
+    "bitcoin-above-on-october-14-2026",
+    "fed-decision-in-december-20260729232808632",
+    "fed-decision-in-october-20260617190323537",
+    "september-inflation-us-annual",
+    "sports:nba:2026-10-13:cle-orl",
+    "sports:nba:2026-10-13:ind-okc",
+    "sports:nba:2026-10-13:nyk-tor",
+    "sports:nfl:2026-10-16:den-sea",
+    "sports:nfl:2026-10-18:ari-la",
+    "sports:nfl:2026-10-18:car-phi",
+    "sports:nhl:2026-10-13:cbj-fla",
+    "sports:nhl:2026-10-13:col-dal",
+    "sports:nhl:2026-10-13:ott-stl",
+    "sports:nhl:2026-10-13:tor-utah",
+    "what-price-will-bitcoin-hit-in-october-2026",
+    "will-the-us-confirm-that-aliens-exist-before-2027"
+  ],
+  "heldout_event_groups": 67,
+  "selection": "Four highest-ranked outcome-specific candidates per shuffled anchor, with frozen family quotas. No reference labels used.",
+  "development": "Original 60 pairs only. All 400 new pairs held out. Shared rule templates are not held out.",
+  "limitations": "Bounded catalogs; correlated event/template pairs; no independently exhaustive retrieval gold."
+}

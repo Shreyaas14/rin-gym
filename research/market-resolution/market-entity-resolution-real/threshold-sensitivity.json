@@ -1,0 +1,112 @@
+[
+  {
+    "threshold": 0.5,
+    "method": "jev",
+    "true_matches": 22,
+    "false_matches": 3,
+    "reviews": 0,
+    "precision": 0.88,
+    "recall": 0.8461538461538461,
+    "documented_conflicts_detected": 52,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  },
+  {
+    "threshold": 0.5,
+    "method": "hybrid",
+    "true_matches": 24,
+    "false_matches": 1,
+    "reviews": 0,
+    "precision": 0.96,
+    "recall": 0.9230769230769231,
+    "documented_conflicts_detected": 52,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  },
+  {
+    "threshold": 0.8,
+    "method": "jev",
+    "true_matches": 13,
+    "false_matches": 1,
+    "reviews": 15,
+    "precision": 0.9285714285714286,
+    "recall": 0.5,
+    "documented_conflicts_detected": 45,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  },
+  {
+    "threshold": 0.8,
+    "method": "hybrid",
+    "true_matches": 20,
+    "false_matches": 0,
+    "reviews": 7,
+    "precision": 1.0,
+    "recall": 0.7692307692307693,
+    "documented_conflicts_detected": 51,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  },
+  {
+    "threshold": 0.9,
+    "method": "jev",
+    "true_matches": 9,
+    "false_matches": 0,
+    "reviews": 20,
+    "precision": 1.0,
+    "recall": 0.34615384615384615,
+    "documented_conflicts_detected": 34,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  },
+  {
+    "threshold": 0.9,
+    "method": "hybrid",
+    "true_matches": 20,
+    "false_matches": 0,
+    "reviews": 7,
+    "precision": 1.0,
+    "recall": 0.7692307692307693,
+    "documented_conflicts_detected": 51,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  },
+  {
+    "threshold": 0.95,
+    "method": "jev",
+    "true_matches": 9,
+    "false_matches": 0,
+    "reviews": 22,
+    "precision": 1.0,
+    "recall": 0.34615384615384615,
+    "documented_conflicts_detected": 21,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  },
+  {
+    "threshold": 0.95,
+    "method": "hybrid",
+    "true_matches": 20,
+    "false_matches": 0,
+    "reviews": 8,
+    "precision": 1.0,
+    "recall": 0.7692307692307693,
+    "documented_conflicts_detected": 43,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  },
+  {
+    "threshold": 0.99,
+    "method": "jev",
+    "true_matches": 6,
+    "false_matches": 0,
+    "reviews": 29,
+    "precision": 1.0,
+    "recall": 0.23076923076923078,
+    "documented_conflicts_detected": 3,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  },
+  {
+    "threshold": 0.99,
+    "method": "hybrid",
+    "true_matches": 19,
+    "false_matches": 0,
+    "reviews": 10,
+    "precision": 1.0,
+    "recall": 0.7307692307692307,
+    "documented_conflicts_detected": 33,
+    "scope": "Post-hoc sensitivity analysis on the same pilot pairs, not threshold validation."
+  }
+]

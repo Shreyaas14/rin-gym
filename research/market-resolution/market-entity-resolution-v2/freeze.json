@@ -1,0 +1,18 @@
+{
+  "frozen_utc": "2026-10-14T03:00:04.787884+00:00",
+  "file_sha256": {
+    "pairs.json": "1d3671592d4154e01add892978fd12e66ce1bea88e3a0dce37f5702efa71017a",
+    "selection.json": "64b8d160cba5f9e5aab9f3a29364924c567380191eda15bc9631629505c9b696",
+    "manifest.json": "4d29856050670a8fc1c464643f69bb52bddcf3fb56a1699f51d4f6c5fe056438",
+    "questions.json": "cdfab1f2975223659ab82ed5dd6282553f08a302402ea7eb7ef86aa5cf70cdf9",
+    "features.py": "345c89d25c81e1f48c666885a853ea3e9c250ff2ae4854ee2251992886e0097b",
+    "budget.py": "4a7fb2d1f2ff93edbd1dc434911ccebc34987b72043b2610105eafcc2f5ecb13",
+    "evaluate.py": "678d751306fec9b29c0795e0c97ff5802b3bd2fcf33c20380d9e6da07820f2fe",
+    "PROTOCOL.md": "5edd48d6f25fc35504c08fa5e5802bd4bdee655d602c8465e05b75748490747a"
+  },
+  "jev_model": "jev-1.13.0",
+  "llm_direct_model": "gpt-4.1-mini-2025-04-14",
+  "threshold": 0.99,
+  "budget_cap_usd": 5,
+  "labels": "independent adjudication pending; no labels sent to any method"
+}

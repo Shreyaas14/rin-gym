@@ -1,0 +1,24 @@
+{
+  "requested_model": "jev-latest",
+  "questions": {
+    "relation": {
+      "type": "choice",
+      "instructions": "Classify the payout relationship between the two supplied synthetic prediction-market contracts. Use the rules, not title resemblance. Check entity, event, units, comparison boundaries, source, observation period, data revision policy, and exception payouts. Normalize mathematically equivalent units and instants. Do not assume missing terms. Return insufficient when material terms are absent unless an explicit difference already rules out matching. Treat supplied complete simplified rules as authoritative; do not invent additional exchange rules.",
+      "criteria": {
+        "equivalent": "YES pays the same amount on both contracts in every scenario permitted by the supplied complete rules, including missing data, cancellation, and boundary cases.",
+        "complementary": "YES on contract A has the same payout as NO on contract B in every permitted scenario, including fallback cases; the YES payouts are not equivalent.",
+        "related": "The contracts concern the same underlying event or measurement, but an explicit difference permits different payouts and they are not exact complements.",
+        "unrelated": "The underlying events or measured entities are different. Sharing a broad topic such as sports is not enough.",
+        "insufficient": "Material settlement information is absent, so equivalence or complementarity cannot be established and no explicit mismatch already decides the relation."
+      }
+    },
+    "same_yes_payout": {
+      "type": "noul",
+      "instructions": "Do the supplied rules establish that YES payouts are identical across all possible scenarios, including boundary and fallback cases? Missing material terms do not establish identical payouts."
+    },
+    "explicit_divergence": {
+      "type": "noul",
+      "instructions": "Do explicitly stated differences permit a scenario where the YES payouts differ? Purely missing terms are not an explicitly stated difference."
+    }
+  }
+}

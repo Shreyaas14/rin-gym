@@ -1,0 +1,74 @@
+{
+  "pairs": 400,
+  "methods": {
+    "jev": {
+      "complete_pairs": 400,
+      "model_responses": 400,
+      "elapsed_seconds_sum": 79.40240237818216,
+      "identity_decisions": {
+        "review": 184,
+        "nonmatch": 188,
+        "match": 28
+      },
+      "settlement_decisions": {
+        "unknown": 207,
+        "different": 193
+      }
+    },
+    "llm": {
+      "complete_pairs": 0,
+      "model_responses": 0,
+      "elapsed_seconds_sum": 0
+    },
+    "hybrid": {
+      "complete_pairs": 400,
+      "model_responses": 10,
+      "elapsed_seconds_sum": 2.269915624972782,
+      "identity_decisions": {
+        "match": 90,
+        "nonmatch": 310
+      },
+      "settlement_decisions": {
+        "different": 390,
+        "unknown": 10
+      }
+    },
+    "heuristics": {
+      "identity_decisions": {
+        "match": 90,
+        "nonmatch": 310
+      },
+      "settlement_decisions": {
+        "different": 390,
+        "unknown": 10
+      }
+    }
+  },
+  "budget": {
+    "cap_usd": 5.0,
+    "reported_usage_cost_usd": 0.07260897,
+    "uncertain_or_inflight_reserved_usd": 0.0,
+    "accounted_upper_usd": 0.07260897,
+    "remaining_usd": 4.92739103,
+    "attempts": 415,
+    "reported_calls": 415,
+    "billing_note": "Computed from published rates and returned usage; not a provider invoice. Unknown requests retain worst-case cost plus 25% cushion.",
+    "prices": {
+      "jev-1.13.0": {
+        "input_nano": 42,
+        "output_nano": 0,
+        "max_input": 65536,
+        "max_output": 0,
+        "source": "https://docs.typesafe.ai/models"
+      },
+      "gpt-4.1-mini-2025-04-14": {
+        "input_nano": 400,
+        "output_nano": 1600,
+        "max_input": 1047576,
+        "max_output": 512,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini"
+      }
+    }
+  },
+  "accuracy_status": "Not scored: independent labels pending. Decisions and costs are observable; correctness is not yet adjudicated."
+}
