@@ -1,0 +1,16 @@
+{
+  "frozen_utc": "2026-10-14T03:03:12.803417+00:00",
+  "config": {
+    "endpoint": "https://x402-services-production.up.railway.app/api/ai/chat",
+    "requested_model": "gpt-4o-mini",
+    "reported_model": "openai/gpt-4o-mini",
+    "maxTokens": 512,
+    "temperature": 0,
+    "per_request_ceiling_usd": 0.01,
+    "route": "AgentCash fetch; no direct API credential",
+    "provenance_limit": "Gateway-reported servedBy/model; upstream provider/version not independently verified.",
+    "parser": "Accept bare JSON or one fenced JSON object; no repairs or repeated inference."
+  },
+  "gateway_py_sha256": "2b0100fe23910f7047956264b04c308fc3425fcd2bdb5dde5f977a821f090f07",
+  "base_freeze_sha256": "52ef68fc52ca5d28c632af860e7f7281d8bfaa02290f59b22aec801fea09d368"
+}

@@ -1,0 +1,16 @@
+{
+  "pairs": 400,
+  "heuristic_identity_counts": {
+    "match": 90,
+    "nonmatch": 310
+  },
+  "hybrid_calls_planned": 10,
+  "jev_calls_planned": 400,
+  "llm_calls_planned": 400,
+  "largest_jev_payload_bytes": 22840,
+  "jev_worst_case_all_attempts_usd": 1.4106624,
+  "llm_gateway_per_call_cap_usd": 0.01,
+  "llm_gateway_max_400_calls_usd": 4.0,
+  "spend_before_inference_usd": 0.0,
+  "shared_guard": "All routes including retries must reserve before request. No automatic POST retries. Failed/unknown usage retains full reservation."
+}

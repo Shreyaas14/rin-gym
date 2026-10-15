@@ -1,0 +1,26 @@
+{
+  "cap_usd": 5.0,
+  "reported_usage_cost_usd": 0.07260897,
+  "uncertain_or_inflight_reserved_usd": 0.0,
+  "accounted_upper_usd": 0.07260897,
+  "remaining_usd": 4.92739103,
+  "attempts": 415,
+  "reported_calls": 415,
+  "billing_note": "Computed from published rates and returned usage; not a provider invoice. Unknown requests retain worst-case cost plus 25% cushion.",
+  "prices": {
+    "jev-1.13.0": {
+      "input_nano": 42,
+      "output_nano": 0,
+      "max_input": 65536,
+      "max_output": 0,
+      "source": "https://docs.typesafe.ai/models"
+    },
+    "gpt-4.1-mini-2025-04-14": {
+      "input_nano": 400,
+      "output_nano": 1600,
+      "max_input": 1047576,
+      "max_output": 512,
+      "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini"
+    }
+  }
+}

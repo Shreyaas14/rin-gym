@@ -1,0 +1,146 @@
+[
+  {
+    "id": "identical_rules",
+    "similarity": 0.45614035087719296,
+    "accept": false,
+    "gold": "equivalent"
+  },
+  {
+    "id": "paraphrased_rules",
+    "similarity": 0.45454545454545453,
+    "accept": false,
+    "gold": "equivalent"
+  },
+  {
+    "id": "timezone_conversion",
+    "similarity": 0.8125,
+    "accept": true,
+    "gold": "equivalent"
+  },
+  {
+    "id": "percentage_units",
+    "similarity": 0.6486486486486487,
+    "accept": false,
+    "gold": "equivalent"
+  },
+  {
+    "id": "participant_alias",
+    "similarity": 0.5294117647058824,
+    "accept": false,
+    "gold": "equivalent"
+  },
+  {
+    "id": "price_threshold_units",
+    "similarity": 0.5490196078431373,
+    "accept": false,
+    "gold": "equivalent"
+  },
+  {
+    "id": "opposite_sides",
+    "similarity": 0.88,
+    "accept": true,
+    "gold": "complementary"
+  },
+  {
+    "id": "election_negation",
+    "similarity": 0.6415094339622641,
+    "accept": false,
+    "gold": "complementary"
+  },
+  {
+    "id": "strict_boundary",
+    "similarity": 0.7428571428571429,
+    "accept": false,
+    "gold": "related"
+  },
+  {
+    "id": "different_threshold",
+    "similarity": 0.9375,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "different_instant",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "different_source",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "spot_vs_average",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "first_vs_revised",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "headline_vs_core",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "annual_vs_monthly",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "projection_vs_certification",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "winning_vs_taking_office",
+    "similarity": 0.6382978723404256,
+    "accept": false,
+    "gold": "related"
+  },
+  {
+    "id": "overtime_exclusion",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "cancellation_fallback",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "related"
+  },
+  {
+    "id": "missing_source",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "insufficient"
+  },
+  {
+    "id": "missing_overtime",
+    "similarity": 1.0,
+    "accept": true,
+    "gold": "insufficient"
+  },
+  {
+    "id": "different_topic",
+    "similarity": 0.5882352941176471,
+    "accept": false,
+    "gold": "unrelated"
+  },
+  {
+    "id": "different_competition",
+    "similarity": 0.5365853658536586,
+    "accept": false,
+    "gold": "unrelated"
+  }
+]

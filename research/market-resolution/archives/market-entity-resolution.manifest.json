@@ -1,0 +1,77 @@
+{
+  "experiment": "market-entity-resolution",
+  "archive": {
+    "path": "archives/market-entity-resolution.tar.gz",
+    "bytes": 15214,
+    "sha256": "103113bb33be5d8f8e0d9e9e2925568d023aed1cefc813a057675764f282df40"
+  },
+  "file_count": 13,
+  "uncompressed_bytes": 85272,
+  "files": [
+    {
+      "path": "market-entity-resolution/README.md",
+      "bytes": 3288,
+      "sha256": "8b8b4fec05394089c1d59a4c4a04d33a2e40f9baf95a72a68ffc6d80d57b4e2e"
+    },
+    {
+      "path": "market-entity-resolution/REPORT.md",
+      "bytes": 8216,
+      "sha256": "9cfdfbe1d5c0024655833922f6fc2d2c9495c2047eed67852a80c4e17bb2b534"
+    },
+    {
+      "path": "market-entity-resolution/available-models.json",
+      "bytes": 388,
+      "sha256": "118b36ab6571f0f7e8255dac0fe7bfe96488bd8fe536738b55a801a08aed10e4"
+    },
+    {
+      "path": "market-entity-resolution/baseline.json",
+      "bytes": 2751,
+      "sha256": "32765f21b6a50537eb153fe99bc3b5c162dee299e4cb05abf3fd9a6d3f5aed2f"
+    },
+    {
+      "path": "market-entity-resolution/cases.py",
+      "bytes": 7139,
+      "sha256": "e472e7dcd2be94c4460f2f7092211ae83293dcd86b5a10fc288156c8abd38abe"
+    },
+    {
+      "path": "market-entity-resolution/fixtures.json",
+      "bytes": 16577,
+      "sha256": "d7ba0a0fec7a81bd322df4fbfb40cd430b93fc3c61cc8250af6816cde73abe77"
+    },
+    {
+      "path": "market-entity-resolution/followup-results.json",
+      "bytes": 7475,
+      "sha256": "d277028a861c28418d249441ee74109a17f408efe39e974403d9d3bf7fddf660"
+    },
+    {
+      "path": "market-entity-resolution/followups.py",
+      "bytes": 4698,
+      "sha256": "06ab75ec71d04f0b030e6d0ebcd636285510ee10e5e88414f5a310fa2b693336"
+    },
+    {
+      "path": "market-entity-resolution/live-results.json",
+      "bytes": 18627,
+      "sha256": "536927abbaf8341d610a8c79c5c1d525e737d647b4f87d3f5c9cbd491f9539c9"
+    },
+    {
+      "path": "market-entity-resolution/live-summary.json",
+      "bytes": 3245,
+      "sha256": "4aa1c77ff9dca4717523fa5ca54815879e2302542882398a70378dfeb71871c1"
+    },
+    {
+      "path": "market-entity-resolution/offline-summary.json",
+      "bytes": 678,
+      "sha256": "4978b096cfe2e63bfcfcf47b953f7121c6cbba0a8a01c0b460cd696a2607379c"
+    },
+    {
+      "path": "market-entity-resolution/run-metadata.json",
+      "bytes": 2061,
+      "sha256": "e3dbfe43d67d308f1d4bf0e78ff323220ffa7208eb06d4abf8a361ce5bdb1204"
+    },
+    {
+      "path": "market-entity-resolution/run.py",
+      "bytes": 10129,
+      "sha256": "ac1b4225c85f95b49cb8efba5e3d1fa118cd337f68cecc6464dd2f8c40fa03b8"
+    }
+  ]
+}

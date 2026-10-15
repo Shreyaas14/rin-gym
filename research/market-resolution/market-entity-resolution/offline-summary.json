@@ -1,0 +1,17 @@
+{
+  "fixture_type": "hand-authored synthetic simplified contracts, not real exchange snapshots",
+  "cases": 24,
+  "gold_counts": {
+    "equivalent": 6,
+    "complementary": 2,
+    "related": 12,
+    "insufficient": 2,
+    "unrelated": 2
+  },
+  "baseline_threshold": 0.8,
+  "baseline_accepts": 14,
+  "baseline_false_accepts": 13,
+  "baseline_equivalence_precision": 0.07142857142857142,
+  "baseline_equivalence_recall": 0.16666666666666666,
+  "limitations": "Constructed diagnostic sample; no production accuracy, calibration, or retrieval-recall claims. Threshold fixed before model evaluation. Gold labels authored by the experiment designer; not independently adjudicated."
+}

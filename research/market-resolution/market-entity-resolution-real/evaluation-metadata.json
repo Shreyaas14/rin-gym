@@ -1,0 +1,25 @@
+{
+  "questions": {
+    "identity": {
+      "type": "choice",
+      "instructions": "Compare Kalshi YES with the explicitly selected Polymarket outcome. Judge market identity: same advertised event, observation period/instant, participant and requested outcome/threshold bucket. Sources, aggregation methods, rounding and exceptional settlement behavior are assessed separately in settlement_compatibility; those alone do not prevent nominal identity. Same advertised 25bps Fed action is an identity match even if nonstandard changes are rounded differently. For large Fed moves, use explicitly documented upward 25bps rounding to compare >25 with a 50+ bracket. For one-decimal published CPI, >3.9 equals >=4.0. A sports winner is not a spread or total, and the opponent outcome is not the selected outcome. Different observation times, meetings or thresholds are nonmatches. Do not use trading close or expiration timestamps as a proxy for the actual observation window. Do not assume first Polymarket outcome means YES. Read actual selected_outcome and the corresponding rules.",
+      "criteria": {
+        "match": "Same advertised market identity after explicit period, alias, unit or reported-precision normalization, with payout caveats considered separately.",
+        "nonmatch": "Different advertised event, date/instant, participant, requested side, indicator, bet type or threshold/bucket.",
+        "insufficient": "Supplied terms do not establish the advertised identity either way."
+      }
+    },
+    "settlement_compatibility": {
+      "type": "choice",
+      "instructions": "Compare the payout of Kalshi YES with the selected Polymarket outcome under the full supplied terms. Look for an explicit possible scenario where payouts differ: sources, index versus candle, temporal aggregation, strict/inclusive threshold, rounding, observation times, delays, cancellation, fallback data, or side mapping. Distinguish a nominal identity match from payout equivalence. Ignore platform governance differences alone. Choose unknown rather than compatible if source, role definitions or material contingencies are unresolved. Examples appearing in a generic Kalshi contract PDF are illustrations, not extra markets or bound parameter values. Market-specific fields instantiate the generic PDF parameters. Never infer equivalent payout merely from matching headlines.",
+      "criteria": {
+        "compatible": "Supplied settlement rules establish equivalent payouts for the compared outcomes, with no material counterexample or missing relevant term.",
+        "different": "Explicit stated conditions permit a scenario in which the compared outcomes pay differently.",
+        "unknown": "A complete compatibility conclusion cannot be established from the supplied terms."
+      }
+    }
+  },
+  "requested_model": "jev-latest",
+  "threshold": 0.99,
+  "freeze_sha256": "698bd40ae8176aeab2d1b50e23e86ae039f6f19b06d06ee21d6c03b15025a959"
+}

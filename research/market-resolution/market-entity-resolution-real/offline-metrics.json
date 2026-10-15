@@ -1,0 +1,34 @@
+{
+  "identity": {
+    "heuristics": {
+      "true_matches": 19,
+      "false_matches": 0,
+      "missed_matches": 7,
+      "precision": 1.0,
+      "recall": 0.7307692307692307,
+      "reviews": 21,
+      "review_rate": 0.35,
+      "correct_nonreview_decisions": 39,
+      "decision_coverage": 0.65
+    }
+  },
+  "settlement": {
+    "heuristics": {
+      "documented_conflicts": 52,
+      "conflicts_detected": 33,
+      "false_compatible_accepts": 0,
+      "unknown_reference_pairs": 8,
+      "unsupported_compatible_accepts_on_unknown": 0,
+      "compatible_accepts": 0,
+      "strict_equivalence_recall": null,
+      "note": "No established compatible reference pairs; strict equivalence recall cannot be estimated. Different predictions on unknown references are unadjudicated, not automatically errors."
+    }
+  },
+  "retrieval": {
+    "reference_positives": 26,
+    "top5_hits": 26,
+    "reference_positive_recall_at5": 1.0,
+    "scope": "Conditional on bounded frozen catalogs and investigator-labeled positives; not exhaustive catalog-wide recall."
+  },
+  "heuristic_median_local_seconds": 7.668699254281819e-05
+}

@@ -1,0 +1,1687 @@
+{
+  "pair_001": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "48-hour/fair-price settlement versus waiting for completion and 50-50 cancellation",
+    "a_features": {
+      "domain": "nfl",
+      "date": "2026-10-15",
+      "teams_compact": "seaden",
+      "selected": "sea",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-15",
+        "seaden",
+        "sea",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nfl",
+      "date": "2026-10-15",
+      "teams_compact": "seaden",
+      "selected": "sea",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-15",
+        "seaden",
+        "sea",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_002": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "48-hour/fair-price settlement versus waiting for completion and 50-50 cancellation",
+    "a_features": {
+      "domain": "nfl",
+      "date": "2026-10-18",
+      "teams_compact": "arilar",
+      "selected": "ari",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-18",
+        "arilar",
+        "ari",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nfl",
+      "date": "2026-10-18",
+      "teams_compact": "arilar",
+      "selected": "ari",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-18",
+        "arilar",
+        "ari",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_003": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "48-hour/fair-price settlement versus waiting for completion and 50-50 cancellation",
+    "a_features": {
+      "domain": "nfl",
+      "date": "2026-10-18",
+      "teams_compact": "carphi",
+      "selected": "car",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-18",
+        "carphi",
+        "car",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nfl",
+      "date": "2026-10-18",
+      "teams_compact": "carphi",
+      "selected": "car",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-18",
+        "carphi",
+        "car",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_004": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "48-hour/fair-price settlement versus waiting for completion and 50-50 cancellation",
+    "a_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "nyktor",
+      "selected": "nyk",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "nyktor",
+        "nyk",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "nyktor",
+      "selected": "nyk",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "nyktor",
+        "nyk",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_005": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "48-hour/fair-price settlement versus waiting for completion and 50-50 cancellation",
+    "a_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "cleorl",
+      "selected": "cle",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "cleorl",
+        "cle",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "cleorl",
+      "selected": "cle",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "cleorl",
+        "cle",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_006": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "48-hour/fair-price settlement versus waiting for completion and 50-50 cancellation",
+    "a_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "indokc",
+      "selected": "ind",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "indokc",
+        "ind",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "indokc",
+      "selected": "ind",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "indokc",
+        "ind",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_007": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "48-hour/fair-price settlement versus waiting for completion and 50-50 cancellation",
+    "a_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "stlott",
+      "selected": "stl",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "stlott",
+        "stl",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "stlott",
+      "selected": "stl",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "stlott",
+        "stl",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_008": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "48-hour/fair-price settlement versus waiting for completion and 50-50 cancellation",
+    "a_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "flacbj",
+      "selected": "fla",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "flacbj",
+        "fla",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "flacbj",
+      "selected": "fla",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "flacbj",
+        "fla",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_009": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "nfl",
+      "date": "2026-10-15",
+      "teams_compact": "seaden",
+      "selected": "sea",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-15",
+        "seaden",
+        "sea",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nfl",
+      "date": "2026-10-15",
+      "teams_compact": "seaden",
+      "selected": null,
+      "bet_type": "spreads",
+      "key": null
+    }
+  },
+  "pair_010": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "nyktor",
+      "selected": "nyk",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "nyktor",
+        "nyk",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "nyktor",
+      "selected": null,
+      "bet_type": "spreads",
+      "key": null
+    }
+  },
+  "pair_011": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "cleorl",
+      "selected": "cle",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "cleorl",
+        "cle",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "cleorl",
+      "selected": null,
+      "bet_type": "spreads",
+      "key": null
+    }
+  },
+  "pair_012": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "indokc",
+      "selected": "ind",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "indokc",
+        "ind",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "indokc",
+      "selected": null,
+      "bet_type": "spreads",
+      "key": null
+    }
+  },
+  "pair_013": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "stlott",
+      "selected": "stl",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "stlott",
+        "stl",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "stlott",
+      "selected": null,
+      "bet_type": "spreads",
+      "key": null
+    }
+  },
+  "pair_014": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "flacbj",
+      "selected": "fla",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "flacbj",
+        "fla",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "flacbj",
+      "selected": null,
+      "bet_type": "totals",
+      "key": null
+    }
+  },
+  "pair_015": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "nfl",
+      "date": "2026-10-25",
+      "teams_compact": "kcsea",
+      "selected": "sea",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-25",
+        "kcsea",
+        "sea",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nfl",
+      "date": "2026-10-15",
+      "teams_compact": "seaden",
+      "selected": "sea",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-15",
+        "seaden",
+        "sea",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_016": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "nhl",
+      "date": "2026-10-14",
+      "teams_compact": "dalcol",
+      "selected": "col",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-14",
+        "dalcol",
+        "col",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "coldal",
+      "selected": "col",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "coldal",
+        "col",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_017": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "nfl",
+      "date": "2026-10-15",
+      "teams_compact": "seaden",
+      "selected": "den",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-15",
+        "seaden",
+        "den",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nfl",
+      "date": "2026-10-15",
+      "teams_compact": "seaden",
+      "selected": "sea",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-15",
+        "seaden",
+        "sea",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_018": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "nyktor",
+      "selected": "tor",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "nyktor",
+        "tor",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "nyktor",
+      "selected": "nyk",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "nyktor",
+        "nyk",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_019": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "stlott",
+      "selected": "ott",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "stlott",
+        "ott",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "stlott",
+      "selected": "stl",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "stlott",
+        "stl",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_020": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different contract families",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "nba",
+      "date": "2026-10-13",
+      "teams_compact": "nyktor",
+      "selected": "nyk",
+      "bet_type": "moneyline",
+      "key": [
+        "nba",
+        "2026-10-13",
+        "nyktor",
+        "nyk",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "toruta",
+      "selected": "tor",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "toruta",
+        "tor",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_021": {
+    "identity": "match",
+    "settlement": "unknown",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "no complete deterministic compatibility proof or explicit supported counterexample",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hold",
+      "bucket": "0",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hold",
+        "0"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hold",
+      "bucket": "0",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hold",
+        "0"
+      ]
+    }
+  },
+  "pair_022": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "exact 25bps versus rounding a 12.5bps change into the 25bps bucket",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hike",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hike",
+        "25"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hike",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hike",
+        "25"
+      ]
+    }
+  },
+  "pair_023": {
+    "identity": "match",
+    "settlement": "unknown",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "no complete deterministic compatibility proof or explicit supported counterexample",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hike",
+      "bucket": "large",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hike",
+        "large"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hike",
+      "bucket": "large",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hike",
+        "large"
+      ]
+    }
+  },
+  "pair_024": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "exact 25bps versus rounding a 12.5bps change into the 25bps bucket",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "cut",
+        "25"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "cut",
+        "25"
+      ]
+    }
+  },
+  "pair_025": {
+    "identity": "match",
+    "settlement": "unknown",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "no complete deterministic compatibility proof or explicit supported counterexample",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "cut",
+      "bucket": "large",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "cut",
+        "large"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "cut",
+      "bucket": "large",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "cut",
+        "large"
+      ]
+    }
+  },
+  "pair_026": {
+    "identity": "match",
+    "settlement": "unknown",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "no complete deterministic compatibility proof or explicit supported counterexample",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "hold",
+      "bucket": "0",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "hold",
+        "0"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "hold",
+      "bucket": "0",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "hold",
+        "0"
+      ]
+    }
+  },
+  "pair_027": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "exact 25bps versus rounding a 12.5bps change into the 25bps bucket",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "hike",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "hike",
+        "25"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "hike",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "hike",
+        "25"
+      ]
+    }
+  },
+  "pair_028": {
+    "identity": "match",
+    "settlement": "unknown",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "no complete deterministic compatibility proof or explicit supported counterexample",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "hike",
+      "bucket": "large",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "hike",
+        "large"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "hike",
+      "bucket": "large",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "hike",
+        "large"
+      ]
+    }
+  },
+  "pair_029": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "exact 25bps versus rounding a 12.5bps change into the 25bps bucket",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "cut",
+        "25"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "cut",
+        "25"
+      ]
+    }
+  },
+  "pair_030": {
+    "identity": "match",
+    "settlement": "unknown",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "no complete deterministic compatibility proof or explicit supported counterexample",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "cut",
+      "bucket": "large",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "cut",
+        "large"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "cut",
+      "bucket": "large",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "cut",
+        "large"
+      ]
+    }
+  },
+  "pair_031": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "cut",
+        "25"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "cut",
+        "25"
+      ]
+    }
+  },
+  "pair_032": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "cut",
+        "25"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hike",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hike",
+        "25"
+      ]
+    }
+  },
+  "pair_033": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hold",
+      "bucket": "0",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hold",
+        "0"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "cut",
+      "bucket": "large",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "cut",
+        "large"
+      ]
+    }
+  },
+  "pair_034": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "hold",
+      "bucket": "0",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "hold",
+        "0"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hold",
+      "bucket": "0",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hold",
+        "0"
+      ]
+    }
+  },
+  "pair_035": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2027-01",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2027-01",
+        "cut",
+        "25"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-12",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-12",
+        "cut",
+        "25"
+      ]
+    }
+  },
+  "pair_036": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different contract families",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "fed_level",
+      "key": null
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hold",
+      "bucket": "0",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hold",
+        "0"
+      ]
+    }
+  },
+  "pair_037": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_touch",
+      "period": null,
+      "threshold": "9E+4",
+      "key": null
+    },
+    "b_features": {
+      "domain": "btc_touch",
+      "period": "2026-10",
+      "threshold": "9E+4",
+      "key": [
+        "btc_touch",
+        "2026-10",
+        "9E+4"
+      ]
+    }
+  },
+  "pair_038": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_touch",
+      "period": null,
+      "threshold": "9.25E+4",
+      "key": null
+    },
+    "b_features": {
+      "domain": "btc_touch",
+      "period": "2026-10",
+      "threshold": "9.25E+4",
+      "key": [
+        "btc_touch",
+        "2026-10",
+        "9.25E+4"
+      ]
+    }
+  },
+  "pair_039": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_touch",
+      "period": null,
+      "threshold": "1E+5",
+      "key": null
+    },
+    "b_features": {
+      "domain": "btc_touch",
+      "period": "2026-10",
+      "threshold": "1E+5",
+      "key": [
+        "btc_touch",
+        "2026-10",
+        "1E+5"
+      ]
+    }
+  },
+  "pair_040": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_touch",
+      "period": null,
+      "threshold": "1.025E+5",
+      "key": null
+    },
+    "b_features": {
+      "domain": "btc_touch",
+      "period": "2026-10",
+      "threshold": "1.025E+5",
+      "key": [
+        "btc_touch",
+        "2026-10",
+        "1.025E+5"
+      ]
+    }
+  },
+  "pair_041": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_touch",
+      "period": null,
+      "threshold": "8.75E+4",
+      "key": null
+    },
+    "b_features": {
+      "domain": "btc_touch",
+      "period": "2026-10",
+      "threshold": "8.75E+4",
+      "key": [
+        "btc_touch",
+        "2026-10",
+        "8.75E+4"
+      ]
+    }
+  },
+  "pair_042": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_touch",
+      "period": null,
+      "threshold": "1E+5",
+      "key": null
+    },
+    "b_features": {
+      "domain": "btc_touch",
+      "period": "2026-10",
+      "threshold": "9E+4",
+      "key": [
+        "btc_touch",
+        "2026-10",
+        "9E+4"
+      ]
+    }
+  },
+  "pair_043": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_touch",
+      "period": null,
+      "threshold": "9.75E+4",
+      "key": null
+    },
+    "b_features": {
+      "domain": "btc_touch",
+      "period": "2026-10",
+      "threshold": "1.05E+5",
+      "key": [
+        "btc_touch",
+        "2026-10",
+        "1.05E+5"
+      ]
+    }
+  },
+  "pair_044": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_touch",
+      "period": null,
+      "threshold": "1E+5",
+      "key": null
+    },
+    "b_features": {
+      "domain": "unsupported",
+      "key": null
+    }
+  },
+  "pair_045": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_point",
+      "instant_utc": "2026-10-14T21:00:00+00:00",
+      "threshold": "9E+4",
+      "key": [
+        "btc_point",
+        "2026-10-14T21:00:00+00:00",
+        "9E+4"
+      ]
+    },
+    "b_features": {
+      "domain": "unsupported",
+      "key": null
+    }
+  },
+  "pair_046": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "btc_point",
+      "instant_utc": "2026-10-14T00:00:00+00:00",
+      "threshold": "8.05E+4",
+      "key": [
+        "btc_point",
+        "2026-10-14T00:00:00+00:00",
+        "8.05E+4"
+      ]
+    },
+    "b_features": {
+      "domain": "unsupported",
+      "key": null
+    }
+  },
+  "pair_047": {
+    "identity": "match",
+    "settlement": "different",
+    "identity_reason": "identical deterministic identity key",
+    "settlement_reason": "extended wait for target-month CPI versus fallback to previous-month CPI",
+    "a_features": {
+      "domain": "headline_yoy",
+      "period": "2026-09",
+      "bucket": [
+        "ge",
+        "4"
+      ],
+      "publication_precision": "0.1 percent",
+      "key": [
+        "headline_yoy",
+        "2026-09",
+        "ge",
+        "4"
+      ]
+    },
+    "b_features": {
+      "domain": "headline_yoy",
+      "period": "2026-09",
+      "bucket": [
+        "ge",
+        "4"
+      ],
+      "publication_precision": "0.1 percent",
+      "key": [
+        "headline_yoy",
+        "2026-09",
+        "ge",
+        "4"
+      ]
+    }
+  },
+  "pair_048": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different deterministic identity keys",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "headline_yoy",
+      "period": "2026-09",
+      "bucket": [
+        "ge",
+        "4.1"
+      ],
+      "publication_precision": "0.1 percent",
+      "key": [
+        "headline_yoy",
+        "2026-09",
+        "ge",
+        "4.1"
+      ]
+    },
+    "b_features": {
+      "domain": "headline_yoy",
+      "period": "2026-09",
+      "bucket": [
+        "ge",
+        "4"
+      ],
+      "publication_precision": "0.1 percent",
+      "key": [
+        "headline_yoy",
+        "2026-09",
+        "ge",
+        "4"
+      ]
+    }
+  },
+  "pair_049": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different contract families",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "core_yoy",
+      "period": "2026-11",
+      "bucket": [
+        "ge",
+        "3.1"
+      ],
+      "publication_precision": "0.1 percent",
+      "key": [
+        "core_yoy",
+        "2026-11",
+        "ge",
+        "3.1"
+      ]
+    },
+    "b_features": {
+      "domain": "headline_yoy",
+      "period": "2026-09",
+      "bucket": [
+        "ge",
+        "4"
+      ],
+      "publication_precision": "0.1 percent",
+      "key": [
+        "headline_yoy",
+        "2026-09",
+        "ge",
+        "4"
+      ]
+    }
+  },
+  "pair_050": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different contract families",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "headline_mom",
+      "period": "2026-09",
+      "bucket": [
+        "ge",
+        "0.4"
+      ],
+      "publication_precision": "0.1 percent",
+      "key": [
+        "headline_mom",
+        "2026-09",
+        "ge",
+        "0.4"
+      ]
+    },
+    "b_features": {
+      "domain": "headline_yoy",
+      "period": "2026-09",
+      "bucket": [
+        "eq",
+        "3.9"
+      ],
+      "publication_precision": "0.1 percent",
+      "key": [
+        "headline_yoy",
+        "2026-09",
+        "eq",
+        "3.9"
+      ]
+    }
+  },
+  "pair_051": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "aliens",
+      "key": null
+    },
+    "b_features": {
+      "domain": "aliens",
+      "key": null
+    }
+  },
+  "pair_052": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "aliens",
+      "key": null
+    },
+    "b_features": {
+      "domain": "aliens",
+      "key": null
+    }
+  },
+  "pair_053": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "aliens",
+      "key": null
+    },
+    "b_features": {
+      "domain": "aliens",
+      "key": null
+    }
+  },
+  "pair_054": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "aliens",
+      "key": null
+    },
+    "b_features": {
+      "domain": "aliens",
+      "key": null
+    }
+  },
+  "pair_055": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different contract families",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "nfl",
+      "date": "2026-10-15",
+      "teams_compact": "seaden",
+      "selected": "sea",
+      "bet_type": "moneyline",
+      "key": [
+        "nfl",
+        "2026-10-15",
+        "seaden",
+        "sea",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "hold",
+      "bucket": "0",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "hold",
+        "0"
+      ]
+    }
+  },
+  "pair_056": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different contract families",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "btc_touch",
+      "period": null,
+      "threshold": "1E+5",
+      "key": null
+    },
+    "b_features": {
+      "domain": "aliens",
+      "key": null
+    }
+  },
+  "pair_057": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different contract families",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "headline_yoy",
+      "period": "2026-09",
+      "bucket": [
+        "ge",
+        "4"
+      ],
+      "publication_precision": "0.1 percent",
+      "key": [
+        "headline_yoy",
+        "2026-09",
+        "ge",
+        "4"
+      ]
+    },
+    "b_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "stlott",
+      "selected": "stl",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "stlott",
+        "stl",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_058": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different contract families",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "aliens",
+      "key": null
+    },
+    "b_features": {
+      "domain": "btc_touch",
+      "period": "2026-10",
+      "threshold": "1E+5",
+      "key": [
+        "btc_touch",
+        "2026-10",
+        "1E+5"
+      ]
+    }
+  },
+  "pair_059": {
+    "identity": "nonmatch",
+    "settlement": "different",
+    "identity_reason": "different contract families",
+    "settlement_reason": "different advertised proposition or observation instant",
+    "a_features": {
+      "domain": "fed_decision",
+      "period": "2026-10",
+      "action": "cut",
+      "bucket": "25",
+      "key": [
+        "fed_decision",
+        "2026-10",
+        "cut",
+        "25"
+      ]
+    },
+    "b_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "flacbj",
+      "selected": "fla",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "flacbj",
+        "fla",
+        "moneyline"
+      ]
+    }
+  },
+  "pair_060": {
+    "identity": "review",
+    "settlement": "unknown",
+    "identity_reason": "unsupported or incomplete deterministic identity extraction",
+    "settlement_reason": "identity has not been established",
+    "a_features": {
+      "domain": "nhl",
+      "date": "2026-10-13",
+      "teams_compact": "stlott",
+      "selected": "stl",
+      "bet_type": "moneyline",
+      "key": [
+        "nhl",
+        "2026-10-13",
+        "stlott",
+        "stl",
+        "moneyline"
+      ]
+    },
+    "b_features": {
+      "domain": "unsupported",
+      "key": null
+    }
+  }
+}

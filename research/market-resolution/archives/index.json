@@ -1,0 +1,32 @@
+[
+  {
+    "experiment": "market-entity-resolution",
+    "archive": {
+      "path": "archives/market-entity-resolution.tar.gz",
+      "bytes": 15214,
+      "sha256": "103113bb33be5d8f8e0d9e9e2925568d023aed1cefc813a057675764f282df40"
+    },
+    "file_count": 13,
+    "uncompressed_bytes": 85272
+  },
+  {
+    "experiment": "market-entity-resolution-real",
+    "archive": {
+      "path": "archives/market-entity-resolution-real.tar.gz",
+      "bytes": 5151609,
+      "sha256": "226101441ba91e26f1d7eb984a00fa89c82eac2c3cb19ae8c73e7e381ceb0703"
+    },
+    "file_count": 157,
+    "uncompressed_bytes": 57697712
+  },
+  {
+    "experiment": "market-entity-resolution-v2",
+    "archive": {
+      "path": "archives/market-entity-resolution-v2.tar.gz",
+      "bytes": 13478163,
+      "sha256": "3420ac1a8263fec76a3ecedc2c78233c38b71ab4d2732ab953dae7826bbe7d40"
+    },
+    "file_count": 960,
+    "uncompressed_bytes": 199824685
+  }
+]

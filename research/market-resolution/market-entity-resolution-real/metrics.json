@@ -1,0 +1,642 @@
+{
+  "identity": {
+    "heuristics": {
+      "true_matches": 19,
+      "false_matches": 0,
+      "missed_matches": 7,
+      "precision": 1.0,
+      "recall": 0.7307692307692307,
+      "reviews": 21,
+      "review_rate": 0.35,
+      "correct_nonreview_decisions": 39,
+      "decision_coverage": 0.65
+    },
+    "jev": {
+      "true_matches": 6,
+      "false_matches": 0,
+      "missed_matches": 20,
+      "precision": 1.0,
+      "recall": 0.23076923076923078,
+      "reviews": 29,
+      "review_rate": 0.48333333333333334,
+      "correct_nonreview_decisions": 31,
+      "decision_coverage": 0.5166666666666666
+    },
+    "hybrid": {
+      "true_matches": 19,
+      "false_matches": 0,
+      "missed_matches": 7,
+      "precision": 1.0,
+      "recall": 0.7307692307692307,
+      "reviews": 10,
+      "review_rate": 0.16666666666666666,
+      "correct_nonreview_decisions": 50,
+      "decision_coverage": 0.8333333333333334
+    }
+  },
+  "settlement": {
+    "heuristics": {
+      "documented_conflicts": 52,
+      "conflicts_detected": 33,
+      "false_compatible_accepts": 0,
+      "unknown_reference_pairs": 8,
+      "unsupported_compatible_accepts_on_unknown": 0,
+      "compatible_accepts": 0,
+      "strict_equivalence_recall": null,
+      "note": "No established compatible reference pairs; strict equivalence recall cannot be estimated. Different predictions on unknown references are unadjudicated, not automatically errors."
+    },
+    "jev": {
+      "documented_conflicts": 52,
+      "conflicts_detected": 3,
+      "false_compatible_accepts": 0,
+      "unknown_reference_pairs": 8,
+      "unsupported_compatible_accepts_on_unknown": 0,
+      "compatible_accepts": 0,
+      "strict_equivalence_recall": null,
+      "note": "No established compatible reference pairs; strict equivalence recall cannot be estimated. Different predictions on unknown references are unadjudicated, not automatically errors."
+    },
+    "hybrid": {
+      "documented_conflicts": 52,
+      "conflicts_detected": 33,
+      "false_compatible_accepts": 0,
+      "unknown_reference_pairs": 8,
+      "unsupported_compatible_accepts_on_unknown": 0,
+      "compatible_accepts": 0,
+      "strict_equivalence_recall": null,
+      "note": "No established compatible reference pairs; strict equivalence recall cannot be estimated. Different predictions on unknown references are unadjudicated, not automatically errors."
+    }
+  },
+  "retrieval": {
+    "reference_positives": 26,
+    "top5_hits": 26,
+    "reference_positive_recall_at5": 1.0,
+    "scope": "Conditional on bounded frozen catalogs and investigator-labeled positives; not exhaustive catalog-wide recall."
+  },
+  "heuristic_median_local_seconds": 1.908350532175973e-05,
+  "per_family": {
+    "aliens": {
+      "pairs": 2,
+      "positive_identity_pairs": 2,
+      "identity": {
+        "heuristics": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 2,
+          "precision": null,
+          "recall": 0.0,
+          "reviews": 2,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 2,
+          "precision": null,
+          "recall": 0.0,
+          "reviews": 2,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        },
+        "hybrid": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 2,
+          "precision": null,
+          "recall": 0.0,
+          "reviews": 2,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        }
+      }
+    },
+    "aliens_near_miss": {
+      "pairs": 2,
+      "positive_identity_pairs": 0,
+      "identity": {
+        "heuristics": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 2,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 2,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        },
+        "hybrid": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 2,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        }
+      }
+    },
+    "bitcoin_monthly": {
+      "pairs": 5,
+      "positive_identity_pairs": 5,
+      "identity": {
+        "heuristics": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 5,
+          "precision": null,
+          "recall": 0.0,
+          "reviews": 5,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 5,
+          "precision": null,
+          "recall": 0.0,
+          "reviews": 5,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        },
+        "hybrid": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 5,
+          "precision": null,
+          "recall": 0.0,
+          "reviews": 5,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        }
+      }
+    },
+    "bitcoin_near_miss": {
+      "pairs": 5,
+      "positive_identity_pairs": 0,
+      "identity": {
+        "heuristics": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 5,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 1,
+          "review_rate": 0.2,
+          "correct_nonreview_decisions": 4,
+          "decision_coverage": 0.8
+        },
+        "hybrid": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 1,
+          "review_rate": 0.2,
+          "correct_nonreview_decisions": 4,
+          "decision_coverage": 0.8
+        }
+      }
+    },
+    "cpi": {
+      "pairs": 1,
+      "positive_identity_pairs": 1,
+      "identity": {
+        "heuristics": {
+          "true_matches": 1,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 1,
+          "decision_coverage": 1.0
+        },
+        "jev": {
+          "true_matches": 1,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 1,
+          "decision_coverage": 1.0
+        },
+        "hybrid": {
+          "true_matches": 1,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 1,
+          "decision_coverage": 1.0
+        }
+      }
+    },
+    "cpi_near_miss": {
+      "pairs": 3,
+      "positive_identity_pairs": 0,
+      "identity": {
+        "heuristics": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 3,
+          "decision_coverage": 1.0
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 1,
+          "review_rate": 0.3333333333333333,
+          "correct_nonreview_decisions": 2,
+          "decision_coverage": 0.6666666666666667
+        },
+        "hybrid": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 3,
+          "decision_coverage": 1.0
+        }
+      }
+    },
+    "fed_26DEC": {
+      "pairs": 5,
+      "positive_identity_pairs": 5,
+      "identity": {
+        "heuristics": {
+          "true_matches": 5,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 5,
+          "decision_coverage": 1.0
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 5,
+          "precision": null,
+          "recall": 0.0,
+          "reviews": 5,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        },
+        "hybrid": {
+          "true_matches": 5,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 5,
+          "decision_coverage": 1.0
+        }
+      }
+    },
+    "fed_26OCT": {
+      "pairs": 5,
+      "positive_identity_pairs": 5,
+      "identity": {
+        "heuristics": {
+          "true_matches": 5,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 5,
+          "decision_coverage": 1.0
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 5,
+          "precision": null,
+          "recall": 0.0,
+          "reviews": 5,
+          "review_rate": 1.0,
+          "correct_nonreview_decisions": 0,
+          "decision_coverage": 0.0
+        },
+        "hybrid": {
+          "true_matches": 5,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 5,
+          "decision_coverage": 1.0
+        }
+      }
+    },
+    "fed_near_miss": {
+      "pairs": 6,
+      "positive_identity_pairs": 0,
+      "identity": {
+        "heuristics": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 6,
+          "decision_coverage": 1.0
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 1,
+          "review_rate": 0.16666666666666666,
+          "correct_nonreview_decisions": 5,
+          "decision_coverage": 0.8333333333333334
+        },
+        "hybrid": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 6,
+          "decision_coverage": 1.0
+        }
+      }
+    },
+    "sports_nba": {
+      "pairs": 3,
+      "positive_identity_pairs": 3,
+      "identity": {
+        "heuristics": {
+          "true_matches": 3,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 3,
+          "decision_coverage": 1.0
+        },
+        "jev": {
+          "true_matches": 2,
+          "false_matches": 0,
+          "missed_matches": 1,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "reviews": 1,
+          "review_rate": 0.3333333333333333,
+          "correct_nonreview_decisions": 2,
+          "decision_coverage": 0.6666666666666667
+        },
+        "hybrid": {
+          "true_matches": 3,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 3,
+          "decision_coverage": 1.0
+        }
+      }
+    },
+    "sports_near_miss": {
+      "pairs": 12,
+      "positive_identity_pairs": 0,
+      "identity": {
+        "heuristics": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 6,
+          "review_rate": 0.5,
+          "correct_nonreview_decisions": 6,
+          "decision_coverage": 0.5
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 4,
+          "review_rate": 0.3333333333333333,
+          "correct_nonreview_decisions": 8,
+          "decision_coverage": 0.6666666666666667
+        },
+        "hybrid": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 12,
+          "decision_coverage": 1.0
+        }
+      }
+    },
+    "sports_nfl": {
+      "pairs": 3,
+      "positive_identity_pairs": 3,
+      "identity": {
+        "heuristics": {
+          "true_matches": 3,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 3,
+          "decision_coverage": 1.0
+        },
+        "jev": {
+          "true_matches": 2,
+          "false_matches": 0,
+          "missed_matches": 1,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "reviews": 1,
+          "review_rate": 0.3333333333333333,
+          "correct_nonreview_decisions": 2,
+          "decision_coverage": 0.6666666666666667
+        },
+        "hybrid": {
+          "true_matches": 3,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 3,
+          "decision_coverage": 1.0
+        }
+      }
+    },
+    "sports_nhl": {
+      "pairs": 2,
+      "positive_identity_pairs": 2,
+      "identity": {
+        "heuristics": {
+          "true_matches": 2,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 2,
+          "decision_coverage": 1.0
+        },
+        "jev": {
+          "true_matches": 1,
+          "false_matches": 0,
+          "missed_matches": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "reviews": 1,
+          "review_rate": 0.5,
+          "correct_nonreview_decisions": 1,
+          "decision_coverage": 0.5
+        },
+        "hybrid": {
+          "true_matches": 2,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 2,
+          "decision_coverage": 1.0
+        }
+      }
+    },
+    "unrelated_control": {
+      "pairs": 6,
+      "positive_identity_pairs": 0,
+      "identity": {
+        "heuristics": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 1,
+          "review_rate": 0.16666666666666666,
+          "correct_nonreview_decisions": 5,
+          "decision_coverage": 0.8333333333333334
+        },
+        "jev": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 6,
+          "decision_coverage": 1.0
+        },
+        "hybrid": {
+          "true_matches": 0,
+          "false_matches": 0,
+          "missed_matches": 0,
+          "precision": null,
+          "recall": null,
+          "reviews": 0,
+          "review_rate": 0.0,
+          "correct_nonreview_decisions": 6,
+          "decision_coverage": 1.0
+        }
+      }
+    }
+  },
+  "model_versions": [
+    "jev-1.13.0"
+  ],
+  "model_calls": {
+    "jev": {
+      "successful_calls": 60,
+      "median_end_to_end_seconds": 1.861296688002767,
+      "input_tokens": 195272,
+      "output_tokens": 5050
+    },
+    "hybrid": {
+      "successful_calls": 27,
+      "median_end_to_end_seconds": 1.6552000000083353,
+      "input_tokens": 86395,
+      "output_tokens": 2271
+    }
+  },
+  "labeling_limitations": "60 convenience-selected real pairs; investigator-authored labels before inference, not independent adjudication; repeated contract families are correlated; no established strict-compatible positives; no deployment prevalence estimate."
+}
